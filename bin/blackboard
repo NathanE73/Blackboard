@@ -1,0 +1,1081 @@
+#!/usr/bin/swift
+
+//
+// Copyright (c) 2016 Nathan E. Walczak
+// 
+// MIT License
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+// 
+
+import AppKit
+
+// MARK: - String+NSString.swift -
+
+extension String {
+    
+    // public var lastPathComponent: String { get }
+    public var lastPathComponent: String {
+        return (self as NSString).lastPathComponent
+    }
+    
+    // public var stringByDeletingLastPathComponent: String { get }
+    public var stringByDeletingLastPathComponent: String {
+        return (self as NSString).stringByDeletingLastPathComponent
+    }
+    
+    // public func stringByAppendingPathComponent(str: String) -> String
+    public func stringByAppendingPathComponent(str: String) -> String {
+        return (self as NSString).stringByAppendingPathComponent(str)
+    }
+    
+    // public var pathExtension: String { get }
+    public var pathExtension: String {
+        return (self as NSString).pathExtension
+    }
+    
+    // public var stringByDeletingPathExtension: String { get }
+    public var stringByDeletingPathExtension: String {
+        return (self as NSString).stringByDeletingPathExtension
+    }
+    
+    // public func stringByAppendingPathExtension(str: String) -> String?
+    public func stringByAppendingPathExtension(str: String) -> String? {
+        return (self as NSString).stringByAppendingPathExtension(str)
+    }
+    
+    // public var stringByExpandingTildeInPath: String { get }
+    public var stringByExpandingTildeInPath: String {
+        return (self as NSString).stringByExpandingTildeInPath
+    }
+    
+}
+
+// MARK: - StringExtensions.swift -
+
+extension String {
+    
+    var lowercaseFirstCharacterString: String {
+        guard let firstCharacter = characters.first else {
+            return self
+        }
+        return String(firstCharacter).lowercaseString + String(characters.dropFirst(1))
+    }
+    
+    func stringByRemovingSuffixString(suffix: String) -> String {
+        if hasSuffix(suffix) {
+            return String(characters.dropLast(suffix.characters.count))
+        }
+        return self
+    }
+    
+    var stringByTrimmingWhitespaceCharacters: String {
+        return stringByTrimmingCharactersInSet(.whitespaceCharacterSet())
+    }
+    
+}
+
+// MARK: - NSFileManagerExtensions.swift -
+
+extension NSFileManager {
+    
+    func isDirectory(path: String) -> Bool {
+        var isDirectory: ObjCBool = false
+        if fileExistsAtPath(path, isDirectory: &isDirectory) && isDirectory {
+            return true
+        }
+        return false
+    }
+    
+    func isFile(path: String) -> Bool {
+        var isDirectory: ObjCBool = false
+        if fileExistsAtPath(path, isDirectory: &isDirectory) && !isDirectory {
+            return true
+        }
+        return false
+    }
+    
+}
+
+// MARK: - Closure.swift -
+
+typealias Closure = () -> ()
+
+// MARK: - Naming.swift -
+
+func memberNameFromIdentifier(identifier: String, namespace: String? = nil) -> String {
+    if let namespace = namespace {
+        return namespace + nameFromIdentifier(identifier)
+    }
+    return nameFromIdentifier(identifier)
+}
+
+func methodNameFromIdentifier(identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
+    let name: String
+    if let namespace = namespace {
+        name = namespace + nameFromIdentifier(identifier)
+    }
+    else {
+        name = nameFromIdentifier(identifier)
+    }
+    
+    var methodName: String
+    
+    if let prefix = prefix {
+        methodName = prefix + name
+    }
+    else {
+        methodName = name.lowercaseFirstCharacterString
+    }
+    
+    if let suffix = suffix {
+        methodName += suffix
+    }
+    
+    return methodName
+}
+
+func nameFromIdentifier(identifier: String) -> String {
+    var name = ""
+    
+    var shouldUppercaseNextCharacter = true
+    
+    for character in identifier.characters {
+        
+        if [" ", "_", "-"].contains(character) {
+            shouldUppercaseNextCharacter = true
+            continue
+        }
+        
+        if shouldUppercaseNextCharacter {
+            shouldUppercaseNextCharacter = false
+            let uppercaseCharacter = String(character).uppercaseString
+            name += uppercaseCharacter
+            continue
+        }
+        
+        name.append(character)
+    }
+    
+    return name
+}
+
+// MARK: - SwiftSource.swift -
+
+class SwiftSource {
+    
+    private var lines: [(indentLevel: Int, line: String)] = []
+    
+    func append(line: String = "") {
+        if line == "" && line == lines.last?.line {
+            return // don't allow multiple blank lines
+        }
+        
+        lines.append((indentLevel, line))
+    }
+    
+    func append(line: String, @noescape block: Closure) {
+        append("\(line) {")
+        indent()
+        block()
+        unindent()
+        append("}")
+    }
+    
+    var source: String {
+        var source: [String] = []
+        
+        var indentLevel = 0
+        var indent = ""
+        
+        lines.forEach { entry in
+            if indentLevel != entry.indentLevel {
+                indentLevel = entry.indentLevel
+                indent = ""
+                for _ in 0 ..< (indentLevel) {
+                    indent.appendContentsOf("    ")
+                }
+            }
+            
+            source.append("\(indent)\(entry.line)")
+        }
+        
+        return source.joinWithSeparator("\n")
+    }
+    
+    // MARK: Indent Level
+    
+    var indentLevel = 0
+    
+    func indent() {
+        indentLevel += 1
+    }
+    
+    func unindent() {
+        indentLevel = max(0, indentLevel - 1)
+    }
+    
+}
+
+extension SwiftSource: CustomStringConvertible {
+    
+    var description: String {
+        return source
+    }
+    
+}
+
+// MARK: - Storyboard.swift -
+
+struct Storyboard {
+    
+    let name: String
+    
+    let viewControllers: [StoryboardViewController]
+    
+}
+
+extension Storyboard {
+    
+    func viewControllerWith(id id: String) -> StoryboardViewController? {
+        return viewControllers
+            .filter { $0.id == id }
+            .first
+    }
+    
+    func navigationControllerFor(id id: String) -> StoryboardViewController? {
+        return viewControllers
+            .filter { $0.type == .NavigationController }
+            .filter { viewController in
+                return viewController.segues
+                    .filter { $0.destination == id}
+                    .isEmpty == false
+            }
+            .first
+    }
+    
+}
+
+extension Storyboard: CustomStringConvertible {
+    
+    var description: String {
+        return "name: \(name), viewControllers.count: \(viewControllers.count)"
+    }
+    
+}
+
+extension Storyboard {
+    
+    init?(url: NSURL) {
+        guard let xmlDocument = try? NSXMLDocument(contentsOfURL: url, options: 0) else {
+            return nil
+        }
+        
+        guard xmlDocument.rootElement()?.attributeForName("launchScreen")?.stringValue != "YES" else {
+            return nil
+        }
+        
+        guard let name = url.URLByDeletingPathExtension?.lastPathComponent else {
+            return nil
+        }
+        self.name = name
+        
+        guard let sceneNodes = try? xmlDocument.nodesForXPath("//scene") else {
+            return nil
+        }
+        viewControllers = sceneNodes.flatMap(StoryboardViewController.init)
+    }
+    
+    init?(path: String) {
+        let url = NSURL(fileURLWithPath: path, isDirectory: false)
+        self.init(url: url)
+    }
+    
+    static func storyboardsAt(path path: String) -> [Storyboard] {
+        var files: [String] = []
+        
+        let fileManager = NSFileManager.defaultManager()
+        
+        let enumerator = fileManager.enumeratorAtPath(path)
+        while let file = enumerator?.nextObject() as? String {
+            if file.pathExtension == "storyboard" {
+                files.append(path.stringByAppendingPathComponent(file))
+            }
+        }
+        
+        files.sortInPlace(<)
+        
+        return files.flatMap { Storyboard(path: $0) }
+    }
+    
+}
+
+// MARK: - StoryboardCollectionViewCell.swift -
+
+struct StoryboardCollectionViewCell {
+    
+    let id: String
+    let reuseIdentifier: String?
+    let customClass: String?
+    
+}
+
+extension StoryboardCollectionViewCell: CustomStringConvertible {
+    
+    var description: String {
+        return "id: \(id), reuseIdentifier: \(reuseIdentifier ?? "nil")"
+    }
+    
+}
+
+extension StoryboardCollectionViewCell {
+    
+    init?(node: NSXMLNode) {
+        guard let element = node as? NSXMLElement
+            where element.name == "collectionViewCell" else {
+                return nil
+        }
+        
+        guard let id = element.attributeForName("id")?.stringValue else {
+            return nil
+        }
+        self.id = id
+        
+        reuseIdentifier = element.attributeForName("reuseIdentifier")?.stringValue
+        customClass = element.attributeForName("customClass")?.stringValue
+    }
+    
+}
+
+// MARK: - StoryboardSegue.swift -
+
+enum StoryboardSegueKind: String {
+    
+    case Embed = "embed"
+    case Presentation = "presentation"
+    case Relationship = "relationship"
+    case Show = "show"
+    case Unwind = "unwind"
+    
+}
+
+struct StoryboardSegue {
+    
+    let id: String
+    
+    let kind: StoryboardSegueKind
+    let identifier: String?
+    let destination: String
+    
+}
+
+extension StoryboardSegue: CustomStringConvertible {
+    
+    var description: String {
+        return "id: \(id), kind: \(kind), identifier: \(identifier ?? "nil"), destination: \(destination)"
+    }
+    
+}
+
+extension StoryboardSegue {
+    
+    init?(node: NSXMLNode) {
+        guard let element = node as? NSXMLElement where element.name == "segue" else {
+            return nil
+        }
+        
+        guard let id = element.attributeForName("id")?.stringValue else {
+            return nil
+        }
+        self.id = id
+        
+        guard let kindAttribute = element.attributeForName("kind")?.stringValue,
+            kind = StoryboardSegueKind(rawValue: kindAttribute) else {
+                return nil
+        }
+        self.kind = kind
+        
+        identifier = element.attributeForName("identifier")?.stringValue
+        
+        guard let destination = element.attributeForName("destination")?.stringValue else {
+            return nil
+        }
+        self.destination = destination
+    }
+    
+}
+
+// MARK: - StoryboardTableViewCell.swift -
+
+struct StoryboardTableViewCell {
+    
+    let id: String
+    let reuseIdentifier: String?
+    let customClass: String?
+    
+}
+
+extension StoryboardTableViewCell: CustomStringConvertible {
+    
+    var description: String {
+        return "id: \(id), reuseIdentifier: \(reuseIdentifier ?? "nil")"
+    }
+    
+}
+
+extension StoryboardTableViewCell {
+    
+    init?(node: NSXMLNode) {
+        guard let element = node as? NSXMLElement
+            where element.name == "tableViewCell" else {
+                return nil
+        }
+        
+        guard let id = element.attributeForName("id")?.stringValue else {
+            return nil
+        }
+        self.id = id
+        
+        reuseIdentifier = element.attributeForName("reuseIdentifier")?.stringValue
+        customClass = element.attributeForName("customClass")?.stringValue
+    }
+    
+}
+
+// MARK: - StoryboardViewController.swift -
+
+enum StoryboardViewControllerType: String {
+    
+    case CollectionViewController = "collectionViewController"
+    case NavigationController = "navigationController"
+    case PageViewController = "pageViewController"
+    case SplitViewController = "splitViewController"
+    case TabBarController = "tabBarController"
+    case TableViewController = "tableViewController"
+    case ViewController = "viewController"
+    
+    static let entries: [StoryboardViewControllerType] = [
+        .CollectionViewController,
+        .NavigationController,
+        .PageViewController,
+        .SplitViewController,
+        .TabBarController,
+        .TableViewController,
+        .ViewController
+    ]
+    
+    var className: String {
+        switch self {
+        case CollectionViewController:
+            return "UICollectionViewController"
+        case NavigationController:
+            return "UINavigationController"
+        case PageViewController:
+            return "UIPageViewController"
+        case SplitViewController:
+            return "UISplitViewController"
+        case TabBarController:
+            return "UITabBarController"
+        case TableViewController:
+            return "UITableViewController"
+        case ViewController:
+            return "UIViewController"
+        }
+    }
+    
+}
+
+struct StoryboardViewController {
+    
+    let id: String
+    
+    let type: StoryboardViewControllerType
+    let storyboardIdentifier: String?
+    let customClass: String?
+    
+    let segues: [StoryboardSegue]
+    let tableViewCells: [StoryboardTableViewCell]
+    let collectionViewCells: [StoryboardCollectionViewCell]
+    
+}
+
+extension StoryboardViewController {
+    
+    func segueWith(id id: String) -> StoryboardSegue? {
+        return segues
+            .filter { $0.id == id }
+            .first
+    }
+    
+    func segueWith(kind kind: StoryboardSegueKind) -> StoryboardSegue? {
+        return segues
+            .filter { $0.kind == kind }
+            .first
+    }
+    
+    func tableViewCellWith(id id: String) -> StoryboardTableViewCell? {
+        return tableViewCells
+            .filter { $0.id == id }
+            .first
+    }
+    
+    func collectionViewCellWith(id id: String) -> StoryboardCollectionViewCell? {
+        return collectionViewCells
+            .filter { $0.id == id }
+            .first
+    }
+    
+}
+
+extension StoryboardViewController: CustomStringConvertible {
+    
+    var description: String {
+        return "id: \(id), type: \(type), storyboardIdentifier: \(storyboardIdentifier ?? "nil"), customClass: \(customClass ?? "nil")"
+    }
+    
+}
+
+extension StoryboardViewController {
+    
+    init?(node: NSXMLNode) {
+        let xpath = StoryboardViewControllerType.entries
+            .map { ".//\($0.rawValue)" }
+            .joinWithSeparator(" | ")
+        
+        guard let nodes = try? node.nodesForXPath(xpath),
+            element = nodes.first as? NSXMLElement,
+            elementName = element.name
+            where nodes.count == 1 else {
+                return nil
+        }
+        
+        guard let id = element.attributeForName("id")?.stringValue else {
+            return nil
+        }
+        
+        guard let type = StoryboardViewControllerType(rawValue: elementName) else {
+            return nil
+        }
+        
+        let storyboardIdentifier = element.attributeForName("storyboardIdentifier")?.stringValue
+        
+        let customClass = element.attributeForName("customClass")?.stringValue
+        
+        guard let segueNodes = try? element.nodesForXPath(".//segue") else {
+            return nil
+        }
+        let segues = segueNodes.flatMap(StoryboardSegue.init)
+        
+        guard let tableViewCellNodes = try? element.nodesForXPath(".//tableViewCell") else {
+            return nil
+        }
+        let tableViewCells = tableViewCellNodes.flatMap(StoryboardTableViewCell.init)
+        
+        guard let collectionViewCellNodes = try? element.nodesForXPath(".//collectionViewCell") else {
+            return nil
+        }
+        let collectionViewCells = collectionViewCellNodes.flatMap(StoryboardCollectionViewCell.init)
+        
+        self.id = id
+        self.type = type
+        self.storyboardIdentifier = storyboardIdentifier
+        self.customClass = customClass
+        self.segues = segues
+        self.tableViewCells = tableViewCells
+        self.collectionViewCells = collectionViewCells
+    }
+    
+}
+
+// MARK: - BlackboardCollectionViewCell.swift -
+
+struct BlackboardCollectionViewCell {
+    
+    let name: String
+    let identifier: String
+    let className: String
+    let parameterName: String
+    
+}
+
+extension BlackboardCollectionViewCell {
+    
+    init?(collectionViewCell: StoryboardCollectionViewCell, storyboard: Storyboard) {
+        guard let reuseIdentifier = collectionViewCell.reuseIdentifier else {
+            return nil
+        }
+        
+        name = nameFromIdentifier(reuseIdentifier)
+            .stringByRemovingSuffixString("Cell")
+        
+        identifier = reuseIdentifier
+        
+        if let customClass = collectionViewCell.customClass {
+            className = customClass
+            
+            parameterName = customClass
+                .stringByRemovingSuffixString("Cell")
+                .stringByRemovingSuffixString("CollectionView")
+                .stringByAppendingString("Cell")
+                .lowercaseFirstCharacterString
+        }
+        else {
+            className = "UICollectionViewCell"
+            parameterName = "cell"
+        }
+    }
+    
+}
+
+extension SwiftSource {
+    
+    func appendCollectionViewCells(collectionViewCells: [BlackboardCollectionViewCell]) {
+        guard !collectionViewCells.isEmpty else { return }
+        
+        append("// Collection View Cells")
+        append()
+        appendCollectionViewCellIdentifier(collectionViewCells)
+        appendDequeueCollectionViewCell(collectionViewCells)
+        append()
+    }
+    
+    func appendCollectionViewCellIdentifier(collectionViewCells: [BlackboardCollectionViewCell]) {
+        guard !collectionViewCells.isEmpty else { return }
+        
+        append("enum CollectionViewCellIdentifier: String") {
+            collectionViewCells.forEach { cell in
+                append("case \(cell.name) = \"\(cell.identifier)\"")
+            }
+        }
+        append()
+    }
+    
+    func castFor(collectionViewCell: BlackboardCollectionViewCell) -> String {
+        if collectionViewCell.className == "UICollectionViewCell" {
+            return ""
+        }
+        return " as! \(collectionViewCell.className)"
+    }
+    
+    func appendDequeueCollectionViewCell(collectionViewCells: [BlackboardCollectionViewCell]) {
+        guard !collectionViewCells.isEmpty else { return }
+        
+        collectionViewCells.forEach { cell in
+            append("final func dequeue\(cell.name)CellFrom(collectionView: UICollectionView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((\(cell.parameterName): \(cell.className)) -> Void) = {_ in}) -> \(cell.className)") {
+                append("let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(CollectionViewCellIdentifier.\(cell.name).rawValue, forIndexPath: indexPath)\(castFor(cell))")
+                append("initialize(\(cell.parameterName): collectionViewCell)")
+                append("return collectionViewCell")
+            }
+            append()
+        }
+    }
+    
+}
+
+// MARK: - BlackboardSegue.swift -
+
+struct BlackboardSegue {
+    
+    let name: String
+    let identifier: String
+    let viewControllerClassName: String
+    let navigationControllerClassName: String?
+    
+}
+
+extension BlackboardSegue {
+    
+    init?(segue: StoryboardSegue, storyboard: Storyboard) {
+        guard let identifier = segue.identifier else {
+            return nil
+        }
+        
+        name = identifier
+        self.identifier = identifier
+        
+        guard let destinationViewController = storyboard.viewControllerWith(id: segue.destination) else {
+            return nil
+        }
+        let destinationCustomClass = destinationViewController.customClass ?? destinationViewController.type.className
+        
+        if destinationViewController.type == .NavigationController {
+            guard let rootViewControllerSegue = destinationViewController.segueWith(kind: .Relationship) else {
+                return nil
+            }
+            guard let rootViewController = storyboard.viewControllerWith(id: rootViewControllerSegue.destination) else {
+                return nil
+            }
+            viewControllerClassName = rootViewController.customClass ?? rootViewController.type.className
+            navigationControllerClassName = destinationCustomClass
+        }
+        else {
+            viewControllerClassName = destinationCustomClass
+            navigationControllerClassName = nil
+        }
+    }
+    
+}
+
+extension SwiftSource {
+    
+    func appendInitializeBlockObject() {
+        append("private class InitializeBlockObject") {
+            append()
+            append("let block: (UIViewController -> Void)")
+            append()
+            append("init(block: (UIViewController -> Void))") {
+                append("self.block = block")
+            }
+            append()
+        }
+        append()
+    }
+    
+    func appendSegues(segues: [BlackboardSegue]) {
+        append("// Segues")
+        append()
+        appendSegueIdentifierFor(segues)
+        appendHandleSegue()
+        appendPerformSegueFor(segues)
+        append()
+    }
+    
+    func appendSegueIdentifierFor(segues: [BlackboardSegue]) {
+        guard !segues.isEmpty else { return }
+        
+        append("enum SegueIdentifier: String") {
+            segues.forEach { segue in
+                append("case \(segue.name) = \"\(segue.identifier)\"")
+            }
+        }
+        append()
+    }
+    
+    func appendHandleSegue() {
+        append("func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?)") {
+            append("if let initializeBlockObject = sender as? InitializeBlockObject") {
+                append("initializeBlockObject.block(segue.destinationViewController)")
+            }
+        }
+        append()
+    }
+    
+    func appendPerformSegueFor(segues: [BlackboardSegue]) {
+        guard !segues.isEmpty else { return }
+        
+        segues.forEach { segue in
+            append("final func perform\(segue.name)Segue(initialize: ((\(segue.viewControllerClassName)) -> Void)? = nil)") {
+                append("let initializeBlock = initialize == nil ? nil : InitializeBlockObject()") {
+                    if let navigationControllerClassName = segue.navigationControllerClassName {
+                        append("let navigationController = $0 as! \(navigationControllerClassName)")
+                        append("let viewController = navigationController.viewControllers.first as! \(segue.viewControllerClassName)")
+                        append("initialize(viewController)")
+                    }
+                    else {
+                        append("initialize($0 as! \(segue.viewControllerClassName))")
+                    }
+                }
+                append("performSegueWithIdentifier(SegueIdentifier.\(segue.name).rawValue, sender: initializeBlock)")
+            }
+            append()
+        }
+    }
+    
+}
+
+// MARK: - BlackboardStoryboard.swift -
+
+struct BlackboardStoryboard {
+    
+    let name: String
+    let extensionName: String
+    
+    let viewControllers: [BlackboardViewController]
+    
+}
+
+extension BlackboardStoryboard {
+    
+    init?(storyboard: Storyboard) {
+        name = storyboard.name
+        
+        extensionName = storyboard.name
+            .stringByRemovingSuffixString("Storyboard")
+            .stringByAppendingString("StoryboardExtensions.swift")
+        
+        viewControllers = storyboard.viewControllers
+            .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard) }
+            .sort { $0.className < $1.className }
+        guard !viewControllers.isEmpty else {
+            return nil
+        }
+    }
+    
+}
+
+extension SwiftSource {
+    
+    func appendStoryboard(storyboard: BlackboardStoryboard) {
+        append("//")
+        append("//  \(storyboard.extensionName)")
+        append("//")
+        append("//  This file is automatically generated; do not modify.")
+        append("//")
+        append()
+        append("import UIKit")
+        append()
+        append("private let sharedStoryboardInstance = UIStoryboard(name: \"\(storyboard.name)\", bundle: nil)")
+        append()
+        appendInitializeBlockObject()
+        appendViewControllers(storyboard.viewControllers)
+    }
+    
+}
+
+// MARK: - BlackboardTableViewCell.swift -
+
+struct BlackboardTableViewCell {
+    
+    let name: String
+    let identifier: String
+    let className: String
+    let parameterName: String
+    
+}
+
+extension BlackboardTableViewCell {
+    
+    init?(tableViewCell: StoryboardTableViewCell, storyboard: Storyboard) {
+        guard let reuseIdentifier = tableViewCell.reuseIdentifier else {
+            return nil
+        }
+        
+        name = nameFromIdentifier(reuseIdentifier)
+            .stringByRemovingSuffixString("Cell")
+        
+        identifier = reuseIdentifier
+        
+        if let customClass = tableViewCell.customClass {
+            className = customClass
+            
+            parameterName = customClass
+                .stringByRemovingSuffixString("Cell")
+                .stringByRemovingSuffixString("TableView")
+                .stringByAppendingString("Cell")
+                .lowercaseFirstCharacterString
+        }
+        else {
+            className = "UITableViewCell"
+            parameterName = "cell"
+        }
+    }
+    
+}
+
+extension SwiftSource {
+    
+    func appendTableViewCells(tableViewCells: [BlackboardTableViewCell]) {
+        guard !tableViewCells.isEmpty else { return }
+        
+        append("// Table View Cells")
+        append()
+        appendTableViewCellIdentifier(tableViewCells)
+        appendDequeueTableViewCell(tableViewCells)
+        append()
+    }
+    
+    func appendTableViewCellIdentifier(tableViewCells: [BlackboardTableViewCell]) {
+        guard !tableViewCells.isEmpty else { return }
+        
+        append("enum TableViewCellIdentifier: String") {
+            tableViewCells.forEach { cell in
+                append("case \(cell.name) = \"\(cell.identifier)\"")
+            }
+        }
+        append()
+    }
+    
+    func castFor(tableViewCell: BlackboardTableViewCell) -> String {
+        if tableViewCell.className == "UITableViewCell" {
+            return ""
+        }
+        return " as! \(tableViewCell.className)"
+    }
+    
+    func appendDequeueTableViewCell(tableViewCells: [BlackboardTableViewCell]) {
+        guard !tableViewCells.isEmpty else { return }
+        
+        tableViewCells.forEach { cell in
+            append("final func dequeue\(cell.name)CellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((\(cell.parameterName): \(cell.className)) -> Void) = {_ in}) -> \(cell.className)") {
+                append("let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.\(cell.name).rawValue, forIndexPath: indexPath)\(castFor(cell))")
+                append("initialize(\(cell.parameterName): tableViewCell)")
+                append("return tableViewCell")
+            }
+            append()
+        }
+    }
+    
+}
+
+// MARK: - BlackboardViewController.swift -
+
+struct BlackboardViewController {
+    
+    let className: String
+    let identifier: String?
+    let navigationControllerIdentifier: String?
+    
+    let segues: [BlackboardSegue]
+    let tableViewCells: [BlackboardTableViewCell]
+    let collectionViewCells: [BlackboardCollectionViewCell]
+    
+}
+
+extension BlackboardViewController {
+    
+    init?(viewController: StoryboardViewController, storyboard: Storyboard) {
+        guard let customClass = viewController.customClass else {
+            return nil
+        }
+        
+        className = customClass
+        identifier = viewController.storyboardIdentifier
+        navigationControllerIdentifier = storyboard.navigationControllerFor(id: viewController.id)?.storyboardIdentifier
+        
+        segues = viewController.segues
+            .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard) }
+            .sort { $0.name < $1.name }
+        
+        tableViewCells = viewController.tableViewCells
+            .flatMap { BlackboardTableViewCell(tableViewCell: $0, storyboard: storyboard) }
+            .sort { $0.name < $1.name }
+        
+        collectionViewCells = viewController.collectionViewCells
+            .flatMap { BlackboardCollectionViewCell(collectionViewCell: $0, storyboard: storyboard) }
+            .sort { $0.name < $1.name }
+    }
+    
+}
+
+extension SwiftSource {
+    
+    func appendViewControllers(viewControllers: [BlackboardViewController]) {
+        viewControllers.forEach { viewController in
+            append("extension \(viewController.className)") {
+                append()
+                appendInstantiateViewController(viewController)
+                appendInstantiateNavigationController(viewController)
+                appendSegues(viewController.segues)
+                appendTableViewCells(viewController.tableViewCells)
+                appendCollectionViewCells(viewController.collectionViewCells)
+            }
+            append()
+        }
+    }
+    
+    func appendInstantiateViewController(viewController: BlackboardViewController) {
+        guard let identifier = viewController.identifier else { return }
+        
+        append("final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((\(viewController.className)) -> Void) = {_ in}) -> \(viewController.className)") {
+            append("let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier(\"\(identifier)\") as! \(viewController.className)")
+            append("initialize(viewController)")
+            append("return viewController")
+        }
+        append()
+    }
+    
+    func appendInstantiateNavigationController(viewController: BlackboardViewController) {
+        guard let navigationControllerIdentifier = viewController.navigationControllerIdentifier else { return }
+        
+        append("final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((\(viewController.className)) -> Void) = {_ in}) -> UINavigationController") {
+            append("let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier(\"\(navigationControllerIdentifier)\") as! UINavigationController")
+            append("let viewController = navigationController.viewControllers.first as! \(viewController.className)")
+            append("initialize(viewController)")
+            append("return navigationController")
+        }
+        append()
+    }
+    
+}
+
+// MARK: - BlackboardMain.swift -
+
+class BlackboardMain {
+    
+    static func run() {
+        
+        let arguments = Process.arguments
+        let numberOfArguments = arguments.count - 1
+        
+        // Version
+        
+        if arguments.contains("--version") {
+            print("Blackboard Version 0.9.0")
+            exit(0)
+        }
+        
+        // Usage
+        
+        if numberOfArguments != 2 {
+            let name = arguments[0].lastPathComponent
+            print("usage: \(name) [--version] source_directory target_directory")
+            print("example: \(name) example/storyboards/ example/source/generated")
+            exit(1)
+        }
+        
+        // File Manager
+        
+        let fileManager = NSFileManager.defaultManager()
+        
+        // Source Directory
+        
+        let sourceDirectory = arguments[numberOfArguments - 1]
+        
+        if !fileManager.isDirectory(sourceDirectory) {
+            print("\(sourceDirectory): No such source directory")
+            exit(1)
+        }
+        
+        // Target Directory
+        
+        let targetDirectory = arguments[numberOfArguments]
+        
+        if !fileManager.isDirectory(targetDirectory) {
+            print("\(targetDirectory): No such target directory")
+            exit(1)
+        }
+        
+        // Find Storyboards
+        
+        let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)
+        
+        for storyboard in storyboards {
+            if let storyboard = BlackboardStoryboard(storyboard: storyboard) {
+                let swiftSource = SwiftSource()
+                swiftSource.appendStoryboard(storyboard)
+                let source = swiftSource.description
+                let targetUrl = NSURL(fileURLWithPath: "\(targetDirectory)/\(storyboard.extensionName)")
+                try! source.writeToURL(targetUrl, atomically: true, encoding: NSUTF8StringEncoding)
+            }
+        }
+    }
+    
+}
+
+BlackboardMain.run()
