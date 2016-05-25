@@ -70,8 +70,8 @@ extension WelcomeViewController {
         }
     }
     
-    final func performShowMenuSegue(initialize: ((MenuViewController) -> Void)? = nil) {
-        let initializeBlock = initialize == nil ? nil : InitializeBlockObject() {
+    final func performShowMenuSegue(initialize: ((MenuViewController) -> Void) = {_ in}) {
+        let initializeBlock = InitializeBlockObject() {
             let navigationController = $0 as! UINavigationController
             let viewController = navigationController.viewControllers.first as! MenuViewController
             initialize(viewController)

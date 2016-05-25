@@ -114,8 +114,8 @@ extension SwiftSource {
         guard !segues.isEmpty else { return }
         
         segues.forEach { segue in
-            append("final func perform\(segue.name)Segue(initialize: ((\(segue.viewControllerClassName)) -> Void)? = nil)") {
-                append("let initializeBlock = initialize == nil ? nil : InitializeBlockObject()") {
+            append("final func perform\(segue.name)Segue(initialize: ((\(segue.viewControllerClassName)) -> Void) = {_ in})") {
+                append("let initializeBlock = InitializeBlockObject()") {
                     if let navigationControllerClassName = segue.navigationControllerClassName {
                         append("let navigationController = $0 as! \(navigationControllerClassName)")
                         append("let viewController = navigationController.viewControllers.first as! \(segue.viewControllerClassName)")
