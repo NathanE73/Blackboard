@@ -20,9 +20,9 @@ private class InitializeBlockObject {
 
 extension TableViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((TableViewController) -> Void) = {_ in}) -> TableViewController {
+    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((tableViewController: TableViewController) -> Void) = {_ in}) -> TableViewController {
         let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("TableViewController") as! TableViewController
-        initialize(viewController)
+        initialize(tableViewController: viewController)
         return viewController
     }
     
@@ -64,9 +64,9 @@ extension TableViewController {
 
 extension ViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((ViewController) -> Void) = {_ in}) -> ViewController {
+    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((viewController: ViewController) -> Void) = {_ in}) -> ViewController {
         let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-        initialize(viewController)
+        initialize(viewController: viewController)
         return viewController
     }
     

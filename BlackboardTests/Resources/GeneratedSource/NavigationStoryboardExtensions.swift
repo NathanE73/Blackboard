@@ -20,16 +20,16 @@ private class InitializeBlockObject {
 
 extension MenuViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((MenuViewController) -> Void) = {_ in}) -> MenuViewController {
+    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((menuViewController: MenuViewController) -> Void) = {_ in}) -> MenuViewController {
         let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        initialize(viewController)
+        initialize(menuViewController: viewController)
         return viewController
     }
     
-    final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((MenuViewController) -> Void) = {_ in}) -> UINavigationController {
+    final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((menuViewController: MenuViewController) -> Void) = {_ in}) -> UINavigationController {
         let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("MenuNavigationController") as! UINavigationController
         let viewController = navigationController.viewControllers.first as! MenuViewController
-        initialize(viewController)
+        initialize(menuViewController: viewController)
         return navigationController
     }
     
@@ -45,16 +45,16 @@ extension MenuViewController {
 
 extension WelcomeViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((WelcomeViewController) -> Void) = {_ in}) -> WelcomeViewController {
+    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((welcomeViewController: WelcomeViewController) -> Void) = {_ in}) -> WelcomeViewController {
         let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("WelcomeViewController") as! WelcomeViewController
-        initialize(viewController)
+        initialize(welcomeViewController: viewController)
         return viewController
     }
     
-    final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((WelcomeViewController) -> Void) = {_ in}) -> UINavigationController {
+    final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((welcomeViewController: WelcomeViewController) -> Void) = {_ in}) -> UINavigationController {
         let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("WelcomeNavigationController") as! UINavigationController
         let viewController = navigationController.viewControllers.first as! WelcomeViewController
-        initialize(viewController)
+        initialize(welcomeViewController: viewController)
         return navigationController
     }
     
