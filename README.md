@@ -29,26 +29,41 @@ $ chmod +x blackboard
 ### UIViewController
 
 ```swift
+let viewController = WelcomeViewController.instantiateViewControllerFromStoryboard { (welcomeViewController) in
+    welcomeViewController.welcomeMessage = "Hello, World!"
+}
 ```
 
 ### UINavigationController
 
 ```swift
+let navigationController = WelcomeViewController.instantiateNavigationControllerFromStoryboard { (welcomeViewController) in
+    welcomeViewController.welcomeMessage = "Hello, World!"
+}
 ```
 
 ### UIStoryboardSegue
 
 ```swift
+performShowAccountDetailsSegue { (accountDetailsViewController) in
+    accountDetailsViewController.account = account
+}
 ```
 
 ### UITableViewCell
 
 ```swift
+let cell = dequeueAccountNameCellFrom(tableView) { (accountNameCell) in
+    accountNameCell.name = "Steve Dave"
+}
 ```
 
 ### UICollectionViewCell
 
 ```swift
+let cell = dequeueAccountNameCellFrom(collectionView) { (accountNameCell) in
+    accountNameCell.name = "Steve Dave"
+}
 ```
 
 ## Author
