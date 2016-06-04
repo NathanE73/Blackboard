@@ -24,7 +24,24 @@ $ curl https://raw.githubusercontent.com/NathanE73/Blackboard/master/bin/blackbo
 $ chmod +x blackboard
 ```
 
-## Usage
+## Usage - Command Line
+
+### Identify Version
+
+See which version of `blackboard` currently have:
+
+```bash
+$ bin/blackboard --version
+Blackboard Version 0.9.2
+```
+
+### Generating Source
+
+```bash
+$ bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated/
+```
+
+## Usage - Generated Source
 
 ### UIViewController
 
