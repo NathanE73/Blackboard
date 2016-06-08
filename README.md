@@ -46,32 +46,43 @@ $ bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated/
 ### UIViewController
 
 ```swift
-let viewController = WelcomeViewController.instantiateViewControllerFromStoryboard { (welcomeViewController) in
-    welcomeViewController.welcomeMessage = "Hello, World!"
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    
+    window?.rootViewController = WelcomeViewController.instantiateViewControllerFromStoryboard()
+    
+    window?.makeKeyAndVisible()
+    
+    return true
 }
 ```
 
 ### UINavigationController
 
 ```swift
-let navigationController = WelcomeViewController.instantiateNavigationControllerFromStoryboard { (welcomeViewController) in
-    welcomeViewController.welcomeMessage = "Hello, World!"
+let namesNavigationController = NamesViewController.instantiateNavigationControllerFromStoryboard { (namesViewController) in
+    namesViewController.names = ["Steve Dave", "John Doe"]
 }
+presentViewController(namesNavigationController, animated: true, completion: nil)
 ```
 
 ### UIStoryboardSegue
 
 ```swift
-performShowAccountDetailsSegue { (accountDetailsViewController) in
-    accountDetailsViewController.account = account
+func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    performShowNameSegue { (nameViewController) in
+        nameViewController.name = self.names[indexPath.row]
+    }
 }
 ```
 
 ### UITableViewCell
 
 ```swift
-let cell = dequeueAccountNameCellFrom(tableView) { (accountNameCell) in
-    accountNameCell.name = "Steve Dave"
+func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    return dequeueNameCellFrom(tableView, forIndexPath: indexPath) { (nameCell) in
+        nameCell.name = names[indexPath.row]
+    }
 }
 ```
 
