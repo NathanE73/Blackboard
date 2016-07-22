@@ -50,8 +50,7 @@ extension BlackboardTableViewCell {
             
             parameterName = customClass
                 .stringByRemovingSuffixString("Cell")
-                .stringByRemovingSuffixString("TableView")
-                .stringByAppendingString("Cell")
+                .stringByRemovingSuffixString("TableView") + "Cell"
                 .lowercaseFirstCharacterString
         }
         else {
@@ -64,7 +63,7 @@ extension BlackboardTableViewCell {
 
 extension SwiftSource {
     
-    func appendTableViewCells(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCells(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("// Table View Cells")
@@ -74,31 +73,31 @@ extension SwiftSource {
         append()
     }
     
-    func appendTableViewCellIdentifier(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCellIdentifier(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("enum TableViewCellIdentifier: String") {
             tableViewCells.forEach { cell in
-                append("case \(cell.name) = \"\(cell.identifier)\"")
+                append("case \(cell.name.lowercaseFirstCharacterString) = \"\(cell.identifier)\"")
             }
         }
         append()
     }
     
-    func castFor(tableViewCell: BlackboardTableViewCell) -> String {
+    func castFor(_ tableViewCell: BlackboardTableViewCell) -> String {
         if tableViewCell.className == "UITableViewCell" {
             return ""
         }
         return " as! \(tableViewCell.className)"
     }
     
-    func appendDequeueTableViewCell(tableViewCells: [BlackboardTableViewCell]) {
+    func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         tableViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)CellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((\(cell.parameterName): \(cell.className)) -> Void) = {_ in}) -> \(cell.className)") {
-                append("let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.\(cell.name).rawValue, forIndexPath: indexPath)\(castFor(cell))")
-                append("initialize(\(cell.parameterName): tableViewCell)")
+            append("final func dequeue\(cell.name)Cell(fromTableView: UITableView, forIndexPath indexPath: IndexPath, initialize:  (@noescape (\(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
+                append("let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.name.lowercaseFirstCharacterString).rawValue, for: indexPath)\(castFor(cell))")
+                append("initialize?(\(cell.parameterName): tableViewCell)")
                 append("return tableViewCell")
             }
             append()

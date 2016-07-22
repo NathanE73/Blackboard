@@ -49,7 +49,7 @@ append() {
   done
 }
 
-echo -e "#!/usr/bin/swift\n" > "$BLACKBOARD"
+echo -e "#!/usr/bin/env swift\n" > "$BLACKBOARD"
 
 cat "$SOURCE/Header.swift" >> "$BLACKBOARD"
 
@@ -60,3 +60,5 @@ append String+NSString StringExtensions NSFileManagerExtensions \
   BlackboardMain
 
 echo -e "\nBlackboardMain.run()" >> "$BLACKBOARD"
+
+chmod +x "$BLACKBOARD"

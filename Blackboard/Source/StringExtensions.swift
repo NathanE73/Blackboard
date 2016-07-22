@@ -30,10 +30,10 @@ extension String {
         guard let firstCharacter = characters.first else {
             return self
         }
-        return String(firstCharacter).lowercaseString + String(characters.dropFirst(1))
+        return String(firstCharacter).lowercased() + String(characters.dropFirst(1))
     }
     
-    func stringByRemovingSuffixString(suffix: String) -> String {
+    func stringByRemovingSuffixString(_ suffix: String) -> String {
         if hasSuffix(suffix) {
             return String(characters.dropLast(suffix.characters.count))
         }
@@ -41,7 +41,7 @@ extension String {
     }
     
     var stringByTrimmingWhitespaceCharacters: String {
-        return stringByTrimmingCharactersInSet(.whitespaceCharacterSet())
+        return trimmingCharacters(in: .whitespaces)
     }
     
 }

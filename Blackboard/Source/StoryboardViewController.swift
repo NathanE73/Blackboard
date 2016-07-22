@@ -26,39 +26,39 @@ import Foundation
 
 enum StoryboardViewControllerType: String {
     
-    case CollectionViewController = "collectionViewController"
-    case NavigationController = "navigationController"
-    case PageViewController = "pageViewController"
-    case SplitViewController = "splitViewController"
-    case TabBarController = "tabBarController"
-    case TableViewController = "tableViewController"
-    case ViewController = "viewController"
+    case collectionViewController = "collectionViewController"
+    case navigationController = "navigationController"
+    case pageViewController = "pageViewController"
+    case splitViewController = "splitViewController"
+    case tabBarController = "tabBarController"
+    case tableViewController = "tableViewController"
+    case viewController = "viewController"
     
     static let entries: [StoryboardViewControllerType] = [
-        .CollectionViewController,
-        .NavigationController,
-        .PageViewController,
-        .SplitViewController,
-        .TabBarController,
-        .TableViewController,
-        .ViewController
+        .collectionViewController,
+        .navigationController,
+        .pageViewController,
+        .splitViewController,
+        .tabBarController,
+        .tableViewController,
+        .viewController
     ]
     
     var className: String {
         switch self {
-        case CollectionViewController:
+        case collectionViewController:
             return "UICollectionViewController"
-        case NavigationController:
+        case navigationController:
             return "UINavigationController"
-        case PageViewController:
+        case pageViewController:
             return "UIPageViewController"
-        case SplitViewController:
+        case splitViewController:
             return "UISplitViewController"
-        case TabBarController:
+        case tabBarController:
             return "UITabBarController"
-        case TableViewController:
+        case tableViewController:
             return "UITableViewController"
-        case ViewController:
+        case viewController:
             return "UIViewController"
         }
     }
@@ -81,25 +81,25 @@ struct StoryboardViewController {
 
 extension StoryboardViewController {
     
-    func segueWith(id id: String) -> StoryboardSegue? {
+    func segue(withID id: String) -> StoryboardSegue? {
         return segues
             .filter { $0.id == id }
             .first
     }
     
-    func segueWith(kind kind: StoryboardSegueKind) -> StoryboardSegue? {
+    func segue(withKind kind: StoryboardSegueKind) -> StoryboardSegue? {
         return segues
             .filter { $0.kind == kind }
             .first
     }
     
-    func tableViewCellWith(id id: String) -> StoryboardTableViewCell? {
+    func tableViewCell(withID id: String) -> StoryboardTableViewCell? {
         return tableViewCells
             .filter { $0.id == id }
             .first
     }
     
-    func collectionViewCellWith(id id: String) -> StoryboardCollectionViewCell? {
+    func collectionViewCell(withID id: String) -> StoryboardCollectionViewCell? {
         return collectionViewCells
             .filter { $0.id == id }
             .first
@@ -117,19 +117,19 @@ extension StoryboardViewController: CustomStringConvertible {
 
 extension StoryboardViewController {
     
-    init?(node: NSXMLNode) {
+    init?(node: XMLNode) {
         let xpath = StoryboardViewControllerType.entries
             .map { ".//\($0.rawValue)" }
-            .joinWithSeparator(" | ")
+            .joined(separator: " | ")
         
-        guard let nodes = try? node.nodesForXPath(xpath),
-            element = nodes.first as? NSXMLElement,
-            elementName = element.name
-            where nodes.count == 1 else {
-                return nil
+        guard let nodes = try? node.nodes(forXPath: xpath),
+              let element = nodes.first as? XMLElement,
+              let elementName = element.name,
+              nodes.count == 1 else {
+            return nil
         }
         
-        guard let id = element.attributeForName("id")?.stringValue else {
+        guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
         
@@ -137,21 +137,21 @@ extension StoryboardViewController {
             return nil
         }
         
-        let storyboardIdentifier = element.attributeForName("storyboardIdentifier")?.stringValue
+        let storyboardIdentifier = element.attribute(forName: "storyboardIdentifier")?.stringValue
         
-        let customClass = element.attributeForName("customClass")?.stringValue
+        let customClass = element.attribute(forName: "customClass")?.stringValue
         
-        guard let segueNodes = try? element.nodesForXPath(".//segue") else {
+        guard let segueNodes = try? element.nodes(forXPath: ".//segue") else {
             return nil
         }
         let segues = segueNodes.flatMap(StoryboardSegue.init)
         
-        guard let tableViewCellNodes = try? element.nodesForXPath(".//tableViewCell") else {
+        guard let tableViewCellNodes = try? element.nodes(forXPath: ".//tableViewCell") else {
             return nil
         }
         let tableViewCells = tableViewCellNodes.flatMap(StoryboardTableViewCell.init)
         
-        guard let collectionViewCellNodes = try? element.nodesForXPath(".//collectionViewCell") else {
+        guard let collectionViewCellNodes = try? element.nodes(forXPath: ".//collectionViewCell") else {
             return nil
         }
         let collectionViewCells = collectionViewCellNodes.flatMap(StoryboardCollectionViewCell.init)

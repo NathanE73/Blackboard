@@ -42,19 +42,19 @@ extension StoryboardTableViewCell: CustomStringConvertible {
 
 extension StoryboardTableViewCell {
     
-    init?(node: NSXMLNode) {
-        guard let element = node as? NSXMLElement
-            where element.name == "tableViewCell" else {
+    init?(node: XMLNode) {
+        guard let element = node as? XMLElement,
+              element.name == "tableViewCell" else {
                 return nil
         }
         
-        guard let id = element.attributeForName("id")?.stringValue else {
+        guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
         self.id = id
         
-        reuseIdentifier = element.attributeForName("reuseIdentifier")?.stringValue
-        customClass = element.attributeForName("customClass")?.stringValue
+        reuseIdentifier = element.attribute(forName: "reuseIdentifier")?.stringValue
+        customClass = element.attribute(forName: "customClass")?.stringValue
     }
     
 }

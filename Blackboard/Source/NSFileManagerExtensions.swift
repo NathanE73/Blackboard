@@ -24,19 +24,19 @@
 
 import Foundation
 
-extension NSFileManager {
+extension FileManager {
     
-    func isDirectory(path: String) -> Bool {
+    func isDirectory(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExistsAtPath(path, isDirectory: &isDirectory) && isDirectory {
+        if fileExists(atPath: path, isDirectory: &isDirectory) && isDirectory {
             return true
         }
         return false
     }
     
-    func isFile(path: String) -> Bool {
+    func isFile(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExistsAtPath(path, isDirectory: &isDirectory) && !isDirectory {
+        if fileExists(atPath: path, isDirectory: &isDirectory) && !isDirectory {
             return true
         }
         return false
