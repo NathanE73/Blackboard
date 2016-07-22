@@ -119,10 +119,10 @@ extension SwiftSource {
                     if let navigationControllerClassName = segue.navigationControllerClassName {
                         append("let navigationController = $0 as! \(navigationControllerClassName)")
                         append("let viewController = navigationController.viewControllers.first as! \(segue.viewControllerClassName)")
-                        append("initialize?(viewController)")
+                        append("initialize?(\(segue.viewControllerClassName.lowercaseFirstCharacterString): viewController)")
                     }
                     else {
-                        append("initialize?($0 as! \(segue.viewControllerClassName))")
+                        append("initialize?(\(segue.viewControllerClassName.lowercaseFirstCharacterString): $0 as! \(segue.viewControllerClassName))")
                     }
                 }
                 append("performSegue(withIdentifier: SegueIdentifier.\(segue.name.lowercaseFirstCharacterString).rawValue, sender: initializeBlock)")
