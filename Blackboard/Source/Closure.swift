@@ -24,4 +24,4 @@
 
 import Foundation
 
-typealias Closure = (@noescape () -> Void)
+typealias Closure = () -> Void

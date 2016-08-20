@@ -97,7 +97,7 @@ extension FileManager {
     
     func isDirectory(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExists(atPath: path, isDirectory: &isDirectory) && isDirectory {
+        if fileExists(atPath: path, isDirectory: &isDirectory) && isDirectory.boolValue {
             return true
         }
         return false
@@ -105,7 +105,7 @@ extension FileManager {
     
     func isFile(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExists(atPath: path, isDirectory: &isDirectory) && !isDirectory {
+        if fileExists(atPath: path, isDirectory: &isDirectory) && !isDirectory.boolValue {
             return true
         }
         return false
@@ -115,7 +115,7 @@ extension FileManager {
 
 // MARK: - Closure.swift -
 
-typealias Closure = (@noescape () -> Void)
+typealias Closure = () -> Void
 
 // MARK: - Naming.swift -
 
@@ -190,7 +190,7 @@ class SwiftSource {
         lines.append((indentLevel, line))
     }
     
-    func append(_ line: String, block: Closure) {
+    func append(_ line: String, block: () -> Void) {
         append("\(line) {")
         indent()
         block()
@@ -291,10 +291,7 @@ extension Storyboard {
             return nil
         }
         
-        guard let name = try! url.deletingPathExtension().lastPathComponent else {
-            return nil
-        }
-        self.name = name
+        self.name = url.deletingPathExtension().lastPathComponent
         
         guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
@@ -318,9 +315,7 @@ extension Storyboard {
                 files.append(path.stringByAppendingPathComponent(file))
             }
         }
-        
-        files.sort(isOrderedBefore: <)
-        
+        files.sort(by: <)
         return files.flatMap { Storyboard(path: $0) }
     }
     
@@ -482,19 +477,19 @@ enum StoryboardViewControllerType: String {
     
     var className: String {
         switch self {
-        case collectionViewController:
+        case .collectionViewController:
             return "UICollectionViewController"
-        case navigationController:
+        case .navigationController:
             return "UINavigationController"
-        case pageViewController:
+        case .pageViewController:
             return "UIPageViewController"
-        case splitViewController:
+        case .splitViewController:
             return "UISplitViewController"
-        case tabBarController:
+        case .tabBarController:
             return "UITabBarController"
-        case tableViewController:
+        case .tableViewController:
             return "UITableViewController"
-        case viewController:
+        case .viewController:
             return "UIViewController"
         }
     }
@@ -659,7 +654,7 @@ extension SwiftSource {
         
         append("enum CollectionViewCellIdentifier: String") {
             collectionViewCells.forEach { cell in
-                append("case \(cell.name.lowercaseFirstCharacterString) = \"\(cell.identifier)\"")
+                self.append("case \(cell.name.lowercaseFirstCharacterString) = \"\(cell.identifier)\"")
             }
         }
         append()
@@ -916,8 +911,6 @@ extension SwiftSource {
     }
     
     func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
-        guard !tableViewCells.isEmpty else { return }
-        
         tableViewCells.forEach { cell in
             append("final func dequeue\(cell.name)Cell(fromTableView: UITableView, forIndexPath indexPath: IndexPath, initialize:  (@noescape (\(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
                 append("let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.name.lowercaseFirstCharacterString).rawValue, for: indexPath)\(castFor(cell))")
@@ -1020,7 +1013,7 @@ class BlackboardMain {
     
     static func run() {
         
-        let arguments = Process.arguments
+        let arguments = CommandLine.arguments
         let numberOfArguments = arguments.count - 1
         
         // Version

@@ -28,7 +28,7 @@ class BlackboardMain {
     
     static func run() {
         
-        let arguments = Process.arguments
+        let arguments = CommandLine.arguments
         let numberOfArguments = arguments.count - 1
         
         // Version

@@ -72,10 +72,7 @@ extension Storyboard {
             return nil
         }
         
-        guard let name = try! url.deletingPathExtension().lastPathComponent else {
-            return nil
-        }
-        self.name = name
+        self.name = url.deletingPathExtension().lastPathComponent
         
         guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
@@ -99,9 +96,7 @@ extension Storyboard {
                 files.append(path.stringByAppendingPathComponent(file))
             }
         }
-        
-        files.sort(isOrderedBefore: <)
-        
+        files.sort(by: <)
         return files.flatMap { Storyboard(path: $0) }
     }
     

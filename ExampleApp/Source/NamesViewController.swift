@@ -38,14 +38,8 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        super.prepare(for: segue, sender: sender)
-        
-        handleSegue(segue, sender: sender)
-    }
-    
     @IBAction func dismiss() {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     // MARK: UITableViewDataSource
@@ -55,16 +49,16 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return dequeueNameCellFrom(tableView, forIndexPath: indexPath) { (nameCell) in
-            nameCell.name = names[(indexPath as NSIndexPath).row]
+        return dequeueNameCellFrom(tableView, forIndexPath: indexPath) { nameCell in
+            nameCell.name = self.names[indexPath.row]
         }
     }
     
     // MARK: UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performShowNameSegue { (nameViewController) in
-            nameViewController.name = self.names[(indexPath as NSIndexPath).row]
+        performShowNameSegue { nameViewController in
+            nameViewController.name = self.names[indexPath.row]
         }
     }
     

@@ -26,7 +26,7 @@ import XCTest
 
 @testable import Blackboard
 
-class NSFileManagerExtensions: XCTestCase {
+class FileManagerExtensions: XCTestCase {
     
     let fileManager = FileManager.default
     

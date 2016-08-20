@@ -92,8 +92,6 @@ extension SwiftSource {
     }
     
     func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
-        guard !tableViewCells.isEmpty else { return }
-        
         tableViewCells.forEach { cell in
             append("final func dequeue\(cell.name)Cell(fromTableView: UITableView, forIndexPath indexPath: IndexPath, initialize:  (@noescape (\(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
                 append("let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.name.lowercaseFirstCharacterString).rawValue, for: indexPath)\(castFor(cell))")

@@ -46,19 +46,19 @@ enum StoryboardViewControllerType: String {
     
     var className: String {
         switch self {
-        case collectionViewController:
+        case .collectionViewController:
             return "UICollectionViewController"
-        case navigationController:
+        case .navigationController:
             return "UINavigationController"
-        case pageViewController:
+        case .pageViewController:
             return "UIPageViewController"
-        case splitViewController:
+        case .splitViewController:
             return "UISplitViewController"
-        case tabBarController:
+        case .tabBarController:
             return "UITabBarController"
-        case tableViewController:
+        case .tableViewController:
             return "UITableViewController"
-        case viewController:
+        case .viewController:
             return "UIViewController"
         }
     }
