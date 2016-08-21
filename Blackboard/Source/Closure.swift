@@ -24,4 +24,4 @@
 
 import Foundation
 
-typealias Closure = () -> ()
+typealias Closure = () -> Void

@@ -6,32 +6,21 @@
 
 import UIKit
 
-private let sharedStoryboardInstance = UIStoryboard(name: "Main", bundle: nil)
-
-private class InitializeBlockObject {
-    
-    let block: (UIViewController -> Void)
-    
-    init(block: (UIViewController -> Void)) {
-        self.block = block
-    }
-    
-}
+private let mainStoryboard = Storyboards.main.storyboard
 
 extension WelcomeViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((welcomeViewController: WelcomeViewController) -> Void) = {_ in}) -> WelcomeViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("WelcomeViewController") as! WelcomeViewController
-        initialize(welcomeViewController: viewController)
+    final class func instantiateFromStoryboard(withInitializer initializer: ((_ welcomeViewController: WelcomeViewController) -> Void)? = nil) -> WelcomeViewController {
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+        initializer?(viewController)
+        
         return viewController
     }
     
     // Segues
     
-    func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destinationViewController)
-        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        handleSegue(segue, sender: sender)
     }
     
 }

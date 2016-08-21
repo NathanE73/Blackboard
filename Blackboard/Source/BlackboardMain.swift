@@ -28,7 +28,7 @@ class BlackboardMain {
     
     static func run() {
         
-        let arguments = Process.arguments
+        let arguments = CommandLine.arguments
         let numberOfArguments = arguments.count - 1
         
         // Version
@@ -49,7 +49,7 @@ class BlackboardMain {
         
         // File Manager
         
-        let fileManager = NSFileManager.defaultManager()
+        let fileManager = FileManager.default
         
         // Source Directory
         
@@ -78,8 +78,8 @@ class BlackboardMain {
                 let swiftSource = SwiftSource()
                 swiftSource.appendStoryboard(storyboard)
                 let source = swiftSource.description
-                let targetUrl = NSURL(fileURLWithPath: "\(targetDirectory)/\(storyboard.extensionName)")
-                try! source.writeToURL(targetUrl, atomically: true, encoding: NSUTF8StringEncoding)
+                let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(storyboard.extensionName)")
+                try! source.write(to: targetUrl, atomically: true, encoding: String.Encoding.utf8)
             }
         }
     }

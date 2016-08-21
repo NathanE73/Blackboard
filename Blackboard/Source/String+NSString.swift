@@ -33,12 +33,12 @@ extension String {
     
     // public var stringByDeletingLastPathComponent: String { get }
     public var stringByDeletingLastPathComponent: String {
-        return (self as NSString).stringByDeletingLastPathComponent
+        return (self as NSString).deletingLastPathComponent
     }
     
     // public func stringByAppendingPathComponent(str: String) -> String
-    public func stringByAppendingPathComponent(str: String) -> String {
-        return (self as NSString).stringByAppendingPathComponent(str)
+    public func stringByAppendingPathComponent(_ str: String) -> String {
+        return (self as NSString).appendingPathComponent(str)
     }
     
     // public var pathExtension: String { get }
@@ -48,17 +48,17 @@ extension String {
     
     // public var stringByDeletingPathExtension: String { get }
     public var stringByDeletingPathExtension: String {
-        return (self as NSString).stringByDeletingPathExtension
+        return (self as NSString).deletingPathExtension
     }
     
     // public func stringByAppendingPathExtension(str: String) -> String?
-    public func stringByAppendingPathExtension(str: String) -> String? {
-        return (self as NSString).stringByAppendingPathExtension(str)
+    public func stringByAppendingPathExtension(_ str: String) -> String? {
+        return (self as NSString).appendingPathExtension(str)
     }
     
     // public var stringByExpandingTildeInPath: String { get }
     public var stringByExpandingTildeInPath: String {
-        return (self as NSString).stringByExpandingTildeInPath
+        return (self as NSString).expandingTildeInPath
     }
     
 }

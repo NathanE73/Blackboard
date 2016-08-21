@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3132B53A1D67DC5100EF9457 /* BlackboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132B5391D67DC5100EF9457 /* BlackboardSupport.swift */; };
 		435E2AF71D01F600008E1170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E2AF61D01F600008E1170 /* AppDelegate.swift */; };
 		435E2AFC1D01F600008E1170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435E2AFA1D01F600008E1170 /* Main.storyboard */; };
 		435E2AFE1D01F600008E1170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435E2AFD1D01F600008E1170 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3132B5391D67DC5100EF9457 /* BlackboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardSupport.swift; sourceTree = "<group>"; };
 		435E2AF31D01F600008E1170 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435E2AF61D01F600008E1170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435E2AFB1D01F600008E1170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				43C2B19B1D01F86A001B08CA /* MainStoryboardExtensions.swift */,
 				437174FB1D0717FF00B9AFCB /* TableStoryboardExtensions.swift */,
+				3132B5391D67DC5100EF9457 /* BlackboardSupport.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -133,11 +136,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Nathan E. Walczak";
 				TargetAttributes = {
 					435E2AF21D01F600008E1170 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -182,6 +186,7 @@
 				437174FC1D0717FF00B9AFCB /* TableStoryboardExtensions.swift in Sources */,
 				437174FE1D071EF500B9AFCB /* NameViewController.swift in Sources */,
 				43C2B19C1D01F86A001B08CA /* MainStoryboardExtensions.swift in Sources */,
+				3132B53A1D67DC5100EF9457 /* BlackboardSupport.swift in Sources */,
 				437174F81D0716B100B9AFCB /* NameTableViewCell.swift in Sources */,
 				435E2AF71D01F600008E1170 /* AppDelegate.swift in Sources */,
 				437174FA1D07179000B9AFCB /* NamesViewController.swift in Sources */,
@@ -232,8 +237,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -278,8 +285,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -298,6 +307,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -311,6 +321,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -322,6 +333,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -30,40 +30,34 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     var names: [String] = []
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         if let indexPath = tableView.indexPathForSelectedRow {
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        super.prepareForSegue(segue, sender: sender)
-        
-        handleSegue(segue, sender: sender)
-    }
-    
     @IBAction func dismiss() {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     // MARK: UITableViewDataSource
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return dequeueNameCellFrom(tableView, forIndexPath: indexPath) { (nameCell) in
-            nameCell.name = names[indexPath.row]
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return dequeueNameCellFrom(tableView, forIndexPath: indexPath) { nameCell in
+            nameCell.name = self.names[indexPath.row]
         }
     }
     
     // MARK: UITableViewDelegate
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performShowNameSegue { (nameViewController) in
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performShowNameSegue { nameViewController in
             nameViewController.name = self.names[indexPath.row]
         }
     }

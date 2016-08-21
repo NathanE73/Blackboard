@@ -26,11 +26,11 @@ import Foundation
 
 enum StoryboardSegueKind: String {
     
-    case Embed = "embed"
-    case Presentation = "presentation"
-    case Relationship = "relationship"
-    case Show = "show"
-    case Unwind = "unwind"
+    case embed = "embed"
+    case presentation = "presentation"
+    case relationship = "relationship"
+    case show = "show"
+    case unwind = "unwind"
     
 }
 
@@ -54,25 +54,25 @@ extension StoryboardSegue: CustomStringConvertible {
 
 extension StoryboardSegue {
     
-    init?(node: NSXMLNode) {
-        guard let element = node as? NSXMLElement where element.name == "segue" else {
+    init?(node: XMLNode) {
+        guard let element = node as? XMLElement, element.name == "segue" else {
             return nil
         }
         
-        guard let id = element.attributeForName("id")?.stringValue else {
+        guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
         self.id = id
         
-        guard let kindAttribute = element.attributeForName("kind")?.stringValue,
-            kind = StoryboardSegueKind(rawValue: kindAttribute) else {
+        guard let kindAttribute = element.attribute(forName: "kind")?.stringValue,
+              let kind = StoryboardSegueKind(rawValue: kindAttribute) else {
                 return nil
         }
         self.kind = kind
         
-        identifier = element.attributeForName("identifier")?.stringValue
+        identifier = element.attribute(forName: "identifier")?.stringValue
         
-        guard let destination = element.attributeForName("destination")?.stringValue else {
+        guard let destination = element.attribute(forName: "destination")?.stringValue else {
             return nil
         }
         self.destination = destination

@@ -34,15 +34,15 @@ struct Storyboard {
 
 extension Storyboard {
     
-    func viewControllerWith(id id: String) -> StoryboardViewController? {
+    func viewControllerWith(id: String) -> StoryboardViewController? {
         return viewControllers
             .filter { $0.id == id }
             .first
     }
     
-    func navigationControllerFor(id id: String) -> StoryboardViewController? {
+    func navigationControllerFor(id: String) -> StoryboardViewController? {
         return viewControllers
-            .filter { $0.type == .NavigationController }
+            .filter { $0.type == .navigationController }
             .filter { viewController in
                 return viewController.segues
                     .filter { $0.destination == id}
@@ -63,45 +63,40 @@ extension Storyboard: CustomStringConvertible {
 
 extension Storyboard {
     
-    init?(url: NSURL) {
-        guard let xmlDocument = try? NSXMLDocument(contentsOfURL: url, options: 0) else {
+    init?(url: URL) {
+        guard let xmlDocument = try? XMLDocument(contentsOf: url, options: 0) else {
             return nil
         }
         
-        guard xmlDocument.rootElement()?.attributeForName("launchScreen")?.stringValue != "YES" else {
+        guard xmlDocument.rootElement()?.attribute(forName: "launchScreen")?.stringValue != "YES" else {
             return nil
         }
         
-        guard let name = url.URLByDeletingPathExtension?.lastPathComponent else {
-            return nil
-        }
-        self.name = name
+        self.name = url.deletingPathExtension().lastPathComponent
         
-        guard let sceneNodes = try? xmlDocument.nodesForXPath("//scene") else {
+        guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
         }
         viewControllers = sceneNodes.flatMap(StoryboardViewController.init)
     }
     
     init?(path: String) {
-        let url = NSURL(fileURLWithPath: path, isDirectory: false)
+        let url = URL(fileURLWithPath: path, isDirectory: false)
         self.init(url: url)
     }
     
-    static func storyboardsAt(path path: String) -> [Storyboard] {
+    static func storyboardsAt(path: String) -> [Storyboard] {
         var files: [String] = []
         
-        let fileManager = NSFileManager.defaultManager()
+        let fileManager = FileManager.default
         
-        let enumerator = fileManager.enumeratorAtPath(path)
+        let enumerator = fileManager.enumerator(atPath: path)
         while let file = enumerator?.nextObject() as? String {
             if file.pathExtension == "storyboard" {
                 files.append(path.stringByAppendingPathComponent(file))
             }
         }
-        
-        files.sortInPlace(<)
-        
+        files.sort(by: <)
         return files.flatMap { Storyboard(path: $0) }
     }
     

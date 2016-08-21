@@ -28,7 +28,7 @@ class SwiftSource {
     
     private var lines: [(indentLevel: Int, line: String)] = []
     
-    func append(line: String = "") {
+    func append(_ line: String = "") {
         if line == "" && line == lines.last?.line {
             return // don't allow multiple blank lines
         }
@@ -36,7 +36,7 @@ class SwiftSource {
         lines.append((indentLevel, line))
     }
     
-    func append(line: String, @noescape block: Closure) {
+    func append(_ line: String, block: () -> Void) {
         append("\(line) {")
         indent()
         block()
@@ -55,14 +55,14 @@ class SwiftSource {
                 indentLevel = entry.indentLevel
                 indent = ""
                 for _ in 0 ..< (indentLevel) {
-                    indent.appendContentsOf("    ")
+                    indent.append("    ")
                 }
             }
             
             source.append("\(indent)\(entry.line)")
         }
         
-        return source.joinWithSeparator("\n")
+        return source.joined(separator: "\n")
     }
     
     // MARK: Indent Level

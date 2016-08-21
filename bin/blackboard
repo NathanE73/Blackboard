@@ -1,4 +1,4 @@
-#!/usr/bin/swift
+#!/usr/bin/env swift
 
 //
 // Copyright (c) 2016 Nathan E. Walczak
@@ -37,12 +37,12 @@ extension String {
     
     // public var stringByDeletingLastPathComponent: String { get }
     public var stringByDeletingLastPathComponent: String {
-        return (self as NSString).stringByDeletingLastPathComponent
+        return (self as NSString).deletingLastPathComponent
     }
     
     // public func stringByAppendingPathComponent(str: String) -> String
-    public func stringByAppendingPathComponent(str: String) -> String {
-        return (self as NSString).stringByAppendingPathComponent(str)
+    public func stringByAppendingPathComponent(_ str: String) -> String {
+        return (self as NSString).appendingPathComponent(str)
     }
     
     // public var pathExtension: String { get }
@@ -52,17 +52,17 @@ extension String {
     
     // public var stringByDeletingPathExtension: String { get }
     public var stringByDeletingPathExtension: String {
-        return (self as NSString).stringByDeletingPathExtension
+        return (self as NSString).deletingPathExtension
     }
     
     // public func stringByAppendingPathExtension(str: String) -> String?
-    public func stringByAppendingPathExtension(str: String) -> String? {
-        return (self as NSString).stringByAppendingPathExtension(str)
+    public func stringByAppendingPathExtension(_ str: String) -> String? {
+        return (self as NSString).appendingPathExtension(str)
     }
     
     // public var stringByExpandingTildeInPath: String { get }
     public var stringByExpandingTildeInPath: String {
-        return (self as NSString).stringByExpandingTildeInPath
+        return (self as NSString).expandingTildeInPath
     }
     
 }
@@ -75,10 +75,10 @@ extension String {
         guard let firstCharacter = characters.first else {
             return self
         }
-        return String(firstCharacter).lowercaseString + String(characters.dropFirst(1))
+        return String(firstCharacter).lowercased() + String(characters.dropFirst(1))
     }
     
-    func stringByRemovingSuffixString(suffix: String) -> String {
+    func stringByRemovingSuffixString(_ suffix: String) -> String {
         if hasSuffix(suffix) {
             return String(characters.dropLast(suffix.characters.count))
         }
@@ -86,26 +86,26 @@ extension String {
     }
     
     var stringByTrimmingWhitespaceCharacters: String {
-        return stringByTrimmingCharactersInSet(.whitespaceCharacterSet())
+        return trimmingCharacters(in: .whitespaces)
     }
     
 }
 
 // MARK: - NSFileManagerExtensions.swift -
 
-extension NSFileManager {
+extension FileManager {
     
-    func isDirectory(path: String) -> Bool {
+    func isDirectory(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExistsAtPath(path, isDirectory: &isDirectory) && isDirectory {
+        if fileExists(atPath: path, isDirectory: &isDirectory) && isDirectory.boolValue {
             return true
         }
         return false
     }
     
-    func isFile(path: String) -> Bool {
+    func isFile(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExistsAtPath(path, isDirectory: &isDirectory) && !isDirectory {
+        if fileExists(atPath: path, isDirectory: &isDirectory) && !isDirectory.boolValue {
             return true
         }
         return false
@@ -115,18 +115,18 @@ extension NSFileManager {
 
 // MARK: - Closure.swift -
 
-typealias Closure = () -> ()
+typealias Closure = () -> Void
 
 // MARK: - Naming.swift -
 
-func memberNameFromIdentifier(identifier: String, namespace: String? = nil) -> String {
+func memberNameFromIdentifier(_ identifier: String, namespace: String? = nil) -> String {
     if let namespace = namespace {
         return namespace + nameFromIdentifier(identifier)
     }
     return nameFromIdentifier(identifier)
 }
 
-func methodNameFromIdentifier(identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
+func methodNameFromIdentifier(_ identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
     let name: String
     if let namespace = namespace {
         name = namespace + nameFromIdentifier(identifier)
@@ -151,7 +151,7 @@ func methodNameFromIdentifier(identifier: String, namespace: String? = nil, suff
     return methodName
 }
 
-func nameFromIdentifier(identifier: String) -> String {
+func nameFromIdentifier(_ identifier: String) -> String {
     var name = ""
     
     var shouldUppercaseNextCharacter = true
@@ -165,7 +165,7 @@ func nameFromIdentifier(identifier: String) -> String {
         
         if shouldUppercaseNextCharacter {
             shouldUppercaseNextCharacter = false
-            let uppercaseCharacter = String(character).uppercaseString
+            let uppercaseCharacter = String(character).uppercased()
             name += uppercaseCharacter
             continue
         }
@@ -182,7 +182,7 @@ class SwiftSource {
     
     private var lines: [(indentLevel: Int, line: String)] = []
     
-    func append(line: String = "") {
+    func append(_ line: String = "") {
         if line == "" && line == lines.last?.line {
             return // don't allow multiple blank lines
         }
@@ -190,7 +190,7 @@ class SwiftSource {
         lines.append((indentLevel, line))
     }
     
-    func append(line: String, @noescape block: Closure) {
+    func append(_ line: String, block: () -> Void) {
         append("\(line) {")
         indent()
         block()
@@ -209,14 +209,14 @@ class SwiftSource {
                 indentLevel = entry.indentLevel
                 indent = ""
                 for _ in 0 ..< (indentLevel) {
-                    indent.appendContentsOf("    ")
+                    indent.append("    ")
                 }
             }
             
             source.append("\(indent)\(entry.line)")
         }
         
-        return source.joinWithSeparator("\n")
+        return source.joined(separator: "\n")
     }
     
     // MARK: Indent Level
@@ -253,15 +253,15 @@ struct Storyboard {
 
 extension Storyboard {
     
-    func viewControllerWith(id id: String) -> StoryboardViewController? {
+    func viewControllerWith(id: String) -> StoryboardViewController? {
         return viewControllers
             .filter { $0.id == id }
             .first
     }
     
-    func navigationControllerFor(id id: String) -> StoryboardViewController? {
+    func navigationControllerFor(id: String) -> StoryboardViewController? {
         return viewControllers
-            .filter { $0.type == .NavigationController }
+            .filter { $0.type == .navigationController }
             .filter { viewController in
                 return viewController.segues
                     .filter { $0.destination == id}
@@ -282,45 +282,40 @@ extension Storyboard: CustomStringConvertible {
 
 extension Storyboard {
     
-    init?(url: NSURL) {
-        guard let xmlDocument = try? NSXMLDocument(contentsOfURL: url, options: 0) else {
+    init?(url: URL) {
+        guard let xmlDocument = try? XMLDocument(contentsOf: url, options: 0) else {
             return nil
         }
         
-        guard xmlDocument.rootElement()?.attributeForName("launchScreen")?.stringValue != "YES" else {
+        guard xmlDocument.rootElement()?.attribute(forName: "launchScreen")?.stringValue != "YES" else {
             return nil
         }
         
-        guard let name = url.URLByDeletingPathExtension?.lastPathComponent else {
-            return nil
-        }
-        self.name = name
+        self.name = url.deletingPathExtension().lastPathComponent
         
-        guard let sceneNodes = try? xmlDocument.nodesForXPath("//scene") else {
+        guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
         }
         viewControllers = sceneNodes.flatMap(StoryboardViewController.init)
     }
     
     init?(path: String) {
-        let url = NSURL(fileURLWithPath: path, isDirectory: false)
+        let url = URL(fileURLWithPath: path, isDirectory: false)
         self.init(url: url)
     }
     
-    static func storyboardsAt(path path: String) -> [Storyboard] {
+    static func storyboardsAt(path: String) -> [Storyboard] {
         var files: [String] = []
         
-        let fileManager = NSFileManager.defaultManager()
+        let fileManager = FileManager.default
         
-        let enumerator = fileManager.enumeratorAtPath(path)
+        let enumerator = fileManager.enumerator(atPath: path)
         while let file = enumerator?.nextObject() as? String {
             if file.pathExtension == "storyboard" {
                 files.append(path.stringByAppendingPathComponent(file))
             }
         }
-        
-        files.sortInPlace(<)
-        
+        files.sort(by: <)
         return files.flatMap { Storyboard(path: $0) }
     }
     
@@ -346,19 +341,19 @@ extension StoryboardCollectionViewCell: CustomStringConvertible {
 
 extension StoryboardCollectionViewCell {
     
-    init?(node: NSXMLNode) {
-        guard let element = node as? NSXMLElement
-            where element.name == "collectionViewCell" else {
+    init?(node: XMLNode) {
+        guard let element = node as? XMLElement,
+              element.name == "collectionViewCell" else {
                 return nil
         }
         
-        guard let id = element.attributeForName("id")?.stringValue else {
+        guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
         self.id = id
         
-        reuseIdentifier = element.attributeForName("reuseIdentifier")?.stringValue
-        customClass = element.attributeForName("customClass")?.stringValue
+        reuseIdentifier = element.attribute(forName: "reuseIdentifier")?.stringValue
+        customClass = element.attribute(forName: "customClass")?.stringValue
     }
     
 }
@@ -367,11 +362,11 @@ extension StoryboardCollectionViewCell {
 
 enum StoryboardSegueKind: String {
     
-    case Embed = "embed"
-    case Presentation = "presentation"
-    case Relationship = "relationship"
-    case Show = "show"
-    case Unwind = "unwind"
+    case embed = "embed"
+    case presentation = "presentation"
+    case relationship = "relationship"
+    case show = "show"
+    case unwind = "unwind"
     
 }
 
@@ -395,25 +390,25 @@ extension StoryboardSegue: CustomStringConvertible {
 
 extension StoryboardSegue {
     
-    init?(node: NSXMLNode) {
-        guard let element = node as? NSXMLElement where element.name == "segue" else {
+    init?(node: XMLNode) {
+        guard let element = node as? XMLElement, element.name == "segue" else {
             return nil
         }
         
-        guard let id = element.attributeForName("id")?.stringValue else {
+        guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
         self.id = id
         
-        guard let kindAttribute = element.attributeForName("kind")?.stringValue,
-            kind = StoryboardSegueKind(rawValue: kindAttribute) else {
+        guard let kindAttribute = element.attribute(forName: "kind")?.stringValue,
+              let kind = StoryboardSegueKind(rawValue: kindAttribute) else {
                 return nil
         }
         self.kind = kind
         
-        identifier = element.attributeForName("identifier")?.stringValue
+        identifier = element.attribute(forName: "identifier")?.stringValue
         
-        guard let destination = element.attributeForName("destination")?.stringValue else {
+        guard let destination = element.attribute(forName: "destination")?.stringValue else {
             return nil
         }
         self.destination = destination
@@ -441,19 +436,19 @@ extension StoryboardTableViewCell: CustomStringConvertible {
 
 extension StoryboardTableViewCell {
     
-    init?(node: NSXMLNode) {
-        guard let element = node as? NSXMLElement
-            where element.name == "tableViewCell" else {
+    init?(node: XMLNode) {
+        guard let element = node as? XMLElement,
+              element.name == "tableViewCell" else {
                 return nil
         }
         
-        guard let id = element.attributeForName("id")?.stringValue else {
+        guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
         self.id = id
         
-        reuseIdentifier = element.attributeForName("reuseIdentifier")?.stringValue
-        customClass = element.attributeForName("customClass")?.stringValue
+        reuseIdentifier = element.attribute(forName: "reuseIdentifier")?.stringValue
+        customClass = element.attribute(forName: "customClass")?.stringValue
     }
     
 }
@@ -462,39 +457,39 @@ extension StoryboardTableViewCell {
 
 enum StoryboardViewControllerType: String {
     
-    case CollectionViewController = "collectionViewController"
-    case NavigationController = "navigationController"
-    case PageViewController = "pageViewController"
-    case SplitViewController = "splitViewController"
-    case TabBarController = "tabBarController"
-    case TableViewController = "tableViewController"
-    case ViewController = "viewController"
+    case collectionViewController = "collectionViewController"
+    case navigationController = "navigationController"
+    case pageViewController = "pageViewController"
+    case splitViewController = "splitViewController"
+    case tabBarController = "tabBarController"
+    case tableViewController = "tableViewController"
+    case viewController = "viewController"
     
     static let entries: [StoryboardViewControllerType] = [
-        .CollectionViewController,
-        .NavigationController,
-        .PageViewController,
-        .SplitViewController,
-        .TabBarController,
-        .TableViewController,
-        .ViewController
+        .collectionViewController,
+        .navigationController,
+        .pageViewController,
+        .splitViewController,
+        .tabBarController,
+        .tableViewController,
+        .viewController
     ]
     
     var className: String {
         switch self {
-        case CollectionViewController:
+        case .collectionViewController:
             return "UICollectionViewController"
-        case NavigationController:
+        case .navigationController:
             return "UINavigationController"
-        case PageViewController:
+        case .pageViewController:
             return "UIPageViewController"
-        case SplitViewController:
+        case .splitViewController:
             return "UISplitViewController"
-        case TabBarController:
+        case .tabBarController:
             return "UITabBarController"
-        case TableViewController:
+        case .tableViewController:
             return "UITableViewController"
-        case ViewController:
+        case .viewController:
             return "UIViewController"
         }
     }
@@ -517,25 +512,25 @@ struct StoryboardViewController {
 
 extension StoryboardViewController {
     
-    func segueWith(id id: String) -> StoryboardSegue? {
+    func segue(withID id: String) -> StoryboardSegue? {
         return segues
             .filter { $0.id == id }
             .first
     }
     
-    func segueWith(kind kind: StoryboardSegueKind) -> StoryboardSegue? {
+    func segue(withKind kind: StoryboardSegueKind) -> StoryboardSegue? {
         return segues
             .filter { $0.kind == kind }
             .first
     }
     
-    func tableViewCellWith(id id: String) -> StoryboardTableViewCell? {
+    func tableViewCell(withID id: String) -> StoryboardTableViewCell? {
         return tableViewCells
             .filter { $0.id == id }
             .first
     }
     
-    func collectionViewCellWith(id id: String) -> StoryboardCollectionViewCell? {
+    func collectionViewCell(withID id: String) -> StoryboardCollectionViewCell? {
         return collectionViewCells
             .filter { $0.id == id }
             .first
@@ -553,19 +548,19 @@ extension StoryboardViewController: CustomStringConvertible {
 
 extension StoryboardViewController {
     
-    init?(node: NSXMLNode) {
+    init?(node: XMLNode) {
         let xpath = StoryboardViewControllerType.entries
             .map { ".//\($0.rawValue)" }
-            .joinWithSeparator(" | ")
+            .joined(separator: " | ")
         
-        guard let nodes = try? node.nodesForXPath(xpath),
-            element = nodes.first as? NSXMLElement,
-            elementName = element.name
-            where nodes.count == 1 else {
-                return nil
+        guard let nodes = try? node.nodes(forXPath: xpath),
+              let element = nodes.first as? XMLElement,
+              let elementName = element.name,
+              nodes.count == 1 else {
+            return nil
         }
         
-        guard let id = element.attributeForName("id")?.stringValue else {
+        guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
         
@@ -573,21 +568,21 @@ extension StoryboardViewController {
             return nil
         }
         
-        let storyboardIdentifier = element.attributeForName("storyboardIdentifier")?.stringValue
+        let storyboardIdentifier = element.attribute(forName: "storyboardIdentifier")?.stringValue
         
-        let customClass = element.attributeForName("customClass")?.stringValue
+        let customClass = element.attribute(forName: "customClass")?.stringValue
         
-        guard let segueNodes = try? element.nodesForXPath(".//segue") else {
+        guard let segueNodes = try? element.nodes(forXPath: ".//segue") else {
             return nil
         }
         let segues = segueNodes.flatMap(StoryboardSegue.init)
         
-        guard let tableViewCellNodes = try? element.nodesForXPath(".//tableViewCell") else {
+        guard let tableViewCellNodes = try? element.nodes(forXPath: ".//tableViewCell") else {
             return nil
         }
         let tableViewCells = tableViewCellNodes.flatMap(StoryboardTableViewCell.init)
         
-        guard let collectionViewCellNodes = try? element.nodesForXPath(".//collectionViewCell") else {
+        guard let collectionViewCellNodes = try? element.nodes(forXPath: ".//collectionViewCell") else {
             return nil
         }
         let collectionViewCells = collectionViewCellNodes.flatMap(StoryboardCollectionViewCell.init)
@@ -631,8 +626,7 @@ extension BlackboardCollectionViewCell {
             
             parameterName = customClass
                 .stringByRemovingSuffixString("Cell")
-                .stringByRemovingSuffixString("CollectionView")
-                .stringByAppendingString("Cell")
+                .stringByRemovingSuffixString("CollectionView") + "Cell"
                 .lowercaseFirstCharacterString
         }
         else {
@@ -645,7 +639,7 @@ extension BlackboardCollectionViewCell {
 
 extension SwiftSource {
     
-    func appendCollectionViewCells(collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendCollectionViewCells(_ collectionViewCells: [BlackboardCollectionViewCell]) {
         guard !collectionViewCells.isEmpty else { return }
         
         append("// Collection View Cells")
@@ -655,31 +649,31 @@ extension SwiftSource {
         append()
     }
     
-    func appendCollectionViewCellIdentifier(collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendCollectionViewCellIdentifier(_ collectionViewCells: [BlackboardCollectionViewCell]) {
         guard !collectionViewCells.isEmpty else { return }
         
         append("enum CollectionViewCellIdentifier: String") {
             collectionViewCells.forEach { cell in
-                append("case \(cell.name) = \"\(cell.identifier)\"")
+                self.append("case \(cell.name.lowercaseFirstCharacterString) = \"\(cell.identifier)\"")
             }
         }
         append()
     }
     
-    func castFor(collectionViewCell: BlackboardCollectionViewCell) -> String {
+    func castFor(_ collectionViewCell: BlackboardCollectionViewCell) -> String {
         if collectionViewCell.className == "UICollectionViewCell" {
             return ""
         }
         return " as! \(collectionViewCell.className)"
     }
     
-    func appendDequeueCollectionViewCell(collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendDequeueCollectionViewCell(_ collectionViewCells: [BlackboardCollectionViewCell]) {
         guard !collectionViewCells.isEmpty else { return }
         
         collectionViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)CellFrom(collectionView: UICollectionView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((\(cell.parameterName): \(cell.className)) -> Void) = {_ in}) -> \(cell.className)") {
-                append("let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(CollectionViewCellIdentifier.\(cell.name).rawValue, forIndexPath: indexPath)\(castFor(cell))")
-                append("initialize(\(cell.parameterName): collectionViewCell)")
+            append("final func dequeue\(cell.name)Cell(fromCollectionView: UICollectionView, forIndexPath indexPath: IndexPath, initialize: (@noescape (\(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
+                append("let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.\(cell.name.lowercaseFirstCharacterString).rawValue, for: indexPath)\(castFor(cell))")
+                append("initialize?(\(cell.parameterName): collectionViewCell)")
                 append("return collectionViewCell")
             }
             append()
@@ -714,8 +708,8 @@ extension BlackboardSegue {
         }
         let destinationCustomClass = destinationViewController.customClass ?? destinationViewController.type.className
         
-        if destinationViewController.type == .NavigationController {
-            guard let rootViewControllerSegue = destinationViewController.segueWith(kind: .Relationship) else {
+        if destinationViewController.type == .navigationController {
+            guard let rootViewControllerSegue = destinationViewController.segue(withKind: .relationship) else {
                 return nil
             }
             guard let rootViewController = storyboard.viewControllerWith(id: rootViewControllerSegue.destination) else {
@@ -737,9 +731,9 @@ extension SwiftSource {
     func appendInitializeBlockObject() {
         append("private class InitializeBlockObject") {
             append()
-            append("let block: (UIViewController -> Void)")
+            append("let block: ((UIViewController) -> Void)?")
             append()
-            append("init(block: (UIViewController -> Void))") {
+            append("init(block: ((UIViewController) -> Void)?)") {
                 append("self.block = block")
             }
             append()
@@ -747,7 +741,7 @@ extension SwiftSource {
         append()
     }
     
-    func appendSegues(segues: [BlackboardSegue]) {
+    func appendSegues(_ segues: [BlackboardSegue]) {
         append("// Segues")
         append()
         appendSegueIdentifierFor(segues)
@@ -756,42 +750,42 @@ extension SwiftSource {
         append()
     }
     
-    func appendSegueIdentifierFor(segues: [BlackboardSegue]) {
+    func appendSegueIdentifierFor(_ segues: [BlackboardSegue]) {
         guard !segues.isEmpty else { return }
         
         append("enum SegueIdentifier: String") {
             segues.forEach { segue in
-                append("case \(segue.name) = \"\(segue.identifier)\"")
+                append("case \(segue.name.lowercaseFirstCharacterString) = \"\(segue.identifier)\"")
             }
         }
         append()
     }
     
     func appendHandleSegue() {
-        append("func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?)") {
+        append("func handleSegue(_ segue: UIStoryboardSegue, sender: AnyObject?)") {
             append("if let initializeBlockObject = sender as? InitializeBlockObject") {
-                append("initializeBlockObject.block(segue.destinationViewController)")
+                append("initializeBlockObject.block?(segue.destinationViewController)")
             }
         }
         append()
     }
     
-    func appendPerformSegueFor(segues: [BlackboardSegue]) {
+    func appendPerformSegueFor(_ segues: [BlackboardSegue]) {
         guard !segues.isEmpty else { return }
         
         segues.forEach { segue in
-            append("final func perform\(segue.name)Segue(initialize: ((\(segue.viewControllerClassName)) -> Void) = {_ in})") {
+            append("final func perform\(segue.name)Segue(_ initialize: (@noescape (\(segue.viewControllerClassName.lowercaseFirstCharacterString): \(segue.viewControllerClassName)) -> Void)? = nil)") {
                 append("let initializeBlock = InitializeBlockObject()") {
                     if let navigationControllerClassName = segue.navigationControllerClassName {
                         append("let navigationController = $0 as! \(navigationControllerClassName)")
                         append("let viewController = navigationController.viewControllers.first as! \(segue.viewControllerClassName)")
-                        append("initialize(viewController)")
+                        append("initialize?(\(segue.viewControllerClassName.lowercaseFirstCharacterString): viewController)")
                     }
                     else {
-                        append("initialize($0 as! \(segue.viewControllerClassName))")
+                        append("initialize?(\(segue.viewControllerClassName.lowercaseFirstCharacterString): $0 as! \(segue.viewControllerClassName))")
                     }
                 }
-                append("performSegueWithIdentifier(SegueIdentifier.\(segue.name).rawValue, sender: initializeBlock)")
+                append("performSegue(withIdentifier: SegueIdentifier.\(segue.name.lowercaseFirstCharacterString).rawValue, sender: initializeBlock)")
             }
             append()
         }
@@ -816,12 +810,11 @@ extension BlackboardStoryboard {
         name = storyboard.name
         
         extensionName = storyboard.name
-            .stringByRemovingSuffixString("Storyboard")
-            .stringByAppendingString("StoryboardExtensions.swift")
+            .stringByRemovingSuffixString("Storyboard") + "StoryboardExtensions.swift"
         
         viewControllers = storyboard.viewControllers
             .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard) }
-            .sort { $0.className < $1.className }
+            .sorted { $0.className < $1.className }
         guard !viewControllers.isEmpty else {
             return nil
         }
@@ -831,7 +824,7 @@ extension BlackboardStoryboard {
 
 extension SwiftSource {
     
-    func appendStoryboard(storyboard: BlackboardStoryboard) {
+    func appendStoryboard(_ storyboard: BlackboardStoryboard) {
         append("//")
         append("//  \(storyboard.extensionName)")
         append("//")
@@ -876,8 +869,7 @@ extension BlackboardTableViewCell {
             
             parameterName = customClass
                 .stringByRemovingSuffixString("Cell")
-                .stringByRemovingSuffixString("TableView")
-                .stringByAppendingString("Cell")
+                .stringByRemovingSuffixString("TableView") + "Cell"
                 .lowercaseFirstCharacterString
         }
         else {
@@ -890,7 +882,7 @@ extension BlackboardTableViewCell {
 
 extension SwiftSource {
     
-    func appendTableViewCells(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCells(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("// Table View Cells")
@@ -900,31 +892,29 @@ extension SwiftSource {
         append()
     }
     
-    func appendTableViewCellIdentifier(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCellIdentifier(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("enum TableViewCellIdentifier: String") {
             tableViewCells.forEach { cell in
-                append("case \(cell.name) = \"\(cell.identifier)\"")
+                append("case \(cell.name.lowercaseFirstCharacterString) = \"\(cell.identifier)\"")
             }
         }
         append()
     }
     
-    func castFor(tableViewCell: BlackboardTableViewCell) -> String {
+    func castFor(_ tableViewCell: BlackboardTableViewCell) -> String {
         if tableViewCell.className == "UITableViewCell" {
             return ""
         }
         return " as! \(tableViewCell.className)"
     }
     
-    func appendDequeueTableViewCell(tableViewCells: [BlackboardTableViewCell]) {
-        guard !tableViewCells.isEmpty else { return }
-        
+    func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
         tableViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)CellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((\(cell.parameterName): \(cell.className)) -> Void) = {_ in}) -> \(cell.className)") {
-                append("let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.\(cell.name).rawValue, forIndexPath: indexPath)\(castFor(cell))")
-                append("initialize(\(cell.parameterName): tableViewCell)")
+            append("final func dequeue\(cell.name)Cell(fromTableView: UITableView, forIndexPath indexPath: IndexPath, initialize:  (@noescape (\(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
+                append("let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.name.lowercaseFirstCharacterString).rawValue, for: indexPath)\(castFor(cell))")
+                append("initialize?(\(cell.parameterName): tableViewCell)")
                 append("return tableViewCell")
             }
             append()
@@ -963,22 +953,22 @@ extension BlackboardViewController {
         
         segues = viewController.segues
             .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard) }
-            .sort { $0.name < $1.name }
+            .sorted { $0.name < $1.name }
         
         tableViewCells = viewController.tableViewCells
             .flatMap { BlackboardTableViewCell(tableViewCell: $0, storyboard: storyboard) }
-            .sort { $0.name < $1.name }
+            .sorted { $0.name < $1.name }
         
         collectionViewCells = viewController.collectionViewCells
             .flatMap { BlackboardCollectionViewCell(collectionViewCell: $0, storyboard: storyboard) }
-            .sort { $0.name < $1.name }
+            .sorted { $0.name < $1.name }
     }
     
 }
 
 extension SwiftSource {
     
-    func appendViewControllers(viewControllers: [BlackboardViewController]) {
+    func appendViewControllers(_ viewControllers: [BlackboardViewController]) {
         viewControllers.forEach { viewController in
             append("extension \(viewController.className)") {
                 append()
@@ -992,24 +982,24 @@ extension SwiftSource {
         }
     }
     
-    func appendInstantiateViewController(viewController: BlackboardViewController) {
+    func appendInstantiateViewController(_ viewController: BlackboardViewController) {
         guard let identifier = viewController.identifier else { return }
         
-        append("final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((\(viewController.parameterName): \(viewController.className)) -> Void) = {_ in}) -> \(viewController.className)") {
-            append("let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier(\"\(identifier)\") as! \(viewController.className)")
-            append("initialize(\(viewController.parameterName): viewController)")
+        append("final class func instantiateViewControllerFromStoryboard(_ initialize: (@noescape (\(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
+            append("let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(identifier)\") as! \(viewController.className)")
+            append("initialize?(\(viewController.parameterName): viewController)")
             append("return viewController")
         }
         append()
     }
     
-    func appendInstantiateNavigationController(viewController: BlackboardViewController) {
+    func appendInstantiateNavigationController(_ viewController: BlackboardViewController) {
         guard let navigationControllerIdentifier = viewController.navigationControllerIdentifier else { return }
         
-        append("final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((\(viewController.parameterName): \(viewController.className)) -> Void) = {_ in}) -> UINavigationController") {
-            append("let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier(\"\(navigationControllerIdentifier)\") as! UINavigationController")
+        append("final class func instantiateNavigationControllerFromStoryboard(_ initialize: (@noescape (\(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> UINavigationController") {
+            append("let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(navigationControllerIdentifier)\") as! UINavigationController")
             append("let viewController = navigationController.viewControllers.first as! \(viewController.className)")
-            append("initialize(\(viewController.parameterName): viewController)")
+            append("initialize?(\(viewController.parameterName): viewController)")
             append("return navigationController")
         }
         append()
@@ -1023,7 +1013,7 @@ class BlackboardMain {
     
     static func run() {
         
-        let arguments = Process.arguments
+        let arguments = CommandLine.arguments
         let numberOfArguments = arguments.count - 1
         
         // Version
@@ -1044,7 +1034,7 @@ class BlackboardMain {
         
         // File Manager
         
-        let fileManager = NSFileManager.defaultManager()
+        let fileManager = FileManager.default
         
         // Source Directory
         
@@ -1073,8 +1063,8 @@ class BlackboardMain {
                 let swiftSource = SwiftSource()
                 swiftSource.appendStoryboard(storyboard)
                 let source = swiftSource.description
-                let targetUrl = NSURL(fileURLWithPath: "\(targetDirectory)/\(storyboard.extensionName)")
-                try! source.writeToURL(targetUrl, atomically: true, encoding: NSUTF8StringEncoding)
+                let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(storyboard.extensionName)")
+                try! source.write(to: targetUrl, atomically: true, encoding: String.Encoding.utf8)
             }
         }
     }

@@ -26,9 +26,9 @@ import XCTest
 
 @testable import Blackboard
 
-class NSFileManagerExtensions: XCTestCase {
+class FileManagerExtensions: XCTestCase {
     
-    let fileManager = NSFileManager.defaultManager()
+    let fileManager = FileManager.default
     
     func testIsDirectory() {
         XCTAssertTrue(fileManager.isDirectory("/opt"))
@@ -37,10 +37,10 @@ class NSFileManagerExtensions: XCTestCase {
     }
     
     func testIsFile() {
-        let bundle = NSBundle(forClass: NSFileManagerExtensions.self)
-        
-        let file = bundle.pathForResource("colors", ofType: "json", inDirectory: "Resources")!
-        XCTAssertTrue(fileManager.isFile(file))
+//        let bundle = Bundle(for: NSFileManagerExtensions.self)
+//        
+//        let file = bundle.pathForResource("colors", ofType: "json", inDirectory: "Resources")!
+//        XCTAssertTrue(fileManager.isFile(file))
         
         XCTAssertFalse(fileManager.isFile("/opt/missing.json"))
     }

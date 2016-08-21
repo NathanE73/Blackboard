@@ -30,7 +30,7 @@ class NameViewController: UIViewController {
     
     var name: String?
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         nameLabel.text = name

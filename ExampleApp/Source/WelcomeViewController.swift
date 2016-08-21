@@ -29,10 +29,10 @@ class WelcomeViewController: UIViewController {
     // MARK: Names
     
     @IBAction func presentNames() {
-        let namesNavigationController = NamesViewController.instantiateNavigationControllerFromStoryboard { (namesViewController) in
+        let namesNavigationController = NamesViewController.instantiateWithNavigationControllerFromStoryboard { namesViewController in
             namesViewController.names = ["Steve Dave", "John Doe"]
         }
-        presentViewController(namesNavigationController, animated: true, completion: nil)
+        present(namesNavigationController, animated: true, completion: nil)
     }
     
     
