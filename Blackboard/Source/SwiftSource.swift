@@ -36,7 +36,7 @@ class SwiftSource {
         lines.append((indentLevel, line))
     }
     
-    func append(_ line: String, block: Closure) {
+    func append(_ line: String, block: () -> Void) {
         append("\(line) {")
         indent()
         block()

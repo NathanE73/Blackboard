@@ -113,10 +113,6 @@ extension FileManager {
     
 }
 
-// MARK: - Closure.swift -
-
-typealias Closure = () -> ()
-
 // MARK: - Naming.swift -
 
 func memberNameFromIdentifier(_ identifier: String, namespace: String? = nil) -> String {
@@ -190,7 +186,7 @@ class SwiftSource {
         lines.append((indentLevel, line))
     }
     
-    func append(_ line: String, block: Closure) {
+    func append(_ line: String, block: () -> Void) {
         append("\(line) {")
         indent()
         block()

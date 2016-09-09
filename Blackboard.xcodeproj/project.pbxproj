@@ -13,7 +13,6 @@
 		435DF5111CEA1BDE0019DFFD /* Blackboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DF5061CEA1BDE0019DFFD /* Blackboard.framework */; };
 		435DF5371CEA1CF80019DFFD /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 435DF5361CEA1CF80019DFFD /* Resources */; };
 		435DF5731CEA31E80019DFFD /* String+NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF54A1CEA1D560019DFFD /* String+NSString.swift */; };
-		435DF5741CEA32080019DFFD /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5421CEA1D560019DFFD /* Closure.swift */; };
 		435DF5751CEA33010019DFFD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF53A1CEA1D560019DFFD /* StringExtensions.swift */; };
 		435DF5771CEA33500019DFFD /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5251CEA1CE90019DFFD /* StringExtensionsTests.swift */; };
 		435DF5791CEA3AE40019DFFD /* Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5781CEA3AE40019DFFD /* Naming.swift */; };
@@ -64,7 +63,6 @@
 		435DF53F1CEA1D560019DFFD /* BlackboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		435DF5401CEA1D560019DFFD /* BlackboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardSegue.swift; sourceTree = "<group>"; };
 		435DF5411CEA1D560019DFFD /* BlackboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardViewController.swift; sourceTree = "<group>"; };
-		435DF5421CEA1D560019DFFD /* Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		435DF5431CEA1D560019DFFD /* StoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegue.swift; sourceTree = "<group>"; };
 		435DF5441CEA1D560019DFFD /* StoryboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		435DF5451CEA1D560019DFFD /* StoryboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCell.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				435DF53D1CEA1D560019DFFD /* BlackboardStoryboard.swift */,
 				435DF53E1CEA1D560019DFFD /* BlackboardTableViewCell.swift */,
 				435DF5411CEA1D560019DFFD /* BlackboardViewController.swift */,
-				435DF5421CEA1D560019DFFD /* Closure.swift */,
 				435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */,
 				434645151CEB943C0060F249 /* Header.swift */,
 				435DF5781CEA3AE40019DFFD /* Naming.swift */,
@@ -286,7 +283,6 @@
 				435DF5791CEA3AE40019DFFD /* Naming.swift in Sources */,
 				435DF5731CEA31E80019DFFD /* String+NSString.swift in Sources */,
 				435DF5811CEA3EA70019DFFD /* BlackboardStoryboard.swift in Sources */,
-				435DF5741CEA32080019DFFD /* Closure.swift in Sources */,
 				435DF57B1CEA3BC10019DFFD /* FileManagerExtensions.swift in Sources */,
 				435DF5801CEA3EA70019DFFD /* BlackboardSegue.swift in Sources */,
 				434645161CEB943C0060F249 /* Header.swift in Sources */,

@@ -54,7 +54,7 @@ echo -e "#!/usr/bin/swift\n" > "$BLACKBOARD"
 cat "$SOURCE/Header.swift" >> "$BLACKBOARD"
 
 append String+NSString StringExtensions FileManagerExtensions \
-  Closure Naming SwiftSource \
+  Naming SwiftSource \
   Storyboard StoryboardCollectionViewCell StoryboardSegue StoryboardTableViewCell StoryboardViewController \
   BlackboardCollectionViewCell BlackboardSegue BlackboardStoryboard BlackboardTableViewCell BlackboardViewController \
   BlackboardMain
