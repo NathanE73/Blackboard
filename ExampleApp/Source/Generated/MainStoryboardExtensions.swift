@@ -20,9 +20,9 @@ private class InitializeBlockObject {
 
 extension WelcomeViewController {
     
-    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ welcomeViewController: WelcomeViewController) -> Void) = {_ in}) -> WelcomeViewController {
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ welcomeViewController: WelcomeViewController) -> Void)? = nil) -> WelcomeViewController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
-        initialize(viewController)
+        initialize?(viewController)
         return viewController
     }
     

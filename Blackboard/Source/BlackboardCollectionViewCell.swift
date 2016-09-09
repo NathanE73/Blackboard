@@ -27,6 +27,7 @@ import Foundation
 struct BlackboardCollectionViewCell {
     
     let name: String
+    let enumName: String
     let identifier: String
     let className: String
     let parameterName: String
@@ -42,6 +43,8 @@ extension BlackboardCollectionViewCell {
         
         name = nameFromIdentifier(reuseIdentifier)
             .stringByRemovingSuffixString("Cell")
+        
+        enumName = name.lowercasedFirstCharacterString
         
         identifier = reuseIdentifier
         
@@ -79,7 +82,7 @@ extension SwiftSource {
         
         append("enum CollectionViewCellIdentifier: String") {
             collectionViewCells.forEach { cell in
-                append("case \(cell.name) = \"\(cell.identifier)\"")
+                append("case \(cell.enumName) = \"\(cell.identifier)\"")
             }
         }
         append()
@@ -96,9 +99,9 @@ extension SwiftSource {
         guard !collectionViewCells.isEmpty else { return }
         
         collectionViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)CellFrom(collectionView: UICollectionView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((\(cell.parameterName): \(cell.className)) -> Void) = {_ in}) -> \(cell.className)") {
-                append("let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(CollectionViewCellIdentifier.\(cell.name).rawValue, forIndexPath: indexPath)\(castFor(cell))")
-                append("initialize(\(cell.parameterName): collectionViewCell)")
+            append("final func dequeue\(cell.name)Cell(from collectionView: UICollectionView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
+                append("let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath)\(castFor(cell))")
+                append("initialize?(collectionViewCell)")
                 append("return collectionViewCell")
             }
             append()

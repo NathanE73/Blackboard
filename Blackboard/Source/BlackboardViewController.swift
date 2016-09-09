@@ -84,9 +84,9 @@ extension SwiftSource {
     func appendInstantiateViewController(_ viewController: BlackboardViewController) {
         guard let identifier = viewController.identifier else { return }
         
-        append("final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((\(viewController.parameterName): \(viewController.className)) -> Void) = {_ in}) -> \(viewController.className)") {
-            append("let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier(\"\(identifier)\") as! \(viewController.className)")
-            append("initialize(\(viewController.parameterName): viewController)")
+        append("final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
+            append("let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(identifier)\") as! \(viewController.className)")
+            append("initialize?(viewController)")
             append("return viewController")
         }
         append()
@@ -95,10 +95,10 @@ extension SwiftSource {
     func appendInstantiateNavigationController(_ viewController: BlackboardViewController) {
         guard let navigationControllerIdentifier = viewController.navigationControllerIdentifier else { return }
         
-        append("final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((\(viewController.parameterName): \(viewController.className)) -> Void) = {_ in}) -> UINavigationController") {
-            append("let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier(\"\(navigationControllerIdentifier)\") as! UINavigationController")
+        append("final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> UINavigationController") {
+            append("let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(navigationControllerIdentifier)\") as! UINavigationController")
             append("let viewController = navigationController.viewControllers.first as! \(viewController.className)")
-            append("initialize(\(viewController.parameterName): viewController)")
+            append("initialize?(viewController)")
             append("return navigationController")
         }
         append()

@@ -27,6 +27,7 @@ import Foundation
 struct BlackboardSegue {
     
     let name: String
+    let enumName: String
     let identifier: String
     let viewControllerClassName: String
     let navigationControllerClassName: String?
@@ -41,6 +42,9 @@ extension BlackboardSegue {
         }
         
         name = identifier
+        
+        enumName = name.lowercasedFirstCharacterString
+        
         self.identifier = identifier
         
         guard let destinationViewController = storyboard.viewControllerWith(id: segue.destination) else {
@@ -71,9 +75,9 @@ extension SwiftSource {
     func appendInitializeBlockObject() {
         append("private class InitializeBlockObject") {
             append()
-            append("let block: (UIViewController -> Void)")
+            append("let block: ((UIViewController) -> Void)")
             append()
-            append("init(block: (UIViewController -> Void))") {
+            append("init(block: @escaping ((UIViewController) -> Void))") {
                 append("self.block = block")
             }
             append()
@@ -95,16 +99,16 @@ extension SwiftSource {
         
         append("enum SegueIdentifier: String") {
             segues.forEach { segue in
-                append("case \(segue.name) = \"\(segue.identifier)\"")
+                append("case \(segue.enumName) = \"\(segue.identifier)\"")
             }
         }
         append()
     }
     
     func appendHandleSegue() {
-        append("func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?)") {
+        append("func handleSegue(_ segue: UIStoryboardSegue, sender: Any?)") {
             append("if let initializeBlockObject = sender as? InitializeBlockObject") {
-                append("initializeBlockObject.block(segue.destinationViewController)")
+                append("initializeBlockObject.block(segue.destination)")
             }
         }
         append()
@@ -114,7 +118,7 @@ extension SwiftSource {
         guard !segues.isEmpty else { return }
         
         segues.forEach { segue in
-            append("final func perform\(segue.name)Segue(initialize: ((\(segue.viewControllerClassName)) -> Void) = {_ in})") {
+            append("final func perform\(segue.name)Segue(_ initialize: @escaping ((\(segue.viewControllerClassName)) -> Void) = {_ in})") {
                 append("let initializeBlock = InitializeBlockObject()") {
                     if let navigationControllerClassName = segue.navigationControllerClassName {
                         append("let navigationController = $0 as! \(navigationControllerClassName)")
@@ -125,7 +129,7 @@ extension SwiftSource {
                         append("initialize($0 as! \(segue.viewControllerClassName))")
                     }
                 }
-                append("performSegueWithIdentifier(SegueIdentifier.\(segue.name).rawValue, sender: initializeBlock)")
+                append("performSegue(withIdentifier: SegueIdentifier.\(segue.enumName).rawValue, sender: initializeBlock)")
             }
             append()
         }

@@ -55,8 +55,8 @@ class NamesViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return dequeueNameCellFrom(tableView, forIndexPath: indexPath) { (nameCell) in
-            nameCell.name = names[(indexPath as NSIndexPath).row]
+        return dequeueNameCell(from: tableView, for: indexPath) { (nameCell) in
+            nameCell.name = self.names[(indexPath as NSIndexPath).row]
         }
     }
     
