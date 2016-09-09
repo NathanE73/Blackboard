@@ -48,10 +48,10 @@ extension BlackboardTableViewCell {
         if let customClass = tableViewCell.customClass {
             className = customClass
             
-            parameterName = customClass
+            parameterName = (customClass
                 .stringByRemovingSuffixString("Cell")
                 .stringByRemovingSuffixString("TableView")
-                + "Cell"
+                + "Cell")
                 .lowercasedFirstCharacterString
         }
         else {

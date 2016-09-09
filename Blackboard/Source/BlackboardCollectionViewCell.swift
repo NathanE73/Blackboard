@@ -48,10 +48,10 @@ extension BlackboardCollectionViewCell {
         if let customClass = collectionViewCell.customClass {
             className = customClass
             
-            parameterName = customClass
+            parameterName = (customClass
                 .stringByRemovingSuffixString("Cell")
                 .stringByRemovingSuffixString("CollectionView")
-                + "Cell"
+                + "Cell")
                 .lowercasedFirstCharacterString
         }
         else {
