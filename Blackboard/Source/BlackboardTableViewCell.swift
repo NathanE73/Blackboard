@@ -51,8 +51,8 @@ extension BlackboardTableViewCell {
             parameterName = customClass
                 .stringByRemovingSuffixString("Cell")
                 .stringByRemovingSuffixString("TableView")
-                .stringByAppendingString("Cell")
-                .lowercaseFirstCharacterString
+                + "Cell"
+                .lowercasedFirstCharacterString
         }
         else {
             className = "UITableViewCell"
@@ -64,7 +64,7 @@ extension BlackboardTableViewCell {
 
 extension SwiftSource {
     
-    func appendTableViewCells(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCells(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("// Table View Cells")
@@ -74,7 +74,7 @@ extension SwiftSource {
         append()
     }
     
-    func appendTableViewCellIdentifier(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCellIdentifier(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("enum TableViewCellIdentifier: String") {
@@ -85,14 +85,14 @@ extension SwiftSource {
         append()
     }
     
-    func castFor(tableViewCell: BlackboardTableViewCell) -> String {
+    func castFor(_ tableViewCell: BlackboardTableViewCell) -> String {
         if tableViewCell.className == "UITableViewCell" {
             return ""
         }
         return " as! \(tableViewCell.className)"
     }
     
-    func appendDequeueTableViewCell(tableViewCells: [BlackboardTableViewCell]) {
+    func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         tableViewCells.forEach { cell in

@@ -31,14 +31,14 @@ extension String {
         return (self as NSString).lastPathComponent
     }
     
-    // public var stringByDeletingLastPathComponent: String { get }
-    public var stringByDeletingLastPathComponent: String {
-        return (self as NSString).stringByDeletingLastPathComponent
+    // public var deletingLastPathComponent: String { get }
+    public var deletingLastPathComponent: String {
+        return (self as NSString).deletingLastPathComponent
     }
     
-    // public func stringByAppendingPathComponent(str: String) -> String
-    public func stringByAppendingPathComponent(str: String) -> String {
-        return (self as NSString).stringByAppendingPathComponent(str)
+    // public func appendingPathComponent(str: String) -> String
+    public func appendingPathComponent(_ str: String) -> String {
+        return (self as NSString).appendingPathComponent(str)
     }
     
     // public var pathExtension: String { get }
@@ -46,19 +46,19 @@ extension String {
         return (self as NSString).pathExtension
     }
     
-    // public var stringByDeletingPathExtension: String { get }
-    public var stringByDeletingPathExtension: String {
-        return (self as NSString).stringByDeletingPathExtension
+    // public var deletingPathExtension: String { get }
+    public var deletingPathExtension: String {
+        return (self as NSString).deletingPathExtension
     }
     
-    // public func stringByAppendingPathExtension(str: String) -> String?
-    public func stringByAppendingPathExtension(str: String) -> String? {
-        return (self as NSString).stringByAppendingPathExtension(str)
+    // public func appendingPathExtension(str: String) -> String?
+    public func appendingPathExtension(_ str: String) -> String? {
+        return (self as NSString).appendingPathExtension(str)
     }
     
-    // public var stringByExpandingTildeInPath: String { get }
-    public var stringByExpandingTildeInPath: String {
-        return (self as NSString).stringByExpandingTildeInPath
+    // public var expandingTildeInPath: String { get }
+    public var expandingTildeInPath: String {
+        return (self as NSString).expandingTildeInPath
     }
     
 }

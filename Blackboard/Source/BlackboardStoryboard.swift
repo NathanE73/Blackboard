@@ -40,11 +40,11 @@ extension BlackboardStoryboard {
         
         extensionName = storyboard.name
             .stringByRemovingSuffixString("Storyboard")
-            .stringByAppendingString("StoryboardExtensions.swift")
+            + "StoryboardExtensions.swift"
         
         viewControllers = storyboard.viewControllers
             .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard) }
-            .sort { $0.className < $1.className }
+            .sorted { $0.className < $1.className }
         guard !viewControllers.isEmpty else {
             return nil
         }
@@ -54,7 +54,7 @@ extension BlackboardStoryboard {
 
 extension SwiftSource {
     
-    func appendStoryboard(storyboard: BlackboardStoryboard) {
+    func appendStoryboard(_ storyboard: BlackboardStoryboard) {
         append("//")
         append("//  \(storyboard.extensionName)")
         append("//")

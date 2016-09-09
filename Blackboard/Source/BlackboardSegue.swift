@@ -48,8 +48,8 @@ extension BlackboardSegue {
         }
         let destinationCustomClass = destinationViewController.customClass ?? destinationViewController.type.className
         
-        if destinationViewController.type == .NavigationController {
-            guard let rootViewControllerSegue = destinationViewController.segueWith(kind: .Relationship) else {
+        if destinationViewController.type == .navigationController {
+            guard let rootViewControllerSegue = destinationViewController.segueWith(kind: .relationship) else {
                 return nil
             }
             guard let rootViewController = storyboard.viewControllerWith(id: rootViewControllerSegue.destination) else {
@@ -81,7 +81,7 @@ extension SwiftSource {
         append()
     }
     
-    func appendSegues(segues: [BlackboardSegue]) {
+    func appendSegues(_ segues: [BlackboardSegue]) {
         append("// Segues")
         append()
         appendSegueIdentifierFor(segues)
@@ -90,7 +90,7 @@ extension SwiftSource {
         append()
     }
     
-    func appendSegueIdentifierFor(segues: [BlackboardSegue]) {
+    func appendSegueIdentifierFor(_ segues: [BlackboardSegue]) {
         guard !segues.isEmpty else { return }
         
         append("enum SegueIdentifier: String") {
@@ -110,7 +110,7 @@ extension SwiftSource {
         append()
     }
     
-    func appendPerformSegueFor(segues: [BlackboardSegue]) {
+    func appendPerformSegueFor(_ segues: [BlackboardSegue]) {
         guard !segues.isEmpty else { return }
         
         segues.forEach { segue in

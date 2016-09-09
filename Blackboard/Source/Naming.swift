@@ -24,14 +24,14 @@
 
 import Foundation
 
-func memberNameFromIdentifier(identifier: String, namespace: String? = nil) -> String {
+func memberNameFromIdentifier(_ identifier: String, namespace: String? = nil) -> String {
     if let namespace = namespace {
         return namespace + nameFromIdentifier(identifier)
     }
     return nameFromIdentifier(identifier)
 }
 
-func methodNameFromIdentifier(identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
+func methodNameFromIdentifier(_ identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
     let name: String
     if let namespace = namespace {
         name = namespace + nameFromIdentifier(identifier)
@@ -46,7 +46,7 @@ func methodNameFromIdentifier(identifier: String, namespace: String? = nil, suff
         methodName = prefix + name
     }
     else {
-        methodName = name.lowercaseFirstCharacterString
+        methodName = name.lowercasedFirstCharacterString
     }
     
     if let suffix = suffix {
@@ -56,7 +56,7 @@ func methodNameFromIdentifier(identifier: String, namespace: String? = nil, suff
     return methodName
 }
 
-func nameFromIdentifier(identifier: String) -> String {
+func nameFromIdentifier(_ identifier: String) -> String {
     var name = ""
     
     var shouldUppercaseNextCharacter = true
@@ -70,7 +70,7 @@ func nameFromIdentifier(identifier: String) -> String {
         
         if shouldUppercaseNextCharacter {
             shouldUppercaseNextCharacter = false
-            let uppercaseCharacter = String(character).uppercaseString
+            let uppercaseCharacter = String(character).uppercased()
             name += uppercaseCharacter
             continue
         }

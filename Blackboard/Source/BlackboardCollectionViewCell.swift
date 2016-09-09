@@ -51,8 +51,8 @@ extension BlackboardCollectionViewCell {
             parameterName = customClass
                 .stringByRemovingSuffixString("Cell")
                 .stringByRemovingSuffixString("CollectionView")
-                .stringByAppendingString("Cell")
-                .lowercaseFirstCharacterString
+                + "Cell"
+                .lowercasedFirstCharacterString
         }
         else {
             className = "UICollectionViewCell"
@@ -64,7 +64,7 @@ extension BlackboardCollectionViewCell {
 
 extension SwiftSource {
     
-    func appendCollectionViewCells(collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendCollectionViewCells(_ collectionViewCells: [BlackboardCollectionViewCell]) {
         guard !collectionViewCells.isEmpty else { return }
         
         append("// Collection View Cells")
@@ -74,7 +74,7 @@ extension SwiftSource {
         append()
     }
     
-    func appendCollectionViewCellIdentifier(collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendCollectionViewCellIdentifier(_ collectionViewCells: [BlackboardCollectionViewCell]) {
         guard !collectionViewCells.isEmpty else { return }
         
         append("enum CollectionViewCellIdentifier: String") {
@@ -85,14 +85,14 @@ extension SwiftSource {
         append()
     }
     
-    func castFor(collectionViewCell: BlackboardCollectionViewCell) -> String {
+    func castFor(_ collectionViewCell: BlackboardCollectionViewCell) -> String {
         if collectionViewCell.className == "UICollectionViewCell" {
             return ""
         }
         return " as! \(collectionViewCell.className)"
     }
     
-    func appendDequeueCollectionViewCell(collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendDequeueCollectionViewCell(_ collectionViewCells: [BlackboardCollectionViewCell]) {
         guard !collectionViewCells.isEmpty else { return }
         
         collectionViewCells.forEach { cell in
