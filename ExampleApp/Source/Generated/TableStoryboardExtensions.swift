@@ -10,9 +10,9 @@ private let sharedStoryboardInstance = UIStoryboard(name: "Table", bundle: nil)
 
 private class InitializeBlockObject {
     
-    let block: (UIViewController -> Void)
+    let block: ((UIViewController) -> Void)
     
-    init(block: (UIViewController -> Void)) {
+    init(block: @escaping ((UIViewController) -> Void)) {
         self.block = block
     }
     
@@ -20,17 +20,17 @@ private class InitializeBlockObject {
 
 extension NameViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((nameViewController: NameViewController) -> Void) = {_ in}) -> NameViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("NameViewController") as! NameViewController
-        initialize(nameViewController: viewController)
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ nameViewController: NameViewController) -> Void)? = nil) -> NameViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "NameViewController") as! NameViewController
+        initialize?(viewController)
         return viewController
     }
     
     // Segues
     
-    func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destinationViewController)
+            initializeBlockObject.block(segue.destination)
         }
     }
     
@@ -38,47 +38,47 @@ extension NameViewController {
 
 extension NamesViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((namesViewController: NamesViewController) -> Void) = {_ in}) -> NamesViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("NamesViewController") as! NamesViewController
-        initialize(namesViewController: viewController)
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ namesViewController: NamesViewController) -> Void)? = nil) -> NamesViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "NamesViewController") as! NamesViewController
+        initialize?(viewController)
         return viewController
     }
     
-    final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((namesViewController: NamesViewController) -> Void) = {_ in}) -> UINavigationController {
-        let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("NamesNavigationController") as! UINavigationController
+    final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ namesViewController: NamesViewController) -> Void)? = nil) -> UINavigationController {
+        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "NamesNavigationController") as! UINavigationController
         let viewController = navigationController.viewControllers.first as! NamesViewController
-        initialize(namesViewController: viewController)
+        initialize?(viewController)
         return navigationController
     }
     
     // Segues
     
     enum SegueIdentifier: String {
-        case ShowName = "ShowName"
+        case showName = "ShowName"
     }
     
-    func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destinationViewController)
+            initializeBlockObject.block(segue.destination)
         }
     }
     
-    final func performShowNameSegue(initialize: ((NameViewController) -> Void) = {_ in}) {
+    final func performShowNameSegue(_ initialize: @escaping ((NameViewController) -> Void) = {_ in}) {
         let initializeBlock = InitializeBlockObject() {
             initialize($0 as! NameViewController)
         }
-        performSegueWithIdentifier(SegueIdentifier.ShowName.rawValue, sender: initializeBlock)
+        performSegue(withIdentifier: SegueIdentifier.showName.rawValue, sender: initializeBlock)
     }
     
     // Table View Cells
     
     enum TableViewCellIdentifier: String {
-        case Name = "Name"
+        case name = "Name"
     }
     
-    final func dequeueNameCellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((nameCell: NameTableViewCell) -> Void) = {_ in}) -> NameTableViewCell {
-        let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.Name.rawValue, forIndexPath: indexPath) as! NameTableViewCell
-        initialize(nameCell: tableViewCell)
+    final func dequeueNameCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ nameCell: NameTableViewCell) -> Void)? = nil) -> NameTableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.name.rawValue, for: indexPath) as! NameTableViewCell
+        initialize?(tableViewCell)
         return tableViewCell
     }
     

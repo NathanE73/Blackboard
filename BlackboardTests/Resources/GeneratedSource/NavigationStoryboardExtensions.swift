@@ -10,9 +10,9 @@ private let sharedStoryboardInstance = UIStoryboard(name: "Navigation", bundle: 
 
 private class InitializeBlockObject {
     
-    let block: (UIViewController -> Void)
+    let block: ((UIViewController) -> Void)
     
-    init(block: (UIViewController -> Void)) {
+    init(block: @escaping ((UIViewController) -> Void)) {
         self.block = block
     }
     
@@ -20,24 +20,24 @@ private class InitializeBlockObject {
 
 extension MenuViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((menuViewController: MenuViewController) -> Void) = {_ in}) -> MenuViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        initialize(menuViewController: viewController)
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ menuViewController: MenuViewController) -> Void)? = nil) -> MenuViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        initialize?(viewController)
         return viewController
     }
     
-    final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((menuViewController: MenuViewController) -> Void) = {_ in}) -> UINavigationController {
-        let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("MenuNavigationController") as! UINavigationController
+    final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ menuViewController: MenuViewController) -> Void)? = nil) -> UINavigationController {
+        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "MenuNavigationController") as! UINavigationController
         let viewController = navigationController.viewControllers.first as! MenuViewController
-        initialize(menuViewController: viewController)
+        initialize?(viewController)
         return navigationController
     }
     
     // Segues
     
-    func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destinationViewController)
+            initializeBlockObject.block(segue.destination)
         }
     }
     
@@ -45,38 +45,38 @@ extension MenuViewController {
 
 extension WelcomeViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((welcomeViewController: WelcomeViewController) -> Void) = {_ in}) -> WelcomeViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("WelcomeViewController") as! WelcomeViewController
-        initialize(welcomeViewController: viewController)
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ welcomeViewController: WelcomeViewController) -> Void)? = nil) -> WelcomeViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+        initialize?(viewController)
         return viewController
     }
     
-    final class func instantiateNavigationControllerFromStoryboard(@noescape initialize: ((welcomeViewController: WelcomeViewController) -> Void) = {_ in}) -> UINavigationController {
-        let navigationController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("WelcomeNavigationController") as! UINavigationController
+    final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ welcomeViewController: WelcomeViewController) -> Void)? = nil) -> UINavigationController {
+        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeNavigationController") as! UINavigationController
         let viewController = navigationController.viewControllers.first as! WelcomeViewController
-        initialize(welcomeViewController: viewController)
+        initialize?(viewController)
         return navigationController
     }
     
     // Segues
     
     enum SegueIdentifier: String {
-        case ShowMenu = "ShowMenu"
+        case showMenu = "ShowMenu"
     }
     
-    func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destinationViewController)
+            initializeBlockObject.block(segue.destination)
         }
     }
     
-    final func performShowMenuSegue(initialize: ((MenuViewController) -> Void) = {_ in}) {
+    final func performShowMenuSegue(_ initialize: @escaping ((MenuViewController) -> Void) = {_ in}) {
         let initializeBlock = InitializeBlockObject() {
             let navigationController = $0 as! UINavigationController
             let viewController = navigationController.viewControllers.first as! MenuViewController
             initialize(viewController)
         }
-        performSegueWithIdentifier(SegueIdentifier.ShowMenu.rawValue, sender: initializeBlock)
+        performSegue(withIdentifier: SegueIdentifier.showMenu.rawValue, sender: initializeBlock)
     }
     
 }

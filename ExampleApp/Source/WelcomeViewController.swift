@@ -32,7 +32,7 @@ class WelcomeViewController: UIViewController {
         let namesNavigationController = NamesViewController.instantiateNavigationControllerFromStoryboard { (namesViewController) in
             namesViewController.names = ["Steve Dave", "John Doe"]
         }
-        presentViewController(namesNavigationController, animated: true, completion: nil)
+        present(namesNavigationController, animated: true, completion: nil)
     }
     
     

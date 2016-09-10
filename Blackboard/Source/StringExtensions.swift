@@ -26,22 +26,22 @@ import Foundation
 
 extension String {
     
-    var lowercaseFirstCharacterString: String {
+    var lowercasedFirstCharacterString: String {
         guard let firstCharacter = characters.first else {
             return self
         }
-        return String(firstCharacter).lowercaseString + String(characters.dropFirst(1))
+        return String(firstCharacter).lowercased() + String(characters.dropFirst(1))
     }
     
-    func stringByRemovingSuffixString(suffix: String) -> String {
+    func stringByRemovingSuffixString(_ suffix: String) -> String {
         if hasSuffix(suffix) {
             return String(characters.dropLast(suffix.characters.count))
         }
         return self
     }
     
-    var stringByTrimmingWhitespaceCharacters: String {
-        return stringByTrimmingCharactersInSet(.whitespaceCharacterSet())
+    var trimmingWhitespaceCharacters: String {
+        return trimmingCharacters(in: .whitespaces)
     }
     
 }

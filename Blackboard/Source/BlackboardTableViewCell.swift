@@ -27,6 +27,7 @@ import Foundation
 struct BlackboardTableViewCell {
     
     let name: String
+    let enumName: String
     let identifier: String
     let className: String
     let parameterName: String
@@ -43,16 +44,18 @@ extension BlackboardTableViewCell {
         name = nameFromIdentifier(reuseIdentifier)
             .stringByRemovingSuffixString("Cell")
         
+        enumName = name.lowercasedFirstCharacterString
+        
         identifier = reuseIdentifier
         
         if let customClass = tableViewCell.customClass {
             className = customClass
             
-            parameterName = customClass
+            parameterName = (customClass
                 .stringByRemovingSuffixString("Cell")
                 .stringByRemovingSuffixString("TableView")
-                .stringByAppendingString("Cell")
-                .lowercaseFirstCharacterString
+                + "Cell")
+                .lowercasedFirstCharacterString
         }
         else {
             className = "UITableViewCell"
@@ -64,7 +67,7 @@ extension BlackboardTableViewCell {
 
 extension SwiftSource {
     
-    func appendTableViewCells(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCells(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("// Table View Cells")
@@ -74,31 +77,31 @@ extension SwiftSource {
         append()
     }
     
-    func appendTableViewCellIdentifier(tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCellIdentifier(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         append("enum TableViewCellIdentifier: String") {
             tableViewCells.forEach { cell in
-                append("case \(cell.name) = \"\(cell.identifier)\"")
+                append("case \(cell.enumName) = \"\(cell.identifier)\"")
             }
         }
         append()
     }
     
-    func castFor(tableViewCell: BlackboardTableViewCell) -> String {
+    func castFor(_ tableViewCell: BlackboardTableViewCell) -> String {
         if tableViewCell.className == "UITableViewCell" {
             return ""
         }
         return " as! \(tableViewCell.className)"
     }
     
-    func appendDequeueTableViewCell(tableViewCells: [BlackboardTableViewCell]) {
+    func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
         guard !tableViewCells.isEmpty else { return }
         
         tableViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)CellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((\(cell.parameterName): \(cell.className)) -> Void) = {_ in}) -> \(cell.className)") {
-                append("let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.\(cell.name).rawValue, forIndexPath: indexPath)\(castFor(cell))")
-                append("initialize(\(cell.parameterName): tableViewCell)")
+            append("final func dequeue\(cell.name)Cell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
+                append("let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath)\(castFor(cell))")
+                append("initialize?(tableViewCell)")
                 append("return tableViewCell")
             }
             append()

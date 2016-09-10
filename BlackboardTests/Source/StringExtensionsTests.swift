@@ -28,15 +28,15 @@ import XCTest
 
 class StringExtensionsTests: XCTestCase {
     
-    func testLowercaseFirstCharacterString() {
-        XCTAssertEqual("".lowercaseFirstCharacterString, "")
+    func testlowercasedFirstCharacterString() {
+        XCTAssertEqual("".lowercasedFirstCharacterString, "")
         
-        XCTAssertEqual("Apple".lowercaseFirstCharacterString, "apple")
-        XCTAssertEqual("AppleApple".lowercaseFirstCharacterString, "appleApple")
-        XCTAssertEqual("ABC".lowercaseFirstCharacterString, "aBC")
+        XCTAssertEqual("Apple".lowercasedFirstCharacterString, "apple")
+        XCTAssertEqual("AppleApple".lowercasedFirstCharacterString, "appleApple")
+        XCTAssertEqual("ABC".lowercasedFirstCharacterString, "aBC")
         
-        XCTAssertEqual(" Apple".lowercaseFirstCharacterString, " Apple")
-        XCTAssertEqual(" ABC".lowercaseFirstCharacterString, " ABC")
+        XCTAssertEqual(" Apple".lowercasedFirstCharacterString, " Apple")
+        XCTAssertEqual(" ABC".lowercasedFirstCharacterString, " ABC")
     }
     
     func testStringByRemovingSuffixString() {
@@ -48,24 +48,24 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("AppleApple".stringByRemovingSuffixString("APPLE"), "AppleApple")
     }
     
-    func testStringByTrimmingWhitespaceCharacters() {
-        XCTAssertEqual("".stringByTrimmingWhitespaceCharacters, "")
+    func testTrimmingWhitespaceCharacters() {
+        XCTAssertEqual("".trimmingWhitespaceCharacters, "")
         
-        XCTAssertEqual("apple".stringByTrimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("apple".trimmingWhitespaceCharacters, "apple")
         
-        XCTAssertEqual(" apple".stringByTrimmingWhitespaceCharacters, "apple")
-        XCTAssertEqual("  apple".stringByTrimmingWhitespaceCharacters, "apple")
-        XCTAssertEqual("   apple".stringByTrimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual(" apple".trimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("  apple".trimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("   apple".trimmingWhitespaceCharacters, "apple")
         
-        XCTAssertEqual("apple ".stringByTrimmingWhitespaceCharacters, "apple")
-        XCTAssertEqual("apple  ".stringByTrimmingWhitespaceCharacters, "apple")
-        XCTAssertEqual("apple   ".stringByTrimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("apple ".trimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("apple  ".trimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("apple   ".trimmingWhitespaceCharacters, "apple")
         
-        XCTAssertEqual(" apple ".stringByTrimmingWhitespaceCharacters, "apple")
-        XCTAssertEqual("  apple  ".stringByTrimmingWhitespaceCharacters, "apple")
-        XCTAssertEqual("   apple   ".stringByTrimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual(" apple ".trimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("  apple  ".trimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("   apple   ".trimmingWhitespaceCharacters, "apple")
         
-        XCTAssertEqual("\t apple \t".stringByTrimmingWhitespaceCharacters, "apple")
+        XCTAssertEqual("\t apple \t".trimmingWhitespaceCharacters, "apple")
     }
     
     // MARK: Identifiers

@@ -13,12 +13,11 @@
 		435DF5111CEA1BDE0019DFFD /* Blackboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DF5061CEA1BDE0019DFFD /* Blackboard.framework */; };
 		435DF5371CEA1CF80019DFFD /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 435DF5361CEA1CF80019DFFD /* Resources */; };
 		435DF5731CEA31E80019DFFD /* String+NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF54A1CEA1D560019DFFD /* String+NSString.swift */; };
-		435DF5741CEA32080019DFFD /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5421CEA1D560019DFFD /* Closure.swift */; };
 		435DF5751CEA33010019DFFD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF53A1CEA1D560019DFFD /* StringExtensions.swift */; };
 		435DF5771CEA33500019DFFD /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5251CEA1CE90019DFFD /* StringExtensionsTests.swift */; };
 		435DF5791CEA3AE40019DFFD /* Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5781CEA3AE40019DFFD /* Naming.swift */; };
 		435DF57A1CEA3B110019DFFD /* NamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF52B1CEA1CE90019DFFD /* NamingTests.swift */; };
-		435DF57B1CEA3BC10019DFFD /* NSFileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF54F1CEA1D560019DFFD /* NSFileManagerExtensions.swift */; };
+		435DF57B1CEA3BC10019DFFD /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */; };
 		435DF57C1CEA3CCE0019DFFD /* NSFileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5261CEA1CE90019DFFD /* NSFileManagerExtensions.swift */; };
 		435DF57F1CEA3EA70019DFFD /* BlackboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF53F1CEA1D560019DFFD /* BlackboardCollectionViewCell.swift */; };
 		435DF5801CEA3EA70019DFFD /* BlackboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5401CEA1D560019DFFD /* BlackboardSegue.swift */; };
@@ -64,14 +63,13 @@
 		435DF53F1CEA1D560019DFFD /* BlackboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		435DF5401CEA1D560019DFFD /* BlackboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardSegue.swift; sourceTree = "<group>"; };
 		435DF5411CEA1D560019DFFD /* BlackboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardViewController.swift; sourceTree = "<group>"; };
-		435DF5421CEA1D560019DFFD /* Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		435DF5431CEA1D560019DFFD /* StoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegue.swift; sourceTree = "<group>"; };
 		435DF5441CEA1D560019DFFD /* StoryboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		435DF5451CEA1D560019DFFD /* StoryboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCell.swift; sourceTree = "<group>"; };
 		435DF5461CEA1D560019DFFD /* StoryboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		435DF5471CEA1D560019DFFD /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		435DF54A1CEA1D560019DFFD /* String+NSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+NSString.swift"; sourceTree = "<group>"; };
-		435DF54F1CEA1D560019DFFD /* NSFileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSFileManagerExtensions.swift; sourceTree = "<group>"; };
+		435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		435DF5781CEA3AE40019DFFD /* Naming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Naming.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,10 +150,9 @@
 				435DF53D1CEA1D560019DFFD /* BlackboardStoryboard.swift */,
 				435DF53E1CEA1D560019DFFD /* BlackboardTableViewCell.swift */,
 				435DF5411CEA1D560019DFFD /* BlackboardViewController.swift */,
-				435DF5421CEA1D560019DFFD /* Closure.swift */,
+				435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */,
 				434645151CEB943C0060F249 /* Header.swift */,
 				435DF5781CEA3AE40019DFFD /* Naming.swift */,
-				435DF54F1CEA1D560019DFFD /* NSFileManagerExtensions.swift */,
 				435DF5471CEA1D560019DFFD /* Storyboard.swift */,
 				435DF5461CEA1D560019DFFD /* StoryboardCollectionViewCell.swift */,
 				435DF5431CEA1D560019DFFD /* StoryboardSegue.swift */,
@@ -225,14 +222,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Nathan E. Walczak";
 				TargetAttributes = {
 					435DF5051CEA1BDE0019DFFD = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					435DF50F1CEA1BDE0019DFFD = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -284,8 +283,7 @@
 				435DF5791CEA3AE40019DFFD /* Naming.swift in Sources */,
 				435DF5731CEA31E80019DFFD /* String+NSString.swift in Sources */,
 				435DF5811CEA3EA70019DFFD /* BlackboardStoryboard.swift in Sources */,
-				435DF5741CEA32080019DFFD /* Closure.swift in Sources */,
-				435DF57B1CEA3BC10019DFFD /* NSFileManagerExtensions.swift in Sources */,
+				435DF57B1CEA3BC10019DFFD /* FileManagerExtensions.swift in Sources */,
 				435DF5801CEA3EA70019DFFD /* BlackboardSegue.swift in Sources */,
 				434645161CEB943C0060F249 /* Header.swift in Sources */,
 				435DF5891CEA3EBE0019DFFD /* SwiftSource.swift in Sources */,
@@ -334,8 +332,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -382,8 +382,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -403,6 +405,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -412,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -425,6 +429,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -432,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -444,6 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = blackboard.Blackboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -455,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blackboard.BlackboardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -466,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blackboard.BlackboardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
