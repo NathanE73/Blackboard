@@ -1,14 +1,14 @@
 # Blackboard: Another iOS Storyboard Manager
 
-[![Version](https://img.shields.io/badge/version-0.9.2-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-3.0.0-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
-[![Swift](https://img.shields.io/badge/swift-2.2-yellow.svg)](https://swift.org)
+[![Swift](https://img.shields.io/badge/swift-3.0-yellow.svg)](https://swift.org)
 
 ## Requirements
 
 - iOS 8.0+
-- Xcode 7.3+
+- Xcode 8.0+
 
 ## Installation
 
@@ -32,7 +32,7 @@ See which version of `blackboard` currently have:
 
 ```bash
 $ bin/blackboard --version
-Blackboard Version 0.9.2
+Blackboard Version 3.0.0
 ```
 
 ### Generating Source
@@ -46,8 +46,8 @@ $ bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated/
 ### UIViewController
 
 ```swift
-func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    window = UIWindow(frame: UIScreen.mainScreen().bounds)
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    window = UIWindow(frame: UIScreen.main.bounds)
     
     window?.rootViewController = WelcomeViewController.instantiateViewControllerFromStoryboard()
     
@@ -63,13 +63,13 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 let namesNavigationController = NamesViewController.instantiateNavigationControllerFromStoryboard { (namesViewController) in
     namesViewController.names = ["Steve Dave", "John Doe"]
 }
-presentViewController(namesNavigationController, animated: true, completion: nil)
+present(namesNavigationController, animated: true, completion: nil)
 ```
 
 ### UIStoryboardSegue
 
 ```swift
-func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     performShowNameSegue { (nameViewController) in
         nameViewController.name = self.names[indexPath.row]
     }
@@ -79,9 +79,9 @@ func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSInde
 ### UITableViewCell
 
 ```swift
-func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    return dequeueNameCellFrom(tableView, forIndexPath: indexPath) { (nameCell) in
-        nameCell.name = names[indexPath.row]
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    return dequeueNameCell(from: tableView, for: indexPath) { (nameCell) in
+        nameCell.name = self.names[indexPath.row]
     }
 }
 ```
@@ -89,7 +89,7 @@ func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexP
 ### UICollectionViewCell
 
 ```swift
-let cell = dequeueAccountNameCellFrom(collectionView) { (accountNameCell) in
+let cell = dequeueAccountNameCell(from: collectionView) { (accountNameCell) in
     accountNameCell.name = "Steve Dave"
 }
 ```
