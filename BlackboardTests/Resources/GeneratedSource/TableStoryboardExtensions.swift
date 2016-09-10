@@ -10,9 +10,9 @@ private let sharedStoryboardInstance = UIStoryboard(name: "Table", bundle: nil)
 
 private class InitializeBlockObject {
     
-    let block: (UIViewController -> Void)
+    let block: ((UIViewController) -> Void)
     
-    init(block: (UIViewController -> Void)) {
+    init(block: @escaping ((UIViewController) -> Void)) {
         self.block = block
     }
     
@@ -20,43 +20,43 @@ private class InitializeBlockObject {
 
 extension TableViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((tableViewController: TableViewController) -> Void) = {_ in}) -> TableViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("TableViewController") as! TableViewController
-        initialize(tableViewController: viewController)
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ tableViewController: TableViewController) -> Void)? = nil) -> TableViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "TableViewController") as! TableViewController
+        initialize?(viewController)
         return viewController
     }
     
     // Segues
     
-    func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destinationViewController)
+            initializeBlockObject.block(segue.destination)
         }
     }
     
     // Table View Cells
     
     enum TableViewCellIdentifier: String {
-        case AccountBalance = "AccountBalance"
-        case AccountName = "AccountName"
-        case LegalNotes = "LegalNotes"
+        case accountBalance = "AccountBalance"
+        case accountName = "AccountName"
+        case legalNotes = "LegalNotes"
     }
     
-    final func dequeueAccountBalanceCellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((accountBalanceCell: AccountBalanceTableViewCell) -> Void) = {_ in}) -> AccountBalanceTableViewCell {
-        let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.AccountBalance.rawValue, forIndexPath: indexPath) as! AccountBalanceTableViewCell
-        initialize(accountBalanceCell: tableViewCell)
+    final func dequeueAccountBalanceCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountBalanceCell: AccountBalanceTableViewCell) -> Void)? = nil) -> AccountBalanceTableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountBalance.rawValue, for: indexPath) as! AccountBalanceTableViewCell
+        initialize?(tableViewCell)
         return tableViewCell
     }
     
-    final func dequeueAccountNameCellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((accountNameCell: AccountNameTableViewCell) -> Void) = {_ in}) -> AccountNameTableViewCell {
-        let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.AccountName.rawValue, forIndexPath: indexPath) as! AccountNameTableViewCell
-        initialize(accountNameCell: tableViewCell)
+    final func dequeueAccountNameCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountNameCell: AccountNameTableViewCell) -> Void)? = nil) -> AccountNameTableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountName.rawValue, for: indexPath) as! AccountNameTableViewCell
+        initialize?(tableViewCell)
         return tableViewCell
     }
     
-    final func dequeueLegalNotesCellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((cell: UITableViewCell) -> Void) = {_ in}) -> UITableViewCell {
-        let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.LegalNotes.rawValue, forIndexPath: indexPath)
-        initialize(cell: tableViewCell)
+    final func dequeueLegalNotesCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ cell: UITableViewCell) -> Void)? = nil) -> UITableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.legalNotes.rawValue, for: indexPath)
+        initialize?(tableViewCell)
         return tableViewCell
     }
     
@@ -64,43 +64,43 @@ extension TableViewController {
 
 extension ViewController {
     
-    final class func instantiateViewControllerFromStoryboard(@noescape initialize: ((viewController: ViewController) -> Void) = {_ in}) -> ViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-        initialize(viewController: viewController)
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ viewController: ViewController) -> Void)? = nil) -> ViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        initialize?(viewController)
         return viewController
     }
     
     // Segues
     
-    func handleSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destinationViewController)
+            initializeBlockObject.block(segue.destination)
         }
     }
     
     // Table View Cells
     
     enum TableViewCellIdentifier: String {
-        case AccountBalance = "account-balance-cell"
-        case AccountName = "account-name-cell"
-        case LegalNotes = "legal-notes-cell"
+        case accountBalance = "account-balance-cell"
+        case accountName = "account-name-cell"
+        case legalNotes = "legal-notes-cell"
     }
     
-    final func dequeueAccountBalanceCellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((accountBalanceCell: AccountBalanceTableViewCell) -> Void) = {_ in}) -> AccountBalanceTableViewCell {
-        let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.AccountBalance.rawValue, forIndexPath: indexPath) as! AccountBalanceTableViewCell
-        initialize(accountBalanceCell: tableViewCell)
+    final func dequeueAccountBalanceCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountBalanceCell: AccountBalanceTableViewCell) -> Void)? = nil) -> AccountBalanceTableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountBalance.rawValue, for: indexPath) as! AccountBalanceTableViewCell
+        initialize?(tableViewCell)
         return tableViewCell
     }
     
-    final func dequeueAccountNameCellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((accountNameCell: AccountNameTableViewCell) -> Void) = {_ in}) -> AccountNameTableViewCell {
-        let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.AccountName.rawValue, forIndexPath: indexPath) as! AccountNameTableViewCell
-        initialize(accountNameCell: tableViewCell)
+    final func dequeueAccountNameCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountNameCell: AccountNameTableViewCell) -> Void)? = nil) -> AccountNameTableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountName.rawValue, for: indexPath) as! AccountNameTableViewCell
+        initialize?(tableViewCell)
         return tableViewCell
     }
     
-    final func dequeueLegalNotesCellFrom(tableView: UITableView, forIndexPath indexPath: NSIndexPath, @noescape initialize: ((cell: UITableViewCell) -> Void) = {_ in}) -> UITableViewCell {
-        let tableViewCell = tableView.dequeueReusableCellWithIdentifier(TableViewCellIdentifier.LegalNotes.rawValue, forIndexPath: indexPath)
-        initialize(cell: tableViewCell)
+    final func dequeueLegalNotesCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ cell: UITableViewCell) -> Void)? = nil) -> UITableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.legalNotes.rawValue, for: indexPath)
+        initialize?(tableViewCell)
         return tableViewCell
     }
     
