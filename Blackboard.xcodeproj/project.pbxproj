@@ -227,11 +227,11 @@
 				TargetAttributes = {
 					435DF5051CEA1BDE0019DFFD = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 					};
 					435DF50F1CEA1BDE0019DFFD = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
