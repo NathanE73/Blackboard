@@ -24,10 +24,9 @@
 #
 
 BIN_ROOT=`dirname "$0"`
-PROJECT_ROOT=`dirname "$BIN_ROOT"`
+PROJECT_ROOT="$BIN_ROOT/.."
 
 SOURCE="$PROJECT_ROOT/Blackboard/Source"
-TARGET="$PROJECT_ROOT/build"
 
 BLACKBOARD="$BIN_ROOT/blackboard"
 
