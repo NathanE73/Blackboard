@@ -83,26 +83,22 @@ extension StoryboardViewController {
     
     func segueWith(id: String) -> StoryboardSegue? {
         return segues
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
     func segueWith(kind: StoryboardSegueKind) -> StoryboardSegue? {
         return segues
-            .filter { $0.kind == kind }
-            .first
+            .first { $0.kind == kind }
     }
     
     func tableViewCellWith(id: String) -> StoryboardTableViewCell? {
         return tableViewCells
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
     func collectionViewCellWith(id: String) -> StoryboardCollectionViewCell? {
         return collectionViewCells
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
 }
