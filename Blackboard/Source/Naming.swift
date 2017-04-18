@@ -46,7 +46,7 @@ func methodNameFromIdentifier(_ identifier: String, namespace: String? = nil, su
         methodName = prefix + name
     }
     else {
-        methodName = name.lowercasedFirstCharacterString
+        methodName = name.firstCharacterLowercased
     }
     
     if let suffix = suffix {

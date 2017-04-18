@@ -43,7 +43,7 @@ extension BlackboardSegue {
         
         name = identifier
         
-        enumName = name.lowercasedFirstCharacterString
+        enumName = name.firstCharacterLowercased
         
         self.identifier = identifier
         

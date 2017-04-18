@@ -48,7 +48,7 @@ extension BlackboardViewController {
         identifier = viewController.storyboardIdentifier
         navigationControllerIdentifier = storyboard.navigationControllerFor(id: viewController.id)?.storyboardIdentifier
         
-        parameterName = customClass.lowercasedFirstCharacterString
+        parameterName = customClass.firstCharacterLowercased
         
         segues = viewController.segues
             .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard) }

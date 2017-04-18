@@ -42,9 +42,9 @@ extension BlackboardTableViewCell {
         }
         
         name = nameFromIdentifier(reuseIdentifier)
-            .stringByRemovingSuffixString("Cell")
+            .removingSuffix("Cell")
         
-        enumName = name.lowercasedFirstCharacterString
+        enumName = name.firstCharacterLowercased
         
         identifier = reuseIdentifier
         
@@ -52,10 +52,10 @@ extension BlackboardTableViewCell {
             className = customClass
             
             parameterName = (customClass
-                .stringByRemovingSuffixString("Cell")
-                .stringByRemovingSuffixString("TableView")
+                .removingSuffix("Cell")
+                .removingSuffix("TableView")
                 + "Cell")
-                .lowercasedFirstCharacterString
+                .firstCharacterLowercased
         }
         else {
             className = "UITableViewCell"

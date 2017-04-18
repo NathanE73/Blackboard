@@ -28,24 +28,24 @@ import XCTest
 
 class StringExtensionsTests: XCTestCase {
     
-    func testlowercasedFirstCharacterString() {
-        XCTAssertEqual("".lowercasedFirstCharacterString, "")
+    func testFirstCharacterLowercased() {
+        XCTAssertEqual("".firstCharacterLowercased, "")
         
-        XCTAssertEqual("Apple".lowercasedFirstCharacterString, "apple")
-        XCTAssertEqual("AppleApple".lowercasedFirstCharacterString, "appleApple")
-        XCTAssertEqual("ABC".lowercasedFirstCharacterString, "aBC")
+        XCTAssertEqual("Apple".firstCharacterLowercased, "apple")
+        XCTAssertEqual("AppleApple".firstCharacterLowercased, "appleApple")
+        XCTAssertEqual("ABC".firstCharacterLowercased, "aBC")
         
-        XCTAssertEqual(" Apple".lowercasedFirstCharacterString, " Apple")
-        XCTAssertEqual(" ABC".lowercasedFirstCharacterString, " ABC")
+        XCTAssertEqual(" Apple".firstCharacterLowercased, " Apple")
+        XCTAssertEqual(" ABC".firstCharacterLowercased, " ABC")
     }
     
-    func testStringByRemovingSuffixString() {
-        XCTAssertEqual("".stringByRemovingSuffixString("Cell"), "")
+    func testRemovingSuffix() {
+        XCTAssertEqual("".removingSuffix("Cell"), "")
         
-        XCTAssertEqual("AppleTableViewCell".stringByRemovingSuffixString("Cell"), "AppleTableView")
-        XCTAssertEqual("AppleTableViewCell".stringByRemovingSuffixString("TableViewCell"), "Apple")
+        XCTAssertEqual("AppleTableViewCell".removingSuffix("Cell"), "AppleTableView")
+        XCTAssertEqual("AppleTableViewCell".removingSuffix("TableViewCell"), "Apple")
         
-        XCTAssertEqual("AppleApple".stringByRemovingSuffixString("APPLE"), "AppleApple")
+        XCTAssertEqual("AppleApple".removingSuffix("APPLE"), "AppleApple")
     }
     
     func testTrimmingWhitespaceCharacters() {
