@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/swift-3.0-yellow.svg)](https://swift.org)
+[![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
 
 ## Requirements
 
@@ -94,9 +95,10 @@ let cell = dequeueAccountNameCell(from: collectionView) { (accountNameCell) in
 }
 ```
 
-## Author
+## Authors
 
-Nathan Walczak, knate@knate.com
+* Nathan Walczak, knate@knate.com
+* Jon Shier, jon@jonshier.com
 
 ## License
 
