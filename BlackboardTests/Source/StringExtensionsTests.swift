@@ -68,38 +68,4 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("\t apple \t".trimmingWhitespaceCharacters, "apple")
     }
     
-    // MARK: Identifiers
-    
-    func testMemberNameFromIdentifier() {
-        XCTAssertEqual(memberNameFromIdentifier("ApplePie"), "ApplePie")
-        
-        XCTAssertEqual(memberNameFromIdentifier("apple pie"), "ApplePie")
-        XCTAssertEqual(memberNameFromIdentifier("apple-pie"), "ApplePie")
-        XCTAssertEqual(memberNameFromIdentifier("apple_pie"), "ApplePie")
-    }
-    
-    func testMethodNameFromIdentifier() {
-        XCTAssertEqual(methodNameFromIdentifier("ApplePie"), "applePie")
-        
-        XCTAssertEqual(methodNameFromIdentifier("apple pie"), "applePie")
-        XCTAssertEqual(methodNameFromIdentifier("apple-pie"), "applePie")
-        XCTAssertEqual(methodNameFromIdentifier("apple_pie"), "applePie")
-    }
-    
-    func testMethodNameFromIdentifierWithSuffix() {
-        XCTAssertEqual(methodNameFromIdentifier("ApplePie", suffix:"Image"), "applePieImage")
-        
-        XCTAssertEqual(methodNameFromIdentifier("apple pie", suffix:"Image"), "applePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple-pie", suffix:"Image"), "applePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple_pie", suffix:"Image"), "applePieImage")
-    }
-    
-    func testMethodNameFromIdentifierWithSuffixAndPrefix() {
-        XCTAssertEqual(methodNameFromIdentifier("ApplePie", suffix:"Image", prefix:"xyz"), "xyzApplePieImage")
-        
-        XCTAssertEqual(methodNameFromIdentifier("apple pie", suffix:"Image", prefix:"xyz"), "xyzApplePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple-pie", suffix:"Image", prefix:"xyz"), "xyzApplePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple_pie", suffix:"Image", prefix:"xyz"), "xyzApplePieImage")
-    }
-    
 }

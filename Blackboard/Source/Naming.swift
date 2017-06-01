@@ -24,59 +24,63 @@
 
 import Foundation
 
-func memberNameFromIdentifier(_ identifier: String, namespace: String? = nil) -> String {
-    if let namespace = namespace {
-        return namespace + nameFromIdentifier(identifier)
-    }
-    return nameFromIdentifier(identifier)
-}
-
-func methodNameFromIdentifier(_ identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
-    let name: String
-    if let namespace = namespace {
-        name = namespace + nameFromIdentifier(identifier)
-    }
-    else {
-        name = nameFromIdentifier(identifier)
+struct Naming {
+    
+    static func memberName(fromIdentifier identifier: String, namespace: String? = nil) -> String {
+        if let namespace = namespace {
+            return namespace + name(fromIdentifier: identifier)
+        }
+        return name(fromIdentifier: identifier)
     }
     
-    var methodName: String
-    
-    if let prefix = prefix {
-        methodName = prefix + name
-    }
-    else {
-        methodName = name.firstCharacterLowercased
-    }
-    
-    if let suffix = suffix {
-        methodName += suffix
-    }
-    
-    return methodName
-}
-
-func nameFromIdentifier(_ identifier: String) -> String {
-    var name = ""
-    
-    var shouldUppercaseNextCharacter = true
-    
-    for character in identifier.characters {
-        
-        if [" ", "_", "-"].contains(character) {
-            shouldUppercaseNextCharacter = true
-            continue
+    static func methodName(fromIdentifier identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
+        let name: String
+        if let namespace = namespace {
+            name = namespace + self.name(fromIdentifier: identifier)
+        }
+        else {
+            name = self.name(fromIdentifier: identifier)
         }
         
-        if shouldUppercaseNextCharacter {
-            shouldUppercaseNextCharacter = false
-            let uppercaseCharacter = String(character).uppercased()
-            name += uppercaseCharacter
-            continue
+        var methodName: String
+        
+        if let prefix = prefix {
+            methodName = prefix + name
+        }
+        else {
+            methodName = name.firstCharacterLowercased
         }
         
-        name.append(character)
+        if let suffix = suffix {
+            methodName += suffix
+        }
+        
+        return methodName
     }
     
-    return name
+    static func name(fromIdentifier identifier: String) -> String {
+        var name = ""
+        
+        var shouldUppercaseNextCharacter = true
+        
+        for character in identifier.characters {
+            
+            if [" ", "_", "-"].contains(character) {
+                shouldUppercaseNextCharacter = true
+                continue
+            }
+            
+            if shouldUppercaseNextCharacter {
+                shouldUppercaseNextCharacter = false
+                let uppercaseCharacter = String(character).uppercased()
+                name += uppercaseCharacter
+                continue
+            }
+            
+            name.append(character)
+        }
+        
+        return name
+    }
+    
 }

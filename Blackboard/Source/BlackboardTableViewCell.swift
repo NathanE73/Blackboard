@@ -41,7 +41,7 @@ extension BlackboardTableViewCell {
             return nil
         }
         
-        name = nameFromIdentifier(reuseIdentifier)
+        name = Naming.name(fromIdentifier: reuseIdentifier)
             .removingSuffix("Cell")
         
         enumName = name.firstCharacterLowercased
