@@ -36,19 +36,16 @@ extension Storyboard {
     
     func viewControllerWith(id: String) -> StoryboardViewController? {
         return viewControllers
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
     func navigationControllerFor(id: String) -> StoryboardViewController? {
         return viewControllers
             .filter { $0.type == .navigationController }
-            .filter { viewController in
+            .first { viewController in
                 return viewController.segues
-                    .filter { $0.destination == id}
-                    .isEmpty == false
+                    .first { $0.destination == id} != nil
             }
-            .first
     }
     
 }

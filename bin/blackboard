@@ -71,14 +71,14 @@ extension String {
 
 extension String {
     
-    var lowercasedFirstCharacterString: String {
+    var firstCharacterLowercased: String {
         guard let firstCharacter = characters.first else {
             return self
         }
         return String(firstCharacter).lowercased() + String(characters.dropFirst(1))
     }
     
-    func stringByRemovingSuffixString(_ suffix: String) -> String {
+    func removingSuffix(_ suffix: String) -> String {
         if hasSuffix(suffix) {
             return String(characters.dropLast(suffix.characters.count))
         }
@@ -137,7 +137,7 @@ func methodNameFromIdentifier(_ identifier: String, namespace: String? = nil, su
         methodName = prefix + name
     }
     else {
-        methodName = name.lowercasedFirstCharacterString
+        methodName = name.firstCharacterLowercased
     }
     
     if let suffix = suffix {
@@ -251,19 +251,16 @@ extension Storyboard {
     
     func viewControllerWith(id: String) -> StoryboardViewController? {
         return viewControllers
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
     func navigationControllerFor(id: String) -> StoryboardViewController? {
         return viewControllers
             .filter { $0.type == .navigationController }
-            .filter { viewController in
+            .first { viewController in
                 return viewController.segues
-                    .filter { $0.destination == id}
-                    .isEmpty == false
+                    .first { $0.destination == id} != nil
             }
-            .first
     }
     
 }
@@ -513,26 +510,22 @@ extension StoryboardViewController {
     
     func segueWith(id: String) -> StoryboardSegue? {
         return segues
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
     func segueWith(kind: StoryboardSegueKind) -> StoryboardSegue? {
         return segues
-            .filter { $0.kind == kind }
-            .first
+            .first { $0.kind == kind }
     }
     
     func tableViewCellWith(id: String) -> StoryboardTableViewCell? {
         return tableViewCells
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
     func collectionViewCellWith(id: String) -> StoryboardCollectionViewCell? {
         return collectionViewCells
-            .filter { $0.id == id }
-            .first
+            .first { $0.id == id }
     }
     
 }
@@ -617,9 +610,9 @@ extension BlackboardCollectionViewCell {
         }
         
         name = nameFromIdentifier(reuseIdentifier)
-            .stringByRemovingSuffixString("Cell")
+            .removingSuffix("Cell")
         
-        enumName = name.lowercasedFirstCharacterString
+        enumName = name.firstCharacterLowercased
         
         identifier = reuseIdentifier
         
@@ -627,10 +620,10 @@ extension BlackboardCollectionViewCell {
             className = customClass
             
             parameterName = (customClass
-                .stringByRemovingSuffixString("Cell")
-                .stringByRemovingSuffixString("CollectionView")
+                .removingSuffix("Cell")
+                .removingSuffix("CollectionView")
                 + "Cell")
-                .lowercasedFirstCharacterString
+                .firstCharacterLowercased
         }
         else {
             className = "UICollectionViewCell"
@@ -706,7 +699,7 @@ extension BlackboardSegue {
         
         name = identifier
         
-        enumName = name.lowercasedFirstCharacterString
+        enumName = name.firstCharacterLowercased
         
         self.identifier = identifier
         
@@ -817,7 +810,7 @@ extension BlackboardStoryboard {
         name = storyboard.name
         
         extensionName = storyboard.name
-            .stringByRemovingSuffixString("Storyboard")
+            .removingSuffix("Storyboard")
             + "StoryboardExtensions.swift"
         
         viewControllers = storyboard.viewControllers
@@ -869,9 +862,9 @@ extension BlackboardTableViewCell {
         }
         
         name = nameFromIdentifier(reuseIdentifier)
-            .stringByRemovingSuffixString("Cell")
+            .removingSuffix("Cell")
         
-        enumName = name.lowercasedFirstCharacterString
+        enumName = name.firstCharacterLowercased
         
         identifier = reuseIdentifier
         
@@ -879,10 +872,10 @@ extension BlackboardTableViewCell {
             className = customClass
             
             parameterName = (customClass
-                .stringByRemovingSuffixString("Cell")
-                .stringByRemovingSuffixString("TableView")
+                .removingSuffix("Cell")
+                .removingSuffix("TableView")
                 + "Cell")
-                .lowercasedFirstCharacterString
+                .firstCharacterLowercased
         }
         else {
             className = "UITableViewCell"
@@ -963,7 +956,7 @@ extension BlackboardViewController {
         identifier = viewController.storyboardIdentifier
         navigationControllerIdentifier = storyboard.navigationControllerFor(id: viewController.id)?.storyboardIdentifier
         
-        parameterName = customClass.lowercasedFirstCharacterString
+        parameterName = customClass.firstCharacterLowercased
         
         segues = viewController.segues
             .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard) }

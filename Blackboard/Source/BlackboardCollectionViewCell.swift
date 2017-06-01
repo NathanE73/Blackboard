@@ -42,9 +42,9 @@ extension BlackboardCollectionViewCell {
         }
         
         name = nameFromIdentifier(reuseIdentifier)
-            .stringByRemovingSuffixString("Cell")
+            .removingSuffix("Cell")
         
-        enumName = name.lowercasedFirstCharacterString
+        enumName = name.firstCharacterLowercased
         
         identifier = reuseIdentifier
         
@@ -52,10 +52,10 @@ extension BlackboardCollectionViewCell {
             className = customClass
             
             parameterName = (customClass
-                .stringByRemovingSuffixString("Cell")
-                .stringByRemovingSuffixString("CollectionView")
+                .removingSuffix("Cell")
+                .removingSuffix("CollectionView")
                 + "Cell")
-                .lowercasedFirstCharacterString
+                .firstCharacterLowercased
         }
         else {
             className = "UICollectionViewCell"

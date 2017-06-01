@@ -26,14 +26,14 @@ import Foundation
 
 extension String {
     
-    var lowercasedFirstCharacterString: String {
+    var firstCharacterLowercased: String {
         guard let firstCharacter = characters.first else {
             return self
         }
         return String(firstCharacter).lowercased() + String(characters.dropFirst(1))
     }
     
-    func stringByRemovingSuffixString(_ suffix: String) -> String {
+    func removingSuffix(_ suffix: String) -> String {
         if hasSuffix(suffix) {
             return String(characters.dropLast(suffix.characters.count))
         }

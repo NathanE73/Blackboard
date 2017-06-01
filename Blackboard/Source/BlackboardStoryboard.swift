@@ -39,7 +39,7 @@ extension BlackboardStoryboard {
         name = storyboard.name
         
         extensionName = storyboard.name
-            .stringByRemovingSuffixString("Storyboard")
+            .removingSuffix("Storyboard")
             + "StoryboardExtensions.swift"
         
         viewControllers = storyboard.viewControllers
