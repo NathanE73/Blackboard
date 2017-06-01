@@ -29,35 +29,43 @@ import XCTest
 class NamingTests: XCTestCase {
     
     func testMemberNameFromIdentifier() {
-        XCTAssertEqual(memberNameFromIdentifier("ApplePie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(fromIdentifier: "ApplePie"), "ApplePie")
         
-        XCTAssertEqual(memberNameFromIdentifier("apple pie"), "ApplePie")
-        XCTAssertEqual(memberNameFromIdentifier("apple-pie"), "ApplePie")
-        XCTAssertEqual(memberNameFromIdentifier("apple_pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple-pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple_pie"), "ApplePie")
     }
     
     func testMethodNameFromIdentifier() {
-        XCTAssertEqual(methodNameFromIdentifier("ApplePie"), "applePie")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "ApplePie"), "applePie")
         
-        XCTAssertEqual(methodNameFromIdentifier("apple pie"), "applePie")
-        XCTAssertEqual(methodNameFromIdentifier("apple-pie"), "applePie")
-        XCTAssertEqual(methodNameFromIdentifier("apple_pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple-pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple_pie"), "applePie")
     }
     
     func testMethodNameFromIdentifierWithSuffix() {
-        XCTAssertEqual(methodNameFromIdentifier("ApplePie", suffix: "Image"), "applePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "ApplePie", suffix: "Image"), "applePieImage")
         
-        XCTAssertEqual(methodNameFromIdentifier("apple pie", suffix: "Image"), "applePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple-pie", suffix: "Image"), "applePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple_pie", suffix: "Image"), "applePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple pie", suffix: "Image"), "applePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple-pie", suffix: "Image"), "applePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple_pie", suffix: "Image"), "applePieImage")
     }
     
     func testMethodNameFromIdentifierWithSuffixAndPrefix() {
-        XCTAssertEqual(methodNameFromIdentifier("ApplePie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "ApplePie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
         
-        XCTAssertEqual(methodNameFromIdentifier("apple pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple-pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
-        XCTAssertEqual(methodNameFromIdentifier("apple_pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple-pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple_pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
+    }
+    
+    func testNameFromIdentifier() {
+        XCTAssertEqual(Naming.name(fromIdentifier: "ApplePie"), "ApplePie")
+        
+        XCTAssertEqual(Naming.name(fromIdentifier: "apple pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(fromIdentifier: "apple-pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(fromIdentifier: "apple_pie"), "ApplePie")
     }
     
 }
