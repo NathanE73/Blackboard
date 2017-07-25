@@ -1030,7 +1030,7 @@ class BlackboardMain {
         // Version
         
         if arguments.contains("--version") {
-            print("Blackboard Version 3.0.0")
+            print("Blackboard Version 4.0.0")
             exit(0)
         }
         
