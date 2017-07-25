@@ -77,6 +77,16 @@
 			path = ExampleApp;
 			sourceTree = "<group>";
 		};
+		436292E51F27CF6F0000C651 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				435E2AFF1D01F600008E1170 /* LaunchScreen.storyboard */,
+				435E2AFA1D01F600008E1170 /* Main.storyboard */,
+				437174F41D06091800B9AFCB /* Table.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		43C2B1981D01F7AB001B08CA /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +105,7 @@
 			children = (
 				435E2AFD1D01F600008E1170 /* Assets.xcassets */,
 				436292E31F27CEBC0000C651 /* Colors.xcassets */,
-				435E2AFF1D01F600008E1170 /* LaunchScreen.storyboard */,
-				435E2AFA1D01F600008E1170 /* Main.storyboard */,
-				437174F41D06091800B9AFCB /* Table.storyboard */,
+				436292E51F27CF6F0000C651 /* Storyboards */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
