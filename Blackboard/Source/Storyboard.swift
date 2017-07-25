@@ -61,7 +61,7 @@ extension Storyboard: CustomStringConvertible {
 extension Storyboard {
     
     init?(url: URL) {
-        guard let xmlDocument = try? XMLDocument(contentsOf: url, options: 0) else {
+        guard let xmlDocument = try? XMLDocument(contentsOf: url) else {
             return nil
         }
         
