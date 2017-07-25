@@ -26,6 +26,13 @@ import AppKit
 
 class BlackboardMain {
     
+    static func printUsage() {
+        let name = CommandLine.arguments[0].lastPathComponent
+        print("usage: \(name) --version")
+        print("usage: \(name) source_directory target_directory")
+        print("example: \(name) example/storyboards/ example/source/generated/")
+    }
+    
     static func run() {
         
         let arguments = CommandLine.arguments
@@ -41,9 +48,7 @@ class BlackboardMain {
         // Usage
         
         if numberOfArguments != 2 {
-            let name = arguments[0].lastPathComponent
-            print("usage: \(name) [--version] source_directory target_directory")
-            print("example: \(name) example/storyboards/ example/source/generated")
+            printUsage()
             exit(1)
         }
         
