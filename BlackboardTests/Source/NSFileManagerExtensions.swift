@@ -39,11 +39,11 @@ class NSFileManagerExtensions: XCTestCase {
     func testIsFile() {
         let bundle = Bundle(for: NSFileManagerExtensions.self)
         
-        if let file = bundle.path(forResource: "colors", ofType: "json", inDirectory: "Resources") {
+        if let file = bundle.path(forResource: "Contents", ofType: "json", inDirectory: "Resources/Colors.xcassets/Emerald.colorset") {
             XCTAssertTrue(fileManager.isFile(file))
         }
         else {
-            XCTFail("The colors.json file missing.")
+            XCTFail("The Contents.json file missing.")
         }
         
         XCTAssertFalse(fileManager.isFile("/opt/missing.json"))
