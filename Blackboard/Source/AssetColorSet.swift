@@ -29,6 +29,14 @@ extension AssetColorSet {
 
 extension AssetColorSet.Color {
     
+    var isUniversal: Bool {
+        return idiom == "universal"
+    }
+    
+}
+
+extension AssetColorSet.Color {
+    
     struct Color : Decodable {
         let colorSpace: String
         let components: Components
@@ -44,10 +52,10 @@ extension AssetColorSet.Color {
 extension AssetColorSet.Color.Color {
     
     struct Components : Decodable {
-        let red: Float
-        let green: Float
-        let blue: Float
-        let alpha: Float
+        let red: Double
+        let green: Double
+        let blue: Double
+        let alpha: Double
     }
     
 }

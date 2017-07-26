@@ -74,7 +74,7 @@ class BlackboardMain {
             exit(1)
         }
         
-        // Find Storyboards
+        // Process Storyboards
         
         let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)
         
@@ -87,6 +87,21 @@ class BlackboardMain {
                 try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
             }
         }
+        
+        // Process Color Sets
+        
+        let colorSets = ColorSet.colorSetsAt(path: sourceDirectory)
+
+        let blackboardColors = colorSets.flatMap(BlackboardColor.init)
+        
+        if !blackboardColors.isEmpty {
+            let swiftSource = SwiftSource()
+            swiftSource.appendColors(colors: blackboardColors)
+            let source = swiftSource.description
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIColorExtensions.swift")
+            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+        }
+
     }
     
 }
