@@ -24,54 +24,48 @@
 
 import Foundation
 
-struct AssetColorSet : Decodable {
-    let info: Info
-    let colors: [Color]
-}
-
-extension AssetColorSet {
+struct ImageSet {
     
-    struct Info : Decodable {
-        let version: Int
-        let author: String
-    }
-    
-    struct Color : Decodable {
-        let idiom: String
-        let color: Color
-    }
+    let name: String
     
 }
 
-extension AssetColorSet.Color {
+extension ImageSet {
     
-    var isUniversal: Bool {
-        return idiom == "universal"
-    }
-    
-}
-
-extension AssetColorSet.Color {
-    
-    struct Color : Decodable {
-        let colorSpace: String
-        let components: Components
+    init?(url: URL) {
+        let contentsURL = url.appendingPathComponent("Contents.json")
         
-        private enum CodingKeys : String, CodingKey {
-            case colorSpace = "color-space"
-            case components
+        guard let data = try? Data(contentsOf: contentsURL) else {
+            return nil
         }
+        
+        guard let _ /* assetImageSet */ = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
+            return nil
+        }
+        
+        name = url.lastPathComponent.deletingPathExtension
     }
     
-}
-
-extension AssetColorSet.Color.Color {
+    init?(path: String) {
+        let url = URL(fileURLWithPath: path, isDirectory: false)
+        self.init(url: url)
+    }
     
-    struct Components : Decodable {
-        let red: Double
-        let green: Double
-        let blue: Double
-        let alpha: Double
+    static func imageSetsAt(path: String) -> [ImageSet] {
+        var files: [String] = []
+        
+        let fileManager = FileManager.default
+        
+        let enumerator = fileManager.enumerator(atPath: path)
+        while let file = enumerator?.nextObject() as? String {
+            if file.pathExtension == "imageset" {
+                files.append(path.appendingPathComponent(file))
+            }
+        }
+        
+        files.sort(by: <)
+        
+        return files.flatMap { ImageSet(path: $0) }
     }
     
 }

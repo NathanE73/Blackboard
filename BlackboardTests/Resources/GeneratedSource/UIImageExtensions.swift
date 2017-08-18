@@ -26,7 +26,7 @@ enum ImageAssetIdentifier: String {
     case largeApple = "large-apple"
     case redApple = "redApple"
     case smallApple = "small apple"
-
+    
 }
 
 extension UIImage {

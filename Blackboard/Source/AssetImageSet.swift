@@ -24,54 +24,29 @@
 
 import Foundation
 
-struct AssetColorSet : Decodable {
+struct AssetImageSet : Decodable {
     let info: Info
-    let colors: [Color]
+    let images: [Image]
 }
 
-extension AssetColorSet {
+extension AssetImageSet {
     
     struct Info : Decodable {
         let version: Int
         let author: String
     }
     
-    struct Color : Decodable {
+    struct Image : Decodable {
         let idiom: String
-        let color: Color
+        let scale: String
     }
     
 }
 
-extension AssetColorSet.Color {
+extension AssetImageSet.Image {
     
     var isUniversal: Bool {
         return idiom == "universal"
-    }
-    
-}
-
-extension AssetColorSet.Color {
-    
-    struct Color : Decodable {
-        let colorSpace: String
-        let components: Components
-        
-        private enum CodingKeys : String, CodingKey {
-            case colorSpace = "color-space"
-            case components
-        }
-    }
-    
-}
-
-extension AssetColorSet.Color.Color {
-    
-    struct Components : Decodable {
-        let red: Double
-        let green: Double
-        let blue: Double
-        let alpha: Double
     }
     
 }

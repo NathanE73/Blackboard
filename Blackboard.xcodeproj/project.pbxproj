@@ -33,6 +33,10 @@
 		435DF5881CEA3EBE0019DFFD /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5441CEA1D560019DFFD /* StoryboardViewController.swift */; };
 		435DF5891CEA3EBE0019DFFD /* SwiftSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF53B1CEA1D560019DFFD /* SwiftSource.swift */; };
 		435DF58A1CEA40C50019DFFD /* LaunchScreenStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5231CEA1CE90019DFFD /* LaunchScreenStoryboardTests.swift */; };
+		436A1DF51F473E54005EAFAD /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DF41F473E54005EAFAD /* ImageSet.swift */; };
+		436A1DF71F473E62005EAFAD /* BlackboardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DF61F473E62005EAFAD /* BlackboardImage.swift */; };
+		436A1DF91F473E7E005EAFAD /* AssetImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DF81F473E7E005EAFAD /* AssetImageSet.swift */; };
+		436A1DFB1F4757F8005EAFAD /* AssetImageSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DFA1F4757F8005EAFAD /* AssetImageSetTests.swift */; };
 		436B578E1F27E45F0030E40B /* AssetColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B578D1F27E45F0030E40B /* AssetColorSet.swift */; };
 		436B57901F27E47B0030E40B /* AssetColorSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B578F1F27E47B0030E40B /* AssetColorSetTests.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +81,10 @@
 		435DF54A1CEA1D560019DFFD /* String+NSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+NSString.swift"; sourceTree = "<group>"; };
 		435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		435DF5781CEA3AE40019DFFD /* Naming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Naming.swift; sourceTree = "<group>"; };
+		436A1DF41F473E54005EAFAD /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
+		436A1DF61F473E62005EAFAD /* BlackboardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackboardImage.swift; sourceTree = "<group>"; };
+		436A1DF81F473E7E005EAFAD /* AssetImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetImageSet.swift; sourceTree = "<group>"; };
+		436A1DFA1F4757F8005EAFAD /* AssetImageSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetImageSetTests.swift; sourceTree = "<group>"; };
 		436B578D1F27E45F0030E40B /* AssetColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColorSet.swift; sourceTree = "<group>"; };
 		436B578F1F27E47B0030E40B /* AssetColorSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColorSetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				436B578F1F27E47B0030E40B /* AssetColorSetTests.swift */,
+				436A1DFA1F4757F8005EAFAD /* AssetImageSetTests.swift */,
 				435DF5231CEA1CE90019DFFD /* LaunchScreenStoryboardTests.swift */,
 				435DF52B1CEA1CE90019DFFD /* NamingTests.swift */,
 				435DF5261CEA1CE90019DFFD /* NSFileManagerExtensions.swift */,
@@ -154,8 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				436B578D1F27E45F0030E40B /* AssetColorSet.swift */,
+				436A1DF81F473E7E005EAFAD /* AssetImageSet.swift */,
 				435DF53F1CEA1D560019DFFD /* BlackboardCollectionViewCell.swift */,
 				430867AE1F27BAF2006DF3D2 /* BlackboardColor.swift */,
+				436A1DF61F473E62005EAFAD /* BlackboardImage.swift */,
 				434645131CEB6F6A0060F249 /* BlackboardMain.swift */,
 				435DF5401CEA1D560019DFFD /* BlackboardSegue.swift */,
 				435DF53D1CEA1D560019DFFD /* BlackboardStoryboard.swift */,
@@ -164,6 +175,7 @@
 				430DDEC61F28DABE00CFF543 /* ColorSet.swift */,
 				435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */,
 				434645151CEB943C0060F249 /* Header.swift */,
+				436A1DF41F473E54005EAFAD /* ImageSet.swift */,
 				435DF5781CEA3AE40019DFFD /* Naming.swift */,
 				435DF5471CEA1D560019DFFD /* Storyboard.swift */,
 				435DF5461CEA1D560019DFFD /* StoryboardCollectionViewCell.swift */,
@@ -297,6 +309,9 @@
 				430867B11F27BAF2006DF3D2 /* BlackboardColor.swift in Sources */,
 				435DF5731CEA31E80019DFFD /* String+NSString.swift in Sources */,
 				435DF5811CEA3EA70019DFFD /* BlackboardStoryboard.swift in Sources */,
+				436A1DF51F473E54005EAFAD /* ImageSet.swift in Sources */,
+				436A1DF91F473E7E005EAFAD /* AssetImageSet.swift in Sources */,
+				436A1DF71F473E62005EAFAD /* BlackboardImage.swift in Sources */,
 				435DF57B1CEA3BC10019DFFD /* FileManagerExtensions.swift in Sources */,
 				435DF5801CEA3EA70019DFFD /* BlackboardSegue.swift in Sources */,
 				434645161CEB943C0060F249 /* Header.swift in Sources */,
@@ -318,6 +333,7 @@
 				435DF57C1CEA3CCE0019DFFD /* NSFileManagerExtensions.swift in Sources */,
 				436B57901F27E47B0030E40B /* AssetColorSetTests.swift in Sources */,
 				435DF58A1CEA40C50019DFFD /* LaunchScreenStoryboardTests.swift in Sources */,
+				436A1DFB1F4757F8005EAFAD /* AssetImageSetTests.swift in Sources */,
 				435DF57A1CEA3B110019DFFD /* NamingTests.swift in Sources */,
 				435DF5771CEA33500019DFFD /* StringExtensionsTests.swift in Sources */,
 			);

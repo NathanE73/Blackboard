@@ -102,6 +102,20 @@ class BlackboardMain {
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
 
+        // Process Image Sets
+        
+        let imageSets = ImageSet.imageSetsAt(path: sourceDirectory)
+        
+        let blackboardImages = imageSets.flatMap(BlackboardImage.init)
+        
+        if !blackboardImages.isEmpty {
+            let swiftSource = SwiftSource()
+            swiftSource.appendImages(images: blackboardImages)
+            let source = swiftSource.description
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIImageExtensions.swift")
+            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+        }
+        
     }
     
 }
