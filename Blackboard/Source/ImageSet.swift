@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2016 Nathan E. Walczak
+// Copyright (c) 2017 Nathan E. Walczak
 //
 // MIT License
 //
@@ -22,31 +22,50 @@
 // THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 
-@testable import Blackboard
+struct ImageSet {
+    
+    let name: String
+    
+}
 
-class NSFileManagerExtensions: XCTestCase {
+extension ImageSet {
     
-    let fileManager = FileManager.default
-    
-    func testIsDirectory() {
-        XCTAssertTrue(fileManager.isDirectory("/opt"))
+    init?(url: URL) {
+        let contentsURL = url.appendingPathComponent("Contents.json")
         
-        XCTAssertFalse(fileManager.isDirectory("/opt/missing"))
+        guard let data = try? Data(contentsOf: contentsURL) else {
+            return nil
+        }
+        
+        guard let _ /* assetImageSet */ = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
+            return nil
+        }
+        
+        name = url.lastPathComponent.deletingPathExtension
     }
     
-    func testIsFile() {
-        let bundle = Bundle(for: NSFileManagerExtensions.self)
+    init?(path: String) {
+        let url = URL(fileURLWithPath: path, isDirectory: false)
+        self.init(url: url)
+    }
+    
+    static func imageSetsAt(path: String) -> [ImageSet] {
+        var files: [String] = []
         
-        if let file = bundle.path(forResource: "Contents", ofType: "json", inDirectory: "Resources/Colors.xcassets/Emerald.colorset") {
-            XCTAssertTrue(fileManager.isFile(file))
-        }
-        else {
-            XCTFail("The Contents.json file missing.")
+        let fileManager = FileManager.default
+        
+        let enumerator = fileManager.enumerator(atPath: path)
+        while let file = enumerator?.nextObject() as? String {
+            if file.pathExtension == "imageset" {
+                files.append(path.appendingPathComponent(file))
+            }
         }
         
-        XCTAssertFalse(fileManager.isFile("/opt/missing.json"))
+        files.sort(by: <)
+        
+        return files.flatMap { ImageSet(path: $0) }
     }
     
 }

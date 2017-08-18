@@ -26,6 +26,13 @@ import AppKit
 
 class BlackboardMain {
     
+    static func printUsage() {
+        let name = CommandLine.arguments[0].lastPathComponent
+        print("usage: \(name) --version")
+        print("usage: \(name) source_directory target_directory")
+        print("example: \(name) example/storyboards/ example/source/generated/")
+    }
+    
     static func run() {
         
         let arguments = CommandLine.arguments
@@ -41,9 +48,7 @@ class BlackboardMain {
         // Usage
         
         if numberOfArguments != 2 {
-            let name = arguments[0].lastPathComponent
-            print("usage: \(name) [--version] source_directory target_directory")
-            print("example: \(name) example/storyboards/ example/source/generated")
+            printUsage()
             exit(1)
         }
         
@@ -69,7 +74,7 @@ class BlackboardMain {
             exit(1)
         }
         
-        // Find Storyboards
+        // Process Storyboards
         
         let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)
         
@@ -82,6 +87,35 @@ class BlackboardMain {
                 try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
             }
         }
+        
+        // Process Color Sets
+        
+        let colorSets = ColorSet.colorSetsAt(path: sourceDirectory)
+
+        let blackboardColors = colorSets.flatMap(BlackboardColor.init)
+        
+        if !blackboardColors.isEmpty {
+            let swiftSource = SwiftSource()
+            swiftSource.appendColors(colors: blackboardColors)
+            let source = swiftSource.description
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIColorExtensions.swift")
+            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+        }
+
+        // Process Image Sets
+        
+        let imageSets = ImageSet.imageSetsAt(path: sourceDirectory)
+        
+        let blackboardImages = imageSets.flatMap(BlackboardImage.init)
+        
+        if !blackboardImages.isEmpty {
+            let swiftSource = SwiftSource()
+            swiftSource.appendImages(images: blackboardImages)
+            let source = swiftSource.description
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIImageExtensions.swift")
+            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+        }
+        
     }
     
 }

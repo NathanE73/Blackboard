@@ -56,6 +56,8 @@ append String+NSString StringExtensions FileManagerExtensions \
   Naming SwiftSource \
   Storyboard StoryboardCollectionViewCell StoryboardSegue StoryboardTableViewCell StoryboardViewController \
   BlackboardCollectionViewCell BlackboardSegue BlackboardStoryboard BlackboardTableViewCell BlackboardViewController \
+  AssetColorSet ColorSet BlackboardColor \
+  AssetImageSet ImageSet BlackboardImage \
   BlackboardMain
 
 echo -e "\nBlackboardMain.run()" >> "$BLACKBOARD"

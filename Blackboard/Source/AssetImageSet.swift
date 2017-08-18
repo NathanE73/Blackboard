@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2016 Nathan E. Walczak
+// Copyright (c) 2017 Nathan E. Walczak
 //
 // MIT License
 //
@@ -22,31 +22,31 @@
 // THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 
-@testable import Blackboard
+struct AssetImageSet : Decodable {
+    let info: Info
+    let images: [Image]
+}
 
-class NSFileManagerExtensions: XCTestCase {
+extension AssetImageSet {
     
-    let fileManager = FileManager.default
-    
-    func testIsDirectory() {
-        XCTAssertTrue(fileManager.isDirectory("/opt"))
-        
-        XCTAssertFalse(fileManager.isDirectory("/opt/missing"))
+    struct Info : Decodable {
+        let version: Int
+        let author: String
     }
     
-    func testIsFile() {
-        let bundle = Bundle(for: NSFileManagerExtensions.self)
-        
-        if let file = bundle.path(forResource: "Contents", ofType: "json", inDirectory: "Resources/Colors.xcassets/Emerald.colorset") {
-            XCTAssertTrue(fileManager.isFile(file))
-        }
-        else {
-            XCTFail("The Contents.json file missing.")
-        }
-        
-        XCTAssertFalse(fileManager.isFile("/opt/missing.json"))
+    struct Image : Decodable {
+        let idiom: String
+        let scale: String
+    }
+    
+}
+
+extension AssetImageSet.Image {
+    
+    var isUniversal: Bool {
+        return idiom == "universal"
     }
     
 }

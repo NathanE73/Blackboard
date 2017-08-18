@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2016 Nathan E. Walczak
+// Copyright (c) 2017 Nathan E. Walczak
 //
 // MIT License
 //
@@ -22,31 +22,56 @@
 // THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 
-@testable import Blackboard
+struct AssetColorSet : Decodable {
+    let info: Info
+    let colors: [Color]
+}
 
-class NSFileManagerExtensions: XCTestCase {
+extension AssetColorSet {
     
-    let fileManager = FileManager.default
-    
-    func testIsDirectory() {
-        XCTAssertTrue(fileManager.isDirectory("/opt"))
-        
-        XCTAssertFalse(fileManager.isDirectory("/opt/missing"))
+    struct Info : Decodable {
+        let version: Int
+        let author: String
     }
     
-    func testIsFile() {
-        let bundle = Bundle(for: NSFileManagerExtensions.self)
+    struct Color : Decodable {
+        let idiom: String
+        let color: Color
+    }
+    
+}
+
+extension AssetColorSet.Color {
+    
+    var isUniversal: Bool {
+        return idiom == "universal"
+    }
+    
+}
+
+extension AssetColorSet.Color {
+    
+    struct Color : Decodable {
+        let colorSpace: String
+        let components: Components
         
-        if let file = bundle.path(forResource: "Contents", ofType: "json", inDirectory: "Resources/Colors.xcassets/Emerald.colorset") {
-            XCTAssertTrue(fileManager.isFile(file))
+        private enum CodingKeys : String, CodingKey {
+            case colorSpace = "color-space"
+            case components
         }
-        else {
-            XCTFail("The Contents.json file missing.")
-        }
-        
-        XCTAssertFalse(fileManager.isFile("/opt/missing.json"))
+    }
+    
+}
+
+extension AssetColorSet.Color.Color {
+    
+    struct Components : Decodable {
+        let red: Double
+        let green: Double
+        let blue: Double
+        let alpha: Double
     }
     
 }
