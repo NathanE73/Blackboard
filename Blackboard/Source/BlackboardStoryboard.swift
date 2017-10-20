@@ -35,7 +35,7 @@ struct BlackboardStoryboard {
 
 extension BlackboardStoryboard {
     
-    init?(storyboard: Storyboard) {
+    init?(storyboard: Storyboard, storyboards: [Storyboard]) {
         name = storyboard.name
         
         extensionName = storyboard.name
@@ -43,7 +43,7 @@ extension BlackboardStoryboard {
             + "StoryboardExtensions.swift"
         
         viewControllers = storyboard.viewControllers
-            .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard) }
+            .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.className < $1.className }
         guard !viewControllers.isEmpty else {
             return nil

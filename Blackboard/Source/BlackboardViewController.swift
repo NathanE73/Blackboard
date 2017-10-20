@@ -39,7 +39,7 @@ struct BlackboardViewController {
 
 extension BlackboardViewController {
     
-    init?(viewController: StoryboardViewController, storyboard: Storyboard) {
+    init?(viewController: StoryboardViewController, storyboard: Storyboard, storyboards: [Storyboard]) {
         guard let customClass = viewController.customClass else {
             return nil
         }
@@ -51,7 +51,7 @@ extension BlackboardViewController {
         parameterName = customClass.firstCharacterLowercased
         
         segues = viewController.segues
-            .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard) }
+            .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.name < $1.name }
         
         tableViewCells = viewController.tableViewCells

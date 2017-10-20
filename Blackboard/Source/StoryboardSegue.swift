@@ -27,6 +27,7 @@ import Foundation
 enum StoryboardSegueKind: String {
     
     case embed = "embed"
+    case popoverPresentation = "popoverPresentation"
     case presentation = "presentation"
     case relationship = "relationship"
     case show = "show"

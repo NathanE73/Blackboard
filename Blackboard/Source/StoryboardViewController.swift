@@ -33,6 +33,7 @@ enum StoryboardViewControllerType: String {
     case tabBarController = "tabBarController"
     case tableViewController = "tableViewController"
     case viewController = "viewController"
+    case viewControllerPlaceholder = "viewControllerPlaceholder"
     
     static let entries: [StoryboardViewControllerType] = [
         .collectionViewController,
@@ -41,10 +42,11 @@ enum StoryboardViewControllerType: String {
         .splitViewController,
         .tabBarController,
         .tableViewController,
-        .viewController
+        .viewController,
+        .viewControllerPlaceholder
     ]
     
-    var className: String {
+    var className: String? {
         switch self {
         case .collectionViewController:
             return "UICollectionViewController"
@@ -60,6 +62,8 @@ enum StoryboardViewControllerType: String {
             return "UITableViewController"
         case .viewController:
             return "UIViewController"
+        case .viewControllerPlaceholder:
+            return nil
         }
     }
     
@@ -72,6 +76,7 @@ struct StoryboardViewController {
     let type: StoryboardViewControllerType
     let storyboardIdentifier: String?
     let customClass: String?
+    let storyboardName: String?
     
     let segues: [StoryboardSegue]
     let tableViewCells: [StoryboardTableViewCell]
@@ -137,6 +142,8 @@ extension StoryboardViewController {
         
         let customClass = element.attribute(forName: "customClass")?.stringValue
         
+        let storyboardName = element.attribute(forName: "storyboardName")?.stringValue
+        
         guard let segueNodes = try? element.nodes(forXPath: ".//segue") else {
             return nil
         }
@@ -156,6 +163,7 @@ extension StoryboardViewController {
         self.type = type
         self.storyboardIdentifier = storyboardIdentifier
         self.customClass = customClass
+        self.storyboardName = storyboardName
         self.segues = segues
         self.tableViewCells = tableViewCells
         self.collectionViewCells = collectionViewCells

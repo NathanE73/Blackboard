@@ -246,12 +246,20 @@ extension SwiftSource: CustomStringConvertible {
 struct Storyboard {
     
     let name: String
-    
+    let initialViewControllerIdentifier: String?
+
     let viewControllers: [StoryboardViewController]
     
 }
 
 extension Storyboard {
+    
+    var initialViewController: StoryboardViewController? {
+        guard let initialViewControllerIdentifier = initialViewControllerIdentifier else {
+            return nil
+        }
+        return viewControllerWith(id: initialViewControllerIdentifier)
+    }
     
     func viewControllerWith(id: String) -> StoryboardViewController? {
         return viewControllers
@@ -265,6 +273,14 @@ extension Storyboard {
                 return viewController.segues
                     .first { $0.destination == id} != nil
             }
+    }
+    
+}
+
+extension Array where Element == Storyboard {
+    
+    func first(withName name: String) -> Storyboard? {
+        return self.first { $0.name == name }
     }
     
 }
@@ -284,12 +300,16 @@ extension Storyboard {
             return nil
         }
         
-        guard xmlDocument.rootElement()?.attribute(forName: "launchScreen")?.stringValue != "YES" else {
+        let element = xmlDocument.rootElement()
+        
+        guard element?.attribute(forName: "launchScreen")?.stringValue != "YES" else {
             return nil
         }
         
         self.name = url.deletingPathExtension().lastPathComponent
         
+        self.initialViewControllerIdentifier = element?.attribute(forName: "initialViewController")?.stringValue
+
         guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
         }
@@ -362,6 +382,7 @@ extension StoryboardCollectionViewCell {
 enum StoryboardSegueKind: String {
     
     case embed = "embed"
+    case popoverPresentation = "popoverPresentation"
     case presentation = "presentation"
     case relationship = "relationship"
     case show = "show"
@@ -464,6 +485,7 @@ enum StoryboardViewControllerType: String {
     case tabBarController = "tabBarController"
     case tableViewController = "tableViewController"
     case viewController = "viewController"
+    case viewControllerPlaceholder = "viewControllerPlaceholder"
     
     static let entries: [StoryboardViewControllerType] = [
         .collectionViewController,
@@ -472,10 +494,11 @@ enum StoryboardViewControllerType: String {
         .splitViewController,
         .tabBarController,
         .tableViewController,
-        .viewController
+        .viewController,
+        .viewControllerPlaceholder
     ]
     
-    var className: String {
+    var className: String? {
         switch self {
         case .collectionViewController:
             return "UICollectionViewController"
@@ -491,6 +514,8 @@ enum StoryboardViewControllerType: String {
             return "UITableViewController"
         case .viewController:
             return "UIViewController"
+        case .viewControllerPlaceholder:
+            return nil
         }
     }
     
@@ -503,6 +528,7 @@ struct StoryboardViewController {
     let type: StoryboardViewControllerType
     let storyboardIdentifier: String?
     let customClass: String?
+    let storyboardName: String?
     
     let segues: [StoryboardSegue]
     let tableViewCells: [StoryboardTableViewCell]
@@ -568,6 +594,8 @@ extension StoryboardViewController {
         
         let customClass = element.attribute(forName: "customClass")?.stringValue
         
+        let storyboardName = element.attribute(forName: "storyboardName")?.stringValue
+        
         guard let segueNodes = try? element.nodes(forXPath: ".//segue") else {
             return nil
         }
@@ -587,6 +615,7 @@ extension StoryboardViewController {
         self.type = type
         self.storyboardIdentifier = storyboardIdentifier
         self.customClass = customClass
+        self.storyboardName = storyboardName
         self.segues = segues
         self.tableViewCells = tableViewCells
         self.collectionViewCells = collectionViewCells
@@ -689,31 +718,37 @@ struct BlackboardSegue {
     let name: String
     let enumName: String
     let identifier: String
-    let viewControllerClassName: String
+    let viewControllerClassName: String?
     let navigationControllerClassName: String?
     
 }
 
 extension BlackboardSegue {
     
-    init?(segue: StoryboardSegue, storyboard: Storyboard) {
+    init?(segue: StoryboardSegue, storyboard: Storyboard, storyboards: [Storyboard]) {
         guard let identifier = segue.identifier else {
             return nil
         }
         
-        name = identifier
+        self.name = identifier
         
-        enumName = name.firstCharacterLowercased
+        self.enumName = name.firstCharacterLowercased
         
         self.identifier = identifier
         
-        guard let destinationViewController = storyboard.viewControllerWith(id: segue.destination) else {
-            return nil
-        }
-        let destinationCustomClass = destinationViewController.customClass ?? destinationViewController.type.className
+        var storyboard = storyboard
         
-        if destinationViewController.type == .navigationController {
-            guard let rootViewControllerSegue = destinationViewController.segueWith(kind: .relationship) else {
+        var destinationViewController = storyboard.viewControllerWith(id: segue.destination)
+        
+        if let storyboardName = destinationViewController?.storyboardName {
+            storyboard = storyboards.first(withName: storyboardName) ?? storyboard
+            destinationViewController = storyboard.initialViewController
+        }
+        
+        let destinationCustomClass = destinationViewController?.customClass ?? destinationViewController?.type.className
+        
+        if destinationViewController?.type == .navigationController {
+            guard let rootViewControllerSegue = destinationViewController?.segueWith(kind: .relationship) else {
                 return nil
             }
             guard let rootViewController = storyboard.viewControllerWith(id: rootViewControllerSegue.destination) else {
@@ -778,20 +813,35 @@ extension SwiftSource {
         guard !segues.isEmpty else { return }
         
         segues.forEach { segue in
-            append("final func perform\(segue.name)Segue(_ initialize: @escaping ((\(segue.viewControllerClassName)) -> Void) = {_ in})") {
-                append("let initializeBlock = InitializeBlockObject()") {
-                    if let navigationControllerClassName = segue.navigationControllerClassName {
-                        append("let navigationController = $0 as! \(navigationControllerClassName)")
-                        append("let viewController = navigationController.viewControllers.first as! \(segue.viewControllerClassName)")
-                        append("initialize(viewController)")
-                    }
-                    else {
-                        append("initialize($0 as! \(segue.viewControllerClassName))")
-                    }
-                }
-                append("performSegue(withIdentifier: SegueIdentifier.\(segue.enumName).rawValue, sender: initializeBlock)")
+            if let viewControllerClassName = segue.viewControllerClassName {
+                appendPerformSequeFor(segue, viewControllerClassName: viewControllerClassName)
+            }
+            else {
+                appendPerformSequeFor(segue)
             }
             append()
+        }
+    }
+    
+    func appendPerformSequeFor(_ segue: BlackboardSegue, viewControllerClassName: String) {
+        append("final func perform\(segue.name)Segue(_ initialize: @escaping ((\(viewControllerClassName)) -> Void) = {_ in})") {
+            append("let initializeBlock = InitializeBlockObject()") {
+                if let navigationControllerClassName = segue.navigationControllerClassName {
+                    append("let navigationController = $0 as! \(navigationControllerClassName)")
+                    append("let viewController = navigationController.viewControllers.first as! \(viewControllerClassName)")
+                    append("initialize(viewController)")
+                }
+                else {
+                    append("initialize($0 as! \(viewControllerClassName))")
+                }
+            }
+            append("performSegue(withIdentifier: SegueIdentifier.\(segue.enumName).rawValue, sender: initializeBlock)")
+        }
+    }
+    
+    func appendPerformSequeFor(_ segue: BlackboardSegue) {
+        append("final func perform\(segue.name)Segue()") {
+            append("performSegue(withIdentifier: SegueIdentifier.\(segue.enumName).rawValue, sender: nil)")
         }
     }
     
@@ -810,7 +860,7 @@ struct BlackboardStoryboard {
 
 extension BlackboardStoryboard {
     
-    init?(storyboard: Storyboard) {
+    init?(storyboard: Storyboard, storyboards: [Storyboard]) {
         name = storyboard.name
         
         extensionName = storyboard.name
@@ -818,7 +868,7 @@ extension BlackboardStoryboard {
             + "StoryboardExtensions.swift"
         
         viewControllers = storyboard.viewControllers
-            .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard) }
+            .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.className < $1.className }
         guard !viewControllers.isEmpty else {
             return nil
@@ -951,7 +1001,7 @@ struct BlackboardViewController {
 
 extension BlackboardViewController {
     
-    init?(viewController: StoryboardViewController, storyboard: Storyboard) {
+    init?(viewController: StoryboardViewController, storyboard: Storyboard, storyboards: [Storyboard]) {
         guard let customClass = viewController.customClass else {
             return nil
         }
@@ -963,7 +1013,7 @@ extension BlackboardViewController {
         parameterName = customClass.firstCharacterLowercased
         
         segues = viewController.segues
-            .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard) }
+            .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.name < $1.name }
         
         tableViewCells = viewController.tableViewCells
@@ -1375,21 +1425,6 @@ extension SwiftSource {
     
 }
 
-
-
-
-
-//enum ImageAssetIdentifier: String {
-//
-//    case apple = "apple"
-//    case bigApple = "big_apple"
-//    case largeApple = "large-apple"
-//    case redApple = "redApple"
-//    case smallApple = "small apple"
-//
-//}
-
-
 // MARK: - BlackboardMain.swift -
 
 class BlackboardMain {
@@ -1447,7 +1482,7 @@ class BlackboardMain {
         let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)
         
         for storyboard in storyboards {
-            if let storyboard = BlackboardStoryboard(storyboard: storyboard) {
+            if let storyboard = BlackboardStoryboard(storyboard: storyboard, storyboards: storyboards) {
                 let swiftSource = SwiftSource()
                 swiftSource.appendStoryboard(storyboard)
                 let source = swiftSource.description

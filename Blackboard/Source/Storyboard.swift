@@ -27,12 +27,20 @@ import Foundation
 struct Storyboard {
     
     let name: String
-    
+    let initialViewControllerIdentifier: String?
+
     let viewControllers: [StoryboardViewController]
     
 }
 
 extension Storyboard {
+    
+    var initialViewController: StoryboardViewController? {
+        guard let initialViewControllerIdentifier = initialViewControllerIdentifier else {
+            return nil
+        }
+        return viewControllerWith(id: initialViewControllerIdentifier)
+    }
     
     func viewControllerWith(id: String) -> StoryboardViewController? {
         return viewControllers
@@ -46,6 +54,14 @@ extension Storyboard {
                 return viewController.segues
                     .first { $0.destination == id} != nil
             }
+    }
+    
+}
+
+extension Array where Element == Storyboard {
+    
+    func first(withName name: String) -> Storyboard? {
+        return self.first { $0.name == name }
     }
     
 }
@@ -65,12 +81,16 @@ extension Storyboard {
             return nil
         }
         
-        guard xmlDocument.rootElement()?.attribute(forName: "launchScreen")?.stringValue != "YES" else {
+        let element = xmlDocument.rootElement()
+        
+        guard element?.attribute(forName: "launchScreen")?.stringValue != "YES" else {
             return nil
         }
         
         self.name = url.deletingPathExtension().lastPathComponent
         
+        self.initialViewControllerIdentifier = element?.attribute(forName: "initialViewController")?.stringValue
+
         guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
         }
