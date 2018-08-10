@@ -51,15 +51,15 @@ extension BlackboardViewController {
         parameterName = customClass.firstCharacterLowercased
         
         segues = viewController.segues
-            .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard, storyboards: storyboards) }
+            .compactMap { BlackboardSegue(segue: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.name < $1.name }
         
         tableViewCells = viewController.tableViewCells
-            .flatMap { BlackboardTableViewCell(tableViewCell: $0, storyboard: storyboard) }
+            .compactMap { BlackboardTableViewCell(tableViewCell: $0, storyboard: storyboard) }
             .sorted { $0.name < $1.name }
         
         collectionViewCells = viewController.collectionViewCells
-            .flatMap { BlackboardCollectionViewCell(collectionViewCell: $0, storyboard: storyboard) }
+            .compactMap { BlackboardCollectionViewCell(collectionViewCell: $0, storyboard: storyboard) }
             .sorted { $0.name < $1.name }
     }
     

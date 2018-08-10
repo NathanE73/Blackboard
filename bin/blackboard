@@ -313,7 +313,7 @@ extension Storyboard {
         guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
         }
-        viewControllers = sceneNodes.flatMap(StoryboardViewController.init)
+        viewControllers = sceneNodes.compactMap(StoryboardViewController.init)
     }
     
     init?(path: String) {
@@ -335,7 +335,7 @@ extension Storyboard {
         
         files.sort(by: <)
         
-        return files.flatMap { Storyboard(path: $0) }
+        return files.compactMap { Storyboard(path: $0) }
     }
     
 }
@@ -599,17 +599,17 @@ extension StoryboardViewController {
         guard let segueNodes = try? element.nodes(forXPath: ".//segue") else {
             return nil
         }
-        let segues = segueNodes.flatMap(StoryboardSegue.init)
+        let segues = segueNodes.compactMap(StoryboardSegue.init)
         
         guard let tableViewCellNodes = try? element.nodes(forXPath: ".//tableViewCell") else {
             return nil
         }
-        let tableViewCells = tableViewCellNodes.flatMap(StoryboardTableViewCell.init)
+        let tableViewCells = tableViewCellNodes.compactMap(StoryboardTableViewCell.init)
         
         guard let collectionViewCellNodes = try? element.nodes(forXPath: ".//collectionViewCell") else {
             return nil
         }
-        let collectionViewCells = collectionViewCellNodes.flatMap(StoryboardCollectionViewCell.init)
+        let collectionViewCells = collectionViewCellNodes.compactMap(StoryboardCollectionViewCell.init)
         
         self.id = id
         self.type = type
@@ -868,7 +868,7 @@ extension BlackboardStoryboard {
             + "StoryboardExtensions.swift"
         
         viewControllers = storyboard.viewControllers
-            .flatMap { BlackboardViewController(viewController: $0, storyboard: storyboard, storyboards: storyboards) }
+            .compactMap { BlackboardViewController(viewController: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.className < $1.className }
         guard !viewControllers.isEmpty else {
             return nil
@@ -1013,15 +1013,15 @@ extension BlackboardViewController {
         parameterName = customClass.firstCharacterLowercased
         
         segues = viewController.segues
-            .flatMap { BlackboardSegue(segue: $0, storyboard: storyboard, storyboards: storyboards) }
+            .compactMap { BlackboardSegue(segue: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.name < $1.name }
         
         tableViewCells = viewController.tableViewCells
-            .flatMap { BlackboardTableViewCell(tableViewCell: $0, storyboard: storyboard) }
+            .compactMap { BlackboardTableViewCell(tableViewCell: $0, storyboard: storyboard) }
             .sorted { $0.name < $1.name }
         
         collectionViewCells = viewController.collectionViewCells
-            .flatMap { BlackboardCollectionViewCell(collectionViewCell: $0, storyboard: storyboard) }
+            .compactMap { BlackboardCollectionViewCell(collectionViewCell: $0, storyboard: storyboard) }
             .sorted { $0.name < $1.name }
     }
     
@@ -1182,7 +1182,7 @@ extension ColorSet {
         
         files.sort(by: <)
         
-        return files.flatMap { ColorSet(path: $0) }
+        return files.compactMap { ColorSet(path: $0) }
     }
     
 }
@@ -1350,7 +1350,7 @@ extension ImageSet {
         
         files.sort(by: <)
         
-        return files.flatMap { ImageSet(path: $0) }
+        return files.compactMap { ImageSet(path: $0) }
     }
     
 }
@@ -1495,7 +1495,7 @@ class BlackboardMain {
         
         let colorSets = ColorSet.colorSetsAt(path: sourceDirectory)
 
-        let blackboardColors = colorSets.flatMap(BlackboardColor.init)
+        let blackboardColors = colorSets.compactMap(BlackboardColor.init)
         
         if !blackboardColors.isEmpty {
             let swiftSource = SwiftSource()
@@ -1509,7 +1509,7 @@ class BlackboardMain {
         
         let imageSets = ImageSet.imageSetsAt(path: sourceDirectory)
         
-        let blackboardImages = imageSets.flatMap(BlackboardImage.init)
+        let blackboardImages = imageSets.compactMap(BlackboardImage.init)
         
         if !blackboardImages.isEmpty {
             let swiftSource = SwiftSource()

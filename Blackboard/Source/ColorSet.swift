@@ -82,7 +82,7 @@ extension ColorSet {
         
         files.sort(by: <)
         
-        return files.flatMap { ColorSet(path: $0) }
+        return files.compactMap { ColorSet(path: $0) }
     }
     
 }

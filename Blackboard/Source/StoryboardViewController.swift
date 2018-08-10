@@ -147,17 +147,17 @@ extension StoryboardViewController {
         guard let segueNodes = try? element.nodes(forXPath: ".//segue") else {
             return nil
         }
-        let segues = segueNodes.flatMap(StoryboardSegue.init)
+        let segues = segueNodes.compactMap(StoryboardSegue.init)
         
         guard let tableViewCellNodes = try? element.nodes(forXPath: ".//tableViewCell") else {
             return nil
         }
-        let tableViewCells = tableViewCellNodes.flatMap(StoryboardTableViewCell.init)
+        let tableViewCells = tableViewCellNodes.compactMap(StoryboardTableViewCell.init)
         
         guard let collectionViewCellNodes = try? element.nodes(forXPath: ".//collectionViewCell") else {
             return nil
         }
-        let collectionViewCells = collectionViewCellNodes.flatMap(StoryboardCollectionViewCell.init)
+        let collectionViewCells = collectionViewCellNodes.compactMap(StoryboardCollectionViewCell.init)
         
         self.id = id
         self.type = type

@@ -65,7 +65,7 @@ extension ImageSet {
         
         files.sort(by: <)
         
-        return files.flatMap { ImageSet(path: $0) }
+        return files.compactMap { ImageSet(path: $0) }
     }
     
 }

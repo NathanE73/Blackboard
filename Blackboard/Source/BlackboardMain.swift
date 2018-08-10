@@ -92,7 +92,7 @@ class BlackboardMain {
         
         let colorSets = ColorSet.colorSetsAt(path: sourceDirectory)
 
-        let blackboardColors = colorSets.flatMap(BlackboardColor.init)
+        let blackboardColors = colorSets.compactMap(BlackboardColor.init)
         
         if !blackboardColors.isEmpty {
             let swiftSource = SwiftSource()
@@ -106,7 +106,7 @@ class BlackboardMain {
         
         let imageSets = ImageSet.imageSetsAt(path: sourceDirectory)
         
-        let blackboardImages = imageSets.flatMap(BlackboardImage.init)
+        let blackboardImages = imageSets.compactMap(BlackboardImage.init)
         
         if !blackboardImages.isEmpty {
             let swiftSource = SwiftSource()

@@ -94,7 +94,7 @@ extension Storyboard {
         guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
         }
-        viewControllers = sceneNodes.flatMap(StoryboardViewController.init)
+        viewControllers = sceneNodes.compactMap(StoryboardViewController.init)
     }
     
     init?(path: String) {
@@ -116,7 +116,7 @@ extension Storyboard {
         
         files.sort(by: <)
         
-        return files.flatMap { Storyboard(path: $0) }
+        return files.compactMap { Storyboard(path: $0) }
     }
     
 }
