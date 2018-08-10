@@ -37,7 +37,7 @@ extension AssetImageSet {
     }
     
     struct Image : Decodable {
-        let idiom: String
+        let idiom: Idiom
         let scale: String
     }
     
@@ -45,8 +45,19 @@ extension AssetImageSet {
 
 extension AssetImageSet.Image {
     
-    var isUniversal: Bool {
-        return idiom == "universal"
+    enum Idiom: String, Decodable {
+        case appLauncher
+        case companionSettings
+        case iosMarketing = "ios-marketing"
+        case iphone
+        case ipad
+        case mac
+        case notificationCenter
+        case quickLook
+        case tv
+        case universal
+        case watch
+        case watchMarketing = "watch-marketing"
     }
     
 }

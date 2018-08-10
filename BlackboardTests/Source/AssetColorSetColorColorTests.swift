@@ -26,37 +26,26 @@ import XCTest
 
 @testable import Blackboard
 
-class AssetImageSetTests: XCTestCase {
+class AssetColorSetColorColorTests: XCTestCase {
     
     func testDecodable() {
         let json = """
             {
-                "info" : {
-                    "version" : 1,
-                    "author" : "xcode"
-                },
-                "images" : [
-                    {
-                        "idiom" : "universal",
-                        "scale" : "1x"
-                    },
-                    {
-                        "idiom" : "universal",
-                        "scale" : "2x"
-                    },
-                    {
-                        "idiom" : "universal",
-                        "scale" : "3x"
-                    }
-                ]
+                "color-space" : "srgb",
+                "components" : {
+                    "red" : 0.3137254901960784,
+                    "green" : 0.7843137254901961,
+                    "blue" : 0.4705882352941176,
+                    "alpha" : 1
+                }
             }
-            """.data(using: .utf8)!
+        """.data(using: .utf8)!
         
         do {
-            let assetImageSet = try JSONDecoder().decode(AssetImageSet.self, from: json)
+            let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: json)
             
-            XCTAssertNotNil(assetImageSet.info)
-            XCTAssertEqual(assetImageSet.images.count, 3)
+            XCTAssertEqual(color.colorSpace, "srgb")
+            XCTAssertNotNil(color.components)
         }
         catch let error {
             XCTFail(error.localizedDescription)

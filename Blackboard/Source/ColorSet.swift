@@ -48,7 +48,7 @@ extension ColorSet {
         }
 
         let universalColor = assetColorSet.colors.first { color in
-            return color.isUniversal
+            return color.idiom == .universal
         }
         
         guard let components = universalColor?.color.components else {

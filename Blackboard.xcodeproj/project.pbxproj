@@ -39,6 +39,12 @@
 		436A1DFB1F4757F8005EAFAD /* AssetImageSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DFA1F4757F8005EAFAD /* AssetImageSetTests.swift */; };
 		436B578E1F27E45F0030E40B /* AssetColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B578D1F27E45F0030E40B /* AssetColorSet.swift */; };
 		436B57901F27E47B0030E40B /* AssetColorSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436B578F1F27E47B0030E40B /* AssetColorSetTests.swift */; };
+		43D2F3BF211E2430002DDEB1 /* AssetImageSetImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F3BE211E2430002DDEB1 /* AssetImageSetImageTests.swift */; };
+		43D2F3C1211E2460002DDEB1 /* AssetImageSetInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F3C0211E245F002DDEB1 /* AssetImageSetInfoTests.swift */; };
+		43D2F3C8211E2B26002DDEB1 /* AssetColorSetColorColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F3C4211E2B26002DDEB1 /* AssetColorSetColorColorTests.swift */; };
+		43D2F3C9211E2B26002DDEB1 /* AssetColorSetColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F3C5211E2B26002DDEB1 /* AssetColorSetColorTests.swift */; };
+		43D2F3CA211E2B26002DDEB1 /* AssetColorSetColorColorComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F3C6211E2B26002DDEB1 /* AssetColorSetColorColorComponentsTests.swift */; };
+		43D2F3CB211E2B26002DDEB1 /* AssetColorSetInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F3C7211E2B26002DDEB1 /* AssetColorSetInfoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,12 @@
 		436A1DFA1F4757F8005EAFAD /* AssetImageSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetImageSetTests.swift; sourceTree = "<group>"; };
 		436B578D1F27E45F0030E40B /* AssetColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColorSet.swift; sourceTree = "<group>"; };
 		436B578F1F27E47B0030E40B /* AssetColorSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColorSetTests.swift; sourceTree = "<group>"; };
+		43D2F3BE211E2430002DDEB1 /* AssetImageSetImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetImageSetImageTests.swift; sourceTree = "<group>"; };
+		43D2F3C0211E245F002DDEB1 /* AssetImageSetInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetImageSetInfoTests.swift; sourceTree = "<group>"; };
+		43D2F3C4211E2B26002DDEB1 /* AssetColorSetColorColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetColorSetColorColorTests.swift; sourceTree = "<group>"; };
+		43D2F3C5211E2B26002DDEB1 /* AssetColorSetColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetColorSetColorTests.swift; sourceTree = "<group>"; };
+		43D2F3C6211E2B26002DDEB1 /* AssetColorSetColorColorComponentsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetColorSetColorColorComponentsTests.swift; sourceTree = "<group>"; };
+		43D2F3C7211E2B26002DDEB1 /* AssetColorSetInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetColorSetInfoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +161,8 @@
 		435DF5201CEA1CC20019DFFD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				436B578F1F27E47B0030E40B /* AssetColorSetTests.swift */,
-				436A1DFA1F4757F8005EAFAD /* AssetImageSetTests.swift */,
+				43D2F3C3211E2AAE002DDEB1 /* AssetColorSet */,
+				43D2F3C2211E2A77002DDEB1 /* AssetImageSet */,
 				435DF5231CEA1CE90019DFFD /* LaunchScreenStoryboardTests.swift */,
 				435DF52B1CEA1CE90019DFFD /* NamingTests.swift */,
 				435DF5261CEA1CE90019DFFD /* NSFileManagerExtensions.swift */,
@@ -187,6 +199,28 @@
 				435DF53B1CEA1D560019DFFD /* SwiftSource.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		43D2F3C2211E2A77002DDEB1 /* AssetImageSet */ = {
+			isa = PBXGroup;
+			children = (
+				43D2F3BE211E2430002DDEB1 /* AssetImageSetImageTests.swift */,
+				43D2F3C0211E245F002DDEB1 /* AssetImageSetInfoTests.swift */,
+				436A1DFA1F4757F8005EAFAD /* AssetImageSetTests.swift */,
+			);
+			name = AssetImageSet;
+			sourceTree = "<group>";
+		};
+		43D2F3C3211E2AAE002DDEB1 /* AssetColorSet */ = {
+			isa = PBXGroup;
+			children = (
+				43D2F3C6211E2B26002DDEB1 /* AssetColorSetColorColorComponentsTests.swift */,
+				43D2F3C4211E2B26002DDEB1 /* AssetColorSetColorColorTests.swift */,
+				43D2F3C5211E2B26002DDEB1 /* AssetColorSetColorTests.swift */,
+				43D2F3C7211E2B26002DDEB1 /* AssetColorSetInfoTests.swift */,
+				436B578F1F27E47B0030E40B /* AssetColorSetTests.swift */,
+			);
+			name = AssetColorSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +365,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				435DF57C1CEA3CCE0019DFFD /* NSFileManagerExtensions.swift in Sources */,
+				43D2F3CB211E2B26002DDEB1 /* AssetColorSetInfoTests.swift in Sources */,
+				43D2F3CA211E2B26002DDEB1 /* AssetColorSetColorColorComponentsTests.swift in Sources */,
+				43D2F3C9211E2B26002DDEB1 /* AssetColorSetColorTests.swift in Sources */,
 				436B57901F27E47B0030E40B /* AssetColorSetTests.swift in Sources */,
+				43D2F3BF211E2430002DDEB1 /* AssetImageSetImageTests.swift in Sources */,
+				43D2F3C8211E2B26002DDEB1 /* AssetColorSetColorColorTests.swift in Sources */,
 				435DF58A1CEA40C50019DFFD /* LaunchScreenStoryboardTests.swift in Sources */,
 				436A1DFB1F4757F8005EAFAD /* AssetImageSetTests.swift in Sources */,
+				43D2F3C1211E2460002DDEB1 /* AssetImageSetInfoTests.swift in Sources */,
 				435DF57A1CEA3B110019DFFD /* NamingTests.swift in Sources */,
 				435DF5771CEA33500019DFFD /* StringExtensionsTests.swift in Sources */,
 			);

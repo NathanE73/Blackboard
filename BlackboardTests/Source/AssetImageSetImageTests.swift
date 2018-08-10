@@ -26,37 +26,21 @@ import XCTest
 
 @testable import Blackboard
 
-class AssetImageSetTests: XCTestCase {
+class AssetImageSetImageTests: XCTestCase {
     
     func testDecodable() {
         let json = """
             {
-                "info" : {
-                    "version" : 1,
-                    "author" : "xcode"
-                },
-                "images" : [
-                    {
-                        "idiom" : "universal",
-                        "scale" : "1x"
-                    },
-                    {
-                        "idiom" : "universal",
-                        "scale" : "2x"
-                    },
-                    {
-                        "idiom" : "universal",
-                        "scale" : "3x"
-                    }
-                ]
+                "idiom" : "universal",
+                "scale" : "1x"
             }
             """.data(using: .utf8)!
         
         do {
-            let assetImageSet = try JSONDecoder().decode(AssetImageSet.self, from: json)
-            
-            XCTAssertNotNil(assetImageSet.info)
-            XCTAssertEqual(assetImageSet.images.count, 3)
+            let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: json)
+
+            XCTAssertEqual(image.idiom, .universal)
+            XCTAssertEqual(image.scale, "1x")
         }
         catch let error {
             XCTFail(error.localizedDescription)
