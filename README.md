@@ -1,9 +1,9 @@
 # Blackboard: Another iOS Storyboard Manager
 
-[![Version](https://img.shields.io/badge/version-3.0.0-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-4.1.0-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
-[![Swift](https://img.shields.io/badge/swift-3.0-yellow.svg)](https://swift.org)
+[![Swift](https://img.shields.io/badge/swift-4.1-yellow.svg)](https://swift.org)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
 
 ## Requirements
@@ -33,13 +33,16 @@ See which version of `blackboard` currently have:
 
 ```bash
 $ bin/blackboard --version
-Blackboard Version 3.0.0
+Blackboard Version 4.1.0
 ```
 
 ### Generating Source
 
 ```bash
 $ bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated/
+```
+```bash
+$ bin/blackboard BlackboardTests/Resources/ BlackboardTests/Resources/GeneratedSource/
 ```
 
 ## Usage - Generated Source
