@@ -44,7 +44,7 @@ class AssetColorSetColorColorTests: XCTestCase {
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: json)
             
-            XCTAssertEqual(color.colorSpace, "srgb")
+            XCTAssertEqual(color.colorSpace, .srgb)
             XCTAssertNotNil(color.components)
         }
         catch let error {

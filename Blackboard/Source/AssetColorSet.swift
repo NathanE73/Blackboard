@@ -65,13 +65,22 @@ extension AssetColorSet.Color {
 extension AssetColorSet.Color {
     
     struct Color : Decodable {
-        let colorSpace: String
+        let colorSpace: ColorSpace
         let components: Components
         
         private enum CodingKeys : String, CodingKey {
             case colorSpace = "color-space"
             case components
         }
+    }
+    
+}
+
+extension AssetColorSet.Color {
+    
+    enum ColorSpace: String, Decodable {
+        case srgb
+        case displayP3 = "display-p3"
     }
     
 }
