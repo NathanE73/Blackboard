@@ -63,8 +63,7 @@ struct Naming {
         
         var shouldUppercaseNextCharacter = true
         
-        for character in identifier.characters {
-            
+        for character in identifier {
             if [" ", "_", "-"].contains(character) {
                 shouldUppercaseNextCharacter = true
                 continue
