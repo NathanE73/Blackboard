@@ -114,24 +114,14 @@ extension FileManager {
 
 struct Naming {
     
-    static func memberName(fromIdentifier identifier: String, namespace: String? = nil) -> String {
-        if let namespace = namespace {
-            return namespace + name(fromIdentifier: identifier)
-        }
+    static func memberName(fromIdentifier identifier: String) -> String {
         return name(fromIdentifier: identifier)
     }
     
-    static func methodName(fromIdentifier identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
-        let name: String
-        if let namespace = namespace {
-            name = namespace + self.name(fromIdentifier: identifier)
-        }
-        else {
-            name = self.name(fromIdentifier: identifier)
-        }
+    static func methodName(fromIdentifier identifier: String, suffix: String? = nil, prefix: String? = nil) -> String {
+        let name = self.name(fromIdentifier: identifier)
         
         var methodName: String
-        
         if let prefix = prefix {
             methodName = prefix + name
         }
@@ -1079,7 +1069,7 @@ extension AssetColorSet {
     }
     
     struct Color : Decodable {
-        let idiom: String
+        let idiom: Idiom
         let color: Color
     }
     
@@ -1087,8 +1077,19 @@ extension AssetColorSet {
 
 extension AssetColorSet.Color {
     
-    var isUniversal: Bool {
-        return idiom == "universal"
+    enum Idiom: String, Decodable {
+        case appLauncher
+        case companionSettings
+        case iosMarketing = "ios-marketing"
+        case iphone
+        case ipad
+        case mac
+        case notificationCenter
+        case quickLook
+        case tv
+        case universal
+        case watch
+        case watchMarketing = "watch-marketing"
     }
     
 }
@@ -1096,13 +1097,22 @@ extension AssetColorSet.Color {
 extension AssetColorSet.Color {
     
     struct Color : Decodable {
-        let colorSpace: String
+        let colorSpace: ColorSpace
         let components: Components
         
         private enum CodingKeys : String, CodingKey {
             case colorSpace = "color-space"
             case components
         }
+    }
+    
+}
+
+extension AssetColorSet.Color {
+    
+    enum ColorSpace: String, Decodable {
+        case srgb
+        case displayP3 = "display-p3"
     }
     
 }
@@ -1144,7 +1154,7 @@ extension ColorSet {
         }
 
         let universalColor = assetColorSet.colors.first { color in
-            return color.isUniversal
+            return color.idiom == .universal
         }
         
         guard let components = universalColor?.color.components else {
@@ -1289,16 +1299,33 @@ extension AssetImageSet {
     }
     
     struct Image : Decodable {
-        let idiom: String
-        let scale: String
+        let idiom: Idiom
+        let scale: Scale
     }
     
 }
 
 extension AssetImageSet.Image {
     
-    var isUniversal: Bool {
-        return idiom == "universal"
+    enum Idiom: String, Decodable {
+        case appLauncher
+        case companionSettings
+        case iosMarketing = "ios-marketing"
+        case iphone
+        case ipad
+        case mac
+        case notificationCenter
+        case quickLook
+        case tv
+        case universal
+        case watch
+        case watchMarketing = "watch-marketing"
+    }
+    
+    enum Scale: String, Decodable {
+        case one = "1x"
+        case two = "2x"
+        case three = "3x"
     }
     
 }
@@ -1440,7 +1467,7 @@ class BlackboardMain {
         // Version
         
         if arguments.contains("--version") {
-            print("Blackboard Version 4.1.0")
+            print("Blackboard Version 4.1.1")
             exit(0)
         }
         
