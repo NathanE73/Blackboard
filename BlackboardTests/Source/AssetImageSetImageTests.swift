@@ -38,9 +38,9 @@ class AssetImageSetImageTests: XCTestCase {
         
         do {
             let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: json)
-
+            
             XCTAssertEqual(image.idiom, .universal)
-            XCTAssertEqual(image.scale, "1x")
+            XCTAssertEqual(image.scale, .one)
         }
         catch let error {
             XCTFail(error.localizedDescription)

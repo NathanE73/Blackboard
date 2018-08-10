@@ -38,7 +38,7 @@ extension AssetImageSet {
     
     struct Image : Decodable {
         let idiom: Idiom
-        let scale: String
+        let scale: Scale
     }
     
 }
@@ -58,6 +58,12 @@ extension AssetImageSet.Image {
         case universal
         case watch
         case watchMarketing = "watch-marketing"
+    }
+    
+    enum Scale: String, Decodable {
+        case one = "1x"
+        case two = "2x"
+        case three = "3x"
     }
     
 }
