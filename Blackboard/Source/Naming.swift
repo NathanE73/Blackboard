@@ -26,24 +26,14 @@ import Foundation
 
 struct Naming {
     
-    static func memberName(fromIdentifier identifier: String, namespace: String? = nil) -> String {
-        if let namespace = namespace {
-            return namespace + name(fromIdentifier: identifier)
-        }
+    static func memberName(fromIdentifier identifier: String) -> String {
         return name(fromIdentifier: identifier)
     }
     
-    static func methodName(fromIdentifier identifier: String, namespace: String? = nil, suffix: String? = nil, prefix: String? = nil) -> String {
-        let name: String
-        if let namespace = namespace {
-            name = namespace + self.name(fromIdentifier: identifier)
-        }
-        else {
-            name = self.name(fromIdentifier: identifier)
-        }
+    static func methodName(fromIdentifier identifier: String, suffix: String? = nil, prefix: String? = nil) -> String {
+        let name = self.name(fromIdentifier: identifier)
         
         var methodName: String
-        
         if let prefix = prefix {
             methodName = prefix + name
         }
