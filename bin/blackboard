@@ -1071,6 +1071,17 @@ extension AssetColorSet {
     struct Color : Decodable {
         let idiom: Idiom
         let color: Color
+        
+        enum CodingKeys: String, CodingKey {
+            case idiom
+            case color
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            idiom = try container.decodeIfPresent(Idiom.self, forKey: .idiom) ?? .universal
+            color = try container.decode(Color.self, forKey: .color)
+        }
     }
     
 }
@@ -1100,19 +1111,25 @@ extension AssetColorSet.Color {
         let colorSpace: ColorSpace
         let components: Components
         
-        private enum CodingKeys : String, CodingKey {
+        enum CodingKeys : String, CodingKey {
             case colorSpace = "color-space"
             case components
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            colorSpace = try container.decodeIfPresent(ColorSpace.self, forKey: .colorSpace) ?? .srgb
+            components = try container.decode(Components.self, forKey: .components)
         }
     }
     
 }
 
-extension AssetColorSet.Color {
+extension AssetColorSet.Color.Color {
     
     enum ColorSpace: String, Decodable {
         case srgb
-        case displayP3 = "display-p3"
+        case displayP3 = "display-P3"
     }
     
 }

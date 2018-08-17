@@ -30,16 +30,17 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
     
     func testDecodable() {
         let json = """
-            {
-                "red" : 0.3137254901960784,
-                "green" : 0.7843137254901961,
-                "blue" : 0.4705882352941176,
-                "alpha" : 1
-            }
-        """.data(using: .utf8)!
+          {
+            "red" : 0.3137254901960784,
+            "green" : 0.7843137254901961,
+            "blue" : 0.4705882352941176,
+            "alpha" : 1
+          }
+        """
+        let data = json.data(using: .utf8)!
         
         do {
-            let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: json)
+            let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: data)
             
             XCTAssertEqual(components.red, 0.3137254901960784)
             XCTAssertEqual(components.green, 0.7843137254901961)

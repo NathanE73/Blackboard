@@ -30,19 +30,44 @@ class AssetColorSetColorColorTests: XCTestCase {
     
     func testDecodable() {
         let json = """
-            {
-                "color-space" : "srgb",
-                "components" : {
-                    "red" : 0.3137254901960784,
-                    "green" : 0.7843137254901961,
-                    "blue" : 0.4705882352941176,
-                    "alpha" : 1
-                }
+          {
+            "color-space" : "display-P3",
+            "components" : {
+              "red" : 0.3137254901960784,
+              "green" : 0.7843137254901961,
+              "blue" : 0.4705882352941176,
+              "alpha" : 1
             }
-        """.data(using: .utf8)!
+          }
+        """
+        let data = json.data(using: .utf8)!
         
         do {
-            let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: json)
+            let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
+            
+            XCTAssertEqual(color.colorSpace, .displayP3)
+            XCTAssertNotNil(color.components)
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDefaultColorSpace() {
+        let json = """
+          {
+            "components" : {
+              "red" : 0.3137254901960784,
+              "green" : 0.7843137254901961,
+              "blue" : 0.4705882352941176,
+              "alpha" : 1
+            }
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
             
             XCTAssertEqual(color.colorSpace, .srgb)
             XCTAssertNotNil(color.components)
@@ -50,6 +75,13 @@ class AssetColorSetColorColorTests: XCTestCase {
         catch let error {
             XCTFail(error.localizedDescription)
         }
+    }
+    
+    func testColorSpaceRawValues() {
+        let colorSpace = AssetColorSet.Color.Color.ColorSpace.self
+        
+        XCTAssertEqual(colorSpace.srgb.rawValue, "srgb")
+        XCTAssertEqual(colorSpace.displayP3.rawValue, "display-P3")
     }
     
 }

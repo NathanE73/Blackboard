@@ -30,22 +30,50 @@ class AssetColorSetColorTests: XCTestCase {
     
     func testDecodable() {
         let json = """
-            {
-                "idiom" : "universal",
-                "color" : {
-                    "color-space" : "srgb",
-                    "components" : {
-                        "red" : 0.3137254901960784,
-                        "green" : 0.7843137254901961,
-                        "blue" : 0.4705882352941176,
-                        "alpha" : 1
-                    }
-                }
+          {
+            "idiom" : "ipad",
+            "color" : {
+              "color-space" : "srgb",
+              "components" : {
+                "red" : 0.3137254901960784,
+                "green" : 0.7843137254901961,
+                "blue" : 0.4705882352941176,
+                "alpha" : 1
+              }
             }
-        """.data(using: .utf8)!
+          }
+        """
+        let data = json.data(using: .utf8)!
         
         do {
-            let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: json)
+            let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
+            
+            XCTAssertEqual(color.idiom, .ipad)
+            XCTAssertNotNil(color.color)
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDefaultIdiom() {
+        let json = """
+          {
+            "color" : {
+              "color-space" : "srgb",
+              "components" : {
+                "red" : 0.3137254901960784,
+                "green" : 0.7843137254901961,
+                "blue" : 0.4705882352941176,
+                "alpha" : 1
+              }
+            }
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
             
             XCTAssertEqual(color.idiom, .universal)
             XCTAssertNotNil(color.color)
@@ -53,6 +81,23 @@ class AssetColorSetColorTests: XCTestCase {
         catch let error {
             XCTFail(error.localizedDescription)
         }
+    }
+    
+    func testIdiomRawValues() {
+        let idiom = AssetColorSet.Color.Idiom.self
+        
+        XCTAssertEqual(idiom.appLauncher.rawValue, "appLauncher")
+        XCTAssertEqual(idiom.companionSettings.rawValue, "companionSettings")
+        XCTAssertEqual(idiom.iosMarketing.rawValue, "ios-marketing")
+        XCTAssertEqual(idiom.iphone.rawValue, "iphone")
+        XCTAssertEqual(idiom.ipad.rawValue, "ipad")
+        XCTAssertEqual(idiom.mac.rawValue, "mac")
+        XCTAssertEqual(idiom.notificationCenter.rawValue, "notificationCenter")
+        XCTAssertEqual(idiom.quickLook.rawValue, "quickLook")
+        XCTAssertEqual(idiom.tv.rawValue, "tv")
+        XCTAssertEqual(idiom.universal.rawValue, "universal")
+        XCTAssertEqual(idiom.watch.rawValue, "watch")
+        XCTAssertEqual(idiom.watchMarketing.rawValue, "watch-marketing")
     }
     
 }
