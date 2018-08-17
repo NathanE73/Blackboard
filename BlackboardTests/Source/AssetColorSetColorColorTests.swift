@@ -31,7 +31,7 @@ class AssetColorSetColorColorTests: XCTestCase {
     func testDecodable() {
         let json = """
           {
-            "color-space" : "display-P3",
+            "color-space" : "display-p3",
             "components" : {
               "red" : 0.3137254901960784,
               "green" : 0.7843137254901961,
@@ -81,7 +81,7 @@ class AssetColorSetColorColorTests: XCTestCase {
         let colorSpace = AssetColorSet.Color.Color.ColorSpace.self
         
         XCTAssertEqual(colorSpace.srgb.rawValue, "srgb")
-        XCTAssertEqual(colorSpace.displayP3.rawValue, "display-P3")
+        XCTAssertEqual(colorSpace.displayP3.rawValue, "display-p3")
     }
     
 }

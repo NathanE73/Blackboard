@@ -40,6 +40,35 @@ class AssetColorSetColorTests: XCTestCase {
                 "blue" : 0.4705882352941176,
                 "alpha" : 1
               }
+            },
+            "display-gamut": "display-P3"
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
+            
+            XCTAssertEqual(color.displayGamut, .displayP3)
+            XCTAssertEqual(color.idiom, .ipad)
+            XCTAssertNotNil(color.color)
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDefaultDisplayGamut() {
+        let json = """
+          {
+            "color" : {
+              "color-space" : "srgb",
+              "components" : {
+                "red" : 0.3137254901960784,
+                "green" : 0.7843137254901961,
+                "blue" : 0.4705882352941176,
+                "alpha" : 1
+              }
             }
           }
         """
@@ -48,7 +77,8 @@ class AssetColorSetColorTests: XCTestCase {
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
             
-            XCTAssertEqual(color.idiom, .ipad)
+            XCTAssertEqual(color.displayGamut, .srgb)
+            XCTAssertEqual(color.idiom, .universal)
             XCTAssertNotNil(color.color)
         }
         catch let error {
@@ -83,21 +113,22 @@ class AssetColorSetColorTests: XCTestCase {
         }
     }
     
+    func testColorSpaceRawValues() {
+        let colorSpace = AssetColorSet.Color.DisplayGamut.self
+        
+        XCTAssertEqual(colorSpace.srgb.rawValue, "sRGB")
+        XCTAssertEqual(colorSpace.displayP3.rawValue, "display-P3")
+    }
+    
     func testIdiomRawValues() {
         let idiom = AssetColorSet.Color.Idiom.self
         
-        XCTAssertEqual(idiom.appLauncher.rawValue, "appLauncher")
-        XCTAssertEqual(idiom.companionSettings.rawValue, "companionSettings")
-        XCTAssertEqual(idiom.iosMarketing.rawValue, "ios-marketing")
         XCTAssertEqual(idiom.iphone.rawValue, "iphone")
         XCTAssertEqual(idiom.ipad.rawValue, "ipad")
         XCTAssertEqual(idiom.mac.rawValue, "mac")
-        XCTAssertEqual(idiom.notificationCenter.rawValue, "notificationCenter")
-        XCTAssertEqual(idiom.quickLook.rawValue, "quickLook")
         XCTAssertEqual(idiom.tv.rawValue, "tv")
         XCTAssertEqual(idiom.universal.rawValue, "universal")
         XCTAssertEqual(idiom.watch.rawValue, "watch")
-        XCTAssertEqual(idiom.watchMarketing.rawValue, "watch-marketing")
     }
     
 }

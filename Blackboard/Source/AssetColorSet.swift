@@ -41,16 +41,19 @@ extension AssetColorSet {
 extension AssetColorSet {
     
     struct Color : Decodable {
+        let displayGamut: DisplayGamut
         let idiom: Idiom
         let color: Color
         
         enum CodingKeys: String, CodingKey {
+            case displayGamut = "display-gamut"
             case idiom
             case color
         }
         
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
+            displayGamut = try container.decodeIfPresent(DisplayGamut.self, forKey: .displayGamut) ?? .srgb
             idiom = try container.decodeIfPresent(Idiom.self, forKey: .idiom) ?? .universal
             color = try container.decode(Color.self, forKey: .color)
         }
@@ -60,19 +63,22 @@ extension AssetColorSet {
 
 extension AssetColorSet.Color {
     
+    enum DisplayGamut: String, Decodable {
+        case srgb = "sRGB"
+        case displayP3 = "display-P3"
+    }
+    
+}
+
+extension AssetColorSet.Color {
+    
     enum Idiom: String, Decodable {
-        case appLauncher
-        case companionSettings
-        case iosMarketing = "ios-marketing"
         case iphone
         case ipad
         case mac
-        case notificationCenter
-        case quickLook
         case tv
         case universal
         case watch
-        case watchMarketing = "watch-marketing"
     }
     
 }
@@ -101,7 +107,7 @@ extension AssetColorSet.Color.Color {
     
     enum ColorSpace: String, Decodable {
         case srgb
-        case displayP3 = "display-P3"
+        case displayP3 = "display-p3"
     }
     
 }
@@ -113,6 +119,29 @@ extension AssetColorSet.Color.Color {
         let green: Double
         let blue: Double
         let alpha: Double
+        
+        enum CodingKeys : String, CodingKey {
+            case red
+            case green
+            case blue
+            case alpha
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            
+            let decode: (CodingKeys) throws -> Double = { key in
+                if let string = try? container.decode(String.self, forKey: key), let color = Double(string) {
+                    return color
+                }
+                return try container.decode(Double.self, forKey: key)
+            }
+            
+            red = try decode(.red)
+            green = try decode(.green)
+            blue = try decode(.blue)
+            alpha = try decode(.alpha)
+        }
     }
     
 }

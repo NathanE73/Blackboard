@@ -46,9 +46,9 @@ extension ColorSet {
         guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
             return nil
         }
-
+        
         let universalColor = assetColorSet.colors.first { color in
-            return color.idiom == .universal
+            return color.idiom == .universal && color.displayGamut == .srgb
         }
         
         guard let components = universalColor?.color.components else {
