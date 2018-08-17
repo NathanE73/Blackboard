@@ -36,6 +36,10 @@ extension AssetColorSet {
         let author: String
     }
     
+}
+
+extension AssetColorSet {
+    
     struct Color : Decodable {
         let idiom: Idiom
         let color: Color
