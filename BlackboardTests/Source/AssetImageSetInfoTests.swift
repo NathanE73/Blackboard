@@ -30,14 +30,15 @@ class AssetImageSetInfoTests: XCTestCase {
     
     func testDecodable() {
         let json = """
-            {
-                "version" : 1,
-                "author" : "xcode"
-            }
-        """.data(using: .utf8)!
+          {
+            "version" : 1,
+            "author" : "xcode"
+          }
+        """
+        let data = json.data(using: .utf8)!
         
         do {
-            let info = try JSONDecoder().decode(AssetImageSet.Info.self, from: json)
+            let info = try JSONDecoder().decode(AssetImageSet.Info.self, from: data)
             
             XCTAssertEqual(info.version, 1)
             XCTAssertEqual(info.author, "xcode")

@@ -30,14 +30,34 @@ class AssetImageSetImageTests: XCTestCase {
     
     func testDecodable() {
         let json = """
-            {
-                "idiom" : "universal",
-                "scale" : "1x"
-            }
-            """.data(using: .utf8)!
+          {
+            "idiom" : "iphone",
+            "scale" : "1x"
+          }
+        """
+        let data = json.data(using: .utf8)!
         
         do {
-            let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: json)
+            let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
+            
+            XCTAssertEqual(image.idiom, .iphone)
+            XCTAssertEqual(image.scale, .one)
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDefaultIdiom() {
+        let json = """
+          {
+            "scale" : "1x"
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
             
             XCTAssertEqual(image.idiom, .universal)
             XCTAssertEqual(image.scale, .one)
@@ -45,6 +65,50 @@ class AssetImageSetImageTests: XCTestCase {
         catch let error {
             XCTFail(error.localizedDescription)
         }
+    }
+    
+    func testOptionalScale() {
+        let json = """
+          {
+            "idiom" : "ipad"
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
+            
+            XCTAssertEqual(image.idiom, .ipad)
+            XCTAssertNil(image.scale)
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testIdiomRawValues() {
+        let idiom = AssetImageSet.Image.Idiom.self
+        
+        XCTAssertEqual(idiom.appLauncher.rawValue, "appLauncher")
+        XCTAssertEqual(idiom.companionSettings.rawValue, "companionSettings")
+        XCTAssertEqual(idiom.iosMarketing.rawValue, "ios-marketing")
+        XCTAssertEqual(idiom.iphone.rawValue, "iphone")
+        XCTAssertEqual(idiom.ipad.rawValue, "ipad")
+        XCTAssertEqual(idiom.mac.rawValue, "mac")
+        XCTAssertEqual(idiom.notificationCenter.rawValue, "notificationCenter")
+        XCTAssertEqual(idiom.quickLook.rawValue, "quickLook")
+        XCTAssertEqual(idiom.tv.rawValue, "tv")
+        XCTAssertEqual(idiom.universal.rawValue, "universal")
+        XCTAssertEqual(idiom.watch.rawValue, "watch")
+        XCTAssertEqual(idiom.watchMarketing.rawValue, "watch-marketing")
+    }
+    
+    func testScaleRawValues() {
+        let scale = AssetImageSet.Image.Scale.self
+        
+        XCTAssertEqual(scale.one.rawValue, "1x")
+        XCTAssertEqual(scale.two.rawValue, "2x")
+        XCTAssertEqual(scale.three.rawValue, "3x")
     }
     
 }

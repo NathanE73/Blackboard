@@ -1300,7 +1300,18 @@ extension AssetImageSet {
     
     struct Image : Decodable {
         let idiom: Idiom
-        let scale: Scale
+        let scale: Scale?
+        
+        enum CodingKeys: String, CodingKey {
+            case idiom
+            case scale
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            idiom = try container.decodeIfPresent(Idiom.self, forKey: .idiom) ?? .universal
+            scale = try container.decodeIfPresent(Scale.self, forKey: .scale)
+        }
     }
     
 }
