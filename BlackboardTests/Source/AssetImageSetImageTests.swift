@@ -89,18 +89,13 @@ class AssetImageSetImageTests: XCTestCase {
     func testIdiomRawValues() {
         let idiom = AssetImageSet.Image.Idiom.self
         
-        XCTAssertEqual(idiom.appLauncher.rawValue, "appLauncher")
-        XCTAssertEqual(idiom.companionSettings.rawValue, "companionSettings")
-        XCTAssertEqual(idiom.iosMarketing.rawValue, "ios-marketing")
+        XCTAssertEqual(idiom.car.rawValue, "car")
         XCTAssertEqual(idiom.iphone.rawValue, "iphone")
         XCTAssertEqual(idiom.ipad.rawValue, "ipad")
         XCTAssertEqual(idiom.mac.rawValue, "mac")
-        XCTAssertEqual(idiom.notificationCenter.rawValue, "notificationCenter")
-        XCTAssertEqual(idiom.quickLook.rawValue, "quickLook")
         XCTAssertEqual(idiom.tv.rawValue, "tv")
         XCTAssertEqual(idiom.universal.rawValue, "universal")
         XCTAssertEqual(idiom.watch.rawValue, "watch")
-        XCTAssertEqual(idiom.watchMarketing.rawValue, "watch-marketing")
     }
     
     func testScaleRawValues() {

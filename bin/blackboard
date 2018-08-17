@@ -1344,18 +1344,13 @@ extension AssetImageSet {
 extension AssetImageSet.Image {
     
     enum Idiom: String, Decodable {
-        case appLauncher
-        case companionSettings
-        case iosMarketing = "ios-marketing"
+        case car
         case iphone
         case ipad
         case mac
-        case notificationCenter
-        case quickLook
         case tv
         case universal
         case watch
-        case watchMarketing = "watch-marketing"
     }
     
 }

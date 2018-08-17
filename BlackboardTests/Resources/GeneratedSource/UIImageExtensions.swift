@@ -23,6 +23,7 @@ enum ImageAssetIdentifier: String {
     
     case apple = "apple"
     case bigApple = "big_apple"
+    case everythingApple = "everything--apple"
     case largeApple = "large-apple"
     case redApple = "redApple"
     case smallApple = "small apple"
@@ -37,6 +38,10 @@ extension UIImage {
     
     static var bigApple: UIImage {
         return UIImage(identifier: .bigApple)
+    }
+    
+    static var everythingApple: UIImage {
+        return UIImage(identifier: .everythingApple)
     }
     
     static var largeApple: UIImage {
