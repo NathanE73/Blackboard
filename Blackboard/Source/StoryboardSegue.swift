@@ -24,14 +24,18 @@
 
 import Foundation
 
-enum StoryboardSegueKind: String {
+extension StoryboardSegue {
     
-    case embed
-    case popoverPresentation
-    case presentation
-    case relationship
-    case show
-    case unwind
+    enum Kind: String {
+        
+        case embed
+        case popoverPresentation
+        case presentation
+        case relationship
+        case show
+        case unwind
+        
+    }
     
 }
 
@@ -39,7 +43,7 @@ struct StoryboardSegue {
     
     let id: String
     
-    let kind: StoryboardSegueKind
+    let kind: Kind
     let identifier: String?
     let destination: String
     
@@ -67,7 +71,7 @@ extension StoryboardSegue {
         self.id = id
         
         guard let kindAttribute = element.attribute(forName: "kind")?.stringValue,
-            let kind = StoryboardSegueKind(rawValue: kindAttribute) else {
+            let kind = Kind(rawValue: kindAttribute) else {
                 return nil
         }
         self.kind = kind

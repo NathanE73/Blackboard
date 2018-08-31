@@ -13,12 +13,16 @@ import XCTest
 class StoryboardSegueKindTests: XCTestCase {
     
     func testRawValues() {
-        XCTAssertEqual(StoryboardSegueKind.embed.rawValue, "embed")
-        XCTAssertEqual(StoryboardSegueKind.popoverPresentation.rawValue, "popoverPresentation")
-        XCTAssertEqual(StoryboardSegueKind.presentation.rawValue, "presentation")
-        XCTAssertEqual(StoryboardSegueKind.relationship.rawValue, "relationship")
-        XCTAssertEqual(StoryboardSegueKind.show.rawValue, "show")
-        XCTAssertEqual(StoryboardSegueKind.unwind.rawValue, "unwind")
+        // Given
+        let Kind = StoryboardSegue.Kind.self
+        
+        // Then
+        XCTAssertEqual(Kind.embed.rawValue, "embed")
+        XCTAssertEqual(Kind.popoverPresentation.rawValue, "popoverPresentation")
+        XCTAssertEqual(Kind.presentation.rawValue, "presentation")
+        XCTAssertEqual(Kind.relationship.rawValue, "relationship")
+        XCTAssertEqual(Kind.show.rawValue, "show")
+        XCTAssertEqual(Kind.unwind.rawValue, "unwind")
     }
     
 }

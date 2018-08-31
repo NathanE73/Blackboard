@@ -91,7 +91,7 @@ extension StoryboardViewController {
             .first { $0.id == id }
     }
     
-    func segueWith(kind: StoryboardSegueKind) -> StoryboardSegue? {
+    func segueWith(kind: StoryboardSegue.Kind) -> StoryboardSegue? {
         return segues
             .first { $0.kind == kind }
     }
