@@ -14,6 +14,7 @@
 		430A8F972139BFC50009E205 /* StoryboardCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F962139BFC50009E205 /* StoryboardCollectionViewCellTests.swift */; };
 		430A8F992139C2A30009E205 /* StoryboardTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F982139C2A30009E205 /* StoryboardTableViewCellTests.swift */; };
 		430A8F9C2139C71E0009E205 /* StoryboardViewControllerControllerTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F9B2139C71E0009E205 /* StoryboardViewControllerControllerTypeTests.swift */; };
+		430A8F9E2139D24D0009E205 /* StoryboardViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F9D2139D24D0009E205 /* StoryboardViewControllerTests.swift */; };
 		430DDEC71F28DABE00CFF543 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DDEC61F28DABE00CFF543 /* ColorSet.swift */; };
 		434645141CEB6F6A0060F249 /* BlackboardMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434645131CEB6F6A0060F249 /* BlackboardMain.swift */; };
 		434645161CEB943C0060F249 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434645151CEB943C0060F249 /* Header.swift */; };
@@ -71,6 +72,7 @@
 		430A8F962139BFC50009E205 /* StoryboardCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		430A8F982139C2A30009E205 /* StoryboardTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCellTests.swift; sourceTree = "<group>"; };
 		430A8F9B2139C71E0009E205 /* StoryboardViewControllerControllerTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewControllerControllerTypeTests.swift; sourceTree = "<group>"; };
+		430A8F9D2139D24D0009E205 /* StoryboardViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewControllerTests.swift; sourceTree = "<group>"; };
 		430DDEC61F28DABE00CFF543 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		434645131CEB6F6A0060F249 /* BlackboardMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardMain.swift; sourceTree = "<group>"; };
 		434645151CEB943C0060F249 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				430A8F9B2139C71E0009E205 /* StoryboardViewControllerControllerTypeTests.swift */,
+				430A8F9D2139D24D0009E205 /* StoryboardViewControllerTests.swift */,
 			);
 			name = StoryboardViewController;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				436A1DFB1F4757F8005EAFAD /* AssetImageSetTests.swift in Sources */,
 				43D2F3C1211E2460002DDEB1 /* AssetImageSetInfoTests.swift in Sources */,
 				430A8F992139C2A30009E205 /* StoryboardTableViewCellTests.swift in Sources */,
+				430A8F9E2139D24D0009E205 /* StoryboardViewControllerTests.swift in Sources */,
 				430A8F8921398CC10009E205 /* StoryboardSegueTests.swift in Sources */,
 				435DF57A1CEA3B110019DFFD /* NamingTests.swift in Sources */,
 				435DF5771CEA33500019DFFD /* StringExtensionsTests.swift in Sources */,

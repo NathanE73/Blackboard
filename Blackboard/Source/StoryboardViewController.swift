@@ -104,62 +104,49 @@ extension StoryboardViewController {
 extension StoryboardViewController: CustomStringConvertible {
     
     var description: String {
-        return "id: \(id), type: \(type), storyboardIdentifier: \(storyboardIdentifier ?? "nil"), customClass: \(customClass ?? "nil")"
+        return "id: \(id), type: \(type), storyboardIdentifier: \(storyboardIdentifier ?? "nil")"
+            + ", customClass: \(customClass ?? "nil"), storyboardName: \(storyboardName ?? "nil")"
     }
     
 }
 
 extension StoryboardViewController {
     
-    init?(node: XMLNode) {
+    init?(node: XMLNode?) {
         let xpath = ControllerType.allCases
             .map { ".//\($0.rawValue)" }
             .joined(separator: " | ")
         
-        guard let nodes = try? node.nodes(forXPath: xpath),
+        guard let node = node,
+            let nodes = try? node.nodes(forXPath: xpath),
+            nodes.count == 1,
             let element = nodes.first as? XMLElement,
             let elementName = element.name,
-            nodes.count == 1 else {
+            let type = ControllerType(rawValue: elementName),
+            let segueNodes = try? element.nodes(forXPath: ".//segue"),
+            let tableViewCellNodes = try? element.nodes(forXPath: ".//tableViewCell"),
+            let collectionViewCellNodes = try? element.nodes(forXPath: ".//collectionViewCell") else {
                 return nil
         }
-        
+
         guard let id = element.attribute(forName: "id")?.stringValue else {
             return nil
         }
-        
-        guard let type = ControllerType(rawValue: elementName) else {
-            return nil
-        }
-        
-        let storyboardIdentifier = element.attribute(forName: "storyboardIdentifier")?.stringValue
-        
-        let customClass = element.attribute(forName: "customClass")?.stringValue
-        
-        let storyboardName = element.attribute(forName: "storyboardName")?.stringValue
-        
-        guard let segueNodes = try? element.nodes(forXPath: ".//segue") else {
-            return nil
-        }
-        let segues = segueNodes.compactMap(StoryboardSegue.init)
-        
-        guard let tableViewCellNodes = try? element.nodes(forXPath: ".//tableViewCell") else {
-            return nil
-        }
-        let tableViewCells = tableViewCellNodes.compactMap(StoryboardTableViewCell.init)
-        
-        guard let collectionViewCellNodes = try? element.nodes(forXPath: ".//collectionViewCell") else {
-            return nil
-        }
-        let collectionViewCells = collectionViewCellNodes.compactMap(StoryboardCollectionViewCell.init)
-        
         self.id = id
+        
         self.type = type
-        self.storyboardIdentifier = storyboardIdentifier
-        self.customClass = customClass
-        self.storyboardName = storyboardName
-        self.segues = segues
-        self.tableViewCells = tableViewCells
-        self.collectionViewCells = collectionViewCells
+        
+        storyboardIdentifier = element.attribute(forName: "storyboardIdentifier")?.stringValue
+        
+        customClass = element.attribute(forName: "customClass")?.stringValue
+        
+        storyboardName = element.attribute(forName: "storyboardName")?.stringValue
+        
+        segues = segueNodes.compactMap(StoryboardSegue.init)
+        
+        tableViewCells = tableViewCellNodes.compactMap(StoryboardTableViewCell.init)
+        
+        collectionViewCells = collectionViewCellNodes.compactMap(StoryboardCollectionViewCell.init)
     }
     
 }
