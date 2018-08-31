@@ -11,6 +11,7 @@
 		430A8F8921398CC10009E205 /* StoryboardSegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F8821398CC10009E205 /* StoryboardSegueTests.swift */; };
 		430A8F9321398F310009E205 /* StoryboardSegueKindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F9221398F310009E205 /* StoryboardSegueKindTests.swift */; };
 		430A8F952139B9D80009E205 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F942139B9D80009E205 /* XCTestCase.swift */; };
+		430A8F972139BFC50009E205 /* StoryboardCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F962139BFC50009E205 /* StoryboardCollectionViewCellTests.swift */; };
 		430DDEC71F28DABE00CFF543 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DDEC61F28DABE00CFF543 /* ColorSet.swift */; };
 		434645141CEB6F6A0060F249 /* BlackboardMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434645131CEB6F6A0060F249 /* BlackboardMain.swift */; };
 		434645161CEB943C0060F249 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434645151CEB943C0060F249 /* Header.swift */; };
@@ -65,6 +66,7 @@
 		430A8F8821398CC10009E205 /* StoryboardSegueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueTests.swift; sourceTree = "<group>"; };
 		430A8F9221398F310009E205 /* StoryboardSegueKindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueKindTests.swift; sourceTree = "<group>"; };
 		430A8F942139B9D80009E205 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		430A8F962139BFC50009E205 /* StoryboardCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		430DDEC61F28DABE00CFF543 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		434645131CEB6F6A0060F249 /* BlackboardMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardMain.swift; sourceTree = "<group>"; };
 		434645151CEB943C0060F249 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				435DF5231CEA1CE90019DFFD /* LaunchScreenStoryboardTests.swift */,
 				435DF52B1CEA1CE90019DFFD /* NamingTests.swift */,
 				435DF5261CEA1CE90019DFFD /* NSFileManagerExtensions.swift */,
+				430A8F962139BFC50009E205 /* StoryboardCollectionViewCellTests.swift */,
 				430A8F8A21398DA10009E205 /* StoryboardSegue */,
 				435DF5251CEA1CE90019DFFD /* StringExtensionsTests.swift */,
 				430A8F942139B9D80009E205 /* XCTestCase.swift */,
@@ -386,6 +389,7 @@
 				430A8F9321398F310009E205 /* StoryboardSegueKindTests.swift in Sources */,
 				43D2F3CB211E2B26002DDEB1 /* AssetColorSetInfoTests.swift in Sources */,
 				43D2F3CA211E2B26002DDEB1 /* AssetColorSetColorColorComponentsTests.swift in Sources */,
+				430A8F972139BFC50009E205 /* StoryboardCollectionViewCellTests.swift in Sources */,
 				43D2F3C9211E2B26002DDEB1 /* AssetColorSetColorTests.swift in Sources */,
 				436B57901F27E47B0030E40B /* AssetColorSetTests.swift in Sources */,
 				43D2F3BF211E2430002DDEB1 /* AssetImageSetImageTests.swift in Sources */,

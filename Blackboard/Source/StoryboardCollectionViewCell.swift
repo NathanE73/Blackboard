@@ -35,14 +35,14 @@ struct StoryboardCollectionViewCell {
 extension StoryboardCollectionViewCell: CustomStringConvertible {
     
     var description: String {
-        return "id: \(id), reuseIdentifier: \(reuseIdentifier ?? "nil")"
+        return "id: \(id), reuseIdentifier: \(reuseIdentifier ?? "nil"), customClass: \(customClass ?? "nil")"
     }
     
 }
 
 extension StoryboardCollectionViewCell {
     
-    init?(node: XMLNode) {
+    init?(node: XMLNode?) {
         guard let element = node as? XMLElement,
             element.name == "collectionViewCell" else {
                 return nil
