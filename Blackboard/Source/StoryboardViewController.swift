@@ -24,47 +24,40 @@
 
 import Foundation
 
-enum StoryboardViewControllerType: String {
+extension StoryboardViewController {
     
-    case collectionViewController = "collectionViewController"
-    case navigationController = "navigationController"
-    case pageViewController = "pageViewController"
-    case splitViewController = "splitViewController"
-    case tabBarController = "tabBarController"
-    case tableViewController = "tableViewController"
-    case viewController = "viewController"
-    case viewControllerPlaceholder = "viewControllerPlaceholder"
-    
-    static let entries: [StoryboardViewControllerType] = [
-        .collectionViewController,
-        .navigationController,
-        .pageViewController,
-        .splitViewController,
-        .tabBarController,
-        .tableViewController,
-        .viewController,
-        .viewControllerPlaceholder
-    ]
-    
-    var className: String? {
-        switch self {
-        case .collectionViewController:
-            return "UICollectionViewController"
-        case .navigationController:
-            return "UINavigationController"
-        case .pageViewController:
-            return "UIPageViewController"
-        case .splitViewController:
-            return "UISplitViewController"
-        case .tabBarController:
-            return "UITabBarController"
-        case .tableViewController:
-            return "UITableViewController"
-        case .viewController:
-            return "UIViewController"
-        case .viewControllerPlaceholder:
-            return nil
+    enum ControllerType: String, CaseIterable {
+        
+        case collectionViewController
+        case navigationController
+        case pageViewController
+        case splitViewController
+        case tabBarController
+        case tableViewController
+        case viewController
+        case viewControllerPlaceholder
+        
+        var className: String? {
+            switch self {
+            case .collectionViewController:
+                return "UICollectionViewController"
+            case .navigationController:
+                return "UINavigationController"
+            case .pageViewController:
+                return "UIPageViewController"
+            case .splitViewController:
+                return "UISplitViewController"
+            case .tabBarController:
+                return "UITabBarController"
+            case .tableViewController:
+                return "UITableViewController"
+            case .viewController:
+                return "UIViewController"
+            case .viewControllerPlaceholder:
+                return nil
+            }
         }
+        
     }
     
 }
@@ -73,7 +66,7 @@ struct StoryboardViewController {
     
     let id: String
     
-    let type: StoryboardViewControllerType
+    let type: ControllerType
     let storyboardIdentifier: String?
     let customClass: String?
     let storyboardName: String?
@@ -119,7 +112,7 @@ extension StoryboardViewController: CustomStringConvertible {
 extension StoryboardViewController {
     
     init?(node: XMLNode) {
-        let xpath = StoryboardViewControllerType.entries
+        let xpath = ControllerType.allCases
             .map { ".//\($0.rawValue)" }
             .joined(separator: " | ")
         
@@ -134,7 +127,7 @@ extension StoryboardViewController {
             return nil
         }
         
-        guard let type = StoryboardViewControllerType(rawValue: elementName) else {
+        guard let type = ControllerType(rawValue: elementName) else {
             return nil
         }
         
