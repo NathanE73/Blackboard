@@ -26,12 +26,12 @@ import Foundation
 
 enum StoryboardSegueKind: String {
     
-    case embed = "embed"
-    case popoverPresentation = "popoverPresentation"
-    case presentation = "presentation"
-    case relationship = "relationship"
-    case show = "show"
-    case unwind = "unwind"
+    case embed
+    case popoverPresentation
+    case presentation
+    case relationship
+    case show
+    case unwind
     
 }
 
@@ -55,7 +55,7 @@ extension StoryboardSegue: CustomStringConvertible {
 
 extension StoryboardSegue {
     
-    init?(node: XMLNode) {
+    init?(node: XMLNode?) {
         guard let element = node as? XMLElement,
             element.name == "segue" else {
                 return nil

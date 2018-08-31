@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		430867B11F27BAF2006DF3D2 /* BlackboardColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430867AE1F27BAF2006DF3D2 /* BlackboardColor.swift */; };
+		430A8F8921398CC10009E205 /* StoryboardSegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F8821398CC10009E205 /* StoryboardSegueTests.swift */; };
+		430A8F9321398F310009E205 /* StoryboardSegueKindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F9221398F310009E205 /* StoryboardSegueKindTests.swift */; };
+		430A8F952139B9D80009E205 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A8F942139B9D80009E205 /* XCTestCase.swift */; };
 		430DDEC71F28DABE00CFF543 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DDEC61F28DABE00CFF543 /* ColorSet.swift */; };
 		434645141CEB6F6A0060F249 /* BlackboardMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434645131CEB6F6A0060F249 /* BlackboardMain.swift */; };
 		434645161CEB943C0060F249 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434645151CEB943C0060F249 /* Header.swift */; };
@@ -59,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		430867AE1F27BAF2006DF3D2 /* BlackboardColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardColor.swift; sourceTree = "<group>"; };
+		430A8F8821398CC10009E205 /* StoryboardSegueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueTests.swift; sourceTree = "<group>"; };
+		430A8F9221398F310009E205 /* StoryboardSegueKindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueKindTests.swift; sourceTree = "<group>"; };
+		430A8F942139B9D80009E205 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		430DDEC61F28DABE00CFF543 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		434645131CEB6F6A0060F249 /* BlackboardMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackboardMain.swift; sourceTree = "<group>"; };
 		434645151CEB943C0060F249 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -120,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430A8F8A21398DA10009E205 /* StoryboardSegue */ = {
+			isa = PBXGroup;
+			children = (
+				430A8F9221398F310009E205 /* StoryboardSegueKindTests.swift */,
+				430A8F8821398CC10009E205 /* StoryboardSegueTests.swift */,
+			);
+			name = StoryboardSegue;
+			sourceTree = "<group>";
+		};
 		435DF4FC1CEA1BDE0019DFFD = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +181,9 @@
 				435DF5231CEA1CE90019DFFD /* LaunchScreenStoryboardTests.swift */,
 				435DF52B1CEA1CE90019DFFD /* NamingTests.swift */,
 				435DF5261CEA1CE90019DFFD /* NSFileManagerExtensions.swift */,
+				430A8F8A21398DA10009E205 /* StoryboardSegue */,
 				435DF5251CEA1CE90019DFFD /* StringExtensionsTests.swift */,
+				430A8F942139B9D80009E205 /* XCTestCase.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -365,6 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				435DF57C1CEA3CCE0019DFFD /* NSFileManagerExtensions.swift in Sources */,
+				430A8F952139B9D80009E205 /* XCTestCase.swift in Sources */,
+				430A8F9321398F310009E205 /* StoryboardSegueKindTests.swift in Sources */,
 				43D2F3CB211E2B26002DDEB1 /* AssetColorSetInfoTests.swift in Sources */,
 				43D2F3CA211E2B26002DDEB1 /* AssetColorSetColorColorComponentsTests.swift in Sources */,
 				43D2F3C9211E2B26002DDEB1 /* AssetColorSetColorTests.swift in Sources */,
@@ -374,6 +393,7 @@
 				435DF58A1CEA40C50019DFFD /* LaunchScreenStoryboardTests.swift in Sources */,
 				436A1DFB1F4757F8005EAFAD /* AssetImageSetTests.swift in Sources */,
 				43D2F3C1211E2460002DDEB1 /* AssetImageSetInfoTests.swift in Sources */,
+				430A8F8921398CC10009E205 /* StoryboardSegueTests.swift in Sources */,
 				435DF57A1CEA3B110019DFFD /* NamingTests.swift in Sources */,
 				435DF5771CEA33500019DFFD /* StringExtensionsTests.swift in Sources */,
 			);
