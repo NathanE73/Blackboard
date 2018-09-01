@@ -68,4 +68,83 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("\t apple \t".trimmingWhitespaceCharacters, "apple")
     }
     
+    // MARK: - NSString -
+    
+    func testLastPathComponent() {
+        // Given
+        let text = "./Documents/Images/Profile.png"
+        
+        // When
+        let result = text.lastPathComponent
+        
+        // Then
+        XCTAssertEqual(result, "Profile.png")
+    }
+    
+    func testDeletingLastPathComponent() {
+        // Given
+        let text = "./Documents/Images/Profile.png"
+        
+        // When
+        let result = text.deletingLastPathComponent
+        
+        // Then
+        XCTAssertEqual(result, "./Documents/Images")
+    }
+    
+    func testAppendingPathComponent() {
+        // Given
+        let text = "./Documents/Images"
+        
+        // When
+        let result = text.appendingPathComponent("friends")
+        
+        // Then
+        XCTAssertEqual(result, "./Documents/Images/friends")
+    }
+    
+    func testPathExtension() {
+        // Given
+        let text = "./Documents/Images/Profile.png"
+        
+        // When
+        let result = text.pathExtension
+        
+        // Then
+        XCTAssertEqual(result, "png")
+    }
+    
+    func testDeletingPathExtension() {
+        // Given
+        let text = "./Documents/Images/Profile.png"
+        
+        // When
+        let result = text.deletingPathExtension
+        
+        // Then
+        XCTAssertEqual(result, "./Documents/Images/Profile")
+    }
+    
+    func testAppendingPathExtension() {
+        // Given
+        let text = "./Documents/Images/Profile"
+        
+        // When
+        let result = text.appendingPathExtension("jpg")
+        
+        // Then
+        XCTAssertEqual(result, "./Documents/Images/Profile.jpg")
+    }
+    
+    func testExpandingTildeInPath() {
+        // Given
+        let text = "~/.."
+        
+        // When
+        let result = (text.expandingTildeInPath as NSString).standardizingPath
+        
+        // Then
+        XCTAssertEqual(result, "/Users")
+    }
+    
 }

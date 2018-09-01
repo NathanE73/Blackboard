@@ -21,7 +21,6 @@
 		435DF50A1CEA1BDE0019DFFD /* Blackboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 435DF5091CEA1BDE0019DFFD /* Blackboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435DF5111CEA1BDE0019DFFD /* Blackboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435DF5061CEA1BDE0019DFFD /* Blackboard.framework */; };
 		435DF5371CEA1CF80019DFFD /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 435DF5361CEA1CF80019DFFD /* Resources */; };
-		435DF5731CEA31E80019DFFD /* String+NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF54A1CEA1D560019DFFD /* String+NSString.swift */; };
 		435DF5751CEA33010019DFFD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF53A1CEA1D560019DFFD /* StringExtensions.swift */; };
 		435DF5771CEA33500019DFFD /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5251CEA1CE90019DFFD /* StringExtensionsTests.swift */; };
 		435DF5791CEA3AE40019DFFD /* Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5781CEA3AE40019DFFD /* Naming.swift */; };
@@ -98,7 +97,6 @@
 		435DF5451CEA1D560019DFFD /* StoryboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCell.swift; sourceTree = "<group>"; };
 		435DF5461CEA1D560019DFFD /* StoryboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		435DF5471CEA1D560019DFFD /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		435DF54A1CEA1D560019DFFD /* String+NSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+NSString.swift"; sourceTree = "<group>"; };
 		435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		435DF5781CEA3AE40019DFFD /* Naming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Naming.swift; sourceTree = "<group>"; };
 		436A1DF41F473E54005EAFAD /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
@@ -199,9 +197,9 @@
 				435DF52B1CEA1CE90019DFFD /* NamingTests.swift */,
 				435DF5261CEA1CE90019DFFD /* NSFileManagerExtensions.swift */,
 				430A8F962139BFC50009E205 /* StoryboardCollectionViewCellTests.swift */,
-				430A8F9A2139C6ED0009E205 /* StoryboardViewController */,
 				430A8F8A21398DA10009E205 /* StoryboardSegue */,
 				430A8F982139C2A30009E205 /* StoryboardTableViewCellTests.swift */,
+				430A8F9A2139C6ED0009E205 /* StoryboardViewController */,
 				435DF5251CEA1CE90019DFFD /* StringExtensionsTests.swift */,
 				430A8F942139B9D80009E205 /* XCTestCase.swift */,
 			);
@@ -231,7 +229,6 @@
 				435DF5431CEA1D560019DFFD /* StoryboardSegue.swift */,
 				435DF5451CEA1D560019DFFD /* StoryboardTableViewCell.swift */,
 				435DF5441CEA1D560019DFFD /* StoryboardViewController.swift */,
-				435DF54A1CEA1D560019DFFD /* String+NSString.swift */,
 				435DF53A1CEA1D560019DFFD /* StringExtensions.swift */,
 				435DF53B1CEA1D560019DFFD /* SwiftSource.swift */,
 			);
@@ -378,7 +375,6 @@
 				430DDEC71F28DABE00CFF543 /* ColorSet.swift in Sources */,
 				435DF5791CEA3AE40019DFFD /* Naming.swift in Sources */,
 				430867B11F27BAF2006DF3D2 /* BlackboardColor.swift in Sources */,
-				435DF5731CEA31E80019DFFD /* String+NSString.swift in Sources */,
 				435DF5811CEA3EA70019DFFD /* BlackboardStoryboard.swift in Sources */,
 				436A1DF51F473E54005EAFAD /* ImageSet.swift in Sources */,
 				436A1DF91F473E7E005EAFAD /* AssetImageSet.swift in Sources */,
