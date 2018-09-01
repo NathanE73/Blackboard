@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2016 Nathan E. Walczak
+// Copyright (c) 2018 Nathan E. Walczak
 // 
 // MIT License
 // 
