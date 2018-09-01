@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2016 Nathan E. Walczak
+// Copyright (c) 2018 Nathan E. Walczak
 //
 // MIT License
 //
@@ -22,23 +22,14 @@
 // THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 
-@testable import Blackboard
+fileprivate class Object { }
 
-class LaunchScreenStoryboardTests: XCTestCase {
+extension Bundle {
     
-    var storyboard: Storyboard!
-    
-    override func setUp() {
-        let bundle = Bundle.tests
-        let url = bundle.url(forResource: "LaunchScreen", withExtension: "storyboard", subdirectory: "Resources/Storyboards")!
-        
-        storyboard = Storyboard(url: url)
-    }
-    
-    func testStoryboard() {
-        XCTAssertNil(storyboard)
+    class public var tests: Bundle {
+        return Bundle(for: Object.self)
     }
     
 }

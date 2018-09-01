@@ -39,6 +39,7 @@
 		435DF5881CEA3EBE0019DFFD /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5441CEA1D560019DFFD /* StoryboardViewController.swift */; };
 		435DF5891CEA3EBE0019DFFD /* SwiftSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF53B1CEA1D560019DFFD /* SwiftSource.swift */; };
 		435DF58A1CEA40C50019DFFD /* LaunchScreenStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF5231CEA1CE90019DFFD /* LaunchScreenStoryboardTests.swift */; };
+		4360E41A213A17350063B49F /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4360E419213A17350063B49F /* Bundle.swift */; };
 		436A1DF51F473E54005EAFAD /* ImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DF41F473E54005EAFAD /* ImageSet.swift */; };
 		436A1DF71F473E62005EAFAD /* BlackboardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DF61F473E62005EAFAD /* BlackboardImage.swift */; };
 		436A1DF91F473E7E005EAFAD /* AssetImageSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A1DF81F473E7E005EAFAD /* AssetImageSet.swift */; };
@@ -99,6 +100,7 @@
 		435DF5471CEA1D560019DFFD /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		435DF54F1CEA1D560019DFFD /* FileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		435DF5781CEA3AE40019DFFD /* Naming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Naming.swift; sourceTree = "<group>"; };
+		4360E419213A17350063B49F /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		436A1DF41F473E54005EAFAD /* ImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSet.swift; sourceTree = "<group>"; };
 		436A1DF61F473E62005EAFAD /* BlackboardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackboardImage.swift; sourceTree = "<group>"; };
 		436A1DF81F473E7E005EAFAD /* AssetImageSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetImageSet.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				43D2F3C3211E2AAE002DDEB1 /* AssetColorSet */,
 				43D2F3C2211E2A77002DDEB1 /* AssetImageSet */,
+				4360E419213A17350063B49F /* Bundle.swift */,
 				435DF5231CEA1CE90019DFFD /* LaunchScreenStoryboardTests.swift */,
 				435DF52B1CEA1CE90019DFFD /* NamingTests.swift */,
 				435DF5261CEA1CE90019DFFD /* NSFileManagerExtensions.swift */,
@@ -410,6 +413,7 @@
 				43D2F3C8211E2B26002DDEB1 /* AssetColorSetColorColorTests.swift in Sources */,
 				435DF58A1CEA40C50019DFFD /* LaunchScreenStoryboardTests.swift in Sources */,
 				436A1DFB1F4757F8005EAFAD /* AssetImageSetTests.swift in Sources */,
+				4360E41A213A17350063B49F /* Bundle.swift in Sources */,
 				43D2F3C1211E2460002DDEB1 /* AssetImageSetInfoTests.swift in Sources */,
 				430A8F992139C2A30009E205 /* StoryboardTableViewCellTests.swift in Sources */,
 				430A8F9E2139D24D0009E205 /* StoryboardViewControllerTests.swift in Sources */,

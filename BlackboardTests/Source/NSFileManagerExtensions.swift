@@ -37,7 +37,7 @@ class NSFileManagerExtensions: XCTestCase {
     }
     
     func testIsFile() {
-        let bundle = Bundle(for: NSFileManagerExtensions.self)
+        let bundle = Bundle.tests
         
         if let file = bundle.path(forResource: "Contents", ofType: "json", inDirectory: "Resources/Colors.xcassets/Emerald.colorset") {
             XCTAssertTrue(fileManager.isFile(file))
