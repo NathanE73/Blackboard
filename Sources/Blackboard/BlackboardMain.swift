@@ -24,7 +24,7 @@
 
 import AppKit
 
-class BlackboardMain {
+public class BlackboardMain {
     
     static func printUsage() {
         let name = CommandLine.arguments[0].lastPathComponent
@@ -33,7 +33,7 @@ class BlackboardMain {
         print("example: \(name) example/storyboards/ example/source/generated/")
     }
     
-    static func run() {
+    public static func run() {
         
         let arguments = CommandLine.arguments
         let numberOfArguments = arguments.count - 1
