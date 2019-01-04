@@ -78,6 +78,38 @@ extension BlackboardColor {
     
 }
 
+fileprivate let roundedStringValueFormatter: NumberFormatter = {
+    let formatter = NumberFormatter()
+    formatter.minimumIntegerDigits = 1
+    formatter.minimumFractionDigits = 1
+    formatter.maximumFractionDigits = 15
+    return formatter
+}()
+
+extension BlackboardColor {
+    
+    fileprivate func roundedStringValue(_ double: Double) -> String {
+        return roundedStringValueFormatter.string(for: double)!
+    }
+    
+    var redStringValue: String {
+        return roundedStringValue(red)
+    }
+    
+    var greenStringValue: String {
+        return roundedStringValue(green)
+    }
+    
+    var blueStringValue: String {
+        return roundedStringValue(blue)
+    }
+    
+    var alphaStringValue: String {
+        return roundedStringValue(alpha)
+    }
+    
+}
+
 extension SwiftSource {
     
     func appendColors(colors: [BlackboardColor]) {
@@ -107,7 +139,7 @@ extension SwiftSource {
     
     func appendColor(color: BlackboardColor) {
         append("// \(color.hexValue) \(color.rgbaValue)")
-        append("static let \(color.functionName) = color(named: \"\(color.name)\", red: \(color.red), green: \(color.green), blue: \(color.blue), alpha: \(color.alpha))")
+        append("static let \(color.functionName) = color(named: \"\(color.name)\", red: \(color.redStringValue), green: \(color.greenStringValue), blue: \(color.blueStringValue), alpha: \(color.alphaStringValue))")
         append()
     }
     
