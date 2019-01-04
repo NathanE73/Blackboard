@@ -31,10 +31,7 @@ class LaunchScreenStoryboardTests: XCTestCase {
     var storyboard: Storyboard!
     
     override func setUp() {
-        let bundle = Bundle.tests
-        let url = bundle.url(forResource: "LaunchScreen", withExtension: "storyboard", subdirectory: "Resources/Storyboards")!
-        
-        storyboard = Storyboard(url: url)
+        storyboard = Storyboard(data: LaunchScreenStoryboardData, name: "LaunchScreen")
     }
     
     func testStoryboard() {

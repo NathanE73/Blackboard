@@ -28,7 +28,7 @@ struct Storyboard {
     
     let name: String
     let initialViewControllerIdentifier: String?
-
+    
     let viewControllers: [StoryboardViewController]
     
 }
@@ -53,7 +53,7 @@ extension Storyboard {
             .first { viewController in
                 return viewController.segues
                     .first { $0.destination == id} != nil
-            }
+        }
     }
     
 }
@@ -76,8 +76,8 @@ extension Storyboard: CustomStringConvertible {
 
 extension Storyboard {
     
-    init?(url: URL) {
-        guard let xmlDocument = try? XMLDocument(contentsOf: url) else {
+    init?(data: Data, name: String) {
+        guard let xmlDocument = try? XMLDocument(data: data) else {
             return nil
         }
         
@@ -87,14 +87,24 @@ extension Storyboard {
             return nil
         }
         
-        self.name = url.deletingPathExtension().lastPathComponent
+        self.name = name
         
         self.initialViewControllerIdentifier = element?.attribute(forName: "initialViewController")?.stringValue
-
+        
         guard let sceneNodes = try? xmlDocument.nodes(forXPath: "//scene") else {
             return nil
         }
         viewControllers = sceneNodes.compactMap(StoryboardViewController.init)
+    }
+    
+    init?(url: URL) {
+        guard let data = try? Data(contentsOf: url) else {
+            return nil
+        }
+        
+        let name = url.deletingPathExtension().lastPathComponent
+        
+        self.init(data: data, name: name)
     }
     
     init?(path: String) {
