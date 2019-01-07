@@ -1,9 +1,14 @@
 
 BINARIES_FOLDER=bin
 
-SWIFT_BUILD_FLAGS=--configuration release
+SWIFT_BUILD_FLAGS=--configuration release -Xswiftc -static-stdlib
 
 BLACKBOARD_EXECUTABLE=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)/blackboard
+
+VERSION_FILE=etc/version.txt
+VERSION_STRING=$(shell cat "$(VERSION_FILE)")
+
+.PHONY: project reset clean build test version update-version release example
 
 project:
 	rm -rf DerivedData/
@@ -21,6 +26,15 @@ build:
 test:
 	swift test --parallel
 
-release: clean build
+version:
+	@echo $(VERSION_STRING)
+
+update-version:
+	@sed 's/__VERSION__/$(VERSION_STRING)/g' etc/Version.swift > Sources/Blackboard/Version.swift
+
+release: clean update-version build
 	install -d "$(BINARIES_FOLDER)"
 	install "$(BLACKBOARD_EXECUTABLE)" "$(BINARIES_FOLDER)"
+
+example:
+	bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated

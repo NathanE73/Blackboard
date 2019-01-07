@@ -41,7 +41,7 @@ public class BlackboardMain {
         // Version
         
         if arguments.contains("--version") {
-            print("Blackboard Version #VERSION#")
+            print("Blackboard Version \(version)")
             exit(0)
         }
         
