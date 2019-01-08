@@ -1,6 +1,6 @@
 # Blackboard: Another iOS Storyboard Manager
 
-[![Version](https://img.shields.io/badge/version-4.2.0-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-5.0.0-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/swift-4.1-yellow.svg)](https://swift.org)
@@ -33,7 +33,7 @@ See which version of `blackboard` currently have:
 
 ```bash
 $ bin/blackboard --version
-Blackboard Version 4.2.0
+Blackboard Version 5.0.0
 ```
 
 ### Generating Source
@@ -41,6 +41,7 @@ Blackboard Version 4.2.0
 ```bash
 $ bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated/
 ```
+
 ```bash
 $ bin/blackboard BlackboardTests/Resources/ BlackboardTests/Resources/GeneratedSource/
 ```
@@ -52,11 +53,11 @@ $ bin/blackboard BlackboardTests/Resources/ BlackboardTests/Resources/GeneratedS
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
-    
+
     window?.rootViewController = WelcomeViewController.instantiateViewControllerFromStoryboard()
-    
+
     window?.makeKeyAndVisible()
-    
+
     return true
 }
 ```
@@ -100,8 +101,8 @@ let cell = dequeueAccountNameCell(from: collectionView) { (accountNameCell) in
 
 ## Authors
 
-* Nathan Walczak, knate@knate.com
-* Jon Shier, jon@jonshier.com
+- Nathan Walczak, knate@knate.com
+- Jon Shier, jon@jonshier.com
 
 ## License
 
