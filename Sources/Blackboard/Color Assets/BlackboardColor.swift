@@ -68,14 +68,6 @@ extension BlackboardColor {
         return roundedIntValue(blue)
     }
     
-    var hexValue: String {
-        return String(format: "#%06X", (redIntValue << 16 + greenIntValue << 8 + blueIntValue))
-    }
-    
-    var rgbaValue: String {
-        return "rgb(\(redIntValue), \(greenIntValue), \(blueIntValue))"
-    }
-    
 }
 
 fileprivate let roundedStringValueFormatter: NumberFormatter = {
@@ -106,6 +98,21 @@ extension BlackboardColor {
     
     var alphaStringValue: String {
         return roundedStringValue(alpha)
+    }
+    
+}
+
+extension BlackboardColor {
+    
+    var hexValue: String {
+        return String(format: "#%06X", (redIntValue << 16 + greenIntValue << 8 + blueIntValue))
+    }
+    
+    var rgbaValue: String {
+        if alpha == 1 {
+            return "rgb(\(redIntValue), \(greenIntValue), \(blueIntValue))"
+        }
+        return "rgba(\(redIntValue), \(greenIntValue), \(blueIntValue), \(alphaStringValue))"
     }
     
 }

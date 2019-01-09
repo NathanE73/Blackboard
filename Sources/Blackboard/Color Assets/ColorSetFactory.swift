@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,22 +24,40 @@
 
 import Foundation
 
-struct ImageSet {
-    let name: String
-}
-
-extension ImageSet {
+class ColorSetFactory {
     
-    init?(name: String, assetImageSet: AssetImageSet) {
-        self.name = name
+    let fileManager = FileManager.default
+    
+    func colorSetsAt(path: String) -> [ColorSet] {
+        var files: [String] = []
         
-        let images = assetImageSet.images.filter { image -> Bool in
-            [.iphone, .ipad, .universal].contains(image.idiom)
+        let enumerator = fileManager.enumerator(atPath: path)
+        while let file = enumerator?.nextObject() as? String {
+            if file.pathExtension == "colorset" {
+                files.append(path.appendingPathComponent(file))
+            }
         }
         
-        guard images.isEmpty == false else {
+        files.sort(by: <)
+        
+        return files.compactMap(colorSetAt(path:))
+    }
+    
+    func colorSetAt(path: String) -> ColorSet? {
+        let url = URL(fileURLWithPath: path, isDirectory: false)
+        
+        let contentsURL = url.appendingPathComponent("Contents.json")
+        guard let data = try? Data(contentsOf: contentsURL) else {
             return nil
         }
+        
+        let name = url.lastPathComponent.deletingPathExtension
+        
+        guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
+            return nil
+        }
+        
+        return ColorSet(name: name, assetColorSet: assetColorSet)
     }
     
 }

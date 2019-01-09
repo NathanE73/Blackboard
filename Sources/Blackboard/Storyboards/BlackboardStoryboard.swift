@@ -45,7 +45,7 @@ extension BlackboardStoryboard {
         viewControllers = storyboard.viewControllers
             .compactMap { BlackboardViewController(viewController: $0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.className < $1.className }
-        guard !viewControllers.isEmpty else {
+        guard viewControllers.isEmpty == false else {
             return nil
         }
     }

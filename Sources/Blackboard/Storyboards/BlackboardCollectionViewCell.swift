@@ -68,7 +68,7 @@ extension BlackboardCollectionViewCell {
 extension SwiftSource {
     
     func appendCollectionViewCells(_ collectionViewCells: [BlackboardCollectionViewCell]) {
-        guard !collectionViewCells.isEmpty else { return }
+        guard collectionViewCells.isEmpty == false else { return }
         
         append("// Collection View Cells")
         append()
@@ -78,7 +78,7 @@ extension SwiftSource {
     }
     
     func appendCollectionViewCellIdentifier(_ collectionViewCells: [BlackboardCollectionViewCell]) {
-        guard !collectionViewCells.isEmpty else { return }
+        guard collectionViewCells.isEmpty == false else { return }
         
         append("enum CollectionViewCellIdentifier: String") {
             collectionViewCells.forEach { cell in
@@ -96,7 +96,7 @@ extension SwiftSource {
     }
     
     func appendDequeueCollectionViewCell(_ collectionViewCells: [BlackboardCollectionViewCell]) {
-        guard !collectionViewCells.isEmpty else { return }
+        guard collectionViewCells.isEmpty == false else { return }
         
         collectionViewCells.forEach { cell in
             append("final func dequeue\(cell.name)Cell(from collectionView: UICollectionView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {

@@ -31,7 +31,7 @@ class LaunchScreenStoryboardTests: XCTestCase {
     var storyboard: Storyboard!
     
     override func setUp() {
-        storyboard = Storyboard(data: LaunchScreenStoryboardData, name: "LaunchScreen")
+        storyboard = Storyboard(name: "LaunchScreen", data: LaunchScreenStoryboardData)
     }
     
     func testStoryboard() {

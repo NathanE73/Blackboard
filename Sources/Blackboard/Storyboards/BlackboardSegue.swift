@@ -101,7 +101,7 @@ extension SwiftSource {
     }
     
     func appendSegueIdentifierFor(_ segues: [BlackboardSegue]) {
-        guard !segues.isEmpty else { return }
+        guard segues.isEmpty == false else { return }
         
         append("enum SegueIdentifier: String") {
             segues.forEach { segue in
@@ -121,7 +121,7 @@ extension SwiftSource {
     }
     
     func appendPerformSegueFor(_ segues: [BlackboardSegue]) {
-        guard !segues.isEmpty else { return }
+        guard segues.isEmpty == false else { return }
         
         segues.forEach { segue in
             if let viewControllerClassName = segue.viewControllerClassName {

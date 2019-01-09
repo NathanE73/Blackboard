@@ -25,32 +25,23 @@
 import Foundation
 
 struct ColorSet {
-    
     let name: String
     
     let red: Double
     let green: Double
     let blue: Double
     let alpha: Double
-    
 }
 
 extension ColorSet {
     
-    init?(url: URL) {
-        let contentsURL = url.appendingPathComponent("Contents.json")
-        guard let data = try? Data(contentsOf: contentsURL) else {
-            return nil
-        }
-        
-        guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
-            return nil
-        }
+    init?(name: String, assetColorSet: AssetColorSet) {
+        self.name = name
         
         let universalColor = assetColorSet.colors.first { color in
-            return color.idiom == .universal && color.displayGamut == .srgb
+            color.idiom == .universal && color.displayGamut == .srgb
         }
-        
+
         guard let components = universalColor?.color.components else {
             return nil
         }
@@ -59,30 +50,6 @@ extension ColorSet {
         green = components.green
         blue = components.blue
         alpha = components.alpha
-        
-        name = url.lastPathComponent.deletingPathExtension
-    }
-    
-    init?(path: String) {
-        let url = URL(fileURLWithPath: path, isDirectory: false)
-        self.init(url: url)
-    }
-    
-    static func colorSetsAt(path: String) -> [ColorSet] {
-        var files: [String] = []
-        
-        let fileManager = FileManager.default
-        
-        let enumerator = fileManager.enumerator(atPath: path)
-        while let file = enumerator?.nextObject() as? String {
-            if file.pathExtension == "colorset" {
-                files.append(path.appendingPathComponent(file))
-            }
-        }
-        
-        files.sort(by: <)
-        
-        return files.compactMap { ColorSet(path: $0) }
     }
     
 }

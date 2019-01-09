@@ -68,7 +68,7 @@ extension BlackboardTableViewCell {
 extension SwiftSource {
     
     func appendTableViewCells(_ tableViewCells: [BlackboardTableViewCell]) {
-        guard !tableViewCells.isEmpty else { return }
+        guard tableViewCells.isEmpty == false else { return }
         
         append("// Table View Cells")
         append()
@@ -78,7 +78,7 @@ extension SwiftSource {
     }
     
     func appendTableViewCellIdentifier(_ tableViewCells: [BlackboardTableViewCell]) {
-        guard !tableViewCells.isEmpty else { return }
+        guard tableViewCells.isEmpty == false else { return }
         
         append("enum TableViewCellIdentifier: String") {
             tableViewCells.forEach { cell in
@@ -96,7 +96,7 @@ extension SwiftSource {
     }
     
     func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
-        guard !tableViewCells.isEmpty else { return }
+        guard tableViewCells.isEmpty == false else { return }
         
         tableViewCells.forEach { cell in
             append("final func dequeue\(cell.name)Cell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {

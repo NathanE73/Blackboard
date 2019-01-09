@@ -32,7 +32,7 @@ extension UIColor {
     // #50C878 rgb(80, 200, 120)
     static let emerald = color(named: "Emerald", red: 0.313725490196078, green: 0.784313725490196, blue: 0.470588235294118, alpha: 1.0)
     
-    // #0D0D0D rgb(13, 13, 13)
+    // #0D0D0D rgba(13, 13, 13, 0.475)
     static let night = color(named: "Night", red: 0.05, green: 0.05, blue: 0.05, alpha: 0.475)
     
 }

@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,22 +24,40 @@
 
 import Foundation
 
-struct ImageSet {
-    let name: String
-}
-
-extension ImageSet {
+class ImageSetFactory {
     
-    init?(name: String, assetImageSet: AssetImageSet) {
-        self.name = name
+    let fileManager = FileManager.default
+    
+    func imageSetsAt(path: String) -> [ImageSet] {
+        var files: [String] = []
         
-        let images = assetImageSet.images.filter { image -> Bool in
-            [.iphone, .ipad, .universal].contains(image.idiom)
+        let enumerator = fileManager.enumerator(atPath: path)
+        while let file = enumerator?.nextObject() as? String {
+            if file.pathExtension == "imageset" {
+                files.append(path.appendingPathComponent(file))
+            }
         }
         
-        guard images.isEmpty == false else {
+        files.sort(by: <)
+        
+        return files.compactMap(imageSetAt(path:))
+    }
+    
+    func imageSetAt(path: String) -> ImageSet? {
+        let url = URL(fileURLWithPath: path, isDirectory: false)
+        
+        let contentsURL = url.appendingPathComponent("Contents.json")
+        guard let data = try? Data(contentsOf: contentsURL) else {
             return nil
         }
+        
+        let name = url.lastPathComponent.deletingPathExtension
+        
+        guard let assetImageSet = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
+            return nil
+        }
+        
+        return ImageSet(name: name, assetImageSet: assetImageSet)
     }
     
 }

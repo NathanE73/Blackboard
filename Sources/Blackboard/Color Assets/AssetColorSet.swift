@@ -131,8 +131,18 @@ extension AssetColorSet.Color.Color {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             
             let decode: (CodingKeys) throws -> Double = { key in
-                if let string = try? container.decode(String.self, forKey: key), let color = Double(string) {
-                    return color
+                if let string = try? container.decode(String.self, forKey: key) {
+                    if string.lowercased().starts(with: "0x") {
+                        if let color = Int(string.dropFirst(2), radix: 16) {
+                            return Double(color) / 255
+                        }
+                    }
+                    else if let color = Int(string) {
+                        return Double(color) / 255
+                    }
+                    else if let color = Double(string) {
+                        return color
+                    }
                 }
                 return try container.decode(Double.self, forKey: key)
             }

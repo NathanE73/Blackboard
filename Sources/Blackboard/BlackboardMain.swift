@@ -90,8 +90,8 @@ public class BlackboardMain {
         
         // Process Color Sets
         
-        let colorSets = ColorSet.colorSetsAt(path: sourceDirectory)
-
+        let colorSets = ColorSetFactory().colorSetsAt(path: sourceDirectory)
+        
         let blackboardColors = colorSets.compactMap(BlackboardColor.init)
         
         if !blackboardColors.isEmpty {
@@ -101,10 +101,10 @@ public class BlackboardMain {
             let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIColorExtensions.swift")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
-
+        
         // Process Image Sets
         
-        let imageSets = ImageSet.imageSetsAt(path: sourceDirectory)
+        let imageSets = ImageSetFactory().imageSetsAt(path: sourceDirectory)
         
         let blackboardImages = imageSets.compactMap(BlackboardImage.init)
         

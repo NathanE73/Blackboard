@@ -76,7 +76,7 @@ extension Storyboard: CustomStringConvertible {
 
 extension Storyboard {
     
-    init?(data: Data, name: String) {
+    init?(name: String, data: Data) {
         guard let xmlDocument = try? XMLDocument(data: data) else {
             return nil
         }
@@ -104,7 +104,7 @@ extension Storyboard {
         
         let name = url.deletingPathExtension().lastPathComponent
         
-        self.init(data: data, name: name)
+        self.init(name: name, data: data)
     }
     
     init?(path: String) {
