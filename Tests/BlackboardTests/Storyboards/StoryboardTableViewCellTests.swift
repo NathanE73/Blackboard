@@ -22,8 +22,6 @@
 // THE SOFTWARE.
 //
 
-import Foundation
-
 import XCTest
 
 @testable import Blackboard

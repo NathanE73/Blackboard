@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 //
 
-import AppKit
+import Foundation
 
 public class BlackboardMain {
     
@@ -30,7 +30,7 @@ public class BlackboardMain {
         let name = CommandLine.arguments[0].lastPathComponent
         print("usage: \(name) --version")
         print("usage: \(name) source_directory target_directory")
-        print("example: \(name) example/storyboards/ example/source/generated/")
+        print("example: \(name) ExampleApp/Resources/ ExampleApp/Source/Generated")
     }
     
     public static func run() {
