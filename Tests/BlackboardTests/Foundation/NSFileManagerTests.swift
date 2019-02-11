@@ -33,12 +33,14 @@ class NSFileManagerExtensions: XCTestCase {
     func testIsDirectory() {
         XCTAssertTrue(fileManager.isDirectory("/opt"))
         
+        XCTAssertFalse(fileManager.isDirectory("/usr/bin/time"))
         XCTAssertFalse(fileManager.isDirectory("/opt/missing"))
     }
     
     func testIsFile() {
         XCTAssertTrue(fileManager.isFile("/usr/bin/time"))
         
+        XCTAssertFalse(fileManager.isFile("/opt"))
         XCTAssertFalse(fileManager.isFile("/opt/missing.json"))
     }
     
