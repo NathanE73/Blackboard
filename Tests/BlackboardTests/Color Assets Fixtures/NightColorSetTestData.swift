@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,32 +24,39 @@
 
 import Foundation
 
-struct ColorSet {
-    var name: String
-    
-    var red: Double
-    var green: Double
-    var blue: Double
-    var alpha: Double
-}
-
-extension ColorSet {
-    
-    init?(name: String, assetColorSet: AssetColorSet) {
-        self.name = name
-        
-        let universalColor = assetColorSet.colors.first { color in
-            color.idiom == .universal && color.displayGamut == .srgb
+let NightColorSetTestData = """
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "colors" : [
+    {
+      "idiom" : "universal",
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "0.050",
+          "alpha" : "0.475",
+          "blue" : "0.050",
+          "green" : "0.050"
         }
-
-        guard let components = universalColor?.color.components else {
-            return nil
+      },
+      "display-gamut" : "sRGB"
+    },
+    {
+      "idiom" : "universal",
+      "color" : {
+        "color-space" : "display-p3",
+        "components" : {
+          "red" : "0.100",
+          "alpha" : "0.478",
+          "blue" : "0.100",
+          "green" : "0.100"
         }
-        
-        red = components.red
-        green = components.green
-        blue = components.blue
-        alpha = components.alpha
+      },
+      "display-gamut" : "display-P3"
     }
-    
+  ]
 }
+""".data(using: .utf8)!

@@ -25,15 +25,15 @@
 import Foundation
 
 struct AssetColorSet : Decodable {
-    let info: Info
-    let colors: [Color]
+    var info: Info
+    var colors: [Color]
 }
 
 extension AssetColorSet {
     
     struct Info : Decodable {
-        let version: Int
-        let author: String
+        var version: Int
+        var author: String
     }
     
 }
@@ -41,9 +41,9 @@ extension AssetColorSet {
 extension AssetColorSet {
     
     struct Color : Decodable {
-        let displayGamut: DisplayGamut
-        let idiom: Idiom
-        let color: Color
+        var displayGamut: DisplayGamut
+        var idiom: Idiom
+        var color: Color
         
         enum CodingKeys: String, CodingKey {
             case displayGamut = "display-gamut"
@@ -86,8 +86,8 @@ extension AssetColorSet.Color {
 extension AssetColorSet.Color {
     
     struct Color : Decodable {
-        let colorSpace: ColorSpace
-        let components: Components
+        var colorSpace: ColorSpace
+        var components: Components
         
         enum CodingKeys : String, CodingKey {
             case colorSpace = "color-space"
@@ -115,10 +115,10 @@ extension AssetColorSet.Color.Color {
 extension AssetColorSet.Color.Color {
     
     struct Components : Decodable {
-        let red: Double
-        let green: Double
-        let blue: Double
-        let alpha: Double
+        var red: Double
+        var green: Double
+        var blue: Double
+        var alpha: Double
         
         enum CodingKeys : String, CodingKey {
             case red

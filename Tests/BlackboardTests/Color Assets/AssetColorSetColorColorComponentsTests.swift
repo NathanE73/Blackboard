@@ -52,7 +52,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
         }
     }
     
-    func testDecodableStrings() {
+    func testDecodableDoubleStrings() {
         let json = """
           {
             "red" : "0.313",
@@ -70,6 +70,54 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             XCTAssertEqual(components.green, 0.784)
             XCTAssertEqual(components.blue, 0.470)
             XCTAssertEqual(components.alpha, 0.975)
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDecodableHexadecimalStrings() {
+        let json = """
+          {
+            "red" : "0x50",
+            "green" : "0xC8",
+            "blue" : "0x78",
+            "alpha" : "1.000"
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: data)
+            
+            XCTAssertEqual(components.red, 0.3137254901960784)
+            XCTAssertEqual(components.green, 0.7843137254901961)
+            XCTAssertEqual(components.blue, 0.47058823529411764)
+            XCTAssertEqual(components.alpha, 1.000)
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDecodableIntegerStrings() {
+        let json = """
+          {
+            "red" : "234",
+            "green" : "60",
+            "blue" : "83",
+            "alpha" : "1.000"
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: data)
+            
+            XCTAssertEqual(components.red, 0.9176470588235294)
+            XCTAssertEqual(components.green, 0.23529411764705882)
+            XCTAssertEqual(components.blue, 0.3254901960784314)
+            XCTAssertEqual(components.alpha, 1.000)
         }
         catch let error {
             XCTFail(error.localizedDescription)

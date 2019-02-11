@@ -53,6 +53,10 @@ class ColorSetFactory {
         
         let name = url.lastPathComponent.deletingPathExtension
         
+        return colorSet(name: name, data: data)
+    }
+    
+    func colorSet(name: String, data: Data) -> ColorSet? {
         guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
             return nil
         }
