@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,22 +24,21 @@
 
 import Foundation
 
-struct ImageSet {
-    var name: String
-}
-
-extension ImageSet {
-    
-    init?(name: String, assetImageSet: AssetImageSet) {
-        self.name = name
-        
-        let images = assetImageSet.images.filter { image -> Bool in
-            [.iphone, .ipad, .universal].contains(image.idiom)
-        }
-        
-        guard images.isEmpty == false else {
-            return nil
-        }
+let BigAppleImageSetTestData = """
+{
+  "images" : [
+    {
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
-    
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
 }
+""".data(using: .utf8)!

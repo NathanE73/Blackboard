@@ -25,15 +25,15 @@
 import Foundation
 
 struct AssetImageSet : Decodable {
-    let info: Info
-    let images: [Image]
+    var info: Info
+    var images: [Image]
 }
 
 extension AssetImageSet {
     
     struct Info : Decodable {
-        let version: Int
-        let author: String
+        var version: Int
+        var author: String
     }
     
 }
@@ -41,8 +41,8 @@ extension AssetImageSet {
 extension AssetImageSet {
     
     struct Image : Decodable {
-        let idiom: Idiom
-        let scale: Scale?
+        var idiom: Idiom
+        var scale: Scale?
         
         enum CodingKeys: String, CodingKey {
             case idiom

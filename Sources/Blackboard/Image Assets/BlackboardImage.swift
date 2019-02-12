@@ -26,15 +26,15 @@ import Foundation
 
 struct BlackboardImage {
     
-    let name: String
-    let functionName: String
-    let caseName: String
+    var name: String
+    var functionName: String
+    var caseName: String
     
 }
 
 extension BlackboardImage {
     
-    init?(imageSet: ImageSet) {
+    init(_ imageSet: ImageSet) {
         self.name = imageSet.name
         self.functionName = Naming.methodName(fromIdentifier: imageSet.name)
         self.caseName = Naming.methodName(fromIdentifier: imageSet.name)
@@ -45,6 +45,8 @@ extension BlackboardImage {
 extension SwiftSource {
     
     func appendImages(images: [BlackboardImage]) {
+        let images = images.sorted { $0.functionName < $1.functionName }
+        
         append("//")
         append("//  UIImageExtensions.swift")
         append("//")
@@ -78,7 +80,6 @@ extension SwiftSource {
         append()
         append("extension UIImage") {
             append()
-            let images = images.sorted { $0.functionName < $1.functionName }
             images.forEach(appendImage)
         }
     }

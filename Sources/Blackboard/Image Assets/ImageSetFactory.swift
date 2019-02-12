@@ -53,6 +53,10 @@ class ImageSetFactory {
         
         let name = url.lastPathComponent.deletingPathExtension
         
+        return imageSet(name: name, data: data)
+    }
+    
+    func imageSet(name: String, data: Data) -> ImageSet? {
         guard let assetImageSet = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
             return nil
         }

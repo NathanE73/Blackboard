@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,22 +24,73 @@
 
 import Foundation
 
-struct ImageSet {
-    var name: String
-}
-
-extension ImageSet {
-    
-    init?(name: String, assetImageSet: AssetImageSet) {
-        self.name = name
-        
-        let images = assetImageSet.images.filter { image -> Bool in
-            [.iphone, .ipad, .universal].contains(image.idiom)
-        }
-        
-        guard images.isEmpty == false else {
-            return nil
-        }
+let EverythingAppleImageSetTestData = """
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "car",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "car",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "watch",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "tv",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "2x"
     }
-    
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
 }
+""".data(using: .utf8)!
