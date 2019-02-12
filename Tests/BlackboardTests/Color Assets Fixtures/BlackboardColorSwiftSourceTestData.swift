@@ -63,4 +63,5 @@ extension UIColor {
     static let night = color(named: "Night", red: 0.05, green: 0.05, blue: 0.05, alpha: 0.475)
     
 }
+
 """
