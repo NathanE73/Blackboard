@@ -26,20 +26,20 @@ import Foundation
 
 struct BlackboardViewController {
     
-    let className: String
-    let identifier: String?
-    let navigationControllerIdentifier: String?
-    let parameterName: String
+    var className: String
+    var identifier: String?
+    var navigationControllerIdentifier: String?
+    var parameterName: String
     
-    let segues: [BlackboardSegue]
-    let tableViewCells: [BlackboardTableViewCell]
-    let collectionViewCells: [BlackboardCollectionViewCell]
+    var segues: [BlackboardSegue]
+    var tableViewCells: [BlackboardTableViewCell]
+    var collectionViewCells: [BlackboardCollectionViewCell]
     
 }
 
 extension BlackboardViewController {
     
-    init?(viewController: StoryboardViewController, storyboard: Storyboard, storyboards: [Storyboard]) {
+    init?(_ viewController: StoryboardViewController, storyboard: Storyboard, storyboards: [Storyboard]) {
         guard let customClass = viewController.customClass else {
             return nil
         }
@@ -51,57 +51,16 @@ extension BlackboardViewController {
         parameterName = customClass.firstCharacterLowercased
         
         segues = viewController.segues
-            .compactMap { BlackboardSegue(segue: $0, storyboard: storyboard, storyboards: storyboards) }
+            .compactMap { BlackboardSegue($0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.name < $1.name }
         
         tableViewCells = viewController.tableViewCells
-            .compactMap { BlackboardTableViewCell(tableViewCell: $0, storyboard: storyboard) }
+            .compactMap(BlackboardTableViewCell.init)
             .sorted { $0.name < $1.name }
         
         collectionViewCells = viewController.collectionViewCells
-            .compactMap { BlackboardCollectionViewCell(collectionViewCell: $0, storyboard: storyboard) }
+            .compactMap(BlackboardCollectionViewCell.init)
             .sorted { $0.name < $1.name }
-    }
-    
-}
-
-extension SwiftSource {
-    
-    func appendViewControllers(_ viewControllers: [BlackboardViewController]) {
-        viewControllers.forEach { viewController in
-            append("extension \(viewController.className)") {
-                append()
-                appendInstantiateViewController(viewController)
-                appendInstantiateNavigationController(viewController)
-                appendSegues(viewController.segues)
-                appendTableViewCells(viewController.tableViewCells)
-                appendCollectionViewCells(viewController.collectionViewCells)
-            }
-            append()
-        }
-    }
-    
-    func appendInstantiateViewController(_ viewController: BlackboardViewController) {
-        guard let identifier = viewController.identifier else { return }
-        
-        append("final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
-            append("let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(identifier)\") as! \(viewController.className)")
-            append("initialize?(viewController)")
-            append("return viewController")
-        }
-        append()
-    }
-    
-    func appendInstantiateNavigationController(_ viewController: BlackboardViewController) {
-        guard let navigationControllerIdentifier = viewController.navigationControllerIdentifier else { return }
-        
-        append("final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> UINavigationController") {
-            append("let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(navigationControllerIdentifier)\") as! UINavigationController")
-            append("let viewController = navigationController.viewControllers.first as! \(viewController.className)")
-            append("initialize?(viewController)")
-            append("return navigationController")
-        }
-        append()
     }
     
 }

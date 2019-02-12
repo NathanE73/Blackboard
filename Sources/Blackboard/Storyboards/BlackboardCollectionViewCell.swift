@@ -26,17 +26,17 @@ import Foundation
 
 struct BlackboardCollectionViewCell {
     
-    let name: String
-    let enumName: String
-    let identifier: String
-    let className: String
-    let parameterName: String
+    var name: String
+    var enumName: String
+    var identifier: String
+    var className: String
+    var parameterName: String
     
 }
 
 extension BlackboardCollectionViewCell {
     
-    init?(collectionViewCell: StoryboardCollectionViewCell, storyboard: Storyboard) {
+    init?(_ collectionViewCell: StoryboardCollectionViewCell) {
         guard let reuseIdentifier = collectionViewCell.reuseIdentifier else {
             return nil
         }
@@ -60,51 +60,6 @@ extension BlackboardCollectionViewCell {
         else {
             className = "UICollectionViewCell"
             parameterName = "cell"
-        }
-    }
-    
-}
-
-extension SwiftSource {
-    
-    func appendCollectionViewCells(_ collectionViewCells: [BlackboardCollectionViewCell]) {
-        guard collectionViewCells.isEmpty == false else { return }
-        
-        append("// Collection View Cells")
-        append()
-        appendCollectionViewCellIdentifier(collectionViewCells)
-        appendDequeueCollectionViewCell(collectionViewCells)
-        append()
-    }
-    
-    func appendCollectionViewCellIdentifier(_ collectionViewCells: [BlackboardCollectionViewCell]) {
-        guard collectionViewCells.isEmpty == false else { return }
-        
-        append("enum CollectionViewCellIdentifier: String") {
-            collectionViewCells.forEach { cell in
-                append("case \(cell.enumName) = \"\(cell.identifier)\"")
-            }
-        }
-        append()
-    }
-    
-    func castFor(_ collectionViewCell: BlackboardCollectionViewCell) -> String {
-        if collectionViewCell.className == "UICollectionViewCell" {
-            return ""
-        }
-        return " as! \(collectionViewCell.className)"
-    }
-    
-    func appendDequeueCollectionViewCell(_ collectionViewCells: [BlackboardCollectionViewCell]) {
-        guard collectionViewCells.isEmpty == false else { return }
-        
-        collectionViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)Cell(from collectionView: UICollectionView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
-                append("let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath)\(castFor(cell))")
-                append("initialize?(collectionViewCell)")
-                append("return collectionViewCell")
-            }
-            append()
         }
     }
     

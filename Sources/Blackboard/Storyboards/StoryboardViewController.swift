@@ -64,39 +64,35 @@ extension StoryboardViewController {
 
 struct StoryboardViewController {
     
-    let id: String
+    var id: String
     
-    let type: ControllerType
-    let storyboardIdentifier: String?
-    let customClass: String?
-    let storyboardName: String?
+    var type: ControllerType
+    var storyboardIdentifier: String?
+    var customClass: String?
+    var storyboardName: String?
     
-    let segues: [StoryboardSegue]
-    let tableViewCells: [StoryboardTableViewCell]
-    let collectionViewCells: [StoryboardCollectionViewCell]
+    var segues: [StoryboardSegue]
+    var tableViewCells: [StoryboardTableViewCell]
+    var collectionViewCells: [StoryboardCollectionViewCell]
     
 }
 
 extension StoryboardViewController {
     
     func segueWith(id: String) -> StoryboardSegue? {
-        return segues
-            .first { $0.id == id }
+        return segues.first { $0.id == id }
     }
     
     func segueWith(kind: StoryboardSegue.Kind) -> StoryboardSegue? {
-        return segues
-            .first { $0.kind == kind }
+        return segues.first { $0.kind == kind }
     }
     
     func tableViewCellWith(id: String) -> StoryboardTableViewCell? {
-        return tableViewCells
-            .first { $0.id == id }
+        return tableViewCells.first { $0.id == id }
     }
     
     func collectionViewCellWith(id: String) -> StoryboardCollectionViewCell? {
-        return collectionViewCells
-            .first { $0.id == id }
+        return collectionViewCells.first { $0.id == id }
     }
     
 }

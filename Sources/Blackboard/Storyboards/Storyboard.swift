@@ -26,10 +26,10 @@ import Foundation
 
 struct Storyboard {
     
-    let name: String
-    let initialViewControllerIdentifier: String?
+    var name: String
+    var initialViewControllerIdentifier: String?
     
-    let viewControllers: [StoryboardViewController]
+    var viewControllers: [StoryboardViewController]
     
 }
 
@@ -43,8 +43,7 @@ extension Storyboard {
     }
     
     func viewControllerWith(id: String) -> StoryboardViewController? {
-        return viewControllers
-            .first { $0.id == id }
+        return viewControllers.first { $0.id == id }
     }
     
     func navigationControllerFor(id: String) -> StoryboardViewController? {

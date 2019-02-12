@@ -27,25 +27,23 @@ import Foundation
 extension StoryboardSegue {
     
     enum Kind: String {
-        
         case embed
         case popoverPresentation
         case presentation
         case relationship
         case show
         case unwind
-        
     }
     
 }
 
 struct StoryboardSegue {
     
-    let id: String
+    var id: String
     
-    let kind: Kind
-    let identifier: String?
-    let destination: String
+    var kind: Kind
+    var identifier: String?
+    var destination: String
     
 }
 

@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -22,20 +22,17 @@
 // THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 
-@testable import Blackboard
-
-class LaunchScreenStoryboardTests: XCTestCase {
-    
-    var storyboard: Storyboard!
-    
-    override func setUp() {
-        storyboard = Storyboard(name: "LaunchScreen", data: LaunchScreenStoryboardData)
-    }
-    
-    func testStoryboard() {
-        XCTAssertNil(storyboard)
-    }
-    
-}
+let EmptyStoryboardTestData = """
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+    </dependencies>
+    <scenes/>
+</document>
+""".data(using: .utf8)!

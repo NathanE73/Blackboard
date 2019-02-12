@@ -26,9 +26,9 @@ import Foundation
 
 struct StoryboardCollectionViewCell {
     
-    let id: String
-    let reuseIdentifier: String?
-    let customClass: String?
+    var id: String
+    var reuseIdentifier: String?
+    var customClass: String?
     
 }
 

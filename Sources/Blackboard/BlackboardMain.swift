@@ -79,7 +79,7 @@ public class BlackboardMain {
         let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)
         
         for storyboard in storyboards {
-            if let storyboard = BlackboardStoryboard(storyboard: storyboard, storyboards: storyboards) {
+            if let storyboard = BlackboardStoryboard(storyboard, storyboards: storyboards) {
                 let swiftSource = SwiftSource()
                 swiftSource.appendStoryboard(storyboard)
                 let source = swiftSource.description
