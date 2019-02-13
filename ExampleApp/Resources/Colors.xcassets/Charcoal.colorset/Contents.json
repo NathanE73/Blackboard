@@ -9,10 +9,34 @@
       "color" : {
         "color-space" : "srgb",
         "components" : {
-          "red" : 0.2117647058823529,
-          "alpha" : 1,
-          "blue" : 0.3098039215686275,
-          "green" : 0.2705882352941176
+          "red" : "0.212",
+          "alpha" : "1.000",
+          "blue" : "0.310",
+          "green" : "0.271"
+        }
+      }
+    },
+    {
+      "idiom" : "iphone",
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "0.212",
+          "alpha" : "1.000",
+          "blue" : "0.310",
+          "green" : "0.271"
+        }
+      }
+    },
+    {
+      "idiom" : "ipad",
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "0.212",
+          "alpha" : "1.000",
+          "blue" : "0.310",
+          "green" : "0.271"
         }
       }
     }

@@ -45,7 +45,9 @@ extension BlackboardColor {
         self.alpha = colorSet.alpha
         
         self.name = colorSet.name
+        
         self.functionName = Naming.methodName(fromIdentifier: colorSet.name)
+            .removingSuffix("Color")
     }
     
 }
