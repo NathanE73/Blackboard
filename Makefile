@@ -12,7 +12,7 @@ VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
 project:
 	rm -rf DerivedData/
-	swift package generate-xcodeproj
+	swift package generate-xcodeproj --enable-code-coverage
 
 reset:
 	swift package reset
