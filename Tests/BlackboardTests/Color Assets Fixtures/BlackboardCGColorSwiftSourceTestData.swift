@@ -47,12 +47,24 @@ extension CGColor {
         return UIColor.charcoal.cgColor
     }
     
+    static var darkOliveGreen: CGColor {
+        return UIColor.darkOliveGreen.cgColor
+    }
+    
     static var desire: CGColor {
         return UIColor.desire.cgColor
     }
     
     static var emerald: CGColor {
         return UIColor.emerald.cgColor
+    }
+    
+    static var firebrick: CGColor {
+        return UIColor.firebrick.cgColor
+    }
+    
+    static var maroon: CGColor {
+        return UIColor.maroon.cgColor
     }
     
     static var night: CGColor {

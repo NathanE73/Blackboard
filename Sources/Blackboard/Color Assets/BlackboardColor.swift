@@ -76,7 +76,7 @@ fileprivate let roundedStringValueFormatter: NumberFormatter = {
     let formatter = NumberFormatter()
     formatter.minimumIntegerDigits = 1
     formatter.minimumFractionDigits = 1
-    formatter.maximumFractionDigits = 15
+    formatter.maximumFractionDigits = 3
     return formatter
 }()
 

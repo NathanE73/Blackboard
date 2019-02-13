@@ -36,10 +36,22 @@ let BisqueColorSetTestData = """
       "color" : {
         "color-space" : "srgb",
         "components" : {
-          "red" : 1,
-          "alpha" : 1,
-          "blue" : 0.7686274509803921,
-          "green" : 0.8941176470588235
+          "red" : "1.000",
+          "alpha" : "1.000",
+          "blue" : "0.769",
+          "green" : "0.894"
+        }
+      }
+    },
+    {
+      "idiom" : "ipad",
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "1.000",
+          "alpha" : "1.000",
+          "blue" : "0.769",
+          "green" : "0.894"
         }
       }
     }

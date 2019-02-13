@@ -36,8 +36,8 @@ class ColorSetTests: XCTestCase {
         XCTAssertEqual(colorSet?.name, "Absolute Zero")
         
         XCTAssertEqual(colorSet?.red, 0)
-        XCTAssertEqual(colorSet?.green, 0.2823529411764706)
-        XCTAssertEqual(colorSet?.blue, 0.7294117647058823)
+        XCTAssertEqual(colorSet?.green, 0.282)
+        XCTAssertEqual(colorSet?.blue, 0.729)
         XCTAssertEqual(colorSet?.alpha, 1)
     }
     
@@ -47,8 +47,8 @@ class ColorSetTests: XCTestCase {
         XCTAssertEqual(colorSet?.name, "Bisque")
         
         XCTAssertEqual(colorSet?.red, 1)
-        XCTAssertEqual(colorSet?.green, 0.8941176470588235)
-        XCTAssertEqual(colorSet?.blue, 0.7686274509803921)
+        XCTAssertEqual(colorSet?.green, 0.894)
+        XCTAssertEqual(colorSet?.blue, 0.769)
         XCTAssertEqual(colorSet?.alpha, 1)
     }
     
@@ -57,9 +57,20 @@ class ColorSetTests: XCTestCase {
         
         XCTAssertEqual(colorSet?.name, "Charcoal")
         
-        XCTAssertEqual(colorSet?.red, 0.2117647058823529)
-        XCTAssertEqual(colorSet?.green, 0.2705882352941176)
-        XCTAssertEqual(colorSet?.blue, 0.3098039215686275)
+        XCTAssertEqual(colorSet?.red, 0.212)
+        XCTAssertEqual(colorSet?.green, 0.271)
+        XCTAssertEqual(colorSet?.blue, 0.310)
+        XCTAssertEqual(colorSet?.alpha, 1)
+    }
+    
+    func testDarkOliveGreen() {
+        let colorSet = factory.colorSet(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData)
+        
+        XCTAssertEqual(colorSet?.name, "dark-olive-green")
+        
+        XCTAssertEqual(colorSet?.red, 0.333)
+        XCTAssertEqual(colorSet?.green, 0.420)
+        XCTAssertEqual(colorSet?.blue, 0.184)
         XCTAssertEqual(colorSet?.alpha, 1)
     }
     
@@ -91,14 +102,36 @@ class ColorSetTests: XCTestCase {
         XCTAssertNil(colorSet)
     }
     
+    func testFirebrick() {
+        let colorSet = factory.colorSet(name: "firebrick-color", data: FirebrickColorSetTestData)
+        
+        XCTAssertEqual(colorSet?.name, "firebrick-color")
+        
+        XCTAssertEqual(colorSet?.red, 0.698)
+        XCTAssertEqual(colorSet?.green, 0.133)
+        XCTAssertEqual(colorSet?.blue, 0.133)
+        XCTAssertEqual(colorSet?.alpha, 1)
+    }
+    
+    func testMaroon() {
+        let colorSet = factory.colorSet(name: "maroon color", data: MaroonColorSetTestData)
+        
+        XCTAssertEqual(colorSet?.name, "maroon color")
+        
+        XCTAssertEqual(colorSet?.red, 0.502)
+        XCTAssertEqual(colorSet?.green, 0)
+        XCTAssertEqual(colorSet?.blue, 0)
+        XCTAssertEqual(colorSet?.alpha, 1)
+    }
+    
     func testNight() {
         let colorSet = factory.colorSet(name: "Night", data: NightColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "Night")
         
-        XCTAssertEqual(colorSet?.red, 0.05)
-        XCTAssertEqual(colorSet?.green, 0.05)
-        XCTAssertEqual(colorSet?.blue, 0.05)
+        XCTAssertEqual(colorSet?.red, 0.050)
+        XCTAssertEqual(colorSet?.green, 0.050)
+        XCTAssertEqual(colorSet?.blue, 0.050)
         XCTAssertEqual(colorSet?.alpha, 0.475)
     }
     

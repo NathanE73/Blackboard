@@ -36,10 +36,22 @@ let AbsoluteZeroColorSetTestData = """
       "color" : {
         "color-space" : "srgb",
         "components" : {
-          "red" : 0,
-          "alpha" : 1,
-          "blue" : 0.7294117647058823,
-          "green" : 0.2823529411764706
+          "red" : "0.000",
+          "alpha" : "1.000",
+          "blue" : "0.729",
+          "green" : "0.282"
+        }
+      }
+    },
+    {
+      "idiom" : "iphone",
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "0.000",
+          "alpha" : "1.000",
+          "blue" : "0.729",
+          "green" : "0.282"
         }
       }
     }

@@ -8,7 +8,7 @@ BLACKBOARD_EXECUTABLE=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)/
 VERSION_FILE=etc/version.txt
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
-.PHONY: project reset clean build test version update-version release example
+.PHONY: project reset clean build test test-resources version update-version release example
 
 project:
 	rm -rf DerivedData/
@@ -25,6 +25,9 @@ build:
 
 test:
 	swift test --parallel
+
+test-resources:
+	bin/make-test-resources.sh
 
 version:
 	@echo $(VERSION_STRING)

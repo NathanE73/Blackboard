@@ -42,8 +42,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.functionName, "absoluteZero")
         
         XCTAssertEqual(blackboardColor.red, 0)
-        XCTAssertEqual(blackboardColor.green, 0.2823529411764706)
-        XCTAssertEqual(blackboardColor.blue, 0.7294117647058823)
+        XCTAssertEqual(blackboardColor.green, 0.282)
+        XCTAssertEqual(blackboardColor.blue, 0.729)
         XCTAssertEqual(blackboardColor.alpha, 1)
     }
     
@@ -59,8 +59,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.functionName, "bisque")
         
         XCTAssertEqual(blackboardColor.red, 1)
-        XCTAssertEqual(blackboardColor.green, 0.8941176470588235)
-        XCTAssertEqual(blackboardColor.blue, 0.7686274509803921)
+        XCTAssertEqual(blackboardColor.green, 0.894)
+        XCTAssertEqual(blackboardColor.blue, 0.769)
         XCTAssertEqual(blackboardColor.alpha, 1)
     }
     
@@ -75,9 +75,26 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.name, "Charcoal")
         XCTAssertEqual(blackboardColor.functionName, "charcoal")
         
-        XCTAssertEqual(blackboardColor.red, 0.2117647058823529)
-        XCTAssertEqual(blackboardColor.green, 0.2705882352941176)
-        XCTAssertEqual(blackboardColor.blue, 0.3098039215686275)
+        XCTAssertEqual(blackboardColor.red, 0.212)
+        XCTAssertEqual(blackboardColor.green, 0.271)
+        XCTAssertEqual(blackboardColor.blue, 0.310)
+        XCTAssertEqual(blackboardColor.alpha, 1)
+    }
+    
+    func testDarkOliveGreen() {
+        guard let colorSet = factory.colorSet(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData) else {
+            XCTFail("Unable to decode color set data")
+            return
+        }
+        
+        let blackboardColor = BlackboardColor(colorSet)
+        
+        XCTAssertEqual(blackboardColor.name, "dark-olive-green")
+        XCTAssertEqual(blackboardColor.functionName, "darkOliveGreen")
+        
+        XCTAssertEqual(blackboardColor.red, 0.333)
+        XCTAssertEqual(blackboardColor.green, 0.420)
+        XCTAssertEqual(blackboardColor.blue, 0.184)
         XCTAssertEqual(blackboardColor.alpha, 1)
     }
     
@@ -121,6 +138,40 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertNil(colorSet)
     }
     
+    func testFirebrick() {
+        guard let colorSet = factory.colorSet(name: "firebrick-color", data: FirebrickColorSetTestData) else {
+            XCTFail("Unable to decode color set data")
+            return
+        }
+        
+        let blackboardColor = BlackboardColor(colorSet)
+        
+        XCTAssertEqual(blackboardColor.functionName, "firebrick")
+        XCTAssertEqual(blackboardColor.name, "firebrick-color")
+        
+        XCTAssertEqual(blackboardColor.red, 0.698)
+        XCTAssertEqual(blackboardColor.green, 0.133)
+        XCTAssertEqual(blackboardColor.blue, 0.133)
+        XCTAssertEqual(blackboardColor.alpha, 1)
+    }
+    
+    func testMaroon() {
+        guard let colorSet = factory.colorSet(name: "maroon color", data: MaroonColorSetTestData) else {
+            XCTFail("Unable to decode color set data")
+            return
+        }
+        
+        let blackboardColor = BlackboardColor(colorSet)
+        
+        XCTAssertEqual(blackboardColor.functionName, "maroon")
+        XCTAssertEqual(blackboardColor.name, "maroon color")
+        
+        XCTAssertEqual(blackboardColor.red, 0.502)
+        XCTAssertEqual(blackboardColor.green, 0)
+        XCTAssertEqual(blackboardColor.blue, 0)
+        XCTAssertEqual(blackboardColor.alpha, 1)
+    }
+    
     func testNight() {
         guard let colorSet = factory.colorSet(name: "Night", data: NightColorSetTestData) else {
             XCTFail("Unable to decode color set data")
@@ -128,13 +179,13 @@ class BlackboardColorTests: XCTestCase {
         }
         
         let blackboardColor = BlackboardColor(colorSet)
-        XCTAssertEqual(blackboardColor.functionName, "night")
         
+        XCTAssertEqual(blackboardColor.functionName, "night")
         XCTAssertEqual(blackboardColor.name, "Night")
         
-        XCTAssertEqual(blackboardColor.red, 0.05)
-        XCTAssertEqual(blackboardColor.green, 0.05)
-        XCTAssertEqual(blackboardColor.blue, 0.05)
+        XCTAssertEqual(blackboardColor.red, 0.050)
+        XCTAssertEqual(blackboardColor.green, 0.050)
+        XCTAssertEqual(blackboardColor.blue, 0.050)
         XCTAssertEqual(blackboardColor.alpha, 0.475)
     }
     

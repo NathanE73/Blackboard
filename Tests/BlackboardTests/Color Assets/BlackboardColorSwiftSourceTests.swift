@@ -35,9 +35,12 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
             factory.colorSet(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData),
             factory.colorSet(name: "Bisque", data: BisqueColorSetTestData),
             factory.colorSet(name: "Charcoal", data: CharcoalColorSetTestData),
+            factory.colorSet(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData),
             factory.colorSet(name: "Desire", data: DesireColorSetTestData),
             factory.colorSet(name: "Emerald", data: EmeraldColorSetTestData),
             factory.colorSet(name: "Empty", data: EmptyColorSetTestData),
+            factory.colorSet(name: "firebrick-color", data: FirebrickColorSetTestData),
+            factory.colorSet(name: "maroon color", data: MaroonColorSetTestData),
             factory.colorSet(name: "Night", data: NightColorSetTestData)
         ]
         

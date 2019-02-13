@@ -30,10 +30,10 @@ extension UIColor {
     static let darkOliveGreen = color(named: "dark-olive-green", red: 0.333, green: 0.42, blue: 0.184, alpha: 1.0)
     
     // #EA3C53 rgb(234, 60, 83)
-    static let desire = color(named: "Desire", red: 0.917647058823529, green: 0.235294117647059, blue: 0.325490196078431, alpha: 1.0)
+    static let desire = color(named: "Desire", red: 0.918, green: 0.235, blue: 0.325, alpha: 1.0)
     
     // #50C878 rgb(80, 200, 120)
-    static let emerald = color(named: "Emerald", red: 0.313725490196078, green: 0.784313725490196, blue: 0.470588235294118, alpha: 1.0)
+    static let emerald = color(named: "Emerald", red: 0.314, green: 0.784, blue: 0.471, alpha: 1.0)
     
     // #B22222 rgb(178, 34, 34)
     static let firebrick = color(named: "firebrick-color", red: 0.698, green: 0.133, blue: 0.133, alpha: 1.0)
