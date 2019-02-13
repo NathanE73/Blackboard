@@ -96,7 +96,15 @@ public class BlackboardMain {
         
         if !blackboardColors.isEmpty {
             let swiftSource = SwiftSource()
-            swiftSource.appendColors(colors: blackboardColors)
+            swiftSource.appendCGColors(colors: blackboardColors)
+            let source = swiftSource.description
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/CGColorExtensions.swift")
+            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+        }
+        
+        if !blackboardColors.isEmpty {
+            let swiftSource = SwiftSource()
+            swiftSource.appendUIColors(colors: blackboardColors)
             let source = swiftSource.description
             let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIColorExtensions.swift")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)

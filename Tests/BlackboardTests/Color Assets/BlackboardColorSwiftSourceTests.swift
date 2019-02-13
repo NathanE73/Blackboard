@@ -30,9 +30,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     
     let factory = ColorSetFactory()
     
-    func testDescription() {
-        let expectedSource = BlackboardColorSwiftSourceTestData
-        
+    var blackboardColors: [BlackboardColor] {
         let colorSets: [ColorSet?] = [
             factory.colorSet(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData),
             factory.colorSet(name: "Bisque", data: BisqueColorSetTestData),
@@ -43,12 +41,26 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
             factory.colorSet(name: "Night", data: NightColorSetTestData)
         ]
         
-        let blackboardColors = colorSets
+        return colorSets
             .compactMap { $0 }
             .compactMap(BlackboardColor.init)
+    }
+    
+    func testCGColorDescription() {
+        let expectedSource = BlackboardCGColorSwiftSourceTestData
         
         let swiftSource = SwiftSource()
-        swiftSource.appendColors(colors: blackboardColors)
+        swiftSource.appendCGColors(colors: blackboardColors)
+        let source = swiftSource.description
+        
+        XCTAssertEqual(source, expectedSource)
+    }
+    
+    func testUIColorDescription() {
+        let expectedSource = BlackboardUIColorSwiftSourceTestData
+        
+        let swiftSource = SwiftSource()
+        swiftSource.appendUIColors(colors: blackboardColors)
         let source = swiftSource.description
         
         XCTAssertEqual(source, expectedSource)
