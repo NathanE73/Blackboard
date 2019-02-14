@@ -124,4 +124,5 @@ let NavigationStoryboardTestData = """
         </scene>
     </scenes>
 </document>
+
 """.data(using: .utf8)!

@@ -35,4 +35,5 @@ let EmptyStoryboardTestData = """
     </dependencies>
     <scenes/>
 </document>
+
 """.data(using: .utf8)!

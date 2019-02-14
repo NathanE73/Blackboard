@@ -49,6 +49,19 @@ make_image_set_fixture () {
 	cat etc/TestDataFooter.swift >> "$TARGET"
 }
 
+make_storyboard_fixture () {
+	STORYBOARD_NAME="$1"
+	TARGET_NAME="$2StoryboardTestData"
+
+	SOURCE="ExampleApp/Resources/Storyboards/Base.lproj/${STORYBOARD_NAME}.storyboard"
+	TARGET="Tests/BlackboardTests/Storyboards Fixtures/${TARGET_NAME}.swift"
+
+	sed 's/__NAME__/'$TARGET_NAME'/g' etc/TestDataHeader.swift > "$TARGET"
+	cat "$SOURCE" >> "$TARGET"
+	echo "" >> "$TARGET"
+	cat etc/TestDataFooter.swift >> "$TARGET"
+}
+
 make_swift_source_fixture () {
 	FIXTURE_GROUP="Tests/BlackboardTests/$1"
 	TARGET_NAME="$3SwiftSourceTestData"
@@ -89,3 +102,17 @@ make_image_set_fixture "small apple" "SmallApple"
 make_image_set_fixture "television" "Television"
 
 make_swift_source_fixture "Image Assets Fixtures" "UIImageExtensions" "BlackboardUIImage"
+
+# Storyboard Fixtures
+
+make_storyboard_fixture "Collection" "Collection"
+make_storyboard_fixture "Empty" "Empty"
+make_storyboard_fixture "LaunchScreen" "LaunchScreen"
+make_storyboard_fixture "Main" "Main"
+make_storyboard_fixture "Navigation" "Navigation"
+make_storyboard_fixture "Table" "Table"
+
+make_swift_source_fixture "Storyboards Fixtures" "CollectionStoryboardExtensions" "CollectionStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "MainStoryboardExtensions" "MainStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "NavigationStoryboardExtensions" "NavigationStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "TableStoryboardExtensions" "TableStoryboard"

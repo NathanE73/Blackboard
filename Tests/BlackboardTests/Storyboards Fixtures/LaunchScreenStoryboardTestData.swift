@@ -56,4 +56,5 @@ let LaunchScreenStoryboardTestData = """
         </scene>
     </scenes>
 </document>
+
 """.data(using: .utf8)!

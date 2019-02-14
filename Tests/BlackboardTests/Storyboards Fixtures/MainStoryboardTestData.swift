@@ -78,4 +78,5 @@ let MainStoryboardTestData = """
         </scene>
     </scenes>
 </document>
+
 """.data(using: .utf8)!
