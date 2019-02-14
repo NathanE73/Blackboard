@@ -36,6 +36,19 @@ make_color_set_fixture () {
 	cat etc/TestDataFooter.swift >> "$TARGET"
 }
 
+make_image_set_fixture () {
+	IMAGE_SET="$1"
+	TARGET_NAME="$2ImageSetTestData"
+
+	SOURCE="ExampleApp/Resources/Images.xcassets/${IMAGE_SET}.imageset/Contents.json"
+	TARGET="Tests/BlackboardTests/Image Assets Fixtures/${TARGET_NAME}.swift"
+
+	sed 's/__NAME__/'$TARGET_NAME'/g' etc/TestDataHeader.swift > "$TARGET"
+	cat "$SOURCE" >> "$TARGET"
+	echo "" >> "$TARGET"
+	cat etc/TestDataFooter.swift >> "$TARGET"
+}
+
 make_swift_source_fixture () {
 	FIXTURE_GROUP="Tests/BlackboardTests/$1"
 	TARGET_NAME="$3SwiftSourceTestData"
@@ -48,6 +61,8 @@ make_swift_source_fixture () {
 	echo "" >> "$TARGET"
 	cat etc/SwiftSourceTestDataFooter.swift >> "$TARGET"
 }
+
+# Color Asset Fixtures
 
 make_color_set_fixture "Absolute Zero" "AbsoluteZero"
 make_color_set_fixture "Bisque" "Bisque"
@@ -62,3 +77,15 @@ make_color_set_fixture "Night" "Night"
 
 make_swift_source_fixture "Color Assets Fixtures" "CGColorExtensions" "BlackboardCGColor"
 make_swift_source_fixture "Color Assets Fixtures" "UIColorExtensions" "BlackboardUIColor"
+
+# Image Asset Fixtures
+
+make_image_set_fixture "apple" "Apple"
+make_image_set_fixture "big_apple" "BigApple"
+make_image_set_fixture "everything--apple" "EverythingApple"
+make_image_set_fixture "large-apple" "LargeApple"
+make_image_set_fixture "RedApple" "RedApple"
+make_image_set_fixture "small apple" "SmallApple"
+make_image_set_fixture "television" "Television"
+
+make_swift_source_fixture "Image Assets Fixtures" "UIImageExtensions" "BlackboardUIImage"

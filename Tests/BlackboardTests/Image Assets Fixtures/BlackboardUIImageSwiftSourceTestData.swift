@@ -24,7 +24,7 @@
 
 import Foundation
 
-let BlackboardImageSwiftSourceTestData = """
+let BlackboardUIImageSwiftSourceTestData = """
 //
 //  UIImageExtensions.swift
 //
