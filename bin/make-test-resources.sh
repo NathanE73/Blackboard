@@ -64,15 +64,15 @@ make_storyboard_fixture () {
 
 make_swift_source_fixture () {
 	FIXTURE_GROUP="Tests/BlackboardTests/$1"
-	TARGET_NAME="$3SwiftSourceTestData"
+	TARGET_NAME="$3SwiftSource"
 
 	SOURCE="ExampleApp/Source/Generated/$2.swift"
 	TARGET="$FIXTURE_GROUP/$TARGET_NAME.swift"
 
-	sed 's/__NAME__/'$TARGET_NAME'/g' etc/TestDataHeader.swift > "$TARGET"
+	sed 's/__NAME__/'$TARGET_NAME'/g' etc/SwiftSourceHeader.swift > "$TARGET"
 	cat "$SOURCE" >> "$TARGET"
 	echo "" >> "$TARGET"
-	cat etc/SwiftSourceTestDataFooter.swift >> "$TARGET"
+	cat etc/SwiftSourceFooter.swift >> "$TARGET"
 }
 
 # Color Asset Fixtures

@@ -24,7 +24,7 @@
 
 import Foundation
 
-let NavigationStoryboardSwiftSourceTestData = """
+let NavigationStoryboardSwiftSource = """
 //
 //  NavigationStoryboardExtensions.swift
 //

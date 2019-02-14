@@ -24,7 +24,7 @@
 
 import Foundation
 
-let CollectionStoryboardSwiftSourceTestData = """
+let CollectionStoryboardSwiftSource = """
 //
 //  CollectionStoryboardExtensions.swift
 //

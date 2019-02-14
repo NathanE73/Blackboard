@@ -50,7 +50,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testCGColorDescription() {
-        let expectedSource = BlackboardCGColorSwiftSourceTestData
+        let expectedSource = BlackboardCGColorSwiftSource
         
         let swiftSource = SwiftSource()
         swiftSource.appendCGColors(colors: blackboardColors)
@@ -60,7 +60,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testUIColorDescription() {
-        let expectedSource = BlackboardUIColorSwiftSourceTestData
+        let expectedSource = BlackboardUIColorSwiftSource
         
         let swiftSource = SwiftSource()
         swiftSource.appendUIColors(colors: blackboardColors)

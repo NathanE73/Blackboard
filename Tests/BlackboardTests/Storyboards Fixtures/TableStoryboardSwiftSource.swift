@@ -24,7 +24,7 @@
 
 import Foundation
 
-let TableStoryboardSwiftSourceTestData = """
+let TableStoryboardSwiftSource = """
 //
 //  TableStoryboardExtensions.swift
 //

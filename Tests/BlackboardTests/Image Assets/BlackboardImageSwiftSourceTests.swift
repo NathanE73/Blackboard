@@ -31,7 +31,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
     let factory = ImageSetFactory()
     
     func testDescription() {
-        let expectedSource = BlackboardUIImageSwiftSourceTestData
+        let expectedSource = BlackboardUIImageSwiftSource
         
         let imageSets: [ImageSet?] = [
             factory.imageSet(name: "apple", data: AppleImageSetTestData),

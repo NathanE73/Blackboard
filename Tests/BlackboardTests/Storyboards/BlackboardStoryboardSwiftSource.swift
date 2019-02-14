@@ -50,7 +50,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testCollectionStoryboard() {
-        let expectedSource = CollectionStoryboardSwiftSourceTestData
+        let expectedSource = CollectionStoryboardSwiftSource
         
         guard let collectionStoryboard = collectionStoryboard,
             let storyboard = BlackboardStoryboard(collectionStoryboard, storyboards: storyboards) else {
@@ -66,7 +66,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testMainStoryboard() {
-        let expectedSource = MainStoryboardSwiftSourceTestData
+        let expectedSource = MainStoryboardSwiftSource
         
         guard let mainStoryboard = mainStoryboard,
             let storyboard = BlackboardStoryboard(mainStoryboard, storyboards: storyboards) else {
@@ -81,7 +81,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
         XCTAssertEqual(source, expectedSource)
     }
     func testNavigationStoryboard() {
-        let expectedSource = NavigationStoryboardSwiftSourceTestData
+        let expectedSource = NavigationStoryboardSwiftSource
         
         guard let navigationStoryboard = navigationStoryboard,
             let storyboard = BlackboardStoryboard(navigationStoryboard, storyboards: storyboards) else {
@@ -98,7 +98,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     
     
     func testTableStoryboard() {
-        let expectedSource = TableStoryboardSwiftSourceTestData
+        let expectedSource = TableStoryboardSwiftSource
         
         guard let tableStoryboard = tableStoryboard,
             let storyboard = BlackboardStoryboard(tableStoryboard, storyboards: storyboards) else {

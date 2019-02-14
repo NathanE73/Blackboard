@@ -24,7 +24,7 @@
 
 import Foundation
 
-let BlackboardUIColorSwiftSourceTestData = """
+let BlackboardUIColorSwiftSource = """
 //
 //  UIColorExtensions.swift
 //
