@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/badge/version-5.0.0-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
-[![Swift](https://img.shields.io/badge/swift-4.1-yellow.svg)](https://swift.org)
+[![Swift](https://img.shields.io/badge/swift-4.2-yellow.svg)](https://swift.org)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
 
 ## Requirements
@@ -13,37 +13,36 @@
 
 ## Installation
 
-### Downloading
+### Using [CocoaPods](https://cocoapods.org):
 
-```bash
-$ curl https://raw.githubusercontent.com/NathanE73/Blackboard/master/bin/blackboard > blackboard
+Simply add the following line to your Podfile:
+
+```ruby
+pod 'Blackboard'
 ```
 
-### Making It Executable
+This will download the Blackboard binaries and dependencies in `Pods/` during your next
+`pod install` execution and will allow you to invoke it via `${PODS_ROOT}/Blackboard/blackboard`
+in your Script Build Phases.
+
+This is the recommended way to install a specific version of Blackboard since it supports
+installing a pinned version rather than simply the latest.
+
+Note that this will add the Blackboard binaries, its dependencies' binaries and the Swift binary
+library distribution to the `Pods/` directory, so checking in this directory to SCM such as
+git is discouraged.
+
+### Xcode
+
+Integrate Blackboard into an Xcode scheme to get warnings and errors displayed
+in the IDE. Just add a new "Run Script Phase" with:
 
 ```bash
-$ chmod +x blackboard
-```
-
-## Usage - Command Line
-
-### Identify Version
-
-See which version of `blackboard` currently have:
-
-```bash
-$ bin/blackboard --version
-Blackboard Version 5.0.0
-```
-
-### Generating Source
-
-```bash
-$ bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated/
-```
-
-```bash
-$ bin/blackboard BlackboardTests/Resources/ BlackboardTests/Resources/GeneratedSource/
+if which "${PODS_ROOT}/Blackboard/blackboard" >/dev/null; then
+  "${PODS_ROOT}/Blackboard/blackboard" "ExampleApp/Resources/" "ExampleApp/Source/Generated/"
+else
+  echo "warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard"
+fi
 ```
 
 ## Usage - Generated Source
