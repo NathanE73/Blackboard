@@ -56,7 +56,7 @@ endif
 	git push origin "$(VERSION_STRING)"
 
 pod-publish:
-	pod repo push Something Blackboard.podspec --no-overwrite --skip-import-validation --swift-version=4.2
+	pod trunk push Blackboard.podspec --skip-import-validation --swift-version=4.2
 
 publish: pod-publish
 
