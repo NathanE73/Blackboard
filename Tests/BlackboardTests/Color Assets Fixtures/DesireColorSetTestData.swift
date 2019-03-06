@@ -27,8 +27,8 @@ import Foundation
 let DesireColorSetTestData = """
 {
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "version" : "1",
+    "author" : "zeplin"
   },
   "colors" : [
     {
