@@ -1,6 +1,6 @@
 # Blackboard: Another iOS Storyboard Manager
 
-[![Version](https://img.shields.io/badge/version-5.0.0-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-5.0.1-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/swift-4.2-yellow.svg)](https://swift.org)

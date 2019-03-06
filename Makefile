@@ -47,6 +47,7 @@ set-version:
 	@echo "$(NEW_VERSION)" > "$(VERSION_FILE)"
 	@sed -i '' '/var version/ s/"[^"][^"]*"/"$(NEW_VERSION)"/' Sources/Blackboard/Version.swift
 	@sed -i '' '/^[[:blank:]]*s.version/ s/'\''[^'\''][^'\'']*'\''/'\''$(NEW_VERSION)'\''/' Blackboard.podspec
+	@sed -i '' '/badge\/version/ s/-[^-][^-]*-/-$(NEW_VERSION)-/' README.md
 
 git-tag:
 ifneq ($(strip $(shell git status --untracked-files=no --porcelain 2>/dev/null)),)
