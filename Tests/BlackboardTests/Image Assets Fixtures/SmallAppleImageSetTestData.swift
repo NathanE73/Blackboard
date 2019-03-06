@@ -41,8 +41,8 @@ let SmallAppleImageSetTestData = """
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "version" : "1",
+    "author" : "zeplin"
   }
 }
 """.data(using: .utf8)!
