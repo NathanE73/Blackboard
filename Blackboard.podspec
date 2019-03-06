@@ -7,4 +7,5 @@ Pod::Spec.new do |s|
   s.author         = { 'Nathan Walczak' => 'knate@knate.com' }
   s.source         = { :http => "#{s.homepage}/releases/download/#{s.version}/portable-blackboard.zip" }
   s.preserve_paths = '*'
+  s.exclude_files  = '**/file.zip'
 end
