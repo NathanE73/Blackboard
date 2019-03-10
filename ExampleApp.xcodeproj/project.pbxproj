@@ -88,9 +88,9 @@
 		435E2AF51D01F600008E1170 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				435E2B021D01F600008E1170 /* Info.plist */,
 				43C2B1991D01F7C5001B08CA /* Resources */,
 				43C2B1981D01F7AB001B08CA /* Source */,
+				43D644292235941D00F1559E /* Supporting Files */,
 			);
 			path = ExampleApp;
 			sourceTree = "<group>";
@@ -145,6 +145,14 @@
 				433D6D7521E507BE00D8CB37 /* UIImageExtensions.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		43D644292235941D00F1559E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				435E2B021D01F600008E1170 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which bin/blackboard >/dev/null; then\n  bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
+			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" \"ExampleApp/Resources/\" \"ExampleApp/Source/Generated\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
