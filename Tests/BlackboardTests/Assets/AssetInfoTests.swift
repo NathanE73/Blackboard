@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -26,22 +26,42 @@ import XCTest
 
 @testable import Blackboard
 
-class AssetImageSetInfoTests: XCTestCase {
+class AssetInfoTests: XCTestCase {
     
     func testDecodable() {
         let json = """
           {
-            "version" : 1,
-            "author" : "xcode"
+            "version" : 2,
+            "author" : "Steve Dave"
           }
         """
         let data = json.data(using: .utf8)!
         
         do {
-            let info = try JSONDecoder().decode(AssetImageSet.Info.self, from: data)
+            let info = try JSONDecoder().decode(AssetInfo.self, from: data)
             
-            XCTAssertEqual(info.version, 1)
-            XCTAssertEqual(info.author, "xcode")
+            XCTAssertEqual(info.version, 2)
+            XCTAssertEqual(info.author, "Steve Dave")
+        }
+        catch let error {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testZeplinDecodable() {
+        let json = """
+          {
+            "version" : "3",
+            "author" : "zeplin"
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let info = try JSONDecoder().decode(AssetInfo.self, from: data)
+            
+            XCTAssertEqual(info.version, 3)
+            XCTAssertEqual(info.author, "zeplin")
         }
         catch let error {
             XCTFail(error.localizedDescription)

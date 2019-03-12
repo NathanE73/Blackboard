@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -22,30 +22,27 @@
 // THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 
-@testable import Blackboard
-
-class AssetColorSetInfoTests: XCTestCase {
+struct AssetInfo : Decodable {
+    var version: Int
+    var author: String
     
-    func testDecodable() {
-        let json = """
-          {
-            "version" : 1,
-            "author" : "xcode"
-          }
-        """
-        let data = json.data(using: .utf8)!
-        
-        do {
-            let info = try JSONDecoder().decode(AssetColorSet.Info.self, from: data)
-            
-            XCTAssertEqual(info.version, 1)
-            XCTAssertEqual(info.author, "xcode")
-        }
-        catch let error {
-            XCTFail(error.localizedDescription)
-        }
+    enum CodingKeys: String, CodingKey {
+        case version
+        case author
     }
     
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let versionString = try? container.decode(String.self, forKey: .version)
+        if let versionString = versionString, let version = Int(versionString) {
+            self.version = version
+        } else {
+            version = try container.decode(Int.self, forKey: .version)
+        }
+        
+        author = try container.decode(String.self, forKey: .author)
+    }
 }
