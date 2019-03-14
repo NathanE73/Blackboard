@@ -26,7 +26,7 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
     
-    let photoViewModels = PhotoViewModel.examples
+    var photoViewModels: [PhotoViewModel]!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         handleSegue(segue, sender: sender)
@@ -48,6 +48,10 @@ class PhotosCollectionViewController: UICollectionViewController {
         performShowPhotoSegue { photoViewController in
             photoViewController.viewModel = photoViewModel
         }
+    }
+    
+    @IBAction func dismiss() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

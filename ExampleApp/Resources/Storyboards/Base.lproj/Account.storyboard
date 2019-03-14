@@ -116,6 +116,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Accounts" id="46M-F2-2v0">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="1au-my-ECT">
+                            <connections>
+                                <action selector="dismiss" destination="Xct-fP-Vx7" id="06O-Uw-q4d"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9JB-yJ-X5V">
                             <connections>
                                 <action selector="presentOpenAccount" destination="Xct-fP-Vx7" id="dZG-3p-Oeg"/>

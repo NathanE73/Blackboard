@@ -26,8 +26,8 @@ import UIKit
 
 class AccountsTableViewController: UITableViewController {
     
-    let viewModel = AccountsViewModel.example
-    let accountViewModels = AccountViewModel.examples
+    var viewModel: AccountsViewModel!
+    var accountViewModels: [AccountViewModel]!
     
     enum Section: Int, CaseIterable {
         case overview
@@ -93,7 +93,7 @@ class AccountsTableViewController: UITableViewController {
                 accountViewController.viewModel = accountViewModel
             }
         case .openNewAccount:
-            performPresentOpenAccountSegue() { openAccountViewController in
+            performPresentOpenAccountSegue { openAccountViewController in
                 openAccountViewController.path = "Perform Segue"
             }
         }
@@ -104,6 +104,10 @@ class AccountsTableViewController: UITableViewController {
             openAccountViewController.path = "Instantiate Navigation Controller"
         }
         present(navigationController, animated: true)
+    }
+    
+    @IBAction func dismiss() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

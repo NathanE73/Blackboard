@@ -53,7 +53,13 @@
                             <outlet property="delegate" destination="IQH-Wi-39e" id="wgO-Wh-js2"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Photos" id="MMJ-mF-uKo"/>
+                    <navigationItem key="navigationItem" title="Photos" id="MMJ-mF-uKo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="vrl-bW-ihL">
+                            <connections>
+                                <action selector="dismiss" destination="IQH-Wi-39e" id="vLb-V5-pzA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="W37-RY-jR3" kind="show" identifier="Show Photo" id="A3N-Ti-cUc"/>
                     </connections>

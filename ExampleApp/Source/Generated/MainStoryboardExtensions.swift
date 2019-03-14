@@ -18,20 +18,43 @@ private class InitializeBlockObject {
     
 }
 
-extension WelcomeViewController {
+extension MainViewController {
     
-    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ welcomeViewController: WelcomeViewController) -> Void)? = nil) -> WelcomeViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ mainViewController: MainViewController) -> Void)? = nil) -> MainViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeViewController") as! MainViewController
         initialize?(viewController)
         return viewController
     }
     
     // Segues
     
+    enum SegueIdentifier: String {
+        case presentAccounts = "Present Accounts"
+        case presentPhotos = "Present Photos"
+    }
+    
     func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
             initializeBlockObject.block(segue.destination)
         }
+    }
+    
+    final func performPresentAccountsSegue(_ initialize: @escaping ((AccountsTableViewController) -> Void) = {_ in}) {
+        let initializeBlock = InitializeBlockObject() {
+            let navigationController = $0 as! AccountsNavigationController
+            let viewController = navigationController.viewControllers.first as! AccountsTableViewController
+            initialize(viewController)
+        }
+        performSegue(withIdentifier: SegueIdentifier.presentAccounts.rawValue, sender: initializeBlock)
+    }
+    
+    final func performPresentPhotosSegue(_ initialize: @escaping ((PhotosCollectionViewController) -> Void) = {_ in}) {
+        let initializeBlock = InitializeBlockObject() {
+            let navigationController = $0 as! PhotosNavigationController
+            let viewController = navigationController.viewControllers.first as! PhotosCollectionViewController
+            initialize(viewController)
+        }
+        performSegue(withIdentifier: SegueIdentifier.presentPhotos.rawValue, sender: initializeBlock)
     }
     
 }
