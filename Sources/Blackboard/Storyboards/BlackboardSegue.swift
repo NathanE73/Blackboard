@@ -41,9 +41,9 @@ extension BlackboardSegue {
             return nil
         }
         
-        self.name = identifier
+        name = Naming.name(fromIdentifier: identifier)
         
-        self.enumName = name.firstCharacterLowercased
+        enumName = name.firstCharacterLowercased
         
         self.identifier = identifier
         
@@ -53,7 +53,12 @@ extension BlackboardSegue {
         
         if let storyboardName = destinationViewController?.storyboardName {
             storyboard = storyboards.first(withName: storyboardName) ?? storyboard
-            destinationViewController = storyboard.initialViewController
+            if let referencedIdentifier = destinationViewController?.referencedIdentifier {
+                destinationViewController = storyboard.viewControllerWith(storyboardIdentifier: referencedIdentifier)
+            }
+            else {
+                destinationViewController = storyboard.initialViewController
+            }
         }
         
         let destinationCustomClass = destinationViewController?.customClass ?? destinationViewController?.type.className

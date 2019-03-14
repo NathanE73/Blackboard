@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -56,6 +56,14 @@ extension SwiftSource {
             append()
             images.forEach { image in
                 append("case \(image.caseName) = \"\(image.name)\"")
+            }
+            append()
+        }
+        append()
+        append("extension ImageAssetIdentifier") {
+            append()
+            append("var image: UIImage") {
+                append("return UIImage(identifier: self)")
             }
             append()
         }

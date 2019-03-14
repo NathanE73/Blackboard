@@ -46,6 +46,10 @@ extension Storyboard {
         return viewControllers.first { $0.id == id }
     }
     
+    func viewControllerWith(storyboardIdentifier: String) -> StoryboardViewController? {
+        return viewControllers.first { $0.storyboardIdentifier == storyboardIdentifier }
+    }
+    
     func navigationControllerFor(id: String) -> StoryboardViewController? {
         return viewControllers
             .filter { $0.type == .navigationController }
