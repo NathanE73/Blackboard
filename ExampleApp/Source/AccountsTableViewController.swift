@@ -35,15 +35,21 @@ class AccountsTableViewController: UITableViewController {
         case openNewAccount
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        handleSegue(segue, sender: sender)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return Section.allCases.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch Section(rawValue: section)! {
+        case .overview:
+            return nil
         case .accounts:
             return viewModel.accountsSectionTitle
-        case .overview, .openNewAccount:
+        case .openNewAccount:
             return nil
         }
     }
@@ -67,14 +73,37 @@ class AccountsTableViewController: UITableViewController {
                 cell.rewardsLevelLabel.text = self.viewModel.rewardsLevelText
             }
         case .accounts:
-            let accountViewMode = accountViewModels[indexPath.row]
+            let accountViewModel = accountViewModels[indexPath.row]
             return dequeueAccountCell(from: tableView, for: indexPath) { cell in
-                cell.nameLabel.text = accountViewMode.name
-                cell.balanceLabel.text = accountViewMode.balance
+                cell.nameLabel.text = accountViewModel.name
+                cell.balanceLabel.text = accountViewModel.balance
             }
         case .openNewAccount:
             return dequeueOpenNewAccountCell(from: tableView, for: indexPath)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch Section(rawValue: indexPath.section)! {
+        case .overview:
+            break
+        case .accounts:
+            let accountViewModel = accountViewModels[indexPath.row]
+            performShowAccountSegue { accountViewController in
+                accountViewController.viewModel = accountViewModel
+            }
+        case .openNewAccount:
+            performPresentOpenAccountSegue() { openAccountViewController in
+                openAccountViewController.path = "Perform Segue"
+            }
+        }
+    }
+    
+    @IBAction func presentOpenAccount() {
+        let navigationController = OpenAccountViewController.instantiateNavigationControllerFromStoryboard { openAccountViewController in
+            openAccountViewController.path = "Instantiate Navigation Controller"
+        }
+        present(navigationController, animated: true)
     }
     
 }

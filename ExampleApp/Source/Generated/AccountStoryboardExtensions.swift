@@ -18,6 +18,18 @@ private class InitializeBlockObject {
     
 }
 
+extension AccountViewController {
+    
+    // Segues
+    
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
+        if let initializeBlockObject = sender as? InitializeBlockObject {
+            initializeBlockObject.block(segue.destination)
+        }
+    }
+    
+}
+
 extension AccountsNavigationController {
     
     final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ accountsNavigationController: AccountsNavigationController) -> Void)? = nil) -> AccountsNavigationController {
@@ -53,10 +65,31 @@ extension AccountsTableViewController {
     
     // Segues
     
+    enum SegueIdentifier: String {
+        case presentOpenAccount = "Present Open Account"
+        case showAccount = "Show Account"
+    }
+    
     func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
         if let initializeBlockObject = sender as? InitializeBlockObject {
             initializeBlockObject.block(segue.destination)
         }
+    }
+    
+    final func performPresentOpenAccountSegue(_ initialize: @escaping ((OpenAccountViewController) -> Void) = {_ in}) {
+        let initializeBlock = InitializeBlockObject() {
+            let navigationController = $0 as! UINavigationController
+            let viewController = navigationController.viewControllers.first as! OpenAccountViewController
+            initialize(viewController)
+        }
+        performSegue(withIdentifier: SegueIdentifier.presentOpenAccount.rawValue, sender: initializeBlock)
+    }
+    
+    final func performShowAccountSegue(_ initialize: @escaping ((AccountViewController) -> Void) = {_ in}) {
+        let initializeBlock = InitializeBlockObject() {
+            initialize($0 as! AccountViewController)
+        }
+        performSegue(withIdentifier: SegueIdentifier.showAccount.rawValue, sender: initializeBlock)
     }
     
     // Table View Cells
@@ -83,6 +116,25 @@ extension AccountsTableViewController {
         let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.openNewAccount.rawValue, for: indexPath)
         initialize?(tableViewCell)
         return tableViewCell
+    }
+    
+}
+
+extension OpenAccountViewController {
+    
+    final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ openAccountViewController: OpenAccountViewController) -> Void)? = nil) -> UINavigationController {
+        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "OpenAccountNavigationController") as! UINavigationController
+        let viewController = navigationController.viewControllers.first as! OpenAccountViewController
+        initialize?(viewController)
+        return navigationController
+    }
+    
+    // Segues
+    
+    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
+        if let initializeBlockObject = sender as? InitializeBlockObject {
+            initializeBlockObject.block(segue.destination)
+        }
     }
     
 }

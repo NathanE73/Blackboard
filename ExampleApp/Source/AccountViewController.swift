@@ -24,11 +24,12 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController {
+class AccountViewController: UIViewController {
     
-    var viewModel: PhotoViewModel?
+    var viewModel: AccountViewModel?
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var accountNameLabel: UILabel!
+    @IBOutlet var accountBalanceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,8 @@ class PhotoViewController: UIViewController {
     }
     
     func applyViewModel() {
-        title = viewModel?.name
-        imageView.image = viewModel?.image
+        accountNameLabel.text = viewModel?.name
+        accountBalanceLabel.text = viewModel?.balance
     }
     
 }

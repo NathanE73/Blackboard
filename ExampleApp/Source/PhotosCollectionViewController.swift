@@ -45,8 +45,8 @@ class PhotosCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let photoViewModel = photoViewModels[indexPath.item]
-        performShowPhotoSegue { segue in
-            segue.photoViewModel = photoViewModel
+        performShowPhotoSegue { photoViewController in
+            photoViewController.viewModel = photoViewModel
         }
     }
     
