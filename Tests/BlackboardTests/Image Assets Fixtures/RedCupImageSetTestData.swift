@@ -24,16 +24,23 @@
 
 import Foundation
 
-let TelevisionImageSetTestData = """
+let RedCupImageSetTestData = """
 {
   "images" : [
     {
-      "idiom" : "tv",
+      "idiom" : "universal",
+      "filename" : "red-cup.jpg",
       "scale" : "1x"
     },
     {
-      "idiom" : "tv",
+      "idiom" : "universal",
+      "filename" : "red-cup@2x.jpg",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "red-cup@3x.jpg",
+      "scale" : "3x"
     }
   ],
   "info" : {

@@ -109,7 +109,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testTelevision() {
-        let imageSet = factory.imageSet(name: "television", data: TelevisionImageSetTestData)
+        let imageSet = factory.imageSet(name: "apple television", data: AppleTelevisionImageSetTestData)
         
         XCTAssertNil(imageSet)
     }

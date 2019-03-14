@@ -56,7 +56,10 @@ class StoryboardViewControllerTests: XCTestCase {
     
     func testDescription() {
         // Given
-        let controller = StoryboardViewController(id: "007", type: .tableViewController, storyboardIdentifier: "CustomIdentifer", customClass: "CustomClass", storyboardName: "MainStoryboard", segues: [], tableViewCells: [], collectionViewCells: [])
+        let controller = StoryboardViewController(id: "007", type: .tableViewController,
+                                                  storyboardIdentifier: "CustomIdentifer", referencedIdentifier: nil,
+                                                  customClass: "CustomClass", storyboardName: "MainStoryboard",
+                                                  segues: [], tableViewCells: [], collectionViewCells: [])
         
         // When
         let description = controller.description
@@ -67,7 +70,10 @@ class StoryboardViewControllerTests: XCTestCase {
     
     func testDescriptionWithNilStoryboardIdentifier() {
         // Given
-        let controller = StoryboardViewController(id: "007", type: .tableViewController, storyboardIdentifier: nil, customClass: "CustomClass", storyboardName: "MainStoryboard", segues: [], tableViewCells: [], collectionViewCells: [])
+        let controller = StoryboardViewController(id: "007", type: .tableViewController,
+                                                  storyboardIdentifier: nil, referencedIdentifier: nil,
+                                                  customClass: "CustomClass", storyboardName: "MainStoryboard",
+                                                  segues: [], tableViewCells: [], collectionViewCells: [])
         
         // When
         let description = controller.description
@@ -78,7 +84,10 @@ class StoryboardViewControllerTests: XCTestCase {
     
     func testDescriptionWithNilCustomClass() {
         // Given
-        let controller = StoryboardViewController(id: "007", type: .tableViewController, storyboardIdentifier: "CustomIdentifer", customClass: nil, storyboardName: "MainStoryboard", segues: [], tableViewCells: [], collectionViewCells: [])
+        let controller = StoryboardViewController(id: "007", type: .tableViewController,
+                                                  storyboardIdentifier: "CustomIdentifer", referencedIdentifier: nil,
+                                                  customClass: nil, storyboardName: "MainStoryboard",
+                                                  segues: [], tableViewCells: [], collectionViewCells: [])
         
         // When
         let description = controller.description
@@ -89,7 +98,10 @@ class StoryboardViewControllerTests: XCTestCase {
     
     func testDescriptionWithNilStoryboardName() {
         // Given
-        let controller = StoryboardViewController(id: "007", type: .tableViewController, storyboardIdentifier: "CustomIdentifer", customClass: "CustomClass", storyboardName: nil, segues: [], tableViewCells: [], collectionViewCells: [])
+        let controller = StoryboardViewController(id: "007", type: .tableViewController,
+                                                  storyboardIdentifier: "CustomIdentifer", referencedIdentifier: nil,
+                                                  customClass: "CustomClass", storyboardName: nil,
+                                                  segues: [], tableViewCells: [], collectionViewCells: [])
         
         // When
         let description = controller.description

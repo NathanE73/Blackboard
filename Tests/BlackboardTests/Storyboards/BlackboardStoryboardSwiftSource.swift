@@ -28,32 +28,29 @@ import XCTest
 
 class BlackboardStoryboardSwiftSource: XCTestCase {
     
-    var collectionStoryboard: Storyboard?
+    var accountStoryboard: Storyboard?
     var mainStoryboard: Storyboard?
-    var navigationStoryboard: Storyboard?
-    var tableStoryboard: Storyboard?
+    var photoStoryboard: Storyboard?
     
     var storyboards: [Storyboard] = []
     
     override func setUp() {
-        collectionStoryboard = Storyboard(name: "Collection", data: CollectionStoryboardTestData)
+        accountStoryboard = Storyboard(name: "Account", data: AccountStoryboardTestData)
         mainStoryboard = Storyboard(name: "Main", data: MainStoryboardTestData)
-        navigationStoryboard = Storyboard(name: "Navigation", data: NavigationStoryboardTestData)
-        tableStoryboard = Storyboard(name: "Table", data: TableStoryboardTestData)
+        photoStoryboard = Storyboard(name: "Photo", data: PhotoStoryboardTestData)
         
         storyboards = [
-            collectionStoryboard,
+            accountStoryboard,
             mainStoryboard,
-            navigationStoryboard,
-            tableStoryboard
+            photoStoryboard
             ].compactMap { $0 }
     }
     
-    func testCollectionStoryboard() {
-        let expectedSource = CollectionStoryboardSwiftSource
+    func testAccountStoryboard() {
+        let expectedSource = AccountStoryboardSwiftSource
         
-        guard let collectionStoryboard = collectionStoryboard,
-            let storyboard = BlackboardStoryboard(collectionStoryboard, storyboards: storyboards) else {
+        guard let accountStoryboard = accountStoryboard,
+            let storyboard = BlackboardStoryboard(accountStoryboard, storyboards: storyboards) else {
                 XCTFail("Unable to decode storyboard data")
                 return
         }
@@ -80,28 +77,11 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
         
         XCTAssertEqual(source, expectedSource)
     }
-    func testNavigationStoryboard() {
-        let expectedSource = NavigationStoryboardSwiftSource
+    func testPhotoStoryboard() {
+        let expectedSource = PhotoStoryboardSwiftSource
         
-        guard let navigationStoryboard = navigationStoryboard,
-            let storyboard = BlackboardStoryboard(navigationStoryboard, storyboards: storyboards) else {
-                XCTFail("Unable to decode storyboard data")
-                return
-        }
-        
-        let swiftSource = SwiftSource()
-        swiftSource.appendStoryboard(storyboard)
-        let source = swiftSource.description
-        
-        XCTAssertEqual(source, expectedSource)
-    }
-    
-    
-    func testTableStoryboard() {
-        let expectedSource = TableStoryboardSwiftSource
-        
-        guard let tableStoryboard = tableStoryboard,
-            let storyboard = BlackboardStoryboard(tableStoryboard, storyboards: storyboards) else {
+        guard let photoStoryboard = photoStoryboard,
+            let storyboard = BlackboardStoryboard(photoStoryboard, storyboards: storyboards) else {
                 XCTFail("Unable to decode storyboard data")
                 return
         }
