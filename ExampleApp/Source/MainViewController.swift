@@ -70,6 +70,12 @@ class MainViewController: UIViewController {
         }
     }
     
+    @IBAction func presentOpenAccount() {
+        performPresentOpenAccountSegue { openAccountViewController in
+            openAccountViewController.path = "Storyboard Reference"
+        }
+    }
+    
     @IBAction func presentPhotos() {
         performPresentPhotosSegue { photosViewController in
             photosViewController.photoViewModels = PhotoViewModel.examples

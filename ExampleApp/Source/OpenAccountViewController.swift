@@ -26,7 +26,7 @@ import UIKit
 
 class OpenAccountViewController: UIViewController {
     
-    var path: String?
+    var path: String!
     
     @IBOutlet var pathLabel : UILabel!
     

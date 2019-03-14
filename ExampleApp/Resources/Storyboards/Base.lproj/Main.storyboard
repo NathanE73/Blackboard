@@ -29,20 +29,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Y1B-b6-KVw">
-                                <rect key="frame" x="149.5" y="375.5" width="76" height="76"/>
+                                <rect key="frame" x="102" y="375.5" width="171" height="118"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq9-AN-QjK">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Accounts"/>
+                                        <state key="normal" title="View Accounts"/>
                                         <connections>
                                             <action selector="presentAccounts" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHx-cG-sgC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB8-nx-WjJ">
-                                        <rect key="frame" x="0.0" y="42" width="76" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3x-lp-ZO3">
+                                        <rect key="frame" x="0.0" y="42" width="171" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Photos"/>
+                                        <state key="normal" title="Open a New Account"/>
+                                        <connections>
+                                            <action selector="presentOpenAccount" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpU-L5-HlL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB8-nx-WjJ">
+                                        <rect key="frame" x="0.0" y="84" width="171" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="View Photos"/>
                                         <connections>
                                             <action selector="presentPhotos" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3T-vm-VDa"/>
                                         </connections>
@@ -72,6 +80,7 @@
                         <outlet property="menuContainerView" destination="Y1B-b6-KVw" id="qTG-RP-L8t"/>
                         <segue destination="0b4-zA-tUG" kind="presentation" identifier="Present Accounts" id="i6U-aL-T8B"/>
                         <segue destination="WWh-nI-tlr" kind="presentation" identifier="Present Photos" id="gTT-xl-uum"/>
+                        <segue destination="rri-Bp-hEX" kind="presentation" identifier="PresentOpenAccount" id="G95-Lm-4cr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,7 +101,15 @@
                 <viewControllerPlaceholder storyboardName="Photo" id="WWh-nI-tlr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9m-VJ-Zsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1952" y="550"/>
+            <point key="canvasLocation" x="1941" y="561"/>
+        </scene>
+        <!--OpenAccountNavigationController-->
+        <scene sceneID="O85-Og-dNq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="OpenAccountNavigationController" id="rri-Bp-hEX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edV-xW-R6F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="497"/>
         </scene>
     </scenes>
     <resources>

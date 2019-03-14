@@ -30,6 +30,7 @@ extension MainViewController {
     
     enum SegueIdentifier: String {
         case presentAccounts = "Present Accounts"
+        case presentOpenAccount = "PresentOpenAccount"
         case presentPhotos = "Present Photos"
     }
     
@@ -46,6 +47,15 @@ extension MainViewController {
             initialize(viewController)
         }
         performSegue(withIdentifier: SegueIdentifier.presentAccounts.rawValue, sender: initializeBlock)
+    }
+    
+    final func performPresentOpenAccountSegue(_ initialize: @escaping ((OpenAccountViewController) -> Void) = {_ in}) {
+        let initializeBlock = InitializeBlockObject() {
+            let navigationController = $0 as! UINavigationController
+            let viewController = navigationController.viewControllers.first as! OpenAccountViewController
+            initialize(viewController)
+        }
+        performSegue(withIdentifier: SegueIdentifier.presentOpenAccount.rawValue, sender: initializeBlock)
     }
     
     final func performPresentPhotosSegue(_ initialize: @escaping ((PhotosCollectionViewController) -> Void) = {_ in}) {
