@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (c) 2018 Nathan E. Walczak
+# Copyright (c) 2019 Nathan E. Walczak
 #
 # MIT License
 #
