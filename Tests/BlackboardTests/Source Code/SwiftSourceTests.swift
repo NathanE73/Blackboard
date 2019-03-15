@@ -44,29 +44,38 @@ class SwiftSourceTests: XCTestCase {
         }
         """
         
-        let swiftSource = ExampleSwiftSource()
-        swiftSource.make()
+        let swiftSource = SwiftSource()
+        swiftSource.append("//")
+        swiftSource.append("//  Example")
+        swiftSource.append("//")
+        swiftSource.append()
+        swiftSource.append()
+        swiftSource.append("class Example") {
+            swiftSource.append()
+            swiftSource.append("func add(a: Int, b: Int) -> Int") {
+                swiftSource.append("return a + b")
+            }
+            swiftSource.append()
+        }
         
         XCTAssertEqual(swiftSource.description, expectedDescription)
     }
     
-}
-
-class ExampleSwiftSource: SwiftSource {
-    
-    func make() {
-        append("//")
-        append("//  Example")
-        append("//")
-        append()
-        append()
-        append("class Example") {
-            append()
-            append("func add(a: Int, b: Int) -> Int") {
-                append("return a + b")
-            }
-            append()
+    func testAppendEmptyBlock() {
+        let expectedDescription =
+        """
+        class Empty {
         }
+        """
+        
+        let swiftSource = SwiftSource()
+        swiftSource.append("class Empty") {
+            swiftSource.append()
+            swiftSource.append()
+            swiftSource.append()
+        }
+        
+        XCTAssertEqual(swiftSource.description, expectedDescription)
     }
     
 }
