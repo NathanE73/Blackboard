@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -38,9 +38,17 @@ class SwiftSource {
     
     func append(_ line: String, block: () -> Void) {
         append("\(line) {")
+        
+        let initialCount = lines.count
+        
         indent()
         block()
         unindent()
+        
+        if lines.count - initialCount == 1, lines.last?.line.isEmpty == true {
+            lines.removeLast()
+        }
+
         append("}")
     }
     

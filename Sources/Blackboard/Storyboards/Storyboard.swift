@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -44,6 +44,10 @@ extension Storyboard {
     
     func viewControllerWith(id: String) -> StoryboardViewController? {
         return viewControllers.first { $0.id == id }
+    }
+    
+    func viewControllerWith(storyboardIdentifier: String) -> StoryboardViewController? {
+        return viewControllers.first { $0.storyboardIdentifier == storyboardIdentifier }
     }
     
     func navigationControllerFor(id: String) -> StoryboardViewController? {

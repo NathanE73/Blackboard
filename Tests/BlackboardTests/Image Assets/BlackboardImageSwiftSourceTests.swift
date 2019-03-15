@@ -35,17 +35,26 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
         
         let imageSets: [ImageSet?] = [
             factory.imageSet(name: "apple", data: AppleImageSetTestData),
+            factory.imageSet(name: "apple television", data: AppleTelevisionImageSetTestData), // should be ignored
+            factory.imageSet(name: "button", data: ButtonImageSetTestData),
             factory.imageSet(name: "big_apple", data: BigAppleImageSetTestData),
             factory.imageSet(name: "everything--apple", data: EverythingAppleImageSetTestData),
+            factory.imageSet(name: "green-paper-clip", data: GreenPaperClipImageSetTestData),
+            factory.imageSet(name: "green-pencil", data: GreenPencilImageSetTestData),
             factory.imageSet(name: "large-apple", data: LargeAppleImageSetTestData),
+            factory.imageSet(name: "red-cup", data: RedCupImageSetTestData),
+            factory.imageSet(name: "red-stapler", data: RedStaplerImageSetTestData),
             factory.imageSet(name: "RedApple", data: RedAppleImageSetTestData),
+            factory.imageSet(name: "silver-paper-clip", data: SilverPaperClipImageSetTestData),
             factory.imageSet(name: "small apple", data: SmallAppleImageSetTestData),
-            factory.imageSet(name: "television", data: TelevisionImageSetTestData)
+            factory.imageSet(name: "white-dice", data: WhiteDiceImageSetTestData)
         ]
         
         let blackboardImages = imageSets
             .compactMap { $0 }
             .compactMap(BlackboardImage.init)
+        
+        XCTAssertEqual(blackboardImages.count, 13)
         
         let swiftSource = SwiftSource()
         swiftSource.appendImages(images: blackboardImages)

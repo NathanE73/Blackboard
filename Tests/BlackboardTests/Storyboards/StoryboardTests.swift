@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -28,13 +28,13 @@ import XCTest
 
 class StoryboardTests: XCTestCase {
     
-    func testCollection() {
-        let storyboard = Storyboard(name: "Collection", data: CollectionStoryboardTestData)
+    func testAccount() {
+        let storyboard = Storyboard(name: "Account", data: AccountStoryboardTestData)
         
-        XCTAssertEqual(storyboard?.name, "Collection")
-        XCTAssertNil(storyboard?.initialViewControllerIdentifier)
+        XCTAssertEqual(storyboard?.name, "Account")
+        XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "LYS-UF-AgY")
         
-        XCTAssertEqual(storyboard?.viewControllers.count, 2)
+        XCTAssertEqual(storyboard?.viewControllers.count, 5)
     }
     
     func testEmpty() {
@@ -58,23 +58,14 @@ class StoryboardTests: XCTestCase {
         XCTAssertEqual(storyboard?.name, "Main")
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BYZ-38-t0r")
         
-        XCTAssertEqual(storyboard?.viewControllers.count, 1)
-    }
-    
-    func testNavigation() {
-        let storyboard = Storyboard(name: "Navigation", data: NavigationStoryboardTestData)
-        
-        XCTAssertEqual(storyboard?.name, "Navigation")
-        XCTAssertNil(storyboard?.initialViewControllerIdentifier)
-        
         XCTAssertEqual(storyboard?.viewControllers.count, 4)
     }
     
-    func testTable() {
-        let storyboard = Storyboard(name: "Table", data: TableStoryboardTestData)
+    func testPhoto() {
+        let storyboard = Storyboard(name: "Photo", data: PhotoStoryboardTestData)
         
-        XCTAssertEqual(storyboard?.name, "Table")
-        XCTAssertNil(storyboard?.initialViewControllerIdentifier)
+        XCTAssertEqual(storyboard?.name, "Photo")
+        XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BpT-OW-KyL")
         
         XCTAssertEqual(storyboard?.viewControllers.count, 3)
     }

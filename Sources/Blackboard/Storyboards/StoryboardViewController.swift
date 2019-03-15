@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2018 Nathan E. Walczak
+// Copyright (c) 2019 Nathan E. Walczak
 //
 // MIT License
 //
@@ -68,6 +68,7 @@ struct StoryboardViewController {
     
     var type: ControllerType
     var storyboardIdentifier: String?
+    var referencedIdentifier: String?
     var customClass: String?
     var storyboardName: String?
     
@@ -133,6 +134,8 @@ extension StoryboardViewController {
         self.type = type
         
         storyboardIdentifier = element.attribute(forName: "storyboardIdentifier")?.stringValue
+        
+        referencedIdentifier = element.attribute(forName: "referencedIdentifier")?.stringValue
         
         customClass = element.attribute(forName: "customClass")?.stringValue
         

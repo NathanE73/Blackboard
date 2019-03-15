@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (c) 2018 Nathan E. Walczak
+# Copyright (c) 2019 Nathan E. Walczak
 #
 # MIT License
 #
@@ -93,26 +93,33 @@ make_swift_source_fixture "Color Assets Fixtures" "UIColorExtensions" "Blackboar
 
 # Image Asset Fixtures
 
-make_image_set_fixture "apple" "Apple"
-make_image_set_fixture "big_apple" "BigApple"
-make_image_set_fixture "everything--apple" "EverythingApple"
-make_image_set_fixture "large-apple" "LargeApple"
-make_image_set_fixture "RedApple" "RedApple"
-make_image_set_fixture "small apple" "SmallApple"
-make_image_set_fixture "television" "Television"
+make_image_set_fixture "Apples/apple" "Apple"
+make_image_set_fixture "Apples/big_apple" "BigApple"
+make_image_set_fixture "Apples/everything--apple" "EverythingApple"
+make_image_set_fixture "Apples/large-apple" "LargeApple"
+make_image_set_fixture "Apples/RedApple" "RedApple"
+make_image_set_fixture "Apples/small apple" "SmallApple"
+make_image_set_fixture "Apples/apple television" "AppleTelevision"
+
+make_image_set_fixture "Photos/button" "Button"
+make_image_set_fixture "Photos/green-paper-clip" "GreenPaperClip"
+make_image_set_fixture "Photos/green-pencil" "GreenPencil"
+make_image_set_fixture "Photos/red-cup" "RedCup"
+make_image_set_fixture "Photos/red-stapler" "RedStapler"
+make_image_set_fixture "Photos/silver-paper-clip" "SilverPaperClip"
+make_image_set_fixture "Photos/white-dice" "WhiteDice"
 
 make_swift_source_fixture "Image Assets Fixtures" "UIImageExtensions" "BlackboardUIImage"
 
 # Storyboard Fixtures
 
-make_storyboard_fixture "Collection" "Collection"
 make_storyboard_fixture "Empty" "Empty"
 make_storyboard_fixture "LaunchScreen" "LaunchScreen"
-make_storyboard_fixture "Main" "Main"
-make_storyboard_fixture "Navigation" "Navigation"
-make_storyboard_fixture "Table" "Table"
 
-make_swift_source_fixture "Storyboards Fixtures" "CollectionStoryboardExtensions" "CollectionStoryboard"
+make_storyboard_fixture "Account" "Account"
+make_storyboard_fixture "Main" "Main"
+make_storyboard_fixture "Photo" "Photo"
+
+make_swift_source_fixture "Storyboards Fixtures" "AccountStoryboardExtensions" "AccountStoryboard"
 make_swift_source_fixture "Storyboards Fixtures" "MainStoryboardExtensions" "MainStoryboard"
-make_swift_source_fixture "Storyboards Fixtures" "NavigationStoryboardExtensions" "NavigationStoryboard"
-make_swift_source_fixture "Storyboards Fixtures" "TableStoryboardExtensions" "TableStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "PhotoStoryboardExtensions" "PhotoStoryboard"
