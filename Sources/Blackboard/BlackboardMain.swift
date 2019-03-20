@@ -98,7 +98,7 @@ public class BlackboardMain {
             let swiftSource = SwiftSource()
             swiftSource.appendCGColors(colors: blackboardColors)
             let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/CGColorExtensions.swift")
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.cgColor)")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
         
@@ -106,7 +106,7 @@ public class BlackboardMain {
             let swiftSource = SwiftSource()
             swiftSource.appendUIColors(colors: blackboardColors)
             let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIColorExtensions.swift")
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.uiColor)")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
         
@@ -120,7 +120,7 @@ public class BlackboardMain {
             let swiftSource = SwiftSource()
             swiftSource.appendImages(images: blackboardImages)
             let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/UIImageExtensions.swift")
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.uiImage)")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
         
