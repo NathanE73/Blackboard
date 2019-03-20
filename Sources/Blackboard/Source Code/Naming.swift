@@ -49,20 +49,23 @@ struct Naming {
     }
     
     static func name(fromIdentifier identifier: String) -> String {
+        let allowedCharacters = CharacterSet.alphanumerics
+        
         var name = ""
         
         var shouldUppercaseNextCharacter = true
         
-        for character in identifier {
-            if [" ", "_", "-"].contains(character) {
+        for unicodeScalar in identifier.unicodeScalars {
+            if !allowedCharacters.contains(unicodeScalar) {
                 shouldUppercaseNextCharacter = true
                 continue
             }
             
+            let character = String(unicodeScalar)
+            
             if shouldUppercaseNextCharacter {
                 shouldUppercaseNextCharacter = false
-                let uppercaseCharacter = String(character).uppercased()
-                name += uppercaseCharacter
+                name.append(character.uppercased())
                 continue
             }
             
