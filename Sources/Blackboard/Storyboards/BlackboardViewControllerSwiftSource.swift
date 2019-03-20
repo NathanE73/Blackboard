@@ -43,7 +43,7 @@ extension SwiftSource {
     func appendInstantiateViewController(_ viewController: BlackboardViewController) {
         guard let identifier = viewController.identifier else { return }
         
-        append("final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
+        append("final class func instantiateFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
             append("let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(identifier)\") as! \(viewController.className)")
             append("initialize?(viewController)")
             append("return viewController")

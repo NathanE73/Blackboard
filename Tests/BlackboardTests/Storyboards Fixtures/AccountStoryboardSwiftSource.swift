@@ -59,7 +59,7 @@ extension AccountViewController {
 
 extension AccountsNavigationController {
     
-    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ accountsNavigationController: AccountsNavigationController) -> Void)? = nil) -> AccountsNavigationController {
+    final class func instantiateFromStoryboard(_ initialize: ((_ accountsNavigationController: AccountsNavigationController) -> Void)? = nil) -> AccountsNavigationController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "AccountNavigationController") as! AccountsNavigationController
         initialize?(viewController)
         return viewController
@@ -77,7 +77,7 @@ extension AccountsNavigationController {
 
 extension AccountsTableViewController {
     
-    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ accountsTableViewController: AccountsTableViewController) -> Void)? = nil) -> AccountsTableViewController {
+    final class func instantiateFromStoryboard(_ initialize: ((_ accountsTableViewController: AccountsTableViewController) -> Void)? = nil) -> AccountsTableViewController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "AccountTableViewController") as! AccountsTableViewController
         initialize?(viewController)
         return viewController

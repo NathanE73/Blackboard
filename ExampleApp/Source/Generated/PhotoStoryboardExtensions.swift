@@ -32,7 +32,7 @@ extension PhotoViewController {
 
 extension PhotosCollectionViewController {
     
-    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ photosCollectionViewController: PhotosCollectionViewController) -> Void)? = nil) -> PhotosCollectionViewController {
+    final class func instantiateFromStoryboard(_ initialize: ((_ photosCollectionViewController: PhotosCollectionViewController) -> Void)? = nil) -> PhotosCollectionViewController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotoCollectionViewController") as! PhotosCollectionViewController
         initialize?(viewController)
         return viewController
@@ -80,7 +80,7 @@ extension PhotosCollectionViewController {
 
 extension PhotosNavigationController {
     
-    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ photosNavigationController: PhotosNavigationController) -> Void)? = nil) -> PhotosNavigationController {
+    final class func instantiateFromStoryboard(_ initialize: ((_ photosNavigationController: PhotosNavigationController) -> Void)? = nil) -> PhotosNavigationController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotoNavigationController") as! PhotosNavigationController
         initialize?(viewController)
         return viewController

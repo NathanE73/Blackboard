@@ -47,7 +47,7 @@ private class InitializeBlockObject {
 
 extension MainViewController {
     
-    final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ mainViewController: MainViewController) -> Void)? = nil) -> MainViewController {
+    final class func instantiateFromStoryboard(_ initialize: ((_ mainViewController: MainViewController) -> Void)? = nil) -> MainViewController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeViewController") as! MainViewController
         initialize?(viewController)
         return viewController
