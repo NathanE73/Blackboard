@@ -34,6 +34,8 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.memberName(fromIdentifier: "apple pie"), "ApplePie")
         XCTAssertEqual(Naming.memberName(fromIdentifier: "apple-pie"), "ApplePie")
         XCTAssertEqual(Naming.memberName(fromIdentifier: "apple_pie"), "ApplePie")
+        
+        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple->pie"), "ApplePie")
     }
     
     func testMethodNameFromIdentifier() {
@@ -42,6 +44,8 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple pie"), "applePie")
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple-pie"), "applePie")
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple_pie"), "applePie")
+        
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple->pie"), "applePie")
     }
     
     func testMethodNameFromIdentifierWithSuffix() {
@@ -50,6 +54,8 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple pie", suffix: "Image"), "applePieImage")
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple-pie", suffix: "Image"), "applePieImage")
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple_pie", suffix: "Image"), "applePieImage")
+        
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple->pie", suffix: "Image"), "applePieImage")
     }
     
     func testMethodNameFromIdentifierWithSuffixAndPrefix() {
@@ -58,6 +64,8 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple-pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
         XCTAssertEqual(Naming.methodName(fromIdentifier: "apple_pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
+        
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple->pie", suffix: "Image", prefix: "xyz"), "xyzApplePieImage")
     }
     
     func testNameFromIdentifier() {
@@ -65,6 +73,10 @@ class NamingTests: XCTestCase {
         
         XCTAssertEqual(Naming.name(fromIdentifier: "apple pie"), "ApplePie")
         XCTAssertEqual(Naming.name(fromIdentifier: "apple-pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(fromIdentifier: "apple_pie"), "ApplePie")
+        
+        XCTAssertEqual(Naming.name(fromIdentifier: "apple->pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(fromIdentifier: "apple.pie"), "ApplePie")
         XCTAssertEqual(Naming.name(fromIdentifier: "apple_pie"), "ApplePie")
     }
     
