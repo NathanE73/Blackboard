@@ -28,6 +28,7 @@ struct BlackboardTableViewCell {
     
     var name: String
     var enumName: String
+    var dequeueFuncName: String
     var identifier: String
     var className: String
     var parameterName: String
@@ -46,6 +47,8 @@ extension BlackboardTableViewCell {
         
         enumName = name.firstCharacterLowercased
         
+        dequeueFuncName = "dequeue\(name)Cell"
+
         identifier = reuseIdentifier
         
         if let customClass = tableViewCell.customClass {

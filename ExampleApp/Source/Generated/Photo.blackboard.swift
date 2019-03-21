@@ -20,19 +20,45 @@ private class SegueInitialization {
     
 }
 
-extension PhotoViewController {
+protocol PhotoViewControllerSegues {
+}
+
+extension PhotoViewControllerSegues {
+}
+
+extension PhotoViewController: PhotoViewControllerSegues {
+    
+    final class func instantiateFromStoryboard(_ initialize: ((_ photoViewController: PhotoViewController) -> Void)? = nil) -> PhotoViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotoViewController") as! PhotoViewController
+        initialize?(viewController)
+        return viewController
+    }
+    
+    final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ photoViewController: PhotoViewController) -> Void)? = nil) -> UINavigationController {
+        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotoNavigationController") as! UINavigationController
+        let viewController = navigationController.viewControllers.first as! PhotoViewController
+        initialize?(viewController)
+        return navigationController
+    }
     
     // Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let segueInitialization = sender as? SegueInitialization {
-            segueInitialization.block(segue.destination)
-        }
     }
     
 }
 
-extension PhotosCollectionViewController {
+protocol PhotosCollectionViewControllerSegues {
+}
+
+extension PhotosCollectionViewControllerSegues {
+    
+    func prepareForShowPhotoSegue(photoViewController: PhotoViewController) {
+    }
+    
+}
+
+extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ photosCollectionViewController: PhotosCollectionViewController) -> Void)? = nil) -> PhotosCollectionViewController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotoCollectionViewController") as! PhotosCollectionViewController
@@ -41,7 +67,7 @@ extension PhotosCollectionViewController {
     }
     
     final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ photosCollectionViewController: PhotosCollectionViewController) -> Void)? = nil) -> UINavigationController {
-        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotoNavigationController") as! UINavigationController
+        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotosNavigationController") as! UINavigationController
         let viewController = navigationController.viewControllers.first as! PhotosCollectionViewController
         initialize?(viewController)
         return navigationController
@@ -56,6 +82,19 @@ extension PhotosCollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segueInitialization = sender as? SegueInitialization {
             segueInitialization.block(segue.destination)
+            return
+        }
+        
+        guard let identifier = segue.identifier else {
+            return
+        }
+        
+        switch SegueIdentifier(rawValue: identifier) {
+        case .showPhoto?:
+            let viewController = segue.destination as! PhotoViewController
+            prepareForShowPhotoSegue(photoViewController: viewController)
+        default:
+            break
         }
     }
     
@@ -83,10 +122,16 @@ extension PhotosCollectionViewController {
     
 }
 
-extension PhotosNavigationController {
+protocol PhotosNavigationControllerSegues {
+}
+
+extension PhotosNavigationControllerSegues {
+}
+
+extension PhotosNavigationController: PhotosNavigationControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ photosNavigationController: PhotosNavigationController) -> Void)? = nil) -> PhotosNavigationController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotoNavigationController") as! PhotosNavigationController
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "PhotosNavigationController") as! PhotosNavigationController
         initialize?(viewController)
         return viewController
     }
@@ -94,9 +139,6 @@ extension PhotosNavigationController {
     // Segues
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let segueInitialization = sender as? SegueInitialization {
-            segueInitialization.block(segue.destination)
-        }
     }
     
 }

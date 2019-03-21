@@ -38,10 +38,10 @@ extension SwiftSource {
         append("import UIKit")
         append()
         append("fileprivate let bundle: Bundle = {")
-        indent()
-        append("class Object: NSObject { }")
-        append("return Bundle(for: Object.self)")
-        unindent()
+        indent {
+            append("class Object: NSObject { }")
+            append("return Bundle(for: Object.self)")
+        }
         append("}()")
         append()
         append("fileprivate extension UIImage") {

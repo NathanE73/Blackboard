@@ -28,7 +28,27 @@ extension SwiftSource {
     
     func appendViewControllers(_ viewControllers: [BlackboardViewController]) {
         viewControllers.forEach { viewController in
-            append("extension \(viewController.className)") {
+            // TODO: extract
+            append("protocol \(viewController.className)Segues") {
+            }
+            append()
+            
+            // TODO: extract
+            append("extension \(viewController.className)Segues") {
+                append()
+                viewController.segues.forEach { segue in
+                    guard let viewControllerClassName = segue.viewControllerClassName else {
+                        return
+                    }
+                    append("func \(segue.prepareFuncName)(\(viewControllerClassName.firstCharacterLowercased): \(viewControllerClassName))") {
+                    }
+                    append()
+                }
+            }
+            append()
+            
+            // TODO: skip protocol if no segues?
+            append("extension \(viewController.className): \(viewController.className)Segues") {
                 append()
                 appendInstantiateViewController(viewController)
                 appendInstantiateNavigationController(viewController)

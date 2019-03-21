@@ -38,6 +38,8 @@
 		43C32F2F22394B7C00D270C1 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F2E22394B7C00D270C1 /* AccountsViewModel.swift */; };
 		43C32F3122394EAA00D270C1 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F3022394EAA00D270C1 /* AccountViewModel.swift */; };
 		43D6442B2235958D00F1559E /* CGColor.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6442A2235958D00F1559E /* CGColor.blackboard.swift */; };
+		43E9820E2245553D00C0B1B7 /* Standard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E982102245553D00C0B1B7 /* Standard.storyboard */; };
+		43E982122245612800C0B1B7 /* FooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E982112245612800C0B1B7 /* FooterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		43C32F2E22394B7C00D270C1 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		43C32F3022394EAA00D270C1 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		43D6442A2235958D00F1559E /* CGColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGColor.blackboard.swift; sourceTree = "<group>"; };
+		43E9820F2245553D00C0B1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Standard.storyboard; sourceTree = "<group>"; };
+		43E982112245612800C0B1B7 /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 				435E2AFF1D01F600008E1170 /* LaunchScreen.storyboard */,
 				435E2AFA1D01F600008E1170 /* Main.storyboard */,
 				432EDCB0223A916800EBB0AF /* Photo.storyboard */,
+				43E982102245553D00C0B1B7 /* Standard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 		43C32F2B223852C000D270C1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				43E982112245612800C0B1B7 /* FooterViewController.swift */,
 				43C2B19D1D021533001B08CA /* MainViewController.swift */,
 			);
 			name = Main;
@@ -272,6 +278,7 @@
 				433D6D7021E5055C00D8CB37 /* Empty.storyboard in Resources */,
 				4351B62D21E502E5007B4622 /* Images.xcassets in Resources */,
 				432EDCB3223A916900EBB0AF /* Photo.storyboard in Resources */,
+				43E9820E2245553D00C0B1B7 /* Standard.storyboard in Resources */,
 				432EDCB2223A916900EBB0AF /* Account.storyboard in Resources */,
 				435E2AFC1D01F600008E1170 /* Main.storyboard in Resources */,
 			);
@@ -315,6 +322,7 @@
 				43C32F2922384C1000D270C1 /* Photo.blackboard.swift in Sources */,
 				43C2B19C1D01F86A001B08CA /* Main.blackboard.swift in Sources */,
 				43C32F2622384B2400D270C1 /* AccountTableViewCell.swift in Sources */,
+				43E982122245612800C0B1B7 /* FooterViewController.swift in Sources */,
 				43D6442B2235958D00F1559E /* CGColor.blackboard.swift in Sources */,
 				435E2AF71D01F600008E1170 /* AppDelegate.swift in Sources */,
 				432EDCA922399C9A00EBB0AF /* PhotoCollectionViewCell.swift in Sources */,
@@ -372,6 +380,14 @@
 				435E2B001D01F600008E1170 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		43E982102245553D00C0B1B7 /* Standard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E9820F2245553D00C0B1B7 /* Base */,
+			);
+			name = Standard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

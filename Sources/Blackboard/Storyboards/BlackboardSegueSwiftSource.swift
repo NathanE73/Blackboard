@@ -26,7 +26,7 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendInitializeBlockObject() {
+    func appendSegueInitialization() {
         append("private class SegueInitialization") {
             append()
             append("typealias Block = (UIViewController) -> Void")
@@ -45,7 +45,7 @@ extension SwiftSource {
         append("// Segues")
         append()
         appendSegueIdentifierFor(segues)
-        appendPrepareForSegue()
+        appendPrepareForSegue(segues)
         appendPerformSegueFor(segues)
         append()
     }
@@ -61,12 +61,44 @@ extension SwiftSource {
         append()
     }
     
-    func appendPrepareForSegue() {
-        
+    func appendPrepareForSegue(_ segues: [BlackboardSegue]) {
         append("override func prepare(for segue: UIStoryboardSegue, sender: Any?)") {
+            guard !segues.isEmpty else { return }
+            
             append("if let segueInitialization = sender as? SegueInitialization") {
                 append("segueInitialization.block(segue.destination)")
+                append("return")
             }
+            append()
+            
+            append("guard let identifier = segue.identifier else") {
+                append("return")
+            }
+            append()
+            
+            // TODO: extract
+            append("switch SegueIdentifier(rawValue: identifier) {")
+            segues.forEach { segue in
+                guard let viewControllerClassName = segue.viewControllerClassName else {
+                    return
+                }
+                append("case .\(segue.enumName)?:")
+                indent {
+                    if let navigationControllerClassName = segue.navigationControllerClassName {
+                        append("let navigationController = segue.destination as! \(navigationControllerClassName)")
+                        append("let viewController = navigationController.viewControllers.first as! \(viewControllerClassName)")
+                    }
+                    else {
+                        append("let viewController = segue.destination as! \(viewControllerClassName)")
+                    }
+                    append("\(segue.prepareFuncName)(\(viewControllerClassName.firstCharacterLowercased): viewController)")
+                }
+            }
+            append("default:")
+            indent {
+                append("break")
+            }
+            append("}")
         }
         append()
     }
@@ -86,26 +118,26 @@ extension SwiftSource {
     }
     
     func appendPerformSequeFor(_ segue: BlackboardSegue, viewControllerClassName: String) {
-        append("final func perform\(segue.name)Segue(_ initialize: ((\(viewControllerClassName)) -> Void)? = nil)") {
+        append("final func \(segue.performFuncName)(_ initialize: ((\(viewControllerClassName)) -> Void)? = nil)") {
             append("var segueInitialization: SegueInitialization?")
             append("if let initialize = initialize") {
                 append("segueInitialization = SegueInitialization") {
-                if let navigationControllerClassName = segue.navigationControllerClassName {
-                    append("let navigationController = $0 as! \(navigationControllerClassName)")
-                    append("let viewController = navigationController.viewControllers.first as! \(viewControllerClassName)")
-                    append("initialize(viewController)")
+                    if let navigationControllerClassName = segue.navigationControllerClassName {
+                        append("let navigationController = $0 as! \(navigationControllerClassName)")
+                        append("let viewController = navigationController.viewControllers.first as! \(viewControllerClassName)")
+                        append("initialize(viewController)")
+                    }
+                    else {
+                        append("initialize($0 as! \(viewControllerClassName))")
+                    }
                 }
-                else {
-                    append("initialize($0 as! \(viewControllerClassName))")
-                }
-            }
             }
             append("performSegue(withIdentifier: SegueIdentifier.\(segue.enumName).rawValue, sender: segueInitialization)")
         }
     }
     
     func appendPerformSequeFor(_ segue: BlackboardSegue) {
-        append("final func perform\(segue.name)Segue()") {
+        append("final func \(segue.performFuncName)()") {
             append("performSegue(withIdentifier: SegueIdentifier.\(segue.enumName).rawValue, sender: nil)")
         }
     }

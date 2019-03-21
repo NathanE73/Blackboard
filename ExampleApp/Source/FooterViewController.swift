@@ -24,21 +24,17 @@
 
 import UIKit
 
-class AccountViewController: UIViewController {
+class FooterViewController: UIViewController {
     
-    var viewModel: AccountViewModel!
+    @IBOutlet var footerLabel: UILabel!
     
-    @IBOutlet var accountNameLabel: UILabel!
-    @IBOutlet var accountBalanceLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        applyViewModel()
-    }
-    
-    func applyViewModel() {
-        accountNameLabel.text = viewModel.name
-        accountBalanceLabel.text = viewModel.balance
+    var footerText: String? {
+        get {
+            return footerLabel.text
+        }
+        set {
+            footerLabel.text = newValue
+        }
     }
     
 }

@@ -41,9 +41,7 @@ class SwiftSource {
         
         let initialCount = lines.count
         
-        indent()
-        block()
-        unindent()
+        indent(block)
         
         if lines.count - initialCount == 1, lines.last?.line.isEmpty == true {
             lines.removeLast()
@@ -83,6 +81,12 @@ class SwiftSource {
     
     func unindent() {
         indentLevel = max(0, indentLevel - 1)
+    }
+    
+    func indent(_ block: (() -> Void)) {
+        indent()
+        block()
+        unindent()
     }
     
 }

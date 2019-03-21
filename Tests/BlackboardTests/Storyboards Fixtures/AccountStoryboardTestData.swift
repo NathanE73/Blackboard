@@ -166,7 +166,7 @@ let AccountStoryboardTestData = """
         <!--Account-->
         <scene sceneID="aMD-ct-YJu">
             <objects>
-                <viewController id="GWA-OU-8g0" customClass="AccountViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GWA-OU-8g0" customClass="AccountViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e5M-pl-Mkh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@ let AccountStoryboardTestData = """
         <!--Open Account-->
         <scene sceneID="1ai-wc-PO9">
             <objects>
-                <viewController id="HyA-Rs-QxL" customClass="OpenAccountViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OpenAccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HyA-Rs-QxL" customClass="OpenAccountViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ewS-3j-FPQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

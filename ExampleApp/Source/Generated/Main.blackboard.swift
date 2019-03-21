@@ -20,7 +20,50 @@ private class SegueInitialization {
     
 }
 
-extension MainViewController {
+protocol FooterViewControllerSegues {
+}
+
+extension FooterViewControllerSegues {
+}
+
+extension FooterViewController: FooterViewControllerSegues {
+    
+    final class func instantiateFromStoryboard(_ initialize: ((_ footerViewController: FooterViewController) -> Void)? = nil) -> FooterViewController {
+        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "FooterViewController") as! FooterViewController
+        initialize?(viewController)
+        return viewController
+    }
+    
+    // Segues
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
+    
+}
+
+protocol MainViewControllerSegues {
+}
+
+extension MainViewControllerSegues {
+    
+    func prepareForFooterSegue(footerViewController: FooterViewController) {
+    }
+    
+    func prepareForPresentAccountsSegue(accountsTableViewController: AccountsTableViewController) {
+    }
+    
+    func prepareForPresentOpenAccountSegue(openAccountViewController: OpenAccountViewController) {
+    }
+    
+    func prepareForPresentPhotoSegue(photoViewController: PhotoViewController) {
+    }
+    
+    func prepareForPresentPhotosSegue(photosCollectionViewController: PhotosCollectionViewController) {
+    }
+    
+}
+
+extension MainViewController: MainViewControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ mainViewController: MainViewController) -> Void)? = nil) -> MainViewController {
         let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeViewController") as! MainViewController
@@ -31,15 +74,56 @@ extension MainViewController {
     // Segues
     
     enum SegueIdentifier: String {
+        case footer = "Footer"
         case presentAccounts = "Present Accounts"
-        case presentOpenAccount = "PresentOpenAccount"
+        case presentOpenAccount = "Present Open Account"
+        case presentPhoto = "Present Photo"
         case presentPhotos = "Present Photos"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segueInitialization = sender as? SegueInitialization {
             segueInitialization.block(segue.destination)
+            return
         }
+        
+        guard let identifier = segue.identifier else {
+            return
+        }
+        
+        switch SegueIdentifier(rawValue: identifier) {
+        case .footer?:
+            let viewController = segue.destination as! FooterViewController
+            prepareForFooterSegue(footerViewController: viewController)
+        case .presentAccounts?:
+            let navigationController = segue.destination as! AccountsNavigationController
+            let viewController = navigationController.viewControllers.first as! AccountsTableViewController
+            prepareForPresentAccountsSegue(accountsTableViewController: viewController)
+        case .presentOpenAccount?:
+            let navigationController = segue.destination as! UINavigationController
+            let viewController = navigationController.viewControllers.first as! OpenAccountViewController
+            prepareForPresentOpenAccountSegue(openAccountViewController: viewController)
+        case .presentPhoto?:
+            let navigationController = segue.destination as! UINavigationController
+            let viewController = navigationController.viewControllers.first as! PhotoViewController
+            prepareForPresentPhotoSegue(photoViewController: viewController)
+        case .presentPhotos?:
+            let navigationController = segue.destination as! PhotosNavigationController
+            let viewController = navigationController.viewControllers.first as! PhotosCollectionViewController
+            prepareForPresentPhotosSegue(photosCollectionViewController: viewController)
+        default:
+            break
+        }
+    }
+    
+    final func performFooterSegue(_ initialize: ((FooterViewController) -> Void)? = nil) {
+        var segueInitialization: SegueInitialization?
+        if let initialize = initialize {
+            segueInitialization = SegueInitialization {
+                initialize($0 as! FooterViewController)
+            }
+        }
+        performSegue(withIdentifier: SegueIdentifier.footer.rawValue, sender: segueInitialization)
     }
     
     final func performPresentAccountsSegue(_ initialize: ((AccountsTableViewController) -> Void)? = nil) {
@@ -64,6 +148,18 @@ extension MainViewController {
             }
         }
         performSegue(withIdentifier: SegueIdentifier.presentOpenAccount.rawValue, sender: segueInitialization)
+    }
+    
+    final func performPresentPhotoSegue(_ initialize: ((PhotoViewController) -> Void)? = nil) {
+        var segueInitialization: SegueInitialization?
+        if let initialize = initialize {
+            segueInitialization = SegueInitialization {
+                let navigationController = $0 as! UINavigationController
+                let viewController = navigationController.viewControllers.first as! PhotoViewController
+                initialize(viewController)
+            }
+        }
+        performSegue(withIdentifier: SegueIdentifier.presentPhoto.rawValue, sender: segueInitialization)
     }
     
     final func performPresentPhotosSegue(_ initialize: ((PhotosCollectionViewController) -> Void)? = nil) {

@@ -28,6 +28,8 @@ struct BlackboardSegue {
     
     var name: String
     var enumName: String
+    var performFuncName: String
+    var prepareFuncName: String
     var identifier: String
     var viewControllerClassName: String?
     var navigationControllerClassName: String?
@@ -44,6 +46,10 @@ extension BlackboardSegue {
         name = Naming.name(fromIdentifier: identifier)
         
         enumName = name.firstCharacterLowercased
+        
+        performFuncName = "perform\(name)Segue"
+        
+        prepareFuncName = "prepareFor\(name)Segue"
         
         self.identifier = identifier
         
