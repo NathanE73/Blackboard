@@ -31,10 +31,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet var menuContainerView: UIView!
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        handleSegue(segue, sender: sender)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

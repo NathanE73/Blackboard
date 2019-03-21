@@ -35,10 +35,6 @@ class AccountsTableViewController: UITableViewController {
         case openNewAccount
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        handleSegue(segue, sender: sender)
-    }
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return Section.allCases.count
     }

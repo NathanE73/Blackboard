@@ -28,10 +28,6 @@ class PhotosCollectionViewController: UICollectionViewController {
     
     var photoViewModels: [PhotoViewModel]!
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        handleSegue(segue, sender: sender)
-    }
-    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photoViewModels.count
     }

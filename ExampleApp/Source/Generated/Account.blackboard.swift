@@ -8,11 +8,13 @@ import UIKit
 
 private let sharedStoryboardInstance = UIStoryboard(name: "Account", bundle: nil)
 
-private class InitializeBlockObject {
+private class SegueInitialization {
     
-    let block: ((UIViewController) -> Void)
+    typealias Block = (UIViewController) -> Void
     
-    init(block: @escaping ((UIViewController) -> Void)) {
+    let block: Block
+    
+    init(block: @escaping Block) {
         self.block = block
     }
     
@@ -22,9 +24,9 @@ extension AccountViewController {
     
     // Segues
     
-    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destination)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segueInitialization = sender as? SegueInitialization {
+            segueInitialization.block(segue.destination)
         }
     }
     
@@ -40,9 +42,9 @@ extension AccountsNavigationController {
     
     // Segues
     
-    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destination)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segueInitialization = sender as? SegueInitialization {
+            segueInitialization.block(segue.destination)
         }
     }
     
@@ -70,26 +72,32 @@ extension AccountsTableViewController {
         case showAccount = "Show Account"
     }
     
-    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destination)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segueInitialization = sender as? SegueInitialization {
+            segueInitialization.block(segue.destination)
         }
     }
     
-    final func performPresentOpenAccountSegue(_ initialize: @escaping ((OpenAccountViewController) -> Void) = {_ in}) {
-        let initializeBlock = InitializeBlockObject() {
-            let navigationController = $0 as! UINavigationController
-            let viewController = navigationController.viewControllers.first as! OpenAccountViewController
-            initialize(viewController)
+    final func performPresentOpenAccountSegue(_ initialize: ((OpenAccountViewController) -> Void)? = nil) {
+        var segueInitialization: SegueInitialization?
+        if let initialize = initialize {
+            segueInitialization = SegueInitialization {
+                let navigationController = $0 as! UINavigationController
+                let viewController = navigationController.viewControllers.first as! OpenAccountViewController
+                initialize(viewController)
+            }
         }
-        performSegue(withIdentifier: SegueIdentifier.presentOpenAccount.rawValue, sender: initializeBlock)
+        performSegue(withIdentifier: SegueIdentifier.presentOpenAccount.rawValue, sender: segueInitialization)
     }
     
-    final func performShowAccountSegue(_ initialize: @escaping ((AccountViewController) -> Void) = {_ in}) {
-        let initializeBlock = InitializeBlockObject() {
-            initialize($0 as! AccountViewController)
+    final func performShowAccountSegue(_ initialize: ((AccountViewController) -> Void)? = nil) {
+        var segueInitialization: SegueInitialization?
+        if let initialize = initialize {
+            segueInitialization = SegueInitialization {
+                initialize($0 as! AccountViewController)
+            }
         }
-        performSegue(withIdentifier: SegueIdentifier.showAccount.rawValue, sender: initializeBlock)
+        performSegue(withIdentifier: SegueIdentifier.showAccount.rawValue, sender: segueInitialization)
     }
     
     // Table View Cells
@@ -131,9 +139,9 @@ extension OpenAccountViewController {
     
     // Segues
     
-    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destination)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segueInitialization = sender as? SegueInitialization {
+            segueInitialization.block(segue.destination)
         }
     }
     

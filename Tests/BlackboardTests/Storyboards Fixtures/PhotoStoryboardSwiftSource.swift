@@ -35,11 +35,13 @@ import UIKit
 
 private let sharedStoryboardInstance = UIStoryboard(name: "Photo", bundle: nil)
 
-private class InitializeBlockObject {
+private class SegueInitialization {
     
-    let block: ((UIViewController) -> Void)
+    typealias Block = (UIViewController) -> Void
     
-    init(block: @escaping ((UIViewController) -> Void)) {
+    let block: Block
+    
+    init(block: @escaping Block) {
         self.block = block
     }
     
@@ -49,9 +51,9 @@ extension PhotoViewController {
     
     // Segues
     
-    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destination)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segueInitialization = sender as? SegueInitialization {
+            segueInitialization.block(segue.destination)
         }
     }
     
@@ -78,17 +80,20 @@ extension PhotosCollectionViewController {
         case showPhoto = "Show Photo"
     }
     
-    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destination)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segueInitialization = sender as? SegueInitialization {
+            segueInitialization.block(segue.destination)
         }
     }
     
-    final func performShowPhotoSegue(_ initialize: @escaping ((PhotoViewController) -> Void) = {_ in}) {
-        let initializeBlock = InitializeBlockObject() {
-            initialize($0 as! PhotoViewController)
+    final func performShowPhotoSegue(_ initialize: ((PhotoViewController) -> Void)? = nil) {
+        var segueInitialization: SegueInitialization?
+        if let initialize = initialize {
+            segueInitialization = SegueInitialization {
+                initialize($0 as! PhotoViewController)
+            }
         }
-        performSegue(withIdentifier: SegueIdentifier.showPhoto.rawValue, sender: initializeBlock)
+        performSegue(withIdentifier: SegueIdentifier.showPhoto.rawValue, sender: segueInitialization)
     }
     
     // Collection View Cells
@@ -115,9 +120,9 @@ extension PhotosNavigationController {
     
     // Segues
     
-    func handleSegue(_ segue: UIStoryboardSegue, sender: Any?) {
-        if let initializeBlockObject = sender as? InitializeBlockObject {
-            initializeBlockObject.block(segue.destination)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segueInitialization = sender as? SegueInitialization {
+            segueInitialization.block(segue.destination)
         }
     }
     
