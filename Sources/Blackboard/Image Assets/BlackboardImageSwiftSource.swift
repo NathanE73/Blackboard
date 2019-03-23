@@ -46,7 +46,7 @@ extension SwiftSource {
         append()
         append("fileprivate extension UIImage") {
             append()
-            append("convenience init!(identifier: ImageAssetIdentifier, compatibleWithTraitCollection traitCollection: UITraitCollection? = nil)") {
+            append("convenience init!(identifier: ImageAssetIdentifier)") {
                 append("self.init(named: identifier.rawValue, in: bundle, compatibleWith: nil)")
             }
             append()

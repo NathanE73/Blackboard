@@ -13,7 +13,7 @@ fileprivate let bundle: Bundle = {
 
 fileprivate extension UIImage {
     
-    convenience init!(identifier: ImageAssetIdentifier, compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) {
+    convenience init!(identifier: ImageAssetIdentifier) {
         self.init(named: identifier.rawValue, in: bundle, compatibleWith: nil)
     }
     
