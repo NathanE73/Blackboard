@@ -1,3 +1,30 @@
+//
+// Copyright (c) 2019 Nathan E. Walczak
+//
+// MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+
+import Foundation
+
+let SupportedStoryboardTestData = """
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c7B-w5-QBM">
     <device id="retina4_7" orientation="portrait">
@@ -13,7 +40,7 @@
         <!--Item-->
         <scene sceneID="7rK-LF-43p">
             <objects>
-                <tableViewController storyboardIdentifier="StandardTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ixr-Bv-bcc" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="EmptyTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ixr-Bv-bcc" customClass="EmptyTableViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rbn-Rr-2BM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="-215" y="1600"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Empty Tab Bar Controller-->
         <scene sceneID="sp3-Bw-h1Q">
             <objects>
-                <tabBarController storyboardIdentifier="StandardTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c7B-w5-QBM" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="EmptyTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c7B-w5-QBM" customClass="EmptyTabBarController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lpk-4V-X31">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -62,7 +89,7 @@
         <!--Item-->
         <scene sceneID="fPz-NG-d7M">
             <objects>
-                <pageViewController storyboardIdentifier="StandardPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="bAc-bO-Dys" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="EmptyPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="bAc-bO-Dys" customClass="EmptyPageViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="3Si-Jd-vgm"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JB1-hs-ipX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -72,7 +99,7 @@
         <!--Item-->
         <scene sceneID="F52-xh-su9">
             <objects>
-                <collectionViewController storyboardIdentifier="StandardCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6l3-v0-rzR" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="EmptyCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6l3-v0-rzR" customClass="EmptyCollectionViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="w9C-cU-nm4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +134,7 @@
         <!--Item-->
         <scene sceneID="QRL-aB-iN0">
             <objects>
-                <navigationController storyboardIdentifier="StandardNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iLS-3K-BVg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EmptyNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iLS-3K-BVg" customClass="EmptyNavigationController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7Ob-Oi-olw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B0Z-im-Hwr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -121,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="-1178" y="209"/>
         </scene>
-        <!--View Controller-->
+        <!--Empty View Controller-->
         <scene sceneID="WuZ-3b-crf">
             <objects>
-                <viewController storyboardIdentifier="StandardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8ij-ji-OAz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmptyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8ij-ji-OAz" customClass="EmptyViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TWU-td-mYx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,3 +166,5 @@
         </scene>
     </scenes>
 </document>
+
+""".data(using: .utf8)!

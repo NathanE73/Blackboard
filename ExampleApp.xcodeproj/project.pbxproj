@@ -38,8 +38,15 @@
 		43C32F2D2239447E00D270C1 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F2C2239447E00D270C1 /* Account.swift */; };
 		43C32F2F22394B7C00D270C1 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F2E22394B7C00D270C1 /* AccountsViewModel.swift */; };
 		43C32F3122394EAA00D270C1 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F3022394EAA00D270C1 /* AccountViewModel.swift */; };
+		43C332C62245C75E00739D26 /* EmptyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C332C02245C75E00739D26 /* EmptyNavigationController.swift */; };
+		43C332C72245C75E00739D26 /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C332C12245C75E00739D26 /* EmptyTableViewController.swift */; };
+		43C332C82245C75E00739D26 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C332C22245C75E00739D26 /* EmptyViewController.swift */; };
+		43C332C92245C75E00739D26 /* EmptyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C332C32245C75E00739D26 /* EmptyTabBarController.swift */; };
+		43C332CA2245C75E00739D26 /* EmptyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C332C42245C75E00739D26 /* EmptyCollectionViewController.swift */; };
+		43C332CB2245C75E00739D26 /* EmptyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C332C52245C75E00739D26 /* EmptyPageViewController.swift */; };
+		43C332CD2245C8D200739D26 /* Supported.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C332CC2245C8D200739D26 /* Supported.blackboard.swift */; };
 		43D6442B2235958D00F1559E /* CGColor.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6442A2235958D00F1559E /* CGColor.blackboard.swift */; };
-		43E9820E2245553D00C0B1B7 /* Standard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E982102245553D00C0B1B7 /* Standard.storyboard */; };
+		43E9820E2245553D00C0B1B7 /* Supported.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E982102245553D00C0B1B7 /* Supported.storyboard */; };
 		43E982122245612800C0B1B7 /* FooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E982112245612800C0B1B7 /* FooterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +84,15 @@
 		43C32F2C2239447E00D270C1 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		43C32F2E22394B7C00D270C1 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		43C32F3022394EAA00D270C1 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		43C332C02245C75E00739D26 /* EmptyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyNavigationController.swift; sourceTree = "<group>"; };
+		43C332C12245C75E00739D26 /* EmptyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableViewController.swift; sourceTree = "<group>"; };
+		43C332C22245C75E00739D26 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		43C332C32245C75E00739D26 /* EmptyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTabBarController.swift; sourceTree = "<group>"; };
+		43C332C42245C75E00739D26 /* EmptyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewController.swift; sourceTree = "<group>"; };
+		43C332C52245C75E00739D26 /* EmptyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPageViewController.swift; sourceTree = "<group>"; };
+		43C332CC2245C8D200739D26 /* Supported.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supported.blackboard.swift; sourceTree = "<group>"; };
 		43D6442A2235958D00F1559E /* CGColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGColor.blackboard.swift; sourceTree = "<group>"; };
-		43E9820F2245553D00C0B1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Standard.storyboard; sourceTree = "<group>"; };
+		43E9820F2245553D00C0B1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Supported.storyboard; sourceTree = "<group>"; };
 		43E982112245612800C0B1B7 /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +141,7 @@
 				435E2AFF1D01F600008E1170 /* LaunchScreen.storyboard */,
 				435E2AFA1D01F600008E1170 /* Main.storyboard */,
 				432EDCB0223A916800EBB0AF /* Photo.storyboard */,
-				43E982102245553D00C0B1B7 /* Standard.storyboard */,
+				43E982102245553D00C0B1B7 /* Supported.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -140,6 +154,7 @@
 				43C2B19A1D01F7F9001B08CA /* Generated */,
 				43C32F2B223852C000D270C1 /* Main */,
 				43C32F122238494B00D270C1 /* Photo */,
+				43C332BD2245C68800739D26 /* Supported */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -162,6 +177,7 @@
 				43D6442A2235958D00F1559E /* CGColor.blackboard.swift */,
 				43C2B19B1D01F86A001B08CA /* Main.blackboard.swift */,
 				43C32F2722384C1000D270C1 /* Photo.blackboard.swift */,
+				43C332CC2245C8D200739D26 /* Supported.blackboard.swift */,
 				430867B71F27C02F006DF3D2 /* UIColor.blackboard.swift */,
 				433D6D7521E507BE00D8CB37 /* UIImage.blackboard.swift */,
 				436804992245AA2200A69FE8 /* UIKit.blackboard.swift */,
@@ -205,6 +221,19 @@
 				43C2B19D1D021533001B08CA /* MainViewController.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		43C332BD2245C68800739D26 /* Supported */ = {
+			isa = PBXGroup;
+			children = (
+				43C332C42245C75E00739D26 /* EmptyCollectionViewController.swift */,
+				43C332C02245C75E00739D26 /* EmptyNavigationController.swift */,
+				43C332C52245C75E00739D26 /* EmptyPageViewController.swift */,
+				43C332C32245C75E00739D26 /* EmptyTabBarController.swift */,
+				43C332C12245C75E00739D26 /* EmptyTableViewController.swift */,
+				43C332C22245C75E00739D26 /* EmptyViewController.swift */,
+			);
+			name = Supported;
 			sourceTree = "<group>";
 		};
 		43D644292235941D00F1559E /* Supporting Files */ = {
@@ -281,7 +310,7 @@
 				433D6D7021E5055C00D8CB37 /* Empty.storyboard in Resources */,
 				4351B62D21E502E5007B4622 /* Images.xcassets in Resources */,
 				432EDCB3223A916900EBB0AF /* Photo.storyboard in Resources */,
-				43E9820E2245553D00C0B1B7 /* Standard.storyboard in Resources */,
+				43E9820E2245553D00C0B1B7 /* Supported.storyboard in Resources */,
 				432EDCB2223A916900EBB0AF /* Account.storyboard in Resources */,
 				435E2AFC1D01F600008E1170 /* Main.storyboard in Resources */,
 			);
@@ -319,12 +348,17 @@
 				432EDC9D223985C000EBB0AF /* Photo.swift in Sources */,
 				43C32F18223849B500D270C1 /* AccountsNavigationController.swift in Sources */,
 				43C2B19E1D021533001B08CA /* MainViewController.swift in Sources */,
+				43C332C92245C75E00739D26 /* EmptyTabBarController.swift in Sources */,
 				431BCB50223AA52000E01B48 /* AccountViewController.swift in Sources */,
 				43C32F17223849B500D270C1 /* AccountsTableViewController.swift in Sources */,
 				433D6D7921E507BE00D8CB37 /* UIImage.blackboard.swift in Sources */,
 				43C32F2922384C1000D270C1 /* Photo.blackboard.swift in Sources */,
+				43C332CB2245C75E00739D26 /* EmptyPageViewController.swift in Sources */,
+				43C332C72245C75E00739D26 /* EmptyTableViewController.swift in Sources */,
 				43C2B19C1D01F86A001B08CA /* Main.blackboard.swift in Sources */,
 				43C32F2622384B2400D270C1 /* AccountTableViewCell.swift in Sources */,
+				43C332CA2245C75E00739D26 /* EmptyCollectionViewController.swift in Sources */,
+				43C332CD2245C8D200739D26 /* Supported.blackboard.swift in Sources */,
 				43E982122245612800C0B1B7 /* FooterViewController.swift in Sources */,
 				43D6442B2235958D00F1559E /* CGColor.blackboard.swift in Sources */,
 				435E2AF71D01F600008E1170 /* AppDelegate.swift in Sources */,
@@ -340,6 +374,8 @@
 				43C32F1C223849C400D270C1 /* PhotosNavigationController.swift in Sources */,
 				43C32F2D2239447E00D270C1 /* Account.swift in Sources */,
 				43C32F2A22384C1000D270C1 /* Account.blackboard.swift in Sources */,
+				43C332C82245C75E00739D26 /* EmptyViewController.swift in Sources */,
+				43C332C62245C75E00739D26 /* EmptyNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,12 +422,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		43E982102245553D00C0B1B7 /* Standard.storyboard */ = {
+		43E982102245553D00C0B1B7 /* Supported.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				43E9820F2245553D00C0B1B7 /* Base */,
 			);
-			name = Standard.storyboard;
+			name = Supported.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

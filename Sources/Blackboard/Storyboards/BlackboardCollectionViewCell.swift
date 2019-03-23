@@ -45,7 +45,10 @@ extension BlackboardCollectionViewCell {
         name = Naming.name(fromIdentifier: reuseIdentifier)
             .removingSuffix("Cell")
         
-        enumName = name.firstCharacterLowercased
+        enumName = (name.isEmpty
+            ? Naming.name(fromIdentifier: reuseIdentifier)
+            : name)
+            .firstCharacterLowercased
         
         dequeueFuncName = "dequeue\(name)Cell"
         

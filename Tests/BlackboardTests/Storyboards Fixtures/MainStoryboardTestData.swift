@@ -225,7 +225,7 @@ let MainStoryboardTestData = """
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8BK-vt-t6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053" y="945"/>
+            <point key="canvasLocation" x="1054" y="998"/>
         </scene>
     </scenes>
     <resources>
