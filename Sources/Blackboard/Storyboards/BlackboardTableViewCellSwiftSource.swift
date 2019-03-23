@@ -26,7 +26,9 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendTableViewCells(_ tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCells(_ viewController: BlackboardViewController) {
+        let tableViewCells = viewController.tableViewCells
+        
         guard tableViewCells.isEmpty == false else { return }
         
         append("// Table View Cells")

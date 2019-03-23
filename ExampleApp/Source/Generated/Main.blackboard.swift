@@ -26,11 +26,7 @@ extension MainViewControllerSegues {
     func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {}
     func prepareForPresentPhotosSegue(_ photosCollectionViewController: PhotosCollectionViewController) {}
     
-    func shouldPerformFooterSegue() -> Bool { return true }
-    func shouldPerformPresentAccountsSegue() -> Bool { return true }
-    func shouldPerformPresentOpenAccountSegue() -> Bool { return true }
     func shouldPerformPresentPhotoSegue() -> Bool { return true }
-    func shouldPerformPresentPhotosSegue() -> Bool { return true }
     
 }
 
@@ -87,17 +83,9 @@ extension MainViewController: MainViewControllerSegues {
     
     final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         switch SegueIdentifier(rawValue: identifier) {
-        case .footer?:
-            return shouldPerformFooterSegue()
-        case .presentAccounts?:
-            return shouldPerformPresentAccountsSegue()
-        case .presentOpenAccount?:
-            return shouldPerformPresentOpenAccountSegue()
         case .presentPhoto?:
             return shouldPerformPresentPhotoSegue()
-        case .presentPhotos?:
-            return shouldPerformPresentPhotosSegue()
-        case .none:
+        default:
             return true
         }
     }

@@ -44,9 +44,9 @@ extension SwiftSource {
             append()
             appendInstantiateViewController(viewController)
             appendInstantiateNavigationController(viewController)
-            appendSegues(viewController.segues)
-            appendTableViewCells(viewController.tableViewCells)
-            appendCollectionViewCells(viewController.collectionViewCells)
+            appendSegues(viewController)
+            appendTableViewCells(viewController)
+            appendCollectionViewCells(viewController)
         }
         append()
     }
@@ -61,8 +61,10 @@ extension SwiftSource {
                 append("func \(segue.prepareFuncName)(_ \(segue.viewControllerParameterName): \(segue.viewControllerClassName)) {}")
             }
             append()
-            viewController.segues.forEach { segue in
-                append("func \(segue.shouldPerformFuncName)() -> Bool { return true }")
+            viewController.shouldPerformSegues.forEach { segue in
+                if let shouldPerformFuncName = segue.shouldPerformFuncName {
+                    append("func \(shouldPerformFuncName)() -> Bool { return true }")
+                }
             }
             append()
         }

@@ -31,9 +31,6 @@ extension AccountsTableViewControllerSegues {
     func prepareForPresentOpenAccountSegue(_ openAccountViewController: OpenAccountViewController) {}
     func prepareForShowAccountSegue(_ accountViewController: AccountViewController) {}
     
-    func shouldPerformPresentOpenAccountSegue() -> Bool { return true }
-    func shouldPerformShowAccountSegue() -> Bool { return true }
-    
 }
 
 extension AccountsTableViewController: AccountsTableViewControllerSegues {
@@ -73,17 +70,6 @@ extension AccountsTableViewController: AccountsTableViewControllerSegues {
             prepareForShowAccountSegue(viewController)
         case .none:
             break
-        }
-    }
-    
-    final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        switch SegueIdentifier(rawValue: identifier) {
-        case .presentOpenAccount?:
-            return shouldPerformPresentOpenAccountSegue()
-        case .showAccount?:
-            return shouldPerformShowAccountSegue()
-        case .none:
-            return true
         }
     }
     

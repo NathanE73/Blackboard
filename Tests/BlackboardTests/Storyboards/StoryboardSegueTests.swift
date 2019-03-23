@@ -32,7 +32,7 @@ class StoryboardSegueTests: XCTestCase {
     
     func testDescription() {
         // Given
-        let segue = StoryboardSegue(id: "007", kind: .embed, identifier: "ShowMovie", destination: "diamonds")
+        let segue = StoryboardSegue(id: "007", kind: .embed, identifier: "ShowMovie", destination: "diamonds", isAutomatic: true)
         
         // When
         let description = segue.description
@@ -43,7 +43,7 @@ class StoryboardSegueTests: XCTestCase {
     
     func testDescriptionWithNilIdentifier() {
         // Given
-        let segue = StoryboardSegue(id: "007", kind: .embed, identifier: nil, destination: "diamonds")
+        let segue = StoryboardSegue(id: "007", kind: .embed, identifier: nil, destination: "diamonds", isAutomatic: false)
         
         // When
         let description = segue.description

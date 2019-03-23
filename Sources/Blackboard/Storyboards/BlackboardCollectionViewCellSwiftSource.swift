@@ -26,7 +26,9 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendCollectionViewCells(_ collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendCollectionViewCells(_ viewController: BlackboardViewController) {
+        let collectionViewCells = viewController.collectionViewCells
+        
         guard collectionViewCells.isEmpty == false else { return }
         
         append("// Collection View Cells")

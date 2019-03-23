@@ -26,14 +26,17 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendSegues(_ segues: [BlackboardSegue]) {
+    func appendSegues(_ viewController: BlackboardViewController) {
+        let segues = viewController.segues
+        let shouldPerformSegues = viewController.shouldPerformSegues
+        
         guard segues.isEmpty == false else { return }
         
         append("// Segues")
         append()
         appendSegueIdentifierFor(segues)
         appendPrepareForSegue(segues)
-        appendShouldPerformSegue(segues)
+        appendShouldPerformSegue(shouldPerformSegues)
         appendPerformSegueFor(segues)
         append()
     }
@@ -88,10 +91,12 @@ extension SwiftSource {
     }
     
     func appendShouldPerformSegue(_ segues: [BlackboardSegue]) {
+        guard segues.isEmpty == false else { return }
+        
         append("final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool") {
             append("switch SegueIdentifier(rawValue: identifier) {")
             segues.forEach(appendShouldPerformSegue)
-            append("case .none:")
+            append("default:")
             indent {
                 append("return true")
             }
@@ -101,9 +106,11 @@ extension SwiftSource {
     }
     
     func appendShouldPerformSegue(_ segue: BlackboardSegue) {
+        guard let shouldPerformFuncName = segue.shouldPerformFuncName else { return }
+        
         append("case .\(segue.enumName)?:")
         indent {
-            append("return \(segue.shouldPerformFuncName)()")
+            append("return \(shouldPerformFuncName)()")
         }
     }
     

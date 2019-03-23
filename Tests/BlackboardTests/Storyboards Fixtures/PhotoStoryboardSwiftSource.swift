@@ -53,8 +53,6 @@ extension PhotosCollectionViewControllerSegues {
     
     func prepareForShowPhotoSegue(_ photoViewController: PhotoViewController) {}
     
-    func shouldPerformShowPhotoSegue() -> Bool { return true }
-    
 }
 
 extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
@@ -89,15 +87,6 @@ extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
             prepareForShowPhotoSegue(viewController)
         case .none:
             break
-        }
-    }
-    
-    final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        switch SegueIdentifier(rawValue: identifier) {
-        case .showPhoto?:
-            return shouldPerformShowPhotoSegue()
-        case .none:
-            return true
         }
     }
     
