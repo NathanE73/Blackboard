@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
     
     var footerViewController: FooterViewController!
     
-    func prepareForFooterSegue(footerViewController: FooterViewController) {
+    func prepareForFooterSegue(_ footerViewController: FooterViewController) {
         self.footerViewController = footerViewController
     }
     
@@ -90,7 +90,7 @@ class MainViewController: UIViewController {
         }
     }
     
-    func prepareForPresentPhotoSegue(photoViewController: PhotoViewController) {
+    func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {
         photoViewController.viewModel = PhotoViewModel.examples.first
     }
     

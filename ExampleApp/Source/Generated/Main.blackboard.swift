@@ -8,67 +8,28 @@ import UIKit
 
 private let sharedStoryboardInstance = UIStoryboard(name: "Main", bundle: nil)
 
-private class SegueInitialization {
-    
-    typealias Block = (UIViewController) -> Void
-    
-    let block: Block
-    
-    init(block: @escaping Block) {
-        self.block = block
-    }
-    
-}
-
-protocol FooterViewControllerSegues {
-}
-
-extension FooterViewControllerSegues {
-}
-
-extension FooterViewController: FooterViewControllerSegues {
+extension FooterViewController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ footerViewController: FooterViewController) -> Void)? = nil) -> FooterViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "FooterViewController") as! FooterViewController
-        initialize?(viewController)
-        return viewController
-    }
-    
-    // Segues
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        return instantiateViewController(from: sharedStoryboardInstance, identifier: "FooterViewController", initialize)
     }
     
 }
 
-protocol MainViewControllerSegues {
-}
+protocol MainViewControllerSegues {}
 
 extension MainViewControllerSegues {
-    
-    func prepareForFooterSegue(footerViewController: FooterViewController) {
-    }
-    
-    func prepareForPresentAccountsSegue(accountsTableViewController: AccountsTableViewController) {
-    }
-    
-    func prepareForPresentOpenAccountSegue(openAccountViewController: OpenAccountViewController) {
-    }
-    
-    func prepareForPresentPhotoSegue(photoViewController: PhotoViewController) {
-    }
-    
-    func prepareForPresentPhotosSegue(photosCollectionViewController: PhotosCollectionViewController) {
-    }
-    
+    func prepareForFooterSegue(_ footerViewController: FooterViewController) {}
+    func prepareForPresentAccountsSegue(_ accountsTableViewController: AccountsTableViewController) {}
+    func prepareForPresentOpenAccountSegue(_ openAccountViewController: OpenAccountViewController) {}
+    func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {}
+    func prepareForPresentPhotosSegue(_ photosCollectionViewController: PhotosCollectionViewController) {}
 }
 
 extension MainViewController: MainViewControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ mainViewController: MainViewController) -> Void)? = nil) -> MainViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "WelcomeViewController") as! MainViewController
-        initialize?(viewController)
-        return viewController
+        return instantiateViewController(from: sharedStoryboardInstance, identifier: "WelcomeViewController", initialize)
     }
     
     // Segues
@@ -94,84 +55,46 @@ extension MainViewController: MainViewControllerSegues {
         switch SegueIdentifier(rawValue: identifier) {
         case .footer?:
             let viewController = segue.destination as! FooterViewController
-            prepareForFooterSegue(footerViewController: viewController)
+            prepareForFooterSegue(viewController)
         case .presentAccounts?:
             let navigationController = segue.destination as! AccountsNavigationController
             let viewController = navigationController.viewControllers.first as! AccountsTableViewController
-            prepareForPresentAccountsSegue(accountsTableViewController: viewController)
+            prepareForPresentAccountsSegue(viewController)
         case .presentOpenAccount?:
             let navigationController = segue.destination as! UINavigationController
             let viewController = navigationController.viewControllers.first as! OpenAccountViewController
-            prepareForPresentOpenAccountSegue(openAccountViewController: viewController)
+            prepareForPresentOpenAccountSegue(viewController)
         case .presentPhoto?:
             let navigationController = segue.destination as! UINavigationController
             let viewController = navigationController.viewControllers.first as! PhotoViewController
-            prepareForPresentPhotoSegue(photoViewController: viewController)
+            prepareForPresentPhotoSegue(viewController)
         case .presentPhotos?:
             let navigationController = segue.destination as! PhotosNavigationController
             let viewController = navigationController.viewControllers.first as! PhotosCollectionViewController
-            prepareForPresentPhotosSegue(photosCollectionViewController: viewController)
+            prepareForPresentPhotosSegue(viewController)
         default:
             break
         }
     }
     
     final func performFooterSegue(_ initialize: ((FooterViewController) -> Void)? = nil) {
-        var segueInitialization: SegueInitialization?
-        if let initialize = initialize {
-            segueInitialization = SegueInitialization {
-                initialize($0 as! FooterViewController)
-            }
-        }
-        performSegue(withIdentifier: SegueIdentifier.footer.rawValue, sender: segueInitialization)
+        performViewControllerSegue(SegueIdentifier.footer.rawValue, initialize)
     }
     
     final func performPresentAccountsSegue(_ initialize: ((AccountsTableViewController) -> Void)? = nil) {
-        var segueInitialization: SegueInitialization?
-        if let initialize = initialize {
-            segueInitialization = SegueInitialization {
-                let navigationController = $0 as! AccountsNavigationController
-                let viewController = navigationController.viewControllers.first as! AccountsTableViewController
-                initialize(viewController)
-            }
-        }
-        performSegue(withIdentifier: SegueIdentifier.presentAccounts.rawValue, sender: segueInitialization)
+        performNavigationControllerSegue(SegueIdentifier.presentAccounts.rawValue, initialize)
     }
     
     final func performPresentOpenAccountSegue(_ initialize: ((OpenAccountViewController) -> Void)? = nil) {
-        var segueInitialization: SegueInitialization?
-        if let initialize = initialize {
-            segueInitialization = SegueInitialization {
-                let navigationController = $0 as! UINavigationController
-                let viewController = navigationController.viewControllers.first as! OpenAccountViewController
-                initialize(viewController)
-            }
-        }
-        performSegue(withIdentifier: SegueIdentifier.presentOpenAccount.rawValue, sender: segueInitialization)
+        performNavigationControllerSegue(SegueIdentifier.presentOpenAccount.rawValue, initialize)
     }
     
     final func performPresentPhotoSegue(_ initialize: ((PhotoViewController) -> Void)? = nil) {
-        var segueInitialization: SegueInitialization?
-        if let initialize = initialize {
-            segueInitialization = SegueInitialization {
-                let navigationController = $0 as! UINavigationController
-                let viewController = navigationController.viewControllers.first as! PhotoViewController
-                initialize(viewController)
-            }
-        }
-        performSegue(withIdentifier: SegueIdentifier.presentPhoto.rawValue, sender: segueInitialization)
+        performNavigationControllerSegue(SegueIdentifier.presentPhoto.rawValue, initialize)
     }
     
     final func performPresentPhotosSegue(_ initialize: ((PhotosCollectionViewController) -> Void)? = nil) {
-        var segueInitialization: SegueInitialization?
-        if let initialize = initialize {
-            segueInitialization = SegueInitialization {
-                let navigationController = $0 as! PhotosNavigationController
-                let viewController = navigationController.viewControllers.first as! PhotosCollectionViewController
-                initialize(viewController)
-            }
-        }
-        performSegue(withIdentifier: SegueIdentifier.presentPhotos.rawValue, sender: segueInitialization)
+        performNavigationControllerSegue(SegueIdentifier.presentPhotos.rawValue, initialize)
     }
     
 }

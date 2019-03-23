@@ -24,6 +24,7 @@
 		435E2AFE1D01F600008E1170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435E2AFD1D01F600008E1170 /* Assets.xcassets */; };
 		435E2B011D01F600008E1170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435E2AFF1D01F600008E1170 /* LaunchScreen.storyboard */; };
 		436292E41F27CEBC0000C651 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436292E31F27CEBC0000C651 /* Colors.xcassets */; };
+		4368049A2245AA2200A69FE8 /* UIKit.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436804992245AA2200A69FE8 /* UIKit.blackboard.swift */; };
 		43C2B19C1D01F86A001B08CA /* Main.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19B1D01F86A001B08CA /* Main.blackboard.swift */; };
 		43C2B19E1D021533001B08CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19D1D021533001B08CA /* MainViewController.swift */; };
 		43C32F17223849B500D270C1 /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F15223849B500D270C1 /* AccountsTableViewController.swift */; };
@@ -62,6 +63,7 @@
 		435E2B001D01F600008E1170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435E2B021D01F600008E1170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		436292E31F27CEBC0000C651 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		436804992245AA2200A69FE8 /* UIKit.blackboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.blackboard.swift; sourceTree = "<group>"; };
 		43C2B19B1D01F86A001B08CA /* Main.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.blackboard.swift; sourceTree = "<group>"; };
 		43C2B19D1D021533001B08CA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		43C32F15223849B500D270C1 /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				43C32F2722384C1000D270C1 /* Photo.blackboard.swift */,
 				430867B71F27C02F006DF3D2 /* UIColor.blackboard.swift */,
 				433D6D7521E507BE00D8CB37 /* UIImage.blackboard.swift */,
+				436804992245AA2200A69FE8 /* UIKit.blackboard.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				43E982122245612800C0B1B7 /* FooterViewController.swift in Sources */,
 				43D6442B2235958D00F1559E /* CGColor.blackboard.swift in Sources */,
 				435E2AF71D01F600008E1170 /* AppDelegate.swift in Sources */,
+				4368049A2245AA2200A69FE8 /* UIKit.blackboard.swift in Sources */,
 				432EDCA922399C9A00EBB0AF /* PhotoCollectionViewCell.swift in Sources */,
 				432EDCB7223A96EE00EBB0AF /* PhotoViewModel.swift in Sources */,
 				430867B81F27C02F006DF3D2 /* UIColor.blackboard.swift in Sources */,

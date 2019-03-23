@@ -74,6 +74,11 @@ public class BlackboardMain {
             exit(1)
         }
         
+        // UIKit
+        
+        let uiKitTargetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.uiKit)")
+        try! UIKitSwiftSource.write(to: uiKitTargetUrl, atomically: true, encoding: .utf8)
+        
         // Process Storyboards
         
         let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)

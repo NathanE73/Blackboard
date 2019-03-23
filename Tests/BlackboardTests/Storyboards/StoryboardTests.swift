@@ -58,7 +58,7 @@ class StoryboardTests: XCTestCase {
         XCTAssertEqual(storyboard?.name, "Main")
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BYZ-38-t0r")
         
-        XCTAssertEqual(storyboard?.viewControllers.count, 5)
+        XCTAssertEqual(storyboard?.viewControllers.count, 6)
     }
     
     func testPhoto() {

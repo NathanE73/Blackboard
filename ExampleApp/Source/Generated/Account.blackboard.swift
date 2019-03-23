@@ -8,86 +8,37 @@ import UIKit
 
 private let sharedStoryboardInstance = UIStoryboard(name: "Account", bundle: nil)
 
-private class SegueInitialization {
-    
-    typealias Block = (UIViewController) -> Void
-    
-    let block: Block
-    
-    init(block: @escaping Block) {
-        self.block = block
-    }
-    
-}
-
-protocol AccountViewControllerSegues {
-}
-
-extension AccountViewControllerSegues {
-}
-
-extension AccountViewController: AccountViewControllerSegues {
+extension AccountViewController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ accountViewController: AccountViewController) -> Void)? = nil) -> AccountViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "AccountViewController") as! AccountViewController
-        initialize?(viewController)
-        return viewController
-    }
-    
-    // Segues
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        return instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountViewController", initialize)
     }
     
 }
 
-protocol AccountsNavigationControllerSegues {
-}
-
-extension AccountsNavigationControllerSegues {
-}
-
-extension AccountsNavigationController: AccountsNavigationControllerSegues {
+extension AccountsNavigationController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ accountsNavigationController: AccountsNavigationController) -> Void)? = nil) -> AccountsNavigationController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "AccountNavigationController") as! AccountsNavigationController
-        initialize?(viewController)
-        return viewController
-    }
-    
-    // Segues
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        return instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountNavigationController", initialize)
     }
     
 }
 
-protocol AccountsTableViewControllerSegues {
-}
+protocol AccountsTableViewControllerSegues {}
 
 extension AccountsTableViewControllerSegues {
-    
-    func prepareForPresentOpenAccountSegue(openAccountViewController: OpenAccountViewController) {
-    }
-    
-    func prepareForShowAccountSegue(accountViewController: AccountViewController) {
-    }
-    
+    func prepareForPresentOpenAccountSegue(_ openAccountViewController: OpenAccountViewController) {}
+    func prepareForShowAccountSegue(_ accountViewController: AccountViewController) {}
 }
 
 extension AccountsTableViewController: AccountsTableViewControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ accountsTableViewController: AccountsTableViewController) -> Void)? = nil) -> AccountsTableViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "AccountTableViewController") as! AccountsTableViewController
-        initialize?(viewController)
-        return viewController
+        return instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountTableViewController", initialize)
     }
     
     final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ accountsTableViewController: AccountsTableViewController) -> Void)? = nil) -> UINavigationController {
-        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "AccountNavigationController") as! UINavigationController
-        let viewController = navigationController.viewControllers.first as! AccountsTableViewController
-        initialize?(viewController)
-        return navigationController
+        return instantiateNavigationController(from: sharedStoryboardInstance, identifier: "AccountNavigationController", initialize)
     }
     
     // Segues
@@ -111,35 +62,21 @@ extension AccountsTableViewController: AccountsTableViewControllerSegues {
         case .presentOpenAccount?:
             let navigationController = segue.destination as! UINavigationController
             let viewController = navigationController.viewControllers.first as! OpenAccountViewController
-            prepareForPresentOpenAccountSegue(openAccountViewController: viewController)
+            prepareForPresentOpenAccountSegue(viewController)
         case .showAccount?:
             let viewController = segue.destination as! AccountViewController
-            prepareForShowAccountSegue(accountViewController: viewController)
+            prepareForShowAccountSegue(viewController)
         default:
             break
         }
     }
     
     final func performPresentOpenAccountSegue(_ initialize: ((OpenAccountViewController) -> Void)? = nil) {
-        var segueInitialization: SegueInitialization?
-        if let initialize = initialize {
-            segueInitialization = SegueInitialization {
-                let navigationController = $0 as! UINavigationController
-                let viewController = navigationController.viewControllers.first as! OpenAccountViewController
-                initialize(viewController)
-            }
-        }
-        performSegue(withIdentifier: SegueIdentifier.presentOpenAccount.rawValue, sender: segueInitialization)
+        performNavigationControllerSegue(SegueIdentifier.presentOpenAccount.rawValue, initialize)
     }
     
     final func performShowAccountSegue(_ initialize: ((AccountViewController) -> Void)? = nil) {
-        var segueInitialization: SegueInitialization?
-        if let initialize = initialize {
-            segueInitialization = SegueInitialization {
-                initialize($0 as! AccountViewController)
-            }
-        }
-        performSegue(withIdentifier: SegueIdentifier.showAccount.rawValue, sender: segueInitialization)
+        performViewControllerSegue(SegueIdentifier.showAccount.rawValue, initialize)
     }
     
     // Table View Cells
@@ -151,49 +88,27 @@ extension AccountsTableViewController: AccountsTableViewControllerSegues {
     }
     
     final func dequeueAccountCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountCell: AccountTableViewCell) -> Void)? = nil) -> AccountTableViewCell {
-        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.account.rawValue, for: indexPath) as! AccountTableViewCell
-        initialize?(tableViewCell)
-        return tableViewCell
+        return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.account.rawValue, for: indexPath, initialize)
     }
     
     final func dequeueAccountOverviewCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountOverviewCell: AccountOverviewTableViewCell) -> Void)? = nil) -> AccountOverviewTableViewCell {
-        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountOverview.rawValue, for: indexPath) as! AccountOverviewTableViewCell
-        initialize?(tableViewCell)
-        return tableViewCell
+        return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountOverview.rawValue, for: indexPath, initialize)
     }
     
     final func dequeueOpenNewAccountCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ cell: UITableViewCell) -> Void)? = nil) -> UITableViewCell {
-        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.openNewAccount.rawValue, for: indexPath)
-        initialize?(tableViewCell)
-        return tableViewCell
+        return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.openNewAccount.rawValue, for: indexPath, initialize)
     }
     
 }
 
-protocol OpenAccountViewControllerSegues {
-}
-
-extension OpenAccountViewControllerSegues {
-}
-
-extension OpenAccountViewController: OpenAccountViewControllerSegues {
+extension OpenAccountViewController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ openAccountViewController: OpenAccountViewController) -> Void)? = nil) -> OpenAccountViewController {
-        let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "OpenAccountViewController") as! OpenAccountViewController
-        initialize?(viewController)
-        return viewController
+        return instantiateViewController(from: sharedStoryboardInstance, identifier: "OpenAccountViewController", initialize)
     }
     
     final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ openAccountViewController: OpenAccountViewController) -> Void)? = nil) -> UINavigationController {
-        let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: "OpenAccountNavigationController") as! UINavigationController
-        let viewController = navigationController.viewControllers.first as! OpenAccountViewController
-        initialize?(viewController)
-        return navigationController
-    }
-    
-    // Segues
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        return instantiateNavigationController(from: sharedStoryboardInstance, identifier: "OpenAccountNavigationController", initialize)
     }
     
 }

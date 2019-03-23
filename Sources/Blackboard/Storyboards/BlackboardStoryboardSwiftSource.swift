@@ -37,7 +37,6 @@ extension SwiftSource {
         append()
         append("private let sharedStoryboardInstance = UIStoryboard(name: \"\(storyboard.name)\", bundle: nil)")
         append()
-        appendSegueInitialization()
         appendViewControllers(storyboard.viewControllers)
     }
     
