@@ -102,6 +102,14 @@ class AccountsTableViewController: UITableViewController {
         present(navigationController, animated: true)
     }
     
+    @IBAction func alternativePresentOpenAccount() {
+        let openAccountViewController = OpenAccountViewController.instantiateFromStoryboard()
+        openAccountViewController.path = "Instantiate View Controller"
+        
+        let navigationController = UINavigationController(rootViewController: openAccountViewController)
+        present(navigationController, animated: true)
+    }
+    
     @IBAction func dismiss() {
         dismiss(animated: true, completion: nil)
     }

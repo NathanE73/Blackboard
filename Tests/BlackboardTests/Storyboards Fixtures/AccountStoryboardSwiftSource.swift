@@ -54,11 +54,13 @@ extension AccountsNavigationController {
 protocol AccountsTableViewControllerSegues {}
 
 extension AccountsTableViewControllerSegues {
+    
     func prepareForPresentOpenAccountSegue(_ openAccountViewController: OpenAccountViewController) {}
     func prepareForShowAccountSegue(_ accountViewController: AccountViewController) {}
     
     func shouldPerformPresentOpenAccountSegue() -> Bool { return true }
     func shouldPerformShowAccountSegue() -> Bool { return true }
+    
 }
 
 extension AccountsTableViewController: AccountsTableViewControllerSegues {

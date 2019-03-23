@@ -19,6 +19,7 @@ extension FooterViewController {
 protocol MainViewControllerSegues {}
 
 extension MainViewControllerSegues {
+    
     func prepareForFooterSegue(_ footerViewController: FooterViewController) {}
     func prepareForPresentAccountsSegue(_ accountsTableViewController: AccountsTableViewController) {}
     func prepareForPresentOpenAccountSegue(_ openAccountViewController: OpenAccountViewController) {}
@@ -30,6 +31,7 @@ extension MainViewControllerSegues {
     func shouldPerformPresentOpenAccountSegue() -> Bool { return true }
     func shouldPerformPresentPhotoSegue() -> Bool { return true }
     func shouldPerformPresentPhotosSegue() -> Bool { return true }
+    
 }
 
 extension MainViewController: MainViewControllerSegues {

@@ -90,6 +90,10 @@ class MainViewController: UIViewController {
         }
     }
     
+    func shouldPerformPresentPhotoSegue() -> Bool {
+        return PhotoViewModel.examples.first != nil
+    }
+    
     func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {
         photoViewController.viewModel = PhotoViewModel.examples.first
     }

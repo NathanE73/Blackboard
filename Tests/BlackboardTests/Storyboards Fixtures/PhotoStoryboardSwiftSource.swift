@@ -50,9 +50,11 @@ extension PhotoViewController {
 protocol PhotosCollectionViewControllerSegues {}
 
 extension PhotosCollectionViewControllerSegues {
+    
     func prepareForShowPhotoSegue(_ photoViewController: PhotoViewController) {}
     
     func shouldPerformShowPhotoSegue() -> Bool { return true }
+    
 }
 
 extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
