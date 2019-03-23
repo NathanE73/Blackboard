@@ -29,6 +29,7 @@ struct BlackboardSegue {
     var name: String
     var enumName: String
     var performFuncName: String
+    var shouldPerformFuncName: String
     var prepareFuncName: String
     var identifier: String
     var viewControllerClassName: String
@@ -50,6 +51,8 @@ extension BlackboardSegue {
         
         performFuncName = "perform\(name)Segue"
         
+        shouldPerformFuncName = "shouldPerform\(name)Segue"
+
         prepareFuncName = "prepareFor\(name)Segue"
         
         self.identifier = identifier

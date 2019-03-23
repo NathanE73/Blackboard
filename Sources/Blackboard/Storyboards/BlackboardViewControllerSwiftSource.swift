@@ -59,6 +59,10 @@ extension SwiftSource {
             viewController.segues.forEach { segue in
                 append("func \(segue.prepareFuncName)(_ \(segue.viewControllerParameterName): \(segue.viewControllerClassName)) {}")
             }
+            append()
+            viewController.segues.forEach { segue in
+                append("func \(segue.shouldPerformFuncName)() -> Bool { return true }")
+            }
         }
         append()
     }

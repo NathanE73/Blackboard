@@ -51,6 +51,12 @@ extension MainViewControllerSegues {
     func prepareForPresentOpenAccountSegue(_ openAccountViewController: OpenAccountViewController) {}
     func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {}
     func prepareForPresentPhotosSegue(_ photosCollectionViewController: PhotosCollectionViewController) {}
+    
+    func shouldPerformFooterSegue() -> Bool { return true }
+    func shouldPerformPresentAccountsSegue() -> Bool { return true }
+    func shouldPerformPresentOpenAccountSegue() -> Bool { return true }
+    func shouldPerformPresentPhotoSegue() -> Bool { return true }
+    func shouldPerformPresentPhotosSegue() -> Bool { return true }
 }
 
 extension MainViewController: MainViewControllerSegues {
@@ -69,7 +75,7 @@ extension MainViewController: MainViewControllerSegues {
         case presentPhotos = "Present Photos"
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    final override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segueInitialization = sender as? SegueInitialization {
             segueInitialization.block(segue.destination)
             return
@@ -99,8 +105,25 @@ extension MainViewController: MainViewControllerSegues {
             let navigationController = segue.destination as! PhotosNavigationController
             let viewController = navigationController.viewControllers.first as! PhotosCollectionViewController
             prepareForPresentPhotosSegue(viewController)
-        default:
+        case .none:
             break
+        }
+    }
+    
+    final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        switch SegueIdentifier(rawValue: identifier) {
+        case .footer?:
+            return shouldPerformFooterSegue()
+        case .presentAccounts?:
+            return shouldPerformPresentAccountsSegue()
+        case .presentOpenAccount?:
+            return shouldPerformPresentOpenAccountSegue()
+        case .presentPhoto?:
+            return shouldPerformPresentPhotoSegue()
+        case .presentPhotos?:
+            return shouldPerformPresentPhotosSegue()
+        case .none:
+            return true
         }
     }
     

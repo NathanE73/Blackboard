@@ -33,6 +33,7 @@ extension SwiftSource {
         append()
         appendSegueIdentifierFor(segues)
         appendPrepareForSegue(segues)
+        appendShouldPerformSegue(segues)
         appendPerformSegueFor(segues)
         append()
     }
@@ -47,7 +48,7 @@ extension SwiftSource {
     }
     
     func appendPrepareForSegue(_ segues: [BlackboardSegue]) {
-        append("override func prepare(for segue: UIStoryboardSegue, sender: Any?)") {
+        append("final override func prepare(for segue: UIStoryboardSegue, sender: Any?)") {
             guard !segues.isEmpty else { return }
             
             append("if let segueInitialization = sender as? SegueInitialization") {
@@ -63,7 +64,7 @@ extension SwiftSource {
             
             append("switch SegueIdentifier(rawValue: identifier) {")
             segues.forEach(appendPrepareForSegue)
-            append("default:")
+            append("case .none:")
             indent {
                 append("break")
             }
@@ -83,6 +84,26 @@ extension SwiftSource {
                 append("let viewController = segue.destination as! \(segue.viewControllerClassName)")
             }
             append("\(segue.prepareFuncName)(viewController)")
+        }
+    }
+    
+    func appendShouldPerformSegue(_ segues: [BlackboardSegue]) {
+        append("final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool") {
+            append("switch SegueIdentifier(rawValue: identifier) {")
+            segues.forEach(appendShouldPerformSegue)
+            append("case .none:")
+            indent {
+                append("return true")
+            }
+            append("}")
+        }
+        append()
+    }
+    
+    func appendShouldPerformSegue(_ segue: BlackboardSegue) {
+        append("case .\(segue.enumName)?:")
+        indent {
+            append("return \(segue.shouldPerformFuncName)()")
         }
     }
     

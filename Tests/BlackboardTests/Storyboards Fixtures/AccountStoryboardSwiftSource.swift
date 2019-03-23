@@ -56,6 +56,9 @@ protocol AccountsTableViewControllerSegues {}
 extension AccountsTableViewControllerSegues {
     func prepareForPresentOpenAccountSegue(_ openAccountViewController: OpenAccountViewController) {}
     func prepareForShowAccountSegue(_ accountViewController: AccountViewController) {}
+    
+    func shouldPerformPresentOpenAccountSegue() -> Bool { return true }
+    func shouldPerformShowAccountSegue() -> Bool { return true }
 }
 
 extension AccountsTableViewController: AccountsTableViewControllerSegues {
@@ -75,7 +78,7 @@ extension AccountsTableViewController: AccountsTableViewControllerSegues {
         case showAccount = "Show Account"
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    final override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segueInitialization = sender as? SegueInitialization {
             segueInitialization.block(segue.destination)
             return
@@ -93,8 +96,19 @@ extension AccountsTableViewController: AccountsTableViewControllerSegues {
         case .showAccount?:
             let viewController = segue.destination as! AccountViewController
             prepareForShowAccountSegue(viewController)
-        default:
+        case .none:
             break
+        }
+    }
+    
+    final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        switch SegueIdentifier(rawValue: identifier) {
+        case .presentOpenAccount?:
+            return shouldPerformPresentOpenAccountSegue()
+        case .showAccount?:
+            return shouldPerformShowAccountSegue()
+        case .none:
+            return true
         }
     }
     

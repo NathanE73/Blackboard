@@ -24,6 +24,8 @@ protocol PhotosCollectionViewControllerSegues {}
 
 extension PhotosCollectionViewControllerSegues {
     func prepareForShowPhotoSegue(_ photoViewController: PhotoViewController) {}
+    
+    func shouldPerformShowPhotoSegue() -> Bool { return true }
 }
 
 extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
@@ -42,7 +44,7 @@ extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
         case showPhoto = "Show Photo"
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    final override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segueInitialization = sender as? SegueInitialization {
             segueInitialization.block(segue.destination)
             return
@@ -56,8 +58,17 @@ extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
         case .showPhoto?:
             let viewController = segue.destination as! PhotoViewController
             prepareForShowPhotoSegue(viewController)
-        default:
+        case .none:
             break
+        }
+    }
+    
+    final override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        switch SegueIdentifier(rawValue: identifier) {
+        case .showPhoto?:
+            return shouldPerformShowPhotoSegue()
+        case .none:
+            return true
         }
     }
     
