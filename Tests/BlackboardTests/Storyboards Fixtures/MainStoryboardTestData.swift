@@ -209,11 +209,10 @@ let MainStoryboardTestData = """
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8v-js-8oh">
                                 <rect key="frame" x="142.5" y="7.5" width="90.5" height="25"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="Charcoal"/>
                         <constraints>
                             <constraint firstItem="o8v-js-8oh" firstAttribute="centerX" secondItem="fw7-uK-vEY" secondAttribute="centerX" id="EaP-j3-hFO"/>
                             <constraint firstItem="o8v-js-8oh" firstAttribute="centerY" secondItem="fw7-uK-vEY" secondAttribute="centerY" id="OZO-gj-q2G"/>
@@ -231,9 +230,6 @@ let MainStoryboardTestData = """
     <resources>
         <namedColor name="Bisque">
             <color red="1" green="0.89399999380111694" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Charcoal">
-            <color red="0.21199999749660492" green="0.27099999785423279" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="maroon color">
             <color red="0.50199997425079346" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

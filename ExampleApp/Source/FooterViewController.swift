@@ -37,4 +37,11 @@ class FooterViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .charcoal
+        footerLabel.textColor = .white
+    }
+    
 }

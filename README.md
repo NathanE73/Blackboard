@@ -120,6 +120,15 @@ override func collectionView(_ collectionView: UICollectionView, cellForItemAt i
 }
 ```
 
+## Asset Usage
+
+### UIColor
+
+[Background Color](ExampleApp/Source/FooterViewController.swift#L43)
+```swift
+view.backgroundColor = .charcoal
+```
+
 ## Authors
 
 - Nathan Walczak, knate@knate.com
