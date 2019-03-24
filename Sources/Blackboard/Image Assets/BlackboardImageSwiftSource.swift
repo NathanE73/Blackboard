@@ -27,8 +27,6 @@ import Foundation
 extension SwiftSource {
     
     func appendImages(images: [BlackboardImage]) {
-        let images = images.sorted { $0.functionName < $1.functionName }
-        
         append("//")
         append("//  \(Filename.uiImage)")
         append("//")

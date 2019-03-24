@@ -27,8 +27,6 @@ import Foundation
 extension SwiftSource {
     
     func appendCGColors(colors: [BlackboardColor]) {
-        let colors = colors.sorted { $0.functionName < $1.functionName }
-        
         append("//")
         append("//  \(Filename.cgColor)")
         append("//")
@@ -52,8 +50,6 @@ extension SwiftSource {
     }
     
     func appendUIColors(colors: [BlackboardColor]) {
-        let colors = colors.sorted { $0.functionName < $1.functionName }
-        
         append("//")
         append("//  \(Filename.uiColor)")
         append("//")
@@ -98,6 +94,8 @@ extension SwiftSource {
     }
     
     func appendUIColor(color: BlackboardColor) {
+        guard color.isStock == false else { return }
+        
         append("// \(color.hexValue) \(color.rgbaValue)")
         append("static let \(color.functionName) = color(identifier: .\(color.caseName), red: \(color.redStringValue), green: \(color.greenStringValue), blue: \(color.blueStringValue), alpha: \(color.alphaStringValue))")
         append()

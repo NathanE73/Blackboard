@@ -46,13 +46,28 @@ enum ColorAssetName: String {
     
     case absoluteZero = "Absolute Zero"
     case bisque = "Bisque"
+    case black = "black"
+    case blue = "blue"
+    case brown = "brown"
     case charcoal = "Charcoal"
+    case clear = "clear"
+    case cyan = "cyan"
+    case darkGray = "darkGray"
     case darkOliveGreen = "dark-olive-green"
     case desire = "Desire"
     case emerald = "Emerald"
     case firebrick = "firebrick-color"
+    case gray = "gray"
+    case green = "green"
+    case lightGray = "lightGray"
+    case magenta = "magenta"
     case maroon = "maroon color"
     case night = "Night"
+    case orange = "orange"
+    case purple = "purple"
+    case red = "red"
+    case white = "white"
+    case yellow = "yellow"
     
     var color: UIColor {
         switch self {
@@ -60,8 +75,20 @@ enum ColorAssetName: String {
             return .absoluteZero
         case .bisque:
             return .bisque
+        case .black:
+            return .black
+        case .blue:
+            return .blue
+        case .brown:
+            return .brown
         case .charcoal:
             return .charcoal
+        case .clear:
+            return .clear
+        case .cyan:
+            return .cyan
+        case .darkGray:
+            return .darkGray
         case .darkOliveGreen:
             return .darkOliveGreen
         case .desire:
@@ -70,10 +97,28 @@ enum ColorAssetName: String {
             return .emerald
         case .firebrick:
             return .firebrick
+        case .gray:
+            return .gray
+        case .green:
+            return .green
+        case .lightGray:
+            return .lightGray
+        case .magenta:
+            return .magenta
         case .maroon:
             return .maroon
         case .night:
             return .night
+        case .orange:
+            return .orange
+        case .purple:
+            return .purple
+        case .red:
+            return .red
+        case .white:
+            return .white
+        case .yellow:
+            return .yellow
         }
     }
     
