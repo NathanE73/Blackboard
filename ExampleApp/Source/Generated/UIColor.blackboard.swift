@@ -6,42 +6,79 @@
 
 import UIKit
 
-fileprivate func color(named: String, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
+fileprivate func color(identifier: ColorAssetName, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
     if #available(iOS 11.0, *) {
-        if let color = UIColor(named: named) {
+        if let color = UIColor(named: identifier.rawValue) {
             return color
         }
     }
     return UIColor(red: red, green: green, blue: blue, alpha: alpha)
 }
 
+enum ColorAssetName: String {
+    
+    case absoluteZero = "Absolute Zero"
+    case bisque = "Bisque"
+    case charcoal = "Charcoal"
+    case darkOliveGreen = "dark-olive-green"
+    case desire = "Desire"
+    case emerald = "Emerald"
+    case firebrick = "firebrick-color"
+    case maroon = "maroon color"
+    case night = "Night"
+    
+    var color: UIColor {
+        switch self {
+        case .absoluteZero:
+            return .absoluteZero
+        case .bisque:
+            return .bisque
+        case .charcoal:
+            return .charcoal
+        case .darkOliveGreen:
+            return .darkOliveGreen
+        case .desire:
+            return .desire
+        case .emerald:
+            return .emerald
+        case .firebrick:
+            return .firebrick
+        case .maroon:
+            return .maroon
+        case .night:
+            return .night
+        }
+    }
+    
+}
+
 extension UIColor {
     
     // #0048BA rgb(0, 72, 186)
-    static let absoluteZero = color(named: "Absolute Zero", red: 0.0, green: 0.282, blue: 0.729, alpha: 1.0)
+    static let absoluteZero = color(identifier: .absoluteZero, red: 0.0, green: 0.282, blue: 0.729, alpha: 1.0)
     
     // #FFE4C4 rgb(255, 228, 196)
-    static let bisque = color(named: "Bisque", red: 1.0, green: 0.894, blue: 0.769, alpha: 1.0)
+    static let bisque = color(identifier: .bisque, red: 1.0, green: 0.894, blue: 0.769, alpha: 1.0)
     
     // #36454F rgb(54, 69, 79)
-    static let charcoal = color(named: "Charcoal", red: 0.212, green: 0.271, blue: 0.31, alpha: 1.0)
+    static let charcoal = color(identifier: .charcoal, red: 0.212, green: 0.271, blue: 0.31, alpha: 1.0)
     
     // #556B2F rgb(85, 107, 47)
-    static let darkOliveGreen = color(named: "dark-olive-green", red: 0.333, green: 0.42, blue: 0.184, alpha: 1.0)
+    static let darkOliveGreen = color(identifier: .darkOliveGreen, red: 0.333, green: 0.42, blue: 0.184, alpha: 1.0)
     
     // #EA3C53 rgb(234, 60, 83)
-    static let desire = color(named: "Desire", red: 0.918, green: 0.235, blue: 0.325, alpha: 1.0)
+    static let desire = color(identifier: .desire, red: 0.918, green: 0.235, blue: 0.325, alpha: 1.0)
     
     // #50C878 rgb(80, 200, 120)
-    static let emerald = color(named: "Emerald", red: 0.314, green: 0.784, blue: 0.471, alpha: 1.0)
+    static let emerald = color(identifier: .emerald, red: 0.314, green: 0.784, blue: 0.471, alpha: 1.0)
     
     // #B22222 rgb(178, 34, 34)
-    static let firebrick = color(named: "firebrick-color", red: 0.698, green: 0.133, blue: 0.133, alpha: 1.0)
+    static let firebrick = color(identifier: .firebrick, red: 0.698, green: 0.133, blue: 0.133, alpha: 1.0)
     
     // #800000 rgb(128, 0, 0)
-    static let maroon = color(named: "maroon color", red: 0.502, green: 0.0, blue: 0.0, alpha: 1.0)
+    static let maroon = color(identifier: .maroon, red: 0.502, green: 0.0, blue: 0.0, alpha: 1.0)
     
     // #0D0D0D rgba(13, 13, 13, 0.475)
-    static let night = color(named: "Night", red: 0.05, green: 0.05, blue: 0.05, alpha: 0.475)
+    static let night = color(identifier: .night, red: 0.05, green: 0.05, blue: 0.05, alpha: 0.475)
     
 }

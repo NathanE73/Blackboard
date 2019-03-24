@@ -40,13 +40,13 @@ fileprivate let bundle: Bundle = {
 
 fileprivate extension UIImage {
     
-    convenience init!(identifier: ImageAssetIdentifier) {
+    convenience init!(identifier: ImageAssetName) {
         self.init(named: identifier.rawValue, in: bundle, compatibleWith: nil)
     }
     
 }
 
-enum ImageAssetIdentifier: String {
+enum ImageAssetName: String {
     
     case apple = "apple"
     case bigApple = "big_apple"
@@ -61,10 +61,6 @@ enum ImageAssetIdentifier: String {
     case silverPaperClip = "silver-paper-clip"
     case smallApple = "small apple"
     case whiteDice = "white-dice"
-    
-}
-
-extension ImageAssetIdentifier {
     
     var image: UIImage {
         return UIImage(identifier: self)
