@@ -33,7 +33,7 @@ let BlackboardUIColorSwiftSource = """
 
 import UIKit
 
-fileprivate func color(identifier: ColorAssetIdentifier, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
+fileprivate func color(identifier: ColorAssetName, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
     if #available(iOS 11.0, *) {
         if let color = UIColor(named: identifier.rawValue) {
             return color
@@ -42,7 +42,7 @@ fileprivate func color(identifier: ColorAssetIdentifier, red: CGFloat, green: CG
     return UIColor(red: red, green: green, blue: blue, alpha: alpha)
 }
 
-enum ColorAssetIdentifier: String {
+enum ColorAssetName: String {
     
     case absoluteZero = "Absolute Zero"
     case bisque = "Bisque"

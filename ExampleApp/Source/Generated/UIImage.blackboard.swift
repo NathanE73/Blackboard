@@ -13,13 +13,13 @@ fileprivate let bundle: Bundle = {
 
 fileprivate extension UIImage {
     
-    convenience init!(identifier: ImageAssetIdentifier) {
+    convenience init!(identifier: ImageAssetName) {
         self.init(named: identifier.rawValue, in: bundle, compatibleWith: nil)
     }
     
 }
 
-enum ImageAssetIdentifier: String {
+enum ImageAssetName: String {
     
     case apple = "apple"
     case bigApple = "big_apple"

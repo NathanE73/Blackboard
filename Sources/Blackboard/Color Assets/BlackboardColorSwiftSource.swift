@@ -62,7 +62,7 @@ extension SwiftSource {
         append()
         append("import UIKit")
         append()
-        append("fileprivate func color(identifier: ColorAssetIdentifier, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor") {
+        append("fileprivate func color(identifier: ColorAssetName, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor") {
             append("if #available(iOS 11.0, *)") {
                 append("if let color = UIColor(named: identifier.rawValue)") {
                     append("return color")
@@ -71,7 +71,7 @@ extension SwiftSource {
             append("return UIColor(red: red, green: green, blue: blue, alpha: alpha)")
         }
         append()
-        append("enum ColorAssetIdentifier: String") {
+        append("enum ColorAssetName: String") {
             append()
             colors.forEach { color in
                 append("case \(color.caseName) = \"\(color.name)\"")

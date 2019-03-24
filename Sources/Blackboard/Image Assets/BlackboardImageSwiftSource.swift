@@ -46,13 +46,13 @@ extension SwiftSource {
         append()
         append("fileprivate extension UIImage") {
             append()
-            append("convenience init!(identifier: ImageAssetIdentifier)") {
+            append("convenience init!(identifier: ImageAssetName)") {
                 append("self.init(named: identifier.rawValue, in: bundle, compatibleWith: nil)")
             }
             append()
         }
         append()
-        append("enum ImageAssetIdentifier: String") {
+        append("enum ImageAssetName: String") {
             append()
             images.forEach { image in
                 append("case \(image.caseName) = \"\(image.name)\"")
