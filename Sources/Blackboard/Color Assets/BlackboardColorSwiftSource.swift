@@ -62,13 +62,32 @@ extension SwiftSource {
         append()
         append("import UIKit")
         append()
-        append("fileprivate func color(named: String, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor") {
+        append("fileprivate func color(identifier: ColorAssetIdentifier, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor") {
             append("if #available(iOS 11.0, *)") {
-                append("if let color = UIColor(named: named)") {
+                append("if let color = UIColor(named: identifier.rawValue)") {
                     append("return color")
                 }
             }
             append("return UIColor(red: red, green: green, blue: blue, alpha: alpha)")
+        }
+        append()
+        append("enum ColorAssetIdentifier: String") {
+            append()
+            colors.forEach { color in
+                append("case \(color.caseName) = \"\(color.name)\"")
+            }
+            append()
+            append("var color: UIColor") {
+                append("switch self {")
+                colors.forEach { color in
+                    append("case .\(color.caseName):")
+                    indent {
+                        append("return .\(color.caseName)")
+                    }
+                }
+                append("}")
+            }
+            append()
         }
         append()
         append("extension UIColor") {
@@ -80,7 +99,7 @@ extension SwiftSource {
     
     func appendUIColor(color: BlackboardColor) {
         append("// \(color.hexValue) \(color.rgbaValue)")
-        append("static let \(color.functionName) = color(named: \"\(color.name)\", red: \(color.redStringValue), green: \(color.greenStringValue), blue: \(color.blueStringValue), alpha: \(color.alphaStringValue))")
+        append("static let \(color.functionName) = color(identifier: .\(color.caseName), red: \(color.redStringValue), green: \(color.greenStringValue), blue: \(color.blueStringValue), alpha: \(color.alphaStringValue))")
         append()
     }
     

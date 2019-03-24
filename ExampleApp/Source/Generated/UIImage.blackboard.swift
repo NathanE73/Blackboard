@@ -35,10 +35,6 @@ enum ImageAssetIdentifier: String {
     case smallApple = "small apple"
     case whiteDice = "white-dice"
     
-}
-
-extension ImageAssetIdentifier {
-    
     var image: UIImage {
         return UIImage(identifier: self)
     }

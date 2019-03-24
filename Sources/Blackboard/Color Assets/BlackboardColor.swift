@@ -33,21 +33,24 @@ struct BlackboardColor {
     
     var name: String
     var functionName: String
+    var caseName: String
     
 }
 
 extension BlackboardColor {
     
     init(_ colorSet: ColorSet) {
-        self.red = colorSet.red
-        self.green = colorSet.green
-        self.blue = colorSet.blue
-        self.alpha = colorSet.alpha
+        red = colorSet.red
+        green = colorSet.green
+        blue = colorSet.blue
+        alpha = colorSet.alpha
         
-        self.name = colorSet.name
+        name = colorSet.name
         
-        self.functionName = Naming.methodName(fromIdentifier: colorSet.name)
+        functionName = Naming.methodName(fromIdentifier: colorSet.name)
             .removingSuffix("Color")
+        
+        caseName = functionName
     }
     
 }

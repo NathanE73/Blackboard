@@ -58,10 +58,6 @@ extension SwiftSource {
                 append("case \(image.caseName) = \"\(image.name)\"")
             }
             append()
-        }
-        append()
-        append("extension ImageAssetIdentifier") {
-            append()
             append("var image: UIImage") {
                 append("return UIImage(identifier: self)")
             }

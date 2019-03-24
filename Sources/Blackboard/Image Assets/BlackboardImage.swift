@@ -35,9 +35,9 @@ struct BlackboardImage {
 extension BlackboardImage {
     
     init(_ imageSet: ImageSet) {
-        self.name = imageSet.name
-        self.functionName = Naming.methodName(fromIdentifier: imageSet.name)
-        self.caseName = Naming.methodName(fromIdentifier: imageSet.name)
+        name = imageSet.name
+        functionName = Naming.methodName(fromIdentifier: imageSet.name)
+        caseName = functionName
     }
     
 }
