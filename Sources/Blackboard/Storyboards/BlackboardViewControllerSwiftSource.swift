@@ -27,26 +27,55 @@ import Foundation
 extension SwiftSource {
     
     func appendViewControllers(_ viewControllers: [BlackboardViewController]) {
-        viewControllers.forEach { viewController in
-            append("extension \(viewController.className)") {
-                append()
-                appendInstantiateViewController(viewController)
-                appendInstantiateNavigationController(viewController)
-                appendSegues(viewController.segues)
-                appendTableViewCells(viewController.tableViewCells)
-                appendCollectionViewCells(viewController.collectionViewCells)
+        viewControllers.forEach(appendViewController)
+    }
+    
+    func appendViewController(_ viewController: BlackboardViewController) {
+        let extends: String
+        if viewController.segues.isEmpty {
+            extends = ""
+        }
+        else {
+            extends = ": \(viewController.className)Segues"
+            appendViewControllerSeguesProtocol(viewController)
+        }
+        
+        append("extension \(viewController.className)\(extends)") {
+            append()
+            appendInstantiateViewController(viewController)
+            appendInstantiateNavigationController(viewController)
+            appendSegues(viewController)
+            appendTableViewCells(viewController)
+            appendCollectionViewCells(viewController)
+        }
+        append()
+    }
+    
+    func appendViewControllerSeguesProtocol(_ viewController: BlackboardViewController) {
+        append("protocol \(viewController.className)Segues {}")
+        append()
+        
+        append("extension \(viewController.className)Segues") {
+            append()
+            viewController.segues.forEach { segue in
+                append("func \(segue.prepareFuncName)(_ \(segue.viewControllerParameterName): \(segue.viewControllerClassName)) {}")
+            }
+            append()
+            viewController.shouldPerformSegues.forEach { segue in
+                if let shouldPerformFuncName = segue.shouldPerformFuncName {
+                    append("func \(shouldPerformFuncName)() -> Bool { return true }")
+                }
             }
             append()
         }
+        append()
     }
     
     func appendInstantiateViewController(_ viewController: BlackboardViewController) {
         guard let identifier = viewController.identifier else { return }
         
-        append("final class func instantiateViewControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
-            append("let viewController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(identifier)\") as! \(viewController.className)")
-            append("initialize?(viewController)")
-            append("return viewController")
+        append("final class func instantiateFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
+            append("return instantiateViewController(from: sharedStoryboardInstance, identifier: \"\(identifier)\", initialize)")
         }
         append()
     }
@@ -55,10 +84,7 @@ extension SwiftSource {
         guard let navigationControllerIdentifier = viewController.navigationControllerIdentifier else { return }
         
         append("final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> UINavigationController") {
-            append("let navigationController = sharedStoryboardInstance.instantiateViewController(withIdentifier: \"\(navigationControllerIdentifier)\") as! UINavigationController")
-            append("let viewController = navigationController.viewControllers.first as! \(viewController.className)")
-            append("initialize?(viewController)")
-            append("return navigationController")
+            append("return instantiateNavigationController(from: sharedStoryboardInstance, identifier: \"\(navigationControllerIdentifier)\", initialize)")
         }
         append()
     }

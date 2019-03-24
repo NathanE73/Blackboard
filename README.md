@@ -1,10 +1,30 @@
 # Blackboard: Another iOS Storyboard Manager
 
-[![Version](https://img.shields.io/badge/version-5.1.1-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-6.0.0-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/swift-4.2-yellow.svg)](https://swift.org)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
+
+Blackboard is an iOS Storyboard and Asset Manager written in Swift.
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Storyboard Usage](#storyboard-usage)
+  - [UIStoryboard](#uistoryboard)
+    - Instantiate Navigation Controller From Storyboard
+    - Instantiate View Controller From Storyboard
+  - [UIStoryboardSegue](#uistoryboardsegue)
+    - Perform Segue
+    - Prepare Segue
+    - Should Perform Segue
+  - [UITableViewCell](#uitableviewcell)
+    - Dequeue Cell
+  - [UICollectionViewCell](#uicollectionviewcell)
+    - Dequeue Cell
+- [Asset Usage](#asset-usage)
+  - [UIColor](#uicolor)
+- [License](#license)
 
 ## Requirements
 
@@ -45,57 +65,88 @@ else
 fi
 ```
 
-## Usage - Generated Source
+## Storyboard Usage
 
-### UIViewController
+### UIStoryboard
 
+[Instantiate Navigation Controller From Storyboard](ExampleApp/Source/AccountsTableViewController.swift#L99)
 ```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    window = UIWindow(frame: UIScreen.main.bounds)
-
-    window?.rootViewController = WelcomeViewController.instantiateViewControllerFromStoryboard()
-
-    window?.makeKeyAndVisible()
-
-    return true
+@IBAction func presentOpenAccount() {
+    let navigationController = OpenAccountViewController.instantiateNavigationControllerFromStoryboard { openAccountViewController in
+        openAccountViewController.path = "Instantiate Navigation Controller"
+    }
+    present(navigationController, animated: true)
 }
 ```
 
-### UINavigationController
-
+[Instantiate View Controller From Storyboard](ExampleApp/Source/AccountsTableViewController.swift#L106)
 ```swift
-let namesNavigationController = NamesViewController.instantiateNavigationControllerFromStoryboard { (namesViewController) in
-    namesViewController.names = ["Steve Dave", "John Doe"]
+@IBAction func presentOpenAccount() {
+    let openAccountViewController = OpenAccountViewController.instantiateFromStoryboard()
+    openAccountViewController.path = "Instantiate View Controller"
+    
+    let navigationController = UINavigationController(rootViewController: openAccountViewController)
+    present(navigationController, animated: true)
 }
-present(namesNavigationController, animated: true, completion: nil)
 ```
 
 ### UIStoryboardSegue
 
+[Perform Segue](ExampleApp/Source/AccountsTableViewController.swift#L92)
 ```swift
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    performShowNameSegue { (nameViewController) in
-        nameViewController.name = self.names[indexPath.row]
+override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performPresentOpenAccountSegue { openAccountViewController in
+        openAccountViewController.path = "Perform Segue"
     }
+}
+```
+
+[Prepare Segue](ExampleApp/Source/MainViewController.swift#L97)
+```swift
+func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {
+    photoViewController.viewModel = PhotoViewModel.examples.first
+}
+```
+
+[Should Perform Segue](ExampleApp/Source/MainViewController.swift#L93)
+```swift
+func shouldPerformPresentPhotoSegue() -> Bool {
+    return PhotoViewModel.examples.first != nil
 }
 ```
 
 ### UITableViewCell
 
+[Dequeue Cell](ExampleApp/Source/AccountsTableViewController.swift#L73)
 ```swift
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return dequeueNameCell(from: tableView, for: indexPath) { (nameCell) in
-        nameCell.name = self.names[indexPath.row]
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let accountViewModel = accountViewModels[indexPath.row]
+    return dequeueAccountCell(from: tableView, for: indexPath) { cell in
+        cell.nameLabel.text = accountViewModel.name
+        cell.balanceLabel.text = accountViewModel.balance
     }
 }
 ```
 
 ### UICollectionViewCell
 
+[Dequeue Cell](ExampleApp/Source/PhotosCollectionViewController.swift#L37)
 ```swift
-let cell = dequeueAccountNameCell(from: collectionView) { (accountNameCell) in
-    accountNameCell.name = "Steve Dave"
+override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let photoViewModel = photoViewModels[indexPath.item]
+    return dequeuePhotoCell(from: collectionView, for: indexPath) { cell in
+        cell.imageView.image = photoViewModel.image
+    }
 }
+```
+
+## Asset Usage
+
+### UIColor
+
+[Background Color](ExampleApp/Source/FooterViewController.swift#L43)
+```swift
+view.backgroundColor = .charcoal
 ```
 
 ## Authors

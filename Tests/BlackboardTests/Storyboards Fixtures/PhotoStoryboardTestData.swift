@@ -98,7 +98,7 @@ let PhotoStoryboardTestData = """
         <!--Photos Navigation Controller-->
         <scene sceneID="4aB-gV-3bP">
             <objects>
-                <navigationController storyboardIdentifier="PhotoNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BpT-OW-KyL" customClass="PhotosNavigationController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PhotosNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BpT-OW-KyL" customClass="PhotosNavigationController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Drl-N2-L6g">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -116,7 +116,7 @@ let PhotoStoryboardTestData = """
         <!--Photo-->
         <scene sceneID="4GH-e0-qfS">
             <objects>
-                <viewController id="W37-RY-jR3" customClass="PhotoViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W37-RY-jR3" customClass="PhotoViewController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Eu-gW-xl3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,16 +134,41 @@ let PhotoStoryboardTestData = """
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6EI-fO-PId"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Photo" id="8iT-t3-vjE"/>
+                    <navigationItem key="navigationItem" title="Photo" id="8iT-t3-vjE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="NtG-y4-cNe">
+                            <connections>
+                                <action selector="dismiss" destination="W37-RY-jR3" id="HBl-Zm-Eif"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="zc9-bK-mEw" id="MNt-kz-YbX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeI-3R-Cov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="-445"/>
+            <point key="canvasLocation" x="2252" y="-185"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jUg-1f-663">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RX-GA-MnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="PhotoNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r8T-pu-tGW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CPK-pU-Ru1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="W37-RY-jR3" kind="relationship" relationship="rootViewController" id="KM4-nr-KX5"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1838" y="-983"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A3N-Ti-cUc"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" name="Absolute Zero"/>
 </document>
 

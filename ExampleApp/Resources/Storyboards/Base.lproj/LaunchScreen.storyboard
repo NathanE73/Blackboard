@@ -25,7 +25,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blackboard Example App" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m8-XN-4fw">
                                 <rect key="frame" x="27" y="315.5" width="321.5" height="36"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" name="dark-olive-green"/>
+                                <color key="textColor" name="maroon color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -47,8 +47,8 @@
         <namedColor name="Bisque">
             <color red="1" green="0.89399999380111694" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="dark-olive-green">
-            <color red="0.33300000429153442" green="0.41999998688697815" blue="0.18400000035762787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="maroon color">
+            <color red="0.50199997425079346" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

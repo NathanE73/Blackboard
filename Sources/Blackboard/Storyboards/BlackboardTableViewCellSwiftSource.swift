@@ -26,7 +26,9 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendTableViewCells(_ tableViewCells: [BlackboardTableViewCell]) {
+    func appendTableViewCells(_ viewController: BlackboardViewController) {
+        let tableViewCells = viewController.tableViewCells
+        
         guard tableViewCells.isEmpty == false else { return }
         
         append("// Table View Cells")
@@ -47,21 +49,12 @@ extension SwiftSource {
         append()
     }
     
-    func castFor(_ tableViewCell: BlackboardTableViewCell) -> String {
-        if tableViewCell.className == "UITableViewCell" {
-            return ""
-        }
-        return " as! \(tableViewCell.className)"
-    }
-    
     func appendDequeueTableViewCell(_ tableViewCells: [BlackboardTableViewCell]) {
         guard tableViewCells.isEmpty == false else { return }
         
         tableViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)Cell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
-                append("let tableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath)\(castFor(cell))")
-                append("initialize?(tableViewCell)")
-                append("return tableViewCell")
+            append("final func \(cell.dequeueFuncName)(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
+                append("return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath, initialize)")
             }
             append()
         }

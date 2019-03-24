@@ -35,10 +35,6 @@ class AccountsTableViewController: UITableViewController {
         case openNewAccount
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        handleSegue(segue, sender: sender)
-    }
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return Section.allCases.count
     }
@@ -103,6 +99,14 @@ class AccountsTableViewController: UITableViewController {
         let navigationController = OpenAccountViewController.instantiateNavigationControllerFromStoryboard { openAccountViewController in
             openAccountViewController.path = "Instantiate Navigation Controller"
         }
+        present(navigationController, animated: true)
+    }
+    
+    @IBAction func alternativePresentOpenAccount() {
+        let openAccountViewController = OpenAccountViewController.instantiateFromStoryboard()
+        openAccountViewController.path = "Instantiate View Controller"
+        
+        let navigationController = UINavigationController(rootViewController: openAccountViewController)
         present(navigationController, animated: true)
     }
     

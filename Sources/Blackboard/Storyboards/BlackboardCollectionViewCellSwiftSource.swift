@@ -26,7 +26,9 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendCollectionViewCells(_ collectionViewCells: [BlackboardCollectionViewCell]) {
+    func appendCollectionViewCells(_ viewController: BlackboardViewController) {
+        let collectionViewCells = viewController.collectionViewCells
+        
         guard collectionViewCells.isEmpty == false else { return }
         
         append("// Collection View Cells")
@@ -47,21 +49,12 @@ extension SwiftSource {
         append()
     }
     
-    func castFor(_ collectionViewCell: BlackboardCollectionViewCell) -> String {
-        if collectionViewCell.className == "UICollectionViewCell" {
-            return ""
-        }
-        return " as! \(collectionViewCell.className)"
-    }
-    
     func appendDequeueCollectionViewCell(_ collectionViewCells: [BlackboardCollectionViewCell]) {
         guard collectionViewCells.isEmpty == false else { return }
         
         collectionViewCells.forEach { cell in
-            append("final func dequeue\(cell.name)Cell(from collectionView: UICollectionView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
-                append("let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath)\(castFor(cell))")
-                append("initialize?(collectionViewCell)")
-                append("return collectionViewCell")
+            append("final func \(cell.dequeueFuncName)(from collectionView: UICollectionView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
+                append("return collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath, initialize)")
             }
             append()
         }

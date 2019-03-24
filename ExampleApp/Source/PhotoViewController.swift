@@ -26,18 +26,29 @@ import UIKit
 
 class PhotoViewController: UIViewController {
     
-    var viewModel: PhotoViewModel?
+    var viewModel: PhotoViewModel!
     
     @IBOutlet var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        removeDoneButtonIfNeeded()
         applyViewModel()
     }
     
+    func removeDoneButtonIfNeeded() {
+        if navigationController?.viewControllers.first != self {
+            navigationItem.leftBarButtonItems = nil
+        }
+    }
+    
     func applyViewModel() {
-        title = viewModel?.name
-        imageView.image = viewModel?.image
+        title = viewModel.name
+        imageView.image = viewModel.image
+    }
+    
+    @IBAction func dismiss() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

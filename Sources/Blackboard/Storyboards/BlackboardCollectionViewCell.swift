@@ -28,6 +28,7 @@ struct BlackboardCollectionViewCell {
     
     var name: String
     var enumName: String
+    var dequeueFuncName: String
     var identifier: String
     var className: String
     var parameterName: String
@@ -44,7 +45,12 @@ extension BlackboardCollectionViewCell {
         name = Naming.name(fromIdentifier: reuseIdentifier)
             .removingSuffix("Cell")
         
-        enumName = name.firstCharacterLowercased
+        enumName = (name.isEmpty
+            ? Naming.name(fromIdentifier: reuseIdentifier)
+            : name)
+            .firstCharacterLowercased
+        
+        dequeueFuncName = "dequeue\(name)Cell"
         
         identifier = reuseIdentifier
         

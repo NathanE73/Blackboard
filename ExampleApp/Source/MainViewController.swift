@@ -31,14 +31,18 @@ class MainViewController: UIViewController {
     
     @IBOutlet var menuContainerView: UIView!
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        handleSegue(segue, sender: sender)
+    var footerViewController: FooterViewController!
+    
+    func prepareForFooterSegue(_ footerViewController: FooterViewController) {
+        self.footerViewController = footerViewController
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         menuContainerView.alpha = 0
+        
+        footerViewController.footerText = "Greetings!"
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -52,16 +56,18 @@ class MainViewController: UIViewController {
             return
         }
         
-        UIView.animate(withDuration: 0.75) {
+        UIView.animate(withDuration: 0.75, delay: 0.25, animations: {
             self.applicationNameCenterYLayoutConstraint.isActive = false
             self.applicationNameTopLayoutConstraint.isActive = true
             self.view.layoutIfNeeded()
-        }
+        })
         
-        UIView.animate(withDuration: 0.25) {
+        UIView.animate(withDuration: 0.50, delay: 0.25, animations: {
             self.menuContainerView.alpha = 1
-        }
+        })
     }
+    
+    // Account Actions
     
     @IBAction func presentAccounts() {
         performPresentAccountsSegue { accountsTableViewController in
@@ -76,9 +82,29 @@ class MainViewController: UIViewController {
         }
     }
     
+    // Photo Actions
+    
     @IBAction func presentPhotos() {
         performPresentPhotosSegue { photosViewController in
             photosViewController.photoViewModels = PhotoViewModel.examples
+        }
+    }
+    
+    func shouldPerformPresentPhotoSegue() -> Bool {
+        return PhotoViewModel.examples.first != nil
+    }
+    
+    func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {
+        photoViewController.viewModel = PhotoViewModel.examples.first
+    }
+    
+    @IBAction func presentFirstPhoto() {
+        performPresentPhotoSegue()
+    }
+    
+    @IBAction func presentLastPhoto() {
+        performPresentPhotoSegue { photoViewController in
+            photoViewController.viewModel = PhotoViewModel.examples.last
         }
     }
     

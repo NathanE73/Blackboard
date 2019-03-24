@@ -32,6 +32,7 @@ struct BlackboardViewController {
     var parameterName: String
     
     var segues: [BlackboardSegue]
+    var shouldPerformSegues: [BlackboardSegue]
     var tableViewCells: [BlackboardTableViewCell]
     var collectionViewCells: [BlackboardCollectionViewCell]
     
@@ -54,6 +55,8 @@ extension BlackboardViewController {
             .compactMap { BlackboardSegue($0, storyboard: storyboard, storyboards: storyboards) }
             .sorted { $0.name < $1.name }
         
+        shouldPerformSegues = segues.filter { $0.shouldPerformFuncName != nil }
+
         tableViewCells = viewController.tableViewCells
             .compactMap(BlackboardTableViewCell.init)
             .sorted { $0.name < $1.name }

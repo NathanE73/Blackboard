@@ -26,7 +26,7 @@ import UIKit
 
 class AccountViewController: UIViewController {
     
-    var viewModel: AccountViewModel?
+    var viewModel: AccountViewModel!
     
     @IBOutlet var accountNameLabel: UILabel!
     @IBOutlet var accountBalanceLabel: UILabel!
@@ -37,8 +37,8 @@ class AccountViewController: UIViewController {
     }
     
     func applyViewModel() {
-        accountNameLabel.text = viewModel?.name
-        accountBalanceLabel.text = viewModel?.balance
+        accountNameLabel.text = viewModel.name
+        accountBalanceLabel.text = viewModel.balance
     }
     
 }

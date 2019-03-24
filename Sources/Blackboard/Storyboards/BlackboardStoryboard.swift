@@ -38,9 +38,7 @@ extension BlackboardStoryboard {
     init?(_ storyboard: Storyboard, storyboards: [Storyboard]) {
         name = storyboard.name
         
-        extensionName = storyboard.name
-            .removingSuffix("Storyboard")
-            + "StoryboardExtensions.swift"
+        extensionName = storyboard.name + Filename.blackboardExtension
         
         viewControllers = storyboard.viewControllers
             .compactMap { BlackboardViewController($0, storyboard: storyboard, storyboards: storyboards) }

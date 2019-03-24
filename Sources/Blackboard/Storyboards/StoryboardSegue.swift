@@ -44,6 +44,7 @@ struct StoryboardSegue {
     var kind: Kind
     var identifier: String?
     var destination: String
+    var isAutomatic: Bool
     
 }
 
@@ -80,6 +81,9 @@ extension StoryboardSegue {
             return nil
         }
         self.destination = destination
+        
+        // scene.objects.viewController.connections.segue
+        isAutomatic = element.parent?.parent?.parent?.parent?.name != "scene"
     }
     
 }

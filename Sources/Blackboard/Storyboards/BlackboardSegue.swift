@@ -28,8 +28,12 @@ struct BlackboardSegue {
     
     var name: String
     var enumName: String
+    var performFuncName: String
+    var shouldPerformFuncName: String?
+    var prepareFuncName: String
     var identifier: String
-    var viewControllerClassName: String?
+    var viewControllerClassName: String
+    var viewControllerParameterName: String
     var navigationControllerClassName: String?
     
 }
@@ -44,6 +48,14 @@ extension BlackboardSegue {
         name = Naming.name(fromIdentifier: identifier)
         
         enumName = name.firstCharacterLowercased
+        
+        performFuncName = "perform\(name)Segue"
+        
+        if segue.isAutomatic && [.popoverPresentation, .presentation, .show].contains(segue.kind) {
+            shouldPerformFuncName = "shouldPerform\(name)Segue"
+        }
+        
+        prepareFuncName = "prepareFor\(name)Segue"
         
         self.identifier = identifier
         
@@ -61,7 +73,9 @@ extension BlackboardSegue {
             }
         }
         
-        let destinationCustomClass = destinationViewController?.customClass ?? destinationViewController?.type.className
+        guard let destinationCustomClass = destinationViewController?.customClass ?? destinationViewController?.type.className else {
+            return nil
+        }
         
         if destinationViewController?.type == .navigationController {
             guard let rootViewControllerSegue = destinationViewController?.segueWith(kind: .relationship) else {
@@ -70,13 +84,18 @@ extension BlackboardSegue {
             guard let rootViewController = storyboard.viewControllerWith(id: rootViewControllerSegue.destination) else {
                 return nil
             }
-            viewControllerClassName = rootViewController.customClass ?? rootViewController.type.className
+            guard let sourceCustomClass = rootViewController.customClass ?? rootViewController.type.className else {
+                return nil
+            }
+            viewControllerClassName = sourceCustomClass
             navigationControllerClassName = destinationCustomClass
         }
         else {
             viewControllerClassName = destinationCustomClass
             navigationControllerClassName = nil
         }
+        
+        viewControllerParameterName = viewControllerClassName.firstCharacterLowercased
     }
     
 }

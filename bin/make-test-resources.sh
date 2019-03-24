@@ -66,7 +66,7 @@ make_swift_source_fixture () {
 	FIXTURE_GROUP="Tests/BlackboardTests/$1"
 	TARGET_NAME="$3SwiftSource"
 
-	SOURCE="ExampleApp/Source/Generated/$2.swift"
+	SOURCE="ExampleApp/Source/Generated/$2.blackboard.swift"
 	TARGET="$FIXTURE_GROUP/$TARGET_NAME.swift"
 
 	sed 's/__NAME__/'$TARGET_NAME'/g' etc/SwiftSourceHeader.swift > "$TARGET"
@@ -88,8 +88,8 @@ make_color_set_fixture "firebrick-color" "Firebrick"
 make_color_set_fixture "maroon color" "Maroon"
 make_color_set_fixture "Night" "Night"
 
-make_swift_source_fixture "Color Assets Fixtures" "CGColorExtensions" "BlackboardCGColor"
-make_swift_source_fixture "Color Assets Fixtures" "UIColorExtensions" "BlackboardUIColor"
+make_swift_source_fixture "Color Assets Fixtures" "CGColor" "BlackboardCGColor"
+make_swift_source_fixture "Color Assets Fixtures" "UIColor" "BlackboardUIColor"
 
 # Image Asset Fixtures
 
@@ -109,7 +109,7 @@ make_image_set_fixture "Photos/red-stapler" "RedStapler"
 make_image_set_fixture "Photos/silver-paper-clip" "SilverPaperClip"
 make_image_set_fixture "Photos/white-dice" "WhiteDice"
 
-make_swift_source_fixture "Image Assets Fixtures" "UIImageExtensions" "BlackboardUIImage"
+make_swift_source_fixture "Image Assets Fixtures" "UIImage" "BlackboardUIImage"
 
 # Storyboard Fixtures
 
@@ -119,7 +119,9 @@ make_storyboard_fixture "LaunchScreen" "LaunchScreen"
 make_storyboard_fixture "Account" "Account"
 make_storyboard_fixture "Main" "Main"
 make_storyboard_fixture "Photo" "Photo"
+make_storyboard_fixture "Supported" "Supported"
 
-make_swift_source_fixture "Storyboards Fixtures" "AccountStoryboardExtensions" "AccountStoryboard"
-make_swift_source_fixture "Storyboards Fixtures" "MainStoryboardExtensions" "MainStoryboard"
-make_swift_source_fixture "Storyboards Fixtures" "PhotoStoryboardExtensions" "PhotoStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "Account" "AccountStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "Main" "MainStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "Photo" "PhotoStoryboard"
+make_swift_source_fixture "Storyboards Fixtures" "Supported" "SupportedStoryboard"
