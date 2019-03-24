@@ -53,6 +53,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
         let blackboardImages = imageSets
             .compactMap { $0 }
             .compactMap(BlackboardImage.init)
+            .sorted { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
         
         XCTAssertEqual(blackboardImages.count, 13)
         

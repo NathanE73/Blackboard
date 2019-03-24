@@ -44,9 +44,15 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
             factory.colorSet(name: "Night", data: NightColorSetTestData)
         ]
         
-        return colorSets
+        var blackboardColors = colorSets
             .compactMap { $0 }
             .compactMap(BlackboardColor.init)
+        
+        blackboardColors.append(contentsOf: BlackboardColor.stockColors)
+        
+        blackboardColors.sort { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
+        
+        return blackboardColors
     }
     
     func testCGColorDescription() {
