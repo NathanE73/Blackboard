@@ -26,6 +26,11 @@ Blackboard is an iOS Storyboard and Asset Manager written in Swift.
   - [UIColor](#uicolor)
 - [License](#license)
 
+## Xcode Projects
+
+The `ExampleApp` project uses Blackboard.
+The `StandardApp` project is the same as the `ExampleApp` project, except that it does not use Blackboard.  The is provided so you can see the difference between using and not using Blackboard.
+
 ## Requirements
 
 - iOS 10.0+
