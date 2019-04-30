@@ -33,8 +33,43 @@ class MainViewController: UIViewController {
     
     var footerViewController: FooterViewController!
     
-    func prepareForFooterSegue(_ footerViewController: FooterViewController) {
-        self.footerViewController = footerViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let footerViewController = segue.destination as? FooterViewController {
+            self.footerViewController = footerViewController
+        }
+        else if segue.identifier == "Present Accounts" {
+            if let accountsNavigationController = segue.destination as? AccountsNavigationController,
+                let accountsTableViewController = accountsNavigationController.viewControllers.first as? AccountsTableViewController {
+                accountsTableViewController.viewModel = AccountsViewModel.example
+                accountsTableViewController.accountViewModels = AccountViewModel.examples
+            }
+        }
+        else if segue.identifier == "Present Open Account" {
+            if let navigationController = segue.destination as? UINavigationController,
+                let openAccountViewController = navigationController.viewControllers.first as? OpenAccountViewController {
+                openAccountViewController.path = "Storyboard Reference"
+            }
+        }
+        else if segue.identifier == "Present Photos" {
+            if let photosNavigationController = segue.destination as? PhotosNavigationController,
+                let photosCollectionViewController = photosNavigationController.viewControllers.first as? PhotosCollectionViewController {
+                photosCollectionViewController.photoViewModels = PhotoViewModel.examples
+            }
+        }
+        else if segue.identifier == "Present Photo" {
+            if let navigationController = segue.destination as? UINavigationController,
+                let photoViewController = navigationController.viewControllers.first as? PhotoViewController {
+                let photoViewModel = sender as? PhotoViewModel ?? PhotoViewModel.examples.first
+                photoViewController.viewModel = photoViewModel
+            }
+        }
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        // if identifier == "Present Photo" {
+        //     return false
+        // }
+        return true
     }
     
     override func viewDidLoad() {
@@ -70,42 +105,25 @@ class MainViewController: UIViewController {
     // Account Actions
     
     @IBAction func presentAccounts() {
-        performPresentAccountsSegue { accountsTableViewController in
-            accountsTableViewController.viewModel = AccountsViewModel.example
-            accountsTableViewController.accountViewModels = AccountViewModel.examples
-        }
+        performSegue(withIdentifier: "Present Accounts", sender: nil)
     }
     
     @IBAction func presentOpenAccount() {
-        performPresentOpenAccountSegue { openAccountViewController in
-            openAccountViewController.path = "Storyboard Reference"
-        }
+        performSegue(withIdentifier: "Present Open Account", sender: nil)
     }
     
     // Photo Actions
     
     @IBAction func presentPhotos() {
-        performPresentPhotosSegue { photosCollectionViewController in
-            photosCollectionViewController.photoViewModels = PhotoViewModel.examples
-        }
-    }
-    
-    func shouldPerformPresentPhotoSegue() -> Bool {
-        return PhotoViewModel.examples.first != nil
-    }
-    
-    func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {
-        photoViewController.viewModel = PhotoViewModel.examples.first
+        performSegue(withIdentifier: "Present Photos", sender: nil)
     }
     
     @IBAction func presentFirstPhoto() {
-        performPresentPhotoSegue()
+        performSegue(withIdentifier: "Present Photo", sender: nil)
     }
     
     @IBAction func presentLastPhoto() {
-        performPresentPhotoSegue { photoViewController in
-            photoViewController.viewModel = PhotoViewModel.examples.last
-        }
+        performSegue(withIdentifier: "Present Photo", sender: PhotoViewModel.examples.last)
     }
     
 }
