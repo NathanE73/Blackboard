@@ -76,7 +76,7 @@ public class BlackboardMain {
         
         // UIKit
         
-        let uiKitTargetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.uiKit)")
+        let uiKitTargetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.UIKit)")
         try! UIKitSwiftSource.write(to: uiKitTargetUrl, atomically: true, encoding: .utf8)
         
         // Process Storyboards
@@ -105,7 +105,7 @@ public class BlackboardMain {
             let swiftSource = SwiftSource()
             swiftSource.appendCGColors(colors: blackboardColors)
             let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.cgColor)")
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.CGColor)")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
         
@@ -113,7 +113,7 @@ public class BlackboardMain {
             let swiftSource = SwiftSource()
             swiftSource.appendUIColors(colors: blackboardColors)
             let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.uiColor)")
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.UIColor)")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
         
@@ -128,7 +128,7 @@ public class BlackboardMain {
             let swiftSource = SwiftSource()
             swiftSource.appendImages(images: blackboardImages)
             let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.uiImage)")
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.UIImage)")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
         }
         
