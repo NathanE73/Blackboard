@@ -31,43 +31,43 @@ class ImageSetTests: XCTestCase {
     let factory = ImageSetFactory()
     
     func testApple() {
-        let imageSet = factory.imageSet(name: "Apple", data: AppleImageSetTestData)
+        let imageSet = factory.asset(name: "Apple", data: AppleImageSetTestData)
         
         XCTAssertEqual(imageSet?.name, "Apple")
     }
     
     func testBigApple() {
-        let imageSet = factory.imageSet(name: "big_apple", data: BigAppleImageSetTestData)
+        let imageSet = factory.asset(name: "big_apple", data: BigAppleImageSetTestData)
         
         XCTAssertEqual(imageSet?.name, "big_apple")
     }
     
     func testEverythingApple() {
-        let imageSet = factory.imageSet(name: "everything--apple", data: EverythingAppleImageSetTestData)
+        let imageSet = factory.asset(name: "everything--apple", data: EverythingAppleImageSetTestData)
         
         XCTAssertEqual(imageSet?.name, "everything--apple")
     }
     
     func testLargeApple() {
-        let imageSet = factory.imageSet(name: "large-apple", data: LargeAppleImageSetTestData)
+        let imageSet = factory.asset(name: "large-apple", data: LargeAppleImageSetTestData)
         
         XCTAssertEqual(imageSet?.name, "large-apple")
     }
     
     func testRedApple() {
-        let imageSet = factory.imageSet(name: "RedApple", data: RedAppleImageSetTestData)
+        let imageSet = factory.asset(name: "RedApple", data: RedAppleImageSetTestData)
         
         XCTAssertEqual(imageSet?.name, "RedApple")
     }
     
     func testSmallApple() {
-        let imageSet = factory.imageSet(name: "small apple", data: SmallAppleImageSetTestData)
+        let imageSet = factory.asset(name: "small apple", data: SmallAppleImageSetTestData)
         
         XCTAssertEqual(imageSet?.name, "small apple")
     }
     
     func testTelevision() {
-        let imageSet = factory.imageSet(name: "apple television", data: AppleTelevisionImageSetTestData)
+        let imageSet = factory.asset(name: "apple television", data: AppleTelevisionImageSetTestData)
         
         XCTAssertNil(imageSet)
     }

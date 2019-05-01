@@ -24,22 +24,25 @@
 
 import Foundation
 
-class ColorSetFactory: AssetSetFactory {
-    
-    var fileManager = FileManager.default
-    
-    let pathExtension = "colorset"
-    
-    func colorSetsAt(path: String) -> [ColorSet] {
-        return assetsAt(path: path, namespace: nil)
-    }
-    
-    func asset(name: String, data: Data) -> ColorSet? {
-        guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
-            return nil
+let FluorescentRadicalRedColorSetTestData = """
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "colors" : [
+    {
+      "idiom" : "universal",
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "0xFF",
+          "alpha" : "1.000",
+          "blue" : "0x5E",
+          "green" : "0x35"
         }
-        
-        return ColorSet(name: name, assetColorSet: assetColorSet)
+      }
     }
-    
+  ]
 }
+""".data(using: .utf8)!

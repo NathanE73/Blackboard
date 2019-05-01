@@ -31,7 +31,7 @@ class BlackboardColorTests: XCTestCase {
     let factory = ColorSetFactory()
     
     func testAbsoluteZero() {
-        guard let colorSet = factory.colorSet(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -48,7 +48,7 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testBisque() {
-        guard let colorSet = factory.colorSet(name: "Bisque", data: BisqueColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "Bisque", data: BisqueColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -65,7 +65,7 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testCharcoal() {
-        guard let colorSet = factory.colorSet(name: "Charcoal", data: CharcoalColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "Charcoal", data: CharcoalColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -82,7 +82,7 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testDarkOliveGreen() {
-        guard let colorSet = factory.colorSet(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -99,7 +99,7 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testDesire() {
-        guard let colorSet = factory.colorSet(name: "Desire", data: DesireColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "Desire", data: DesireColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -116,7 +116,7 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testEmerald() {
-        guard let colorSet = factory.colorSet(name: "Emerald", data: EmeraldColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "Emerald", data: EmeraldColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -133,13 +133,13 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testEmpty() {
-        let colorSet = factory.colorSet(name: "Empty", data: EmptyColorSetTestData)
+        let colorSet = factory.asset(name: "Empty", data: EmptyColorSetTestData)
         
         XCTAssertNil(colorSet)
     }
     
     func testFirebrick() {
-        guard let colorSet = factory.colorSet(name: "firebrick-color", data: FirebrickColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "firebrick-color", data: FirebrickColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -156,7 +156,7 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testMaroon() {
-        guard let colorSet = factory.colorSet(name: "maroon color", data: MaroonColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "maroon color", data: MaroonColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }
@@ -173,7 +173,7 @@ class BlackboardColorTests: XCTestCase {
     }
     
     func testNight() {
-        guard let colorSet = factory.colorSet(name: "Night", data: NightColorSetTestData) else {
+        guard let colorSet = factory.asset(name: "Night", data: NightColorSetTestData) else {
             XCTFail("Unable to decode color set data")
             return
         }

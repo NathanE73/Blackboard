@@ -31,7 +31,7 @@ class ColorSetTests: XCTestCase {
     let factory = ColorSetFactory()
     
     func testAbsoluteZero() {
-        let colorSet = factory.colorSet(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData)
+        let colorSet = factory.asset(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "Absolute Zero")
         
@@ -42,7 +42,7 @@ class ColorSetTests: XCTestCase {
     }
     
     func testBisque() {
-        let colorSet = factory.colorSet(name: "Bisque", data: BisqueColorSetTestData)
+        let colorSet = factory.asset(name: "Bisque", data: BisqueColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "Bisque")
         
@@ -53,7 +53,7 @@ class ColorSetTests: XCTestCase {
     }
     
     func testCharcoal() {
-        let colorSet = factory.colorSet(name: "Charcoal", data: CharcoalColorSetTestData)
+        let colorSet = factory.asset(name: "Charcoal", data: CharcoalColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "Charcoal")
         
@@ -64,7 +64,7 @@ class ColorSetTests: XCTestCase {
     }
     
     func testDarkOliveGreen() {
-        let colorSet = factory.colorSet(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData)
+        let colorSet = factory.asset(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "dark-olive-green")
         
@@ -75,7 +75,7 @@ class ColorSetTests: XCTestCase {
     }
     
     func testDesire() {
-        let colorSet = factory.colorSet(name: "Desire", data: DesireColorSetTestData)
+        let colorSet = factory.asset(name: "Desire", data: DesireColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "Desire")
         
@@ -86,7 +86,7 @@ class ColorSetTests: XCTestCase {
     }
     
     func testEmerald() {
-        let colorSet = factory.colorSet(name: "Emerald", data: EmeraldColorSetTestData)
+        let colorSet = factory.asset(name: "Emerald", data: EmeraldColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "Emerald")
         
@@ -97,13 +97,13 @@ class ColorSetTests: XCTestCase {
     }
     
     func testEmpty() {
-        let colorSet = factory.colorSet(name: "Empty", data: EmptyColorSetTestData)
+        let colorSet = factory.asset(name: "Empty", data: EmptyColorSetTestData)
         
         XCTAssertNil(colorSet)
     }
     
     func testFirebrick() {
-        let colorSet = factory.colorSet(name: "firebrick-color", data: FirebrickColorSetTestData)
+        let colorSet = factory.asset(name: "firebrick-color", data: FirebrickColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "firebrick-color")
         
@@ -114,7 +114,7 @@ class ColorSetTests: XCTestCase {
     }
     
     func testMaroon() {
-        let colorSet = factory.colorSet(name: "maroon color", data: MaroonColorSetTestData)
+        let colorSet = factory.asset(name: "maroon color", data: MaroonColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "maroon color")
         
@@ -125,7 +125,7 @@ class ColorSetTests: XCTestCase {
     }
     
     func testNight() {
-        let colorSet = factory.colorSet(name: "Night", data: NightColorSetTestData)
+        let colorSet = factory.asset(name: "Night", data: NightColorSetTestData)
         
         XCTAssertEqual(colorSet?.name, "Night")
         

@@ -87,6 +87,18 @@ extension CGColor {
         return UIColor.firebrick.cgColor
     }
     
+    static var fluorescentBlizzardBlue: CGColor {
+        return UIColor.fluorescentBlizzardBlue.cgColor
+    }
+    
+    static var fluorescentMagicMint: CGColor {
+        return UIColor.fluorescentMagicMint.cgColor
+    }
+    
+    static var fluorescentRadicalRed: CGColor {
+        return UIColor.fluorescentRadicalRed.cgColor
+    }
+    
     static var gray: CGColor {
         return UIColor.gray.cgColor
     }
