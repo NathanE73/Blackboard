@@ -57,6 +57,9 @@ enum ColorAssetName: String {
     case desire = "Desire"
     case emerald = "Emerald"
     case firebrick = "firebrick-color"
+    case fluorescentBlizzardBlue = "Fluorescent/Blizzard Blue"
+    case fluorescentMagicMint = "Fluorescent/Magic Mint"
+    case fluorescentRadicalRed = "Fluorescent/Radical Red"
     case gray = "gray"
     case green = "green"
     case lightGray = "lightGray"
@@ -97,6 +100,12 @@ enum ColorAssetName: String {
             return .emerald
         case .firebrick:
             return .firebrick
+        case .fluorescentBlizzardBlue:
+            return .fluorescentBlizzardBlue
+        case .fluorescentMagicMint:
+            return .fluorescentMagicMint
+        case .fluorescentRadicalRed:
+            return .fluorescentRadicalRed
         case .gray:
             return .gray
         case .green:
@@ -146,6 +155,15 @@ extension UIColor {
     
     // #B22222 rgb(178, 34, 34)
     static let firebrick = color(identifier: .firebrick, red: 0.698, green: 0.133, blue: 0.133, alpha: 1.0)
+    
+    // #50BFE6 rgb(80, 191, 230)
+    static let fluorescentBlizzardBlue = color(identifier: .fluorescentBlizzardBlue, red: 0.314, green: 0.749, blue: 0.902, alpha: 1.0)
+    
+    // #AAF0D1 rgb(170, 240, 209)
+    static let fluorescentMagicMint = color(identifier: .fluorescentMagicMint, red: 0.667, green: 0.941, blue: 0.82, alpha: 1.0)
+    
+    // #FF355E rgb(255, 53, 94)
+    static let fluorescentRadicalRed = color(identifier: .fluorescentRadicalRed, red: 1.0, green: 0.208, blue: 0.369, alpha: 1.0)
     
     // #800000 rgb(128, 0, 0)
     static let maroon = color(identifier: .maroon, red: 0.502, green: 0.0, blue: 0.0, alpha: 1.0)

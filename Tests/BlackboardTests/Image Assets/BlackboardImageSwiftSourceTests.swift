@@ -34,20 +34,20 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
         let expectedSource = BlackboardUIImageSwiftSource
         
         let imageSets: [ImageSet?] = [
-            factory.imageSet(name: "apple", data: AppleImageSetTestData),
-            factory.imageSet(name: "apple television", data: AppleTelevisionImageSetTestData), // should be ignored
-            factory.imageSet(name: "button", data: ButtonImageSetTestData),
-            factory.imageSet(name: "big_apple", data: BigAppleImageSetTestData),
-            factory.imageSet(name: "everything--apple", data: EverythingAppleImageSetTestData),
-            factory.imageSet(name: "green-paper-clip", data: GreenPaperClipImageSetTestData),
-            factory.imageSet(name: "green-pencil", data: GreenPencilImageSetTestData),
-            factory.imageSet(name: "large-apple", data: LargeAppleImageSetTestData),
-            factory.imageSet(name: "red-cup", data: RedCupImageSetTestData),
-            factory.imageSet(name: "red-stapler", data: RedStaplerImageSetTestData),
-            factory.imageSet(name: "RedApple", data: RedAppleImageSetTestData),
-            factory.imageSet(name: "silver-paper-clip", data: SilverPaperClipImageSetTestData),
-            factory.imageSet(name: "small apple", data: SmallAppleImageSetTestData),
-            factory.imageSet(name: "white-dice", data: WhiteDiceImageSetTestData)
+            factory.asset(name: "apple", data: AppleImageSetTestData),
+            factory.asset(name: "apple television", data: AppleTelevisionImageSetTestData), // should be ignored
+            factory.asset(name: "button", data: ButtonImageSetTestData),
+            factory.asset(name: "big_apple", data: BigAppleImageSetTestData),
+            factory.asset(name: "everything--apple", data: EverythingAppleImageSetTestData),
+            factory.asset(name: "green-paper-clip", data: GreenPaperClipImageSetTestData),
+            factory.asset(name: "green-pencil", data: GreenPencilImageSetTestData),
+            factory.asset(name: "large-apple", data: LargeAppleImageSetTestData),
+            factory.asset(name: "red-cup", data: RedCupImageSetTestData),
+            factory.asset(name: "red-stapler", data: RedStaplerImageSetTestData),
+            factory.asset(name: "RedApple", data: RedAppleImageSetTestData),
+            factory.asset(name: "silver-paper-clip", data: SilverPaperClipImageSetTestData),
+            factory.asset(name: "small apple", data: SmallAppleImageSetTestData),
+            factory.asset(name: "white-dice", data: WhiteDiceImageSetTestData)
         ]
         
         let blackboardImages = imageSets

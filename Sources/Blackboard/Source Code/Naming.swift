@@ -30,22 +30,10 @@ struct Naming {
         return name(fromIdentifier: identifier)
     }
     
-    static func methodName(fromIdentifier identifier: String, suffix: String? = nil, prefix: String? = nil) -> String {
+    static func methodName(fromIdentifier identifier: String) -> String {
         let name = self.name(fromIdentifier: identifier)
         
-        var methodName: String
-        if let prefix = prefix {
-            methodName = prefix + name
-        }
-        else {
-            methodName = name.firstCharacterLowercased
-        }
-        
-        if let suffix = suffix {
-            methodName += suffix
-        }
-        
-        return methodName
+        return name.firstCharacterLowercased
     }
     
     static func name(fromIdentifier identifier: String) -> String {
@@ -73,6 +61,16 @@ struct Naming {
         }
         
         return name
+    }
+    
+    static func namespace(from namespaces: String?...) -> String? {
+        let namespaces = namespaces.compactMap { $0 }
+        
+        if namespaces.isEmpty {
+            return nil
+        }
+        
+        return namespaces.joined(separator: "/")
     }
     
 }

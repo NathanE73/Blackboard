@@ -24,39 +24,17 @@
 
 import Foundation
 
-class ColorSetFactory {
+class ColorSetFactory: AssetSetFactory {
     
-    let fileManager = FileManager.default
+    var fileManager = FileManager.default
+    
+    let pathExtension = "colorset"
     
     func colorSetsAt(path: String) -> [ColorSet] {
-        var files: [String] = []
-        
-        let enumerator = fileManager.enumerator(atPath: path)
-        while let file = enumerator?.nextObject() as? String {
-            if file.pathExtension == "colorset" {
-                files.append(path.appendingPathComponent(file))
-            }
-        }
-        
-        files.sort(by: <)
-        
-        return files.compactMap(colorSetAt(path:))
+        return assetsAt(path: path, namespace: nil)
     }
     
-    func colorSetAt(path: String) -> ColorSet? {
-        let url = URL(fileURLWithPath: path, isDirectory: false)
-        
-        let contentsURL = url.appendingPathComponent("Contents.json")
-        guard let data = try? Data(contentsOf: contentsURL) else {
-            return nil
-        }
-        
-        let name = url.lastPathComponent.deletingPathExtension
-        
-        return colorSet(name: name, data: data)
-    }
-    
-    func colorSet(name: String, data: Data) -> ColorSet? {
+    func asset(name: String, data: Data) -> ColorSet? {
         guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
             return nil
         }

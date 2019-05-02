@@ -24,39 +24,17 @@
 
 import Foundation
 
-class ImageSetFactory {
+class ImageSetFactory: AssetSetFactory {
     
-    let fileManager = FileManager.default
+    var fileManager = FileManager.default
+    
+    let pathExtension = "imageset"
     
     func imageSetsAt(path: String) -> [ImageSet] {
-        var files: [String] = []
-        
-        let enumerator = fileManager.enumerator(atPath: path)
-        while let file = enumerator?.nextObject() as? String {
-            if file.pathExtension == "imageset" {
-                files.append(path.appendingPathComponent(file))
-            }
-        }
-        
-        files.sort(by: <)
-        
-        return files.compactMap(imageSetAt(path:))
+        return assetsAt(path: path, namespace: nil)
     }
     
-    func imageSetAt(path: String) -> ImageSet? {
-        let url = URL(fileURLWithPath: path, isDirectory: false)
-        
-        let contentsURL = url.appendingPathComponent("Contents.json")
-        guard let data = try? Data(contentsOf: contentsURL) else {
-            return nil
-        }
-        
-        let name = url.lastPathComponent.deletingPathExtension
-        
-        return imageSet(name: name, data: data)
-    }
-    
-    func imageSet(name: String, data: Data) -> ImageSet? {
+    func asset(name: String, data: Data) -> ImageSet? {
         guard let assetImageSet = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
             return nil
         }

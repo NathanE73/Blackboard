@@ -32,16 +32,19 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     
     var blackboardColors: [BlackboardColor] {
         let colorSets: [ColorSet?] = [
-            factory.colorSet(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData),
-            factory.colorSet(name: "Bisque", data: BisqueColorSetTestData),
-            factory.colorSet(name: "Charcoal", data: CharcoalColorSetTestData),
-            factory.colorSet(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData),
-            factory.colorSet(name: "Desire", data: DesireColorSetTestData),
-            factory.colorSet(name: "Emerald", data: EmeraldColorSetTestData),
-            factory.colorSet(name: "Empty", data: EmptyColorSetTestData),
-            factory.colorSet(name: "firebrick-color", data: FirebrickColorSetTestData),
-            factory.colorSet(name: "maroon color", data: MaroonColorSetTestData),
-            factory.colorSet(name: "Night", data: NightColorSetTestData)
+            factory.asset(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData),
+            factory.asset(name: "Bisque", data: BisqueColorSetTestData),
+            factory.asset(name: "Charcoal", data: CharcoalColorSetTestData),
+            factory.asset(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData),
+            factory.asset(name: "Desire", data: DesireColorSetTestData),
+            factory.asset(name: "Emerald", data: EmeraldColorSetTestData),
+            factory.asset(name: "Empty", data: EmptyColorSetTestData),
+            factory.asset(name: "firebrick-color", data: FirebrickColorSetTestData),
+            factory.asset(name: "Fluorescent/Blizzard Blue", data: FluorescentBlizzardBlueColorSetTestData),
+            factory.asset(name: "Fluorescent/Magic Mint", data: FluorescentMagicMintColorSetTestData),
+            factory.asset(name: "Fluorescent/Radical Red", data: FluorescentRadicalRedColorSetTestData),
+            factory.asset(name: "maroon color", data: MaroonColorSetTestData),
+            factory.asset(name: "Night", data: NightColorSetTestData)
         ]
         
         var blackboardColors = colorSets

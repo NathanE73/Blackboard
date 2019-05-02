@@ -27,9 +27,9 @@ import Foundation
 class Filename {
     
     static let blackboardExtension = ".blackboard.swift"
-    static let cgColor = "CGColor.blackboard.swift"
-    static let uiColor = "UIColor.blackboard.swift"
-    static let uiImage = "UIImage.blackboard.swift"
-    static let uiKit = "UIKit.blackboard.swift"
+    static let CGColor = "CGColor.blackboard.swift"
+    static let UIColor = "UIColor.blackboard.swift"
+    static let UIImage = "UIImage.blackboard.swift"
+    static let UIKit = "UIKit.blackboard.swift"
 
 }
