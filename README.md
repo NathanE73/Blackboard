@@ -10,6 +10,8 @@ Blackboard is an iOS Storyboard and Asset Manager written in Swift.
 
 - [Requirements](#requirements)
 - [Installation](#installation)
+  - [Cocoaods](#using-cocoapods)
+  - [Manually](#manually)
 - [Storyboard Usage](#storyboard-usage)
   - [UIStoryboard](#uistoryboard)
     - Instantiate Navigation Controller From Storyboard
@@ -24,6 +26,7 @@ Blackboard is an iOS Storyboard and Asset Manager written in Swift.
     - Dequeue Cell
 - [Asset Usage](#asset-usage)
   - [UIColor](#uicolor)
+  - [UIImage](#uiimage)
 - [License](#license)
 
 ## Xcode Projects
@@ -69,6 +72,10 @@ else
   echo "warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard"
 fi
 ```
+
+### Manually
+
+[Click here for manual installation instructions.](README/manual-installation.md)
 
 ## Storyboard Usage
 
@@ -154,6 +161,12 @@ override func collectionView(_ collectionView: UICollectionView, cellForItemAt i
 view.backgroundColor = .charcoal
 ```
 
+### UIImage
+
+```swift
+imageView.image = .redStapler
+```
+
 ## Authors
 
 - Nathan Walczak, knate@knate.com
@@ -161,4 +174,4 @@ view.backgroundColor = .charcoal
 
 ## License
 
-Blackboard is available under the MIT license. See the LICENSE file for more info.
+Blackboard is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
