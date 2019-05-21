@@ -1,4 +1,6 @@
-### Manual Installation
+## Installation
+
+### Manually
 
 Download [portable-blackboard.zip](https://github.com/NathanE73/Blackboard/releases) from the latest release's assets.
 

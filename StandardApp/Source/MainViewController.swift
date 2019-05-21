@@ -66,9 +66,9 @@ class MainViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        // if identifier == "Present Photo" {
-        //     return false
-        // }
+        if identifier == "Present Photo" {
+            return PhotoViewModel.examples.first != nil
+        }
         return true
     }
     

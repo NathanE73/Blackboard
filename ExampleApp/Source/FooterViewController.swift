@@ -40,8 +40,12 @@ class FooterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .charcoal
-        footerLabel.textColor = .white
+        view.backgroundColor = .fluorescentMagicMint
+        
+        view.layer.borderWidth = 2
+        view.layer.borderColor = .fluorescentBlizzardBlue
+        
+        footerLabel.textColor = .fluorescentRadicalRed
     }
     
 }
