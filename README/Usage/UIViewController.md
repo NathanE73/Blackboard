@@ -1,4 +1,6 @@
-## UIViewController Examples
+## Instantiate View Controller Usage
+
+Scans through storyboards.
 
 ![Open Account View Controller](Images/StoryboardOpenAccountViewController.png)
 

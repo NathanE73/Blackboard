@@ -1,4 +1,4 @@
-## UIColor Examples
+## UIColor Usage
 
 Scans through asset catalogs.
 

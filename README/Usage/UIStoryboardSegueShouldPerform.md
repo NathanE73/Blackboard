@@ -1,4 +1,6 @@
-## UIStoryboardSegue Should Perform Examples
+## Should Perform Segue Usage
+
+Scans through storyboards.
 
 ### Backboard Generated Code
 

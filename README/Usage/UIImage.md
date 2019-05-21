@@ -1,4 +1,4 @@
-## UIImage Examples
+## UIImage Usage
 
 Scans through asset catalogs.
 

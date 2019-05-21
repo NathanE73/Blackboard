@@ -10,11 +10,11 @@ You compare these to see the difference between using and not using Blackboard.
   - [UIImage](/README/Usage/UIImage.md)
 - Storyboard Usage
   - Cells
-    - [UICollectionViewCell](/README/Usage/UICollectionViewCell.md)
-    - [UITableViewCell](/README/Usage/UITableViewCell.md)
+    - [Dequeue Collection View Cell](/README/Usage/UICollectionViewCell.md)
+    - [Dequeue Table View Cell](/README/Usage/UITableViewCell.md)
   - Controllers
-    - [UINavigationController](/README/Usage/UINavigationController.md)
-    - [UIViewController](/README/Usage/UIViewController.md)
+    - [Instantiate Navigation Controller](/README/Usage/UINavigationController.md)
+    - [Instantiate View Controller](/README/Usage/UIViewController.md)
   - Segues
     - [Perform Segue](/README/Usage/UIStoryboardSeguePerform.md)
     - [Prepare Segue](/README/Usage/UIStoryboardSeguePrepare.md)

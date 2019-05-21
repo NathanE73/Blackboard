@@ -1,4 +1,4 @@
-## CGColor Examples
+## CGColor Usage
 
 Scans through asset catalogs.
 
