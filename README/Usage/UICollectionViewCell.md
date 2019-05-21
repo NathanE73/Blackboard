@@ -1,4 +1,8 @@
-## UICollectionViewCell Examples
+## Dequeue Collection View Cell Usage
+
+Scans through storyboards.
+
+![Photo Collection View Cell](Images/StoryboardPhotoCollectionViewCell.png)
 
 ### Backboard Generated Code
 

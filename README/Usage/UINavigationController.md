@@ -1,4 +1,6 @@
-## UINavigationController Examples
+## Instantiate Navigation Controller Usage
+
+Scans through storyboards.
 
 ![Open Account Navigation Controller](Images/StoryboardOpenAccountNavigationController.png)
 

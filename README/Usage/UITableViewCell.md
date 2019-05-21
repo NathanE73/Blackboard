@@ -1,4 +1,8 @@
-## UITableViewCell Examples
+## Dequeue Table View Cell Usage
+
+Scans through storyboards.
+
+![Account Table View Cell](Images/StoryboardAccountTableViewCell.png)
 
 ### Backboard Generated Code
 

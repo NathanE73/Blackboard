@@ -1,4 +1,8 @@
-## UIStoryboardSegue Perform Examples
+## Perform Segue Usage
+
+Scans through storyboards.
+
+![Show Account Segue](Images/StoryboardShowAccountSegue.png)
 
 ### Backboard Generated Code
 

@@ -1,4 +1,6 @@
-## UIStoryboardSegue Prepare Examples
+## Prepare Segue Usage
+
+Scans through storyboards.
 
 ### Backboard Generated Code
 
