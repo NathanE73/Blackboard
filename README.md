@@ -6,33 +6,9 @@
 [![Swift](https://img.shields.io/badge/swift-4.2-yellow.svg)](https://swift.org)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
 
+## Purpose
+
 Blackboard is an iOS Storyboard and Asset Manager written in Swift.
-
-- [Requirements](#requirements)
-- [Installation](#installation)
-  - [Cocoaods](#using-cocoapods)
-  - [Manually](#manually)
-- [Storyboard Usage](#storyboard-usage)
-  - [UIStoryboard](#uistoryboard)
-    - Instantiate Navigation Controller From Storyboard
-    - Instantiate View Controller From Storyboard
-  - [UIStoryboardSegue](#uistoryboardsegue)
-    - Perform Segue
-    - Prepare Segue
-    - Should Perform Segue
-  - [UITableViewCell](#uitableviewcell)
-    - Dequeue Cell
-  - [UICollectionViewCell](#uicollectionviewcell)
-    - Dequeue Cell
-- [Asset Usage](#asset-usage)
-  - [UIColor](#uicolor)
-  - [UIImage](#uiimage)
-- [License](#license)
-
-## Xcode Projects
-
-The `ExampleApp` project uses Blackboard.
-The `StandardApp` project is the same as the `ExampleApp` project, except that it does not use Blackboard.  The is provided so you can see the difference between using and not using Blackboard.
 
 ## Requirements
 
@@ -41,131 +17,30 @@ The `StandardApp` project is the same as the `ExampleApp` project, except that i
 
 ## Installation
 
-### Using [CocoaPods](https://cocoapods.org):
+- [CocoaPods](/README/Installation/CocoaPods.md)
+- [Manually](/README/Installation/Manually.md)
 
-Simply add the following line to your Podfile:
+## Usage
 
-```ruby
-pod 'Blackboard'
-```
+The `ExampleApp` project uses Blackboard.
+The `StandardApp` project is the same as the `ExampleApp` project, except that it does not use Blackboard.
+You compare these to see the difference between using and not using Blackboard.
 
-This will download the Blackboard binaries and dependencies in `Pods/` during your next
-`pod install` execution and will allow you to invoke it via `${PODS_ROOT}/Blackboard/blackboard`
-in your Script Build Phases.
-
-This is the recommended way to install a specific version of Blackboard since it supports
-installing a pinned version rather than simply the latest.
-
-Note that this will add the Blackboard binaries, its dependencies' binaries and the Swift binary
-library distribution to the `Pods/` directory, so checking in this directory to SCM such as
-git is discouraged.
-
-### Xcode
-
-Integrate Blackboard into an Xcode scheme to get warnings and errors displayed
-in the IDE. Just add a new "Run Script Phase" with:
-
-```bash
-if which "${PODS_ROOT}/Blackboard/blackboard" >/dev/null; then
-  "${PODS_ROOT}/Blackboard/blackboard" "ExampleApp/Resources/" "ExampleApp/Source/Generated/"
-else
-  echo "warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard"
-fi
-```
-
-### Manually
-
-[Click here for manual installation instructions.](README/manual-installation.md)
-
-## Storyboard Usage
-
-### UIStoryboard
-
-[Instantiate Navigation Controller From Storyboard](ExampleApp/Source/AccountsTableViewController.swift#L99)
-```swift
-@IBAction func presentOpenAccount() {
-    let navigationController = OpenAccountViewController.instantiateNavigationControllerFromStoryboard { openAccountViewController in
-        openAccountViewController.path = "Instantiate Navigation Controller"
-    }
-    present(navigationController, animated: true)
-}
-```
-
-[Instantiate View Controller From Storyboard](ExampleApp/Source/AccountsTableViewController.swift#L106)
-```swift
-@IBAction func presentOpenAccount() {
-    let openAccountViewController = OpenAccountViewController.instantiateFromStoryboard()
-    openAccountViewController.path = "Instantiate View Controller"
-    
-    let navigationController = UINavigationController(rootViewController: openAccountViewController)
-    present(navigationController, animated: true)
-}
-```
-
-### UIStoryboardSegue
-
-[Perform Segue](ExampleApp/Source/AccountsTableViewController.swift#L92)
-```swift
-override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    performPresentOpenAccountSegue { openAccountViewController in
-        openAccountViewController.path = "Perform Segue"
-    }
-}
-```
-
-[Prepare Segue](ExampleApp/Source/MainViewController.swift#L97)
-```swift
-func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {
-    photoViewController.viewModel = PhotoViewModel.examples.first
-}
-```
-
-[Should Perform Segue](ExampleApp/Source/MainViewController.swift#L93)
-```swift
-func shouldPerformPresentPhotoSegue() -> Bool {
-    return PhotoViewModel.examples.first != nil
-}
-```
-
-### UITableViewCell
-
-[Dequeue Cell](ExampleApp/Source/AccountsTableViewController.swift#L73)
-```swift
-override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let accountViewModel = accountViewModels[indexPath.row]
-    return dequeueAccountCell(from: tableView, for: indexPath) { cell in
-        cell.nameLabel.text = accountViewModel.name
-        cell.balanceLabel.text = accountViewModel.balance
-    }
-}
-```
-
-### UICollectionViewCell
-
-[Dequeue Cell](ExampleApp/Source/PhotosCollectionViewController.swift#L37)
-```swift
-override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let photoViewModel = photoViewModels[indexPath.item]
-    return dequeuePhotoCell(from: collectionView, for: indexPath) { cell in
-        cell.imageView.image = photoViewModel.image
-    }
-}
-```
-
-## Asset Usage
-
-### UIColor
-
-[Background Color](ExampleApp/Source/FooterViewController.swift#L43)
-```swift
-view.backgroundColor = .charcoal
-```
-
-### UIImage
-
-```swift
-imageView.image = .redStapler
-```
+- Asset Usage
+  - [UIColor](/README/Usage/UIColor.md)
+  - [CGColor](/README/Usage/CGColor.md)
+  - [UIImage](/README/Usage/UIImage.md)
+- Storyboard Usage
+  - Cells
+    - [UICollectionViewCell](/README/Usage/UICollectionViewCell.md)
+    - [UITableViewCell](/README/Usage/UITableViewCell.md)
+  - Controllers
+    - [UINavigationController](/README/Usage/UINavigationController.md)
+    - [UIViewController](/README/Usage/UIViewController.md)
+  - Segues
+    - [Perform Segue](/README/Usage/UIStoryboardSeguePerform.md)
+    - [Prepare Segue](/README/Usage/UIStoryboardSeguePrepare.md)
+    - [Should Perform Segue](/README/Usage/UIStoryboardSegueShouldPerform.md)
 
 ## Authors
 
