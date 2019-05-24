@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/swift-4.2-yellow.svg)](https://swift.org)
+[![Swift](https://img.shields.io/badge/swift-5.0-yellow.svg)](https://swift.org)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
 
 ## Purpose

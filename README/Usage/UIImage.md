@@ -2,7 +2,13 @@
 
 Scans through asset catalogs.
 
-![Red Stapler Image Asset](Images/ImageAssetRedStapler.png)
+### Xcode Editor Autocomplete
+
+![Autocomplete UIImage](Images/AutocompleteUIImage.gif)
+
+### Xcode Asset Catalog
+
+![Asset Image Red Stapler](Images/AssetImageRedStapler.png)
 
 ### Backboard Generated Code
 

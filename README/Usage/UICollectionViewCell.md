@@ -2,6 +2,12 @@
 
 Scans through storyboards.
 
+### Xcode Editor Autocomplete
+
+![Autocomplete Dequeue Collection View Cell](Images/AutocompleteDequeueCollectionViewCell.png)
+
+### Storyboard Identifier
+
 ![Photo Collection View Cell](Images/StoryboardPhotoCollectionViewCell.png)
 
 ### Backboard Generated Code

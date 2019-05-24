@@ -2,6 +2,10 @@
 
 Scans through storyboards.
 
+### Xcode Editor Autocomplete
+
+![Autocomplete Should Perform Segue](Images/AutocompleteShouldPerformSegue.png)
+
 ### Backboard Generated Code
 
 [Main.blackboard.swift](/ExampleApp/Source/Generated/Main.blackboard.swift)

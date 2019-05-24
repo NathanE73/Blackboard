@@ -2,6 +2,12 @@
 
 Scans through storyboards.
 
+### Xcode Editor Autocomplete
+
+![Autocomplete Instantiate Navigation Controller From Storyboard](Images/AutocompleteInstantiateNavigationControllerFromStoryboard.png)
+
+### Storyboard Identifier
+
 ![Open Account Navigation Controller](Images/StoryboardOpenAccountNavigationController.png)
 
 ### Backboard Generated Code
