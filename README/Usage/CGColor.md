@@ -2,7 +2,13 @@
 
 Scans through asset catalogs.
 
-![Dark Olive Green Color Asset](Images/ColorAssetDarkOliveGreen.png)
+### Xcode Editor Autocomplete
+
+![Autocomplete CGColor](Images/AutocompleteCGColor.gif)
+
+### Xcode Asset Catalog
+
+![Asset Color Dark Olive Green](Images/AssetColorDarkOliveGreen.png)
 
 ### Backboard Generated Code
 

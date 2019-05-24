@@ -2,6 +2,10 @@
 
 Scans through storyboards.
 
+### Xcode Editor Autocomplete
+
+![Autocomplete Prepare Segue](Images/AutocompletePrepareSegue.png)
+
 ### Backboard Generated Code
 
 [Main.blackboard.swift](/ExampleApp/Source/Generated/Main.blackboard.swift)

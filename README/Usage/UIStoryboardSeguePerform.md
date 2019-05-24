@@ -2,6 +2,12 @@
 
 Scans through storyboards.
 
+### Xcode Editor Autocomplete
+
+![Autocomplete Perform Segue](Images/AutocompletePerformSegue.png)
+
+### Storyboard Identifier
+
 ![Show Account Segue](Images/StoryboardShowAccountSegue.png)
 
 ### Backboard Generated Code
