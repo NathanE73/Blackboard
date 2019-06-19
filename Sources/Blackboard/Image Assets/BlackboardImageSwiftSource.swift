@@ -26,7 +26,7 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendImages(images: [BlackboardImage]) {
+    func appendUIImages(images: [BlackboardImage]) {
         append("//")
         append("//  \(Filename.UIImage)")
         append("//")
@@ -64,12 +64,12 @@ extension SwiftSource {
         append()
         append("extension UIImage") {
             append()
-            images.forEach(appendImage)
+            images.forEach(appendUIImage)
         }
         append()
     }
     
-    func appendImage(image: BlackboardImage) {
+    func appendUIImage(image: BlackboardImage) {
         append("static var \(image.functionName): UIImage") {
             append("return UIImage(identifier: .\(image.caseName))")
         }

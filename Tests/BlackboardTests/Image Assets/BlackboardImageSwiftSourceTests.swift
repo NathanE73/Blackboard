@@ -28,35 +28,33 @@ import XCTest
 
 class BlackboardImageSwiftSourceTests: XCTestCase {
     
-    func testDescription() {
-        let expectedSource = Fixture.generated(project: .example, name: "UIImage")
-        
+    var blackboardImages: [BlackboardImage] {
         let imageSets: [ImageSet?] = [
-            Fixture.imageSet(project: .example, path: "Apples", name: "apple"),
-            Fixture.imageSet(project: .example, path: "Apples", name: "apple television"), // should be ignored
-            Fixture.imageSet(project: .example, path: "Photos", name: "button"),
-            Fixture.imageSet(project: .example, path: "Apples", name: "big_apple"),
-            Fixture.imageSet(project: .example, path: "Apples", name: "everything--apple"),
-            Fixture.imageSet(project: .example, path: "Photos", name: "green-paper-clip"),
-            Fixture.imageSet(project: .example, path: "Photos", name: "green-pencil"),
-            Fixture.imageSet(project: .example, path: "Apples", name: "large-apple"),
-            Fixture.imageSet(project: .example, path: "Photos", name: "Red/cup"),
-            Fixture.imageSet(project: .example, path: "Photos", name: "Red/stapler"),
-            Fixture.imageSet(project: .example, path: "Apples", name: "RedApple"),
-            Fixture.imageSet(project: .example, path: "Photos", name: "silver-paper-clip"),
-            Fixture.imageSet(project: .example, path: "Apples", name: "small apple"),
-            Fixture.imageSet(project: .example, path: "Photos", name: "white-dice")
+            Fixture.imageSet(project: .example, name: "button"),
+            Fixture.imageSet(project: .example, path: "Paper Clips", name: "green-paper-clip"),
+            Fixture.imageSet(project: .example, name: "green-pencil"),
+            Fixture.imageSet(project: .example, name: "Red/cup"),
+            Fixture.imageSet(project: .example, name: "Red/stapler"),
+            Fixture.imageSet(project: .example, path: "Paper Clips", name: "silver-paper-clip"),
+            Fixture.imageSet(project: .example, name: "white-dice")
         ]
         
-        let blackboardImages = imageSets
+        var blackboardImages = imageSets
             .compactMap { $0 }
             .compactMap(BlackboardImage.init)
-            .sorted { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
         
-        XCTAssertEqual(blackboardImages.count, 13)
+        blackboardImages.sort { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
+        
+        return blackboardImages
+    }
+    
+    func testUIImageDescription() {
+        let expectedSource = Fixture.generated(project: .example, name: "UIImage")
+        
+        XCTAssertEqual(blackboardImages.count, 7)
         
         let swiftSource = SwiftSource()
-        swiftSource.appendImages(images: blackboardImages)
+        swiftSource.appendUIImages(images: blackboardImages)
         let source = swiftSource.description
         
         XCTAssertEqual(source, expectedSource)

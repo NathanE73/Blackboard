@@ -28,46 +28,46 @@ import XCTest
 
 class ImageSetTests: XCTestCase {
     
-    func testApple() {
-        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "Apple")
+    func testButton() {
+        let imageSet = Fixture.imageSet(project: .example, name: "button")
         
-        XCTAssertEqual(imageSet?.name, "Apple")
+        XCTAssertEqual(imageSet?.name, "button")
     }
     
-    func testBigApple() {
-        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "big_apple")
+    func testGreenPaperClip() {
+        let imageSet = Fixture.imageSet(project: .example, path: "Paper Clips", name: "green-paper-clip")
         
-        XCTAssertEqual(imageSet?.name, "big_apple")
+        XCTAssertEqual(imageSet?.name, "green-paper-clip")
     }
     
-    func testEverythingApple() {
-        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "everything--apple")
+    func testGreenPencil() {
+        let imageSet = Fixture.imageSet(project: .example, name: "green-pencil")
         
-        XCTAssertEqual(imageSet?.name, "everything--apple")
+        XCTAssertEqual(imageSet?.name, "green-pencil")
     }
     
-    func testLargeApple() {
-        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "large-apple")
+    func testRedCup() {
+        let imageSet = Fixture.imageSet(project: .example, name: "Red/cup")
         
-        XCTAssertEqual(imageSet?.name, "large-apple")
+        XCTAssertEqual(imageSet?.name, "Red/cup")
     }
     
-    func testRedApple() {
-        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "RedApple")
+    func testRedStapler() {
+        let imageSet = Fixture.imageSet(project: .example, name: "Red/stapler")
         
-        XCTAssertEqual(imageSet?.name, "RedApple")
+        XCTAssertEqual(imageSet?.name, "Red/stapler")
     }
     
-    func testSmallApple() {
-        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "small apple")
+    func testSilverPaperClip() {
+        let imageSet = Fixture.imageSet(project: .example, path: "Paper Clips", name: "silver-paper-clip")
         
-        XCTAssertEqual(imageSet?.name, "small apple")
+        XCTAssertEqual(imageSet?.name, "silver-paper-clip")
     }
     
-    func testTelevision() {
-        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "apple television")
+    func testWhiteDice() {
+        let imageSet = Fixture.imageSet(project: .example, name: "white-dice")
         
-        XCTAssertNil(imageSet)
+        XCTAssertEqual(imageSet?.name, "white-dice")
     }
     
 }
