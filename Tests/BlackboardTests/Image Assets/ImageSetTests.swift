@@ -28,46 +28,44 @@ import XCTest
 
 class ImageSetTests: XCTestCase {
     
-    let factory = ImageSetFactory()
-    
     func testApple() {
-        let imageSet = factory.asset(name: "Apple", data: AppleImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "Apple")
         
         XCTAssertEqual(imageSet?.name, "Apple")
     }
     
     func testBigApple() {
-        let imageSet = factory.asset(name: "big_apple", data: BigAppleImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "big_apple")
         
         XCTAssertEqual(imageSet?.name, "big_apple")
     }
     
     func testEverythingApple() {
-        let imageSet = factory.asset(name: "everything--apple", data: EverythingAppleImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "everything--apple")
         
         XCTAssertEqual(imageSet?.name, "everything--apple")
     }
     
     func testLargeApple() {
-        let imageSet = factory.asset(name: "large-apple", data: LargeAppleImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "large-apple")
         
         XCTAssertEqual(imageSet?.name, "large-apple")
     }
     
     func testRedApple() {
-        let imageSet = factory.asset(name: "RedApple", data: RedAppleImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "RedApple")
         
         XCTAssertEqual(imageSet?.name, "RedApple")
     }
     
     func testSmallApple() {
-        let imageSet = factory.asset(name: "small apple", data: SmallAppleImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "small apple")
         
         XCTAssertEqual(imageSet?.name, "small apple")
     }
     
     func testTelevision() {
-        let imageSet = factory.asset(name: "apple television", data: AppleTelevisionImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "apple television")
         
         XCTAssertNil(imageSet)
     }

@@ -29,7 +29,7 @@ import XCTest
 class StoryboardTests: XCTestCase {
     
     func testAccount() {
-        let storyboard = Storyboard(name: "Account", data: AccountStoryboardTestData)
+        let storyboard = Fixture.storyboard(project: .example, name: "Account")
         
         XCTAssertEqual(storyboard?.name, "Account")
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "LYS-UF-AgY")
@@ -38,7 +38,7 @@ class StoryboardTests: XCTestCase {
     }
     
     func testEmpty() {
-        let storyboard = Storyboard(name: "Empty", data: EmptyStoryboardTestData)
+        let storyboard = Fixture.storyboard(project: .example, name: "Empty")
         
         XCTAssertEqual(storyboard?.name, "Empty")
         XCTAssertNil(storyboard?.initialViewControllerIdentifier)
@@ -47,13 +47,13 @@ class StoryboardTests: XCTestCase {
     }
     
     func testLaunchScreen() {
-        let storyboard = Storyboard(name: "LaunchScreen", data: LaunchScreenStoryboardTestData)
+        let storyboard = Fixture.storyboard(project: .example, name: "LaunchScreen")
         
         XCTAssertNil(storyboard)
     }
     
     func testMain() {
-        let storyboard = Storyboard(name: "Main", data: MainStoryboardTestData)
+        let storyboard = Fixture.storyboard(project: .example, name: "Main")
         
         XCTAssertEqual(storyboard?.name, "Main")
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BYZ-38-t0r")
@@ -62,7 +62,7 @@ class StoryboardTests: XCTestCase {
     }
     
     func testPhoto() {
-        let storyboard = Storyboard(name: "Photo", data: PhotoStoryboardTestData)
+        let storyboard = Fixture.storyboard(project: .example, name: "Photo")
         
         XCTAssertEqual(storyboard?.name, "Photo")
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BpT-OW-KyL")

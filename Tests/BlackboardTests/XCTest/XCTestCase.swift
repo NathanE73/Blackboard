@@ -23,6 +23,7 @@
 //
 
 import XCTest
+@testable import Blackboard
 
 // MARK: - XMLDocument -
 

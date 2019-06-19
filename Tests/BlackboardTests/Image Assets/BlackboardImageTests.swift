@@ -28,10 +28,8 @@ import XCTest
 
 class BlackboardImageTests: XCTestCase {
     
-    let factory = ImageSetFactory()
-    
     func testApple() {
-        guard let imageSet = factory.asset(name: "Apple", data: AppleImageSetTestData) else {
+        guard let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "Apple") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -44,7 +42,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testBigApple() {
-        guard let imageSet = factory.asset(name: "big_apple", data: BigAppleImageSetTestData) else {
+        guard let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "big_apple") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -57,7 +55,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testEverythingApple() {
-        guard let imageSet = factory.asset(name: "everything--apple", data: EverythingAppleImageSetTestData) else {
+        guard let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "everything--apple") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -70,7 +68,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testLargeApple() {
-        guard let imageSet = factory.asset(name: "large-apple", data: LargeAppleImageSetTestData) else {
+        guard let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "large-apple") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -83,7 +81,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testRedApple() {
-        guard let imageSet = factory.asset(name: "RedApple", data: RedAppleImageSetTestData) else {
+        guard let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "RedApple") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -96,7 +94,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testSmallApple() {
-        guard let imageSet = factory.asset(name: "small apple", data: SmallAppleImageSetTestData) else {
+        guard let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "small apple") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -109,7 +107,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testTelevision() {
-        let imageSet = factory.asset(name: "apple television", data: AppleTelevisionImageSetTestData)
+        let imageSet = Fixture.imageSet(project: .example, path: "Apples", name: "apple television")
         
         XCTAssertNil(imageSet)
     }

@@ -28,26 +28,24 @@ import XCTest
 
 class BlackboardImageSwiftSourceTests: XCTestCase {
     
-    let factory = ImageSetFactory()
-    
     func testDescription() {
-        let expectedSource = BlackboardUIImageSwiftSource
+        let expectedSource = Fixture.generated(project: .example, name: "UIImage")
         
         let imageSets: [ImageSet?] = [
-            factory.asset(name: "apple", data: AppleImageSetTestData),
-            factory.asset(name: "apple television", data: AppleTelevisionImageSetTestData), // should be ignored
-            factory.asset(name: "button", data: ButtonImageSetTestData),
-            factory.asset(name: "big_apple", data: BigAppleImageSetTestData),
-            factory.asset(name: "everything--apple", data: EverythingAppleImageSetTestData),
-            factory.asset(name: "green-paper-clip", data: GreenPaperClipImageSetTestData),
-            factory.asset(name: "green-pencil", data: GreenPencilImageSetTestData),
-            factory.asset(name: "large-apple", data: LargeAppleImageSetTestData),
-            factory.asset(name: "red-cup", data: RedCupImageSetTestData),
-            factory.asset(name: "red-stapler", data: RedStaplerImageSetTestData),
-            factory.asset(name: "RedApple", data: RedAppleImageSetTestData),
-            factory.asset(name: "silver-paper-clip", data: SilverPaperClipImageSetTestData),
-            factory.asset(name: "small apple", data: SmallAppleImageSetTestData),
-            factory.asset(name: "white-dice", data: WhiteDiceImageSetTestData)
+            Fixture.imageSet(project: .example, path: "Apples", name: "apple"),
+            Fixture.imageSet(project: .example, path: "Apples", name: "apple television"), // should be ignored
+            Fixture.imageSet(project: .example, path: "Photos", name: "button"),
+            Fixture.imageSet(project: .example, path: "Apples", name: "big_apple"),
+            Fixture.imageSet(project: .example, path: "Apples", name: "everything--apple"),
+            Fixture.imageSet(project: .example, path: "Photos", name: "green-paper-clip"),
+            Fixture.imageSet(project: .example, path: "Photos", name: "green-pencil"),
+            Fixture.imageSet(project: .example, path: "Apples", name: "large-apple"),
+            Fixture.imageSet(project: .example, path: "Photos", name: "Red/cup"),
+            Fixture.imageSet(project: .example, path: "Photos", name: "Red/stapler"),
+            Fixture.imageSet(project: .example, path: "Apples", name: "RedApple"),
+            Fixture.imageSet(project: .example, path: "Photos", name: "silver-paper-clip"),
+            Fixture.imageSet(project: .example, path: "Apples", name: "small apple"),
+            Fixture.imageSet(project: .example, path: "Photos", name: "white-dice")
         ]
         
         let blackboardImages = imageSets

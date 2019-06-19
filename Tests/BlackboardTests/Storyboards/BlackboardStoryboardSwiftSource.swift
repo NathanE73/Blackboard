@@ -35,9 +35,9 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     var storyboards: [Storyboard] = []
     
     override func setUp() {
-        accountStoryboard = Storyboard(name: "Account", data: AccountStoryboardTestData)
-        mainStoryboard = Storyboard(name: "Main", data: MainStoryboardTestData)
-        photoStoryboard = Storyboard(name: "Photo", data: PhotoStoryboardTestData)
+        accountStoryboard = Fixture.storyboard(project: .example, name: "Account")
+        mainStoryboard = Fixture.storyboard(project: .example, name: "Main")
+        photoStoryboard = Fixture.storyboard(project: .example, name: "Photo")
         
         storyboards = [
             accountStoryboard,
@@ -47,7 +47,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testAccountStoryboard() {
-        let expectedSource = AccountStoryboardSwiftSource
+        let expectedSource = Fixture.generated(project: .example, name: "Account")
         
         guard let accountStoryboard = accountStoryboard,
             let storyboard = BlackboardStoryboard(accountStoryboard, storyboards: storyboards) else {
@@ -63,7 +63,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testMainStoryboard() {
-        let expectedSource = MainStoryboardSwiftSource
+        let expectedSource = Fixture.generated(project: .example, name: "Main")
         
         guard let mainStoryboard = mainStoryboard,
             let storyboard = BlackboardStoryboard(mainStoryboard, storyboards: storyboards) else {
@@ -77,8 +77,9 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
         
         XCTAssertEqual(source, expectedSource)
     }
+    
     func testPhotoStoryboard() {
-        let expectedSource = PhotoStoryboardSwiftSource
+        let expectedSource = Fixture.generated(project: .example, name: "Photo")
         
         guard let photoStoryboard = photoStoryboard,
             let storyboard = BlackboardStoryboard(photoStoryboard, storyboards: storyboards) else {
