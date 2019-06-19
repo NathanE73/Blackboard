@@ -28,23 +28,21 @@ import XCTest
 
 class BlackboardColorSwiftSourceTests: XCTestCase {
     
-    let factory = ColorSetFactory()
-    
     var blackboardColors: [BlackboardColor] {
         let colorSets: [ColorSet?] = [
-            factory.asset(name: "Absolute Zero", data: AbsoluteZeroColorSetTestData),
-            factory.asset(name: "Bisque", data: BisqueColorSetTestData),
-            factory.asset(name: "Charcoal", data: CharcoalColorSetTestData),
-            factory.asset(name: "dark-olive-green", data: DarkOliveGreenColorSetTestData),
-            factory.asset(name: "Desire", data: DesireColorSetTestData),
-            factory.asset(name: "Emerald", data: EmeraldColorSetTestData),
-            factory.asset(name: "Empty", data: EmptyColorSetTestData),
-            factory.asset(name: "firebrick-color", data: FirebrickColorSetTestData),
-            factory.asset(name: "Fluorescent/Blizzard Blue", data: FluorescentBlizzardBlueColorSetTestData),
-            factory.asset(name: "Fluorescent/Magic Mint", data: FluorescentMagicMintColorSetTestData),
-            factory.asset(name: "Fluorescent/Radical Red", data: FluorescentRadicalRedColorSetTestData),
-            factory.asset(name: "maroon color", data: MaroonColorSetTestData),
-            factory.asset(name: "Night", data: NightColorSetTestData)
+            Fixture.colorSet(project: .example, path: "Dark", name: "Absolute Zero"),
+            Fixture.colorSet(project: .example, name: "Bisque"),
+            Fixture.colorSet(project: .example, path: "Dark", name: "Charcoal"),
+            Fixture.colorSet(project: .example, path: "Dark", name: "dark-olive-green"),
+            Fixture.colorSet(project: .example, name: "Desire"),
+            Fixture.colorSet(project: .example, name: "Emerald"),
+            Fixture.colorSet(project: .example, name: "Empty"),
+            Fixture.colorSet(project: .example, path: "Dark", name: "firebrick-color"),
+            Fixture.colorSet(project: .example, name: "Fluorescent/Blizzard Blue"),
+            Fixture.colorSet(project: .example, name: "Fluorescent/Magic Mint"),
+            Fixture.colorSet(project: .example, name: "Fluorescent/Radical Red"),
+            Fixture.colorSet(project: .example, path: "Dark", name: "maroon color"),
+            Fixture.colorSet(project: .example, path: "Dark", name: "Night")
         ]
         
         var blackboardColors = colorSets
@@ -59,7 +57,9 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testCGColorDescription() {
-        let expectedSource = BlackboardCGColorSwiftSource
+        let expectedSource = Fixture.generated(project: .example, name: "CGColor")
+        
+        XCTAssertEqual(blackboardColors.count, 27)
         
         let swiftSource = SwiftSource()
         swiftSource.appendCGColors(colors: blackboardColors)
@@ -69,7 +69,9 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testUIColorDescription() {
-        let expectedSource = BlackboardUIColorSwiftSource
+        let expectedSource = Fixture.generated(project: .example, name: "UIColor")
+        
+        XCTAssertEqual(blackboardColors.count, 27)
         
         let swiftSource = SwiftSource()
         swiftSource.appendUIColors(colors: blackboardColors)

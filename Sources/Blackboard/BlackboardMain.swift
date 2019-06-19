@@ -126,7 +126,7 @@ public class BlackboardMain {
         
         if !blackboardImages.isEmpty {
             let swiftSource = SwiftSource()
-            swiftSource.appendImages(images: blackboardImages)
+            swiftSource.appendUIImages(images: blackboardImages)
             let source = swiftSource.description
             let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.UIImage)")
             try! source.write(to: targetUrl, atomically: true, encoding: .utf8)

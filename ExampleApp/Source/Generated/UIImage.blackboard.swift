@@ -21,18 +21,12 @@ fileprivate extension UIImage {
 
 enum ImageAssetName: String {
     
-    case apple = "apple"
-    case bigApple = "big_apple"
     case button = "button"
-    case everythingApple = "everything--apple"
     case greenPaperClip = "green-paper-clip"
     case greenPencil = "green-pencil"
-    case largeApple = "large-apple"
-    case redApple = "RedApple"
-    case redCup = "red-cup"
-    case redStapler = "red-stapler"
+    case redCup = "Red/cup"
+    case redStapler = "Red/stapler"
     case silverPaperClip = "silver-paper-clip"
-    case smallApple = "small apple"
     case whiteDice = "white-dice"
     
     var image: UIImage {
@@ -43,20 +37,8 @@ enum ImageAssetName: String {
 
 extension UIImage {
     
-    static var apple: UIImage {
-        return UIImage(identifier: .apple)
-    }
-    
-    static var bigApple: UIImage {
-        return UIImage(identifier: .bigApple)
-    }
-    
     static var button: UIImage {
         return UIImage(identifier: .button)
-    }
-    
-    static var everythingApple: UIImage {
-        return UIImage(identifier: .everythingApple)
     }
     
     static var greenPaperClip: UIImage {
@@ -65,14 +47,6 @@ extension UIImage {
     
     static var greenPencil: UIImage {
         return UIImage(identifier: .greenPencil)
-    }
-    
-    static var largeApple: UIImage {
-        return UIImage(identifier: .largeApple)
-    }
-    
-    static var redApple: UIImage {
-        return UIImage(identifier: .redApple)
     }
     
     static var redCup: UIImage {
@@ -85,10 +59,6 @@ extension UIImage {
     
     static var silverPaperClip: UIImage {
         return UIImage(identifier: .silverPaperClip)
-    }
-    
-    static var smallApple: UIImage {
-        return UIImage(identifier: .smallApple)
     }
     
     static var whiteDice: UIImage {

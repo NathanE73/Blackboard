@@ -49,8 +49,8 @@ extension PhotoViewModel {
             Photo(name: "Button", image: "button"),
             Photo(name: "Green Paper Clip", image: "green-paper-clip"),
             Photo(name: "Green Pencil", image: "green-pencil"),
-            Photo(name: "Red Cup", image: "red-cup"),
-            Photo(name: "Stapler", image: "red-stapler"),
+            Photo(name: "Red Cup", image: "Red/cup"),
+            Photo(name: "Stapler", image: "Red/stapler"),
             Photo(name: "Silver Paper Clip", image: "silver-paper-clip"),
             Photo(name: "White Dice", image: "white-dice"),
         ]
