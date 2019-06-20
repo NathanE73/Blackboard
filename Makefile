@@ -34,7 +34,7 @@ portable-zip: install
 	@mkdir -p "$(TEMPORARY_FOLDER)"
 	zip -j - "$(BINARIES_FOLDER)/blackboard" "LICENSE" > "$(TEMPORARY_FOLDER)/portable-blackboard.zip"
 
-release: clean build portable-zip
+release: clean portable-zip
 
 get-version:
 	@echo $(VERSION_STRING)
