@@ -32,14 +32,6 @@ extension ImageSet {
     
     init?(name: String, assetImageSet: AssetImageSet) {
         self.name = name
-        
-        let images = assetImageSet.images.filter { image -> Bool in
-            [.iphone, .ipad, .universal].contains(image.idiom)
-        }
-        
-        guard images.isEmpty == false else {
-            return nil
-        }
     }
     
 }

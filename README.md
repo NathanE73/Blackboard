@@ -1,4 +1,4 @@
-# Blackboard: Another iOS Storyboard Manager
+# Blackboard: An iOS Storyboard and Asset Manager
 
 [![Version](https://img.shields.io/badge/version-6.2.1-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@ Blackboard is an iOS Storyboard and Asset Manager written in Swift.
 
 ## Requirements
 
-- iOS 10.0+
+- iOS 11.0+
 - Xcode 10.0+
 
 ## Installation

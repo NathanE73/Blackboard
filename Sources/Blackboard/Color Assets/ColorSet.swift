@@ -26,30 +26,12 @@ import Foundation
 
 struct ColorSet {
     var name: String
-    
-    var red: Double
-    var green: Double
-    var blue: Double
-    var alpha: Double
 }
 
 extension ColorSet {
     
     init?(name: String, assetColorSet: AssetColorSet) {
         self.name = name
-        
-        let universalColor = assetColorSet.colors.first { color in
-            color.idiom == .universal && color.displayGamut == .srgb
-        }
-
-        guard let components = universalColor?.color.components else {
-            return nil
-        }
-        
-        red = components.red
-        green = components.green
-        blue = components.blue
-        alpha = components.alpha
     }
     
 }
