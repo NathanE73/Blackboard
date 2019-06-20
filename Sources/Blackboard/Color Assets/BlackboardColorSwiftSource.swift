@@ -44,13 +44,8 @@ extension SwiftSource {
     
     func appendUIColors(colors: [BlackboardColor]) {
         appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: false)
-        append("fileprivate func color(identifier: ColorAssetName, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor") {
-            append("if #available(iOS 11.0, *)") {
-                append("if let color = UIColor(named: identifier.rawValue)") {
-                    append("return color")
-                }
-            }
-            append("return UIColor(red: red, green: green, blue: blue, alpha: alpha)")
+        append("fileprivate func color(_ identifier: ColorAssetName) -> UIColor") {
+            append("return UIColor(named: identifier.rawValue)!")
         }
         append()
         append("enum ColorAssetName: String") {
@@ -82,8 +77,7 @@ extension SwiftSource {
     func appendUIColor(color: BlackboardColor) {
         guard color.isStock == false else { return }
         
-        append("// \(color.hexValue) \(color.rgbaValue)")
-        append("static let \(color.functionName) = color(identifier: .\(color.caseName), red: \(color.redStringValue), green: \(color.greenStringValue), blue: \(color.blueStringValue), alpha: \(color.alphaStringValue))")
+        append("static let \(color.functionName) = color(.\(color.caseName))")
         append()
     }
     

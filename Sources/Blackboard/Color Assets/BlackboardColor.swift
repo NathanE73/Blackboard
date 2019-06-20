@@ -26,11 +26,6 @@ import Foundation
 
 struct BlackboardColor {
     
-    var red: Double
-    var green: Double
-    var blue: Double
-    var alpha: Double
-    
     var name: String
     var functionName: String
     var caseName: String
@@ -42,11 +37,6 @@ struct BlackboardColor {
 extension BlackboardColor {
     
     init(_ colorSet: ColorSet) {
-        red = colorSet.red
-        green = colorSet.green
-        blue = colorSet.blue
-        alpha = colorSet.alpha
-        
         name = colorSet.name
         
         functionName = Naming.methodName(fromIdentifier: colorSet.name)
@@ -58,11 +48,6 @@ extension BlackboardColor {
     }
     
     init(stockName: String) {
-        red = 0
-        green = 0
-        blue = 0
-        alpha = 0
-        
         name = stockName
         functionName = stockName
         caseName = functionName
@@ -76,73 +61,6 @@ extension BlackboardColor {
             "gray", "green", "lightGray", "magenta", "orange",
             "purple", "red", "white", "yellow"
             ].map(BlackboardColor.init)
-    }
-    
-}
-
-extension BlackboardColor {
-    
-    fileprivate func roundedIntValue(_ double: Double) -> Int {
-        return Int((double * 255).rounded())
-    }
-    
-    var redIntValue: Int {
-        return roundedIntValue(red)
-    }
-    
-    var greenIntValue: Int {
-        return roundedIntValue(green)
-    }
-    
-    var blueIntValue: Int {
-        return roundedIntValue(blue)
-    }
-    
-}
-
-fileprivate let roundedStringValueFormatter: NumberFormatter = {
-    let formatter = NumberFormatter()
-    formatter.minimumIntegerDigits = 1
-    formatter.minimumFractionDigits = 1
-    formatter.maximumFractionDigits = 3
-    return formatter
-}()
-
-extension BlackboardColor {
-    
-    fileprivate func roundedStringValue(_ double: Double) -> String {
-        return roundedStringValueFormatter.string(for: double)!
-    }
-    
-    var redStringValue: String {
-        return roundedStringValue(red)
-    }
-    
-    var greenStringValue: String {
-        return roundedStringValue(green)
-    }
-    
-    var blueStringValue: String {
-        return roundedStringValue(blue)
-    }
-    
-    var alphaStringValue: String {
-        return roundedStringValue(alpha)
-    }
-    
-}
-
-extension BlackboardColor {
-    
-    var hexValue: String {
-        return String(format: "#%06X", (redIntValue << 16 + greenIntValue << 8 + blueIntValue))
-    }
-    
-    var rgbaValue: String {
-        if alpha == 1 {
-            return "rgb(\(redIntValue), \(greenIntValue), \(blueIntValue))"
-        }
-        return "rgba(\(redIntValue), \(greenIntValue), \(blueIntValue), \(alphaStringValue))"
     }
     
 }

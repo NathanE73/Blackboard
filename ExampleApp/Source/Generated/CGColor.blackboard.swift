@@ -56,6 +56,10 @@ extension CGColor {
         return UIColor.emerald.cgColor
     }
     
+    static var empty: CGColor {
+        return UIColor.empty.cgColor
+    }
+    
     static var firebrick: CGColor {
         return UIColor.firebrick.cgColor
     }
