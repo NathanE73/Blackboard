@@ -44,6 +44,31 @@ extension SwiftSource {
         return self
     }
     
+    // MARK: Image
+    
+    func appendImages(images: [BlackboardImage]) -> Self {
+        appendHeading(filename: Filename.Image, modules: ["SwiftUI"], includeBundle: true)
+        append("@available(iOS 13.0, *)")
+        append("public extension Image") {
+            append()
+            append("init(_ imageAsset: ImageAsset)") {
+                append("self.init(imageAsset.rawValue, bundle: bundle)")
+            }
+            append()
+            append("init(_ imageAsset: ImageAsset, label: Text)") {
+                append("self.init(imageAsset.rawValue, bundle: bundle, label: label)")
+            }
+            append()
+            append("init(decorative imageAsset: ImageAsset)") {
+                append("self.init(decorative: imageAsset.rawValue, bundle: bundle)")
+            }
+            append()
+        }
+        append()
+        
+        return self
+    }
+    
     // MARK: UIImage
     
     func appendUIImages(images: [BlackboardImage]) -> Self {

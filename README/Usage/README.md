@@ -5,10 +5,15 @@ The `StandardApp` project is the same as the `ExampleApp` project, except that i
 You compare these to see the difference between using and not using Blackboard.
 
 - Asset Usage
-  - [UIColor](/README/Usage/UIColor.md)
-  - [CGColor](/README/Usage/CGColor.md)
-  - [UIImage](/README/Usage/UIImage.md)
-  - [NSDataAsset](/README/Usage/NSDataAsset.md)
+  - CoreGraphics
+    - [CGColor](/README/Usage/CGColor.md)
+  - SwiftUI
+    - [Color](/README/Usage/Color.md)
+    - [Image](/README/Usage/Image.md)
+  - UIKit
+    - [NSDataAsset](/README/Usage/NSDataAsset.md)
+    - [UIColor](/README/Usage/UIColor.md)
+    - [UIImage](/README/Usage/UIImage.md)
 - Storyboard Usage
   - Cells
     - [Dequeue Collection View Cell](/README/Usage/UICollectionViewCell.md)

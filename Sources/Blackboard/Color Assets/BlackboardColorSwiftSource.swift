@@ -43,6 +43,25 @@ extension SwiftSource {
         
         return self
     }
+
+    // MARK: Color
+    
+    func appendColors(colors: [BlackboardColor]) -> Self {
+        appendHeading(filename: Filename.Color, modules: ["SwiftUI"], includeBundle: true)
+        append("@available(iOS 13.0, *)")
+        append("public extension Color") {
+            append()
+            append("init(_ colorAsset: ColorAsset)") {
+                append("self.init(colorAsset.rawValue, bundle: bundle)")
+            }
+            append()
+            appendCustomColors(colors: colors, returnType: "Color")
+            append()
+        }
+        append()
+        
+        return self
+    }
     
     // MARK: CGColor
     

@@ -29,6 +29,7 @@ class Filename {
     static let blackboardExtension = ".blackboard.swift"
     
     static let ColorAsset = "ColorAsset.blackboard.swift"
+    static let Color = "Color.blackboard.swift"
     static let CGColor = "CGColor.blackboard.swift"
     static let UIColor = "UIColor.blackboard.swift"
     
@@ -36,6 +37,7 @@ class Filename {
     static let NSDataAsset = "NSDataAsset.blackboard.swift"
     
     static let ImageAsset = "ImageAsset.blackboard.swift"
+    static let Image = "Image.blackboard.swift"
     static let UIImage = "UIImage.blackboard.swift"
     
     static let UIKit = "UIKit.blackboard.swift"
