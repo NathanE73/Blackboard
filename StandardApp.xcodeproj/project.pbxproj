@@ -11,22 +11,16 @@
 		434AD4DD2277832F00AE99AD /* OpenAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C52277832E00AE99AD /* OpenAccountViewController.swift */; };
 		434AD4DE2277832F00AE99AD /* PhotosNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C62277832E00AE99AD /* PhotosNavigationController.swift */; };
 		434AD4DF2277832F00AE99AD /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C72277832E00AE99AD /* Account.swift */; };
-		434AD4E02277832F00AE99AD /* EmptyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C82277832E00AE99AD /* EmptyNavigationController.swift */; };
 		434AD4E12277832F00AE99AD /* FooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C92277832E00AE99AD /* FooterViewController.swift */; };
 		434AD4E22277832F00AE99AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4CA2277832E00AE99AD /* MainViewController.swift */; };
 		434AD4E32277832F00AE99AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4CB2277832E00AE99AD /* AppDelegate.swift */; };
 		434AD4E42277832F00AE99AD /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4CC2277832E00AE99AD /* PhotoViewController.swift */; };
 		434AD4E52277832F00AE99AD /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4CD2277832E00AE99AD /* AccountsTableViewController.swift */; };
-		434AD4E62277832F00AE99AD /* EmptyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4CE2277832E00AE99AD /* EmptyPageViewController.swift */; };
-		434AD4E72277832F00AE99AD /* EmptyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4CF2277832E00AE99AD /* EmptyTabBarController.swift */; };
-		434AD4E82277832F00AE99AD /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D02277832E00AE99AD /* EmptyViewController.swift */; };
 		434AD4E92277832F00AE99AD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D12277832E00AE99AD /* Photo.swift */; };
 		434AD4EA2277832F00AE99AD /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D22277832E00AE99AD /* AccountViewModel.swift */; };
 		434AD4EB2277832F00AE99AD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D32277832E00AE99AD /* PhotoCollectionViewCell.swift */; };
-		434AD4EC2277832F00AE99AD /* EmptyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D42277832E00AE99AD /* EmptyCollectionViewController.swift */; };
 		434AD4ED2277832F00AE99AD /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D52277832F00AE99AD /* AccountsViewModel.swift */; };
 		434AD4EE2277832F00AE99AD /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D62277832F00AE99AD /* PhotosCollectionViewController.swift */; };
-		434AD4EF2277832F00AE99AD /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D72277832F00AE99AD /* EmptyTableViewController.swift */; };
 		434AD4F02277832F00AE99AD /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D82277832F00AE99AD /* PhotoViewModel.swift */; };
 		434AD4F12277832F00AE99AD /* AccountOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4D92277832F00AE99AD /* AccountOverviewTableViewCell.swift */; };
 		434AD4F22277832F00AE99AD /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4DA2277832F00AE99AD /* AccountTableViewCell.swift */; };
@@ -35,7 +29,6 @@
 		434AD4FA2277834300AE99AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434AD4F62277834300AE99AD /* Images.xcassets */; };
 		434AD4FB2277834300AE99AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434AD4F72277834300AE99AD /* Assets.xcassets */; };
 		434AD5092277835500AE99AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD4FD2277835500AE99AD /* LaunchScreen.storyboard */; };
-		434AD50A2277835500AE99AD /* Supported.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD4FF2277835500AE99AD /* Supported.storyboard */; };
 		434AD50B2277835500AE99AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD5012277835500AE99AD /* Main.storyboard */; };
 		434AD50C2277835500AE99AD /* Empty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD5032277835500AE99AD /* Empty.storyboard */; };
 		434AD50D2277835500AE99AD /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD5052277835500AE99AD /* Photo.storyboard */; };
@@ -47,22 +40,16 @@
 		434AD4C52277832E00AE99AD /* OpenAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAccountViewController.swift; sourceTree = "<group>"; };
 		434AD4C62277832E00AE99AD /* PhotosNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosNavigationController.swift; sourceTree = "<group>"; };
 		434AD4C72277832E00AE99AD /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		434AD4C82277832E00AE99AD /* EmptyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyNavigationController.swift; sourceTree = "<group>"; };
 		434AD4C92277832E00AE99AD /* FooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
 		434AD4CA2277832E00AE99AD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		434AD4CB2277832E00AE99AD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		434AD4CC2277832E00AE99AD /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		434AD4CD2277832E00AE99AD /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
-		434AD4CE2277832E00AE99AD /* EmptyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPageViewController.swift; sourceTree = "<group>"; };
-		434AD4CF2277832E00AE99AD /* EmptyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTabBarController.swift; sourceTree = "<group>"; };
-		434AD4D02277832E00AE99AD /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		434AD4D12277832E00AE99AD /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		434AD4D22277832E00AE99AD /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		434AD4D32277832E00AE99AD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		434AD4D42277832E00AE99AD /* EmptyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewController.swift; sourceTree = "<group>"; };
 		434AD4D52277832F00AE99AD /* AccountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		434AD4D62277832F00AE99AD /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
-		434AD4D72277832F00AE99AD /* EmptyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableViewController.swift; sourceTree = "<group>"; };
 		434AD4D82277832F00AE99AD /* PhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		434AD4D92277832F00AE99AD /* AccountOverviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountOverviewTableViewCell.swift; sourceTree = "<group>"; };
 		434AD4DA2277832F00AE99AD /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
@@ -71,7 +58,6 @@
 		434AD4F62277834300AE99AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		434AD4F72277834300AE99AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434AD4FE2277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		434AD5002277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Supported.storyboard; sourceTree = "<group>"; };
 		434AD5022277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		434AD5042277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Empty.storyboard; sourceTree = "<group>"; };
 		434AD5062277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Photo.storyboard; sourceTree = "<group>"; };
@@ -99,7 +85,6 @@
 				434AD4FD2277835500AE99AD /* LaunchScreen.storyboard */,
 				434AD5012277835500AE99AD /* Main.storyboard */,
 				434AD5052277835500AE99AD /* Photo.storyboard */,
-				434AD4FF2277835500AE99AD /* Supported.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -140,19 +125,6 @@
 				434AD4CA2277832E00AE99AD /* MainViewController.swift */,
 			);
 			name = Main;
-			sourceTree = "<group>";
-		};
-		434AD5142277841B00AE99AD /* Supported */ = {
-			isa = PBXGroup;
-			children = (
-				434AD4D42277832E00AE99AD /* EmptyCollectionViewController.swift */,
-				434AD4C82277832E00AE99AD /* EmptyNavigationController.swift */,
-				434AD4CE2277832E00AE99AD /* EmptyPageViewController.swift */,
-				434AD4CF2277832E00AE99AD /* EmptyTabBarController.swift */,
-				434AD4D72277832F00AE99AD /* EmptyTableViewController.swift */,
-				434AD4D02277832E00AE99AD /* EmptyViewController.swift */,
-			);
-			name = Supported;
 			sourceTree = "<group>";
 		};
 		43C2499A22777EAA00EA6343 = {
@@ -199,7 +171,6 @@
 				434AD4CB2277832E00AE99AD /* AppDelegate.swift */,
 				434AD513227783A200AE99AD /* Main */,
 				434AD5112277838F00AE99AD /* Photo */,
-				434AD5142277841B00AE99AD /* Supported */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -276,7 +247,6 @@
 				434AD50D2277835500AE99AD /* Photo.storyboard in Resources */,
 				434AD50C2277835500AE99AD /* Empty.storyboard in Resources */,
 				434AD5092277835500AE99AD /* LaunchScreen.storyboard in Resources */,
-				434AD50A2277835500AE99AD /* Supported.storyboard in Resources */,
 				434AD50B2277835500AE99AD /* Main.storyboard in Resources */,
 				434AD4F82277834300AE99AD /* Colors.xcassets in Resources */,
 				434AD50E2277835500AE99AD /* Account.storyboard in Resources */,
@@ -316,23 +286,17 @@
 				434AD4EA2277832F00AE99AD /* AccountViewModel.swift in Sources */,
 				434AD4F32277832F00AE99AD /* AccountViewController.swift in Sources */,
 				434AD4E32277832F00AE99AD /* AppDelegate.swift in Sources */,
-				434AD4E72277832F00AE99AD /* EmptyTabBarController.swift in Sources */,
 				434AD4F12277832F00AE99AD /* AccountOverviewTableViewCell.swift in Sources */,
-				434AD4E62277832F00AE99AD /* EmptyPageViewController.swift in Sources */,
 				434AD4E22277832F00AE99AD /* MainViewController.swift in Sources */,
-				434AD4E02277832F00AE99AD /* EmptyNavigationController.swift in Sources */,
 				434AD4DE2277832F00AE99AD /* PhotosNavigationController.swift in Sources */,
 				434AD4DF2277832F00AE99AD /* Account.swift in Sources */,
 				434AD4EB2277832F00AE99AD /* PhotoCollectionViewCell.swift in Sources */,
-				434AD4EC2277832F00AE99AD /* EmptyCollectionViewController.swift in Sources */,
 				434AD4E42277832F00AE99AD /* PhotoViewController.swift in Sources */,
 				434AD4DD2277832F00AE99AD /* OpenAccountViewController.swift in Sources */,
 				434AD4E52277832F00AE99AD /* AccountsTableViewController.swift in Sources */,
 				434AD4DC2277832F00AE99AD /* AccountsNavigationController.swift in Sources */,
-				434AD4EF2277832F00AE99AD /* EmptyTableViewController.swift in Sources */,
 				434AD4F02277832F00AE99AD /* PhotoViewModel.swift in Sources */,
 				434AD4EE2277832F00AE99AD /* PhotosCollectionViewController.swift in Sources */,
-				434AD4E82277832F00AE99AD /* EmptyViewController.swift in Sources */,
 				434AD4ED2277832F00AE99AD /* AccountsViewModel.swift in Sources */,
 				434AD4E12277832F00AE99AD /* FooterViewController.swift in Sources */,
 				434AD4F22277832F00AE99AD /* AccountTableViewCell.swift in Sources */,
@@ -348,14 +312,6 @@
 				434AD4FE2277835500AE99AD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		434AD4FF2277835500AE99AD /* Supported.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				434AD5002277835500AE99AD /* Base */,
-			);
-			name = Supported.storyboard;
 			sourceTree = "<group>";
 		};
 		434AD5012277835500AE99AD /* Main.storyboard */ = {
