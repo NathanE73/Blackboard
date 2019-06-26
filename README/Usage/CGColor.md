@@ -31,26 +31,6 @@ extension CGColor {
 }
 ```
 
-```swift
-extension CGColor {
-    static var black: CGColor
-    static var blue: CGColor
-    static var brown: CGColor
-    static var clear: CGColor
-    static var cyan: CGColor
-    static var darkGray: CGColor
-    static var gray: CGColor
-    static var green: CGColor
-    static var lightGray: CGColor
-    static var magenta: CGColor
-    static var orange: CGColor
-    static var purple: CGColor
-    static var red: CGColor
-    static var white: CGColor
-    static var yellow: CGColor
-}
-```
-
 ### The Blackboard Way
 
 [ExampleApp](/ExampleApp/Source/FooterViewController.swift#L46)
