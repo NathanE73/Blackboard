@@ -27,7 +27,7 @@ import Foundation
 extension SwiftSource {
     
     func appendCGColors(colors: [BlackboardColor]) {
-        appendHeading(filename: Filename.CGColor, modules: ["UIKit"], includeBundle: false)
+        appendHeading(filename: Filename.CGColor, modules: ["UIKit"])
         append("extension CGColor") {
             append()
             colors.forEach(appendCGColor)
@@ -43,7 +43,7 @@ extension SwiftSource {
     }
     
     func appendUIColors(colors: [BlackboardColor]) {
-        appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: false)
+        appendHeading(filename: Filename.UIColor, modules: ["UIKit"])
         append("fileprivate func color(_ identifier: ColorAssetName) -> UIColor") {
             append("return UIColor(named: identifier.rawValue)!")
         }
