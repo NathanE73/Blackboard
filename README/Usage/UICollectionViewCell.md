@@ -12,7 +12,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[Photo.blackboard.swift](/ExampleApp/Source/Generated/Photo.blackboard.swift)
+[PhotoStoryboard.blackboard.swift](/ExampleApp/Source/Generated/PhotoStoryboard.blackboard.swift)
 
 ```swift
 final func dequeuePhotoCell(from collectionView: UICollectionView, for indexPath: IndexPath,
