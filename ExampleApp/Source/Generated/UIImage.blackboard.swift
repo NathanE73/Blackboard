@@ -11,58 +11,22 @@ fileprivate let bundle: Bundle = {
     return Bundle(for: Object.self)
 }()
 
-fileprivate extension UIImage {
-    
-    convenience init!(identifier: ImageAssetName) {
-        self.init(named: identifier.rawValue, in: bundle, compatibleWith: nil)
-    }
-    
+public extension ImageAsset {
+    var image: UIImage { return UIImage(self) }
 }
 
-enum ImageAssetName: String {
+public extension UIImage {
     
-    case button = "button"
-    case greenPaperClip = "green-paper-clip"
-    case greenPencil = "green-pencil"
-    case redCup = "Red/cup"
-    case redStapler = "Red/stapler"
-    case silverPaperClip = "silver-paper-clip"
-    case whiteDice = "white-dice"
-    
-    var image: UIImage {
-        return UIImage(identifier: self)
+    convenience init(_ imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
+        self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
-}
-
-extension UIImage {
-    
-    static var button: UIImage {
-        return UIImage(identifier: .button)
-    }
-    
-    static var greenPaperClip: UIImage {
-        return UIImage(identifier: .greenPaperClip)
-    }
-    
-    static var greenPencil: UIImage {
-        return UIImage(identifier: .greenPencil)
-    }
-    
-    static var redCup: UIImage {
-        return UIImage(identifier: .redCup)
-    }
-    
-    static var redStapler: UIImage {
-        return UIImage(identifier: .redStapler)
-    }
-    
-    static var silverPaperClip: UIImage {
-        return UIImage(identifier: .silverPaperClip)
-    }
-    
-    static var whiteDice: UIImage {
-        return UIImage(identifier: .whiteDice)
-    }
+    static var button: UIImage { return UIImage(.button) }
+    static var greenPaperClip: UIImage { return UIImage(.greenPaperClip) }
+    static var greenPencil: UIImage { return UIImage(.greenPencil) }
+    static var redCup: UIImage { return UIImage(.redCup) }
+    static var redStapler: UIImage { return UIImage(.redStapler) }
+    static var silverPaperClip: UIImage { return UIImage(.silverPaperClip) }
+    static var whiteDice: UIImage { return UIImage(.whiteDice) }
     
 }

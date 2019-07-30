@@ -98,9 +98,16 @@ public class BlackboardMain {
         let colorSets = ColorSetFactory().colorSetsAt(path: sourceDirectory)
         
         var blackboardColors = colorSets.compactMap(BlackboardColor.init)
-        blackboardColors.append(contentsOf: BlackboardColor.stockColors)
         blackboardColors.sort { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
-
+        
+        if !blackboardColors.isEmpty {
+            let swiftSource = SwiftSource()
+            swiftSource.appendColorAssets(colors: blackboardColors)
+            let source = swiftSource.description
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.ColorAsset)")
+            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+        }
+        
         if !blackboardColors.isEmpty {
             let swiftSource = SwiftSource()
             swiftSource.appendCGColors(colors: blackboardColors)
@@ -123,6 +130,14 @@ public class BlackboardMain {
         
         let blackboardImages = imageSets.compactMap(BlackboardImage.init)
             .sorted { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
+        
+        if !blackboardImages.isEmpty {
+            let swiftSource = SwiftSource()
+            swiftSource.appendImageAssets(images: blackboardImages)
+            let source = swiftSource.description
+            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.ImageAsset)")
+            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+        }
         
         if !blackboardImages.isEmpty {
             let swiftSource = SwiftSource()

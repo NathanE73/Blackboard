@@ -12,7 +12,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[Account.blackboard.swift](/ExampleApp/Source/Generated/Account.blackboard.swift)
+[AccountStoryboard.blackboard.swift](/ExampleApp/Source/Generated/AccountStoryboard.blackboard.swift)
 
 ```swift
 final func performPresentOpenAccountSegue(_ initialize: ((OpenAccountViewController) -> Void)? = nil)

@@ -26,59 +26,64 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendCGColors(colors: [BlackboardColor]) {
-        appendHeading(filename: Filename.CGColor, modules: ["UIKit"], includeBundle: false)
-        append("extension CGColor") {
-            append()
-            colors.forEach(appendCGColor)
+    // MARK: Color Assets
+    
+    func appendColorAssets(colors: [BlackboardColor]) {
+        appendHeading(filename: Filename.ColorAsset, modules: ["Foundation"])
+        append("public enum ColorAsset: String") {
+            colors.forEach { color in
+                if color.caseName == color.name {
+                    append("case \(color.caseName)")
+                } else {
+                    append("case \(color.caseName) = \"\(color.name)\"")
+                }
+            }
         }
         append()
     }
     
-    func appendCGColor(color: BlackboardColor) {
-        append("static var \(color.functionName): CGColor") {
-            append("return UIColor.\(color.functionName).cgColor")
+    // MARK: CGColor
+    
+    func appendCGColors(colors: [BlackboardColor]) {
+        appendHeading(filename: Filename.CGColor, modules: ["CoreGraphics"])
+        append("public extension ColorAsset") {
+            append("var cgColor: CGColor { return color.cgColor }")
+        }
+        append()
+        append("public extension CGColor") {
+            colors.forEach { color in
+                append("static var \(color.functionName): CGColor { return ColorAsset.\(color.functionName).cgColor }")
+            }
         }
         append()
     }
+    
+    // MARK: UIColor
     
     func appendUIColors(colors: [BlackboardColor]) {
-        appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: false)
-        append("fileprivate func color(_ identifier: ColorAssetName) -> UIColor") {
-            append("return UIColor(named: identifier.rawValue)!")
+        appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: true)
+        append("public extension ColorAsset") {
+            append("var color: UIColor { return UIColor(self) }")
         }
         append()
-        append("enum ColorAssetName: String") {
+        append("public extension UIColor") {
             append()
-            colors.forEach { color in
-                append("case \(color.caseName) = \"\(color.name)\"")
+            append("convenience init(_ colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
+                append("self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
             }
             append()
-            append("var color: UIColor") {
-                append("switch self {")
-                colors.forEach { color in
-                    append("case .\(color.caseName):")
-                    indent {
-                        append("return .\(color.caseName)")
-                    }
-                }
-                append("}")
-            }
+            appendCustomColors(colors: colors, returnType: "UIColor")
             append()
-        }
-        append()
-        append("extension UIColor") {
-            append()
-            colors.forEach(appendUIColor)
         }
         append()
     }
     
-    func appendUIColor(color: BlackboardColor) {
-        guard color.isStock == false else { return }
-        
-        append("static let \(color.functionName) = color(.\(color.caseName))")
-        append()
+    // Custom Colors
+    
+    func appendCustomColors(colors: [BlackboardColor], returnType: String) {
+        colors.forEach { color in
+            append("static var \(color.functionName): \(returnType) { return \(returnType)(.\(color.caseName)) }")
+        }
     }
     
 }

@@ -8,7 +8,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[Main.blackboard.swift](/ExampleApp/Source/Generated/Main.blackboard.swift)
+[MainStoryboard.blackboard.swift](/ExampleApp/Source/Generated/MainStoryboard.blackboard.swift)
 
 ```swift
 func prepareForFooterSegue(_ footerViewController: FooterViewController)

@@ -49,17 +49,27 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
             .compactMap { $0 }
             .compactMap(BlackboardColor.init)
         
-        blackboardColors.append(contentsOf: BlackboardColor.stockColors)
-        
         blackboardColors.sort { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
         
         return blackboardColors
     }
     
+    func testNumberOfColors() {
+        XCTAssertEqual(blackboardColors.count, 13)
+    }
+    
+    func testColorAssetDescription() {
+        let expectedSource = Fixture.generated(project: .example, name: "ColorAsset")
+        
+        let swiftSource = SwiftSource()
+        swiftSource.appendColorAssets(colors: blackboardColors)
+        let source = swiftSource.description
+        
+        XCTAssertEqual(source, expectedSource)
+    }
+    
     func testCGColorDescription() {
         let expectedSource = Fixture.generated(project: .example, name: "CGColor")
-        
-        XCTAssertEqual(blackboardColors.count, 28)
         
         let swiftSource = SwiftSource()
         swiftSource.appendCGColors(colors: blackboardColors)
@@ -70,8 +80,6 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     
     func testUIColorDescription() {
         let expectedSource = Fixture.generated(project: .example, name: "UIColor")
-        
-        XCTAssertEqual(blackboardColors.count, 28)
         
         let swiftSource = SwiftSource()
         swiftSource.appendUIColors(colors: blackboardColors)
