@@ -26,38 +26,40 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendUIImages(images: [BlackboardImage]) {
-        appendHeading(filename: Filename.UIImage, modules: ["UIKit"], includeBundle: true)
-        append("fileprivate extension UIImage") {
-            append()
-            append("convenience init!(identifier: ImageAssetName)") {
-                append("self.init(named: identifier.rawValue, in: bundle, compatibleWith: nil)")
-            }
-            append()
-        }
-        append()
-        append("enum ImageAssetName: String") {
-            append()
+    // MARK: Image Assets
+    
+    func appendImageAssets(images: [BlackboardImage]) {
+        appendHeading(filename: Filename.ImageAsset, modules: ["Foundation"])
+        append("public enum ImageAsset: String") {
             images.forEach { image in
-                append("case \(image.caseName) = \"\(image.name)\"")
+                if image.caseName == image.name {
+                    append("case \(image.caseName)")
+                } else {
+                    append("case \(image.caseName) = \"\(image.name)\"")
+                }
             }
-            append()
-            append("var image: UIImage") {
-                append("return UIImage(identifier: self)")
-            }
-            append()
-        }
-        append()
-        append("extension UIImage") {
-            append()
-            images.forEach(appendUIImage)
         }
         append()
     }
     
-    func appendUIImage(image: BlackboardImage) {
-        append("static var \(image.functionName): UIImage") {
-            append("return UIImage(identifier: .\(image.caseName))")
+    // MARK: UIImage
+    
+    func appendUIImages(images: [BlackboardImage]) {
+        appendHeading(filename: Filename.UIImage, modules: ["UIKit"], includeBundle: true)
+        append("public extension ImageAsset") {
+            append("var image: UIImage { return UIImage(self) }")
+        }
+        append()
+        append("public extension UIImage") {
+            append()
+            append("convenience init(_ imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
+                append("self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
+            }
+            append()
+            images.forEach { image in
+                append("static var \(image.functionName): UIImage { return UIImage(.\(image.caseName)) }")
+            }
+            append()
         }
         append()
     }

@@ -6,130 +6,33 @@
 
 import UIKit
 
-fileprivate func color(_ identifier: ColorAssetName) -> UIColor {
-    return UIColor(named: identifier.rawValue)!
+fileprivate let bundle: Bundle = {
+    class Object: NSObject { }
+    return Bundle(for: Object.self)
+}()
+
+public extension ColorAsset {
+    var color: UIColor { return UIColor(self) }
 }
 
-enum ColorAssetName: String {
+public extension UIColor {
     
-    case absoluteZero = "Absolute Zero"
-    case bisque = "Bisque"
-    case black = "black"
-    case blue = "blue"
-    case brown = "brown"
-    case charcoal = "Charcoal"
-    case clear = "clear"
-    case cyan = "cyan"
-    case darkGray = "darkGray"
-    case darkOliveGreen = "dark-olive-green"
-    case desire = "Desire"
-    case emerald = "Emerald"
-    case empty = "Empty"
-    case firebrick = "firebrick-color"
-    case fluorescentBlizzardBlue = "Fluorescent/Blizzard Blue"
-    case fluorescentMagicMint = "Fluorescent/Magic Mint"
-    case fluorescentRadicalRed = "Fluorescent/Radical Red"
-    case gray = "gray"
-    case green = "green"
-    case lightGray = "lightGray"
-    case magenta = "magenta"
-    case maroon = "maroon color"
-    case night = "Night"
-    case orange = "orange"
-    case purple = "purple"
-    case red = "red"
-    case white = "white"
-    case yellow = "yellow"
-    
-    var color: UIColor {
-        switch self {
-        case .absoluteZero:
-            return .absoluteZero
-        case .bisque:
-            return .bisque
-        case .black:
-            return .black
-        case .blue:
-            return .blue
-        case .brown:
-            return .brown
-        case .charcoal:
-            return .charcoal
-        case .clear:
-            return .clear
-        case .cyan:
-            return .cyan
-        case .darkGray:
-            return .darkGray
-        case .darkOliveGreen:
-            return .darkOliveGreen
-        case .desire:
-            return .desire
-        case .emerald:
-            return .emerald
-        case .empty:
-            return .empty
-        case .firebrick:
-            return .firebrick
-        case .fluorescentBlizzardBlue:
-            return .fluorescentBlizzardBlue
-        case .fluorescentMagicMint:
-            return .fluorescentMagicMint
-        case .fluorescentRadicalRed:
-            return .fluorescentRadicalRed
-        case .gray:
-            return .gray
-        case .green:
-            return .green
-        case .lightGray:
-            return .lightGray
-        case .magenta:
-            return .magenta
-        case .maroon:
-            return .maroon
-        case .night:
-            return .night
-        case .orange:
-            return .orange
-        case .purple:
-            return .purple
-        case .red:
-            return .red
-        case .white:
-            return .white
-        case .yellow:
-            return .yellow
-        }
+    convenience init(_ colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
+        self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
-}
-
-extension UIColor {
-    
-    static let absoluteZero = color(.absoluteZero)
-    
-    static let bisque = color(.bisque)
-    
-    static let charcoal = color(.charcoal)
-    
-    static let darkOliveGreen = color(.darkOliveGreen)
-    
-    static let desire = color(.desire)
-    
-    static let emerald = color(.emerald)
-    
-    static let empty = color(.empty)
-    
-    static let firebrick = color(.firebrick)
-    
-    static let fluorescentBlizzardBlue = color(.fluorescentBlizzardBlue)
-    
-    static let fluorescentMagicMint = color(.fluorescentMagicMint)
-    
-    static let fluorescentRadicalRed = color(.fluorescentRadicalRed)
-    
-    static let maroon = color(.maroon)
-    
-    static let night = color(.night)
+    static var absoluteZero: UIColor { return UIColor(.absoluteZero) }
+    static var bisque: UIColor { return UIColor(.bisque) }
+    static var charcoal: UIColor { return UIColor(.charcoal) }
+    static var darkOliveGreen: UIColor { return UIColor(.darkOliveGreen) }
+    static var desire: UIColor { return UIColor(.desire) }
+    static var emerald: UIColor { return UIColor(.emerald) }
+    static var empty: UIColor { return UIColor(.empty) }
+    static var firebrick: UIColor { return UIColor(.firebrick) }
+    static var fluorescentBlizzardBlue: UIColor { return UIColor(.fluorescentBlizzardBlue) }
+    static var fluorescentMagicMint: UIColor { return UIColor(.fluorescentMagicMint) }
+    static var fluorescentRadicalRed: UIColor { return UIColor(.fluorescentRadicalRed) }
+    static var maroon: UIColor { return UIColor(.maroon) }
+    static var night: UIColor { return UIColor(.night) }
     
 }

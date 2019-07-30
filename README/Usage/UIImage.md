@@ -12,17 +12,41 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
+[ImageAsset.blackboard.swift](/ExampleApp/Source/Generated/ImageAsset.blackboard.swift)
+
+```swift
+public enum ImageAsset: String {
+    case button
+    case greenPaperClip = "green-paper-clip"
+    case greenPencil = "green-pencil"
+    case redCup = "Red/cup"
+    case redStapler = "Red/stapler"
+    case silverPaperClip = "silver-paper-clip"
+    case whiteDice = "white-dice"
+}
+```
+
 [UIImage.blackboard.swift](/ExampleApp/Source/Generated/UIImage.blackboard.swift)
 
 ```swift
-extension UIImage {
-    static var button: UIImage
-    static var greenPaperClip: UIImage
-    static var greenPencil: UIImage
-    static var redCup: UIImage
-    static var redStapler: UIImage
-    static var silverPaperClip: UIImage
-    static var whiteDice: UIImage
+public extension ImageAsset {
+    var image: UIImage { return UIImage(self) }
+}
+
+public extension UIImage {
+    
+    convenience init(_ imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
+        self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
+    }
+    
+    static var button: UIImage { return UIImage(.button) }
+    static var greenPaperClip: UIImage { return UIImage(.greenPaperClip) }
+    static var greenPencil: UIImage { return UIImage(.greenPencil) }
+    static var redCup: UIImage { return UIImage(.redCup) }
+    static var redStapler: UIImage { return UIImage(.redStapler) }
+    static var silverPaperClip: UIImage { return UIImage(.silverPaperClip) }
+    static var whiteDice: UIImage { return UIImage(.whiteDice) }
+    
 }
 ```
 

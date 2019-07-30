@@ -26,5 +26,5 @@ import Foundation
 
 struct Photo {
     var name: String
-    var image: ImageAssetName
+    var image: ImageAsset
 }

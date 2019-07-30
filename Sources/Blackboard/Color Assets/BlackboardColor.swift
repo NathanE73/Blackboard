@@ -30,8 +30,6 @@ struct BlackboardColor {
     var functionName: String
     var caseName: String
     
-    var isStock: Bool
-    
 }
 
 extension BlackboardColor {
@@ -43,24 +41,6 @@ extension BlackboardColor {
             .removingSuffix("Color")
         
         caseName = functionName
-        
-        isStock = false
-    }
-    
-    init(stockName: String) {
-        name = stockName
-        functionName = stockName
-        caseName = functionName
-        
-        isStock = true
-    }
-    
-    static var stockColors: [BlackboardColor] {
-        return [
-            "black", "blue", "brown", "clear", "cyan", "darkGray",
-            "gray", "green", "lightGray", "magenta", "orange",
-            "purple", "red", "white", "yellow"
-            ].map(BlackboardColor.init)
     }
     
 }
