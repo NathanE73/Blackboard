@@ -47,7 +47,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testAccountStoryboard() {
-        let expectedSource = Fixture.generated(project: .example, name: "Account")
+        let expectedSource = Fixture.generated(project: .example, name: "AccountStoryboard")
         
         guard let accountStoryboard = accountStoryboard,
             let storyboard = BlackboardStoryboard(accountStoryboard, storyboards: storyboards) else {
@@ -63,7 +63,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testMainStoryboard() {
-        let expectedSource = Fixture.generated(project: .example, name: "Main")
+        let expectedSource = Fixture.generated(project: .example, name: "MainStoryboard")
         
         guard let mainStoryboard = mainStoryboard,
             let storyboard = BlackboardStoryboard(mainStoryboard, storyboards: storyboards) else {
@@ -79,7 +79,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testPhotoStoryboard() {
-        let expectedSource = Fixture.generated(project: .example, name: "Photo")
+        let expectedSource = Fixture.generated(project: .example, name: "PhotoStoryboard")
         
         guard let photoStoryboard = photoStoryboard,
             let storyboard = BlackboardStoryboard(photoStoryboard, storyboards: storyboards) else {
