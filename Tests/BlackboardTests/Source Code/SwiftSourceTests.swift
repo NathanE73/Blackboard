@@ -58,7 +58,7 @@ class SwiftSourceTests: XCTestCase {
             swiftSource.append()
         }
         
-        XCTAssertEqual(swiftSource.description, expectedDescription)
+        XCTAssertEqual(swiftSource.source, expectedDescription)
     }
     
     func testAppendEmptyBlock() {
@@ -75,7 +75,7 @@ class SwiftSourceTests: XCTestCase {
             swiftSource.append()
         }
         
-        XCTAssertEqual(swiftSource.description, expectedDescription)
+        XCTAssertEqual(swiftSource.source, expectedDescription)
     }
     
 }

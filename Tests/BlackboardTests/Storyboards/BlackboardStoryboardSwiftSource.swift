@@ -55,9 +55,9 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
                 return
         }
         
-        let swiftSource = SwiftSource()
-        swiftSource.appendStoryboard(storyboard)
-        let source = swiftSource.description
+        let source = SwiftSource()
+            .appendStoryboard(storyboard)
+            .source
         
         XCTAssertEqual(source, expectedSource)
     }
@@ -71,9 +71,9 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
                 return
         }
         
-        let swiftSource = SwiftSource()
-        swiftSource.appendStoryboard(storyboard)
-        let source = swiftSource.description
+        let source = SwiftSource()
+            .appendStoryboard(storyboard)
+            .source
         
         XCTAssertEqual(source, expectedSource)
     }
@@ -87,9 +87,9 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
                 return
         }
         
-        let swiftSource = SwiftSource()
-        swiftSource.appendStoryboard(storyboard)
-        let source = swiftSource.description
+        let source = SwiftSource()
+            .appendStoryboard(storyboard)
+            .source
         
         XCTAssertEqual(source, expectedSource)
     }

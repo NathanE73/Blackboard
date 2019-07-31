@@ -61,23 +61,28 @@ public class BlackboardMain {
         let sourceDirectory = arguments[numberOfArguments - 1]
         
         if !fileManager.isDirectory(sourceDirectory) {
-            print("\(sourceDirectory): No such source directory")
+            print("No such source directory: \(sourceDirectory)")
             exit(1)
         }
+        
+        print("Source directory: \(sourceDirectory)")
         
         // Target Directory
         
         let targetDirectory = arguments[numberOfArguments]
         
         if !fileManager.isDirectory(targetDirectory) {
-            print("\(targetDirectory): No such target directory")
+            print("No such target directory: \(targetDirectory)")
             exit(1)
         }
         
+        print("Target directory: \(targetDirectory)")
+        
         // UIKit
         
-        let uiKitTargetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.UIKit)")
-        try! UIKitSwiftSource.write(to: uiKitTargetUrl, atomically: true, encoding: .utf8)
+        SwiftSourceFile(Filename.UIKit, at: targetDirectory)
+            .append(source: UIKitSwiftSource)
+            .write()
         
         // Process Storyboards
         
@@ -85,11 +90,9 @@ public class BlackboardMain {
         
         for storyboard in storyboards {
             if let storyboard = BlackboardStoryboard(storyboard, storyboards: storyboards) {
-                let swiftSource = SwiftSource()
-                swiftSource.appendStoryboard(storyboard)
-                let source = swiftSource.description
-                let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(storyboard.extensionName)")
-                try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+                SwiftSourceFile(storyboard.extensionFilename, at: targetDirectory)
+                    .appendStoryboard(storyboard)
+                    .write()
             }
         }
         
@@ -101,27 +104,15 @@ public class BlackboardMain {
         blackboardColors.sort { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
         
         if !blackboardColors.isEmpty {
-            let swiftSource = SwiftSource()
-            swiftSource.appendColorAssets(colors: blackboardColors)
-            let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.ColorAsset)")
-            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
-        }
-        
-        if !blackboardColors.isEmpty {
-            let swiftSource = SwiftSource()
-            swiftSource.appendCGColors(colors: blackboardColors)
-            let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.CGColor)")
-            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
-        }
-        
-        if !blackboardColors.isEmpty {
-            let swiftSource = SwiftSource()
-            swiftSource.appendUIColors(colors: blackboardColors)
-            let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.UIColor)")
-            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+            SwiftSourceFile(Filename.ColorAsset, at: targetDirectory)
+                .appendColorAssets(colors: blackboardColors)
+                .write()
+            SwiftSourceFile(Filename.CGColor, at: targetDirectory)
+                .appendCGColors(colors: blackboardColors)
+                .write()
+            SwiftSourceFile(Filename.UIColor, at: targetDirectory)
+                .appendUIColors(colors: blackboardColors)
+                .write()
         }
         
         // Process Image Sets
@@ -132,19 +123,12 @@ public class BlackboardMain {
             .sorted { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
         
         if !blackboardImages.isEmpty {
-            let swiftSource = SwiftSource()
-            swiftSource.appendImageAssets(images: blackboardImages)
-            let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.ImageAsset)")
-            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
-        }
-        
-        if !blackboardImages.isEmpty {
-            let swiftSource = SwiftSource()
-            swiftSource.appendUIImages(images: blackboardImages)
-            let source = swiftSource.description
-            let targetUrl = URL(fileURLWithPath: "\(targetDirectory)/\(Filename.UIImage)")
-            try! source.write(to: targetUrl, atomically: true, encoding: .utf8)
+            SwiftSourceFile(Filename.ImageAsset, at: targetDirectory)
+                .appendImageAssets(images: blackboardImages)
+                .write()
+            SwiftSourceFile(Filename.UIImage, at: targetDirectory)
+                .appendUIImages(images: blackboardImages)
+                .write()
         }
         
     }
