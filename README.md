@@ -45,7 +45,7 @@ You compare these to see the difference between using and not using Blackboard.
 
 ## Authors
 
-- Nathan Walczak, knate@knate.com
+- Nathan E. Walczak, knate@knate.com
 - Jon Shier, jon@jonshier.com
 
 ## License
