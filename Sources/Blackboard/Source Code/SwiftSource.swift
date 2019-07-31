@@ -91,15 +91,13 @@ class SwiftSource {
     
 }
 
-extension SwiftSource: CustomStringConvertible {
-    
-    var description: String {
-        return source
-    }
-    
-}
-
 extension SwiftSource {
+    
+    func append(source: String) -> Self {
+        source.components(separatedBy: CharacterSet.newlines)
+            .forEach(append)
+        return self
+    }
     
     func appendHeading(filename: String, modules: [String], includeBundle: Bool = false) {
         append("//")

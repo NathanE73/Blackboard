@@ -28,7 +28,7 @@ extension SwiftSource {
     
     // MARK: Color Assets
     
-    func appendColorAssets(colors: [BlackboardColor]) {
+    func appendColorAssets(colors: [BlackboardColor]) -> Self {
         appendHeading(filename: Filename.ColorAsset, modules: ["Foundation"])
         append("public enum ColorAsset: String") {
             colors.forEach { color in
@@ -40,11 +40,13 @@ extension SwiftSource {
             }
         }
         append()
+        
+        return self
     }
     
     // MARK: CGColor
     
-    func appendCGColors(colors: [BlackboardColor]) {
+    func appendCGColors(colors: [BlackboardColor]) -> Self {
         appendHeading(filename: Filename.CGColor, modules: ["CoreGraphics"])
         append("public extension ColorAsset") {
             append("var cgColor: CGColor { return color.cgColor }")
@@ -56,11 +58,13 @@ extension SwiftSource {
             }
         }
         append()
+        
+        return self
     }
     
     // MARK: UIColor
     
-    func appendUIColors(colors: [BlackboardColor]) {
+    func appendUIColors(colors: [BlackboardColor]) -> Self {
         appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: true)
         append("public extension ColorAsset") {
             append("var color: UIColor { return UIColor(self) }")
@@ -76,6 +80,8 @@ extension SwiftSource {
             append()
         }
         append()
+        
+        return self
     }
     
     // Custom Colors

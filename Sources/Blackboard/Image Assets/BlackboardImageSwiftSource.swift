@@ -28,7 +28,7 @@ extension SwiftSource {
     
     // MARK: Image Assets
     
-    func appendImageAssets(images: [BlackboardImage]) {
+    func appendImageAssets(images: [BlackboardImage]) -> Self {
         appendHeading(filename: Filename.ImageAsset, modules: ["Foundation"])
         append("public enum ImageAsset: String") {
             images.forEach { image in
@@ -40,11 +40,13 @@ extension SwiftSource {
             }
         }
         append()
+        
+        return self
     }
     
     // MARK: UIImage
     
-    func appendUIImages(images: [BlackboardImage]) {
+    func appendUIImages(images: [BlackboardImage]) -> Self {
         appendHeading(filename: Filename.UIImage, modules: ["UIKit"], includeBundle: true)
         append("public extension ImageAsset") {
             append("var image: UIImage { return UIImage(self) }")
@@ -62,6 +64,8 @@ extension SwiftSource {
             append()
         }
         append()
+        
+        return self
     }
     
 }

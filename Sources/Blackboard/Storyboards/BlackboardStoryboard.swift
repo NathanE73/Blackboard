@@ -27,7 +27,7 @@ import Foundation
 struct BlackboardStoryboard {
     
     var name: String
-    var extensionName: String
+    var extensionFilename: String
     
     var viewControllers: [BlackboardViewController]
     
@@ -38,7 +38,7 @@ extension BlackboardStoryboard {
     init?(_ storyboard: Storyboard, storyboards: [Storyboard]) {
         name = storyboard.name
         
-        extensionName = storyboard.name
+        extensionFilename = storyboard.name
             .removingSuffix("Storyboard")
             + "Storyboard"
             + Filename.blackboardExtension

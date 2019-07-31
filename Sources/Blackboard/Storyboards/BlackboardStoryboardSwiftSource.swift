@@ -26,11 +26,13 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendStoryboard(_ storyboard: BlackboardStoryboard) {
-        appendHeading(filename: storyboard.extensionName, modules: ["UIKit"])
+    func appendStoryboard(_ storyboard: BlackboardStoryboard) -> Self {
+        appendHeading(filename: storyboard.extensionFilename, modules: ["UIKit"])
         append("private let sharedStoryboardInstance = UIStoryboard(name: \"\(storyboard.name)\", bundle: nil)")
         append()
         appendViewControllers(storyboard.viewControllers)
+        
+        return self
     }
     
 }
