@@ -59,6 +59,7 @@ pod-publish:
 publish: pod-publish
 
 generate:
+	bin/blackboard DeclarativeApp/Resources/ DeclarativeApp/Source/Generated
 	bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated
 
 %:

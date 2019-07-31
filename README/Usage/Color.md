@@ -4,7 +4,7 @@ Scans through asset catalogs.
 
 ### Xcode Editor Autocomplete
 
-![Autocomplete Color](Images/AutocompleteColor.gif)
+<img src="Images/AutocompleteColor.gif" height="200" alt="Autocomplete Color" />
 
 ### Xcode Asset Catalog
 
@@ -37,23 +37,23 @@ public enum ColorAsset: String {
 ```swift
 public extension Color {
     
-    init(_ colorAsset: ColorAsset) {
+    init(asset colorAsset: ColorAsset) {
         self.init(colorAsset.rawValue, bundle: bundle)
     }
     
-    static var absoluteZero: Color { return Color(.absoluteZero) }
-    static var bisque: Color { return Color(.bisque) }
-    static var charcoal: Color { return Color(.charcoal) }
-    static var darkOliveGreen: Color { return Color(.darkOliveGreen) }
-    static var desire: Color { return Color(.desire) }
-    static var emerald: Color { return Color(.emerald) }
-    static var empty: Color { return Color(.empty) }
-    static var firebrick: Color { return Color(.firebrick) }
-    static var fluorescentBlizzardBlue: Color { return Color(.fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: Color { return Color(.fluorescentMagicMint) }
-    static var fluorescentRadicalRed: Color { return Color(.fluorescentRadicalRed) }
-    static var maroon: Color { return Color(.maroon) }
-    static var night: Color { return Color(.night) }
+    static var absoluteZero: Color { return Color(asset: ColorAsset.absoluteZero) }
+    static var bisque: Color { return Color(asset: ColorAsset.bisque) }
+    static var charcoal: Color { return Color(asset: ColorAsset.charcoal) }
+    static var darkOliveGreen: Color { return Color(asset: ColorAsset.darkOliveGreen) }
+    static var desire: Color { return Color(asset: ColorAsset.desire) }
+    static var emerald: Color { return Color(asset: ColorAsset.emerald) }
+    static var empty: Color { return Color(asset: ColorAsset.empty) }
+    static var firebrick: Color { return Color(asset: ColorAsset.firebrick) }
+    static var fluorescentBlizzardBlue: Color { return Color(asset: ColorAsset.fluorescentBlizzardBlue) }
+    static var fluorescentMagicMint: Color { return Color(asset: ColorAsset.fluorescentMagicMint) }
+    static var fluorescentRadicalRed: Color { return Color(asset: ColorAsset.fluorescentRadicalRed) }
+    static var maroon: Color { return Color(asset: ColorAsset.maroon) }
+    static var night: Color { return Color(asset: ColorAsset.night) }
     
 }
 ```
@@ -61,8 +61,8 @@ public extension Color {
 ### The Blackboard Way
 
 ```swift
-Color(.darkOliveGreen)
-Color(.fluorescentMagicMint)
+Color(asset: .darkOliveGreen)
+Color(asset: .fluorescentMagicMint)
 ```
 
 ### The Standard SwiftUI Way

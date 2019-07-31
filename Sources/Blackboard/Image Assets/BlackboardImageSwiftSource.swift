@@ -51,15 +51,15 @@ extension SwiftSource {
         append("@available(iOS 13.0, *)")
         append("public extension Image") {
             append()
-            append("init(_ imageAsset: ImageAsset)") {
+            append("init(asset imageAsset: ImageAsset)") {
                 append("self.init(imageAsset.rawValue, bundle: bundle)")
             }
             append()
-            append("init(_ imageAsset: ImageAsset, label: Text)") {
+            append("init(asset imageAsset: ImageAsset, label: Text)") {
                 append("self.init(imageAsset.rawValue, bundle: bundle, label: label)")
             }
             append()
-            append("init(decorative imageAsset: ImageAsset)") {
+            append("init(decorativeAsset imageAsset: ImageAsset)") {
                 append("self.init(decorative: imageAsset.rawValue, bundle: bundle)")
             }
             append()

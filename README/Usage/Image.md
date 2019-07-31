@@ -4,7 +4,11 @@ Scans through asset catalogs.
 
 ### Xcode Editor Autocomplete
 
-![Autocomplete Image](Images/AutocompleteImage.gif)
+<img src="Images/AutocompleteImage.gif" height="200" alt="Autocomplete Image" />
+
+### Xcode SwiftUI Inspector
+
+<img src="Images/InspectImage.gif" height="300" alt="Inspect Image" />
 
 ### Xcode Asset Catalog
 
@@ -31,15 +35,15 @@ public enum ImageAsset: String {
 ```swift
 public extension Image {
     
-    init(_ imageAsset: ImageAsset) {
+    init(asset imageAsset: ImageAsset) {
         self.init(imageAsset.rawValue, bundle: bundle)
     }
     
-    init(_ imageAsset: ImageAsset, label: Text) {
+    init(asset imageAsset: ImageAsset, label: Text) {
         self.init(imageAsset.rawValue, bundle: bundle, label: label)
     }
     
-    init(decorative imageAsset: ImageAsset) {
+    init(decorativeAsset imageAsset: ImageAsset) {
         self.init(decorative: imageAsset.rawValue, bundle: bundle)
     }
     
@@ -49,9 +53,9 @@ public extension Image {
 ### The Blackboard Way
 
 ```swift
-Image(.redStapler)
-Image(.redStapler, label: Text("Red Stapler"))
-Image(decorative: .redStapler)
+Image(asset: .redStapler)
+Image(asset: .redStapler, label: Text("Red Stapler"))
+Image(decorativeAsset: .redStapler)
 ```
 
 ### The Standard SwiftUI Way
