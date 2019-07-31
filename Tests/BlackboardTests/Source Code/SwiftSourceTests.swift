@@ -28,8 +28,8 @@ import XCTest
 
 class SwiftSourceTests: XCTestCase {
     
-    func testDescription() {
-        let expectedDescription =
+    func testSource() {
+        let expectedSource =
         """
         //
         //  Example
@@ -58,11 +58,11 @@ class SwiftSourceTests: XCTestCase {
             swiftSource.append()
         }
         
-        XCTAssertEqual(swiftSource.source, expectedDescription)
+        XCTAssertEqual(swiftSource.source, expectedSource)
     }
     
     func testAppendEmptyBlock() {
-        let expectedDescription =
+        let expectedSource =
         """
         class Empty {
         }
@@ -75,7 +75,7 @@ class SwiftSourceTests: XCTestCase {
             swiftSource.append()
         }
         
-        XCTAssertEqual(swiftSource.source, expectedDescription)
+        XCTAssertEqual(swiftSource.source, expectedSource)
     }
     
 }

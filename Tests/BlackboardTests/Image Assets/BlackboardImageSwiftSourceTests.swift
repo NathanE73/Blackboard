@@ -52,7 +52,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
         XCTAssertEqual(blackboardImages.count, 7)
     }
     
-    func testImageAssetDescription() {
+    func testImageAssetSource() {
         let expectedSource = Fixture.generated(project: .example, name: "ImageAsset")
         
         let source = SwiftSource()
@@ -62,7 +62,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
         XCTAssertEqual(source, expectedSource)
     }
     
-    func testUIImageDescription() {
+    func testUIImageSource() {
         let expectedSource = Fixture.generated(project: .example, name: "UIImage")
         
         let source = SwiftSource()
