@@ -88,7 +88,7 @@ extension SwiftSource {
     
     func appendCustomColors(colors: [BlackboardColor], returnType: String) {
         colors.forEach { color in
-            append("static var \(color.functionName): \(returnType) { return \(returnType)(.\(color.caseName)) }")
+            append("static var \(color.functionName): \(returnType) { return \(returnType)(ColorAsset.\(color.caseName)) }")
         }
     }
     

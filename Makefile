@@ -58,7 +58,7 @@ pod-publish:
 
 publish: pod-publish
 
-example:
+generate:
 	bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated
 
 %:

@@ -45,19 +45,19 @@ public extension UIColor {
         self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
-    static var absoluteZero: UIColor { return UIColor(.absoluteZero) }
-    static var bisque: UIColor { return UIColor(.bisque) }
-    static var charcoal: UIColor { return UIColor(.charcoal) }
-    static var darkOliveGreen: UIColor { return UIColor(.darkOliveGreen) }
-    static var desire: UIColor { return UIColor(.desire) }
-    static var emerald: UIColor { return UIColor(.emerald) }
-    static var empty: UIColor { return UIColor(.empty) }
-    static var firebrick: UIColor { return UIColor(.firebrick) }
-    static var fluorescentBlizzardBlue: UIColor { return UIColor(.fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: UIColor { return UIColor(.fluorescentMagicMint) }
-    static var fluorescentRadicalRed: UIColor { return UIColor(.fluorescentRadicalRed) }
-    static var maroon: UIColor { return UIColor(.maroon) }
-    static var night: UIColor { return UIColor(.night) }
+    static var absoluteZero: UIColor { return UIColor(ColorAsset.absoluteZero) }
+    static var bisque: UIColor { return UIColor(ColorAsset.bisque) }
+    static var charcoal: UIColor { return UIColor(ColorAsset.charcoal) }
+    static var darkOliveGreen: UIColor { return UIColor(ColorAsset.darkOliveGreen) }
+    static var desire: UIColor { return UIColor(ColorAsset.desire) }
+    static var emerald: UIColor { return UIColor(ColorAsset.emerald) }
+    static var empty: UIColor { return UIColor(ColorAsset.empty) }
+    static var firebrick: UIColor { return UIColor(ColorAsset.firebrick) }
+    static var fluorescentBlizzardBlue: UIColor { return UIColor(ColorAsset.fluorescentBlizzardBlue) }
+    static var fluorescentMagicMint: UIColor { return UIColor(ColorAsset.fluorescentMagicMint) }
+    static var fluorescentRadicalRed: UIColor { return UIColor(ColorAsset.fluorescentRadicalRed) }
+    static var maroon: UIColor { return UIColor(ColorAsset.maroon) }
+    static var night: UIColor { return UIColor(ColorAsset.night) }
     
 }
 ```

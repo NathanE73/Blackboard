@@ -39,13 +39,13 @@ public extension UIImage {
         self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
-    static var button: UIImage { return UIImage(.button) }
-    static var greenPaperClip: UIImage { return UIImage(.greenPaperClip) }
-    static var greenPencil: UIImage { return UIImage(.greenPencil) }
-    static var redCup: UIImage { return UIImage(.redCup) }
-    static var redStapler: UIImage { return UIImage(.redStapler) }
-    static var silverPaperClip: UIImage { return UIImage(.silverPaperClip) }
-    static var whiteDice: UIImage { return UIImage(.whiteDice) }
+    static var button: UIImage { return UIImage(ImageAsset.button) }
+    static var greenPaperClip: UIImage { return UIImage(ImageAsset.greenPaperClip) }
+    static var greenPencil: UIImage { return UIImage(ImageAsset.greenPencil) }
+    static var redCup: UIImage { return UIImage(ImageAsset.redCup) }
+    static var redStapler: UIImage { return UIImage(ImageAsset.redStapler) }
+    static var silverPaperClip: UIImage { return UIImage(ImageAsset.silverPaperClip) }
+    static var whiteDice: UIImage { return UIImage(ImageAsset.whiteDice) }
     
 }
 ```
