@@ -67,29 +67,23 @@ extension SwiftSource {
     func appendUIColors(colors: [BlackboardColor]) -> Self {
         appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: true)
         append("public extension ColorAsset") {
-            append("var color: UIColor { return UIColor(self) }")
+            append("var color: UIColor { return UIColor(asset: self) }")
         }
         append()
         append("public extension UIColor") {
             append()
-            append("convenience init(_ colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
+            append("convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
                 append("self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
             }
             append()
-            appendCustomColors(colors: colors, returnType: "UIColor")
+            colors.forEach { color in
+                append("static var \(color.functionName): UIColor { return UIColor(asset: ColorAsset.\(color.caseName)) }")
+            }
             append()
         }
         append()
         
         return self
-    }
-    
-    // Custom Colors
-    
-    func appendCustomColors(colors: [BlackboardColor], returnType: String) {
-        colors.forEach { color in
-            append("static var \(color.functionName): \(returnType) { return \(returnType)(ColorAsset.\(color.caseName)) }")
-        }
     }
     
 }

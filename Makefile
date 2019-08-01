@@ -8,7 +8,7 @@ BLACKBOARD_EXECUTABLE=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)/
 VERSION_FILE=etc/version.txt
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
-.PHONY: project reset clean build test install portable-zip release get-version set-version git-tag pod-publish publish example
+.PHONY: project reset clean build test install portable-zip release get-version set-version git-tag pod-publish publish generate
 
 project:
 	rm -rf DerivedData/

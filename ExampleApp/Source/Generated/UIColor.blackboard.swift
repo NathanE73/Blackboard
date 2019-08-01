@@ -12,27 +12,27 @@ fileprivate let bundle: Bundle = {
 }()
 
 public extension ColorAsset {
-    var color: UIColor { return UIColor(self) }
+    var color: UIColor { return UIColor(asset: self) }
 }
 
 public extension UIColor {
     
-    convenience init(_ colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
+    convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
         self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
-    static var absoluteZero: UIColor { return UIColor(ColorAsset.absoluteZero) }
-    static var bisque: UIColor { return UIColor(ColorAsset.bisque) }
-    static var charcoal: UIColor { return UIColor(ColorAsset.charcoal) }
-    static var darkOliveGreen: UIColor { return UIColor(ColorAsset.darkOliveGreen) }
-    static var desire: UIColor { return UIColor(ColorAsset.desire) }
-    static var emerald: UIColor { return UIColor(ColorAsset.emerald) }
-    static var empty: UIColor { return UIColor(ColorAsset.empty) }
-    static var firebrick: UIColor { return UIColor(ColorAsset.firebrick) }
-    static var fluorescentBlizzardBlue: UIColor { return UIColor(ColorAsset.fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: UIColor { return UIColor(ColorAsset.fluorescentMagicMint) }
-    static var fluorescentRadicalRed: UIColor { return UIColor(ColorAsset.fluorescentRadicalRed) }
-    static var maroon: UIColor { return UIColor(ColorAsset.maroon) }
-    static var night: UIColor { return UIColor(ColorAsset.night) }
+    static var absoluteZero: UIColor { return UIColor(asset: ColorAsset.absoluteZero) }
+    static var bisque: UIColor { return UIColor(asset: ColorAsset.bisque) }
+    static var charcoal: UIColor { return UIColor(asset: ColorAsset.charcoal) }
+    static var darkOliveGreen: UIColor { return UIColor(asset: ColorAsset.darkOliveGreen) }
+    static var desire: UIColor { return UIColor(asset: ColorAsset.desire) }
+    static var emerald: UIColor { return UIColor(asset: ColorAsset.emerald) }
+    static var empty: UIColor { return UIColor(asset: ColorAsset.empty) }
+    static var firebrick: UIColor { return UIColor(asset: ColorAsset.firebrick) }
+    static var fluorescentBlizzardBlue: UIColor { return UIColor(asset: ColorAsset.fluorescentBlizzardBlue) }
+    static var fluorescentMagicMint: UIColor { return UIColor(asset: ColorAsset.fluorescentMagicMint) }
+    static var fluorescentRadicalRed: UIColor { return UIColor(asset: ColorAsset.fluorescentRadicalRed) }
+    static var maroon: UIColor { return UIColor(asset: ColorAsset.maroon) }
+    static var night: UIColor { return UIColor(asset: ColorAsset.night) }
     
 }

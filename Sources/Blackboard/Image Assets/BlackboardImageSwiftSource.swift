@@ -49,17 +49,17 @@ extension SwiftSource {
     func appendUIImages(images: [BlackboardImage]) -> Self {
         appendHeading(filename: Filename.UIImage, modules: ["UIKit"], includeBundle: true)
         append("public extension ImageAsset") {
-            append("var image: UIImage { return UIImage(self) }")
+            append("var image: UIImage { return UIImage(asset: self) }")
         }
         append()
         append("public extension UIImage") {
             append()
-            append("convenience init(_ imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
+            append("convenience init(asset imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
                 append("self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
             }
             append()
             images.forEach { image in
-                append("static var \(image.functionName): UIImage { return UIImage(ImageAsset.\(image.caseName)) }")
+                append("static var \(image.functionName): UIImage { return UIImage(asset: ImageAsset.\(image.caseName)) }")
             }
             append()
         }
