@@ -78,22 +78,27 @@ public class BlackboardMain {
         
         print("Target directory: \(targetDirectory)")
         
-        // UIKit
-        
-        SwiftSourceFile(Filename.UIKit, at: targetDirectory)
-            .append(source: UIKitSwiftSource)
-            .write()
-        
         // Process Storyboards
         
         let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)
         
+        var storyboardExtensionsWereGenerated = false
+        
         for storyboard in storyboards {
             if let storyboard = BlackboardStoryboard(storyboard, storyboards: storyboards) {
+                storyboardExtensionsWereGenerated = true
                 SwiftSourceFile(storyboard.extensionFilename, at: targetDirectory)
                     .appendStoryboard(storyboard)
                     .write()
             }
+        }
+        
+        // UIKit
+        
+        if storyboardExtensionsWereGenerated {
+            SwiftSourceFile(Filename.UIKit, at: targetDirectory)
+                .append(source: UIKitSwiftSource)
+                .write()
         }
         
         // Process Color Sets
