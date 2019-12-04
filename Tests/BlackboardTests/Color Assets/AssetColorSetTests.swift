@@ -59,7 +59,7 @@ class AssetColorSetTests: XCTestCase {
             XCTAssertNotNil(assetColorSet.info)
             XCTAssertEqual(assetColorSet.colors.count, 1)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }

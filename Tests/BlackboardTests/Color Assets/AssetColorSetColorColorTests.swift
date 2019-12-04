@@ -28,7 +28,32 @@ import XCTest
 
 class AssetColorSetColorColorTests: XCTestCase {
     
-    func testDecodable() {
+    func testStandardRgbColorSpace() {
+        let json = """
+          {
+            "color-space" : "srgb",
+            "components" : {
+              "red" : 0.3137254901960784,
+              "green" : 0.7843137254901961,
+              "blue" : 0.4705882352941176,
+              "alpha" : 1
+            }
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
+            
+            XCTAssertEqual(color.colorSpace, .srgb)
+            XCTAssertNotNil(color.components)
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDisplayP3ColorSpace() {
         let json = """
           {
             "color-space" : "display-p3",
@@ -48,7 +73,57 @@ class AssetColorSetColorColorTests: XCTestCase {
             XCTAssertEqual(color.colorSpace, .displayP3)
             XCTAssertNotNil(color.components)
         }
-        catch let error {
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testExtendedSrgbColorSpace() {
+        let json = """
+          {
+            "color-space" : "extended-srgb",
+            "components" : {
+              "red" : 0.3137254901960784,
+              "green" : 0.7843137254901961,
+              "blue" : 0.4705882352941176,
+              "alpha" : 1
+            }
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
+            
+            XCTAssertEqual(color.colorSpace, .extendedSrgb)
+            XCTAssertNotNil(color.components)
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testExtendedLinearSrgbColorSpace() {
+        let json = """
+          {
+            "color-space" : "extended-linear-srgb",
+            "components" : {
+              "red" : 0.3137254901960784,
+              "green" : 0.7843137254901961,
+              "blue" : 0.4705882352941176,
+              "alpha" : 1
+            }
+          }
+        """
+        let data = json.data(using: .utf8)!
+        
+        do {
+            let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
+            
+            XCTAssertEqual(color.colorSpace, .extendedLinearSrgb)
+            XCTAssertNotNil(color.components)
+        }
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -72,7 +147,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             XCTAssertEqual(color.colorSpace, .srgb)
             XCTAssertNotNil(color.components)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -82,6 +157,10 @@ class AssetColorSetColorColorTests: XCTestCase {
         
         XCTAssertEqual(colorSpace.srgb.rawValue, "srgb")
         XCTAssertEqual(colorSpace.displayP3.rawValue, "display-p3")
+        XCTAssertEqual(colorSpace.extendedSrgb.rawValue, "extended-srgb")
+        XCTAssertEqual(colorSpace.extendedLinearSrgb.rawValue, "extended-linear-srgb")
+        XCTAssertEqual(colorSpace.grayGamma22.rawValue, "gray-gamma-22")
+        XCTAssertEqual(colorSpace.extendedGray.rawValue, "extended-gray")
     }
     
 }

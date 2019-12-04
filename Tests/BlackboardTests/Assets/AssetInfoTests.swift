@@ -43,7 +43,7 @@ class AssetInfoTests: XCTestCase {
             XCTAssertEqual(info.version, 2)
             XCTAssertEqual(info.author, "Steve Dave")
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -63,7 +63,7 @@ class AssetInfoTests: XCTestCase {
             XCTAssertEqual(info.version, 3)
             XCTAssertEqual(info.author, "zeplin")
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }

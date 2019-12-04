@@ -99,6 +99,10 @@ extension AssetColorSet.Color.Color {
     enum ColorSpace: String, Decodable {
         case srgb
         case displayP3 = "display-p3"
+        case extendedSrgb = "extended-srgb"
+        case extendedLinearSrgb = "extended-linear-srgb"
+        case grayGamma22 = "gray-gamma-22"
+        case extendedGray = "extended-gray"
     }
     
 }

@@ -43,7 +43,7 @@ class AssetImageSetImageTests: XCTestCase {
             XCTAssertEqual(image.idiom, .iphone)
             XCTAssertEqual(image.scale, .one)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -62,7 +62,7 @@ class AssetImageSetImageTests: XCTestCase {
             XCTAssertEqual(image.idiom, .universal)
             XCTAssertEqual(image.scale, .one)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -81,7 +81,7 @@ class AssetImageSetImageTests: XCTestCase {
             XCTAssertEqual(image.idiom, .ipad)
             XCTAssertNil(image.scale)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }

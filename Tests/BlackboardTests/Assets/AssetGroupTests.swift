@@ -55,7 +55,7 @@ class AssetGroupTests: XCTestCase {
             XCTAssertEqual(group.properties?.onDemandResourceTags, ["one", "two"])
             XCTAssertEqual(group.properties?.providesNamespace, true)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -79,7 +79,7 @@ class AssetGroupTests: XCTestCase {
             
             XCTAssertNil(group.properties)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -107,7 +107,7 @@ class AssetGroupTests: XCTestCase {
             XCTAssertNil(group.properties?.onDemandResourceTags)
             XCTAssertNil(group.properties?.providesNamespace)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -138,7 +138,7 @@ class AssetGroupTests: XCTestCase {
             XCTAssertEqual(group.properties?.onDemandResourceTags, ["one", "two"])
             XCTAssertNil(group.properties?.providesNamespace)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -166,7 +166,7 @@ class AssetGroupTests: XCTestCase {
             XCTAssertNil(group.properties?.onDemandResourceTags)
             XCTAssertEqual(group.properties?.providesNamespace, false)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
