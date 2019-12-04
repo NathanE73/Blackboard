@@ -59,7 +59,7 @@ class AssetImageSetTests: XCTestCase {
             XCTAssertNotNil(assetImageSet.info)
             XCTAssertEqual(assetImageSet.images.count, 3)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }

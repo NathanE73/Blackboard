@@ -53,7 +53,7 @@ class AssetColorSetColorTests: XCTestCase {
             XCTAssertEqual(color.idiom, .ipad)
             XCTAssertNotNil(color.color)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -81,7 +81,7 @@ class AssetColorSetColorTests: XCTestCase {
             XCTAssertEqual(color.idiom, .universal)
             XCTAssertNotNil(color.color)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -108,7 +108,7 @@ class AssetColorSetColorTests: XCTestCase {
             XCTAssertEqual(color.idiom, .universal)
             XCTAssertNotNil(color.color)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }

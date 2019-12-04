@@ -48,7 +48,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             XCTAssertEqual(color.colorSpace, .srgb)
             XCTAssertNotNil(color.components)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -73,7 +73,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             XCTAssertEqual(color.colorSpace, .displayP3)
             XCTAssertNotNil(color.components)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -98,7 +98,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             XCTAssertEqual(color.colorSpace, .extendedSrgb)
             XCTAssertNotNil(color.components)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -123,7 +123,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             XCTAssertEqual(color.colorSpace, .extendedLinearSrgb)
             XCTAssertNotNil(color.components)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -147,7 +147,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             XCTAssertEqual(color.colorSpace, .srgb)
             XCTAssertNotNil(color.components)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }

@@ -47,7 +47,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             XCTAssertEqual(components.blue, 0.4705882352941176)
             XCTAssertEqual(components.alpha, 1)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -71,7 +71,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             XCTAssertEqual(components.blue, 0.470)
             XCTAssertEqual(components.alpha, 0.975)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -95,7 +95,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             XCTAssertEqual(components.blue, 0.47058823529411764)
             XCTAssertEqual(components.alpha, 1.000)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
@@ -119,7 +119,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             XCTAssertEqual(components.blue, 0.3254901960784314)
             XCTAssertEqual(components.alpha, 1.000)
         }
-        catch let error {
+        catch {
             XCTFail(error.localizedDescription)
         }
     }
