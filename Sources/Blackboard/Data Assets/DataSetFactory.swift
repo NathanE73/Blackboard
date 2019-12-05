@@ -24,20 +24,22 @@
 
 import Foundation
 
-class Filename {
+class DataSetFactory: AssetSetFactory {
     
-    static let blackboardExtension = ".blackboard.swift"
+    var fileManager = FileManager.default
     
-    static let ColorAsset = "ColorAsset.blackboard.swift"
-    static let CGColor = "CGColor.blackboard.swift"
-    static let UIColor = "UIColor.blackboard.swift"
+    let pathExtension = "dataset"
     
-    static let DataAsset = "DataAsset.blackboard.swift"
-    static let NSDataAsset = "NSDataAsset.blackboard.swift"
+    func dataSetsAt(path: String) -> [DataSet] {
+        return assetsAt(path: path, namespace: nil)
+    }
     
-    static let ImageAsset = "ImageAsset.blackboard.swift"
-    static let UIImage = "UIImage.blackboard.swift"
-    
-    static let UIKit = "UIKit.blackboard.swift"
+    func asset(name: String, data: Data) -> DataSet? {
+        guard let assetDataSet = try? JSONDecoder().decode(AssetDataSet.self, from: data) else {
+            return nil
+        }
+        
+        return DataSet(name: name, assetDataSet: assetDataSet)
+    }
     
 }

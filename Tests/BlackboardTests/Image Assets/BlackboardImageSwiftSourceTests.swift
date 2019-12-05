@@ -43,7 +43,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
             .compactMap { $0 }
             .compactMap(BlackboardImage.init)
         
-        blackboardImages.sort { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
+        blackboardImages.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
         return blackboardImages
     }

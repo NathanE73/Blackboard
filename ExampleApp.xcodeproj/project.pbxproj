@@ -10,6 +10,8 @@
 		430867B81F27C02F006DF3D2 /* UIColor.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430867B71F27C02F006DF3D2 /* UIColor.blackboard.swift */; };
 		431BCB50223AA52000E01B48 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431BCB4F223AA52000E01B48 /* AccountViewController.swift */; };
 		431BCB52223AC73A00E01B48 /* OpenAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431BCB51223AC73A00E01B48 /* OpenAccountViewController.swift */; };
+		43237C7E23995E4100CF404C /* NSDataAsset.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43237C7C23995E4000CF404C /* NSDataAsset.blackboard.swift */; };
+		43237C7F23995E4100CF404C /* DataAsset.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43237C7D23995E4100CF404C /* DataAsset.blackboard.swift */; };
 		432EDC9D223985C000EBB0AF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EDC9C223985C000EBB0AF /* Photo.swift */; };
 		432EDCA922399C9A00EBB0AF /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EDCA822399C9A00EBB0AF /* PhotoCollectionViewCell.swift */; };
 		432EDCB2223A916900EBB0AF /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432EDCAE223A916800EBB0AF /* Account.storyboard */; };
@@ -25,6 +27,7 @@
 		435E2B011D01F600008E1170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435E2AFF1D01F600008E1170 /* LaunchScreen.storyboard */; };
 		436292E41F27CEBC0000C651 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436292E31F27CEBC0000C651 /* Colors.xcassets */; };
 		4368049A2245AA2200A69FE8 /* UIKit.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436804992245AA2200A69FE8 /* UIKit.blackboard.swift */; };
+		43A2081D239860880073A2B2 /* Data.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A2081C239860880073A2B2 /* Data.xcassets */; };
 		43C2B19C1D01F86A001B08CA /* MainStoryboard.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */; };
 		43C2B19E1D021533001B08CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19D1D021533001B08CA /* MainViewController.swift */; };
 		43C32F17223849B500D270C1 /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F15223849B500D270C1 /* AccountsTableViewController.swift */; };
@@ -56,6 +59,8 @@
 		430867B71F27C02F006DF3D2 /* UIColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.blackboard.swift; sourceTree = "<group>"; };
 		431BCB4F223AA52000E01B48 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		431BCB51223AC73A00E01B48 /* OpenAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAccountViewController.swift; sourceTree = "<group>"; };
+		43237C7C23995E4000CF404C /* NSDataAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataAsset.blackboard.swift; sourceTree = "<group>"; };
+		43237C7D23995E4100CF404C /* DataAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAsset.blackboard.swift; sourceTree = "<group>"; };
 		432EDC9C223985C000EBB0AF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		432EDCA822399C9A00EBB0AF /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		432EDCAF223A916800EBB0AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Account.storyboard; sourceTree = "<group>"; };
@@ -73,6 +78,7 @@
 		435E2B021D01F600008E1170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		436292E31F27CEBC0000C651 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		436804992245AA2200A69FE8 /* UIKit.blackboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.blackboard.swift; sourceTree = "<group>"; };
+		43A2081C239860880073A2B2 /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Data.xcassets; sourceTree = "<group>"; };
 		43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboard.blackboard.swift; sourceTree = "<group>"; };
 		43C2B19D1D021533001B08CA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		43C32F15223849B500D270C1 /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +99,8 @@
 		43C332C42245C75E00739D26 /* EmptyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewController.swift; sourceTree = "<group>"; };
 		43C332C52245C75E00739D26 /* EmptyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPageViewController.swift; sourceTree = "<group>"; };
 		43C332CC2245C8D200739D26 /* SupportedStoryboard.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportedStoryboard.blackboard.swift; sourceTree = "<group>"; };
-		43CC4BD322F0890200C03F21 /* ColorAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorAsset.blackboard.swift; path = ColorAsset.blackboard.swift; sourceTree = "<group>"; };
-		43CC4BD422F0890200C03F21 /* ImageAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageAsset.blackboard.swift; path = ImageAsset.blackboard.swift; sourceTree = "<group>"; };
+		43CC4BD322F0890200C03F21 /* ColorAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorAsset.blackboard.swift; sourceTree = "<group>"; };
+		43CC4BD422F0890200C03F21 /* ImageAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsset.blackboard.swift; sourceTree = "<group>"; };
 		43D6442A2235958D00F1559E /* CGColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGColor.blackboard.swift; sourceTree = "<group>"; };
 		43E9820F2245553D00C0B1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Supported.storyboard; sourceTree = "<group>"; };
 		43E982112245612800C0B1B7 /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 			children = (
 				435E2AFD1D01F600008E1170 /* Assets.xcassets */,
 				436292E31F27CEBC0000C651 /* Colors.xcassets */,
+				43A2081C239860880073A2B2 /* Data.xcassets */,
 				4351B62C21E502E5007B4622 /* Images.xcassets */,
 				436292E51F27CF6F0000C651 /* Storyboards */,
 			);
@@ -180,8 +187,10 @@
 				43C32F2822384C1000D270C1 /* AccountStoryboard.blackboard.swift */,
 				43D6442A2235958D00F1559E /* CGColor.blackboard.swift */,
 				43CC4BD322F0890200C03F21 /* ColorAsset.blackboard.swift */,
+				43237C7D23995E4100CF404C /* DataAsset.blackboard.swift */,
 				43CC4BD422F0890200C03F21 /* ImageAsset.blackboard.swift */,
 				43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */,
+				43237C7C23995E4000CF404C /* NSDataAsset.blackboard.swift */,
 				43C32F2722384C1000D270C1 /* PhotoStoryboard.blackboard.swift */,
 				43C332CC2245C8D200739D26 /* SupportedStoryboard.blackboard.swift */,
 				430867B71F27C02F006DF3D2 /* UIColor.blackboard.swift */,
@@ -313,6 +322,7 @@
 				436292E41F27CEBC0000C651 /* Colors.xcassets in Resources */,
 				435E2B011D01F600008E1170 /* LaunchScreen.storyboard in Resources */,
 				435E2AFE1D01F600008E1170 /* Assets.xcassets in Resources */,
+				43A2081D239860880073A2B2 /* Data.xcassets in Resources */,
 				433D6D7021E5055C00D8CB37 /* Empty.storyboard in Resources */,
 				4351B62D21E502E5007B4622 /* Images.xcassets in Resources */,
 				432EDCB3223A916900EBB0AF /* Photo.storyboard in Resources */,
@@ -372,6 +382,7 @@
 				435E2AF71D01F600008E1170 /* AppDelegate.swift in Sources */,
 				4368049A2245AA2200A69FE8 /* UIKit.blackboard.swift in Sources */,
 				432EDCA922399C9A00EBB0AF /* PhotoCollectionViewCell.swift in Sources */,
+				43237C7F23995E4100CF404C /* DataAsset.blackboard.swift in Sources */,
 				432EDCB7223A96EE00EBB0AF /* PhotoViewModel.swift in Sources */,
 				430867B81F27C02F006DF3D2 /* UIColor.blackboard.swift in Sources */,
 				43C32F1B223849C400D270C1 /* PhotosCollectionViewController.swift in Sources */,
@@ -380,6 +391,7 @@
 				431BCB52223AC73A00E01B48 /* OpenAccountViewController.swift in Sources */,
 				43C32F2F22394B7C00D270C1 /* AccountsViewModel.swift in Sources */,
 				43C32F1C223849C400D270C1 /* PhotosNavigationController.swift in Sources */,
+				43237C7E23995E4100CF404C /* NSDataAsset.blackboard.swift in Sources */,
 				43C32F2D2239447E00D270C1 /* Account.swift in Sources */,
 				43C32F2A22384C1000D270C1 /* AccountStoryboard.blackboard.swift in Sources */,
 				43C332C82245C75E00739D26 /* EmptyViewController.swift in Sources */,

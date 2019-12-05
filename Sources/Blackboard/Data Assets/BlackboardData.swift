@@ -24,20 +24,20 @@
 
 import Foundation
 
-class Filename {
+struct BlackboardData {
     
-    static let blackboardExtension = ".blackboard.swift"
+    var name: String
+    var caseName: String
     
-    static let ColorAsset = "ColorAsset.blackboard.swift"
-    static let CGColor = "CGColor.blackboard.swift"
-    static let UIColor = "UIColor.blackboard.swift"
+}
+
+extension BlackboardData {
     
-    static let DataAsset = "DataAsset.blackboard.swift"
-    static let NSDataAsset = "NSDataAsset.blackboard.swift"
-    
-    static let ImageAsset = "ImageAsset.blackboard.swift"
-    static let UIImage = "UIImage.blackboard.swift"
-    
-    static let UIKit = "UIKit.blackboard.swift"
+    init(_ dataSet: DataSet) {
+        name = dataSet.name
+        
+        caseName = Naming.methodName(fromIdentifier: dataSet.name)
+            .removingSuffix("Data")
+    }
     
 }

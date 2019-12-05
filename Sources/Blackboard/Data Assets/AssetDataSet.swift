@@ -24,20 +24,25 @@
 
 import Foundation
 
-class Filename {
+struct AssetDataSet : Decodable {
+    var info: AssetInfo
+    var data: [Data]
+}
+
+extension AssetDataSet {
     
-    static let blackboardExtension = ".blackboard.swift"
-    
-    static let ColorAsset = "ColorAsset.blackboard.swift"
-    static let CGColor = "CGColor.blackboard.swift"
-    static let UIColor = "UIColor.blackboard.swift"
-    
-    static let DataAsset = "DataAsset.blackboard.swift"
-    static let NSDataAsset = "NSDataAsset.blackboard.swift"
-    
-    static let ImageAsset = "ImageAsset.blackboard.swift"
-    static let UIImage = "UIImage.blackboard.swift"
-    
-    static let UIKit = "UIKit.blackboard.swift"
+    struct Data : Decodable {
+        
+        var idiom: AssetIdiom
+        
+        enum CodingKeys: String, CodingKey {
+            case idiom
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            idiom = try container.decodeIfPresent(AssetIdiom.self, forKey: .idiom) ?? .universal
+        }
+    }
     
 }

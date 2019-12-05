@@ -106,7 +106,7 @@ public class BlackboardMain {
         let colorSets = ColorSetFactory().colorSetsAt(path: sourceDirectory)
         
         var blackboardColors = colorSets.compactMap(BlackboardColor.init)
-        blackboardColors.sort { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
+        blackboardColors.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
         if !blackboardColors.isEmpty {
             SwiftSourceFile(Filename.ColorAsset, at: targetDirectory)
@@ -120,12 +120,28 @@ public class BlackboardMain {
                 .write()
         }
         
+        // Process Data Sets
+        
+        let dataSets = DataSetFactory().dataSetsAt(path: sourceDirectory)
+        
+        let blackboardData = dataSets.compactMap(BlackboardData.init)
+            .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
+        
+        if !blackboardData.isEmpty {
+            SwiftSourceFile(Filename.DataAsset, at: targetDirectory)
+                .appendDataAssets(data: blackboardData)
+                .write()
+            SwiftSourceFile(Filename.NSDataAsset, at: targetDirectory)
+                .appendNSDataAsset(data: blackboardData)
+                .write()
+        }
+        
         // Process Image Sets
         
         let imageSets = ImageSetFactory().imageSetsAt(path: sourceDirectory)
         
         let blackboardImages = imageSets.compactMap(BlackboardImage.init)
-            .sorted { $0.functionName.localizedCaseInsensitiveCompare($1.functionName) == .orderedAscending }
+            .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
         if !blackboardImages.isEmpty {
             SwiftSourceFile(Filename.ImageAsset, at: targetDirectory)
