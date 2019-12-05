@@ -22,39 +22,22 @@
 // THE SOFTWARE.
 //
 
-import Foundation
+import XCTest
 
-struct AssetImageSet : Decodable {
-    var info: AssetInfo
-    var images: [Image]
-}
+@testable import Blackboard
 
-extension AssetImageSet {
+class AssetIdiomTests: XCTestCase {
     
-    struct Image : Decodable {
-        var idiom: AssetIdiom
-        var scale: Scale?
+    func testRawValues() {
+        let idiom = AssetIdiom.self
         
-        enum CodingKeys: String, CodingKey {
-            case idiom
-            case scale
-        }
-        
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            idiom = try container.decodeIfPresent(AssetIdiom.self, forKey: .idiom) ?? .universal
-            scale = try container.decodeIfPresent(Scale.self, forKey: .scale)
-        }
-    }
-    
-}
-
-extension AssetImageSet.Image {
-    
-    enum Scale: String, Decodable {
-        case one = "1x"
-        case two = "2x"
-        case three = "3x"
+        XCTAssertEqual(idiom.car.rawValue, "car")
+        XCTAssertEqual(idiom.iphone.rawValue, "iphone")
+        XCTAssertEqual(idiom.ipad.rawValue, "ipad")
+        XCTAssertEqual(idiom.mac.rawValue, "mac")
+        XCTAssertEqual(idiom.tv.rawValue, "tv")
+        XCTAssertEqual(idiom.universal.rawValue, "universal")
+        XCTAssertEqual(idiom.watch.rawValue, "watch")
     }
     
 }

@@ -24,37 +24,12 @@
 
 import Foundation
 
-struct AssetImageSet : Decodable {
-    var info: AssetInfo
-    var images: [Image]
-}
-
-extension AssetImageSet {
-    
-    struct Image : Decodable {
-        var idiom: AssetIdiom
-        var scale: Scale?
-        
-        enum CodingKeys: String, CodingKey {
-            case idiom
-            case scale
-        }
-        
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            idiom = try container.decodeIfPresent(AssetIdiom.self, forKey: .idiom) ?? .universal
-            scale = try container.decodeIfPresent(Scale.self, forKey: .scale)
-        }
-    }
-    
-}
-
-extension AssetImageSet.Image {
-    
-    enum Scale: String, Decodable {
-        case one = "1x"
-        case two = "2x"
-        case three = "3x"
-    }
-    
+enum AssetIdiom: String, Decodable {
+    case car
+    case iphone
+    case ipad
+    case mac
+    case tv
+    case universal
+    case watch
 }
