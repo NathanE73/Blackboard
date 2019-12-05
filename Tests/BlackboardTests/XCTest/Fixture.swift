@@ -58,6 +58,16 @@ class Fixture {
         return ColorSetFactory().asset(name: name, data: data)
     }
     
+    static func dataSet(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> DataSet? {
+        let path = "\(project.path)/Resources/Data.xcassets/\(path ?? ".")/\(name).dataset/Contents.json"
+        
+        guard let data = fixture(path, file: file, line: line) else {
+            return nil
+        }
+        
+        return DataSetFactory().asset(name: name, data: data)
+    }
+    
     static func imageSet(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> ImageSet? {
         let path = "\(project.path)/Resources/Images.xcassets/\(path ?? ".")/\(name).imageset/Contents.json"
         

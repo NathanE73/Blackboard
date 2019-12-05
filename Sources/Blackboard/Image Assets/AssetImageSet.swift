@@ -32,7 +32,7 @@ struct AssetImageSet : Decodable {
 extension AssetImageSet {
     
     struct Image : Decodable {
-        var idiom: Idiom
+        var idiom: AssetIdiom
         var scale: Scale?
         
         enum CodingKeys: String, CodingKey {
@@ -42,23 +42,9 @@ extension AssetImageSet {
         
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            idiom = try container.decodeIfPresent(Idiom.self, forKey: .idiom) ?? .universal
+            idiom = try container.decodeIfPresent(AssetIdiom.self, forKey: .idiom) ?? .universal
             scale = try container.decodeIfPresent(Scale.self, forKey: .scale)
         }
-    }
-    
-}
-
-extension AssetImageSet.Image {
-    
-    enum Idiom: String, Decodable {
-        case car
-        case iphone
-        case ipad
-        case mac
-        case tv
-        case universal
-        case watch
     }
     
 }

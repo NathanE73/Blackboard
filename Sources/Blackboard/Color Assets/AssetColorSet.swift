@@ -33,7 +33,7 @@ extension AssetColorSet {
     
     struct Color : Decodable {
         var displayGamut: DisplayGamut
-        var idiom: Idiom
+        var idiom: AssetIdiom
         var color: Color
         
         enum CodingKeys: String, CodingKey {
@@ -45,7 +45,7 @@ extension AssetColorSet {
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             displayGamut = try container.decodeIfPresent(DisplayGamut.self, forKey: .displayGamut) ?? .srgb
-            idiom = try container.decodeIfPresent(Idiom.self, forKey: .idiom) ?? .universal
+            idiom = try container.decodeIfPresent(AssetIdiom.self, forKey: .idiom) ?? .universal
             color = try container.decode(Color.self, forKey: .color)
         }
     }
@@ -57,19 +57,6 @@ extension AssetColorSet.Color {
     enum DisplayGamut: String, Decodable {
         case srgb = "sRGB"
         case displayP3 = "display-P3"
-    }
-    
-}
-
-extension AssetColorSet.Color {
-    
-    enum Idiom: String, Decodable {
-        case iphone
-        case ipad
-        case mac
-        case tv
-        case universal
-        case watch
     }
     
 }

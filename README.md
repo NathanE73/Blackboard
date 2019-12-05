@@ -1,6 +1,6 @@
 # Blackboard: An iOS Storyboard and Asset Manager
 
-[![Version](https://img.shields.io/badge/version-7.0.3-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-7.1.0-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/swift-4.2-yellow.svg)](https://swift.org)
@@ -31,6 +31,7 @@ You compare these to see the difference between using and not using Blackboard.
   - [UIColor](/README/Usage/UIColor.md)
   - [CGColor](/README/Usage/CGColor.md)
   - [UIImage](/README/Usage/UIImage.md)
+  - [NSDataAsset](/README/Usage/NSDataAsset.md)
 - Storyboard Usage
   - Cells
     - [Dequeue Collection View Cell](/README/Usage/UICollectionViewCell.md)

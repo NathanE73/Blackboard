@@ -120,15 +120,4 @@ class AssetColorSetColorTests: XCTestCase {
         XCTAssertEqual(colorSpace.displayP3.rawValue, "display-P3")
     }
     
-    func testIdiomRawValues() {
-        let idiom = AssetColorSet.Color.Idiom.self
-        
-        XCTAssertEqual(idiom.iphone.rawValue, "iphone")
-        XCTAssertEqual(idiom.ipad.rawValue, "ipad")
-        XCTAssertEqual(idiom.mac.rawValue, "mac")
-        XCTAssertEqual(idiom.tv.rawValue, "tv")
-        XCTAssertEqual(idiom.universal.rawValue, "universal")
-        XCTAssertEqual(idiom.watch.rawValue, "watch")
-    }
-    
 }
