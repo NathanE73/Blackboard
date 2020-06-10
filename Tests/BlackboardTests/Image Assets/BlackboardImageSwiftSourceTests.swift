@@ -62,6 +62,16 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
         XCTAssertEqual(source, expectedSource)
     }
     
+    func testImageSource() {
+        let expectedSource = Fixture.generated(project: .example, name: "Image")
+        
+        let source = SwiftSource()
+            .appendImages(images: blackboardImages)
+            .source
+        
+        XCTAssertEqual(source, expectedSource)
+    }
+    
     func testUIImageSource() {
         let expectedSource = Fixture.generated(project: .example, name: "UIImage")
         

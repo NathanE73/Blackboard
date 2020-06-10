@@ -115,15 +115,17 @@ extension Storyboard {
         self.init(url: url)
     }
     
-    static func storyboardsAt(path: String) -> [Storyboard] {
+    static func storyboardsAt(paths: [String]) -> [Storyboard] {
         var files: [String] = []
         
         let fileManager = FileManager.default
         
-        let enumerator = fileManager.enumerator(atPath: path)
-        while let file = enumerator?.nextObject() as? String {
-            if file.pathExtension == "storyboard" {
-                files.append(path.appendingPathComponent(file))
+        paths.forEach { path in
+            let enumerator = fileManager.enumerator(atPath: path)
+            while let file = enumerator?.nextObject() as? String {
+                if file.pathExtension == "storyboard" {
+                    files.append(path.appendingPathComponent(file))
+                }
             }
         }
         

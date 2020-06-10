@@ -30,6 +30,10 @@ class ImageSetFactory: AssetSetFactory {
     
     let pathExtension = "imageset"
     
+    func imageSetsAt(paths: [String]) -> [ImageSet] {
+        return paths.flatMap(imageSetsAt(path:))
+    }
+    
     func imageSetsAt(path: String) -> [ImageSet] {
         return assetsAt(path: path, namespace: nil)
     }

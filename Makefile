@@ -1,7 +1,7 @@
 BINARIES_FOLDER=bin
 TEMPORARY_FOLDER=tmp
 
-SWIFT_BUILD_FLAGS=--configuration release -Xswiftc -static-stdlib
+SWIFT_BUILD_FLAGS=--configuration release
 
 BLACKBOARD_EXECUTABLE=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)/blackboard
 
@@ -59,7 +59,8 @@ pod-publish:
 publish: pod-publish
 
 generate:
-	bin/blackboard ExampleApp/Resources/ ExampleApp/Source/Generated
+	bin/blackboard --source DeclarativeApp/Resources/ --target DeclarativeApp/Source/Generated
+	bin/blackboard --source ExampleApp/Resources/ --target ExampleApp/Source/Generated
 
 %:
 	@:

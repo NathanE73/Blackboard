@@ -68,6 +68,16 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
         XCTAssertEqual(source, expectedSource)
     }
     
+    func testColorSource() {
+        let expectedSource = Fixture.generated(project: .example, name: "Color")
+        
+        let source = SwiftSource()
+            .appendColors(colors: blackboardColors)
+            .source
+        
+        XCTAssertEqual(source, expectedSource)
+    }
+    
     func testCGColorSource() {
         let expectedSource = Fixture.generated(project: .example, name: "CGColor")
         

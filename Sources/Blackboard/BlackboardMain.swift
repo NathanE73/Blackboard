@@ -22,65 +22,89 @@
 // THE SOFTWARE.
 //
 
+import ArgumentParser
 import Foundation
 
-public class BlackboardMain {
+public struct BlackboardMain: ParsableCommand {
     
-    static func printUsage() {
-        let name = CommandLine.arguments[0].lastPathComponent
-        print("usage: \(name) --version")
-        print("usage: \(name) source_directory target_directory")
-        print("example: \(name) ExampleApp/Resources/ ExampleApp/Source/Generated")
+    public static var configuration = CommandConfiguration(commandName: "blackboard")
+    
+    @Flag(name: [.short, .long], help: "Print the version numbers of Blackboard.")
+    var version: Bool
+    
+    @Flag(help: "Skip generating storyboard extensions (UIStoryboard)")
+    var skipStoryboards: Bool
+    
+    @Flag(help: "Skip generating color extensions (Color, CGColor, and UIColor)")
+    var skipColors: Bool
+    
+    @Flag(help: "Skip generating data asset extensions (NSDataAsset)")
+    var skipDataAssets: Bool
+    
+    @Flag(help: "Skip generating image extensions (Image, UIImage)")
+    var skipImages: Bool
+    
+    @Flag(name: .customLong("skip-swiftui"),
+          help: "Skip generating SwiftUI extensions (Color, Image)")
+    var skipSwiftUI: Bool
+    
+    @Option(name: .customLong("source"), parsing: .upToNextOption, help: "Source directories")
+    var sourceDirectories: [String]
+    
+    @Option(name: .customLong("target"), help: "Target directory; where generated code will be stored")
+    var targetDirectory: String?
+    
+    public init() {
     }
     
-    public static func run() {
-        
-        let arguments = CommandLine.arguments
-        let numberOfArguments = arguments.count - 1
-        
-        // Version
-        
-        if arguments.contains("--version") {
-            print("Blackboard Version \(version)")
-            exit(0)
+    public mutating func run() throws {
+        guard version == false else {
+            print(Self.version)
+            return
         }
         
-        // Usage
-        
-        if numberOfArguments != 2 {
-            printUsage()
-            exit(1)
+        guard !sourceDirectories.isEmpty,
+            let targetDirectory = targetDirectory else {
+                print(Self.helpMessage())
+                throw ExitCode.validationFailure
         }
         
         // File Manager
         
         let fileManager = FileManager.default
         
-        // Source Directory
+        // Source Directories
         
-        let sourceDirectory = arguments[numberOfArguments - 1]
-        
-        if !fileManager.isDirectory(sourceDirectory) {
-            print("No such source directory: \(sourceDirectory)")
-            exit(1)
+        try sourceDirectories.forEach { sourceDirectory in
+            guard fileManager.isDirectory(sourceDirectory) else {
+                print("No such source directory: \(sourceDirectory)")
+                throw ExitCode.validationFailure
+            }
+            
+            print("Source directory: \(sourceDirectory)")
         }
-        
-        print("Source directory: \(sourceDirectory)")
         
         // Target Directory
         
-        let targetDirectory = arguments[numberOfArguments]
-        
-        if !fileManager.isDirectory(targetDirectory) {
+        guard fileManager.isDirectory(targetDirectory) else {
             print("No such target directory: \(targetDirectory)")
-            exit(1)
+            throw ExitCode.validationFailure
         }
         
         print("Target directory: \(targetDirectory)")
         
-        // Process Storyboards
+        // Process Resources
         
-        let storyboards = Storyboard.storyboardsAt(path: sourceDirectory)
+        processStoryboards(sourceDirectories, targetDirectory)
+        processColors(sourceDirectories, targetDirectory)
+        processDataAssets(sourceDirectories, targetDirectory)
+        processImages(sourceDirectories, targetDirectory)
+    }
+    
+    private func processStoryboards(_ sourceDirectories: [String], _ targetDirectory: String) {
+        guard !skipStoryboards else { return }
+        
+        let storyboards = Storyboard.storyboardsAt(paths: sourceDirectories)
         
         var storyboardExtensionsWereGenerated = false
         
@@ -100,58 +124,85 @@ public class BlackboardMain {
                 .append(source: UIKitSwiftSource)
                 .write()
         }
+    }
+    
+    private func processColors(_ sourceDirectories: [String], _ targetDirectory: String) {
+        guard !skipColors else { return }
         
-        // Process Color Sets
-        
-        let colorSets = ColorSetFactory().colorSetsAt(path: sourceDirectory)
+        let colorSets = ColorSetFactory().colorSetsAt(paths: sourceDirectories)
         
         var blackboardColors = colorSets.compactMap(BlackboardColor.init)
         blackboardColors.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
-        if !blackboardColors.isEmpty {
-            SwiftSourceFile(Filename.ColorAsset, at: targetDirectory)
-                .appendColorAssets(colors: blackboardColors)
-                .write()
-            SwiftSourceFile(Filename.CGColor, at: targetDirectory)
-                .appendCGColors(colors: blackboardColors)
-                .write()
-            SwiftSourceFile(Filename.UIColor, at: targetDirectory)
-                .appendUIColors(colors: blackboardColors)
+        guard !blackboardColors.isEmpty else {
+            return
+        }
+        
+        SwiftSourceFile(Filename.ColorAsset, at: targetDirectory)
+            .appendColorAssets(colors: blackboardColors)
+            .write()
+        
+        if !skipSwiftUI {
+            SwiftSourceFile(Filename.Color, at: targetDirectory)
+                .appendColors(colors: blackboardColors)
                 .write()
         }
         
-        // Process Data Sets
+        SwiftSourceFile(Filename.CGColor, at: targetDirectory)
+            .appendCGColors(colors: blackboardColors)
+            .write()
         
-        let dataSets = DataSetFactory().dataSetsAt(path: sourceDirectory)
+        SwiftSourceFile(Filename.UIColor, at: targetDirectory)
+            .appendUIColors(colors: blackboardColors)
+            .write()
+    }
+    
+    private func processDataAssets(_ sourceDirectories: [String], _ targetDirectory: String) {
+        guard !skipDataAssets else { return }
+        
+        let dataSets = DataSetFactory().dataSetsAt(paths: sourceDirectories)
         
         let blackboardData = dataSets.compactMap(BlackboardData.init)
             .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
-        if !blackboardData.isEmpty {
-            SwiftSourceFile(Filename.DataAsset, at: targetDirectory)
-                .appendDataAssets(data: blackboardData)
-                .write()
-            SwiftSourceFile(Filename.NSDataAsset, at: targetDirectory)
-                .appendNSDataAsset(data: blackboardData)
-                .write()
+        guard !blackboardData.isEmpty else {
+            return
         }
         
-        // Process Image Sets
+        SwiftSourceFile(Filename.DataAsset, at: targetDirectory)
+            .appendDataAssets(data: blackboardData)
+            .write()
         
-        let imageSets = ImageSetFactory().imageSetsAt(path: sourceDirectory)
+        SwiftSourceFile(Filename.NSDataAsset, at: targetDirectory)
+            .appendNSDataAsset(data: blackboardData)
+            .write()
+    }
+    
+    private func processImages(_ sourceDirectories: [String], _ targetDirectory: String) {
+        guard !skipImages else { return }
+        
+        let imageSets = ImageSetFactory().imageSetsAt(paths: sourceDirectories)
         
         let blackboardImages = imageSets.compactMap(BlackboardImage.init)
             .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
-        if !blackboardImages.isEmpty {
-            SwiftSourceFile(Filename.ImageAsset, at: targetDirectory)
-                .appendImageAssets(images: blackboardImages)
-                .write()
-            SwiftSourceFile(Filename.UIImage, at: targetDirectory)
-                .appendUIImages(images: blackboardImages)
+        guard !blackboardImages.isEmpty else {
+            return
+        }
+        
+        SwiftSourceFile(Filename.ImageAsset, at: targetDirectory)
+            .appendImageAssets(images: blackboardImages)
+            .write()
+        
+        if !skipSwiftUI {
+            SwiftSourceFile(Filename.Image, at: targetDirectory)
+                .appendImages(images: blackboardImages)
                 .write()
         }
         
+        SwiftSourceFile(Filename.UIImage, at: targetDirectory)
+            .appendUIImages(images: blackboardImages)
+            .write()
     }
     
 }
