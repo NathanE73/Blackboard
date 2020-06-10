@@ -8,6 +8,7 @@ let package = Package(
         .executable(name: "blackboard", targets: ["Main"]),
         ],
     dependencies: [
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.1.0")
     ],
     targets: [
         .target(
@@ -15,7 +16,9 @@ let package = Package(
             dependencies: ["Blackboard"]),
         .target(
             name: "Blackboard",
-            dependencies: []),
+            dependencies: [
+                .product(name: "ArgumentParser", package: "swift-argument-parser")
+            ]),
         .testTarget(
             name: "BlackboardTests",
             dependencies: ["Blackboard"]),

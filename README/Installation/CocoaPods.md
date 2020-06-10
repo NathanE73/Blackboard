@@ -26,7 +26,7 @@ in the IDE. Just add a new "Run Script Phase" with:
 
 ```bash
 if which "${PODS_ROOT}/Blackboard/blackboard" >/dev/null; then
-  "${PODS_ROOT}/Blackboard/blackboard" "ExampleApp/Resources/" "ExampleApp/Source/Generated/"
+  "${PODS_ROOT}/Blackboard/blackboard" --source "ExampleApp/Resources/" --target "ExampleApp/Source/Generated/"
 else
   echo "warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard"
 fi

@@ -14,7 +14,6 @@
 		4377FF5A22F0DA1700E275E5 /* CGColor.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377FF5222F0DA1700E275E5 /* CGColor.blackboard.swift */; };
 		4377FF5B22F0DA1700E275E5 /* ImageAsset.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377FF5322F0DA1700E275E5 /* ImageAsset.blackboard.swift */; };
 		4377FF5C22F0DA1700E275E5 /* UIImage.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377FF5422F0DA1700E275E5 /* UIImage.blackboard.swift */; };
-		4377FF5D22F0DA1700E275E5 /* UIKit.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377FF5522F0DA1700E275E5 /* UIKit.blackboard.swift */; };
 		4377FF5E22F0DA1700E275E5 /* Image.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377FF5622F0DA1700E275E5 /* Image.blackboard.swift */; };
 		4377FF5F22F0DA1700E275E5 /* Color.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377FF5722F0DA1700E275E5 /* Color.blackboard.swift */; };
 		43B3024C22F0CC3100D97542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3024B22F0CC3100D97542 /* AppDelegate.swift */; };
@@ -33,7 +32,6 @@
 		4377FF5222F0DA1700E275E5 /* CGColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGColor.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/CGColor.blackboard.swift; sourceTree = "<group>"; };
 		4377FF5322F0DA1700E275E5 /* ImageAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageAsset.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/ImageAsset.blackboard.swift; sourceTree = "<group>"; };
 		4377FF5422F0DA1700E275E5 /* UIImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/UIImage.blackboard.swift; sourceTree = "<group>"; };
-		4377FF5522F0DA1700E275E5 /* UIKit.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIKit.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/UIKit.blackboard.swift; sourceTree = "<group>"; };
 		4377FF5622F0DA1700E275E5 /* Image.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/Image.blackboard.swift; sourceTree = "<group>"; };
 		4377FF5722F0DA1700E275E5 /* Color.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/Color.blackboard.swift; sourceTree = "<group>"; };
 		43B3024822F0CC3100D97542 /* DeclarativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeclarativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +103,6 @@
 				4377FF5322F0DA1700E275E5 /* ImageAsset.blackboard.swift */,
 				4377FF5122F0DA1700E275E5 /* UIColor.blackboard.swift */,
 				4377FF5422F0DA1700E275E5 /* UIImage.blackboard.swift */,
-				4377FF5522F0DA1700E275E5 /* UIKit.blackboard.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -231,7 +228,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" \"DeclarativeApp/Resources/\" \"DeclarativeApp/Source/Generated/\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
+			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" --source \"DeclarativeApp/Resources/\" --target \"DeclarativeApp/Source/Generated/\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -243,7 +240,6 @@
 				4377FF5822F0DA1700E275E5 /* ColorAsset.blackboard.swift in Sources */,
 				4377FF5E22F0DA1700E275E5 /* Image.blackboard.swift in Sources */,
 				43B3024C22F0CC3100D97542 /* AppDelegate.swift in Sources */,
-				4377FF5D22F0DA1700E275E5 /* UIKit.blackboard.swift in Sources */,
 				43B3024E22F0CC3100D97542 /* SceneDelegate.swift in Sources */,
 				4377FF5F22F0DA1700E275E5 /* Color.blackboard.swift in Sources */,
 				4377FF5A22F0DA1700E275E5 /* CGColor.blackboard.swift in Sources */,

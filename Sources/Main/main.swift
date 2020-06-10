@@ -24,4 +24,4 @@
 
 import Blackboard
 
-BlackboardMain.run()
+BlackboardMain.main()

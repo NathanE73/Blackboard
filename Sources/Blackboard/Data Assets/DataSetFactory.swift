@@ -30,6 +30,10 @@ class DataSetFactory: AssetSetFactory {
     
     let pathExtension = "dataset"
     
+    func dataSetsAt(paths: [String]) -> [DataSet] {
+        return paths.flatMap(dataSetsAt(path:))
+    }
+    
     func dataSetsAt(path: String) -> [DataSet] {
         return assetsAt(path: path, namespace: nil)
     }
