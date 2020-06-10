@@ -27,10 +27,12 @@ import Foundation
 
 public struct BlackboardMain: ParsableCommand {
     
+    public static var configuration = CommandConfiguration(commandName: "blackboard")
+    
     @Flag(name: [.short, .long], help: "Print the version numbers of Blackboard.")
     var version: Bool
     
-    @Flag(help: "Skip generating storybord extensions (UIStoryboard)")
+    @Flag(help: "Skip generating storyboard extensions (UIStoryboard)")
     var skipStoryboards: Bool
     
     @Flag(help: "Skip generating color extensions (Color, CGColor, and UIColor)")
