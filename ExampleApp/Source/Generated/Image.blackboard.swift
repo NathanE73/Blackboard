@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-fileprivate let bundle: Bundle = {
+private let bundle: Bundle = {
     class Object: NSObject { }
     return Bundle(for: Object.self)
 }()

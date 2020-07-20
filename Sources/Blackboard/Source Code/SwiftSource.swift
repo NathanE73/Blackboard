@@ -26,7 +26,7 @@ import Foundation
 
 class SwiftSource {
     
-    fileprivate var lines: [(indentLevel: Int, line: String)] = []
+    private var lines: [(indentLevel: Int, line: String)] = []
     
     func append(_ line: String = "") {
         if line == "" && line == lines.last?.line {
@@ -112,7 +112,7 @@ extension SwiftSource {
         append()
         
         if includeBundle {
-            append("fileprivate let bundle: Bundle = {")
+            append("private let bundle: Bundle = {")
             indent {
                 append("class Object: NSObject { }")
                 append("return Bundle(for: Object.self)")
