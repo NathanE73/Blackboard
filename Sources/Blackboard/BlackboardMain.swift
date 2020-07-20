@@ -29,7 +29,8 @@ public struct BlackboardMain: ParsableCommand {
     
     public static var configuration = CommandConfiguration(commandName: "blackboard")
     
-    @Flag(name: [.short, .long], help: "Print the version numbers of Blackboard.")
+    @Flag(name: [.short, .long],
+          help: "Print the version numbers of Blackboard.")
     var version: Bool
     
     @Flag(help: "Skip generating storyboard extensions (UIStoryboard)")
@@ -48,10 +49,13 @@ public struct BlackboardMain: ParsableCommand {
           help: "Skip generating SwiftUI extensions (Color, Image)")
     var skipSwiftUI: Bool
     
-    @Option(name: .customLong("source"), parsing: .upToNextOption, help: "Source directories")
+    @Option(name: [.customShort("i"), .customLong("input")],
+            parsing: .upToNextOption,
+            help: "Input directory / directories")
     var sourceDirectories: [String]
     
-    @Option(name: .customLong("target"), help: "Target directory; where generated code will be stored")
+    @Option(name: [.customShort("o"), .customLong("output")],
+            help: "Output directory; where generated code will be stored")
     var targetDirectory: String?
     
     public init() {

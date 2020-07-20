@@ -228,7 +228,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" --source \"DeclarativeApp/Resources/\" --target \"DeclarativeApp/Source/Generated/\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
+			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" --input \"DeclarativeApp/Resources/\" --output \"DeclarativeApp/Source/Generated/\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
