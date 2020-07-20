@@ -63,6 +63,10 @@ extension SwiftSource {
                 append("self.init(decorative: imageAsset.rawValue, bundle: bundle)")
             }
             append()
+            images.forEach { image in
+                append("static var \(image.functionName): Image { return Image(asset: ImageAsset.\(image.caseName)) }")
+            }
+            append()
         }
         append()
         
