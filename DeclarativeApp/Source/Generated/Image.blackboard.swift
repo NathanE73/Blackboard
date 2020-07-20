@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-fileprivate let bundle: Bundle = {
+private let bundle: Bundle = {
     class Object: NSObject { }
     return Bundle(for: Object.self)
 }()
@@ -25,5 +25,13 @@ public extension Image {
     init(decorativeAsset imageAsset: ImageAsset) {
         self.init(decorative: imageAsset.rawValue, bundle: bundle)
     }
+    
+    static var button: Image { return Image(asset: ImageAsset.button) }
+    static var greenPaperClip: Image { return Image(asset: ImageAsset.greenPaperClip) }
+    static var greenPencil: Image { return Image(asset: ImageAsset.greenPencil) }
+    static var redCup: Image { return Image(asset: ImageAsset.redCup) }
+    static var redStapler: Image { return Image(asset: ImageAsset.redStapler) }
+    static var silverPaperClip: Image { return Image(asset: ImageAsset.silverPaperClip) }
+    static var whiteDice: Image { return Image(asset: ImageAsset.whiteDice) }
     
 }

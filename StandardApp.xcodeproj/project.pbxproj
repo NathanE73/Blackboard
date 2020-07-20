@@ -216,7 +216,7 @@
 				TargetAttributes = {
 					43C249A222777EAA00EA6343 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -479,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.blackboard.StandardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -497,7 +497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.blackboard.StandardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

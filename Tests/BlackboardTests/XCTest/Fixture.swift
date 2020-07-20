@@ -90,7 +90,7 @@ class Fixture {
     
 }
 
-fileprivate func fixture(_ path: String, file: StaticString = #file, line: UInt = #line) -> Data? {
+private func fixture(_ path: String, file: StaticString = #file, line: UInt = #line) -> Data? {
     // .../Tests/BlackboardTests/XCTest/XCTestCase.swift
     let fullPath = (#file)
         .deletingLastPathComponent // remove XCTestCase.swift
