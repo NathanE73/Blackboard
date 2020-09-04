@@ -18,6 +18,7 @@ Blackboard is an iOS Storyboard and Asset Manager written in Swift.
 
 ## Installation
 
+- [Mint](/README/Installation/Mint.md#installation)
 - [CocoaPods](/README/Installation/CocoaPods.md#installation)
 - [Manually](/README/Installation/Manually.md#installation)
 
