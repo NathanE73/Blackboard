@@ -28,7 +28,7 @@ class OpenAccountViewController: UIViewController {
     
     var path: String!
     
-    @IBOutlet var pathLabel : UILabel!
+    @IBOutlet var pathLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class OpenAccountViewController: UIViewController {
         pathLabel.text = path
     }
     
-    @IBAction func dismiss() {
+    @IBAction private func dismiss() {
         dismiss(animated: true, completion: nil)
     }
     

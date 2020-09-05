@@ -30,7 +30,7 @@ class FooterViewController: UIViewController {
     
     var footerText: String? {
         get {
-            return footerLabel.text
+            footerLabel.text
         }
         set {
             footerLabel.text = newValue

@@ -24,14 +24,14 @@
 
 import Foundation
 
-struct AssetDataSet : Decodable {
+struct AssetDataSet: Decodable {
     var info: AssetInfo
     var data: [Data]
 }
 
 extension AssetDataSet {
     
-    struct Data : Decodable {
+    struct Data: Decodable {
         
         var idiom: AssetIdiom
         

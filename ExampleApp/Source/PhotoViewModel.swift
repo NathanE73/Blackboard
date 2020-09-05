@@ -33,11 +33,11 @@ class PhotoViewModel {
     }
     
     var name: String {
-        return photo.name
+        photo.name
     }
     
     var image: UIImage {
-        return photo.image.image
+        photo.image.image
     }
     
 }
@@ -52,7 +52,7 @@ extension PhotoViewModel {
             Photo(name: "Red Cup", image: .redCup),
             Photo(name: "Stapler", image: .redStapler),
             Photo(name: "Silver Paper Clip", image: .silverPaperClip),
-            Photo(name: "White Dice", image: .whiteDice),
+            Photo(name: "White Dice", image: .whiteDice)
         ]
         return photos.map(PhotoViewModel.init)
     }

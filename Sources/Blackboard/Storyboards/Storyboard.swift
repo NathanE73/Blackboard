@@ -43,19 +43,18 @@ extension Storyboard {
     }
     
     func viewControllerWith(id: String) -> StoryboardViewController? {
-        return viewControllers.first { $0.id == id }
+        viewControllers.first { $0.id == id }
     }
     
     func viewControllerWith(storyboardIdentifier: String) -> StoryboardViewController? {
-        return viewControllers.first { $0.storyboardIdentifier == storyboardIdentifier }
+        viewControllers.first { $0.storyboardIdentifier == storyboardIdentifier }
     }
     
     func navigationControllerFor(id: String) -> StoryboardViewController? {
-        return viewControllers
-            .filter { $0.type == .navigationController }
-            .first { viewController in
-                return viewController.segues
-                    .first { $0.destination == id} != nil
+        viewControllers.first { viewController in
+            viewController.type == .navigationController &&
+                viewController.segues
+                    .contains { $0.destination == id }
         }
     }
     
@@ -64,7 +63,7 @@ extension Storyboard {
 extension Array where Element == Storyboard {
     
     func first(withName name: String) -> Storyboard? {
-        return self.first { $0.name == name }
+        self.first { $0.name == name }
     }
     
 }
@@ -72,7 +71,7 @@ extension Array where Element == Storyboard {
 extension Storyboard: CustomStringConvertible {
     
     var description: String {
-        return "name: \(name), viewControllers.count: \(viewControllers.count)"
+        "name: \(name), viewControllers.count: \(viewControllers.count)"
     }
     
 }

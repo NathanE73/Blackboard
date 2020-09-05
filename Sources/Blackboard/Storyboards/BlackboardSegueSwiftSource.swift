@@ -82,8 +82,7 @@ extension SwiftSource {
             if let navigationControllerClassName = segue.navigationControllerClassName {
                 append("let navigationController = segue.destination as! \(navigationControllerClassName)")
                 append("let viewController = navigationController.viewControllers.first as! \(segue.viewControllerClassName)")
-            }
-            else {
+            } else {
                 append("let viewController = segue.destination as! \(segue.viewControllerClassName)")
             }
             append("\(segue.prepareFuncName)(viewController)")
@@ -122,8 +121,7 @@ extension SwiftSource {
         append("final func \(segue.performFuncName)(_ initialize: ((\(segue.viewControllerClassName)) -> Void)? = nil)") {
             if segue.navigationControllerClassName != nil {
                 append("performNavigationControllerSegue(SegueIdentifier.\(segue.enumName).rawValue, initialize)")
-            }
-            else {
+            } else {
                 append("performViewControllerSegue(SegueIdentifier.\(segue.enumName).rawValue, initialize)")
             }
         }

@@ -81,19 +81,19 @@ struct StoryboardViewController {
 extension StoryboardViewController {
     
     func segueWith(id: String) -> StoryboardSegue? {
-        return segues.first { $0.id == id }
+        segues.first { $0.id == id }
     }
     
     func segueWith(kind: StoryboardSegue.Kind) -> StoryboardSegue? {
-        return segues.first { $0.kind == kind }
+        segues.first { $0.kind == kind }
     }
     
     func tableViewCellWith(id: String) -> StoryboardTableViewCell? {
-        return tableViewCells.first { $0.id == id }
+        tableViewCells.first { $0.id == id }
     }
     
     func collectionViewCellWith(id: String) -> StoryboardCollectionViewCell? {
-        return collectionViewCells.first { $0.id == id }
+        collectionViewCells.first { $0.id == id }
     }
     
 }
@@ -101,7 +101,7 @@ extension StoryboardViewController {
 extension StoryboardViewController: CustomStringConvertible {
     
     var description: String {
-        return "id: \(id), type: \(type), storyboardIdentifier: \(storyboardIdentifier ?? "nil")"
+        "id: \(id), type: \(type), storyboardIdentifier: \(storyboardIdentifier ?? "nil")"
             + ", customClass: \(customClass ?? "nil"), storyboardName: \(storyboardName ?? "nil")"
     }
     

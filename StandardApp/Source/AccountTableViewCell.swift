@@ -27,11 +27,11 @@ import UIKit
 class AccountTableViewCell: UITableViewCell {
     
     var nameLabel: UILabel {
-        return textLabel!
+        textLabel!
     }
     
     var balanceLabel: UILabel {
-        return detailTextLabel!
+        detailTextLabel!
     }
     
 }

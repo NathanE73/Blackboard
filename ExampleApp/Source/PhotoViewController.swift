@@ -47,7 +47,7 @@ class PhotoViewController: UIViewController {
         imageView.image = viewModel.image
     }
     
-    @IBAction func dismiss() {
+    @IBAction private func dismiss() {
         dismiss(animated: true, completion: nil)
     }
     

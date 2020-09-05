@@ -41,8 +41,7 @@ class AccountsTableViewController: UITableViewController {
                 let accountViewModel = sender as? AccountViewModel
                 accountViewController.viewModel = accountViewModel
             }
-        }
-        else if segue.identifier == "Present Open Account" {
+        } else if segue.identifier == "Present Open Account" {
             if let navigationController = segue.destination as? UINavigationController,
                 let openAccountViewController = navigationController.viewControllers.first as? OpenAccountViewController {
                 openAccountViewController.path = "Perform Segue"
@@ -51,7 +50,7 @@ class AccountsTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return Section.allCases.count
+        Section.allCases.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -79,12 +78,14 @@ class AccountsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch Section(rawValue: indexPath.section)! {
         case .overview:
+            // swiftlint:disable:next force_cast
             let cell = tableView.dequeueReusableCell(withIdentifier: "Account Overview", for: indexPath) as! AccountOverviewTableViewCell
             cell.helloLabel.text = viewModel.helloText
             cell.rewardsLevelLabel.text = viewModel.rewardsLevelText
             return cell
         case .accounts:
             let accountViewModel = accountViewModels[indexPath.row]
+            // swiftlint:disable:next force_cast
             let cell = tableView.dequeueReusableCell(withIdentifier: "Account", for: indexPath) as! AccountTableViewCell
             cell.nameLabel.text = accountViewModel.name
             cell.balanceLabel.text = accountViewModel.balance
@@ -106,16 +107,19 @@ class AccountsTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func presentOpenAccount() {
+    @IBAction private func presentOpenAccount() {
         let storyboard = UIStoryboard(name: "Account", bundle: nil)
+        // swiftlint:disable:next force_cast
         let navigationController = storyboard.instantiateViewController(withIdentifier: "OpenAccountNavigationController") as! UINavigationController
+        // swiftlint:disable:next force_cast
         let openAccountViewController = navigationController.viewControllers.first as! OpenAccountViewController
         openAccountViewController.path = "Instantiate Navigation Controller"
         present(navigationController, animated: true)
     }
     
-    @IBAction func alternativePresentOpenAccount() {
+    @IBAction private func alternativePresentOpenAccount() {
         let storyboard = UIStoryboard(name: "Account", bundle: nil)
+        // swiftlint:disable:next force_cast
         let openAccountViewController = storyboard.instantiateViewController(withIdentifier: "OpenAccountViewController") as! OpenAccountViewController
         openAccountViewController.path = "Instantiate View Controller"
         
@@ -123,7 +127,7 @@ class AccountsTableViewController: UITableViewController {
         present(navigationController, animated: true)
     }
     
-    @IBAction func dismiss() {
+    @IBAction private func dismiss() {
         dismiss(animated: true, completion: nil)
     }
     

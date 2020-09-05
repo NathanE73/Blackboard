@@ -24,14 +24,14 @@
 
 import Foundation
 
-struct AssetImageSet : Decodable {
+struct AssetImageSet: Decodable {
     var info: AssetInfo
     var images: [Image]
 }
 
 extension AssetImageSet {
     
-    struct Image : Decodable {
+    struct Image: Decodable {
         var idiom: AssetIdiom
         var scale: Scale?
         

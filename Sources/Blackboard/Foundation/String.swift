@@ -27,7 +27,7 @@ import Foundation
 extension String {
     
     var firstCharacterLowercased: String {
-        return prefix(1).lowercased() + dropFirst()
+        prefix(1).lowercased() + dropFirst()
     }
     
     func removingSuffix(_ suffix: String) -> String {
@@ -38,7 +38,7 @@ extension String {
     }
     
     var trimmingWhitespaceCharacters: String {
-        return trimmingCharacters(in: .whitespaces)
+        trimmingCharacters(in: .whitespaces)
     }
     
 }
@@ -48,31 +48,31 @@ extension String {
 extension String {
     
     var lastPathComponent: String {
-        return (self as NSString).lastPathComponent
+        (self as NSString).lastPathComponent
     }
     
     var deletingLastPathComponent: String {
-        return (self as NSString).deletingLastPathComponent
+        (self as NSString).deletingLastPathComponent
     }
     
     func appendingPathComponent(_ str: String) -> String {
-        return (self as NSString).appendingPathComponent(str)
+        (self as NSString).appendingPathComponent(str)
     }
     
     var pathExtension: String {
-        return (self as NSString).pathExtension
+        (self as NSString).pathExtension
     }
     
     var deletingPathExtension: String {
-        return (self as NSString).deletingPathExtension
+        (self as NSString).deletingPathExtension
     }
     
     func appendingPathExtension(_ str: String) -> String? {
-        return (self as NSString).appendingPathExtension(str)
+        (self as NSString).appendingPathExtension(str)
     }
     
     var expandingTildeInPath: String {
-        return (self as NSString).expandingTildeInPath
+        (self as NSString).expandingTildeInPath
     }
     
 }

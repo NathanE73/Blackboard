@@ -35,7 +35,7 @@ struct StoryboardCollectionViewCell {
 extension StoryboardCollectionViewCell: CustomStringConvertible {
     
     var description: String {
-        return "id: \(id), reuseIdentifier: \(reuseIdentifier ?? "nil"), customClass: \(customClass ?? "nil")"
+        "id: \(id), reuseIdentifier: \(reuseIdentifier ?? "nil"), customClass: \(customClass ?? "nil")"
     }
     
 }

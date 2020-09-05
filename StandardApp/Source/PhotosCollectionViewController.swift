@@ -38,11 +38,12 @@ class PhotosCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photoViewModels.count
+        photoViewModels.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let photoViewModel = photoViewModels[indexPath.item]
+        // swiftlint:disable:next force_cast
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Photo", for: indexPath) as! PhotoCollectionViewCell
         cell.imageView.image = photoViewModel.image
         return cell
@@ -53,7 +54,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         performSegue(withIdentifier: "Show Photo", sender: photoViewModel)
     }
     
-    @IBAction func dismiss() {
+    @IBAction private func dismiss() {
         dismiss(animated: true, completion: nil)
     }
     

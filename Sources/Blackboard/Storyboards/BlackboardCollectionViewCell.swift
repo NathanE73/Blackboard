@@ -62,8 +62,7 @@ extension BlackboardCollectionViewCell {
                 .removingSuffix("CollectionView")
                 + "Cell")
                 .firstCharacterLowercased
-        }
-        else {
+        } else {
             className = "UICollectionViewCell"
             parameterName = "cell"
         }

@@ -24,14 +24,14 @@
 
 import Foundation
 
-struct AssetColorSet : Decodable {
+struct AssetColorSet: Decodable {
     var info: AssetInfo
     var colors: [Color]
 }
 
 extension AssetColorSet {
     
-    struct Color : Decodable {
+    struct Color: Decodable {
         var displayGamut: DisplayGamut
         var idiom: AssetIdiom
         var color: Color
@@ -63,11 +63,11 @@ extension AssetColorSet.Color {
 
 extension AssetColorSet.Color {
     
-    struct Color : Decodable {
+    struct Color: Decodable {
         var colorSpace: ColorSpace
         var components: Components
         
-        enum CodingKeys : String, CodingKey {
+        enum CodingKeys: String, CodingKey {
             case colorSpace = "color-space"
             case components
         }
@@ -96,13 +96,13 @@ extension AssetColorSet.Color.Color {
 
 extension AssetColorSet.Color.Color {
     
-    struct Components : Decodable {
+    struct Components: Decodable {
         var red: Double
         var green: Double
         var blue: Double
         var alpha: Double
         
-        enum CodingKeys : String, CodingKey {
+        enum CodingKeys: String, CodingKey {
             case red
             case green
             case blue
@@ -118,11 +118,9 @@ extension AssetColorSet.Color.Color {
                         if let color = Int(string.dropFirst(2), radix: 16) {
                             return Double(color) / 255
                         }
-                    }
-                    else if let color = Int(string) {
+                    } else if let color = Int(string) {
                         return Double(color) / 255
-                    }
-                    else if let color = Double(string) {
+                    } else if let color = Double(string) {
                         return color
                     }
                 }

@@ -24,14 +24,14 @@
 
 import Foundation
 
-struct AssetGroup : Decodable {
+struct AssetGroup: Decodable {
     var info: AssetInfo
     var properties: Properties?
 }
 
 extension AssetGroup {
     
-    struct Properties : Decodable {
+    struct Properties: Decodable {
         var onDemandResourceTags: [String]?
         var providesNamespace: Bool?
         
