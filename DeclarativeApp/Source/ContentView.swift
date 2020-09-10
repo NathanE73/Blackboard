@@ -35,6 +35,22 @@ struct ContentView: View {
                 .background(Color.bisque)
         }
     }
+    
+    var imageDecorative: Image {
+        // swiftlint:disable:next blackboard_image_decorative
+        Image(decorative: "Red/cup")
+    }
+
+    var imageName: Image {
+        // swiftlint:disable:next blackboard_image_name
+        Image("Red/cup")
+    }
+
+    var colorName: Color {
+        // swiftlint:disable:next blackboard_color_name
+        Color("Absolute Zero")
+    }
+    
 }
 
 #if DEBUG

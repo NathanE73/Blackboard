@@ -40,6 +40,11 @@ class PhotoViewModel {
         UIImage(named: photo.image)!
     }
     
+    var anotherImage: UIImage {
+        // swiftlint:disable:next blackboard_uiimage_named
+        UIImage(named: "Red/stapler")!
+    }
+    
 }
 
 extension PhotoViewModel {
