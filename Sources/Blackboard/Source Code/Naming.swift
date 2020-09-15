@@ -24,10 +24,10 @@
 
 import Foundation
 
-struct Naming {
+enum Naming {
     
     static func memberName(fromIdentifier identifier: String) -> String {
-        return name(fromIdentifier: identifier)
+        name(fromIdentifier: identifier)
     }
     
     static func methodName(fromIdentifier identifier: String) -> String {

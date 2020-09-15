@@ -67,8 +67,7 @@ extension BlackboardSegue {
             storyboard = storyboards.first(withName: storyboardName) ?? storyboard
             if let referencedIdentifier = destinationViewController?.referencedIdentifier {
                 destinationViewController = storyboard.viewControllerWith(storyboardIdentifier: referencedIdentifier)
-            }
-            else {
+            } else {
                 destinationViewController = storyboard.initialViewController
             }
         }
@@ -89,8 +88,7 @@ extension BlackboardSegue {
             }
             viewControllerClassName = sourceCustomClass
             navigationControllerClassName = destinationCustomClass
-        }
-        else {
+        } else {
             viewControllerClassName = destinationCustomClass
             navigationControllerClassName = nil
         }

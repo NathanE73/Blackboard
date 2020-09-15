@@ -1,0 +1,91 @@
+reporter: "xcode"
+
+included:
+  - DeclarativeApp
+  - ExampleApp
+  - Sources
+  - StandardApp
+
+excluded:
+  - DeclarativeApp/Source/Generated
+  - ExampleApp/Source/Generated
+
+disabled_rules:
+  - line_length
+  - nesting
+  - trailing_whitespace
+
+opt_in_rules:
+  - anyobject_protocol
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - contains_over_first_not_nil
+  - convenience_type
+  - discouraged_object_literal
+  - empty_count
+  - empty_string
+  - empty_xctest_method
+  - explicit_init
+  - extension_access_modifier
+  - fallthrough
+  - fatal_error_message
+  - first_where
+  - function_default_parameter_at_end
+  - identical_operands
+  - implicit_return
+  - joined_default_parameter
+  - legacy_random
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - modifier_order
+  - multiline_arguments
+  - multiline_parameters
+  - number_separator
+  - operator_usage_whitespace
+  - overridden_super_call
+  - pattern_matching_keywords
+  - private_action
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  - strong_iboutlet
+  - toggle_bool
+  - unused_import
+  - vertical_parameter_alignment_on_call
+
+identifier_name:
+  excluded:
+    - id
+
+custom_rules:
+  blackboard_color_name:
+    name: "Blackboard Color Name"
+    regex: "Color\\s*\\(\\s*\\\""
+    message: "Prefer using Blackboard generated Color(asset:) over named strings."
+    severity: warning
+  blackboard_image_decorative:
+    name: "Blackboard Image Decorative"
+    regex: "Image\\s*\\(\\s*decorative\\s*\\:\\s*\\\""
+    message: "Prefer using Blackboard generated Image(decorativeAsset:) over named strings."
+    severity: warning
+  blackboard_image_name:
+    name: "Blackboard Image Name"
+    regex: "Image\\s*\\(\\s*\\\""
+    message: "Prefer using Blackboard generated Image(asset:) over named strings."
+    severity: warning
+  blackboard_uicolor_named:
+    name: "Blackboard UIColor Named"
+    regex: "UIColor\\s*\\(\\s*named\\s*\\:\\s*\\\""
+    message: "Prefer using Blackboard generated UIColor static variables over named strings."
+    severity: warning
+  blackboard_uiimage_named:
+    name: "Blackboard UIImage Named"
+    regex: "UIImage\\s*\\(\\s*named\\s*\\:\\s*\\\""
+    message: "Prefer using Blackboard generated UIImage static variables over named strings."
+    severity: warning

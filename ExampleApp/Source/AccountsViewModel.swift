@@ -35,15 +35,15 @@ class AccountsViewModel {
     }
     
     var accountsSectionTitle: String {
-        return "Personal Accounts"
+        "Personal Accounts"
     }
     
     var helloText: String {
-        return "Hello, \(name)"
+        "Hello, \(name)"
     }
     
     var rewardsLevelText: String {
-        return "\(rewardsLevel) Rewards Level"
+        "\(rewardsLevel) Rewards Level"
     }
     
 }
@@ -51,7 +51,7 @@ class AccountsViewModel {
 extension AccountsViewModel {
     
     static var example: AccountsViewModel {
-        return AccountsViewModel(name: "Steve Dave", rewardsLevel: "Platinum Honors")
+        AccountsViewModel(name: "Steve Dave", rewardsLevel: "Platinum Honors")
     }
     
 }

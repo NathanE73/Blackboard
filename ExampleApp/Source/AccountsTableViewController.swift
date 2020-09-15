@@ -36,7 +36,7 @@ class AccountsTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return Section.allCases.count
+        Section.allCases.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -95,14 +95,14 @@ class AccountsTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func presentOpenAccount() {
+    @IBAction private func presentOpenAccount() {
         let navigationController = OpenAccountViewController.instantiateNavigationControllerFromStoryboard { openAccountViewController in
             openAccountViewController.path = "Instantiate Navigation Controller"
         }
         present(navigationController, animated: true)
     }
     
-    @IBAction func alternativePresentOpenAccount() {
+    @IBAction private func alternativePresentOpenAccount() {
         let openAccountViewController = OpenAccountViewController.instantiateFromStoryboard()
         openAccountViewController.path = "Instantiate View Controller"
         
@@ -110,7 +110,7 @@ class AccountsTableViewController: UITableViewController {
         present(navigationController, animated: true)
     }
     
-    @IBAction func dismiss() {
+    @IBAction private func dismiss() {
         dismiss(animated: true, completion: nil)
     }
     

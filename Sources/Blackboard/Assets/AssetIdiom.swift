@@ -29,6 +29,7 @@ enum AssetIdiom: String, Decodable {
     case iphone
     case ipad
     case mac
+    // swiftlint:disable:next identifier_name
     case tv
     case universal
     case watch

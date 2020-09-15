@@ -29,7 +29,7 @@ class SwiftSource {
     private var lines: [(indentLevel: Int, line: String)] = []
     
     func append(_ line: String = "") {
-        if line == "" && line == lines.last?.line {
+        if line.isEmpty && line == lines.last?.line {
             return // don't allow multiple blank lines
         }
         

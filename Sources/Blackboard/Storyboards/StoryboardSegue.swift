@@ -51,7 +51,7 @@ struct StoryboardSegue {
 extension StoryboardSegue: CustomStringConvertible {
     
     var description: String {
-        return "id: \(id), kind: \(kind), identifier: \(identifier ?? "nil"), destination: \(destination)"
+        "id: \(id), kind: \(kind), identifier: \(identifier ?? "nil"), destination: \(destination)"
     }
     
 }

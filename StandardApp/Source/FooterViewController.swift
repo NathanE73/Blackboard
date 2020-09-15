@@ -30,7 +30,7 @@ class FooterViewController: UIViewController {
     
     var footerText: String? {
         get {
-            return footerLabel.text
+            footerLabel.text
         }
         set {
             footerLabel.text = newValue
@@ -40,11 +40,14 @@ class FooterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // swiftlint:disable:next blackboard_uicolor_named
         view.backgroundColor = UIColor(named: "Fluorescent/Magic Mint")
         
-        view.layer.borderWidth = 2
+        // swiftlint:disable:next blackboard_uicolor_named
         view.layer.borderColor = UIColor(named: "Fluorescent/Blizzard Blue")?.cgColor
+        view.layer.borderWidth = 2
         
+        // swiftlint:disable:next blackboard_uicolor_named
         footerLabel.textColor = UIColor(named: "Fluorescent/Radical Red")
     }
     

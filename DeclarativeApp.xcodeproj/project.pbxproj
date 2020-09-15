@@ -150,6 +150,7 @@
 			buildConfigurationList = 43B3025C22F0CC3200D97542 /* Build configuration list for PBXNativeTarget "DeclarativeApp" */;
 			buildPhases = (
 				4377FF4F22F0D9E100E275E5 /* Blackboard */,
+				43A6FE4D250327F60064AFE0 /* SwiftLint */,
 				43B3024422F0CC3100D97542 /* Sources */,
 				43B3024522F0CC3100D97542 /* Frameworks */,
 				43B3024622F0CC3100D97542 /* Resources */,
@@ -229,6 +230,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" --input \"DeclarativeApp/Resources/\" --output \"DeclarativeApp/Source/Generated/\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
+		};
+		43A6FE4D250327F60064AFE0 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which mint >/dev/null; then\n  mint run realm/SwiftLint\nelse\n  echo \"warning: mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

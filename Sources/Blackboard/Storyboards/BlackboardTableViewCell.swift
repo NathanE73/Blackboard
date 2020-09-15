@@ -62,8 +62,7 @@ extension BlackboardTableViewCell {
                 .removingSuffix("TableView")
                 + "Cell")
                 .firstCharacterLowercased
-        }
-        else {
+        } else {
             className = "UITableViewCell"
             parameterName = "cell"
         }

@@ -69,14 +69,14 @@ class MainViewController: UIViewController {
     
     // Account Actions
     
-    @IBAction func presentAccounts() {
+    @IBAction private func presentAccounts() {
         performPresentAccountsSegue { accountsTableViewController in
             accountsTableViewController.viewModel = AccountsViewModel.example
             accountsTableViewController.accountViewModels = AccountViewModel.examples
         }
     }
     
-    @IBAction func presentOpenAccount() {
+    @IBAction private func presentOpenAccount() {
         performPresentOpenAccountSegue { openAccountViewController in
             openAccountViewController.path = "Storyboard Reference"
         }
@@ -84,25 +84,25 @@ class MainViewController: UIViewController {
     
     // Photo Actions
     
-    @IBAction func presentPhotos() {
+    @IBAction private func presentPhotos() {
         performPresentPhotosSegue { photosCollectionViewController in
             photosCollectionViewController.photoViewModels = PhotoViewModel.examples
         }
     }
     
     func shouldPerformPresentPhotoSegue() -> Bool {
-        return PhotoViewModel.examples.first != nil
+        PhotoViewModel.examples.first != nil
     }
     
     func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {
         photoViewController.viewModel = PhotoViewModel.examples.first
     }
     
-    @IBAction func presentFirstPhoto() {
+    @IBAction private func presentFirstPhoto() {
         performPresentPhotoSegue()
     }
     
-    @IBAction func presentLastPhoto() {
+    @IBAction private func presentLastPhoto() {
         performPresentPhotoSegue { photoViewController in
             photoViewController.viewModel = PhotoViewModel.examples.last
         }

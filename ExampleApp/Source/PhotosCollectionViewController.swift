@@ -29,7 +29,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     var photoViewModels: [PhotoViewModel]!
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photoViewModels.count
+        photoViewModels.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -46,7 +46,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         }
     }
     
-    @IBAction func dismiss() {
+    @IBAction private func dismiss() {
         dismiss(animated: true, completion: nil)
     }
     

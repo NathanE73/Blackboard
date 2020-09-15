@@ -36,27 +36,23 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let footerViewController = segue.destination as? FooterViewController {
             self.footerViewController = footerViewController
-        }
-        else if segue.identifier == "Present Accounts" {
+        } else if segue.identifier == "Present Accounts" {
             if let accountsNavigationController = segue.destination as? AccountsNavigationController,
                 let accountsTableViewController = accountsNavigationController.viewControllers.first as? AccountsTableViewController {
                 accountsTableViewController.viewModel = AccountsViewModel.example
                 accountsTableViewController.accountViewModels = AccountViewModel.examples
             }
-        }
-        else if segue.identifier == "Present Open Account" {
+        } else if segue.identifier == "Present Open Account" {
             if let navigationController = segue.destination as? UINavigationController,
                 let openAccountViewController = navigationController.viewControllers.first as? OpenAccountViewController {
                 openAccountViewController.path = "Storyboard Reference"
             }
-        }
-        else if segue.identifier == "Present Photos" {
+        } else if segue.identifier == "Present Photos" {
             if let photosNavigationController = segue.destination as? PhotosNavigationController,
                 let photosCollectionViewController = photosNavigationController.viewControllers.first as? PhotosCollectionViewController {
                 photosCollectionViewController.photoViewModels = PhotoViewModel.examples
             }
-        }
-        else if segue.identifier == "Present Photo" {
+        } else if segue.identifier == "Present Photo" {
             if let navigationController = segue.destination as? UINavigationController,
                 let photoViewController = navigationController.viewControllers.first as? PhotoViewController {
                 let photoViewModel = sender as? PhotoViewModel ?? PhotoViewModel.examples.first
@@ -104,25 +100,25 @@ class MainViewController: UIViewController {
     
     // Account Actions
     
-    @IBAction func presentAccounts() {
+    @IBAction private func presentAccounts() {
         performSegue(withIdentifier: "Present Accounts", sender: nil)
     }
     
-    @IBAction func presentOpenAccount() {
+    @IBAction private func presentOpenAccount() {
         performSegue(withIdentifier: "Present Open Account", sender: nil)
     }
     
     // Photo Actions
     
-    @IBAction func presentPhotos() {
+    @IBAction private func presentPhotos() {
         performSegue(withIdentifier: "Present Photos", sender: nil)
     }
     
-    @IBAction func presentFirstPhoto() {
+    @IBAction private func presentFirstPhoto() {
         performSegue(withIdentifier: "Present Photo", sender: nil)
     }
     
-    @IBAction func presentLastPhoto() {
+    @IBAction private func presentLastPhoto() {
         performSegue(withIdentifier: "Present Photo", sender: PhotoViewModel.examples.last)
     }
     

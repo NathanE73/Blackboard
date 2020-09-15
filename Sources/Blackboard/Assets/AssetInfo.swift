@@ -24,7 +24,7 @@
 
 import Foundation
 
-struct AssetInfo : Decodable {
+struct AssetInfo: Decodable {
     var version: Int
     var author: String
     

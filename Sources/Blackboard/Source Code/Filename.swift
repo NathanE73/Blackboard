@@ -24,7 +24,7 @@
 
 import Foundation
 
-class Filename {
+enum Filename {
     
     static let blackboardExtension = ".blackboard.swift"
     

@@ -34,8 +34,7 @@ extension SwiftSource {
         let extends: String
         if viewController.segues.isEmpty {
             extends = ""
-        }
-        else {
+        } else {
             extends = ": \(viewController.className)Segues"
             appendViewControllerSeguesProtocol(viewController)
         }
