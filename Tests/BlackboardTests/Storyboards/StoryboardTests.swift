@@ -35,6 +35,9 @@ class StoryboardTests: XCTestCase {
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "LYS-UF-AgY")
         
         XCTAssertEqual(storyboard?.viewControllers.count, 5)
+        
+        XCTAssertEqual(storyboard?.namedColorResources, ["Absolute Zero", "Charcoal"])
+        XCTAssertEqual(storyboard?.namedImageResources, [])
     }
     
     func testEmpty() {
@@ -44,6 +47,9 @@ class StoryboardTests: XCTestCase {
         XCTAssertNil(storyboard?.initialViewControllerIdentifier)
         
         XCTAssertEqual(storyboard?.viewControllers.count, 0)
+        
+        XCTAssertEqual(storyboard?.namedColorResources, [])
+        XCTAssertEqual(storyboard?.namedImageResources, [])
     }
     
     func testLaunchScreen() {
@@ -59,6 +65,9 @@ class StoryboardTests: XCTestCase {
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BYZ-38-t0r")
         
         XCTAssertEqual(storyboard?.viewControllers.count, 6)
+        
+        XCTAssertEqual(storyboard?.namedColorResources, ["Bisque", "maroon color"])
+        XCTAssertEqual(storyboard?.namedImageResources, [])
     }
     
     func testPhoto() {
@@ -68,6 +77,9 @@ class StoryboardTests: XCTestCase {
         XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BpT-OW-KyL")
         
         XCTAssertEqual(storyboard?.viewControllers.count, 4)
+        
+        XCTAssertEqual(storyboard?.namedColorResources, ["Absolute Zero"])
+        XCTAssertEqual(storyboard?.namedImageResources, ["Red/stapler"])
     }
     
 }

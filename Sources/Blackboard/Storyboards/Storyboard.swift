@@ -26,10 +26,15 @@ import Foundation
 
 struct Storyboard {
     
+    var file: String
+    
     var name: String
     var initialViewControllerIdentifier: String?
     
     var viewControllers: [StoryboardViewController]
+    
+    var namedColorResources: [String]
+    var namedImageResources: [String]
     
 }
 
@@ -78,7 +83,7 @@ extension Storyboard: CustomStringConvertible {
 
 extension Storyboard {
     
-    init?(name: String, data: Data) {
+    init?(file: String, name: String, data: Data) {
         guard let xmlDocument = try? XMLDocument(data: data) else {
             return nil
         }
@@ -89,6 +94,8 @@ extension Storyboard {
             return nil
         }
         
+        self.file = file
+        
         self.name = name
         
         self.initialViewControllerIdentifier = element?.attribute(forName: "initialViewController")?.stringValue
@@ -97,6 +104,24 @@ extension Storyboard {
             return nil
         }
         viewControllers = sceneNodes.compactMap(StoryboardViewController.init)
+        
+        if let namedColorNodes = try? xmlDocument.nodes(forXPath: ".//resources/namedColor") {
+            namedColorResources = namedColorNodes.compactMap { node in
+                let element = node as? XMLElement
+                return element?.attribute(forName: "name")?.stringValue
+            }
+        } else {
+            namedColorResources = []
+        }
+        
+        if let namedColorNodes = try? xmlDocument.nodes(forXPath: ".//resources/image") {
+            namedImageResources = namedColorNodes.compactMap { node in
+                let element = node as? XMLElement
+                return element?.attribute(forName: "name")?.stringValue
+            }
+        } else {
+            namedImageResources = []
+        }
     }
     
     init?(url: URL) {
@@ -106,7 +131,7 @@ extension Storyboard {
         
         let name = url.deletingPathExtension().lastPathComponent
         
-        self.init(name: name, data: data)
+        self.init(file: url.path, name: name, data: data)
     }
     
     init?(path: String) {
