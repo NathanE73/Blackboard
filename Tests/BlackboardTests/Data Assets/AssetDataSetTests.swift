@@ -44,7 +44,7 @@ class AssetDataSetTests: XCTestCase {
               ]
             }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let assetDataSet = try JSONDecoder().decode(AssetDataSet.self, from: data)
