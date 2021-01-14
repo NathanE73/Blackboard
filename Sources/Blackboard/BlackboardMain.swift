@@ -99,14 +99,36 @@ public struct BlackboardMain: ParsableCommand {
         
         // Process Resources
         
-        processStoryboards(sourceDirectories, targetDirectory)
-        processColors(sourceDirectories, targetDirectory)
+        let storyboards = processStoryboards(sourceDirectories, targetDirectory)
+        let colorSets = processColors(sourceDirectories, targetDirectory)
         processDataAssets(sourceDirectories, targetDirectory)
-        processImages(sourceDirectories, targetDirectory)
+        let imageSets = processImages(sourceDirectories, targetDirectory)
+        
+        // Validate Storyboard Resources
+        
+        let knownNamedColors = Set(colorSets.map(\.name))
+        let knownNamedImages = Set(imageSets.map(\.name))
+        
+        storyboards.forEach { storyboard in
+            if !skipColors {
+                Set(storyboard.namedColorResources)
+                    .subtracting(knownNamedColors)
+                    .forEach { missing in
+                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing color named : '\(missing)'")
+                    }
+            }
+            if !skipImages {
+                Set(storyboard.namedImageResources)
+                    .subtracting(knownNamedImages)
+                    .forEach { missing in
+                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing image named: '\(missing)'")
+                    }
+            }
+        }
     }
     
-    private func processStoryboards(_ sourceDirectories: [String], _ targetDirectory: String) {
-        guard !skipStoryboards else { return }
+    private func processStoryboards(_ sourceDirectories: [String], _ targetDirectory: String) -> [Storyboard] {
+        guard !skipStoryboards else { return [] }
         
         let storyboards = Storyboard.storyboardsAt(paths: sourceDirectories)
         
@@ -128,10 +150,12 @@ public struct BlackboardMain: ParsableCommand {
                 .append(source: UIKitSwiftSource)
                 .write()
         }
+        
+        return storyboards
     }
     
-    private func processColors(_ sourceDirectories: [String], _ targetDirectory: String) {
-        guard !skipColors else { return }
+    private func processColors(_ sourceDirectories: [String], _ targetDirectory: String) -> [ColorSet] {
+        guard !skipColors else { return [] }
         
         let colorSets = ColorSetFactory().colorSetsAt(paths: sourceDirectories)
         
@@ -139,7 +163,7 @@ public struct BlackboardMain: ParsableCommand {
         blackboardColors.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
         guard !blackboardColors.isEmpty else {
-            return
+            return []
         }
         
         SwiftSourceFile(Filename.ColorAsset, at: targetDirectory)
@@ -159,6 +183,8 @@ public struct BlackboardMain: ParsableCommand {
         SwiftSourceFile(Filename.UIColor, at: targetDirectory)
             .appendUIColors(colors: blackboardColors)
             .write()
+        
+        return colorSets
     }
     
     private func processDataAssets(_ sourceDirectories: [String], _ targetDirectory: String) {
@@ -182,8 +208,8 @@ public struct BlackboardMain: ParsableCommand {
             .write()
     }
     
-    private func processImages(_ sourceDirectories: [String], _ targetDirectory: String) {
-        guard !skipImages else { return }
+    private func processImages(_ sourceDirectories: [String], _ targetDirectory: String) -> [ImageSet] {
+        guard !skipImages else { return [] }
         
         let imageSets = ImageSetFactory().imageSetsAt(paths: sourceDirectories)
         
@@ -191,7 +217,7 @@ public struct BlackboardMain: ParsableCommand {
             .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
         
         guard !blackboardImages.isEmpty else {
-            return
+            return []
         }
         
         SwiftSourceFile(Filename.ImageAsset, at: targetDirectory)
@@ -207,6 +233,8 @@ public struct BlackboardMain: ParsableCommand {
         SwiftSourceFile(Filename.UIImage, at: targetDirectory)
             .appendUIImages(images: blackboardImages)
             .write()
+        
+        return imageSets
     }
     
 }

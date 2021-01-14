@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BpT-OW-KyL">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BpT-OW-KyL">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +30,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUh-lk-WTp">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red/stapler" translatesAutoresizingMaskIntoConstraints="NO" id="fUh-lk-WTp">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
                                     </subviews>
@@ -74,7 +72,7 @@
                 <navigationController storyboardIdentifier="PhotosNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BpT-OW-KyL" customClass="PhotosNavigationController" customModule="ExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Drl-N2-L6g">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -95,9 +93,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zc9-bK-mEw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6EI-fO-PId"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zc9-bK-mEw" firstAttribute="top" secondItem="6EI-fO-PId" secondAttribute="top" id="5Kr-3A-weH"/>
@@ -105,7 +104,6 @@
                             <constraint firstItem="6EI-fO-PId" firstAttribute="bottom" secondItem="zc9-bK-mEw" secondAttribute="bottom" id="PGT-G9-etw"/>
                             <constraint firstItem="zc9-bK-mEw" firstAttribute="leading" secondItem="6EI-fO-PId" secondAttribute="leading" id="iM3-hB-nbU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6EI-fO-PId"/>
                     </view>
                     <navigationItem key="navigationItem" title="Photo" id="8iT-t3-vjE">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="NtG-y4-cNe">
@@ -125,16 +123,16 @@
         <!--Navigation Controller-->
         <scene sceneID="jUg-1f-663">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6RX-GA-MnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="PhotoNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r8T-pu-tGW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CPK-pU-Ru1">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
                         <segue destination="W37-RY-jR3" kind="relationship" relationship="rootViewController" id="KM4-nr-KX5"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RX-GA-MnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1838" y="-983"/>
         </scene>
@@ -143,4 +141,10 @@
         <segue reference="A3N-Ti-cUc"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Absolute Zero"/>
+    <resources>
+        <image name="Red/stapler" width="519" height="343"/>
+        <namedColor name="Absolute Zero">
+            <color red="0.0" green="0.28200000524520874" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

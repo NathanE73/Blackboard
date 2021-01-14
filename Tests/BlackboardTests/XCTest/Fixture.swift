@@ -85,7 +85,7 @@ class Fixture {
             return nil
         }
         
-        return Storyboard(name: name, data: data)
+        return Storyboard(file: path, name: name, data: data)
     }
     
 }

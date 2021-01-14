@@ -53,6 +53,18 @@ You compare these to see the difference between using and not using Blackboard.
     - [Prepare Segue](/README/Usage/UIStoryboardSeguePrepare.md#prepare-segue-usage)
     - [Should Perform Segue](/README/Usage/UIStoryboardSegueShouldPerform.md#should-perform-segue-usage)
 
+## Storyboard Resources Validation
+
+Blackboard will also verify that the resources referenced in each processed storyboard exist.
+When a storyboard is referencing a color or image that is no longer available,
+one of the two following warning messages will be generate:
+
+### Missing Named Color
+![Missing Named Color Warning](README/Images/WarningMissingNamedColor.png)
+
+### Missing Named Image
+![Missing Named Image Warning](README/Images/WarningMissingNamedImage.png)
+
 ## Authors
 
 - Nathan E. Walczak, knate@knate.com
