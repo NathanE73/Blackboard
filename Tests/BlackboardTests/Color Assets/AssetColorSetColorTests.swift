@@ -44,7 +44,7 @@ class AssetColorSetColorTests: XCTestCase {
             "display-gamut": "display-P3"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
@@ -72,7 +72,7 @@ class AssetColorSetColorTests: XCTestCase {
             }
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
@@ -100,7 +100,7 @@ class AssetColorSetColorTests: XCTestCase {
             }
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)

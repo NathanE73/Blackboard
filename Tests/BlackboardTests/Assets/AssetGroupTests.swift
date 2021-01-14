@@ -44,7 +44,7 @@ class AssetGroupTests: XCTestCase {
           }
         }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
@@ -69,7 +69,7 @@ class AssetGroupTests: XCTestCase {
           }
         }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
@@ -95,7 +95,7 @@ class AssetGroupTests: XCTestCase {
           }
         }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
@@ -127,7 +127,7 @@ class AssetGroupTests: XCTestCase {
           }
         }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
@@ -155,7 +155,7 @@ class AssetGroupTests: XCTestCase {
           }
         }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)

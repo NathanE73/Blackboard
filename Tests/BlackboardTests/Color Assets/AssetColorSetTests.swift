@@ -51,7 +51,7 @@ class AssetColorSetTests: XCTestCase {
             ]
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let assetColorSet = try JSONDecoder().decode(AssetColorSet.self, from: data)

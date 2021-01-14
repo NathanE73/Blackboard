@@ -35,7 +35,7 @@ class AssetInfoTests: XCTestCase {
             "author" : "Steve Dave"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let info = try JSONDecoder().decode(AssetInfo.self, from: data)
@@ -55,7 +55,7 @@ class AssetInfoTests: XCTestCase {
             "author" : "zeplin"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let info = try JSONDecoder().decode(AssetInfo.self, from: data)

@@ -31,28 +31,28 @@ public struct BlackboardMain: ParsableCommand {
     
     @Flag(name: [.short, .long],
           help: "Print the version numbers of Blackboard.")
-    var version: Bool
+    var version = false
     
     @Flag(help: "Skip generating storyboard extensions (UIStoryboard)")
-    var skipStoryboards: Bool
+    var skipStoryboards = false
     
     @Flag(help: "Skip generating color extensions (Color, CGColor, and UIColor)")
-    var skipColors: Bool
+    var skipColors = false
     
     @Flag(help: "Skip generating data asset extensions (NSDataAsset)")
-    var skipDataAssets: Bool
+    var skipDataAssets = false
     
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
-    var skipImages: Bool
+    var skipImages = false
     
     @Flag(name: .customLong("skip-swiftui"),
           help: "Skip generating SwiftUI extensions (Color, Image)")
-    var skipSwiftUI: Bool
+    var skipSwiftUI = false
     
     @Option(name: [.customShort("i"), .customLong("input")],
             parsing: .upToNextOption,
             help: "Input directory / directories")
-    var sourceDirectories: [String]
+    var sourceDirectories: [String] = []
     
     @Option(name: [.customShort("o"), .customLong("output")],
             help: "Output directory; where generated code will be stored")

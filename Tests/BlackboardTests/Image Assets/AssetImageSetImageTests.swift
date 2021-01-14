@@ -35,7 +35,7 @@ class AssetImageSetImageTests: XCTestCase {
             "scale" : "1x"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
@@ -54,7 +54,7 @@ class AssetImageSetImageTests: XCTestCase {
             "scale" : "1x"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
@@ -73,7 +73,7 @@ class AssetImageSetImageTests: XCTestCase {
             "idiom" : "ipad"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)

@@ -40,7 +40,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             }
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
@@ -65,7 +65,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             }
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
@@ -90,7 +90,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             }
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
@@ -115,7 +115,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             }
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)
@@ -139,7 +139,7 @@ class AssetColorSetColorColorTests: XCTestCase {
             }
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.Color.self, from: data)

@@ -37,7 +37,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             "alpha" : 1
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: data)
@@ -61,7 +61,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             "alpha" : "0.975"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: data)
@@ -85,7 +85,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             "alpha" : "1.000"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: data)
@@ -109,7 +109,7 @@ class AssetColorSetColorColorComponentsTests: XCTestCase {
             "alpha" : "1.000"
           }
         """
-        let data = json.data(using: .utf8)!
+        let data = Data(json.utf8)
         
         do {
             let components = try JSONDecoder().decode(AssetColorSet.Color.Color.Components.self, from: data)
