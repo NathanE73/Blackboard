@@ -21,7 +21,8 @@ let package = Package(
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 "Yams"
-            ]
+            ],
+            resources: [.copy("Resources/symbols")]
         ),
         .testTarget(
             name: "BlackboardFrameworkTests",
