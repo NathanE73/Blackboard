@@ -26,8 +26,6 @@ import Foundation
 
 class ColorSetFactory: AssetSetFactory {
     
-    var fileManager = FileManager.default
-    
     let pathExtension = "colorset"
     
     func colorSetsAt(paths: [String]) -> [ColorSet] {

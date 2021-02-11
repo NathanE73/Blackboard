@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2019 Nathan E. Walczak
+// Copyright (c) 2021 Nathan E. Walczak
 //
 // MIT License
 //
@@ -23,25 +23,42 @@
 //
 
 import Foundation
+import Yams
 
-class DataSetFactory: AssetSetFactory {
+struct Configuration: Decodable {
+    var symbols: [String]?
+}
+
+extension Configuration {
     
-    let pathExtension = "dataset"
+    static var filename = ".blackboard.yml"
     
-    func dataSetsAt(paths: [String]) -> [DataSet] {
-        paths.flatMap(dataSetsAt(path:))
-    }
-    
-    func dataSetsAt(path: String) -> [DataSet] {
-        assetsAt(path: path, namespace: nil)
-    }
-    
-    func asset(name: String, data: Data) -> DataSet? {
-        guard let assetDataSet = try? JSONDecoder().decode(AssetDataSet.self, from: data) else {
-            return nil
+    init(path startingPath: String) throws {
+        let fileManager = FileManager.default
+        
+        var currentPath = startingPath
+        while fileManager.isDirectory(currentPath) {
+            let configurationFile = currentPath.appendingPathComponent(Configuration.filename)
+            if fileManager.isFile(configurationFile) {
+                self = try Configuration(file: configurationFile)
+                return
+            }
+            
+            let parentPath = currentPath.deletingLastPathComponent
+            if parentPath == currentPath {
+                break
+            }
+            currentPath = parentPath
         }
         
-        return DataSet(name: name, assetDataSet: assetDataSet)
+        self = Configuration()
+    }
+    
+    init(file: String) throws {
+        let url = URL(fileURLWithPath: file)
+        let data = try Data(contentsOf: url)
+        
+        self = try YAMLDecoder().decode(Self.self, from: data)
     }
     
 }

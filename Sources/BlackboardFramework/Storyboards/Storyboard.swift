@@ -140,9 +140,9 @@ extension Storyboard {
     }
     
     static func storyboardsAt(paths: [String]) -> [Storyboard] {
-        var files: [String] = []
-        
         let fileManager = FileManager.default
+        
+        var files: [String] = []
         
         paths.forEach { path in
             let enumerator = fileManager.enumerator(atPath: path)

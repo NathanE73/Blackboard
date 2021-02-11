@@ -53,13 +53,14 @@ class SwiftSourceFile: SwiftSource {
     }
     
     func write() {
+        let fileManager = FileManager.default
+        
         let source = self.source
         
         let targetPath = "\(path)/\(filename)"
         let targetUrl = URL(fileURLWithPath: targetPath)
         
-        let targetExists = FileManager.default.isFile(targetPath)
-        if targetExists {
+        if fileManager.isFile(targetPath) {
             let existingSource = read(from: targetUrl)
             if source == existingSource {
                 print("Skipping: \(filename)")

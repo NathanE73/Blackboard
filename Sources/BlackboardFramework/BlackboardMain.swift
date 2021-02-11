@@ -77,6 +77,16 @@ public struct BlackboardMain: ParsableCommand {
         
         let fileManager = FileManager.default
         
+        // YAML Configuration
+        
+        let configuration: Configuration
+        do {
+            configuration = try Configuration(path: fileManager.currentDirectoryPath)
+        } catch {
+            print("Unable to process configuration file: \(Configuration.filename)")
+            throw ExitCode.validationFailure
+        }
+        
         // Source Directories
         
         try sourceDirectories.forEach { sourceDirectory in

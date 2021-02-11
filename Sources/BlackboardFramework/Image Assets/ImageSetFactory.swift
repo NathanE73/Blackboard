@@ -26,8 +26,6 @@ import Foundation
 
 class ImageSetFactory: AssetSetFactory {
     
-    var fileManager = FileManager.default
-    
     let pathExtension = "imageset"
     
     func imageSetsAt(paths: [String]) -> [ImageSet] {

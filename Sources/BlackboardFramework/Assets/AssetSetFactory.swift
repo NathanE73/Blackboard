@@ -28,8 +28,6 @@ protocol AssetSetFactory {
     
     associatedtype AssetSet
     
-    var fileManager: FileManager { get }
-    
     var pathExtension: String { get }
     
     func asset(name: String, data: Data) -> AssetSet?
@@ -39,6 +37,8 @@ protocol AssetSetFactory {
 extension AssetSetFactory {
     
     func assetsAt(path: String, namespace: String?) -> [AssetSet] {
+        let fileManager = FileManager.default
+        
         guard let contents = try? fileManager.contentsOfDirectory(atPath: path) else {
             return []
         }
