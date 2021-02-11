@@ -22,6 +22,46 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class AssetColorSetTests: XCTestCase {
+    
+    func testDecodable() {
+        let json = """
+          {
+            "info" : {
+              "version" : 1,
+              "author" : "xcode"
+            },
+            "colors" : [
+              {
+                "idiom" : "universal",
+                "color" : {
+                  "color-space" : "srgb",
+                  "components" : {
+                    "red" : 0.3137254901960784,
+                    "green" : 0.7843137254901961,
+                    "blue" : 0.4705882352941176,
+                    "alpha" : 1
+                  }
+                }
+              }
+            ]
+          }
+        """
+        let data = Data(json.utf8)
+        
+        do {
+            let assetColorSet = try JSONDecoder().decode(AssetColorSet.self, from: data)
+            
+            XCTAssertNotNil(assetColorSet.info)
+            XCTAssertEqual(assetColorSet.colors.count, 1)
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+}

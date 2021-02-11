@@ -22,6 +22,22 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class AssetIdiomTests: XCTestCase {
+    
+    func testRawValues() {
+        let idiom = AssetIdiom.self
+        
+        XCTAssertEqual(idiom.car.rawValue, "car")
+        XCTAssertEqual(idiom.iphone.rawValue, "iphone")
+        XCTAssertEqual(idiom.ipad.rawValue, "ipad")
+        XCTAssertEqual(idiom.mac.rawValue, "mac")
+        XCTAssertEqual(idiom.tv.rawValue, "tv")
+        XCTAssertEqual(idiom.universal.rawValue, "universal")
+        XCTAssertEqual(idiom.watch.rawValue, "watch")
+    }
+    
+}

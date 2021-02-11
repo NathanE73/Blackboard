@@ -22,6 +22,46 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class AssetImageSetTests: XCTestCase {
+    
+    func testDecodable() {
+        let json = """
+          {
+            "info" : {
+              "version" : 1,
+              "author" : "xcode"
+            },
+            "images" : [
+              {
+                "idiom" : "universal",
+                "scale" : "1x"
+              },
+              {
+                "idiom" : "universal",
+                "scale" : "2x"
+              },
+              {
+                "idiom" : "universal",
+                "scale" : "3x"
+              }
+            ]
+          }
+        """
+        let data = Data(json.utf8)
+        
+        do {
+            let assetImageSet = try JSONDecoder().decode(AssetImageSet.self, from: data)
+            
+            XCTAssertNotNil(assetImageSet.info)
+            XCTAssertEqual(assetImageSet.images.count, 3)
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+}

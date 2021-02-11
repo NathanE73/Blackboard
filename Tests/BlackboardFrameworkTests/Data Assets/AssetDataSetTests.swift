@@ -22,6 +22,39 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class AssetDataSetTests: XCTestCase {
+    
+    func testDecodable() {
+        let json = """
+            {
+              "info" : {
+                "version" : 1,
+                "author" : "xcode"
+              },
+              "data" : [
+                {
+                  "idiom" : "universal",
+                  "filename" : "welcome-message.txt",
+                  "universal-type-identifier" : "public.plain-text"
+                }
+              ]
+            }
+        """
+        let data = Data(json.utf8)
+        
+        do {
+            let assetDataSet = try JSONDecoder().decode(AssetDataSet.self, from: data)
+            
+            XCTAssertNotNil(assetDataSet.info)
+            XCTAssertEqual(assetDataSet.data.count, 1)
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+}

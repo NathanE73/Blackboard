@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -6,21 +6,25 @@ let package = Package(
     name: "Blackboard",
     products: [
         .executable(name: "blackboard", targets: ["Main"]),
-        ],
+    ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0")
     ],
     targets: [
         .target(
             name: "Main",
-            dependencies: ["Blackboard"]),
+            dependencies: ["BlackboardFramework"]
+        ),
         .target(
-            name: "Blackboard",
+            name: "BlackboardFramework",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
-            ]),
+            ]
+        ),
         .testTarget(
-            name: "BlackboardTests",
-            dependencies: ["Blackboard"]),
-        ]
+            name: "BlackboardFrameworkTests",
+            dependencies: ["BlackboardFramework"]
+        ),
+    ],
+    swiftLanguageVersions: [.v5]
 )

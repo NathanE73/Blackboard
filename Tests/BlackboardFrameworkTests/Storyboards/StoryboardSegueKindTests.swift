@@ -22,6 +22,23 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class StoryboardSegueKindTests: XCTestCase {
+    
+    func testRawValues() {
+        // Given
+        let Kind = StoryboardSegue.Kind.self
+        
+        // Then
+        XCTAssertEqual(Kind.embed.rawValue, "embed")
+        XCTAssertEqual(Kind.popoverPresentation.rawValue, "popoverPresentation")
+        XCTAssertEqual(Kind.presentation.rawValue, "presentation")
+        XCTAssertEqual(Kind.relationship.rawValue, "relationship")
+        XCTAssertEqual(Kind.show.rawValue, "show")
+        XCTAssertEqual(Kind.unwind.rawValue, "unwind")
+    }
+    
+}

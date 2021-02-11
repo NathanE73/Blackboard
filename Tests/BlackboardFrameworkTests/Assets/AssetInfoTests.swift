@@ -22,6 +22,50 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class AssetInfoTests: XCTestCase {
+    
+    func testDecodable() {
+        let json = """
+          {
+            "version" : 2,
+            "author" : "Steve Dave"
+          }
+        """
+        let data = Data(json.utf8)
+        
+        do {
+            let info = try JSONDecoder().decode(AssetInfo.self, from: data)
+            
+            XCTAssertEqual(info.version, 2)
+            XCTAssertEqual(info.author, "Steve Dave")
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testZeplinDecodable() {
+        let json = """
+          {
+            "version" : "3",
+            "author" : "zeplin"
+          }
+        """
+        let data = Data(json.utf8)
+        
+        do {
+            let info = try JSONDecoder().decode(AssetInfo.self, from: data)
+            
+            XCTAssertEqual(info.version, 3)
+            XCTAssertEqual(info.author, "zeplin")
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+}

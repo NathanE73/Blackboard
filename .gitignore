@@ -35,6 +35,7 @@ playground.xcworkspace
 
 # Swift Package Manager
 Packages/
+.swiftpm/
 .build/
 
 # Blackboard Project

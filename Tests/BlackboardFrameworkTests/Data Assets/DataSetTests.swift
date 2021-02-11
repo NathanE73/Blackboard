@@ -22,6 +22,34 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class DataSetTests: XCTestCase {
+    
+    func testLevel001() {
+        let dataSet = Fixture.dataSet(project: .example, name: "Level/001")
+        
+        XCTAssertEqual(dataSet?.name, "Level/001")
+    }
+    
+    func testLevel002() {
+        let dataSet = Fixture.dataSet(project: .example, name: "Level/002")
+        
+        XCTAssertEqual(dataSet?.name, "Level/002")
+    }
+    
+    func testNames() {
+        let dataSet = Fixture.dataSet(project: .example, name: "Names")
+        
+        XCTAssertEqual(dataSet?.name, "Names")
+    }
+    
+    func testWelcomeMessage() {
+        let dataSet = Fixture.dataSet(project: .example, name: "Welcome Message")
+        
+        XCTAssertEqual(dataSet?.name, "Welcome Message")
+    }
+    
+}

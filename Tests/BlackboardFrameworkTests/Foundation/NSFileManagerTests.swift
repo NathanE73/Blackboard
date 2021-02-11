@@ -22,6 +22,26 @@
 // THE SOFTWARE.
 //
 
-import BlackboardFramework
+import XCTest
 
-BlackboardMain.main()
+@testable import BlackboardFramework
+
+class NSFileManagerExtensions: XCTestCase {
+    
+    let fileManager = FileManager.default
+    
+    func testIsDirectory() {
+        XCTAssertTrue(fileManager.isDirectory("/opt"))
+        
+        XCTAssertFalse(fileManager.isDirectory("/usr/bin/time"))
+        XCTAssertFalse(fileManager.isDirectory("/opt/missing"))
+    }
+    
+    func testIsFile() {
+        XCTAssertTrue(fileManager.isFile("/usr/bin/time"))
+        
+        XCTAssertFalse(fileManager.isFile("/opt"))
+        XCTAssertFalse(fileManager.isFile("/opt/missing.json"))
+    }
+    
+}
