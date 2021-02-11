@@ -8,7 +8,8 @@ let package = Package(
         .executable(name: "blackboard", targets: ["Main"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0")
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0"),
+        .package(url: "https://github.com/jpsim/Yams.git", from: "4.0.0")
     ],
     targets: [
         .target(
@@ -18,7 +19,8 @@ let package = Package(
         .target(
             name: "BlackboardFramework",
             dependencies: [
-                .product(name: "ArgumentParser", package: "swift-argument-parser")
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                "Yams"
             ]
         ),
         .testTarget(
