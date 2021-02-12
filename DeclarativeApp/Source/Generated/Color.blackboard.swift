@@ -18,18 +18,18 @@ public extension Color {
         self.init(colorAsset.rawValue, bundle: bundle)
     }
     
-    static var absoluteZero: Color { return Color(asset: ColorAsset.absoluteZero) }
-    static var bisque: Color { return Color(asset: ColorAsset.bisque) }
-    static var charcoal: Color { return Color(asset: ColorAsset.charcoal) }
-    static var darkOliveGreen: Color { return Color(asset: ColorAsset.darkOliveGreen) }
-    static var desire: Color { return Color(asset: ColorAsset.desire) }
-    static var emerald: Color { return Color(asset: ColorAsset.emerald) }
-    static var empty: Color { return Color(asset: ColorAsset.empty) }
-    static var firebrick: Color { return Color(asset: ColorAsset.firebrick) }
-    static var fluorescentBlizzardBlue: Color { return Color(asset: ColorAsset.fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: Color { return Color(asset: ColorAsset.fluorescentMagicMint) }
-    static var fluorescentRadicalRed: Color { return Color(asset: ColorAsset.fluorescentRadicalRed) }
-    static var maroon: Color { return Color(asset: ColorAsset.maroon) }
-    static var night: Color { return Color(asset: ColorAsset.night) }
+    static var absoluteZero: Color { Color(asset: ColorAsset.absoluteZero) }
+    static var bisque: Color { Color(asset: ColorAsset.bisque) }
+    static var charcoal: Color { Color(asset: ColorAsset.charcoal) }
+    static var darkOliveGreen: Color { Color(asset: ColorAsset.darkOliveGreen) }
+    static var desire: Color { Color(asset: ColorAsset.desire) }
+    static var emerald: Color { Color(asset: ColorAsset.emerald) }
+    static var empty: Color { Color(asset: ColorAsset.empty) }
+    static var firebrick: Color { Color(asset: ColorAsset.firebrick) }
+    static var fluorescentBlizzardBlue: Color { Color(asset: ColorAsset.fluorescentBlizzardBlue) }
+    static var fluorescentMagicMint: Color { Color(asset: ColorAsset.fluorescentMagicMint) }
+    static var fluorescentRadicalRed: Color { Color(asset: ColorAsset.fluorescentRadicalRed) }
+    static var maroon: Color { Color(asset: ColorAsset.maroon) }
+    static var night: Color { Color(asset: ColorAsset.night) }
     
 }

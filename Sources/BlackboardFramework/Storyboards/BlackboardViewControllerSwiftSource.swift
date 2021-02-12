@@ -62,7 +62,7 @@ extension SwiftSource {
             append()
             viewController.shouldPerformSegues.forEach { segue in
                 if let shouldPerformFuncName = segue.shouldPerformFuncName {
-                    append("func \(shouldPerformFuncName)() -> Bool { return true }")
+                    append("func \(shouldPerformFuncName)() -> Bool { true }")
                 }
             }
             append()
@@ -74,7 +74,7 @@ extension SwiftSource {
         guard let identifier = viewController.identifier else { return }
         
         append("final class func instantiateFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> \(viewController.className)") {
-            append("return instantiateViewController(from: sharedStoryboardInstance, identifier: \"\(identifier)\", initialize)")
+            append("instantiateViewController(from: sharedStoryboardInstance, identifier: \"\(identifier)\", initialize)")
         }
         append()
     }
@@ -83,7 +83,7 @@ extension SwiftSource {
         guard let navigationControllerIdentifier = viewController.navigationControllerIdentifier else { return }
         
         append("final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ \(viewController.parameterName): \(viewController.className)) -> Void)? = nil) -> UINavigationController") {
-            append("return instantiateNavigationController(from: sharedStoryboardInstance, identifier: \"\(navigationControllerIdentifier)\", initialize)")
+            append("instantiateNavigationController(from: sharedStoryboardInstance, identifier: \"\(navigationControllerIdentifier)\", initialize)")
         }
         append()
     }

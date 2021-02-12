@@ -1,5 +1,7 @@
 symbols:
 - 14.square.fill
+- case
+- case.fill
 - chevron.down
 - chevron.up
 - die.face.1
@@ -9,3 +11,6 @@ symbols:
 - person
 - person.2
 - plus.circle.fill
+- return
+- repeat
+- repeat.circle

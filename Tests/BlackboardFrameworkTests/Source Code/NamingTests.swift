@@ -56,6 +56,8 @@ class NamingTests: XCTestCase {
         
         XCTAssertEqual(Naming.methodName(fromIdentifier: "Fluorescent/Radical Red"), "fluorescentRadicalRed")
         XCTAssertEqual(Naming.methodName(fromIdentifier: "One/Two/Three/Blue"), "oneTwoThreeBlue")
+        
+        XCTAssertEqual(Naming.methodName(fromIdentifier: "1.infinite.loop"), "number1InfiniteLoop")
     }
     
     func testNameFromIdentifier() {
@@ -77,6 +79,24 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.namespace(from: nil, "Absolute Zero"), "Absolute Zero")
         
         XCTAssertEqual(Naming.namespace(from: "Fluorescent", "Radical Red"), "Fluorescent/Radical Red")
+    }
+    
+    func testSymbolName() {
+        XCTAssertEqual(Naming.symbolName(from: "14.square.fill"), "14.square.fill")
+        XCTAssertEqual(Naming.symbolName(from: "case"), "case.symbol")
+        XCTAssertEqual(Naming.symbolName(from: "case.fill"), "case.symbol.fill")
+        XCTAssertEqual(Naming.symbolName(from: "chevron.down"), "chevron.down")
+        XCTAssertEqual(Naming.symbolName(from: "chevron.up"), "chevron.up")
+        XCTAssertEqual(Naming.symbolName(from: "die.face.1"), "die.face.1")
+        XCTAssertEqual(Naming.symbolName(from: "die.face.4"), "die.face.4")
+        XCTAssertEqual(Naming.symbolName(from: "infinity.circle.fill"), "infinity.circle.fill")
+        XCTAssertEqual(Naming.symbolName(from: "minus.circle.fill"), "minus.circle.fill")
+        XCTAssertEqual(Naming.symbolName(from: "person"), "person")
+        XCTAssertEqual(Naming.symbolName(from: "person2"), "person2")
+        XCTAssertEqual(Naming.symbolName(from: "plus.circle.fill"), "plus.circle.fill")
+        XCTAssertEqual(Naming.symbolName(from: "return"), "return.symbol")
+        XCTAssertEqual(Naming.symbolName(from: "repeat"), "repeat.symbol")
+        XCTAssertEqual(Naming.symbolName(from: "repeat.circle"), "repeat.symbol.circle")
     }
     
 }

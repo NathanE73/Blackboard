@@ -11,7 +11,7 @@ private let sharedStoryboardInstance = UIStoryboard(name: "Account", bundle: nil
 extension AccountViewController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ accountViewController: AccountViewController) -> Void)? = nil) -> AccountViewController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountViewController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountViewController", initialize)
     }
     
 }
@@ -19,7 +19,7 @@ extension AccountViewController {
 extension AccountsNavigationController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ accountsNavigationController: AccountsNavigationController) -> Void)? = nil) -> AccountsNavigationController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountNavigationController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountNavigationController", initialize)
     }
     
 }
@@ -36,11 +36,11 @@ extension AccountsTableViewControllerSegues {
 extension AccountsTableViewController: AccountsTableViewControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ accountsTableViewController: AccountsTableViewController) -> Void)? = nil) -> AccountsTableViewController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountTableViewController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "AccountTableViewController", initialize)
     }
     
     final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ accountsTableViewController: AccountsTableViewController) -> Void)? = nil) -> UINavigationController {
-        return instantiateNavigationController(from: sharedStoryboardInstance, identifier: "AccountNavigationController", initialize)
+        instantiateNavigationController(from: sharedStoryboardInstance, identifier: "AccountNavigationController", initialize)
     }
     
     // Segues
@@ -90,15 +90,15 @@ extension AccountsTableViewController: AccountsTableViewControllerSegues {
     }
     
     final func dequeueAccountCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountCell: AccountTableViewCell) -> Void)? = nil) -> AccountTableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.account.rawValue, for: indexPath, initialize)
+        tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.account.rawValue, for: indexPath, initialize)
     }
     
     final func dequeueAccountOverviewCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ accountOverviewCell: AccountOverviewTableViewCell) -> Void)? = nil) -> AccountOverviewTableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountOverview.rawValue, for: indexPath, initialize)
+        tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.accountOverview.rawValue, for: indexPath, initialize)
     }
     
     final func dequeueOpenNewAccountCell(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ cell: UITableViewCell) -> Void)? = nil) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.openNewAccount.rawValue, for: indexPath, initialize)
+        tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.openNewAccount.rawValue, for: indexPath, initialize)
     }
     
 }
@@ -106,11 +106,11 @@ extension AccountsTableViewController: AccountsTableViewControllerSegues {
 extension OpenAccountViewController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ openAccountViewController: OpenAccountViewController) -> Void)? = nil) -> OpenAccountViewController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "OpenAccountViewController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "OpenAccountViewController", initialize)
     }
     
     final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ openAccountViewController: OpenAccountViewController) -> Void)? = nil) -> UINavigationController {
-        return instantiateNavigationController(from: sharedStoryboardInstance, identifier: "OpenAccountNavigationController", initialize)
+        instantiateNavigationController(from: sharedStoryboardInstance, identifier: "OpenAccountNavigationController", initialize)
     }
     
 }

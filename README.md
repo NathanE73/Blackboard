@@ -41,6 +41,11 @@ You compare these to see the difference between using and not using Blackboard.
     - [NSDataAsset](/README/Usage/NSDataAsset.md#nsdataasset-usage)
     - [UIColor](/README/Usage/UIColor.md#uicolor-usage)
     - [UIImage](/README/Usage/UIImage.md#uiimage-usage)
+- Symbols
+  - SwiftUI
+    - [Image](/README/Usage/SymbolImage.md#symbol-image-usage)
+  - UIKit
+    - [UIImage](/README/Usage/SymbolUIImage.md#symbol-uiimage-usage)
 - Storyboard Usage
   - Cells
     - [Dequeue Collection View Cell](/README/Usage/UICollectionViewCell.md#dequeue-collection-view-cell-usage)

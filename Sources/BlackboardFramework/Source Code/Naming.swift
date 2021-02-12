@@ -33,6 +33,10 @@ enum Naming {
     static func methodName(fromIdentifier identifier: String) -> String {
         let name = self.name(fromIdentifier: identifier)
         
+        if name.startsWithDecimalDigit {
+            return "number\(name)".firstCharacterLowercased
+        }
+        
         return name.firstCharacterLowercased
     }
     
@@ -71,6 +75,16 @@ enum Naming {
         }
         
         return namespaces.joined(separator: "/")
+    }
+    
+    static func symbolName(from name: String) -> String {
+        var components = name.components(separatedBy: ".")
+        if ["case", "return", "repeat"].contains(components.first) {
+            components.insert("symbol", at: 1)
+            return components.joined(separator: ".")
+        }
+        
+        return name
     }
     
 }

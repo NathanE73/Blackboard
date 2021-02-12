@@ -48,6 +48,20 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("AppleApple".removingSuffix("APPLE"), "AppleApple")
     }
     
+    func testStartsWithDecimalDigit() {
+        XCTAssertFalse("apple".startsWithDecimalDigit)
+        
+        XCTAssertTrue("1.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("2.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("3.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("4.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("5.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("6.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("7.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("8.infinite.loop".startsWithDecimalDigit)
+        XCTAssertTrue("9.infinite.loop".startsWithDecimalDigit)
+    }
+    
     func testTrimmingWhitespaceCharacters() {
         XCTAssertEqual("".trimmingWhitespaceCharacters, "")
         

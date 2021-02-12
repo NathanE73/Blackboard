@@ -12,8 +12,8 @@ private let bundle: Bundle = {
 }()
 
 public extension DataAsset {
-    var dataAsset: NSDataAsset { return NSDataAsset(asset: self) }
-    var data: Data { return dataAsset.data }
+    var dataAsset: NSDataAsset { NSDataAsset(asset: self) }
+    var data: Data { dataAsset.data }
 }
 
 public extension NSDataAsset {

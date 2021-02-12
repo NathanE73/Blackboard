@@ -7,21 +7,21 @@
 import CoreGraphics
 
 public extension ColorAsset {
-    var cgColor: CGColor { return color.cgColor }
+    var cgColor: CGColor { color.cgColor }
 }
 
 public extension CGColor {
-    static var absoluteZero: CGColor { return ColorAsset.absoluteZero.cgColor }
-    static var bisque: CGColor { return ColorAsset.bisque.cgColor }
-    static var charcoal: CGColor { return ColorAsset.charcoal.cgColor }
-    static var darkOliveGreen: CGColor { return ColorAsset.darkOliveGreen.cgColor }
-    static var desire: CGColor { return ColorAsset.desire.cgColor }
-    static var emerald: CGColor { return ColorAsset.emerald.cgColor }
-    static var empty: CGColor { return ColorAsset.empty.cgColor }
-    static var firebrick: CGColor { return ColorAsset.firebrick.cgColor }
-    static var fluorescentBlizzardBlue: CGColor { return ColorAsset.fluorescentBlizzardBlue.cgColor }
-    static var fluorescentMagicMint: CGColor { return ColorAsset.fluorescentMagicMint.cgColor }
-    static var fluorescentRadicalRed: CGColor { return ColorAsset.fluorescentRadicalRed.cgColor }
-    static var maroon: CGColor { return ColorAsset.maroon.cgColor }
-    static var night: CGColor { return ColorAsset.night.cgColor }
+    static var absoluteZero: CGColor { ColorAsset.absoluteZero.cgColor }
+    static var bisque: CGColor { ColorAsset.bisque.cgColor }
+    static var charcoal: CGColor { ColorAsset.charcoal.cgColor }
+    static var darkOliveGreen: CGColor { ColorAsset.darkOliveGreen.cgColor }
+    static var desire: CGColor { ColorAsset.desire.cgColor }
+    static var emerald: CGColor { ColorAsset.emerald.cgColor }
+    static var empty: CGColor { ColorAsset.empty.cgColor }
+    static var firebrick: CGColor { ColorAsset.firebrick.cgColor }
+    static var fluorescentBlizzardBlue: CGColor { ColorAsset.fluorescentBlizzardBlue.cgColor }
+    static var fluorescentMagicMint: CGColor { ColorAsset.fluorescentMagicMint.cgColor }
+    static var fluorescentRadicalRed: CGColor { ColorAsset.fluorescentRadicalRed.cgColor }
+    static var maroon: CGColor { ColorAsset.maroon.cgColor }
+    static var night: CGColor { ColorAsset.night.cgColor }
 }

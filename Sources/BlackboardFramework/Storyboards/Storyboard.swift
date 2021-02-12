@@ -114,7 +114,7 @@ extension Storyboard {
             namedColorResources = []
         }
         
-        if let namedColorNodes = try? xmlDocument.nodes(forXPath: ".//resources/image") {
+        if let namedColorNodes = try? xmlDocument.nodes(forXPath: ".//resources/image[not(@catalog)]") {
             namedImageResources = namedColorNodes.compactMap { node in
                 let element = node as? XMLElement
                 return element?.attribute(forName: "name")?.stringValue

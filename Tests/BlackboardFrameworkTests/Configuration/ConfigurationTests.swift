@@ -33,6 +33,8 @@ class ConfigurationTests: XCTestCase {
         let yaml = """
         symbols:
         - 14.square.fill
+        - case
+        - case.fill
         - chevron.down
         - chevron.up
         - die.face.1
@@ -42,6 +44,9 @@ class ConfigurationTests: XCTestCase {
         - person
         - person.2
         - plus.circle.fill
+        - return
+        - repeat
+        - repeat.circle
         """
         
         let data = Data(yaml.utf8)
@@ -49,9 +54,11 @@ class ConfigurationTests: XCTestCase {
         do {
             let configuration = try YAMLDecoder().decode(Configuration.self, from: data)
             
-            XCTAssertEqual(configuration.symbols?.count, 10)
+            XCTAssertEqual(configuration.symbols?.count, 15)
             XCTAssertEqual(configuration.symbols, [
                             "14.square.fill",
+                            "case",
+                            "case.fill",
                             "chevron.down",
                             "chevron.up",
                             "die.face.1",
@@ -60,7 +67,10 @@ class ConfigurationTests: XCTestCase {
                             "minus.circle.fill",
                             "person",
                             "person.2",
-                            "plus.circle.fill"])
+                            "plus.circle.fill",
+                            "return",
+                            "repeat",
+                            "repeat.circle"])
         }
         catch {
             XCTFail(error.localizedDescription)

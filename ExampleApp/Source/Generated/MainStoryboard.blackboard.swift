@@ -11,7 +11,7 @@ private let sharedStoryboardInstance = UIStoryboard(name: "Main", bundle: nil)
 extension FooterViewController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ footerViewController: FooterViewController) -> Void)? = nil) -> FooterViewController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "FooterViewController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "FooterViewController", initialize)
     }
     
 }
@@ -26,14 +26,14 @@ extension MainViewControllerSegues {
     func prepareForPresentPhotoSegue(_ photoViewController: PhotoViewController) {}
     func prepareForPresentPhotosSegue(_ photosCollectionViewController: PhotosCollectionViewController) {}
     
-    func shouldPerformPresentPhotoSegue() -> Bool { return true }
+    func shouldPerformPresentPhotoSegue() -> Bool { true }
     
 }
 
 extension MainViewController: MainViewControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ mainViewController: MainViewController) -> Void)? = nil) -> MainViewController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "WelcomeViewController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "WelcomeViewController", initialize)
     }
     
     // Segues

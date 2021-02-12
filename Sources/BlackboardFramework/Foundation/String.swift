@@ -37,6 +37,13 @@ extension String {
         return self
     }
     
+    var startsWithDecimalDigit: Bool {
+        guard let firstScalar = self.unicodeScalars.first else {
+            return false
+        }
+        return CharacterSet.decimalDigits.contains(firstScalar)
+    }
+    
     var trimmingWhitespaceCharacters: String {
         trimmingCharacters(in: .whitespaces)
     }

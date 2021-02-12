@@ -54,7 +54,7 @@ extension SwiftSource {
         
         tableViewCells.forEach { cell in
             append("final func \(cell.dequeueFuncName)(from tableView: UITableView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
-                append("return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath, initialize)")
+                append("tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath, initialize)")
             }
             append()
         }

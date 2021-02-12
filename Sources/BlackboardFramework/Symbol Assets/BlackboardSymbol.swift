@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2019 Nathan E. Walczak
+// Copyright (c) 2021 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,26 +24,24 @@
 
 import Foundation
 
-enum Filename {
-    
-    static let blackboardExtension = ".blackboard.swift"
-    
-    static let ColorAsset = "ColorAsset.blackboard.swift"
-    static let Color = "Color.blackboard.swift"
-    static let CGColor = "CGColor.blackboard.swift"
-    static let UIColor = "UIColor.blackboard.swift"
-    
-    static let DataAsset = "DataAsset.blackboard.swift"
-    static let NSDataAsset = "NSDataAsset.blackboard.swift"
-    
-    static let ImageAsset = "ImageAsset.blackboard.swift"
-    static let Image = "Image.blackboard.swift"
-    static let UIImage = "UIImage.blackboard.swift"
-    
-    static let SymbolAsset = "SymbolAsset.blackboard.swift"
-    static let SymbolImage = "SymbolImage.blackboard.swift"
-    static let SymbolUIImage = "SymbolUIImage.blackboard.swift"
+struct BlackboardSymbol {
+    var name: String
+    var functionName: String
+    var caseName: String
+    var iosAvailable: String
+}
 
-    static let UIKit = "UIKit.blackboard.swift"
+extension BlackboardSymbol {
+    
+    init(name: String, iosAvailable: String) {
+        self.name = name
+        
+        let symbolName = Naming.symbolName(from: name)
+        functionName = Naming.methodName(fromIdentifier: symbolName)
+        
+        caseName = functionName
+        
+        self.iosAvailable = iosAvailable
+    }
     
 }

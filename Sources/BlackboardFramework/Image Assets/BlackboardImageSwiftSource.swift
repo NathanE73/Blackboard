@@ -64,7 +64,7 @@ extension SwiftSource {
             }
             append()
             images.forEach { image in
-                append("static var \(image.functionName): Image { return Image(asset: ImageAsset.\(image.caseName)) }")
+                append("static var \(image.functionName): Image { Image(asset: ImageAsset.\(image.caseName)) }")
             }
             append()
         }
@@ -78,7 +78,7 @@ extension SwiftSource {
     func appendUIImages(images: [BlackboardImage]) -> Self {
         appendHeading(filename: Filename.UIImage, modules: ["UIKit"], includeBundle: true)
         append("public extension ImageAsset") {
-            append("var image: UIImage { return UIImage(asset: self) }")
+            append("var image: UIImage { UIImage(asset: self) }")
         }
         append()
         append("public extension UIImage") {
@@ -88,7 +88,7 @@ extension SwiftSource {
             }
             append()
             images.forEach { image in
-                append("static var \(image.functionName): UIImage { return UIImage(asset: ImageAsset.\(image.caseName)) }")
+                append("static var \(image.functionName): UIImage { UIImage(asset: ImageAsset.\(image.caseName)) }")
             }
             append()
         }

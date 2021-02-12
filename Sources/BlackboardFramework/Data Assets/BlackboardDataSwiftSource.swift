@@ -49,8 +49,8 @@ extension SwiftSource {
     func appendNSDataAsset(data: [BlackboardData]) -> Self {
         appendHeading(filename: Filename.NSDataAsset, modules: ["UIKit"], includeBundle: true)
         append("public extension DataAsset") {
-            append("var dataAsset: NSDataAsset { return NSDataAsset(asset: self) }")
-            append("var data: Data { return dataAsset.data }")
+            append("var dataAsset: NSDataAsset { NSDataAsset(asset: self) }")
+            append("var data: Data { dataAsset.data }")
         }
         append()
         append("public extension NSDataAsset") {

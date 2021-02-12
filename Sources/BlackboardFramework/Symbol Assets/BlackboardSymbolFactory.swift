@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2019 Nathan E. Walczak
+// Copyright (c) 2021 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,26 +24,22 @@
 
 import Foundation
 
-enum Filename {
+class BlackboardSymbolFactory {
     
-    static let blackboardExtension = ".blackboard.swift"
-    
-    static let ColorAsset = "ColorAsset.blackboard.swift"
-    static let Color = "Color.blackboard.swift"
-    static let CGColor = "CGColor.blackboard.swift"
-    static let UIColor = "UIColor.blackboard.swift"
-    
-    static let DataAsset = "DataAsset.blackboard.swift"
-    static let NSDataAsset = "NSDataAsset.blackboard.swift"
-    
-    static let ImageAsset = "ImageAsset.blackboard.swift"
-    static let Image = "Image.blackboard.swift"
-    static let UIImage = "UIImage.blackboard.swift"
-    
-    static let SymbolAsset = "SymbolAsset.blackboard.swift"
-    static let SymbolImage = "SymbolImage.blackboard.swift"
-    static let SymbolUIImage = "SymbolUIImage.blackboard.swift"
+    func symbols(for symbols: [String]) -> [BlackboardSymbol] {
+        guard let symbolAvailability = SymbolAvailability.resource else {
+            return []
+        }
+        
+        let symbols = (symbols == ["*"] ? symbolAvailability.knownSymbols : symbols)
+        
+        return symbols.compactMap { symbol -> BlackboardSymbol? in
+            guard let iosAvailable = symbolAvailability.iOSAvailability(for: symbol) else {
+                print("warning: Unknown symbol: \(symbol)")
+                return nil
+            }
+            return BlackboardSymbol(name: symbol, iosAvailable: iosAvailable)
+        }
+    }
 
-    static let UIKit = "UIKit.blackboard.swift"
-    
 }

@@ -12,7 +12,7 @@ private let bundle: Bundle = {
 }()
 
 public extension ImageAsset {
-    var image: UIImage { return UIImage(asset: self) }
+    var image: UIImage { UIImage(asset: self) }
 }
 
 public extension UIImage {
@@ -21,12 +21,12 @@ public extension UIImage {
         self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
-    static var button: UIImage { return UIImage(asset: ImageAsset.button) }
-    static var greenPaperClip: UIImage { return UIImage(asset: ImageAsset.greenPaperClip) }
-    static var greenPencil: UIImage { return UIImage(asset: ImageAsset.greenPencil) }
-    static var redCup: UIImage { return UIImage(asset: ImageAsset.redCup) }
-    static var redStapler: UIImage { return UIImage(asset: ImageAsset.redStapler) }
-    static var silverPaperClip: UIImage { return UIImage(asset: ImageAsset.silverPaperClip) }
-    static var whiteDice: UIImage { return UIImage(asset: ImageAsset.whiteDice) }
+    static var button: UIImage { UIImage(asset: ImageAsset.button) }
+    static var greenPaperClip: UIImage { UIImage(asset: ImageAsset.greenPaperClip) }
+    static var greenPencil: UIImage { UIImage(asset: ImageAsset.greenPencil) }
+    static var redCup: UIImage { UIImage(asset: ImageAsset.redCup) }
+    static var redStapler: UIImage { UIImage(asset: ImageAsset.redStapler) }
+    static var silverPaperClip: UIImage { UIImage(asset: ImageAsset.silverPaperClip) }
+    static var whiteDice: UIImage { UIImage(asset: ImageAsset.whiteDice) }
     
 }

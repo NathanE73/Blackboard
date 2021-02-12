@@ -11,11 +11,11 @@ private let sharedStoryboardInstance = UIStoryboard(name: "Photo", bundle: nil)
 extension PhotoViewController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ photoViewController: PhotoViewController) -> Void)? = nil) -> PhotoViewController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "PhotoViewController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "PhotoViewController", initialize)
     }
     
     final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ photoViewController: PhotoViewController) -> Void)? = nil) -> UINavigationController {
-        return instantiateNavigationController(from: sharedStoryboardInstance, identifier: "PhotoNavigationController", initialize)
+        instantiateNavigationController(from: sharedStoryboardInstance, identifier: "PhotoNavigationController", initialize)
     }
     
 }
@@ -31,11 +31,11 @@ extension PhotosCollectionViewControllerSegues {
 extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ photosCollectionViewController: PhotosCollectionViewController) -> Void)? = nil) -> PhotosCollectionViewController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "PhotoCollectionViewController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "PhotoCollectionViewController", initialize)
     }
     
     final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_ photosCollectionViewController: PhotosCollectionViewController) -> Void)? = nil) -> UINavigationController {
-        return instantiateNavigationController(from: sharedStoryboardInstance, identifier: "PhotosNavigationController", initialize)
+        instantiateNavigationController(from: sharedStoryboardInstance, identifier: "PhotosNavigationController", initialize)
     }
     
     // Segues
@@ -74,7 +74,7 @@ extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
     }
     
     final func dequeuePhotoCell(from collectionView: UICollectionView, for indexPath: IndexPath, initialize: ((_ photoCell: PhotoCollectionViewCell) -> Void)? = nil) -> PhotoCollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.photo.rawValue, for: indexPath, initialize)
+        collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.photo.rawValue, for: indexPath, initialize)
     }
     
 }
@@ -82,7 +82,7 @@ extension PhotosCollectionViewController: PhotosCollectionViewControllerSegues {
 extension PhotosNavigationController {
     
     final class func instantiateFromStoryboard(_ initialize: ((_ photosNavigationController: PhotosNavigationController) -> Void)? = nil) -> PhotosNavigationController {
-        return instantiateViewController(from: sharedStoryboardInstance, identifier: "PhotosNavigationController", initialize)
+        instantiateViewController(from: sharedStoryboardInstance, identifier: "PhotosNavigationController", initialize)
     }
     
 }

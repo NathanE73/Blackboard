@@ -45,6 +45,9 @@ public struct BlackboardMain: ParsableCommand {
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
     var skipImages = false
     
+    @Flag(help: "Skip generating symbol extensions (Image, UIImage)")
+    var skipSymbols = false
+    
     @Flag(name: .customLong("skip-swiftui"),
           help: "Skip generating SwiftUI extensions (Color, Image)")
     var skipSwiftUI = false
@@ -107,6 +110,12 @@ public struct BlackboardMain: ParsableCommand {
         
         print("Target directory: \(targetDirectory)")
         
+        // Process Symbols
+        
+        if let symbols = configuration.symbols {
+            processSymbols(symbols, targetDirectory)
+        }
+        
         // Process Resources
         
         let storyboards = processStoryboards(sourceDirectories, targetDirectory)
@@ -135,6 +144,32 @@ public struct BlackboardMain: ParsableCommand {
                     }
             }
         }
+    }
+    
+    private func processSymbols(_ symbols: [String], _ targetDirectory: String) {
+        guard !skipSymbols else { return }
+        
+        var blackboardSymbols = BlackboardSymbolFactory()
+            .symbols(for: symbols)
+        blackboardSymbols.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
+        
+        guard !blackboardSymbols.isEmpty else {
+            return
+        }
+        
+        SwiftSourceFile(Filename.SymbolAsset, at: targetDirectory)
+            .appendSymbolAssets(symbols: blackboardSymbols)
+            .write()
+        
+        if !skipSwiftUI {
+            SwiftSourceFile(Filename.SymbolImage, at: targetDirectory)
+                .appendSymbolImages(symbols: blackboardSymbols)
+                .write()
+        }
+        
+        SwiftSourceFile(Filename.SymbolUIImage, at: targetDirectory)
+            .appendSymbolUIImages(symbols: blackboardSymbols)
+            .write()
     }
     
     private func processStoryboards(_ sourceDirectories: [String], _ targetDirectory: String) -> [Storyboard] {

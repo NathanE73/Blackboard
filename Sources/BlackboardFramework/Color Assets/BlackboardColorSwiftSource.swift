@@ -56,7 +56,7 @@ extension SwiftSource {
             }
             append()
             colors.forEach { color in
-                append("static var \(color.functionName): Color { return Color(asset: ColorAsset.\(color.caseName)) }")
+                append("static var \(color.functionName): Color { Color(asset: ColorAsset.\(color.caseName)) }")
             }
             append()
         }
@@ -70,12 +70,12 @@ extension SwiftSource {
     func appendCGColors(colors: [BlackboardColor]) -> Self {
         appendHeading(filename: Filename.CGColor, modules: ["CoreGraphics"])
         append("public extension ColorAsset") {
-            append("var cgColor: CGColor { return color.cgColor }")
+            append("var cgColor: CGColor { color.cgColor }")
         }
         append()
         append("public extension CGColor") {
             colors.forEach { color in
-                append("static var \(color.functionName): CGColor { return ColorAsset.\(color.functionName).cgColor }")
+                append("static var \(color.functionName): CGColor { ColorAsset.\(color.functionName).cgColor }")
             }
         }
         append()
@@ -88,7 +88,7 @@ extension SwiftSource {
     func appendUIColors(colors: [BlackboardColor]) -> Self {
         appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: true)
         append("public extension ColorAsset") {
-            append("var color: UIColor { return UIColor(asset: self) }")
+            append("var color: UIColor { UIColor(asset: self) }")
         }
         append()
         append("public extension UIColor") {
@@ -98,7 +98,7 @@ extension SwiftSource {
             }
             append()
             colors.forEach { color in
-                append("static var \(color.functionName): UIColor { return UIColor(asset: ColorAsset.\(color.caseName)) }")
+                append("static var \(color.functionName): UIColor { UIColor(asset: ColorAsset.\(color.caseName)) }")
             }
             append()
         }

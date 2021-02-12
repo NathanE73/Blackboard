@@ -54,7 +54,7 @@ extension SwiftSource {
         
         collectionViewCells.forEach { cell in
             append("final func \(cell.dequeueFuncName)(from collectionView: UICollectionView, for indexPath: IndexPath, initialize: ((_ \(cell.parameterName): \(cell.className)) -> Void)? = nil) -> \(cell.className)") {
-                append("return collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath, initialize)")
+                append("collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellIdentifier.\(cell.enumName).rawValue, for: indexPath, initialize)")
             }
             append()
         }
