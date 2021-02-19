@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift)
+[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift#L9)
 
 ```swift
 public enum ColorAsset: String {
@@ -32,40 +32,40 @@ public enum ColorAsset: String {
 }
 ```
 
-[CGColor.blackboard.swift](/ExampleApp/Source/Generated/CGColor.blackboard.swift)
+[CGColor.blackboard.swift](/ExampleApp/Source/Generated/CGColor.blackboard.swift#L9)
 
 ```swift
 public extension ColorAsset {
-    var cgColor: CGColor { return color.cgColor }
+    var cgColor: CGColor
 }
 
 public extension CGColor {
-    static var absoluteZero: CGColor { return ColorAsset.absoluteZero.cgColor }
-    static var bisque: CGColor { return ColorAsset.bisque.cgColor }
-    static var charcoal: CGColor { return ColorAsset.charcoal.cgColor }
-    static var darkOliveGreen: CGColor { return ColorAsset.darkOliveGreen.cgColor }
-    static var desire: CGColor { return ColorAsset.desire.cgColor }
-    static var emerald: CGColor { return ColorAsset.emerald.cgColor }
-    static var empty: CGColor { return ColorAsset.empty.cgColor }
-    static var firebrick: CGColor { return ColorAsset.firebrick.cgColor }
-    static var fluorescentBlizzardBlue: CGColor { return ColorAsset.fluorescentBlizzardBlue.cgColor }
-    static var fluorescentMagicMint: CGColor { return ColorAsset.fluorescentMagicMint.cgColor }
-    static var fluorescentRadicalRed: CGColor { return ColorAsset.fluorescentRadicalRed.cgColor }
-    static var maroon: CGColor { return ColorAsset.maroon.cgColor }
-    static var night: CGColor { return ColorAsset.night.cgColor }
+    static var absoluteZero: CGColor
+    static var bisque: CGColor
+    static var charcoal: CGColor
+    static var darkOliveGreen: CGColor
+    static var desire: CGColor
+    static var emerald: CGColor
+    static var empty: CGColor
+    static var firebrick: CGColor
+    static var fluorescentBlizzardBlue: CGColor
+    static var fluorescentMagicMint: CGColor
+    static var fluorescentRadicalRed: CGColor
+    static var maroon: CGColor
+    static var night: CGColor
 }
 ```
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/FooterViewController.swift#L46)
+[ExampleApp](/ExampleApp/Source/FooterViewController.swift#L45)
 ```swift
 view.layer.borderColor = .fluorescentBlizzardBlue
 ```
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/FooterViewController.swift#L46)
+[StandardApp](/StandardApp/Source/FooterViewController.swift#L47)
 ```swift
 view.layer.borderColor = UIColor(named: "Fluorescent/Blizzard Blue")?.cgColor
 ```

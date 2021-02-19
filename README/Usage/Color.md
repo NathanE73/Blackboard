@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift)
+[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift#L9)
 
 ```swift
 public enum ColorAsset: String {
@@ -32,35 +32,35 @@ public enum ColorAsset: String {
 }
 ```
 
-[Color.blackboard.swift](/ExampleApp/Source/Generated/Color.blackboard.swift)
+[Color.blackboard.swift](/ExampleApp/Source/Generated/Color.blackboard.swift#L14)
 
 ```swift
+@available(iOS 13.0, *)
 public extension Color {
+    init(asset: ColorAsset)
     
-    init(asset colorAsset: ColorAsset) {
-        self.init(colorAsset.rawValue, bundle: bundle)
-    }
-    
-    static var absoluteZero: Color { return Color(asset: ColorAsset.absoluteZero) }
-    static var bisque: Color { return Color(asset: ColorAsset.bisque) }
-    static var charcoal: Color { return Color(asset: ColorAsset.charcoal) }
-    static var darkOliveGreen: Color { return Color(asset: ColorAsset.darkOliveGreen) }
-    static var desire: Color { return Color(asset: ColorAsset.desire) }
-    static var emerald: Color { return Color(asset: ColorAsset.emerald) }
-    static var empty: Color { return Color(asset: ColorAsset.empty) }
-    static var firebrick: Color { return Color(asset: ColorAsset.firebrick) }
-    static var fluorescentBlizzardBlue: Color { return Color(asset: ColorAsset.fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: Color { return Color(asset: ColorAsset.fluorescentMagicMint) }
-    static var fluorescentRadicalRed: Color { return Color(asset: ColorAsset.fluorescentRadicalRed) }
-    static var maroon: Color { return Color(asset: ColorAsset.maroon) }
-    static var night: Color { return Color(asset: ColorAsset.night) }
-    
+    static var absoluteZero: Color
+    static var bisque: Color
+    static var charcoal: Color
+    static var darkOliveGreen: Color
+    static var desire: Color
+    static var emerald: Color
+    static var empty: Color
+    static var firebrick: Color
+    static var fluorescentBlizzardBlue: Color
+    static var fluorescentMagicMint: Color
+    static var fluorescentRadicalRed: Color
+    static var maroon: Color
+    static var night: Color
 }
 ```
 
 ### The Blackboard Way
 
 ```swift
+Color.darkOliveGreen
+Color.fluorescentMagicMint
+
 Color(asset: .darkOliveGreen)
 Color(asset: .fluorescentMagicMint)
 ```

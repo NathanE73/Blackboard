@@ -16,7 +16,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ImageAsset.blackboard.swift](/ExampleApp/Source/Generated/ImageAsset.blackboard.swift)
+[ImageAsset.blackboard.swift](/ExampleApp/Source/Generated/ImageAsset.blackboard.swift#L9)
 
 ```swift
 public enum ImageAsset: String {
@@ -30,29 +30,30 @@ public enum ImageAsset: String {
 }
 ```
 
-[Image.blackboard.swift](/ExampleApp/Source/Generated/Image.blackboard.swift)
+[Image.blackboard.swift](/ExampleApp/Source/Generated/Image.blackboard.swift#L14)
 
 ```swift
+@available(iOS 13.0, *)
 public extension Image {
+    init(asset: ImageAsset)
+    init(asset: ImageAsset, label: Text)
+    init(decorativeAsset: ImageAsset)
     
-    init(asset imageAsset: ImageAsset) {
-        self.init(imageAsset.rawValue, bundle: bundle)
-    }
-    
-    init(asset imageAsset: ImageAsset, label: Text) {
-        self.init(imageAsset.rawValue, bundle: bundle, label: label)
-    }
-    
-    init(decorativeAsset imageAsset: ImageAsset) {
-        self.init(decorative: imageAsset.rawValue, bundle: bundle)
-    }
-    
+    static var button: Image
+    static var greenPaperClip: Image
+    static var greenPencil: Image
+    static var redCup: Image
+    static var redStapler: Image
+    static var silverPaperClip: Image
+    static var whiteDice: Image
 }
 ```
 
 ### The Blackboard Way
 
 ```swift
+Image.redStapler
+
 Image(asset: .redStapler)
 Image(asset: .redStapler, label: Text("Red Stapler"))
 Image(decorativeAsset: .redStapler)

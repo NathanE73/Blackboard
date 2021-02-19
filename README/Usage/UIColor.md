@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift)
+[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift#L9)
 
 ```swift
 public enum ColorAsset: String {
@@ -32,33 +32,29 @@ public enum ColorAsset: String {
 }
 ```
 
-[UIColor.blackboard.swift](/ExampleApp/Source/Generated/UIColor.blackboard.swift)
+[UIColor.blackboard.swift](/ExampleApp/Source/Generated/UIColor.blackboard.swift#L14)
 
 ```swift
 public extension ColorAsset {
-    var color: UIColor { return UIColor(asset: self) }
+    var color: UIColor
 }
 
 public extension UIColor {
+    init(asset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil)
     
-    convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
-        self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
-    }
-    
-    static var absoluteZero: UIColor { return UIColor(asset: ColorAsset.absoluteZero) }
-    static var bisque: UIColor { return UIColor(asset: ColorAsset.bisque) }
-    static var charcoal: UIColor { return UIColor(asset: ColorAsset.charcoal) }
-    static var darkOliveGreen: UIColor { return UIColor(asset: ColorAsset.darkOliveGreen) }
-    static var desire: UIColor { return UIColor(asset: ColorAsset.desire) }
-    static var emerald: UIColor { return UIColor(asset: ColorAsset.emerald) }
-    static var empty: UIColor { return UIColor(asset: ColorAsset.empty) }
-    static var firebrick: UIColor { return UIColor(asset: ColorAsset.firebrick) }
-    static var fluorescentBlizzardBlue: UIColor { return UIColor(asset: ColorAsset.fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: UIColor { return UIColor(asset: ColorAsset.fluorescentMagicMint) }
-    static var fluorescentRadicalRed: UIColor { return UIColor(asset: ColorAsset.fluorescentRadicalRed) }
-    static var maroon: UIColor { return UIColor(asset: ColorAsset.maroon) }
-    static var night: UIColor { return UIColor(asset: ColorAsset.night) }
-    
+    static var absoluteZero: UIColor
+    static var bisque: UIColor
+    static var charcoal: UIColor
+    static var darkOliveGreen: UIColor
+    static var desire: UIColor
+    static var emerald: UIColor
+    static var empty: UIColor
+    static var firebrick: UIColor
+    static var fluorescentBlizzardBlue: UIColor
+    static var fluorescentMagicMint: UIColor
+    static var fluorescentRadicalRed: UIColor
+    static var maroon: UIColor
+    static var night: UIColor
 }
 ```
 
@@ -67,11 +63,16 @@ public extension UIColor {
 [ExampleApp](/ExampleApp/Source/FooterViewController.swift#L43)
 ```swift
 view.backgroundColor = .fluorescentMagicMint
+
+view.backgroundColor = UIColor(asset: .fluorescentMagicMint)
+view.backgroundColor = UIColor(asset: .fluorescentMagicMint, compatibleWith: traitCollection)
 ```
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/FooterViewController.swift#L43)
+[StandardApp](/StandardApp/Source/FooterViewController.swift#L44)
 ```swift
 view.backgroundColor = UIColor(named: "Fluorescent/Magic Mint")
+view.backgroundColor = UIColor(named: "Fluorescent/Magic Mint", compatibleWith: traitCollection)
+
 ```
