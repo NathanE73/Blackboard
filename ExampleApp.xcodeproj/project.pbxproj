@@ -74,20 +74,20 @@
 		432EDCB6223A96EE00EBB0AF /* PhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		433D6D6C21E5055C00D8CB37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Empty.storyboard; sourceTree = "<group>"; };
 		433D6D7521E507BE00D8CB37 /* UIImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.blackboard.swift; sourceTree = "<group>"; };
-		4351B62C21E502E5007B4622 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4351B62C21E502E5007B4622 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../Shared/Resources/Images.xcassets; sourceTree = "<group>"; };
 		435E2AF31D01F600008E1170 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435E2AF61D01F600008E1170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		435E2AFB1D01F600008E1170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		435E2AFD1D01F600008E1170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		435E2AFD1D01F600008E1170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Shared/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		435E2B001D01F600008E1170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435E2B021D01F600008E1170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		436292E31F27CEBC0000C651 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		436292E31F27CEBC0000C651 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../../Shared/Resources/Colors.xcassets; sourceTree = "<group>"; };
 		4365E20A25DC9ED7003E4ABC /* SymbolUIImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolUIImage.blackboard.swift; sourceTree = "<group>"; };
 		4365E21225DCB7EF003E4ABC /* Image.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.blackboard.swift; sourceTree = "<group>"; };
 		4365E21325DCB7EF003E4ABC /* SymbolImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolImage.blackboard.swift; sourceTree = "<group>"; };
 		4365E21425DCB7EF003E4ABC /* Color.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.blackboard.swift; sourceTree = "<group>"; };
 		436804992245AA2200A69FE8 /* UIKit.blackboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.blackboard.swift; sourceTree = "<group>"; };
-		43A2081C239860880073A2B2 /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Data.xcassets; sourceTree = "<group>"; };
+		43A2081C239860880073A2B2 /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Data.xcassets; path = ../../Shared/Resources/Data.xcassets; sourceTree = "<group>"; };
 		43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboard.blackboard.swift; sourceTree = "<group>"; };
 		43C2B19D1D021533001B08CA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		43C32F15223849B500D270C1 /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
@@ -367,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" --input \"ExampleApp/Resources/\" --output \"ExampleApp/Source/Generated/\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
+			shellScript = "if which bin/blackboard >/dev/null; then\n  bin/blackboard --input Shared/Resources/ ExampleApp/Resources/ --output ExampleApp/Source/Generated/\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
 		};
 		43A6FE4E250328470064AFE0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
