@@ -26,6 +26,6 @@ import Foundation
 
 extension BlackboardMain {
     
-    static var version: String { "8.1.1" }
+    static var version: String { "9.0.0-rc.1" }
     
 }
