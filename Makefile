@@ -3,7 +3,12 @@ TEMPORARY_FOLDER=tmp
 
 SWIFT_BUILD_FLAGS=--arch x86_64 --configuration release
 
-BLACKBOARD_EXECUTABLE=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)/blackboard
+BUILD_PATH=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)
+
+BLACKBOARD_EXECUTABLE=blackboard
+BLACKBOARD_BUNDLE=Blackboard_BlackboardFramework.bundle
+
+PORTABLE_ZIP=portable-blackboard.zip
 
 VERSION_FILE=.version
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
@@ -21,11 +26,14 @@ test:
 
 install: build
 	install -d "$(BINARIES_FOLDER)"
-	install "$(BLACKBOARD_EXECUTABLE)" "$(BINARIES_FOLDER)"
+	install "$(BUILD_PATH)/$(BLACKBOARD_EXECUTABLE)" "$(BINARIES_FOLDER)"
+	rm -rf "$(BINARIES_FOLDER)/$(BLACKBOARD_BUNDLE)"
+	cp -r "$(BUILD_PATH)/$(BLACKBOARD_BUNDLE)" "$(BINARIES_FOLDER)"
 
 portable-zip: install
-	@mkdir -p "$(TEMPORARY_FOLDER)"
-	zip -j - "$(BINARIES_FOLDER)/blackboard" "LICENSE" > "$(TEMPORARY_FOLDER)/portable-blackboard.zip"
+	mkdir -p "$(TEMPORARY_FOLDER)"
+	zip -j - "$(BINARIES_FOLDER)/$(BLACKBOARD_EXECUTABLE)" "LICENSE" > "$(TEMPORARY_FOLDER)/$(PORTABLE_ZIP)"
+	pushd "$(BINARIES_FOLDER)"; zip -ur "../$(TEMPORARY_FOLDER)/$(PORTABLE_ZIP)" "$(BLACKBOARD_BUNDLE)"
 
 release: clean portable-zip
 
