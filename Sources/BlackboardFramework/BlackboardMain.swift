@@ -52,6 +52,10 @@ public struct BlackboardMain: ParsableCommand {
           help: "Skip generating SwiftUI extensions (Color, Image)")
     var skipSwiftUI = false
     
+    @Flag(name: .customLong("skip-uikit"),
+          help: "Skip generating UIKit extensions (UIColor, UIImage)")
+    var skipUIKit = false
+    
     @Option(name: [.customShort("i"), .customLong("input")],
             parsing: .upToNextOption,
             help: "Input directory / directories")
@@ -157,9 +161,11 @@ public struct BlackboardMain: ParsableCommand {
             return
         }
         
-        SwiftSourceFile(Filename.SymbolAsset, at: targetDirectory)
-            .appendSymbolAssets(symbols: blackboardSymbols)
-            .write()
+        if !skipSwiftUI || !skipUIKit {
+            SwiftSourceFile(Filename.SymbolAsset, at: targetDirectory)
+                .appendSymbolAssets(symbols: blackboardSymbols)
+                .write()
+        }
         
         if !skipSwiftUI {
             SwiftSourceFile(Filename.SymbolImage, at: targetDirectory)
@@ -167,9 +173,11 @@ public struct BlackboardMain: ParsableCommand {
                 .write()
         }
         
-        SwiftSourceFile(Filename.SymbolUIImage, at: targetDirectory)
-            .appendSymbolUIImages(symbols: blackboardSymbols)
-            .write()
+        if !skipUIKit {
+            SwiftSourceFile(Filename.SymbolUIImage, at: targetDirectory)
+                .appendSymbolUIImages(symbols: blackboardSymbols)
+                .write()
+        }
     }
     
     private func processStoryboards(_ sourceDirectories: [String], _ targetDirectory: String) -> [Storyboard] {
@@ -211,9 +219,15 @@ public struct BlackboardMain: ParsableCommand {
             return []
         }
         
-        SwiftSourceFile(Filename.ColorAsset, at: targetDirectory)
-            .appendColorAssets(colors: blackboardColors)
-            .write()
+        if !skipSwiftUI || !skipUIKit {
+            SwiftSourceFile(Filename.ColorAsset, at: targetDirectory)
+                .appendColorAssets(colors: blackboardColors)
+                .write()
+            
+            SwiftSourceFile(Filename.CGColor, at: targetDirectory)
+                .appendCGColors(colors: blackboardColors)
+                .write()
+        }
         
         if !skipSwiftUI {
             SwiftSourceFile(Filename.Color, at: targetDirectory)
@@ -221,13 +235,11 @@ public struct BlackboardMain: ParsableCommand {
                 .write()
         }
         
-        SwiftSourceFile(Filename.CGColor, at: targetDirectory)
-            .appendCGColors(colors: blackboardColors)
-            .write()
-        
-        SwiftSourceFile(Filename.UIColor, at: targetDirectory)
-            .appendUIColors(colors: blackboardColors)
-            .write()
+        if !skipUIKit {
+            SwiftSourceFile(Filename.UIColor, at: targetDirectory)
+                .appendUIColors(colors: blackboardColors)
+                .write()
+        }
         
         return colorSets
     }
@@ -265,9 +277,11 @@ public struct BlackboardMain: ParsableCommand {
             return []
         }
         
-        SwiftSourceFile(Filename.ImageAsset, at: targetDirectory)
-            .appendImageAssets(images: blackboardImages)
-            .write()
+        if !skipSwiftUI || !skipUIKit {
+            SwiftSourceFile(Filename.ImageAsset, at: targetDirectory)
+                .appendImageAssets(images: blackboardImages)
+                .write()
+        }
         
         if !skipSwiftUI {
             SwiftSourceFile(Filename.Image, at: targetDirectory)
@@ -275,9 +289,11 @@ public struct BlackboardMain: ParsableCommand {
                 .write()
         }
         
-        SwiftSourceFile(Filename.UIImage, at: targetDirectory)
-            .appendUIImages(images: blackboardImages)
-            .write()
+        if !skipUIKit {
+            SwiftSourceFile(Filename.UIImage, at: targetDirectory)
+                .appendUIImages(images: blackboardImages)
+                .write()
+        }
         
         return imageSets
     }
