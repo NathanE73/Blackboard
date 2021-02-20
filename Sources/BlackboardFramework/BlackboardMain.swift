@@ -56,6 +56,9 @@ public struct BlackboardMain: ParsableCommand {
           help: "Skip generating UIKit extensions (UIColor, UIImage)")
     var skipUIKit = false
     
+    @Flag(help: "Skip validation of storyboard resource references")
+    var skipValidation = false
+    
     @Option(name: [.customShort("i"), .customLong("input")],
             parsing: .upToNextOption,
             help: "Input directory / directories")
@@ -129,23 +132,25 @@ public struct BlackboardMain: ParsableCommand {
         
         // Validate Storyboard Resources
         
-        let knownNamedColors = Set(colorSets.map(\.name))
-        let knownNamedImages = Set(imageSets.map(\.name))
-        
-        storyboards.forEach { storyboard in
-            if !skipColors {
-                Set(storyboard.namedColorResources)
-                    .subtracting(knownNamedColors)
-                    .forEach { missing in
-                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing color named : '\(missing)'")
-                    }
-            }
-            if !skipImages {
-                Set(storyboard.namedImageResources)
-                    .subtracting(knownNamedImages)
-                    .forEach { missing in
-                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing image named: '\(missing)'")
-                    }
+        if !skipValidation {
+            let knownNamedColors = Set(colorSets.map(\.name))
+            let knownNamedImages = Set(imageSets.map(\.name))
+            
+            storyboards.forEach { storyboard in
+                if !skipColors {
+                    Set(storyboard.namedColorResources)
+                        .subtracting(knownNamedColors)
+                        .forEach { missing in
+                            print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing color named : '\(missing)'")
+                        }
+                }
+                if !skipImages {
+                    Set(storyboard.namedImageResources)
+                        .subtracting(knownNamedImages)
+                        .forEach { missing in
+                            print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing image named: '\(missing)'")
+                        }
+                }
             }
         }
     }
