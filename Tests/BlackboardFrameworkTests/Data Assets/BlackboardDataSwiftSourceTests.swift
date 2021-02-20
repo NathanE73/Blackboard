@@ -30,10 +30,10 @@ class BlackboardDataSwiftSourceTests: XCTestCase {
     
     var blackboardData: [BlackboardData] {
         let dataSets: [DataSet?] = [
-            Fixture.dataSet(project: .example, name: "Level/001"),
-            Fixture.dataSet(project: .example, name: "Level/002"),
-            Fixture.dataSet(project: .example, name: "Names"),
-            Fixture.dataSet(project: .example, name: "Welcome Message")
+            Fixture.dataSet(project: .shared, name: "Level/001"),
+            Fixture.dataSet(project: .shared, name: "Level/002"),
+            Fixture.dataSet(project: .shared, name: "Names"),
+            Fixture.dataSet(project: .shared, name: "Welcome Message")
         ]
         
         var blackboardData = dataSets

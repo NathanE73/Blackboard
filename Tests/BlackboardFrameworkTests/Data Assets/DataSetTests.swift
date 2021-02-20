@@ -29,25 +29,25 @@ import XCTest
 class DataSetTests: XCTestCase {
     
     func testLevel001() {
-        let dataSet = Fixture.dataSet(project: .example, name: "Level/001")
+        let dataSet = Fixture.dataSet(project: .shared, name: "Level/001")
         
         XCTAssertEqual(dataSet?.name, "Level/001")
     }
     
     func testLevel002() {
-        let dataSet = Fixture.dataSet(project: .example, name: "Level/002")
+        let dataSet = Fixture.dataSet(project: .shared, name: "Level/002")
         
         XCTAssertEqual(dataSet?.name, "Level/002")
     }
     
     func testNames() {
-        let dataSet = Fixture.dataSet(project: .example, name: "Names")
+        let dataSet = Fixture.dataSet(project: .shared, name: "Names")
         
         XCTAssertEqual(dataSet?.name, "Names")
     }
     
     func testWelcomeMessage() {
-        let dataSet = Fixture.dataSet(project: .example, name: "Welcome Message")
+        let dataSet = Fixture.dataSet(project: .shared, name: "Welcome Message")
         
         XCTAssertEqual(dataSet?.name, "Welcome Message")
     }

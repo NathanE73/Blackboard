@@ -29,7 +29,7 @@ import XCTest
 class BlackboardImageTests: XCTestCase {
     
     func testButton() {
-        guard let imageSet = Fixture.imageSet(project: .example, name: "button") else {
+        guard let imageSet = Fixture.imageSet(project: .shared, name: "button") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -42,7 +42,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testGreenPaperClip() {
-        guard let imageSet = Fixture.imageSet(project: .example, path: "Paper Clips", name: "green-paper-clip") else {
+        guard let imageSet = Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -55,7 +55,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testGreenPencil() {
-        guard let imageSet = Fixture.imageSet(project: .example, name: "green-pencil") else {
+        guard let imageSet = Fixture.imageSet(project: .shared, name: "green-pencil") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -68,7 +68,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testRedCup() {
-        guard let imageSet = Fixture.imageSet(project: .example, name: "Red/cup") else {
+        guard let imageSet = Fixture.imageSet(project: .shared, name: "Red/cup") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -81,7 +81,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testRedStapler() {
-        guard let imageSet = Fixture.imageSet(project: .example, name: "Red/stapler") else {
+        guard let imageSet = Fixture.imageSet(project: .shared, name: "Red/stapler") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -94,7 +94,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testSilverPaperClip() {
-        guard let imageSet = Fixture.imageSet(project: .example, path: "Paper Clips", name: "silver-paper-clip") else {
+        guard let imageSet = Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -107,7 +107,7 @@ class BlackboardImageTests: XCTestCase {
     }
     
     func testWhiteDice() {
-        guard let imageSet = Fixture.imageSet(project: .example, name: "white-dice") else {
+        guard let imageSet = Fixture.imageSet(project: .shared, name: "white-dice") else {
             XCTFail("Unable to decode image set data")
             return
         }

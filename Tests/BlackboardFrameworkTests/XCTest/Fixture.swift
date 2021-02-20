@@ -29,11 +29,14 @@ class Fixture {
     
     enum Project {
         case example
+        case shared
         
         var path: String {
             switch self {
             case .example:
                 return "ExampleApp"
+            case .shared:
+                return "Shared"
             }
         }
     }

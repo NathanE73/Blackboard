@@ -30,19 +30,19 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     
     var blackboardColors: [BlackboardColor] {
         let colorSets: [ColorSet?] = [
-            Fixture.colorSet(project: .example, path: "Dark", name: "Absolute Zero"),
-            Fixture.colorSet(project: .example, name: "Bisque"),
-            Fixture.colorSet(project: .example, path: "Dark", name: "Charcoal"),
-            Fixture.colorSet(project: .example, path: "Dark", name: "dark-olive-green"),
-            Fixture.colorSet(project: .example, name: "Desire"),
-            Fixture.colorSet(project: .example, name: "Emerald"),
-            Fixture.colorSet(project: .example, name: "Empty"),
-            Fixture.colorSet(project: .example, path: "Dark", name: "firebrick-color"),
-            Fixture.colorSet(project: .example, name: "Fluorescent/Blizzard Blue"),
-            Fixture.colorSet(project: .example, name: "Fluorescent/Magic Mint"),
-            Fixture.colorSet(project: .example, name: "Fluorescent/Radical Red"),
-            Fixture.colorSet(project: .example, path: "Dark", name: "maroon color"),
-            Fixture.colorSet(project: .example, path: "Dark", name: "Night")
+            Fixture.colorSet(project: .shared, path: "Dark", name: "Absolute Zero"),
+            Fixture.colorSet(project: .shared, name: "Bisque"),
+            Fixture.colorSet(project: .shared, path: "Dark", name: "Charcoal"),
+            Fixture.colorSet(project: .shared, path: "Dark", name: "dark-olive-green"),
+            Fixture.colorSet(project: .shared, name: "Desire"),
+            Fixture.colorSet(project: .shared, name: "Emerald"),
+            Fixture.colorSet(project: .shared, name: "Empty"),
+            Fixture.colorSet(project: .shared, path: "Dark", name: "firebrick-color"),
+            Fixture.colorSet(project: .shared, name: "Fluorescent/Blizzard Blue"),
+            Fixture.colorSet(project: .shared, name: "Fluorescent/Magic Mint"),
+            Fixture.colorSet(project: .shared, name: "Fluorescent/Radical Red"),
+            Fixture.colorSet(project: .shared, path: "Dark", name: "maroon color"),
+            Fixture.colorSet(project: .shared, path: "Dark", name: "Night")
         ]
         
         var blackboardColors = colorSets

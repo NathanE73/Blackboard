@@ -29,7 +29,7 @@ import XCTest
 class BlackboardDataTests: XCTestCase {
     
     func testLevel001() {
-        guard let dataSet = Fixture.dataSet(project: .example, name: "Level/001") else {
+        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/001") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -41,7 +41,7 @@ class BlackboardDataTests: XCTestCase {
     }
     
     func testLevel002() {
-        guard let dataSet = Fixture.dataSet(project: .example, name: "Level/002") else {
+        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/002") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -53,7 +53,7 @@ class BlackboardDataTests: XCTestCase {
     }
     
     func testNames() {
-        guard let dataSet = Fixture.dataSet(project: .example, name: "Names") else {
+        guard let dataSet = Fixture.dataSet(project: .shared, name: "Names") else {
             XCTFail("Unable to decode image set data")
             return
         }
@@ -65,7 +65,7 @@ class BlackboardDataTests: XCTestCase {
     }
     
     func testWelcomeMessage() {
-        guard let dataSet = Fixture.dataSet(project: .example, name: "Welcome Message") else {
+        guard let dataSet = Fixture.dataSet(project: .shared, name: "Welcome Message") else {
             XCTFail("Unable to decode image set data")
             return
         }

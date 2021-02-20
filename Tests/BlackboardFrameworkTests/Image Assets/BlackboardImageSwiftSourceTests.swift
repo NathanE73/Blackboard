@@ -30,13 +30,13 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
     
     var blackboardImages: [BlackboardImage] {
         let imageSets: [ImageSet?] = [
-            Fixture.imageSet(project: .example, name: "button"),
-            Fixture.imageSet(project: .example, path: "Paper Clips", name: "green-paper-clip"),
-            Fixture.imageSet(project: .example, name: "green-pencil"),
-            Fixture.imageSet(project: .example, name: "Red/cup"),
-            Fixture.imageSet(project: .example, name: "Red/stapler"),
-            Fixture.imageSet(project: .example, path: "Paper Clips", name: "silver-paper-clip"),
-            Fixture.imageSet(project: .example, name: "white-dice")
+            Fixture.imageSet(project: .shared, name: "button"),
+            Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip"),
+            Fixture.imageSet(project: .shared, name: "green-pencil"),
+            Fixture.imageSet(project: .shared, name: "Red/cup"),
+            Fixture.imageSet(project: .shared, name: "Red/stapler"),
+            Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip"),
+            Fixture.imageSet(project: .shared, name: "white-dice")
         ]
         
         var blackboardImages = imageSets
