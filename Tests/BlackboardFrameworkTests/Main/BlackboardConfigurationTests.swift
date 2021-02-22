@@ -27,9 +27,48 @@ import Yams
 
 @testable import BlackboardFramework
 
-class ConfigurationTests: XCTestCase {
+class BlackboardConfigurationTests: XCTestCase {
     
-    func testDecodable() {
+    func testDecodableInput() {
+        let yaml = """
+        input:
+        - Shared/Resources
+        - ExampleApp/Resources
+        """
+        
+        let data = Data(yaml.utf8)
+        
+        do {
+            let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
+            
+            XCTAssertEqual(configuration.input?.count, 2)
+            XCTAssertEqual(configuration.input, [
+                            "Shared/Resources",
+                            "ExampleApp/Resources"])
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDecodableOutput() {
+        let yaml = """
+        output: Source/Generated
+        """
+        
+        let data = Data(yaml.utf8)
+        
+        do {
+            let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
+            
+            XCTAssertEqual(configuration.output, "Source/Generated")
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDecodableSymbols() {
         let yaml = """
         symbols:
         - 14.square.fill
@@ -52,7 +91,7 @@ class ConfigurationTests: XCTestCase {
         let data = Data(yaml.utf8)
         
         do {
-            let configuration = try YAMLDecoder().decode(Configuration.self, from: data)
+            let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
             XCTAssertEqual(configuration.symbols?.count, 15)
             XCTAssertEqual(configuration.symbols, [
@@ -71,6 +110,41 @@ class ConfigurationTests: XCTestCase {
                             "return",
                             "repeat",
                             "repeat.circle"])
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testDecodableSkips() {
+        let yaml = """
+        skip:
+        - colors
+        - data-assets
+        - images
+        - storyboards
+        - swiftui
+        - symbols
+        - uikit
+        - validation
+        """
+        
+        let data = Data(yaml.utf8)
+        
+        do {
+            let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
+            
+            XCTAssertEqual(configuration.skips?.count, 8)
+            XCTAssertEqual(configuration.skips, [
+                .colors,
+                .dataAssets,
+                .images,
+                .storyboards,
+                .swiftui,
+                .symbols,
+                .uikit,
+                .validation
+            ])
         }
         catch {
             XCTFail(error.localizedDescription)

@@ -24,22 +24,25 @@
 
 import Foundation
 
-class BlackboardSymbolFactory {
+enum BlackboardError: Error, CustomStringConvertible {
+    case invalidConfiguration(filename: String)
+    case missingInput
+    case missingOutput
+    case invalidInputDirectory(directory: String)
+    case invalidOutputDirectory(directory: String)
     
-    func symbols(for symbols: Set<String>) -> [BlackboardSymbol] {
-        guard let symbolAvailability = SymbolAvailability.resource else {
-            return []
-        }
-        
-        let symbols = (symbols == ["*"] ? symbolAvailability.knownSymbols : symbols)
-        
-        return symbols.compactMap { symbol -> BlackboardSymbol? in
-            guard let iosAvailable = symbolAvailability.iOSAvailability(for: symbol) else {
-                print("warning: Unknown symbol: \(symbol)")
-                return nil
-            }
-            return BlackboardSymbol(name: symbol, iosAvailable: iosAvailable)
+    var description: String {
+        switch self {
+        case .invalidConfiguration(let filename):
+            return "Error: Unable to process configuration file: \(filename)"
+        case .missingInput:
+            return "Error: Missing expected argument '--input <input> ...'"
+        case .missingOutput:
+            return "Error: Missing expected argument '--output <output>'"
+        case .invalidInputDirectory(let directory):
+            return "Error: No such input directory: \(directory)"
+        case .invalidOutputDirectory(let directory):
+            return "Error: No such output directory: \(directory)"
         }
     }
-
 }

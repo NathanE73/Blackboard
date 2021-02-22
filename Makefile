@@ -43,7 +43,7 @@ get-version:
 set-version:
 	$(eval NEW_VERSION := $(filter-out $@,$(MAKECMDGOALS)))
 	@echo "$(NEW_VERSION)" > "$(VERSION_FILE)"
-	@sed -i '' '/var version/ s/"[^"][^"]*"/"$(NEW_VERSION)"/' Sources/BlackboardFramework/Version.swift
+	@sed -i '' '/var version/ s/"[^"][^"]*"/"$(NEW_VERSION)"/' Sources/BlackboardFramework/Main/BlackboardVersion.swift
 	@sed -i '' '/^[[:blank:]]*s.version/ s/'\''[^'\''][^'\'']*'\''/'\''$(NEW_VERSION)'\''/' Blackboard.podspec
 	@sed -i '' '/badge\/version/ s/version-.*-bright/version-$(NEW_VERSION)-bright/' README.md
 

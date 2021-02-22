@@ -25,23 +25,53 @@
 import Foundation
 import Yams
 
-struct Configuration: Decodable {
-    var symbols: [String]?
+struct BlackboardConfiguration: Decodable {
+    
+    var input: [String]?
+    
+    var output: String?
+    
+    var symbols: Set<String>?
+    
+    var skips: Set<Skip>?
+    
+    enum Skip: String, Decodable {
+        case colors
+        case dataAssets = "data-assets"
+        case images
+        case storyboards
+        case swiftui
+        case symbols
+        case uikit
+        case validation
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case input
+        case output
+        case symbols
+        case skips = "skip"
+    }
+    
 }
 
-extension Configuration {
+extension BlackboardConfiguration {
     
     static var filename = ".blackboard.yml"
     
-    init(path startingPath: String) throws {
+    init?(path startingPath: String) throws {
         let fileManager = FileManager.default
         
         var currentPath = startingPath
         while fileManager.isDirectory(currentPath) {
-            let configurationFile = currentPath.appendingPathComponent(Configuration.filename)
+            let configurationFile = currentPath.appendingPathComponent(BlackboardConfiguration.filename)
             if fileManager.isFile(configurationFile) {
-                self = try Configuration(file: configurationFile)
-                return
+                do {
+                    self = try BlackboardConfiguration(file: configurationFile)
+                    return
+                } catch {
+                    throw BlackboardError.invalidConfiguration(filename: configurationFile)
+                }
             }
             
             let parentPath = currentPath.deletingLastPathComponent
@@ -51,7 +81,7 @@ extension Configuration {
             currentPath = parentPath
         }
         
-        self = Configuration()
+        return nil
     }
     
     init(file: String) throws {

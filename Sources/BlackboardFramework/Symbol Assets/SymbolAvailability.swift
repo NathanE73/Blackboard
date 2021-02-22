@@ -40,8 +40,8 @@ struct SymbolAvailability: Decodable {
 
 extension SymbolAvailability {
     
-    var knownSymbols: [String] {
-        Array(symbols.keys)
+    var knownSymbols: Set<String> {
+        Set(symbols.keys)
     }
     
     func iOSAvailability(for symbol: String) -> String? {

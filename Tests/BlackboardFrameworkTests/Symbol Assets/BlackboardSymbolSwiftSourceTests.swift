@@ -29,7 +29,7 @@ import XCTest
 class BlackboardSymbolSwiftSourceTests: XCTestCase {
     
     var blackboardSymbols: [BlackboardSymbol] {
-        let symbols = [
+        let symbols: Set<String> = [
             "14.square.fill",
             "case",
             "case.fill",

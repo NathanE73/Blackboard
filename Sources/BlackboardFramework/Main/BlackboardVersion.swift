@@ -24,7 +24,7 @@
 
 import Foundation
 
-extension BlackboardMain {
+enum BlackboardVersion {
     
     static var version: String { "9.0.0-rc.1" }
     
