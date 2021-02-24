@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4327E27025DF54BE00F43FEC /* NSDataAsset.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327E26E25DF54BE00F43FEC /* NSDataAsset.blackboard.swift */; };
+		4327E27125DF54BE00F43FEC /* DataAsset.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327E26F25DF54BE00F43FEC /* DataAsset.blackboard.swift */; };
+		4339073B25DF5686009A712E /* Data.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4339073A25DF5686009A712E /* Data.xcassets */; };
+		4365E20525D96E92003E4ABC /* SymbolImage.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365E20225D96E92003E4ABC /* SymbolImage.blackboard.swift */; };
+		4365E20625D96E92003E4ABC /* SymbolUIImage.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365E20325D96E92003E4ABC /* SymbolUIImage.blackboard.swift */; };
+		4365E20725D96E92003E4ABC /* SymbolAsset.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365E20425D96E92003E4ABC /* SymbolAsset.blackboard.swift */; };
 		4377FF4B22F0D89B00E275E5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4377FF4922F0D89B00E275E5 /* Colors.xcassets */; };
 		4377FF4C22F0D89B00E275E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4377FF4A22F0D89B00E275E5 /* Images.xcassets */; };
 		4377FF5822F0DA1700E275E5 /* ColorAsset.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4377FF5022F0DA1600E275E5 /* ColorAsset.blackboard.swift */; };
@@ -25,20 +31,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4377FF4922F0D89B00E275E5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Resources/Colors.xcassets; sourceTree = "<group>"; };
-		4377FF4A22F0D89B00E275E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Resources/Images.xcassets; sourceTree = "<group>"; };
-		4377FF5022F0DA1600E275E5 /* ColorAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorAsset.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/ColorAsset.blackboard.swift; sourceTree = "<group>"; };
-		4377FF5122F0DA1700E275E5 /* UIColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/UIColor.blackboard.swift; sourceTree = "<group>"; };
-		4377FF5222F0DA1700E275E5 /* CGColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGColor.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/CGColor.blackboard.swift; sourceTree = "<group>"; };
-		4377FF5322F0DA1700E275E5 /* ImageAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageAsset.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/ImageAsset.blackboard.swift; sourceTree = "<group>"; };
-		4377FF5422F0DA1700E275E5 /* UIImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/UIImage.blackboard.swift; sourceTree = "<group>"; };
-		4377FF5622F0DA1700E275E5 /* Image.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/Image.blackboard.swift; sourceTree = "<group>"; };
-		4377FF5722F0DA1700E275E5 /* Color.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.blackboard.swift; path = ../../../../../../../../System/Volumes/Data/Users/nate/Documents/xcode/Blackboard/DeclarativeApp/Source/Generated/Color.blackboard.swift; sourceTree = "<group>"; };
+		4327E26E25DF54BE00F43FEC /* NSDataAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataAsset.blackboard.swift; sourceTree = "<group>"; };
+		4327E26F25DF54BE00F43FEC /* DataAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAsset.blackboard.swift; sourceTree = "<group>"; };
+		4339073A25DF5686009A712E /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Data.xcassets; path = ../../Shared/Resources/Data.xcassets; sourceTree = "<group>"; };
+		4365E20225D96E92003E4ABC /* SymbolImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolImage.blackboard.swift; sourceTree = "<group>"; };
+		4365E20325D96E92003E4ABC /* SymbolUIImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolUIImage.blackboard.swift; sourceTree = "<group>"; };
+		4365E20425D96E92003E4ABC /* SymbolAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolAsset.blackboard.swift; sourceTree = "<group>"; };
+		4377FF4922F0D89B00E275E5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../../Shared/Resources/Colors.xcassets; sourceTree = "<group>"; };
+		4377FF4A22F0D89B00E275E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../Shared/Resources/Images.xcassets; sourceTree = "<group>"; };
+		4377FF5022F0DA1600E275E5 /* ColorAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorAsset.blackboard.swift; sourceTree = "<group>"; };
+		4377FF5122F0DA1700E275E5 /* UIColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.blackboard.swift; sourceTree = "<group>"; };
+		4377FF5222F0DA1700E275E5 /* CGColor.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGColor.blackboard.swift; sourceTree = "<group>"; };
+		4377FF5322F0DA1700E275E5 /* ImageAsset.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsset.blackboard.swift; sourceTree = "<group>"; };
+		4377FF5422F0DA1700E275E5 /* UIImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.blackboard.swift; sourceTree = "<group>"; };
+		4377FF5622F0DA1700E275E5 /* Image.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.blackboard.swift; sourceTree = "<group>"; };
+		4377FF5722F0DA1700E275E5 /* Color.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.blackboard.swift; sourceTree = "<group>"; };
 		43B3024822F0CC3100D97542 /* DeclarativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeclarativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B3024B22F0CC3100D97542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43B3024D22F0CC3100D97542 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		43B3024F22F0CC3100D97542 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		43B3025122F0CC3200D97542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43B3025122F0CC3200D97542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Shared/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		43B3025422F0CC3200D97542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43B3025722F0CC3200D97542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43B3025922F0CC3200D97542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +72,7 @@
 			children = (
 				43B3025122F0CC3200D97542 /* Assets.xcassets */,
 				4377FF4922F0D89B00E275E5 /* Colors.xcassets */,
+				4339073A25DF5686009A712E /* Data.xcassets */,
 				4377FF4A22F0D89B00E275E5 /* Images.xcassets */,
 				4377FF4822F0D87C00E275E5 /* Storyboards */,
 			);
@@ -99,8 +112,13 @@
 				4377FF5222F0DA1700E275E5 /* CGColor.blackboard.swift */,
 				4377FF5722F0DA1700E275E5 /* Color.blackboard.swift */,
 				4377FF5022F0DA1600E275E5 /* ColorAsset.blackboard.swift */,
+				4327E26F25DF54BE00F43FEC /* DataAsset.blackboard.swift */,
 				4377FF5622F0DA1700E275E5 /* Image.blackboard.swift */,
 				4377FF5322F0DA1700E275E5 /* ImageAsset.blackboard.swift */,
+				4327E26E25DF54BE00F43FEC /* NSDataAsset.blackboard.swift */,
+				4365E20425D96E92003E4ABC /* SymbolAsset.blackboard.swift */,
+				4365E20225D96E92003E4ABC /* SymbolImage.blackboard.swift */,
+				4365E20325D96E92003E4ABC /* SymbolUIImage.blackboard.swift */,
 				4377FF5122F0DA1700E275E5 /* UIColor.blackboard.swift */,
 				4377FF5422F0DA1700E275E5 /* UIImage.blackboard.swift */,
 			);
@@ -205,6 +223,7 @@
 				43B3025822F0CC3200D97542 /* LaunchScreen.storyboard in Resources */,
 				4377FF4C22F0D89B00E275E5 /* Images.xcassets in Resources */,
 				4377FF4B22F0D89B00E275E5 /* Colors.xcassets in Resources */,
+				4339073B25DF5686009A712E /* Data.xcassets in Resources */,
 				43B3025522F0CC3200D97542 /* Preview Assets.xcassets in Resources */,
 				43B3025222F0CC3200D97542 /* Assets.xcassets in Resources */,
 			);
@@ -229,7 +248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which \"bin/blackboard\" >/dev/null; then\n  \"bin/blackboard\" --input \"DeclarativeApp/Resources/\" --output \"DeclarativeApp/Source/Generated/\"\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
+			shellScript = "if which bin/blackboard >/dev/null; then\n  bin/blackboard --input Shared/Resources/ DeclarativeApp/Resources/ --output DeclarativeApp/Source/Generated/\nelse\n  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\nfi\n";
 		};
 		43A6FE4D250327F60064AFE0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -260,11 +279,16 @@
 				4377FF5E22F0DA1700E275E5 /* Image.blackboard.swift in Sources */,
 				43B3024C22F0CC3100D97542 /* AppDelegate.swift in Sources */,
 				43B3024E22F0CC3100D97542 /* SceneDelegate.swift in Sources */,
+				4365E20525D96E92003E4ABC /* SymbolImage.blackboard.swift in Sources */,
 				4377FF5F22F0DA1700E275E5 /* Color.blackboard.swift in Sources */,
 				4377FF5A22F0DA1700E275E5 /* CGColor.blackboard.swift in Sources */,
+				4365E20625D96E92003E4ABC /* SymbolUIImage.blackboard.swift in Sources */,
 				4377FF5B22F0DA1700E275E5 /* ImageAsset.blackboard.swift in Sources */,
+				4327E27025DF54BE00F43FEC /* NSDataAsset.blackboard.swift in Sources */,
+				4365E20725D96E92003E4ABC /* SymbolAsset.blackboard.swift in Sources */,
 				43B3025022F0CC3100D97542 /* ContentView.swift in Sources */,
 				4377FF5922F0DA1700E275E5 /* UIColor.blackboard.swift in Sources */,
+				4327E27125DF54BE00F43FEC /* DataAsset.blackboard.swift in Sources */,
 				4377FF5C22F0DA1700E275E5 /* UIImage.blackboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

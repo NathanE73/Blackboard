@@ -57,6 +57,7 @@
                                 <action selector="dismiss" destination="IQH-Wi-39e" id="vLb-V5-pzA"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="lasso" catalog="system" id="o6q-OG-ZUV"/>
                     </navigationItem>
                     <connections>
                         <segue destination="W37-RY-jR3" kind="show" identifier="Show Photo" id="A3N-Ti-cUc"/>
@@ -143,6 +144,7 @@
     <color key="tintColor" name="Absolute Zero"/>
     <resources>
         <image name="Red/stapler" width="519" height="343"/>
+        <image name="lasso" catalog="system" width="128" height="118"/>
         <namedColor name="Absolute Zero">
             <color red="0.0" green="0.28200000524520874" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

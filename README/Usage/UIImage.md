@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ImageAsset.blackboard.swift](/ExampleApp/Source/Generated/ImageAsset.blackboard.swift)
+[ImageAsset.blackboard.swift](/ExampleApp/Source/Generated/ImageAsset.blackboard.swift#L9)
 
 ```swift
 public enum ImageAsset: String {
@@ -26,27 +26,23 @@ public enum ImageAsset: String {
 }
 ```
 
-[UIImage.blackboard.swift](/ExampleApp/Source/Generated/UIImage.blackboard.swift)
+[UIImage.blackboard.swift](/ExampleApp/Source/Generated/UIImage.blackboard.swift#L14)
 
 ```swift
 public extension ImageAsset {
-    var image: UIImage { return UIImage(asset: self) }
+    var image: UIImage
 }
 
 public extension UIImage {
+    init(asset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil)
     
-    convenience init(asset imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
-        self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
-    }
-    
-    static var button: UIImage { return UIImage(asset: ImageAsset.button) }
-    static var greenPaperClip: UIImage { return UIImage(asset: ImageAsset.greenPaperClip) }
-    static var greenPencil: UIImage { return UIImage(asset: ImageAsset.greenPencil) }
-    static var redCup: UIImage { return UIImage(asset: ImageAsset.redCup) }
-    static var redStapler: UIImage { return UIImage(asset: ImageAsset.redStapler) }
-    static var silverPaperClip: UIImage { return UIImage(asset: ImageAsset.silverPaperClip) }
-    static var whiteDice: UIImage { return UIImage(asset: ImageAsset.whiteDice) }
-    
+    static var button: UIImage
+    static var greenPaperClip: UIImage
+    static var greenPencil: UIImage
+    static var redCup: UIImage
+    static var redStapler: UIImage
+    static var silverPaperClip: UIImage
+    static var whiteDice: UIImage
 }
 ```
 
@@ -54,10 +50,14 @@ public extension UIImage {
 
 ```swift
 imageView.image = .redStapler
+
+imageView.image = UIImage(asset: .redStapler)
+imageView.image = UIImage(asset: .redStapler, compatibleWith: traitCollection)
 ```
 
 ### The Standard UIKit Way
 
 ```swift
 imageView.image = UIImage(named: "red-stapler")
+imageView.image = UIImage(named: "red-stapler", compatibleWith: traitCollection)
 ```

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4316F36F25DF5767004AAA6A /* Data.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4316F36E25DF5767004AAA6A /* Data.xcassets */; };
 		434AD4DC2277832F00AE99AD /* AccountsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C42277832E00AE99AD /* AccountsNavigationController.swift */; };
 		434AD4DD2277832F00AE99AD /* OpenAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C52277832E00AE99AD /* OpenAccountViewController.swift */; };
 		434AD4DE2277832F00AE99AD /* PhotosNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AD4C62277832E00AE99AD /* PhotosNavigationController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4316F36E25DF5767004AAA6A /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Data.xcassets; path = ../../Shared/Resources/Data.xcassets; sourceTree = "<group>"; };
 		434AD4C42277832E00AE99AD /* AccountsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsNavigationController.swift; sourceTree = "<group>"; };
 		434AD4C52277832E00AE99AD /* OpenAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAccountViewController.swift; sourceTree = "<group>"; };
 		434AD4C62277832E00AE99AD /* PhotosNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosNavigationController.swift; sourceTree = "<group>"; };
@@ -54,9 +56,9 @@
 		434AD4D92277832F00AE99AD /* AccountOverviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountOverviewTableViewCell.swift; sourceTree = "<group>"; };
 		434AD4DA2277832F00AE99AD /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		434AD4DB2277832F00AE99AD /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		434AD4F42277834300AE99AD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		434AD4F62277834300AE99AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		434AD4F72277834300AE99AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		434AD4F42277834300AE99AD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../../Shared/Resources/Colors.xcassets; sourceTree = "<group>"; };
+		434AD4F62277834300AE99AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../Shared/Resources/Images.xcassets; sourceTree = "<group>"; };
+		434AD4F72277834300AE99AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Shared/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		434AD4FE2277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434AD5022277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		434AD5042277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Empty.storyboard; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				434AD4F72277834300AE99AD /* Assets.xcassets */,
 				434AD4F42277834300AE99AD /* Colors.xcassets */,
+				4316F36E25DF5767004AAA6A /* Data.xcassets */,
 				434AD4F62277834300AE99AD /* Images.xcassets */,
 				434AD4FC2277835500AE99AD /* Storyboards */,
 			);
@@ -190,7 +193,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43C249B522777EAB00EA6343 /* Build configuration list for PBXNativeTarget "StandardApp" */;
 			buildPhases = (
-				43387FC722789BDA00EE867A /* Blackboard */,
 				43A6FE4F25032B260064AFE0 /* SwiftLint */,
 				43C2499F22777EAA00EA6343 /* Sources */,
 				43C249A022777EAA00EA6343 /* Frameworks */,
@@ -244,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4316F36F25DF5767004AAA6A /* Data.xcassets in Resources */,
 				434AD4FA2277834300AE99AD /* Images.xcassets in Resources */,
 				434AD50D2277835500AE99AD /* Photo.storyboard in Resources */,
 				434AD50C2277835500AE99AD /* Empty.storyboard in Resources */,
@@ -258,24 +261,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43387FC722789BDA00EE867A /* Blackboard */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Blackboard;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#if which \"bin/blackboard\" >/dev/null; then\n#  \"bin/blackboard\" \"StandardApp/Resources/\" \"StandardApp/Source/Generated/\"\n#else\n#  echo \"warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard\"\n#fi\n";
-		};
 		43A6FE4F25032B260064AFE0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -476,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

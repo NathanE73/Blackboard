@@ -42,8 +42,8 @@ class FooterViewController: UIViewController {
         
         view.backgroundColor = .fluorescentMagicMint
         
-        view.layer.borderWidth = 2
         view.layer.borderColor = .fluorescentBlizzardBlue
+        view.layer.borderWidth = 2
         
         footerLabel.textColor = .fluorescentRadicalRed
     }

@@ -22,6 +22,6 @@
 // THE SOFTWARE.
 //
 
-import Blackboard
+import BlackboardFramework
 
 BlackboardMain.main()

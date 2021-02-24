@@ -1,10 +1,9 @@
 # Blackboard: An iOS Storyboard and Asset Manager
 
-[![Version](https://img.shields.io/badge/version-8.1.1-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-9.0.0-rc.1-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
-[![Swift](https://img.shields.io/badge/swift-4.2-yellow.svg)](https://swift.org)
-[![Swift](https://img.shields.io/badge/swift-5.0-yellow.svg)](https://swift.org)
+[![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://developer.apple.com/ios/)
+[![Swift](https://img.shields.io/badge/swift-5.1-yellow.svg)](https://swift.org)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
 
 ## Purpose
@@ -13,8 +12,9 @@ Blackboard is an iOS Storyboard and Asset Manager written in Swift.
 
 ## Requirements
 
-- iOS 11.0+
-- Xcode 10.0+
+- iOS 13.0+
+- Xcode 11.0+
+- Swift 5.1+
 
 ## Installation
 
@@ -22,6 +22,11 @@ Blackboard is an iOS Storyboard and Asset Manager written in Swift.
 - [SwiftLint](/README/Installation/SwiftLint.md#installation)
 - [CocoaPods](/README/Installation/CocoaPods.md#installation)
 - [Manually](/README/Installation/Manually.md#installation)
+
+## Configuration
+
+- [Command Line](/README/Configuration/README.md#command-line)
+- [Configuration File](/README/Configuration/README.md#configuration-file)
 
 ## Usage
 
@@ -41,6 +46,11 @@ You compare these to see the difference between using and not using Blackboard.
     - [NSDataAsset](/README/Usage/NSDataAsset.md#nsdataasset-usage)
     - [UIColor](/README/Usage/UIColor.md#uicolor-usage)
     - [UIImage](/README/Usage/UIImage.md#uiimage-usage)
+- Symbols
+  - SwiftUI
+    - [Image](/README/Usage/SymbolImage.md#symbol-image-usage)
+  - UIKit
+    - [UIImage](/README/Usage/SymbolUIImage.md#symbol-uiimage-usage)
 - Storyboard Usage
   - Cells
     - [Dequeue Collection View Cell](/README/Usage/UICollectionViewCell.md#dequeue-collection-view-cell-usage)
