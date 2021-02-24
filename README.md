@@ -1,6 +1,6 @@
 # Blackboard: An iOS Storyboard and Asset Manager
 
-[![Version](https://img.shields.io/badge/version-9.0.0-rc.1-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-9.0.0-rc.2-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/swift-5.1-yellow.svg)](https://swift.org)
@@ -70,10 +70,22 @@ When a storyboard is referencing a color or image that is no longer available,
 one of the two following warning messages will be generate:
 
 ### Missing Named Color
-![Missing Named Color Warning](README/Images/WarningMissingNamedColor.png)
+![Missing Named Color Warning](README/Images/StoryboardWarningMissingNamedColor.png)
 
 ### Missing Named Image
-![Missing Named Image Warning](README/Images/WarningMissingNamedImage.png)
+![Missing Named Image Warning](README/Images/StoryboardWarningMissingNamedImage.png)
+
+## Nib Resources Validation
+
+Additionally, Blackboard will also verify that the resources referenced in nib files exist.
+When a nib is referencing a color or image that is no longer available,
+one of the two following warning messages will be generate:
+
+### Missing Named Color
+![Missing Named Color Warning](README/Images/NibWarningMissingNamedColor.png)
+
+### Missing Named Image
+![Missing Named Image Warning](README/Images/NibWarningMissingNamedImage.png)
 
 ## Authors
 

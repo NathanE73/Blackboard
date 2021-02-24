@@ -39,7 +39,9 @@ struct BlackboardConfiguration: Decodable {
         case colors
         case dataAssets = "data-assets"
         case images
+        case nibValidation = "nib-validation"
         case storyboards
+        case storyboardValidation = "storyboard-validation"
         case swiftui
         case symbols
         case uikit

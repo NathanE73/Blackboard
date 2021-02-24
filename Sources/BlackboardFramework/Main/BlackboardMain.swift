@@ -36,7 +36,9 @@ public struct BlackboardMain {
     var skipColors: Bool
     var skipDataAssets: Bool
     var skipImages: Bool
+    var skipNibValidation: Bool
     var skipStoryboards: Bool
+    var skipStoryboardValidation: Bool
     var skipSwiftUI: Bool
     var skipSymbols: Bool
     var skipUIKit: Bool
@@ -63,7 +65,9 @@ public struct BlackboardMain {
         self.skipColors = command.skipColors || skips.contains(.colors)
         self.skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
         self.skipImages = command.skipImages || skips.contains(.images)
+        self.skipNibValidation = command.skipNibValidation || skips.contains(.nibValidation)
         self.skipStoryboards = command.skipStoryboards || skips.contains(.storyboards)
+        self.skipStoryboardValidation = command.skipStoryboardValidation || skips.contains(.storyboardValidation)
         self.skipSwiftUI = command.skipSwiftUI || skips.contains(.swiftui)
         self.skipSymbols = command.skipSymbols || skips.contains(.symbols)
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
@@ -117,6 +121,10 @@ public struct BlackboardMain {
         // Validate Storyboard Resources
         
         valiateStoryboards(storyboards, colorSets, imageSets)
+        
+        // Valiate Nib Resources
+        
+        valiateNibs(input, colorSets, imageSets)
     }
     
     private func processSymbols(_ symbols: Set<String>, _ output: String) {
@@ -268,7 +276,7 @@ public struct BlackboardMain {
     }
     
     func valiateStoryboards(_ storyboards: [Storyboard], _ colorSets: [ColorSet], _ imageSets: [ImageSet]) {
-        guard !skipValidation else { return }
+        guard !skipValidation && !skipStoryboardValidation else { return }
         
         let knownNamedColors = Set(colorSets.map(\.name))
         let knownNamedImages = Set(imageSets.map(\.name))
@@ -286,6 +294,32 @@ public struct BlackboardMain {
                     .subtracting(knownNamedImages)
                     .forEach { missing in
                         print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing image named: '\(missing)'")
+                    }
+            }
+        }
+    }
+    
+    func valiateNibs(_ input: [String], _ colorSets: [ColorSet], _ imageSets: [ImageSet]) {
+        guard !skipValidation && !skipNibValidation else { return }
+        
+        let nibs = Nib.nibsAt(paths: input)
+        
+        let knownNamedColors = Set(colorSets.map(\.name))
+        let knownNamedImages = Set(imageSets.map(\.name))
+        
+        nibs.forEach { nib in
+            if !skipColors {
+                Set(nib.namedColorResources)
+                    .subtracting(knownNamedColors)
+                    .forEach { missing in
+                        print("\(nib.file): warning: '\(nib.name).xib' references missing color named : '\(missing)'")
+                    }
+            }
+            if !skipImages {
+                Set(nib.namedImageResources)
+                    .subtracting(knownNamedImages)
+                    .forEach { missing in
+                        print("\(nib.file): warning: '\(nib.name).xib' references missing image named: '\(missing)'")
                     }
             }
         }

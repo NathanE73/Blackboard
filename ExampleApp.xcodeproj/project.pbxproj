@@ -31,6 +31,7 @@
 		4365E21625DCB7EF003E4ABC /* SymbolImage.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365E21325DCB7EF003E4ABC /* SymbolImage.blackboard.swift */; };
 		4365E21725DCB7EF003E4ABC /* Color.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365E21425DCB7EF003E4ABC /* Color.blackboard.swift */; };
 		4368049A2245AA2200A69FE8 /* UIKit.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436804992245AA2200A69FE8 /* UIKit.blackboard.swift */; };
+		436FA62925E6013100E0599C /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 436FA62125E5FDDF00E0599C /* ExampleView.xib */; };
 		43A2081D239860880073A2B2 /* Data.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A2081C239860880073A2B2 /* Data.xcassets */; };
 		43C2B19C1D01F86A001B08CA /* MainStoryboard.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */; };
 		43C2B19E1D021533001B08CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19D1D021533001B08CA /* MainViewController.swift */; };
@@ -87,6 +88,7 @@
 		4365E21325DCB7EF003E4ABC /* SymbolImage.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolImage.blackboard.swift; sourceTree = "<group>"; };
 		4365E21425DCB7EF003E4ABC /* Color.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.blackboard.swift; sourceTree = "<group>"; };
 		436804992245AA2200A69FE8 /* UIKit.blackboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.blackboard.swift; sourceTree = "<group>"; };
+		436FA62125E5FDDF00E0599C /* ExampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleView.xib; sourceTree = "<group>"; };
 		43A2081C239860880073A2B2 /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Data.xcassets; path = ../../Shared/Resources/Data.xcassets; sourceTree = "<group>"; };
 		43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboard.blackboard.swift; sourceTree = "<group>"; };
 		43C2B19D1D021533001B08CA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		436FA62025E5FDB200E0599C /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				436FA62125E5FDDF00E0599C /* ExampleView.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
 		43C2B1981D01F7AB001B08CA /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,7 @@
 				436292E31F27CEBC0000C651 /* Colors.xcassets */,
 				43A2081C239860880073A2B2 /* Data.xcassets */,
 				4351B62C21E502E5007B4622 /* Images.xcassets */,
+				436FA62025E5FDB200E0599C /* Nibs */,
 				436292E51F27CF6F0000C651 /* Storyboards */,
 			);
 			path = Resources;
@@ -342,6 +353,7 @@
 				433D6D7021E5055C00D8CB37 /* Empty.storyboard in Resources */,
 				4351B62D21E502E5007B4622 /* Images.xcassets in Resources */,
 				432EDCB3223A916900EBB0AF /* Photo.storyboard in Resources */,
+				436FA62925E6013100E0599C /* ExampleView.xib in Resources */,
 				43E9820E2245553D00C0B1B7 /* Supported.storyboard in Resources */,
 				432EDCB2223A916900EBB0AF /* Account.storyboard in Resources */,
 				435E2AFC1D01F600008E1170 /* Main.storyboard in Resources */,
