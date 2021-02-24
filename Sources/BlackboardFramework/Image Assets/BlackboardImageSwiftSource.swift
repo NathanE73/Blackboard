@@ -64,7 +64,7 @@ extension SwiftSource {
             }
             append()
             images.forEach { image in
-                append("static var \(image.functionName): Image { Image(asset: ImageAsset.\(image.caseName)) }")
+                append("static var \(image.functionName): Image { Image(asset: .\(image.caseName)) }")
             }
             append()
         }
@@ -88,7 +88,7 @@ extension SwiftSource {
             }
             append()
             images.forEach { image in
-                append("static var \(image.functionName): UIImage { UIImage(asset: ImageAsset.\(image.caseName)) }")
+                append("static var \(image.functionName): UIImage { UIImage(asset: .\(image.caseName)) }")
             }
             append()
         }

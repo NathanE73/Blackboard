@@ -14,25 +14,25 @@ public extension Image {
     }
     
     @available(iOS 14.0, *)
-    static var caseSymbol: Image { Image(symbol: SymbolAsset.caseSymbol) }
+    static var caseSymbol: Image { Image(symbol: .caseSymbol) }
     @available(iOS 14.0, *)
-    static var caseSymbolFill: Image { Image(symbol: SymbolAsset.caseSymbolFill) }
-    static var chevronDown: Image { Image(symbol: SymbolAsset.chevronDown) }
-    static var chevronUp: Image { Image(symbol: SymbolAsset.chevronUp) }
+    static var caseSymbolFill: Image { Image(symbol: .caseSymbolFill) }
+    static var chevronDown: Image { Image(symbol: .chevronDown) }
+    static var chevronUp: Image { Image(symbol: .chevronUp) }
     @available(iOS 14.0, *)
-    static var dieFace1: Image { Image(symbol: SymbolAsset.dieFace1) }
+    static var dieFace1: Image { Image(symbol: .dieFace1) }
     @available(iOS 14.0, *)
-    static var dieFace4: Image { Image(symbol: SymbolAsset.dieFace4) }
+    static var dieFace4: Image { Image(symbol: .dieFace4) }
     @available(iOS 14.2, *)
-    static var infinityCircleFill: Image { Image(symbol: SymbolAsset.infinityCircleFill) }
-    static var minusCircleFill: Image { Image(symbol: SymbolAsset.minusCircleFill) }
-    static var number14SquareFill: Image { Image(symbol: SymbolAsset.number14SquareFill) }
-    static var person: Image { Image(symbol: SymbolAsset.person) }
-    static var person2: Image { Image(symbol: SymbolAsset.person2) }
-    static var plusCircleFill: Image { Image(symbol: SymbolAsset.plusCircleFill) }
-    static var repeatSymbol: Image { Image(symbol: SymbolAsset.repeatSymbol) }
+    static var infinityCircleFill: Image { Image(symbol: .infinityCircleFill) }
+    static var minusCircleFill: Image { Image(symbol: .minusCircleFill) }
+    static var number14SquareFill: Image { Image(symbol: .number14SquareFill) }
+    static var person: Image { Image(symbol: .person) }
+    static var person2: Image { Image(symbol: .person2) }
+    static var plusCircleFill: Image { Image(symbol: .plusCircleFill) }
+    static var repeatSymbol: Image { Image(symbol: .repeatSymbol) }
     @available(iOS 14.2, *)
-    static var repeatSymbolCircle: Image { Image(symbol: SymbolAsset.repeatSymbolCircle) }
-    static var returnSymbol: Image { Image(symbol: SymbolAsset.returnSymbol) }
+    static var repeatSymbolCircle: Image { Image(symbol: .repeatSymbolCircle) }
+    static var returnSymbol: Image { Image(symbol: .returnSymbol) }
     
 }

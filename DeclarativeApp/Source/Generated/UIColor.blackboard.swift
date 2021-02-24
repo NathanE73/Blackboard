@@ -21,18 +21,18 @@ public extension UIColor {
         self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
-    static var absoluteZero: UIColor { UIColor(asset: ColorAsset.absoluteZero) }
-    static var bisque: UIColor { UIColor(asset: ColorAsset.bisque) }
-    static var charcoal: UIColor { UIColor(asset: ColorAsset.charcoal) }
-    static var darkOliveGreen: UIColor { UIColor(asset: ColorAsset.darkOliveGreen) }
-    static var desire: UIColor { UIColor(asset: ColorAsset.desire) }
-    static var emerald: UIColor { UIColor(asset: ColorAsset.emerald) }
-    static var empty: UIColor { UIColor(asset: ColorAsset.empty) }
-    static var firebrick: UIColor { UIColor(asset: ColorAsset.firebrick) }
-    static var fluorescentBlizzardBlue: UIColor { UIColor(asset: ColorAsset.fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: UIColor { UIColor(asset: ColorAsset.fluorescentMagicMint) }
-    static var fluorescentRadicalRed: UIColor { UIColor(asset: ColorAsset.fluorescentRadicalRed) }
-    static var maroon: UIColor { UIColor(asset: ColorAsset.maroon) }
-    static var night: UIColor { UIColor(asset: ColorAsset.night) }
+    static var absoluteZero: UIColor { UIColor(asset: .absoluteZero) }
+    static var bisque: UIColor { UIColor(asset: .bisque) }
+    static var charcoal: UIColor { UIColor(asset: .charcoal) }
+    static var darkOliveGreen: UIColor { UIColor(asset: .darkOliveGreen) }
+    static var desire: UIColor { UIColor(asset: .desire) }
+    static var emerald: UIColor { UIColor(asset: .emerald) }
+    static var empty: UIColor { UIColor(asset: .empty) }
+    static var firebrick: UIColor { UIColor(asset: .firebrick) }
+    static var fluorescentBlizzardBlue: UIColor { UIColor(asset: .fluorescentBlizzardBlue) }
+    static var fluorescentMagicMint: UIColor { UIColor(asset: .fluorescentMagicMint) }
+    static var fluorescentRadicalRed: UIColor { UIColor(asset: .fluorescentRadicalRed) }
+    static var maroon: UIColor { UIColor(asset: .maroon) }
+    static var night: UIColor { UIColor(asset: .night) }
     
 }

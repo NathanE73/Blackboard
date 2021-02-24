@@ -62,7 +62,7 @@ extension SwiftSource {
                 if symbol.iosAvailable != "13.0" {
                     append("@available(iOS \(symbol.iosAvailable), *)")
                 }
-                append("static var \(symbol.functionName): Image { Image(symbol: SymbolAsset.\(symbol.caseName)) }")
+                append("static var \(symbol.functionName): Image { Image(symbol: .\(symbol.caseName)) }")
             }
             append()
         }
@@ -98,7 +98,7 @@ extension SwiftSource {
                 if symbol.iosAvailable != "13.0" {
                     append("@available(iOS \(symbol.iosAvailable), *)")
                 }
-                append("static var \(symbol.functionName): UIImage { UIImage(symbol: SymbolAsset.\(symbol.caseName)) }")
+                append("static var \(symbol.functionName): UIImage { UIImage(symbol: .\(symbol.caseName)) }")
             }
             append()
         }

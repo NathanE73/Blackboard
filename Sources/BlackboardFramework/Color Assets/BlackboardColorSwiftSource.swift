@@ -56,7 +56,7 @@ extension SwiftSource {
             }
             append()
             colors.forEach { color in
-                append("static var \(color.functionName): Color { Color(asset: ColorAsset.\(color.caseName)) }")
+                append("static var \(color.functionName): Color { Color(asset: .\(color.caseName)) }")
             }
             append()
         }
@@ -98,7 +98,7 @@ extension SwiftSource {
             }
             append()
             colors.forEach { color in
-                append("static var \(color.functionName): UIColor { UIColor(asset: ColorAsset.\(color.caseName)) }")
+                append("static var \(color.functionName): UIColor { UIColor(asset: .\(color.caseName)) }")
             }
             append()
         }
