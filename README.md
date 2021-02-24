@@ -70,10 +70,22 @@ When a storyboard is referencing a color or image that is no longer available,
 one of the two following warning messages will be generate:
 
 ### Missing Named Color
-![Missing Named Color Warning](README/Images/WarningMissingNamedColor.png)
+![Missing Named Color Warning](README/Images/StoryboardWarningMissingNamedColor.png)
 
 ### Missing Named Image
-![Missing Named Image Warning](README/Images/WarningMissingNamedImage.png)
+![Missing Named Image Warning](README/Images/StoryboardWarningMissingNamedImage.png)
+
+## Nib Resources Validation
+
+Additionally, Blackboard will also verify that the resources referenced in nib files exist.
+When a nib is referencing a color or image that is no longer available,
+one of the two following warning messages will be generate:
+
+### Missing Named Color
+![Missing Named Color Warning](README/Images/NibWarningMissingNamedColor.png)
+
+### Missing Named Image
+![Missing Named Image Warning](README/Images/NibWarningMissingNamedImage.png)
 
 ## Authors
 
