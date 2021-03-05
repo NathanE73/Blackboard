@@ -36,10 +36,9 @@ extension BlackboardSymbol {
     init(name: String, iosAvailable: String) {
         self.name = name
         
-        let symbolName = Naming.symbolName(from: name)
-        functionName = Naming.methodName(fromIdentifier: symbolName)
+        functionName = Naming.symbolMethodName(from: name)
         
-        caseName = functionName
+        caseName = Naming.symbolCaseName(from: name)
         
         self.iosAvailable = iosAvailable
     }

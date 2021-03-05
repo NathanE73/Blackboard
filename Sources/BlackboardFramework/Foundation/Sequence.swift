@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2019 Nathan E. Walczak
+// Copyright (c) 2021 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,8 +24,12 @@
 
 import Foundation
 
-enum BlackboardVersion {
+extension Sequence {
     
-    static var version: String { "9.0.0-rc.3" }
+    func sorted<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
+        sorted { lhs, rhs in
+            lhs[keyPath: keyPath] < rhs[keyPath: keyPath]
+        }
+    }
     
 }

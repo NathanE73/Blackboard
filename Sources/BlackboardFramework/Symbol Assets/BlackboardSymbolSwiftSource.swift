@@ -32,7 +32,7 @@ extension SwiftSource {
         appendHeading(filename: Filename.SymbolAsset, modules: ["Foundation"])
         append("@available(iOS 13.0, *)")
         append("public enum SymbolAsset: String") {
-            symbols.forEach { symbol in
+            symbols.sorted(by: \.caseName).forEach { symbol in
                 if symbol.iosAvailable != "13.0" {
                     append("@available(iOS \(symbol.iosAvailable), *)")
                 }
@@ -58,7 +58,7 @@ extension SwiftSource {
                 append("self.init(systemName: symbolAsset.rawValue)")
             }
             append()
-            symbols.forEach { symbol in
+            symbols.sorted(by: \.functionName).forEach { symbol in
                 if symbol.iosAvailable != "13.0" {
                     append("@available(iOS \(symbol.iosAvailable), *)")
                 }
@@ -94,7 +94,7 @@ extension SwiftSource {
                 append("self.init(systemName: symbolAsset.rawValue, compatibleWith: traitCollection)!")
             }
             append()
-            symbols.forEach { symbol in
+            symbols.sorted(by: \.functionName).forEach { symbol in
                 if symbol.iosAvailable != "13.0" {
                     append("@available(iOS \(symbol.iosAvailable), *)")
                 }

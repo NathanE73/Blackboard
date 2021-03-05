@@ -9,9 +9,9 @@ import Foundation
 @available(iOS 13.0, *)
 public enum SymbolAsset: String {
     @available(iOS 14.0, *)
-    case caseSymbol = "case"
+    case caseFill = "case.fill"
     @available(iOS 14.0, *)
-    case caseSymbolFill = "case.fill"
+    case caseSymbol = "case"
     case chevronDown = "chevron.down"
     case chevronUp = "chevron.up"
     @available(iOS 14.0, *)
@@ -25,8 +25,8 @@ public enum SymbolAsset: String {
     case person
     case person2 = "person.2"
     case plusCircleFill = "plus.circle.fill"
-    case repeatSymbol = "repeat"
     @available(iOS 14.2, *)
-    case repeatSymbolCircle = "repeat.circle"
+    case repeatCircle = "repeat.circle"
+    case repeatSymbol = "repeat"
     case returnSymbol = "return"
 }

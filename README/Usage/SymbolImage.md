@@ -35,9 +35,9 @@ symbols:
 @available(iOS 13.0, *)
 public enum SymbolAsset: String {
     @available(iOS 14.0, *)
-    case caseSymbol = "case"
+    case caseFill = "case.fill"
     @available(iOS 14.0, *)
-    case caseSymbolFill = "case.fill"
+    case caseSymbol = "case"
     case chevronDown = "chevron.down"
     case chevronUp = "chevron.up"
     @available(iOS 14.0, *)
@@ -51,9 +51,9 @@ public enum SymbolAsset: String {
     case person
     case person2 = "person.2"
     case plusCircleFill = "plus.circle.fill"
-    case repeatSymbol = "repeat"
     @available(iOS 14.2, *)
-    case repeatSymbolCircle = "repeat.circle"
+    case repeatCircle = "repeat.circle"
+    case repeatSymbol = "repeat"
     case returnSymbol = "return"
 }
 ```
@@ -66,33 +66,33 @@ public extension Image {
     init(symbol: SymbolAsset)
     
     @available(iOS 14.0, *)
-    static var caseSymbol: Image
+    static var symbolCase: Image
     @available(iOS 14.0, *)
-    static var caseSymbolFill: Image
-    static var chevronDown: Image
-    static var chevronUp: Image
+    static var symbolCaseFill: Image
+    static var symbolChevronDown: Image
+    static var symbolChevronUp: Image
     @available(iOS 14.0, *)
-    static var dieFace1: Image
+    static var symbolDieFace1: Image
     @available(iOS 14.0, *)
-    static var dieFace4: Image
+    static var symbolDieFace4: Image
     @available(iOS 14.2, *)
-    static var infinityCircleFill: Image
-    static var minusCircleFill: Image
-    static var number14SquareFill: Image
-    static var person: Image
-    static var person2: Image
-    static var plusCircleFill: Image
-    static var repeatSymbol: Image
+    static var symbolInfinityCircleFill: Image
+    static var symbolMinusCircleFill: Image
+    static var symbolNumber14SquareFill: Image
+    static var symbolPerson: Image
+    static var symbolPerson2: Image
+    static var symbolPlusCircleFill: Image
+    static var symbolRepeat: Image
     @available(iOS 14.2, *)
-    static var repeatSymbolCircle: Image
-    static var returnSymbol: Image    
+    static var symbolRepeatCircle: Image
+    static var symbolReturn: Image
 }
 ```
 
 ### The Blackboard Way
 
 ```swift
-Image.chevronDown
+Image.symbolChevronDown
 
 Image(symbol: .chevronDown)
 ```
