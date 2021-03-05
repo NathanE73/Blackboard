@@ -84,6 +84,7 @@ public struct BlackboardMain {
             try main.run()
         } catch {
             print(error)
+            exit(64)
         }
     }
     
