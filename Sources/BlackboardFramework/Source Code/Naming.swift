@@ -77,14 +77,16 @@ enum Naming {
         return namespaces.joined(separator: "/")
     }
     
-    static func symbolName(from name: String) -> String {
-        var components = name.components(separatedBy: ".")
-        if ["case", "return", "repeat"].contains(components.first) {
-            components.insert("symbol", at: 1)
-            return components.joined(separator: ".")
+    static func symbolCaseName(from name: String) -> String {
+        if ["case", "return", "repeat"].contains(name) {
+            return methodName(fromIdentifier: "\(name).symbol")
         }
         
-        return name
+        return methodName(fromIdentifier: name)
+    }
+    
+    static func symbolMethodName(from name: String) -> String {
+        "symbol" + methodName(fromIdentifier: name).firstCharacterUppercased
     }
     
 }

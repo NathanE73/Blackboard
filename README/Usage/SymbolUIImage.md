@@ -35,9 +35,9 @@ symbols:
 @available(iOS 13.0, *)
 public enum SymbolAsset: String {
     @available(iOS 14.0, *)
-    case caseSymbol = "case"
+    case caseFill = "case.fill"
     @available(iOS 14.0, *)
-    case caseSymbolFill = "case.fill"
+    case caseSymbol = "case"
     case chevronDown = "chevron.down"
     case chevronUp = "chevron.up"
     @available(iOS 14.0, *)
@@ -51,9 +51,9 @@ public enum SymbolAsset: String {
     case person
     case person2 = "person.2"
     case plusCircleFill = "plus.circle.fill"
-    case repeatSymbol = "repeat"
     @available(iOS 14.2, *)
-    case repeatSymbolCircle = "repeat.circle"
+    case repeatCircle = "repeat.circle"
+    case repeatSymbol = "repeat"
     case returnSymbol = "return"
 }
 ```
@@ -73,33 +73,33 @@ public extension UIImage {
     init(symbol: SymbolAsset, compatibleWith traitCollection: UITraitCollection?)
     
     @available(iOS 14.0, *)
-    static var caseSymbol: UIImage
+    static var symbolCase: UIImage
     @available(iOS 14.0, *)
-    static var caseSymbolFill: UIImage
-    static var chevronDown: UIImage
-    static var chevronUp: UIImage
+    static var symbolCaseFill: UIImage
+    static var symbolChevronDown: UIImage
+    static var symbolChevronUp: UIImage
     @available(iOS 14.0, *)
-    static var dieFace1: UIImage
+    static var symbolDieFace1: UIImage
     @available(iOS 14.0, *)
-    static var dieFace4: UIImage
+    static var symbolDieFace4: UIImage
     @available(iOS 14.2, *)
-    static var infinityCircleFill: UIImage
-    static var minusCircleFill: UIImage
-    static var number14SquareFill: UIImage
-    static var person: UIImage
-    static var person2: UIImage
-    static var plusCircleFill: UIImage
-    static var repeatSymbol: UIImage
+    static var symbolInfinityCircleFill: UIImage
+    static var symbolMinusCircleFill: UIImage
+    static var symbolNumber14SquareFill: UIImage
+    static var symbolPerson: UIImage
+    static var symbolPerson2: UIImage
+    static var symbolPlusCircleFill: UIImage
+    static var symbolRepeat: UIImage
     @available(iOS 14.2, *)
-    static var repeatSymbolCircle: UIImage
-    static var returnSymbol: UIImage    
+    static var symbolRepeatCircle: UIImage
+    static var symbolReturn: UIImage
 }
 ```
 
 ### The Blackboard Way
 
 ```swift
-imageView.image = .chevronDown
+imageView.image = .symbolChevronDown
 
 imageView.image = UIImage(symbol: .chevronDown)
 imageView.image = UIImage(symbol: .chevronDown, withConfiguration: configuration)

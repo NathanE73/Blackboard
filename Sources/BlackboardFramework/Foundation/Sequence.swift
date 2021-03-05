@@ -24,23 +24,12 @@
 
 import Foundation
 
-struct BlackboardSymbol {
-    var name: String
-    var functionName: String
-    var caseName: String
-    var iosAvailable: String
-}
-
-extension BlackboardSymbol {
+extension Sequence {
     
-    init(name: String, iosAvailable: String) {
-        self.name = name
-        
-        functionName = Naming.symbolMethodName(from: name)
-        
-        caseName = Naming.symbolCaseName(from: name)
-        
-        self.iosAvailable = iosAvailable
+    func sorted<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
+        sorted { lhs, rhs in
+            lhs[keyPath: keyPath] < rhs[keyPath: keyPath]
+        }
     }
     
 }

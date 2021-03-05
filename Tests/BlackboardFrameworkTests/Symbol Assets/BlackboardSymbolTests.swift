@@ -32,7 +32,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "14.square.fill", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "14.square.fill")
-        XCTAssertEqual(blackboardSymbol.functionName, "number14SquareFill")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolNumber14SquareFill")
         XCTAssertEqual(blackboardSymbol.caseName, "number14SquareFill")
     }
     
@@ -40,7 +40,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "case", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "case")
-        XCTAssertEqual(blackboardSymbol.functionName, "caseSymbol")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolCase")
         XCTAssertEqual(blackboardSymbol.caseName, "caseSymbol")
     }
     
@@ -48,15 +48,15 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "case.fill", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "case.fill")
-        XCTAssertEqual(blackboardSymbol.functionName, "caseSymbolFill")
-        XCTAssertEqual(blackboardSymbol.caseName, "caseSymbolFill")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolCaseFill")
+        XCTAssertEqual(blackboardSymbol.caseName, "caseFill")
     }
     
     func testChevronDown() {
         let blackboardSymbol = BlackboardSymbol(name: "chevron.down", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "chevron.down")
-        XCTAssertEqual(blackboardSymbol.functionName, "chevronDown")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolChevronDown")
         XCTAssertEqual(blackboardSymbol.caseName, "chevronDown")
     }
     
@@ -64,7 +64,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "chevron.up", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "chevron.up")
-        XCTAssertEqual(blackboardSymbol.functionName, "chevronUp")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolChevronUp")
         XCTAssertEqual(blackboardSymbol.caseName, "chevronUp")
     }
     
@@ -72,7 +72,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "die.face.1", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "die.face.1")
-        XCTAssertEqual(blackboardSymbol.functionName, "dieFace1")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolDieFace1")
         XCTAssertEqual(blackboardSymbol.caseName, "dieFace1")
     }
     
@@ -80,7 +80,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "die.face.4", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "die.face.4")
-        XCTAssertEqual(blackboardSymbol.functionName, "dieFace4")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolDieFace4")
         XCTAssertEqual(blackboardSymbol.caseName, "dieFace4")
     }
     
@@ -88,7 +88,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "infinity.circle.fill", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "infinity.circle.fill")
-        XCTAssertEqual(blackboardSymbol.functionName, "infinityCircleFill")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolInfinityCircleFill")
         XCTAssertEqual(blackboardSymbol.caseName, "infinityCircleFill")
     }
     
@@ -96,7 +96,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "minus.circle.fill", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "minus.circle.fill")
-        XCTAssertEqual(blackboardSymbol.functionName, "minusCircleFill")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolMinusCircleFill")
         XCTAssertEqual(blackboardSymbol.caseName, "minusCircleFill")
     }
     
@@ -104,7 +104,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "person", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "person")
-        XCTAssertEqual(blackboardSymbol.functionName, "person")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolPerson")
         XCTAssertEqual(blackboardSymbol.caseName, "person")
     }
     
@@ -112,7 +112,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "person2", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "person2")
-        XCTAssertEqual(blackboardSymbol.functionName, "person2")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolPerson2")
         XCTAssertEqual(blackboardSymbol.caseName, "person2")
     }
     
@@ -120,7 +120,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "plus.circle.fill", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "plus.circle.fill")
-        XCTAssertEqual(blackboardSymbol.functionName, "plusCircleFill")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolPlusCircleFill")
         XCTAssertEqual(blackboardSymbol.caseName, "plusCircleFill")
     }
     
@@ -128,7 +128,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "return", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "return")
-        XCTAssertEqual(blackboardSymbol.functionName, "returnSymbol")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolReturn")
         XCTAssertEqual(blackboardSymbol.caseName, "returnSymbol")
     }
     
@@ -136,7 +136,7 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "repeat", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "repeat")
-        XCTAssertEqual(blackboardSymbol.functionName, "repeatSymbol")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolRepeat")
         XCTAssertEqual(blackboardSymbol.caseName, "repeatSymbol")
     }
     
@@ -144,8 +144,8 @@ class BlackboardSymbolTests: XCTestCase {
         let blackboardSymbol = BlackboardSymbol(name: "repeat.circle", iosAvailable: "*")
         
         XCTAssertEqual(blackboardSymbol.name, "repeat.circle")
-        XCTAssertEqual(blackboardSymbol.functionName, "repeatSymbolCircle")
-        XCTAssertEqual(blackboardSymbol.caseName, "repeatSymbolCircle")
+        XCTAssertEqual(blackboardSymbol.functionName, "symbolRepeatCircle")
+        XCTAssertEqual(blackboardSymbol.caseName, "repeatCircle")
     }
     
 }

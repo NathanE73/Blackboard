@@ -39,6 +39,17 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual(" ABC".firstCharacterLowercased, " ABC")
     }
     
+    func testFirstCharacterUppercased() {
+        XCTAssertEqual("".firstCharacterUppercased, "")
+        
+        XCTAssertEqual("apple".firstCharacterUppercased, "Apple")
+        XCTAssertEqual("appleApple".firstCharacterUppercased, "AppleApple")
+        XCTAssertEqual("abc".firstCharacterUppercased, "Abc")
+        
+        XCTAssertEqual(" Apple".firstCharacterUppercased, " Apple")
+        XCTAssertEqual(" ABC".firstCharacterUppercased, " ABC")
+    }
+    
     func testRemovingSuffix() {
         XCTAssertEqual("".removingSuffix("Cell"), "")
         

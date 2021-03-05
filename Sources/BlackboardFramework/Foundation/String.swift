@@ -30,6 +30,10 @@ extension String {
         prefix(1).lowercased() + dropFirst()
     }
     
+    var firstCharacterUppercased: String {
+        prefix(1).uppercased() + dropFirst()
+    }
+    
     func removingSuffix(_ suffix: String) -> String {
         if hasSuffix(suffix) {
             return String(dropLast(suffix.count))
