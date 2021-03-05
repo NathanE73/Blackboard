@@ -26,6 +26,6 @@ import Foundation
 
 enum BlackboardVersion {
     
-    static var version: String { "9.0.0-rc.2" }
+    static var version: String { "9.0.0-rc.3" }
     
 }
