@@ -42,10 +42,11 @@ get-version:
 
 set-version:
 	$(eval NEW_VERSION := $(filter-out $@,$(MAKECMDGOALS)))
+	$(eval BADGE_VERSION := $(shell echo $(NEW_VERSION) | cut -d '-' -f 1))
 	@echo "$(NEW_VERSION)" > "$(VERSION_FILE)"
 	@sed -i '' '/var version/ s/"[^"][^"]*"/"$(NEW_VERSION)"/' Sources/BlackboardFramework/Main/BlackboardVersion.swift
 	@sed -i '' '/^[[:blank:]]*s.version/ s/'\''[^'\''][^'\'']*'\''/'\''$(NEW_VERSION)'\''/' Blackboard.podspec
-	@sed -i '' '/badge\/version/ s/version-.*-bright/version-$(NEW_VERSION)-bright/' README.md
+	@sed -i '' '/badge\/version/ s/version-.*-bright/version-$(BADGE_VERSION)-bright/' README.md
 
 git-tag:
 ifneq ($(strip $(shell git status --untracked-files=no --porcelain 2>/dev/null)),)
