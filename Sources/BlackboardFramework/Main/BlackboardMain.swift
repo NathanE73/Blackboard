@@ -78,7 +78,12 @@ public struct BlackboardMain {
         do {
             let command = BlackboardCommand.parseOrExit()
             
-            let configuration = try BlackboardConfiguration(path: FileManager.default.currentDirectoryPath)
+            let configuration: BlackboardConfiguration?
+            if let config = command.config {
+                configuration = try BlackboardConfiguration(file: config)
+            } else {
+                configuration = try BlackboardConfiguration(path: FileManager.default.currentDirectoryPath)
+            }
             
             let main = try BlackboardMain(command, configuration)
             try main.run()

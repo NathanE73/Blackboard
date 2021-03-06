@@ -31,6 +31,9 @@ struct BlackboardCommand: ParsableCommand {
         commandName: "blackboard",
         version: BlackboardVersion.version)
     
+    @Option(help: "Configuration file")
+    var config: String?
+    
     @Flag(help: "Skip generating color extensions (Color, CGColor, and UIColor)")
     var skipColors = false
     
