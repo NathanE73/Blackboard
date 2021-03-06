@@ -25,7 +25,7 @@
 import Foundation
 
 enum BlackboardError: Error, CustomStringConvertible {
-    case invalidConfiguration(filename: String)
+    case invalidConfiguration(file: String)
     case missingInput
     case missingOutput
     case invalidInputDirectory(directory: String)
@@ -33,8 +33,8 @@ enum BlackboardError: Error, CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .invalidConfiguration(let filename):
-            return "Error: Unable to process configuration file: \(filename)"
+        case .invalidConfiguration(let file):
+            return "Error: Unable to process configuration file: \(file)"
         case .missingInput:
             return "Error: Missing expected argument '--input <input> ...'"
         case .missingOutput:

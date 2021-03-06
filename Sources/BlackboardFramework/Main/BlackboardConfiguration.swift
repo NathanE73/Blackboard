@@ -68,12 +68,8 @@ extension BlackboardConfiguration {
         while fileManager.isDirectory(currentPath) {
             let configurationFile = currentPath.appendingPathComponent(BlackboardConfiguration.filename)
             if fileManager.isFile(configurationFile) {
-                do {
-                    self = try BlackboardConfiguration(file: configurationFile)
-                    return
-                } catch {
-                    throw BlackboardError.invalidConfiguration(filename: configurationFile)
-                }
+                self = try BlackboardConfiguration(file: configurationFile)
+                return
             }
             
             let parentPath = currentPath.deletingLastPathComponent
@@ -87,10 +83,14 @@ extension BlackboardConfiguration {
     }
     
     init(file: String) throws {
-        let url = URL(fileURLWithPath: file)
-        let data = try Data(contentsOf: url)
-        
-        self = try YAMLDecoder().decode(Self.self, from: data)
+        do {
+            let url = URL(fileURLWithPath: file)
+            let data = try Data(contentsOf: url)
+            
+            self = try YAMLDecoder().decode(Self.self, from: data)
+        } catch {
+            throw BlackboardError.invalidConfiguration(file: file)
+        }
     }
     
 }

@@ -4,9 +4,10 @@
 
 ```
 % blackboard --help
-USAGE: blackboard [--skip-colors] [--skip-data-assets] [--skip-images] [--skip-storyboards] [--skip-swiftui] [--skip-symbols] [--skip-uikit] [--skip-validation] [--input <input> ...] [--output <output>]
+USAGE: blackboard <options>
 
 OPTIONS:
+  --config <config>       Configuration file
   --skip-colors           Skip generating color extensions (Color, CGColor, and UIColor)
   --skip-data-assets      Skip generating data asset extensions (NSDataAsset)
   --skip-images           Skip generating image extensions (Image, UIImage)

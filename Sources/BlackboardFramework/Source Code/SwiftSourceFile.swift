@@ -49,6 +49,7 @@ class SwiftSourceFile: SwiftSource {
             try source.write(to: url, atomically: true, encoding: .utf8)
         } catch {
             print("error: Failed to write: \(filename)")
+            exit(1)
         }
     }
     

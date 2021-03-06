@@ -31,6 +31,8 @@ class BlackboardCommandTests: XCTestCase {
     func testZeroArguments() {
         let arguments = BlackboardCommand.parseOrExit([])
         
+        XCTAssertNil(arguments.config)
+        
         XCTAssertFalse(arguments.skipColors)
         XCTAssertFalse(arguments.skipDataAssets)
         XCTAssertFalse(arguments.skipImages)
@@ -44,6 +46,15 @@ class BlackboardCommandTests: XCTestCase {
         
         XCTAssertEqual(arguments.input, [])
         XCTAssertNil(arguments.output)
+    }
+    
+    func testConfig() {
+        let arguments = BlackboardCommand.parseOrExit([
+            "--config",
+            "env/.blackboard.yml"
+        ])
+        
+        XCTAssertEqual(arguments.config, "env/.blackboard.yml")
     }
     
     func testSkips() {
