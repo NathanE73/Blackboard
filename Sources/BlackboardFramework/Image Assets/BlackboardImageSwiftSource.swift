@@ -70,6 +70,20 @@ extension SwiftSource {
         }
         append()
         
+        append("@available(iOS 14.0, *)")
+        append("public extension Label where Title == Text, Icon == Image") {
+            append()
+            append("init(_ titleKey: LocalizedStringKey, image imageAsset: ImageAsset)") {
+                append("self.init(titleKey, image: imageAsset.rawValue)")
+            }
+            append()
+            append("init<S>(_ title: S, image imageAsset: ImageAsset) where S: StringProtocol") {
+                append("self.init(title, image: imageAsset.rawValue)")
+            }
+            append()
+        }
+        append()
+        
         return self
     }
     
