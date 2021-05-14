@@ -36,3 +36,16 @@ public extension Image {
     static var symbolReturn: Image { Image(symbol: .returnSymbol) }
     
 }
+
+@available(iOS 14.0, *)
+public extension Label where Title == Text, Icon == Image {
+    
+    init(_ titleKey: LocalizedStringKey, systemImage symbolAsset: SymbolAsset) {
+        self.init(titleKey, systemImage: symbolAsset.rawValue)
+    }
+    
+    init<S>(_ title: S, systemImage symbolAsset: SymbolAsset) where S: StringProtocol {
+        self.init(title, systemImage: symbolAsset.rawValue)
+    }
+    
+}

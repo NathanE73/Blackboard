@@ -292,7 +292,7 @@ public struct BlackboardMain {
                 Set(storyboard.namedColorResources)
                     .subtracting(knownNamedColors)
                     .forEach { missing in
-                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing color named : '\(missing)'")
+                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing color named: '\(missing)'")
                     }
             }
             if !skipImages {
@@ -318,7 +318,7 @@ public struct BlackboardMain {
                 Set(nib.namedColorResources)
                     .subtracting(knownNamedColors)
                     .forEach { missing in
-                        print("\(nib.file): warning: '\(nib.name).xib' references missing color named : '\(missing)'")
+                        print("\(nib.file): warning: '\(nib.name).xib' references missing color named: '\(missing)'")
                     }
             }
             if !skipImages {

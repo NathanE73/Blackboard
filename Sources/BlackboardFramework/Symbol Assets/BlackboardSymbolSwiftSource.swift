@@ -47,6 +47,7 @@ extension SwiftSource {
         
         return self
     }
+    
     // MARK: Symbol Image
     
     func appendSymbolImages(symbols: [BlackboardSymbol]) -> Self {
@@ -68,7 +69,22 @@ extension SwiftSource {
         }
         append()
         
-        return self    }
+        append("@available(iOS 14.0, *)")
+        append("public extension Label where Title == Text, Icon == Image") {
+            append()
+            append("init(_ titleKey: LocalizedStringKey, systemImage symbolAsset: SymbolAsset)") {
+                append("self.init(titleKey, systemImage: symbolAsset.rawValue)")
+            }
+            append()
+            append("init<S>(_ title: S, systemImage symbolAsset: SymbolAsset) where S: StringProtocol") {
+                append("self.init(title, systemImage: symbolAsset.rawValue)")
+            }
+            append()
+        }
+        append()
+        
+        return self
+    }
     
     // MARK: Symbol UIImage
     

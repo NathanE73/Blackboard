@@ -35,3 +35,16 @@ public extension Image {
     static var whiteDice: Image { Image(asset: .whiteDice) }
     
 }
+
+@available(iOS 14.0, *)
+public extension Label where Title == Text, Icon == Image {
+    
+    init(_ titleKey: LocalizedStringKey, image imageAsset: ImageAsset) {
+        self.init(titleKey, image: imageAsset.rawValue)
+    }
+    
+    init<S>(_ title: S, image imageAsset: ImageAsset) where S: StringProtocol {
+        self.init(title, image: imageAsset.rawValue)
+    }
+    
+}
