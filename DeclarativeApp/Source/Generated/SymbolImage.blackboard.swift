@@ -40,11 +40,11 @@ public extension Image {
 @available(iOS 14.0, *)
 public extension Label where Title == Text, Icon == Image {
     
-    init(_ titleKey: LocalizedStringKey, systemImage symbolAsset: SymbolAsset) {
+    init(_ titleKey: LocalizedStringKey, symbol symbolAsset: SymbolAsset) {
         self.init(titleKey, systemImage: symbolAsset.rawValue)
     }
     
-    init<S>(_ title: S, systemImage symbolAsset: SymbolAsset) where S: StringProtocol {
+    init<S>(_ title: S, symbol symbolAsset: SymbolAsset) where S: StringProtocol {
         self.init(title, systemImage: symbolAsset.rawValue)
     }
     
