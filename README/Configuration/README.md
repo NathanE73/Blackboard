@@ -11,6 +11,7 @@ OPTIONS:
   --skip-colors           Skip generating color extensions (Color, CGColor, and UIColor)
   --skip-data-assets      Skip generating data asset extensions (NSDataAsset)
   --skip-images           Skip generating image extensions (Image, UIImage)
+  --skip-localizable      Skip generating localizable string support (Localizable)
   --skip-nib-validation   Skip validation of nib resource references
   --skip-storyboards      Skip generating storyboard extensions (UIStoryboard)
   --skip-storyboard-validation
@@ -77,6 +78,7 @@ skip:
 - colors
 - data-assets
 - images
+- localizable
 - nib-validation
 - storyboards
 - storyboard-validation

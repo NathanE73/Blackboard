@@ -43,6 +43,9 @@ struct BlackboardCommand: ParsableCommand {
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
     var skipImages = false
     
+    @Flag(help: "Skip generating localizable string support (Localizable)")
+    var skipLocalizable = false
+    
     @Flag(help: "Skip validation of nib resource references")
     var skipNibValidation = false
     

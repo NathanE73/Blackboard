@@ -42,6 +42,7 @@ public struct BlackboardMain {
     var skipColors: Bool
     var skipDataAssets: Bool
     var skipImages: Bool
+    var skipLocalizable: Bool
     var skipNibValidation: Bool
     var skipStoryboards: Bool
     var skipStoryboardValidation: Bool
@@ -76,6 +77,7 @@ public struct BlackboardMain {
         self.skipColors = command.skipColors || skips.contains(.colors)
         self.skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
         self.skipImages = command.skipImages || skips.contains(.images)
+        self.skipLocalizable = command.skipLocalizable || skips.contains(.localizable)
         self.skipNibValidation = command.skipNibValidation || skips.contains(.nibValidation)
         self.skipStoryboards = command.skipStoryboards || skips.contains(.storyboards)
         self.skipStoryboardValidation = command.skipStoryboardValidation || skips.contains(.storyboardValidation)
