@@ -33,3 +33,22 @@ public extension Color {
     static var night: Color { Color(asset: .night) }
     
 }
+
+@available(iOS 13.0, *)
+public extension ShapeStyle where Self == Color {
+    
+    static var absoluteZero: Color { Color(asset: .absoluteZero) }
+    static var bisque: Color { Color(asset: .bisque) }
+    static var charcoal: Color { Color(asset: .charcoal) }
+    static var darkOliveGreen: Color { Color(asset: .darkOliveGreen) }
+    static var desire: Color { Color(asset: .desire) }
+    static var emerald: Color { Color(asset: .emerald) }
+    static var empty: Color { Color(asset: .empty) }
+    static var firebrick: Color { Color(asset: .firebrick) }
+    static var fluorescentBlizzardBlue: Color { Color(asset: .fluorescentBlizzardBlue) }
+    static var fluorescentMagicMint: Color { Color(asset: .fluorescentMagicMint) }
+    static var fluorescentRadicalRed: Color { Color(asset: .fluorescentRadicalRed) }
+    static var maroon: Color { Color(asset: .maroon) }
+    static var night: Color { Color(asset: .night) }
+    
+}

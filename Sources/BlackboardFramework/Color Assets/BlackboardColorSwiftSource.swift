@@ -61,6 +61,15 @@ extension SwiftSource {
             append()
         }
         append()
+        append("@available(iOS 13.0, *)")
+        append("public extension ShapeStyle where Self == Color") {
+            append()
+            colors.forEach { color in
+                append("static var \(color.functionName): Color { Color(asset: .\(color.caseName)) }")
+            }
+            append()
+        }
+        append()
         
         return self
     }
