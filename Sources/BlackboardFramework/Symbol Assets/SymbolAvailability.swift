@@ -32,7 +32,7 @@ struct SymbolAvailability: Decodable {
         case symbols
         case yearToRelease = "year_to_release"
     }
-
+    
     struct YearToRelease: Decodable {
         var iOS: String
     }
@@ -50,6 +50,23 @@ extension SymbolAvailability {
             return nil
         }
         return yearToRelease.iOS
+    }
+    
+    var variantSymbols: [String: SymbolVariants] {
+        knownSymbols.reduce([String: SymbolVariants]()) { dict, symbol in
+            let symbolComponents = SymbolComponents(name: symbol)
+            let baseName = symbolComponents.baseName
+            
+            var dict = dict
+            var symbolVariants = dict[baseName] ?? SymbolVariants()
+            symbolVariants.symbols.append(symbolComponents)
+            dict[baseName] = symbolVariants
+            return dict
+        }.values.reduce([String: SymbolVariants]()) { dict, symbolVariants in
+            var dict = dict
+            dict[symbolVariants.baseName] = symbolVariants
+            return dict
+        }
     }
     
     static var resourcePath: String? {

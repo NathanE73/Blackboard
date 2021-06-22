@@ -55,4 +55,37 @@ class SymbolAvailabilityTests: XCTestCase {
         XCTAssertEqual(availability.yearToRelease["2021"]?.iOS, "15.0")
     }
     
+    func testSymbolGrouping() throws {
+        let file = #filePath
+            .deletingLastPathComponent // SymbolAvailabilityTests.swift
+            .deletingLastPathComponent // Symbol Assets
+            .deletingLastPathComponent // BlackboardFrameworkTests
+            .deletingLastPathComponent // Tests
+            .appendingPathComponent("README")
+            .appendingPathComponent("Symbols.md")
+        
+        let availability = try XCTUnwrap(SymbolAvailability.resource)
+        
+        let variantSymbols = availability.variantSymbols
+        
+        var text = ""
+        
+        variantSymbols.values.sorted(by: \.baseName)
+            .forEach { variantSymbols in
+                let symbols = variantSymbols.symbols.sorted().names
+                if symbols.count == 1, let symbolName = symbols.first {
+                    text.append("\(symbolName)\n")
+                } else {
+                    text.append("\(variantSymbols.baseName)\n")
+                    symbols.forEach { symbol in
+                        text.append("- \(symbol)\n")
+                    }
+                }
+                text.append("\n")
+            }
+        
+        try text.write(toFile: file, atomically: true, encoding: .utf8)
+    }
+    
 }
+
