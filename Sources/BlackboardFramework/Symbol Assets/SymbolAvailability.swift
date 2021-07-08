@@ -40,35 +40,6 @@ struct SymbolAvailability: Decodable {
 
 extension SymbolAvailability {
     
-    var knownSymbols: Set<String> {
-        Set(symbols.keys)
-    }
-    
-    func iOSAvailability(for symbol: String) -> String? {
-        guard let year = symbols[symbol],
-              let yearToRelease = yearToRelease[year] else {
-            return nil
-        }
-        return yearToRelease.iOS
-    }
-    
-    var variantSymbols: [String: SymbolVariants] {
-        knownSymbols.reduce([String: SymbolVariants]()) { dict, symbol in
-            let symbolComponents = SymbolComponents(name: symbol)
-            let baseName = symbolComponents.baseName
-            
-            var dict = dict
-            var symbolVariants = dict[baseName] ?? SymbolVariants()
-            symbolVariants.symbols.append(symbolComponents)
-            dict[baseName] = symbolVariants
-            return dict
-        }.values.reduce([String: SymbolVariants]()) { dict, symbolVariants in
-            var dict = dict
-            dict[symbolVariants.baseName] = symbolVariants
-            return dict
-        }
-    }
-    
     static var resourcePath: String? {
         Bundle.module.path(forResource: "name_availability",
                            ofType: "plist",

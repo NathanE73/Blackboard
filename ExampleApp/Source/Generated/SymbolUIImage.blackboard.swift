@@ -26,10 +26,14 @@ public extension UIImage {
         self.init(systemName: symbolAsset.rawValue, compatibleWith: traitCollection)!
     }
     
+    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
+    static var symbolABookClosed: UIImage { UIImage(symbol: .aBookClosed) }
     @available(iOS 14.0, *)
     static var symbolCase: UIImage { UIImage(symbol: .caseSymbol) }
     @available(iOS 14.0, *)
     static var symbolCaseFill: UIImage { UIImage(symbol: .caseFill) }
+    @available(iOS 14.2, *)
+    static var symbolCharacterBookClosed: UIImage { UIImage(symbol: .characterBookClosed) }
     static var symbolChevronDown: UIImage { UIImage(symbol: .chevronDown) }
     static var symbolChevronUp: UIImage { UIImage(symbol: .chevronUp) }
     @available(iOS 14.0, *)

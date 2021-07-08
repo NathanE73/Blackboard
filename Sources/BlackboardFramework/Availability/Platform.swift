@@ -24,23 +24,10 @@
 
 import Foundation
 
-struct BlackboardSymbol {
-    var name: String
-    var functionName: String
-    var caseName: String
-    var iOSAvailability: Availability
+enum Platform: String {
+    case iOS
 }
 
-extension BlackboardSymbol {
-    
-    init(name: String, iOSAvailability: Availability) {
-        self.name = name
-        
-        functionName = Naming.symbolMethodName(from: name)
-        
-        caseName = Naming.symbolCaseName(from: name)
-        
-        self.iOSAvailability = iOSAvailability
-    }
-    
+extension Platform: CustomStringConvertible {
+    var description: String { rawValue }
 }

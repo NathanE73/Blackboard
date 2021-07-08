@@ -27,19 +27,19 @@ import Foundation
 class BlackboardSymbolFactory {
     
     func symbols(for symbols: Set<String>) -> [BlackboardSymbol] {
-        guard let symbolAvailability = SymbolAvailability.resource else {
+        guard let symbolKnowledge = SymbolKnowledge() else {
             return []
         }
         
-        let symbols = (symbols == ["*"] ? symbolAvailability.knownSymbols : symbols)
+        let symbols = (symbols == ["*"] ? symbolKnowledge.knownSymbols : symbols)
         
         return symbols.compactMap { symbol -> BlackboardSymbol? in
-            guard let iosAvailable = symbolAvailability.iOSAvailability(for: symbol) else {
+            guard let iOSAvailability = symbolKnowledge.iOSAvailability(for: symbol) else {
                 print("warning: Unknown symbol: \(symbol)")
                 return nil
             }
-            return BlackboardSymbol(name: symbol, iosAvailable: iosAvailable)
+            return BlackboardSymbol(name: symbol, iOSAvailability: iOSAvailability)
         }
     }
-
+    
 }

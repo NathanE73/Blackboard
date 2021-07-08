@@ -24,23 +24,38 @@
 
 import Foundation
 
-struct BlackboardSymbol {
-    var name: String
-    var functionName: String
-    var caseName: String
-    var iOSAvailability: Availability
+struct SymbolAliases {
+    var symbols: [String: String]
 }
 
-extension BlackboardSymbol {
+extension SymbolAliases {
     
-    init(name: String, iOSAvailability: Availability) {
-        self.name = name
+    static var resourcePath: String? {
+        Bundle.module.path(forResource: "name_aliases_strings",
+                           ofType: "txt",
+                           inDirectory: "symbols")
+    }
+    
+    static var resource: SymbolAliases? {
+        guard let resourcePath = resourcePath else {
+            print("error: Failed to locate symbol name aliases resource")
+            return nil
+        }
         
-        functionName = Naming.symbolMethodName(from: name)
+        guard let data = NSDictionary(contentsOfFile: resourcePath) else {
+            print("error: Failed to read symbol name aliases resource")
+            return nil
+        }
         
-        caseName = Naming.symbolCaseName(from: name)
+        var symbols: [String: String] = [:]
         
-        self.iOSAvailability = iOSAvailability
+        data.forEach { key, value in
+            if let key = key as? String, let value = value as? String {
+                symbols[key] = value
+            }
+        }
+        
+        return SymbolAliases(symbols: symbols)
     }
     
 }

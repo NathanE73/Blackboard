@@ -24,23 +24,17 @@
 
 import Foundation
 
-struct BlackboardSymbol {
-    var name: String
-    var functionName: String
-    var caseName: String
-    var iOSAvailability: Availability
-}
-
-extension BlackboardSymbol {
+extension SwiftSource {
     
-    init(name: String, iOSAvailability: Availability) {
-        self.name = name
-        
-        functionName = Naming.symbolMethodName(from: name)
-        
-        caseName = Naming.symbolCaseName(from: name)
-        
-        self.iOSAvailability = iOSAvailability
+    func appendAvailability(_ availability: Availability, target: String? = nil) {
+        switch availability {
+        case let .available(platform, version):
+            guard version != target else { return }
+            append("@available(\(platform) \(version), *)")
+        case let .renamed(platform, introduced, deprecated, renamed):
+            let renamed = Naming.symbolCaseName(from: renamed)
+            append("@available(\(platform), introduced: \(introduced), deprecated: \(deprecated), renamed: \"\(renamed)\")")
+        }
     }
     
 }

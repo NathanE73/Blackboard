@@ -1,6186 +1,7031 @@
 ### 0
-- 0.circle
-- 0.circle.fill
-- 0.square
-- 0.square.fill
+- 0.circle (iOS 13.0)
+- 0.circle.fill (iOS 13.0)
+- 0.square (iOS 13.0)
+- 0.square.fill (iOS 13.0)
 
 ### 00
-- 00.circle
-- 00.circle.fill
-- 00.square
-- 00.square.fill
+- 00.circle (iOS 13.0)
+- 00.circle.fill (iOS 13.0)
+- 00.square (iOS 13.0)
+- 00.square.fill (iOS 13.0)
 
 ### 01
-- 01.circle
-- 01.circle.fill
-- 01.square
-- 01.square.fill
+- 01.circle (iOS 13.0)
+- 01.circle.fill (iOS 13.0)
+- 01.square (iOS 13.0)
+- 01.square.fill (iOS 13.0)
 
 ### 02
-- 02.circle
-- 02.circle.fill
-- 02.square
-- 02.square.fill
+- 02.circle (iOS 13.0)
+- 02.circle.fill (iOS 13.0)
+- 02.square (iOS 13.0)
+- 02.square.fill (iOS 13.0)
 
 ### 03
-- 03.circle
-- 03.circle.fill
-- 03.square
-- 03.square.fill
+- 03.circle (iOS 13.0)
+- 03.circle.fill (iOS 13.0)
+- 03.square (iOS 13.0)
+- 03.square.fill (iOS 13.0)
 
 ### 04
-- 04.circle
-- 04.circle.fill
-- 04.square
-- 04.square.fill
+- 04.circle (iOS 13.0)
+- 04.circle.fill (iOS 13.0)
+- 04.square (iOS 13.0)
+- 04.square.fill (iOS 13.0)
 
 ### 05
-- 05.circle
-- 05.circle.fill
-- 05.square
-- 05.square.fill
+- 05.circle (iOS 13.0)
+- 05.circle.fill (iOS 13.0)
+- 05.square (iOS 13.0)
+- 05.square.fill (iOS 13.0)
 
 ### 06
-- 06.circle
-- 06.circle.fill
-- 06.square
-- 06.square.fill
+- 06.circle (iOS 13.0)
+- 06.circle.fill (iOS 13.0)
+- 06.square (iOS 13.0)
+- 06.square.fill (iOS 13.0)
 
 ### 07
-- 07.circle
-- 07.circle.fill
-- 07.square
-- 07.square.fill
+- 07.circle (iOS 13.0)
+- 07.circle.fill (iOS 13.0)
+- 07.square (iOS 13.0)
+- 07.square.fill (iOS 13.0)
 
 ### 08
-- 08.circle
-- 08.circle.fill
-- 08.square
-- 08.square.fill
+- 08.circle (iOS 13.0)
+- 08.circle.fill (iOS 13.0)
+- 08.square (iOS 13.0)
+- 08.square.fill (iOS 13.0)
 
 ### 09
-- 09.circle
-- 09.circle.fill
-- 09.square
-- 09.square.fill
+- 09.circle (iOS 13.0)
+- 09.circle.fill (iOS 13.0)
+- 09.square (iOS 13.0)
+- 09.square.fill (iOS 13.0)
 
 ### 1
-- 1.circle
-- 1.circle.fill
-- 1.square
-- 1.square.fill
+- 1.circle (iOS 13.0)
+- 1.circle.fill (iOS 13.0)
+- 1.square (iOS 13.0)
+- 1.square.fill (iOS 13.0)
 
 ### 1.magnifyingglass
-- 1.magnifyingglass
-- 1.magnifyingglass.ar
-- 1.magnifyingglass.hi
+- 1.magnifyingglass (iOS 13.0)
+- 1.magnifyingglass.ar (iOS 14.0)
+- 1.magnifyingglass.hi (iOS 15.0)
 
 ### 10
-- 10.circle
-- 10.circle.fill
-- 10.square
-- 10.square.fill
+- 10.circle (iOS 13.0)
+- 10.circle.fill (iOS 13.0)
+- 10.square (iOS 13.0)
+- 10.square.fill (iOS 13.0)
 
 ### 11
-- 11.circle
-- 11.circle.fill
-- 11.square
-- 11.square.fill
+- 11.circle (iOS 13.0)
+- 11.circle.fill (iOS 13.0)
+- 11.square (iOS 13.0)
+- 11.square.fill (iOS 13.0)
 
 ### 12
-- 12.circle
-- 12.circle.fill
-- 12.square
-- 12.square.fill
+- 12.circle (iOS 13.0)
+- 12.circle.fill (iOS 13.0)
+- 12.square (iOS 13.0)
+- 12.square.fill (iOS 13.0)
 
 ### 123.rectangle
-- 123.rectangle
-- 123.rectangle.ar
-- 123.rectangle.fill
-- 123.rectangle.fill.ar
+- 123.rectangle (iOS 15.0)
+- 123.rectangle.ar (iOS 15.0)
+- 123.rectangle.fill (iOS 15.0)
+- 123.rectangle.fill.ar (iOS 15.0)
 
 ### 13
-- 13.circle
-- 13.circle.fill
-- 13.square
-- 13.square.fill
+- 13.circle (iOS 13.0)
+- 13.circle.fill (iOS 13.0)
+- 13.square (iOS 13.0)
+- 13.square.fill (iOS 13.0)
 
 ### 14
-- 14.circle
-- 14.circle.fill
-- 14.square
-- 14.square.fill
+- 14.circle (iOS 13.0)
+- 14.circle.fill (iOS 13.0)
+- 14.square (iOS 13.0)
+- 14.square.fill (iOS 13.0)
 
 ### 15
-- 15.circle
-- 15.circle.fill
-- 15.square
-- 15.square.fill
+- 15.circle (iOS 13.0)
+- 15.circle.fill (iOS 13.0)
+- 15.square (iOS 13.0)
+- 15.square.fill (iOS 13.0)
 
 ### 16
-- 16.circle
-- 16.circle.fill
-- 16.square
-- 16.square.fill
+- 16.circle (iOS 13.0)
+- 16.circle.fill (iOS 13.0)
+- 16.square (iOS 13.0)
+- 16.square.fill (iOS 13.0)
 
 ### 17
-- 17.circle
-- 17.circle.fill
-- 17.square
-- 17.square.fill
+- 17.circle (iOS 13.0)
+- 17.circle.fill (iOS 13.0)
+- 17.square (iOS 13.0)
+- 17.square.fill (iOS 13.0)
 
 ### 18
-- 18.circle
-- 18.circle.fill
-- 18.square
-- 18.square.fill
+- 18.circle (iOS 13.0)
+- 18.circle.fill (iOS 13.0)
+- 18.square (iOS 13.0)
+- 18.square.fill (iOS 13.0)
 
 ### 19
-- 19.circle
-- 19.circle.fill
-- 19.square
-- 19.square.fill
+- 19.circle (iOS 13.0)
+- 19.circle.fill (iOS 13.0)
+- 19.square (iOS 13.0)
+- 19.square.fill (iOS 13.0)
 
 ### 2
-- 2.circle
-- 2.circle.fill
-- 2.square
-- 2.square.fill
+- 2.circle (iOS 13.0)
+- 2.circle.fill (iOS 13.0)
+- 2.square (iOS 13.0)
+- 2.square.fill (iOS 13.0)
 
 ### 20
-- 20.circle
-- 20.circle.fill
-- 20.square
-- 20.square.fill
+- 20.circle (iOS 13.0)
+- 20.circle.fill (iOS 13.0)
+- 20.square (iOS 13.0)
+- 20.square.fill (iOS 13.0)
 
 ### 21
-- 21.circle
-- 21.circle.fill
-- 21.square
-- 21.square.fill
+- 21.circle (iOS 13.0)
+- 21.circle.fill (iOS 13.0)
+- 21.square (iOS 13.0)
+- 21.square.fill (iOS 13.0)
 
 ### 22
-- 22.circle
-- 22.circle.fill
-- 22.square
-- 22.square.fill
+- 22.circle (iOS 13.0)
+- 22.circle.fill (iOS 13.0)
+- 22.square (iOS 13.0)
+- 22.square.fill (iOS 13.0)
 
 ### 23
-- 23.circle
-- 23.circle.fill
-- 23.square
-- 23.square.fill
+- 23.circle (iOS 13.0)
+- 23.circle.fill (iOS 13.0)
+- 23.square (iOS 13.0)
+- 23.square.fill (iOS 13.0)
 
 ### 24
-- 24.circle
-- 24.circle.fill
-- 24.square
-- 24.square.fill
+- 24.circle (iOS 13.0)
+- 24.circle.fill (iOS 13.0)
+- 24.square (iOS 13.0)
+- 24.square.fill (iOS 13.0)
 
 ### 25
-- 25.circle
-- 25.circle.fill
-- 25.square
-- 25.square.fill
+- 25.circle (iOS 13.0)
+- 25.circle.fill (iOS 13.0)
+- 25.square (iOS 13.0)
+- 25.square.fill (iOS 13.0)
 
 ### 26
-- 26.circle
-- 26.circle.fill
-- 26.square
-- 26.square.fill
+- 26.circle (iOS 13.0)
+- 26.circle.fill (iOS 13.0)
+- 26.square (iOS 13.0)
+- 26.square.fill (iOS 13.0)
 
 ### 27
-- 27.circle
-- 27.circle.fill
-- 27.square
-- 27.square.fill
+- 27.circle (iOS 13.0)
+- 27.circle.fill (iOS 13.0)
+- 27.square (iOS 13.0)
+- 27.square.fill (iOS 13.0)
 
 ### 28
-- 28.circle
-- 28.circle.fill
-- 28.square
-- 28.square.fill
+- 28.circle (iOS 13.0)
+- 28.circle.fill (iOS 13.0)
+- 28.square (iOS 13.0)
+- 28.square.fill (iOS 13.0)
 
 ### 29
-- 29.circle
-- 29.circle.fill
-- 29.square
-- 29.square.fill
+- 29.circle (iOS 13.0)
+- 29.circle.fill (iOS 13.0)
+- 29.square (iOS 13.0)
+- 29.square.fill (iOS 13.0)
 
 ### 3
-- 3.circle
-- 3.circle.fill
-- 3.square
-- 3.square.fill
+- 3.circle (iOS 13.0)
+- 3.circle.fill (iOS 13.0)
+- 3.square (iOS 13.0)
+- 3.square.fill (iOS 13.0)
 
 ### 30
-- 30.circle
-- 30.circle.fill
-- 30.square
-- 30.square.fill
+- 30.circle (iOS 13.0)
+- 30.circle.fill (iOS 13.0)
+- 30.square (iOS 13.0)
+- 30.square.fill (iOS 13.0)
 
 ### 31
-- 31.circle
-- 31.circle.fill
-- 31.square
-- 31.square.fill
+- 31.circle (iOS 13.0)
+- 31.circle.fill (iOS 13.0)
+- 31.square (iOS 13.0)
+- 31.square.fill (iOS 13.0)
 
 ### 32
-- 32.circle
-- 32.circle.fill
-- 32.square
-- 32.square.fill
+- 32.circle (iOS 13.0)
+- 32.circle.fill (iOS 13.0)
+- 32.square (iOS 13.0)
+- 32.square.fill (iOS 13.0)
 
 ### 33
-- 33.circle
-- 33.circle.fill
-- 33.square
-- 33.square.fill
+- 33.circle (iOS 13.0)
+- 33.circle.fill (iOS 13.0)
+- 33.square (iOS 13.0)
+- 33.square.fill (iOS 13.0)
 
 ### 34
-- 34.circle
-- 34.circle.fill
-- 34.square
-- 34.square.fill
+- 34.circle (iOS 13.0)
+- 34.circle.fill (iOS 13.0)
+- 34.square (iOS 13.0)
+- 34.square.fill (iOS 13.0)
 
 ### 35
-- 35.circle
-- 35.circle.fill
-- 35.square
-- 35.square.fill
+- 35.circle (iOS 13.0)
+- 35.circle.fill (iOS 13.0)
+- 35.square (iOS 13.0)
+- 35.square.fill (iOS 13.0)
 
 ### 36
-- 36.circle
-- 36.circle.fill
-- 36.square
-- 36.square.fill
+- 36.circle (iOS 13.0)
+- 36.circle.fill (iOS 13.0)
+- 36.square (iOS 13.0)
+- 36.square.fill (iOS 13.0)
 
 ### 37
-- 37.circle
-- 37.circle.fill
-- 37.square
-- 37.square.fill
+- 37.circle (iOS 13.0)
+- 37.circle.fill (iOS 13.0)
+- 37.square (iOS 13.0)
+- 37.square.fill (iOS 13.0)
 
 ### 38
-- 38.circle
-- 38.circle.fill
-- 38.square
-- 38.square.fill
+- 38.circle (iOS 13.0)
+- 38.circle.fill (iOS 13.0)
+- 38.square (iOS 13.0)
+- 38.square.fill (iOS 13.0)
 
 ### 39
-- 39.circle
-- 39.circle.fill
-- 39.square
-- 39.square.fill
+- 39.circle (iOS 13.0)
+- 39.circle.fill (iOS 13.0)
+- 39.square (iOS 13.0)
+- 39.square.fill (iOS 13.0)
 
 ### 4
-- 4.circle
-- 4.circle.fill
-- 4.square
-- 4.square.fill
+- 4.circle (iOS 13.0)
+- 4.circle.fill (iOS 13.0)
+- 4.square (iOS 13.0)
+- 4.square.fill (iOS 13.0)
 
 ### 4.alt
-- 4.alt.circle
-- 4.alt.circle.fill
-- 4.alt.square
-- 4.alt.square.fill
+- 4.alt.circle (iOS 13.0)
+- 4.alt.circle.fill (iOS 13.0)
+- 4.alt.square (iOS 13.0)
+- 4.alt.square.fill (iOS 13.0)
 
 ### 40
-- 40.circle
-- 40.circle.fill
-- 40.square
-- 40.square.fill
+- 40.circle (iOS 13.0)
+- 40.circle.fill (iOS 13.0)
+- 40.square (iOS 13.0)
+- 40.square.fill (iOS 13.0)
 
 ### 41
-- 41.circle
-- 41.circle.fill
-- 41.square
-- 41.square.fill
+- 41.circle (iOS 13.0)
+- 41.circle.fill (iOS 13.0)
+- 41.square (iOS 13.0)
+- 41.square.fill (iOS 13.0)
 
 ### 42
-- 42.circle
-- 42.circle.fill
-- 42.square
-- 42.square.fill
+- 42.circle (iOS 13.0)
+- 42.circle.fill (iOS 13.0)
+- 42.square (iOS 13.0)
+- 42.square.fill (iOS 13.0)
 
 ### 43
-- 43.circle
-- 43.circle.fill
-- 43.square
-- 43.square.fill
+- 43.circle (iOS 13.0)
+- 43.circle.fill (iOS 13.0)
+- 43.square (iOS 13.0)
+- 43.square.fill (iOS 13.0)
 
 ### 44
-- 44.circle
-- 44.circle.fill
-- 44.square
-- 44.square.fill
+- 44.circle (iOS 13.0)
+- 44.circle.fill (iOS 13.0)
+- 44.square (iOS 13.0)
+- 44.square.fill (iOS 13.0)
 
 ### 45
-- 45.circle
-- 45.circle.fill
-- 45.square
-- 45.square.fill
+- 45.circle (iOS 13.0)
+- 45.circle.fill (iOS 13.0)
+- 45.square (iOS 13.0)
+- 45.square.fill (iOS 13.0)
 
 ### 46
-- 46.circle
-- 46.circle.fill
-- 46.square
-- 46.square.fill
+- 46.circle (iOS 13.0)
+- 46.circle.fill (iOS 13.0)
+- 46.square (iOS 13.0)
+- 46.square.fill (iOS 13.0)
 
 ### 47
-- 47.circle
-- 47.circle.fill
-- 47.square
-- 47.square.fill
+- 47.circle (iOS 13.0)
+- 47.circle.fill (iOS 13.0)
+- 47.square (iOS 13.0)
+- 47.square.fill (iOS 13.0)
 
 ### 48
-- 48.circle
-- 48.circle.fill
-- 48.square
-- 48.square.fill
+- 48.circle (iOS 13.0)
+- 48.circle.fill (iOS 13.0)
+- 48.square (iOS 13.0)
+- 48.square.fill (iOS 13.0)
 
 ### 49
-- 49.circle
-- 49.circle.fill
-- 49.square
-- 49.square.fill
+- 49.circle (iOS 13.0)
+- 49.circle.fill (iOS 13.0)
+- 49.square (iOS 13.0)
+- 49.square.fill (iOS 13.0)
 
 ### 4k.tv
-- 4k.tv
-- 4k.tv.fill
+- 4k.tv (iOS 14.0)
+- 4k.tv.fill (iOS 14.0)
 
 ### 5
-- 5.circle
-- 5.circle.fill
-- 5.square
-- 5.square.fill
+- 5.circle (iOS 13.0)
+- 5.circle.fill (iOS 13.0)
+- 5.square (iOS 13.0)
+- 5.square.fill (iOS 13.0)
 
 ### 50
-- 50.circle
-- 50.circle.fill
-- 50.square
-- 50.square.fill
+- 50.circle (iOS 13.0)
+- 50.circle.fill (iOS 13.0)
+- 50.square (iOS 13.0)
+- 50.square.fill (iOS 13.0)
 
 ### 6
-- 6.circle
-- 6.circle.fill
-- 6.square
-- 6.square.fill
+- 6.circle (iOS 13.0)
+- 6.circle.fill (iOS 13.0)
+- 6.square (iOS 13.0)
+- 6.square.fill (iOS 13.0)
 
 ### 6.alt
-- 6.alt.circle
-- 6.alt.circle.fill
-- 6.alt.square
-- 6.alt.square.fill
+- 6.alt.circle (iOS 13.0)
+- 6.alt.circle.fill (iOS 13.0)
+- 6.alt.square (iOS 13.0)
+- 6.alt.square.fill (iOS 13.0)
 
 ### 7
-- 7.circle
-- 7.circle.fill
-- 7.square
-- 7.square.fill
+- 7.circle (iOS 13.0)
+- 7.circle.fill (iOS 13.0)
+- 7.square (iOS 13.0)
+- 7.square.fill (iOS 13.0)
 
 ### 8
-- 8.circle
-- 8.circle.fill
-- 8.square
-- 8.square.fill
+- 8.circle (iOS 13.0)
+- 8.circle.fill (iOS 13.0)
+- 8.square (iOS 13.0)
+- 8.square.fill (iOS 13.0)
 
 ### 9
-- 9.circle
-- 9.circle.fill
-- 9.square
-- 9.square.fill
+- 9.circle (iOS 13.0)
+- 9.circle.fill (iOS 13.0)
+- 9.square (iOS 13.0)
+- 9.square.fill (iOS 13.0)
 
 ### 9.alt
-- 9.alt.circle
-- 9.alt.circle.fill
-- 9.alt.square
-- 9.alt.square.fill
+- 9.alt.circle (iOS 13.0)
+- 9.alt.circle.fill (iOS 13.0)
+- 9.alt.square (iOS 13.0)
+- 9.alt.square.fill (iOS 13.0)
 
 ### a
-- a
-- a.circle
-- a.circle.fill
-- a.square
-- a.square.fill
+- a (iOS, introduced: 13.0, deprecated: 14.2, renamed: [character](#character))
+- a.circle (iOS 13.0)
+- a.circle.fill (iOS 13.0)
+- a.square (iOS 13.0)
+- a.square.fill (iOS 13.0)
 
 ### a.book.closed
-- a.book.closed
-- a.book.closed.ar
-- a.book.closed.he
-- a.book.closed.hi
-- a.book.closed.ja
-- a.book.closed.ko
-- a.book.closed.th
-- a.book.closed.zh
-- a.book.closed.fill
-- a.book.closed.fill.ar
-- a.book.closed.fill.he
-- a.book.closed.fill.hi
-- a.book.closed.fill.ja
-- a.book.closed.fill.ko
-- a.book.closed.fill.th
-- a.book.closed.fill.zh
+- a.book.closed (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed](#characterbookclosed))
+- a.book.closed.ar (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.ar](#characterbookclosed))
+- a.book.closed.he (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.he](#characterbookclosed))
+- a.book.closed.hi (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.hi](#characterbookclosed))
+- a.book.closed.ja (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.ja](#characterbookclosed))
+- a.book.closed.ko (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.ko](#characterbookclosed))
+- a.book.closed.th (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.th](#characterbookclosed))
+- a.book.closed.zh (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.zh](#characterbookclosed))
+- a.book.closed.fill (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill](#characterbookclosed))
+- a.book.closed.fill.ar (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill.ar](#characterbookclosed))
+- a.book.closed.fill.he (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill.he](#characterbookclosed))
+- a.book.closed.fill.hi (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill.hi](#characterbookclosed))
+- a.book.closed.fill.ja (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill.ja](#characterbookclosed))
+- a.book.closed.fill.ko (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill.ko](#characterbookclosed))
+- a.book.closed.fill.th (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill.th](#characterbookclosed))
+- a.book.closed.fill.zh (iOS, introduced: 14.0, deprecated: 14.2, renamed: [character.book.closed.fill.zh](#characterbookclosed))
 
 ### a.magnify
+ (iOS 14.0)
 
 ### abc
+ (iOS 14.0)
 
 ### airplane
-- airplane
-- airplane.circle
-- airplane.circle.fill
+- airplane (iOS 13.0)
+- airplane.circle (iOS 14.0)
+- airplane.circle.fill (iOS 14.0)
 
 ### airplane.arrival
+ (iOS 15.0)
 
 ### airplane.departure
+ (iOS 15.0)
 
 ### airplayaudio
-- airplayaudio
-- airplayaudio.circle
-- airplayaudio.circle.fill
+- airplayaudio (iOS 13.0)
+- airplayaudio.circle (iOS 15.0)
+- airplayaudio.circle.fill (iOS 15.0)
 
 ### airplayaudio.badge.exclamationmark
+ (iOS 15.0)
 
 ### airplayvideo
-- airplayvideo
-- airplayvideo.circle
-- airplayvideo.circle.fill
+- airplayvideo (iOS 13.0)
+- airplayvideo.circle (iOS 15.0)
+- airplayvideo.circle.fill (iOS 15.0)
 
 ### airplayvideo.badge.exclamationmark
+ (iOS 15.0)
 
 ### airpod.left
+ (iOS 14.0)
 
 ### airpod.right
+ (iOS 14.0)
 
 ### airpodpro.left
+ (iOS 14.0)
 
 ### airpodpro.right
+ (iOS 14.0)
 
 ### airpods
+ (iOS 14.0)
 
 ### airpods.chargingcase
-- airpods.chargingcase
-- airpods.chargingcase.fill
+- airpods.chargingcase (iOS 15.0)
+- airpods.chargingcase.fill (iOS 15.0)
 
 ### airpods.chargingcase.wireless
-- airpods.chargingcase.wireless
-- airpods.chargingcase.wireless.fill
+- airpods.chargingcase.wireless (iOS 15.0)
+- airpods.chargingcase.wireless.fill (iOS 15.0)
 
 ### airpodsmax
+ (iOS 14.5)
 
 ### airpodspro
+ (iOS 14.0)
 
 ### airpodspro.chargingcase.wireless
-- airpodspro.chargingcase.wireless
-- airpodspro.chargingcase.wireless.fill
+- airpodspro.chargingcase.wireless (iOS 15.0)
+- airpodspro.chargingcase.wireless.fill (iOS 15.0)
 
 ### airport.express
+ (iOS 14.0)
 
 ### airport.extreme
+ (iOS 14.0)
 
 ### airport.extreme.tower
+ (iOS 14.0)
 
 ### alarm
-- alarm
-- alarm.fill
+- alarm (iOS 13.0)
+- alarm.fill (iOS 13.0)
 
 ### allergens
+ (iOS 15.0)
 
 ### alt
+ (iOS 13.0)
 
 ### amplifier
+ (iOS 14.0)
 
 ### ant
-- ant
-- ant.fill
-- ant.circle
-- ant.circle.fill
+- ant (iOS 13.0)
+- ant.fill (iOS 13.0)
+- ant.circle (iOS 13.0)
+- ant.circle.fill (iOS 13.0)
 
 ### antenna.radiowaves.left.and.right
-- antenna.radiowaves.left.and.right
-- antenna.radiowaves.left.and.right.circle
-- antenna.radiowaves.left.and.right.circle.fill
+- antenna.radiowaves.left.and.right (iOS 13.0)
+- antenna.radiowaves.left.and.right.circle (iOS 15.0)
+- antenna.radiowaves.left.and.right.circle.fill (iOS 15.0)
 
 ### app
-- app
-- app.fill
+- app (iOS 13.0)
+- app.fill (iOS 13.0)
 
 ### app.badge
-- app.badge
-- app.badge.fill
+- app.badge (iOS 13.0)
+- app.badge.fill (iOS 13.0)
 
 ### app.badge.checkmark
-- app.badge.checkmark
-- app.badge.checkmark.fill
+- app.badge.checkmark (iOS 15.0)
+- app.badge.checkmark.fill (iOS 15.0)
 
 ### app.connected.to.app.below.fill
+ (iOS 15.0)
 
 ### app.dashed
+ (iOS 15.0)
 
 ### app.gift
-- app.gift
-- app.gift.fill
+- app.gift (iOS 13.0)
+- app.gift.fill (iOS 13.0)
 
 ### appclip
+ (iOS 14.0)
 
 ### applelogo
+ (iOS 14.0)
 
 ### applepencil
+ (iOS 15.0)
 
 ### applescript
-- applescript
-- applescript.fill
+- applescript (iOS 14.0)
+- applescript.fill (iOS 14.0)
 
 ### appletv
-- appletv
-- appletv.fill
+- appletv (iOS 14.0)
+- appletv.fill (iOS 14.0)
 
 ### appletvremote.gen1
-- appletvremote.gen1
-- appletvremote.gen1.fill
+- appletvremote.gen1 (iOS 15.0)
+- appletvremote.gen1.fill (iOS 15.0)
 
 ### appletvremote.gen2
-- appletvremote.gen2
-- appletvremote.gen2.fill
+- appletvremote.gen2 (iOS 15.0)
+- appletvremote.gen2.fill (iOS 15.0)
 
 ### appletvremote.gen3
-- appletvremote.gen3
-- appletvremote.gen3.fill
+- appletvremote.gen3 (iOS 15.0)
+- appletvremote.gen3.fill (iOS 15.0)
 
 ### appletvremote.gen4
-- appletvremote.gen4
-- appletvremote.gen4.fill
+- appletvremote.gen4 (iOS 15.0)
+- appletvremote.gen4.fill (iOS 15.0)
 
 ### applewatch
-- applewatch
-- applewatch.slash
+- applewatch (iOS 14.0)
+- applewatch.slash (iOS 14.0)
 
 ### applewatch.radiowaves.left.and.right
+ (iOS 14.0)
 
 ### applewatch.side.right
+ (iOS 14.5)
 
 ### applewatch.watchface
+ (iOS 14.0)
 
 ### apps.ipad
+ (iOS 14.0)
 
 ### apps.ipad.landscape
+ (iOS 14.0)
 
 ### apps.iphone
+ (iOS 14.0)
 
 ### apps.iphone.badge.plus
+ (iOS 14.0)
 
 ### apps.iphone.landscape
-- apps.iphone.landscape
-- apps.iphone.landscape.rtl
+- apps.iphone.landscape (iOS 14.0)
+- apps.iphone.landscape.rtl (iOS 14.0)
 
 ### aqi.high
+ (iOS 14.2)
 
 ### aqi.low
+ (iOS 14.2)
 
 ### aqi.medium
+ (iOS 14.2)
 
 ### archivebox
-- archivebox
-- archivebox.fill
-- archivebox.circle
-- archivebox.circle.fill
+- archivebox (iOS 13.0)
+- archivebox.fill (iOS 13.0)
+- archivebox.circle (iOS 14.0)
+- archivebox.circle.fill (iOS 14.0)
 
 ### arkit
+ (iOS 13.0)
 
 ### arkit.badge.xmark
+ (iOS 15.0)
 
 ### arrow.2.circlepath
-- arrow.2.circlepath
-- arrow.2.circlepath.circle
-- arrow.2.circlepath.circle.fill
+- arrow.2.circlepath (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.2.circlepath](#arrowtriangle2circlepath))
+- arrow.2.circlepath.circle (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.2.circlepath.circle](#arrowtriangle2circlepath))
+- arrow.2.circlepath.circle.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.2.circlepath.circle.fill](#arrowtriangle2circlepath))
 
 ### arrow.2.squarepath
+ (iOS 13.0)
 
 ### arrow.3.trianglepath
+ (iOS 13.0)
 
 ### arrow.backward
-- arrow.backward
-- arrow.backward.circle
-- arrow.backward.circle.fill
-- arrow.backward.square
-- arrow.backward.square.fill
+- arrow.backward (iOS 14.0)
+- arrow.backward.circle (iOS 14.0)
+- arrow.backward.circle.fill (iOS 14.0)
+- arrow.backward.square (iOS 14.0)
+- arrow.backward.square.fill (iOS 14.0)
 
 ### arrow.backward.to.line
-- arrow.backward.to.line
-- arrow.backward.to.line.circle
-- arrow.backward.to.line.circle.fill
+- arrow.backward.to.line (iOS 15.0)
+- arrow.backward.to.line.circle (iOS 15.0)
+- arrow.backward.to.line.circle.fill (iOS 15.0)
 
 ### arrow.branch
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.branch](#arrowtrianglebranch))
 
 ### arrow.clockwise
-- arrow.clockwise
-- arrow.clockwise.circle
-- arrow.clockwise.circle.fill
+- arrow.clockwise (iOS 13.0)
+- arrow.clockwise.circle (iOS 13.0)
+- arrow.clockwise.circle.fill (iOS 13.0)
 
 ### arrow.clockwise.heart
-- arrow.clockwise.heart
-- arrow.clockwise.heart.fill
+- arrow.clockwise.heart (iOS 14.0)
+- arrow.clockwise.heart.fill (iOS 14.0)
 
 ### arrow.clockwise.icloud
-- arrow.clockwise.icloud
-- arrow.clockwise.icloud.fill
+- arrow.clockwise.icloud (iOS 13.0)
+- arrow.clockwise.icloud.fill (iOS 13.0)
 
 ### arrow.counterclockwise
-- arrow.counterclockwise
-- arrow.counterclockwise.circle
-- arrow.counterclockwise.circle.fill
+- arrow.counterclockwise (iOS 13.0)
+- arrow.counterclockwise.circle (iOS 13.0)
+- arrow.counterclockwise.circle.fill (iOS 13.0)
 
 ### arrow.counterclockwise.icloud
-- arrow.counterclockwise.icloud
-- arrow.counterclockwise.icloud.fill
+- arrow.counterclockwise.icloud (iOS 13.0)
+- arrow.counterclockwise.icloud.fill (iOS 13.0)
 
 ### arrow.down
-- arrow.down
-- arrow.down.circle
-- arrow.down.circle.fill
-- arrow.down.square
-- arrow.down.square.fill
+- arrow.down (iOS 13.0)
+- arrow.down.circle (iOS 13.0)
+- arrow.down.circle.fill (iOS 13.0)
+- arrow.down.square (iOS 13.0)
+- arrow.down.square.fill (iOS 13.0)
 
 ### arrow.down.app
-- arrow.down.app
-- arrow.down.app.fill
+- arrow.down.app (iOS 14.0)
+- arrow.down.app.fill (iOS 14.0)
 
 ### arrow.down.backward
-- arrow.down.backward
-- arrow.down.backward.circle
-- arrow.down.backward.circle.fill
-- arrow.down.backward.square
-- arrow.down.backward.square.fill
+- arrow.down.backward (iOS 14.0)
+- arrow.down.backward.circle (iOS 14.0)
+- arrow.down.backward.circle.fill (iOS 14.0)
+- arrow.down.backward.square (iOS 14.0)
+- arrow.down.backward.square.fill (iOS 14.0)
 
 ### arrow.down.doc
-- arrow.down.doc
-- arrow.down.doc.fill
+- arrow.down.doc (iOS 13.0)
+- arrow.down.doc.fill (iOS 13.0)
 
 ### arrow.down.forward
-- arrow.down.forward
-- arrow.down.forward.circle
-- arrow.down.forward.circle.fill
-- arrow.down.forward.square
-- arrow.down.forward.square.fill
+- arrow.down.forward (iOS 14.0)
+- arrow.down.forward.circle (iOS 14.0)
+- arrow.down.forward.circle.fill (iOS 14.0)
+- arrow.down.forward.square (iOS 14.0)
+- arrow.down.forward.square.fill (iOS 14.0)
 
 ### arrow.down.forward.and.arrow.up.backward
-- arrow.down.forward.and.arrow.up.backward
-- arrow.down.forward.and.arrow.up.backward.circle
-- arrow.down.forward.and.arrow.up.backward.circle.fill
+- arrow.down.forward.and.arrow.up.backward (iOS 14.0)
+- arrow.down.forward.and.arrow.up.backward.circle (iOS 14.0)
+- arrow.down.forward.and.arrow.up.backward.circle.fill (iOS 14.0)
 
 ### arrow.down.heart
-- arrow.down.heart
-- arrow.down.heart.fill
+- arrow.down.heart (iOS 14.0)
+- arrow.down.heart.fill (iOS 14.0)
 
 ### arrow.down.left
-- arrow.down.left
-- arrow.down.left.circle
-- arrow.down.left.circle.fill
-- arrow.down.left.square
-- arrow.down.left.square.fill
+- arrow.down.left (iOS 13.0)
+- arrow.down.left.circle (iOS 13.0)
+- arrow.down.left.circle.fill (iOS 13.0)
+- arrow.down.left.square (iOS 13.0)
+- arrow.down.left.square.fill (iOS 13.0)
 
 ### arrow.down.left.video
-- arrow.down.left.video
-- arrow.down.left.video.fill
+- arrow.down.left.video (iOS 13.0)
+- arrow.down.left.video.fill (iOS 13.0)
 
 ### arrow.down.right
-- arrow.down.right
-- arrow.down.right.circle
-- arrow.down.right.circle.fill
-- arrow.down.right.square
-- arrow.down.right.square.fill
+- arrow.down.right (iOS 13.0)
+- arrow.down.right.circle (iOS 13.0)
+- arrow.down.right.circle.fill (iOS 13.0)
+- arrow.down.right.square (iOS 13.0)
+- arrow.down.right.square.fill (iOS 13.0)
 
 ### arrow.down.right.and.arrow.up.left
-- arrow.down.right.and.arrow.up.left
-- arrow.down.right.and.arrow.up.left.circle
-- arrow.down.right.and.arrow.up.left.circle.fill
+- arrow.down.right.and.arrow.up.left (iOS 13.0)
+- arrow.down.right.and.arrow.up.left.circle (iOS 14.0)
+- arrow.down.right.and.arrow.up.left.circle.fill (iOS 14.0)
 
 ### arrow.down.to.line
-- arrow.down.to.line
-- arrow.down.to.line.circle
-- arrow.down.to.line.circle.fill
+- arrow.down.to.line (iOS 13.0)
+- arrow.down.to.line.circle (iOS 15.0)
+- arrow.down.to.line.circle.fill (iOS 15.0)
 
 ### arrow.down.to.line.alt
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [arrow.down.to.line.compact](#arrowdowntolinecompact))
 
 ### arrow.down.to.line.compact
+ (iOS 15.0)
 
 ### arrow.forward
-- arrow.forward
-- arrow.forward.circle
-- arrow.forward.circle.fill
-- arrow.forward.square
-- arrow.forward.square.fill
+- arrow.forward (iOS 14.0)
+- arrow.forward.circle (iOS 14.0)
+- arrow.forward.circle.fill (iOS 14.0)
+- arrow.forward.square (iOS 14.0)
+- arrow.forward.square.fill (iOS 14.0)
 
 ### arrow.forward.to.line
-- arrow.forward.to.line
-- arrow.forward.to.line.circle
-- arrow.forward.to.line.circle.fill
+- arrow.forward.to.line (iOS 15.0)
+- arrow.forward.to.line.circle (iOS 15.0)
+- arrow.forward.to.line.circle.fill (iOS 15.0)
 
 ### arrow.left
-- arrow.left
-- arrow.left.circle
-- arrow.left.circle.fill
-- arrow.left.square
-- arrow.left.square.fill
+- arrow.left (iOS 13.0)
+- arrow.left.circle (iOS 13.0)
+- arrow.left.circle.fill (iOS 13.0)
+- arrow.left.square (iOS 13.0)
+- arrow.left.square.fill (iOS 13.0)
 
 ### arrow.left.and.right
-- arrow.left.and.right
-- arrow.left.and.right.circle
-- arrow.left.and.right.circle.fill
-- arrow.left.and.right.square
-- arrow.left.and.right.square.fill
+- arrow.left.and.right (iOS 13.0)
+- arrow.left.and.right.circle (iOS 13.0)
+- arrow.left.and.right.circle.fill (iOS 13.0)
+- arrow.left.and.right.square (iOS 13.0)
+- arrow.left.and.right.square.fill (iOS 13.0)
 
 ### arrow.left.and.right.righttriangle.left.righttriangle.right
-- arrow.left.and.right.righttriangle.left.righttriangle.right
-- arrow.left.and.right.righttriangle.left.righttriangle.right.fill
+- arrow.left.and.right.righttriangle.left.righttriangle.right (iOS 14.0)
+- arrow.left.and.right.righttriangle.left.righttriangle.right.fill (iOS 14.0)
 
 ### arrow.left.arrow.right
-- arrow.left.arrow.right
-- arrow.left.arrow.right.circle
-- arrow.left.arrow.right.circle.fill
-- arrow.left.arrow.right.square
-- arrow.left.arrow.right.square.fill
+- arrow.left.arrow.right (iOS 14.0)
+- arrow.left.arrow.right.circle (iOS 14.0)
+- arrow.left.arrow.right.circle.fill (iOS 14.0)
+- arrow.left.arrow.right.square (iOS 14.0)
+- arrow.left.arrow.right.square.fill (iOS 14.0)
 
 ### arrow.left.to.line
-- arrow.left.to.line
-- arrow.left.to.line.circle
-- arrow.left.to.line.circle.fill
+- arrow.left.to.line (iOS 13.0)
+- arrow.left.to.line.circle (iOS 15.0)
+- arrow.left.to.line.circle.fill (iOS 15.0)
 
 ### arrow.left.to.line.alt
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [arrow.left.to.line.compact](#arrowlefttolinecompact))
 
 ### arrow.left.to.line.compact
+ (iOS 15.0)
 
 ### arrow.merge
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.merge](#arrowtrianglemerge))
 
 ### arrow.rectanglepath
+ (iOS 14.0)
 
 ### arrow.right
-- arrow.right
-- arrow.right.circle
-- arrow.right.circle.fill
-- arrow.right.square
-- arrow.right.square.fill
+- arrow.right (iOS 13.0)
+- arrow.right.circle (iOS 13.0)
+- arrow.right.circle.fill (iOS 13.0)
+- arrow.right.square (iOS 13.0)
+- arrow.right.square.fill (iOS 13.0)
 
 ### arrow.right.arrow.left
-- arrow.right.arrow.left
-- arrow.right.arrow.left.circle
-- arrow.right.arrow.left.circle.fill
-- arrow.right.arrow.left.square
-- arrow.right.arrow.left.square.fill
+- arrow.right.arrow.left (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.arrow.right](#arrowleftarrowright))
+- arrow.right.arrow.left.circle (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.arrow.right.circle](#arrowleftarrowright))
+- arrow.right.arrow.left.circle.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.arrow.right.circle.fill](#arrowleftarrowright))
+- arrow.right.arrow.left.square (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.arrow.right.square](#arrowleftarrowright))
+- arrow.right.arrow.left.square.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.arrow.right.square.fill](#arrowleftarrowright))
 
 ### arrow.right.doc.on.clipboard
+ (iOS 14.0)
 
 ### arrow.right.to.line
-- arrow.right.to.line
-- arrow.right.to.line.circle
-- arrow.right.to.line.circle.fill
+- arrow.right.to.line (iOS 13.0)
+- arrow.right.to.line.circle (iOS 15.0)
+- arrow.right.to.line.circle.fill (iOS 15.0)
 
 ### arrow.right.to.line.alt
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [arrow.right.to.line.compact](#arrowrighttolinecompact))
 
 ### arrow.right.to.line.compact
+ (iOS 15.0)
 
 ### arrow.swap
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.swap](#arrowtriangleswap))
 
 ### arrow.triangle.2.circlepath
-- arrow.triangle.2.circlepath
-- arrow.triangle.2.circlepath.circle
-- arrow.triangle.2.circlepath.circle.fill
+- arrow.triangle.2.circlepath (iOS 14.0)
+- arrow.triangle.2.circlepath.circle (iOS 14.0)
+- arrow.triangle.2.circlepath.circle.fill (iOS 14.0)
 
 ### arrow.triangle.2.circlepath.camera
-- arrow.triangle.2.circlepath.camera
-- arrow.triangle.2.circlepath.camera.fill
+- arrow.triangle.2.circlepath.camera (iOS 14.0)
+- arrow.triangle.2.circlepath.camera.fill (iOS 14.0)
 
 ### arrow.triangle.2.circlepath.doc.on.clipboard
+ (iOS 14.0)
 
 ### arrow.triangle.branch
+ (iOS 14.0)
 
 ### arrow.triangle.capsulepath
+ (iOS 14.0)
 
 ### arrow.triangle.merge
+ (iOS 14.0)
 
 ### arrow.triangle.pull
+ (iOS 14.0)
 
 ### arrow.triangle.swap
+ (iOS 14.0)
 
 ### arrow.triangle.turn.up.right.circle
-- arrow.triangle.turn.up.right.circle
-- arrow.triangle.turn.up.right.circle.fill
+- arrow.triangle.turn.up.right.circle (iOS 14.0)
+- arrow.triangle.turn.up.right.circle.fill (iOS 14.0)
 
 ### arrow.triangle.turn.up.right.diamond
-- arrow.triangle.turn.up.right.diamond
-- arrow.triangle.turn.up.right.diamond.fill
+- arrow.triangle.turn.up.right.diamond (iOS 14.0)
+- arrow.triangle.turn.up.right.diamond.fill (iOS 14.0)
 
 ### arrow.turn.down.left
+ (iOS 13.0)
 
 ### arrow.turn.down.right
+ (iOS 13.0)
 
 ### arrow.turn.left.down
+ (iOS 13.0)
 
 ### arrow.turn.left.up
+ (iOS 13.0)
 
 ### arrow.turn.right.down
+ (iOS 13.0)
 
 ### arrow.turn.right.up
+ (iOS 13.0)
 
 ### arrow.turn.up.forward.iphone
-- arrow.turn.up.forward.iphone
-- arrow.turn.up.forward.iphone.fill
+- arrow.turn.up.forward.iphone (iOS 14.0)
+- arrow.turn.up.forward.iphone.fill (iOS 14.0)
 
 ### arrow.turn.up.left
+ (iOS 13.0)
 
 ### arrow.turn.up.right
+ (iOS 13.0)
 
 ### arrow.up
-- arrow.up
-- arrow.up.circle
-- arrow.up.circle.fill
-- arrow.up.square
-- arrow.up.square.fill
+- arrow.up (iOS 13.0)
+- arrow.up.circle (iOS 13.0)
+- arrow.up.circle.fill (iOS 13.0)
+- arrow.up.square (iOS 13.0)
+- arrow.up.square.fill (iOS 13.0)
 
 ### arrow.up.and.down
-- arrow.up.and.down
-- arrow.up.and.down.circle
-- arrow.up.and.down.circle.fill
-- arrow.up.and.down.square
-- arrow.up.and.down.square.fill
+- arrow.up.and.down (iOS 13.0)
+- arrow.up.and.down.circle (iOS 13.0)
+- arrow.up.and.down.circle.fill (iOS 13.0)
+- arrow.up.and.down.square (iOS 13.0)
+- arrow.up.and.down.square.fill (iOS 13.0)
 
 ### arrow.up.and.down.and.arrow.left.and.right
+ (iOS 14.0)
 
 ### arrow.up.and.down.righttriangle.up.fill.righttriangle.down.fill
+ (iOS 14.0)
 
 ### arrow.up.and.down.righttriangle.up.righttriangle.down
+ (iOS 14.0)
 
 ### arrow.up.and.person.rectangle.portrait
+ (iOS 14.0)
 
 ### arrow.up.and.person.rectangle.turn.left
+ (iOS 14.0)
 
 ### arrow.up.and.person.rectangle.turn.right
+ (iOS 14.0)
 
 ### arrow.up.arrow.down
-- arrow.up.arrow.down
-- arrow.up.arrow.down.circle
-- arrow.up.arrow.down.circle.fill
-- arrow.up.arrow.down.square
-- arrow.up.arrow.down.square.fill
+- arrow.up.arrow.down (iOS 13.0)
+- arrow.up.arrow.down.circle (iOS 13.0)
+- arrow.up.arrow.down.circle.fill (iOS 13.0)
+- arrow.up.arrow.down.square (iOS 13.0)
+- arrow.up.arrow.down.square.fill (iOS 13.0)
 
 ### arrow.up.backward
-- arrow.up.backward
-- arrow.up.backward.circle
-- arrow.up.backward.circle.fill
-- arrow.up.backward.square
-- arrow.up.backward.square.fill
+- arrow.up.backward (iOS 14.0)
+- arrow.up.backward.circle (iOS 14.0)
+- arrow.up.backward.circle.fill (iOS 14.0)
+- arrow.up.backward.square (iOS 14.0)
+- arrow.up.backward.square.fill (iOS 14.0)
 
 ### arrow.up.backward.and.arrow.down.forward
-- arrow.up.backward.and.arrow.down.forward
-- arrow.up.backward.and.arrow.down.forward.circle
-- arrow.up.backward.and.arrow.down.forward.circle.fill
+- arrow.up.backward.and.arrow.down.forward (iOS 14.0)
+- arrow.up.backward.and.arrow.down.forward.circle (iOS 14.0)
+- arrow.up.backward.and.arrow.down.forward.circle.fill (iOS 14.0)
 
 ### arrow.up.bin
-- arrow.up.bin
-- arrow.up.bin.fill
+- arrow.up.bin (iOS 13.0)
+- arrow.up.bin.fill (iOS 13.0)
 
 ### arrow.up.doc
-- arrow.up.doc
-- arrow.up.doc.fill
+- arrow.up.doc (iOS 13.0)
+- arrow.up.doc.fill (iOS 13.0)
 
 ### arrow.up.doc.on.clipboard
+ (iOS 14.0)
 
 ### arrow.up.forward
-- arrow.up.forward
-- arrow.up.forward.circle
-- arrow.up.forward.circle.fill
-- arrow.up.forward.square
-- arrow.up.forward.square.fill
+- arrow.up.forward (iOS 14.0)
+- arrow.up.forward.circle (iOS 14.0)
+- arrow.up.forward.circle.fill (iOS 14.0)
+- arrow.up.forward.square (iOS 14.0)
+- arrow.up.forward.square.fill (iOS 14.0)
 
 ### arrow.up.forward.app
-- arrow.up.forward.app
-- arrow.up.forward.app.fill
+- arrow.up.forward.app (iOS 14.0)
+- arrow.up.forward.app.fill (iOS 14.0)
 
 ### arrow.up.heart
-- arrow.up.heart
-- arrow.up.heart.fill
+- arrow.up.heart (iOS 14.0)
+- arrow.up.heart.fill (iOS 14.0)
 
 ### arrow.up.left
-- arrow.up.left
-- arrow.up.left.circle
-- arrow.up.left.circle.fill
-- arrow.up.left.square
-- arrow.up.left.square.fill
+- arrow.up.left (iOS 13.0)
+- arrow.up.left.circle (iOS 13.0)
+- arrow.up.left.circle.fill (iOS 13.0)
+- arrow.up.left.square (iOS 13.0)
+- arrow.up.left.square.fill (iOS 13.0)
 
 ### arrow.up.left.and.arrow.down.right
-- arrow.up.left.and.arrow.down.right
-- arrow.up.left.and.arrow.down.right.circle
-- arrow.up.left.and.arrow.down.right.circle.fill
+- arrow.up.left.and.arrow.down.right (iOS 13.0)
+- arrow.up.left.and.arrow.down.right.circle (iOS 14.0)
+- arrow.up.left.and.arrow.down.right.circle.fill (iOS 14.0)
 
 ### arrow.up.left.and.down.right.and.arrow.up.right.and.down.left
+ (iOS 14.0)
 
 ### arrow.up.left.and.down.right.magnifyingglass
+ (iOS 14.0)
 
 ### arrow.up.message
-- arrow.up.message
-- arrow.up.message.fill
+- arrow.up.message (iOS 14.0)
+- arrow.up.message.fill (iOS 14.0)
 
 ### arrow.up.right
-- arrow.up.right
-- arrow.up.right.circle
-- arrow.up.right.circle.fill
-- arrow.up.right.square
-- arrow.up.right.square.fill
+- arrow.up.right (iOS 13.0)
+- arrow.up.right.circle (iOS 13.0)
+- arrow.up.right.circle.fill (iOS 13.0)
+- arrow.up.right.square (iOS 13.0)
+- arrow.up.right.square.fill (iOS 13.0)
 
 ### arrow.up.right.and.arrow.down.left.rectangle
-- arrow.up.right.and.arrow.down.left.rectangle
-- arrow.up.right.and.arrow.down.left.rectangle.fill
+- arrow.up.right.and.arrow.down.left.rectangle (iOS 14.0)
+- arrow.up.right.and.arrow.down.left.rectangle.fill (iOS 14.0)
 
 ### arrow.up.right.diamond
-- arrow.up.right.diamond
-- arrow.up.right.diamond.fill
+- arrow.up.right.diamond (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.turn.up.right.diamond](#arrowtriangleturnuprightdiamond))
+- arrow.up.right.diamond.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.turn.up.right.diamond.fill](#arrowtriangleturnuprightdiamond))
 
 ### arrow.up.right.video
-- arrow.up.right.video
-- arrow.up.right.video.fill
+- arrow.up.right.video (iOS 13.0)
+- arrow.up.right.video.fill (iOS 13.0)
 
 ### arrow.up.to.line
-- arrow.up.to.line
-- arrow.up.to.line.circle
-- arrow.up.to.line.circle.fill
+- arrow.up.to.line (iOS 13.0)
+- arrow.up.to.line.circle (iOS 15.0)
+- arrow.up.to.line.circle.fill (iOS 15.0)
 
 ### arrow.up.to.line.alt
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [arrow.up.to.line.compact](#arrowuptolinecompact))
 
 ### arrow.up.to.line.compact
+ (iOS 15.0)
 
 ### arrow.uturn.backward
-- arrow.uturn.backward
-- arrow.uturn.backward.circle
-- arrow.uturn.backward.circle.fill
-- arrow.uturn.backward.square
-- arrow.uturn.backward.square.fill
+- arrow.uturn.backward (iOS 14.0)
+- arrow.uturn.backward.circle (iOS 14.0)
+- arrow.uturn.backward.circle.fill (iOS 14.0)
+- arrow.uturn.backward.square (iOS 14.0)
+- arrow.uturn.backward.square.fill (iOS 14.0)
 
 ### arrow.uturn.backward.circle.badge.ellipsis
+ (iOS 14.0)
 
 ### arrow.uturn.down
-- arrow.uturn.down
-- arrow.uturn.down.circle
-- arrow.uturn.down.circle.fill
-- arrow.uturn.down.square
-- arrow.uturn.down.square.fill
+- arrow.uturn.down (iOS 13.0)
+- arrow.uturn.down.circle (iOS 13.0)
+- arrow.uturn.down.circle.fill (iOS 13.0)
+- arrow.uturn.down.square (iOS 13.0)
+- arrow.uturn.down.square.fill (iOS 13.0)
 
 ### arrow.uturn.forward
-- arrow.uturn.forward
-- arrow.uturn.forward.circle
-- arrow.uturn.forward.circle.fill
-- arrow.uturn.forward.square
-- arrow.uturn.forward.square.fill
+- arrow.uturn.forward (iOS 14.0)
+- arrow.uturn.forward.circle (iOS 14.0)
+- arrow.uturn.forward.circle.fill (iOS 14.0)
+- arrow.uturn.forward.square (iOS 14.0)
+- arrow.uturn.forward.square.fill (iOS 14.0)
 
 ### arrow.uturn.left
-- arrow.uturn.left
-- arrow.uturn.left.circle
-- arrow.uturn.left.circle.fill
-- arrow.uturn.left.square
-- arrow.uturn.left.square.fill
+- arrow.uturn.left (iOS 13.0)
+- arrow.uturn.left.circle (iOS 13.0)
+- arrow.uturn.left.circle.fill (iOS 13.0)
+- arrow.uturn.left.square (iOS 13.0)
+- arrow.uturn.left.square.fill (iOS 13.0)
 
 ### arrow.uturn.left.circle.badge.ellipsis
+ (iOS 13.0)
 
 ### arrow.uturn.right
-- arrow.uturn.right
-- arrow.uturn.right.circle
-- arrow.uturn.right.circle.fill
-- arrow.uturn.right.square
-- arrow.uturn.right.square.fill
+- arrow.uturn.right (iOS 13.0)
+- arrow.uturn.right.circle (iOS 13.0)
+- arrow.uturn.right.circle.fill (iOS 13.0)
+- arrow.uturn.right.square (iOS 13.0)
+- arrow.uturn.right.square.fill (iOS 13.0)
 
 ### arrow.uturn.up
-- arrow.uturn.up
-- arrow.uturn.up.circle
-- arrow.uturn.up.circle.fill
-- arrow.uturn.up.square
-- arrow.uturn.up.square.fill
+- arrow.uturn.up (iOS 13.0)
+- arrow.uturn.up.circle (iOS 13.0)
+- arrow.uturn.up.circle.fill (iOS 13.0)
+- arrow.uturn.up.square (iOS 13.0)
+- arrow.uturn.up.square.fill (iOS 13.0)
 
 ### arrowshape.bounce.forward
-- arrowshape.bounce.forward
-- arrowshape.bounce.forward.fill
+- arrowshape.bounce.forward (iOS 14.0)
+- arrowshape.bounce.forward.fill (iOS 14.0)
 
 ### arrowshape.bounce.right
-- arrowshape.bounce.right
-- arrowshape.bounce.right.fill
+- arrowshape.bounce.right (iOS 14.0)
+- arrowshape.bounce.right.fill (iOS 14.0)
 
 ### arrowshape.turn.up.backward
-- arrowshape.turn.up.backward
-- arrowshape.turn.up.backward.fill
-- arrowshape.turn.up.backward.circle
-- arrowshape.turn.up.backward.circle.fill
+- arrowshape.turn.up.backward (iOS 14.0)
+- arrowshape.turn.up.backward.fill (iOS 14.0)
+- arrowshape.turn.up.backward.circle (iOS 14.0)
+- arrowshape.turn.up.backward.circle.fill (iOS 14.0)
 
 ### arrowshape.turn.up.backward.2
-- arrowshape.turn.up.backward.2
-- arrowshape.turn.up.backward.2.fill
-- arrowshape.turn.up.backward.2.circle
-- arrowshape.turn.up.backward.2.circle.fill
+- arrowshape.turn.up.backward.2 (iOS 14.0)
+- arrowshape.turn.up.backward.2.fill (iOS 14.0)
+- arrowshape.turn.up.backward.2.circle (iOS 14.0)
+- arrowshape.turn.up.backward.2.circle.fill (iOS 14.0)
 
 ### arrowshape.turn.up.forward
-- arrowshape.turn.up.forward
-- arrowshape.turn.up.forward.fill
-- arrowshape.turn.up.forward.circle
-- arrowshape.turn.up.forward.circle.fill
+- arrowshape.turn.up.forward (iOS 14.0)
+- arrowshape.turn.up.forward.fill (iOS 14.0)
+- arrowshape.turn.up.forward.circle (iOS 14.0)
+- arrowshape.turn.up.forward.circle.fill (iOS 14.0)
 
 ### arrowshape.turn.up.left
-- arrowshape.turn.up.left
-- arrowshape.turn.up.left.fill
-- arrowshape.turn.up.left.circle
-- arrowshape.turn.up.left.circle.fill
+- arrowshape.turn.up.left (iOS 13.0)
+- arrowshape.turn.up.left.fill (iOS 13.0)
+- arrowshape.turn.up.left.circle (iOS 13.0)
+- arrowshape.turn.up.left.circle.fill (iOS 13.0)
 
 ### arrowshape.turn.up.left.2
-- arrowshape.turn.up.left.2
-- arrowshape.turn.up.left.2.fill
-- arrowshape.turn.up.left.2.circle
-- arrowshape.turn.up.left.2.circle.fill
+- arrowshape.turn.up.left.2 (iOS 13.0)
+- arrowshape.turn.up.left.2.fill (iOS 13.0)
+- arrowshape.turn.up.left.2.circle (iOS 14.0)
+- arrowshape.turn.up.left.2.circle.fill (iOS 14.0)
 
 ### arrowshape.turn.up.right
-- arrowshape.turn.up.right
-- arrowshape.turn.up.right.fill
-- arrowshape.turn.up.right.circle
-- arrowshape.turn.up.right.circle.fill
+- arrowshape.turn.up.right (iOS 13.0)
+- arrowshape.turn.up.right.fill (iOS 13.0)
+- arrowshape.turn.up.right.circle (iOS 13.0)
+- arrowshape.turn.up.right.circle.fill (iOS 13.0)
 
 ### arrowshape.zigzag.forward
-- arrowshape.zigzag.forward
-- arrowshape.zigzag.forward.fill
+- arrowshape.zigzag.forward (iOS 14.0)
+- arrowshape.zigzag.forward.fill (iOS 14.0)
 
 ### arrowshape.zigzag.right
-- arrowshape.zigzag.right
-- arrowshape.zigzag.right.fill
+- arrowshape.zigzag.right (iOS 14.0)
+- arrowshape.zigzag.right.fill (iOS 14.0)
 
 ### arrowtriangle.backward
-- arrowtriangle.backward
-- arrowtriangle.backward.fill
-- arrowtriangle.backward.circle
-- arrowtriangle.backward.circle.fill
-- arrowtriangle.backward.square
-- arrowtriangle.backward.square.fill
+- arrowtriangle.backward (iOS 14.0)
+- arrowtriangle.backward.fill (iOS 14.0)
+- arrowtriangle.backward.circle (iOS 14.0)
+- arrowtriangle.backward.circle.fill (iOS 14.0)
+- arrowtriangle.backward.square (iOS 14.0)
+- arrowtriangle.backward.square.fill (iOS 14.0)
 
 ### arrowtriangle.down
-- arrowtriangle.down
-- arrowtriangle.down.fill
-- arrowtriangle.down.circle
-- arrowtriangle.down.circle.fill
-- arrowtriangle.down.square
-- arrowtriangle.down.square.fill
+- arrowtriangle.down (iOS 13.0)
+- arrowtriangle.down.fill (iOS 13.0)
+- arrowtriangle.down.circle (iOS 13.0)
+- arrowtriangle.down.circle.fill (iOS 13.0)
+- arrowtriangle.down.square (iOS 13.0)
+- arrowtriangle.down.square.fill (iOS 13.0)
 
 ### arrowtriangle.forward
-- arrowtriangle.forward
-- arrowtriangle.forward.fill
-- arrowtriangle.forward.circle
-- arrowtriangle.forward.circle.fill
-- arrowtriangle.forward.square
-- arrowtriangle.forward.square.fill
+- arrowtriangle.forward (iOS 14.0)
+- arrowtriangle.forward.fill (iOS 14.0)
+- arrowtriangle.forward.circle (iOS 14.0)
+- arrowtriangle.forward.circle.fill (iOS 14.0)
+- arrowtriangle.forward.square (iOS 14.0)
+- arrowtriangle.forward.square.fill (iOS 14.0)
 
 ### arrowtriangle.left
-- arrowtriangle.left
-- arrowtriangle.left.fill
-- arrowtriangle.left.circle
-- arrowtriangle.left.circle.fill
-- arrowtriangle.left.square
-- arrowtriangle.left.square.fill
+- arrowtriangle.left (iOS 13.0)
+- arrowtriangle.left.fill (iOS 13.0)
+- arrowtriangle.left.circle (iOS 13.0)
+- arrowtriangle.left.circle.fill (iOS 13.0)
+- arrowtriangle.left.square (iOS 13.0)
+- arrowtriangle.left.square.fill (iOS 13.0)
 
 ### arrowtriangle.left.and.line.vertical.and.arrowtriangle.right
+ (iOS 14.0)
 
 ### arrowtriangle.left.fill.and.line.vertical.and.arrowtriangle.right.fill
+ (iOS 14.0)
 
 ### arrowtriangle.right
-- arrowtriangle.right
-- arrowtriangle.right.fill
-- arrowtriangle.right.circle
-- arrowtriangle.right.circle.fill
-- arrowtriangle.right.square
-- arrowtriangle.right.square.fill
+- arrowtriangle.right (iOS 13.0)
+- arrowtriangle.right.fill (iOS 13.0)
+- arrowtriangle.right.circle (iOS 13.0)
+- arrowtriangle.right.circle.fill (iOS 13.0)
+- arrowtriangle.right.square (iOS 13.0)
+- arrowtriangle.right.square.fill (iOS 13.0)
 
 ### arrowtriangle.right.and.line.vertical.and.arrowtriangle.left
+ (iOS 14.0)
 
 ### arrowtriangle.right.fill.and.line.vertical.and.arrowtriangle.left.fill
+ (iOS 14.0)
 
 ### arrowtriangle.up
-- arrowtriangle.up
-- arrowtriangle.up.fill
-- arrowtriangle.up.circle
-- arrowtriangle.up.circle.fill
-- arrowtriangle.up.square
-- arrowtriangle.up.square.fill
+- arrowtriangle.up (iOS 13.0)
+- arrowtriangle.up.fill (iOS 13.0)
+- arrowtriangle.up.circle (iOS 13.0)
+- arrowtriangle.up.circle.fill (iOS 13.0)
+- arrowtriangle.up.square (iOS 13.0)
+- arrowtriangle.up.square.fill (iOS 13.0)
 
 ### aspectratio
-- aspectratio
-- aspectratio.fill
+- aspectratio (iOS 13.0)
+- aspectratio.fill (iOS 13.0)
 
 ### asterisk
-- asterisk
-- asterisk.circle
-- asterisk.circle.fill
+- asterisk (iOS 15.0)
+- asterisk.circle (iOS 13.0)
+- asterisk.circle.fill (iOS 13.0)
 
 ### at
-- at
-- at.circle
-- at.circle.fill
+- at (iOS 13.0)
+- at.circle (iOS 14.0)
+- at.circle.fill (iOS 14.0)
 
 ### at.badge.minus
+ (iOS 13.0)
 
 ### at.badge.plus
+ (iOS 13.0)
 
 ### atom
+ (iOS 14.0)
 
 ### australsign
-- australsign.circle
-- australsign.circle.fill
-- australsign.square
-- australsign.square.fill
+- australsign.circle (iOS 13.0)
+- australsign.circle.fill (iOS 13.0)
+- australsign.square (iOS 13.0)
+- australsign.square.fill (iOS 13.0)
 
 ### b
-- b.circle
-- b.circle.fill
-- b.square
-- b.square.fill
+- b.circle (iOS 13.0)
+- b.circle.fill (iOS 13.0)
+- b.square (iOS 13.0)
+- b.square.fill (iOS 13.0)
 
 ### backward
-- backward
-- backward.fill
-- backward.circle
-- backward.circle.fill
+- backward (iOS 13.0)
+- backward.fill (iOS 13.0)
+- backward.circle (iOS 15.0)
+- backward.circle.fill (iOS 15.0)
 
 ### backward.end
-- backward.end
-- backward.end.fill
+- backward.end (iOS 13.0)
+- backward.end.fill (iOS 13.0)
 
 ### backward.end.alt
-- backward.end.alt
-- backward.end.alt.fill
+- backward.end.alt (iOS 13.0)
+- backward.end.alt.fill (iOS 13.0)
 
 ### backward.frame
-- backward.frame
-- backward.frame.fill
+- backward.frame (iOS 14.0)
+- backward.frame.fill (iOS 14.0)
 
 ### badge.plus.radiowaves.forward
+ (iOS 14.0)
 
 ### badge.plus.radiowaves.right
+ (iOS 13.0)
 
 ### bag
-- bag
-- bag.fill
-- bag.circle
-- bag.circle.fill
+- bag (iOS 13.0)
+- bag.fill (iOS 13.0)
+- bag.circle (iOS 14.0)
+- bag.circle.fill (iOS 14.0)
 
 ### bag.badge.minus
+ (iOS 13.0)
 
 ### bag.badge.plus
+ (iOS 13.0)
 
 ### bag.fill.badge.minus
+ (iOS 13.0)
 
 ### bag.fill.badge.plus
+ (iOS 13.0)
 
 ### bahtsign
-- bahtsign.circle
-- bahtsign.circle.fill
-- bahtsign.square
-- bahtsign.square.fill
+- bahtsign.circle (iOS 13.0)
+- bahtsign.circle.fill (iOS 13.0)
+- bahtsign.square (iOS 13.0)
+- bahtsign.square.fill (iOS 13.0)
 
 ### bandage
-- bandage
-- bandage.fill
+- bandage (iOS 13.0)
+- bandage.fill (iOS 13.0)
 
 ### banknote
-- banknote
-- banknote.fill
+- banknote (iOS 14.0)
+- banknote.fill (iOS 14.0)
 
 ### barcode
+ (iOS 13.0)
 
 ### barcode.viewfinder
+ (iOS 13.0)
 
 ### barometer
+ (iOS 14.0)
 
 ### battery.0
+ (iOS 13.0)
 
 ### battery.100
+ (iOS 13.0)
 
 ### battery.100.bolt
-- battery.100.bolt
-- battery.100.bolt.rtl
+- battery.100.bolt (iOS 14.0)
+- battery.100.bolt.rtl (iOS 14.0)
 
 ### battery.25
+ (iOS 13.0)
 
 ### battery.50
+ (iOS 15.0)
 
 ### battery.75
+ (iOS 15.0)
 
 ### beats.earphones
+ (iOS 15.0)
 
 ### beats.headphones
+ (iOS 15.0)
 
 ### beats.powerbeats
+ (iOS 15.0)
 
 ### beats.powerbeats3
+ (iOS 15.0)
 
 ### beats.powerbeatspro
+ (iOS 15.0)
 
 ### beats.powerbeatspro.chargingcase
-- beats.powerbeatspro.chargingcase
-- beats.powerbeatspro.chargingcase.fill
+- beats.powerbeatspro.chargingcase (iOS 15.0)
+- beats.powerbeatspro.chargingcase.fill (iOS 15.0)
 
 ### beats.powerbeatspro.left
+ (iOS 15.0)
 
 ### beats.powerbeatspro.right
+ (iOS 15.0)
 
 ### bed.double
-- bed.double
-- bed.double.fill
-- bed.double.circle
-- bed.double.circle.fill
+- bed.double (iOS 13.0)
+- bed.double.fill (iOS 13.0)
+- bed.double.circle (iOS 15.0)
+- bed.double.circle.fill (iOS 15.0)
 
 ### bell
-- bell
-- bell.fill
-- bell.circle
-- bell.circle.fill
-- bell.square
-- bell.square.fill
-- bell.slash
-- bell.slash.fill
-- bell.slash.circle
-- bell.slash.circle.fill
+- bell (iOS 13.0)
+- bell.fill (iOS 13.0)
+- bell.circle (iOS 13.0)
+- bell.circle.fill (iOS 13.0)
+- bell.square (iOS 15.0)
+- bell.square.fill (iOS 15.0)
+- bell.slash (iOS 13.0)
+- bell.slash.fill (iOS 13.0)
+- bell.slash.circle (iOS 14.0)
+- bell.slash.circle.fill (iOS 14.0)
 
 ### bell.and.waveform
-- bell.and.waveform
-- bell.and.waveform.fill
+- bell.and.waveform (iOS 15.0)
+- bell.and.waveform.fill (iOS 15.0)
 
 ### bell.badge
-- bell.badge
-- bell.badge.fill
-- bell.badge.circle
-- bell.badge.circle.fill
+- bell.badge (iOS 14.0)
+- bell.badge.fill (iOS 14.0)
+- bell.badge.circle (iOS 15.0)
+- bell.badge.circle.fill (iOS 15.0)
 
 ### bicycle
-- bicycle
-- bicycle.circle
-- bicycle.circle.fill
+- bicycle (iOS 14.0)
+- bicycle.circle (iOS 14.0)
+- bicycle.circle.fill (iOS 14.0)
 
 ### bin.xmark
-- bin.xmark
-- bin.xmark.fill
+- bin.xmark (iOS, introduced: 13.0, deprecated: 14.0, renamed: [xmark.bin](#xmarkbin))
+- bin.xmark.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [xmark.bin.fill](#xmarkbin))
 
 ### binoculars
-- binoculars
-- binoculars.fill
+- binoculars (iOS 14.0)
+- binoculars.fill (iOS 14.0)
 
 ### bitcoinsign
-- bitcoinsign.circle
-- bitcoinsign.circle.fill
-- bitcoinsign.square
-- bitcoinsign.square.fill
+- bitcoinsign.circle (iOS 13.0)
+- bitcoinsign.circle.fill (iOS 13.0)
+- bitcoinsign.square (iOS 13.0)
+- bitcoinsign.square.fill (iOS 13.0)
 
 ### bold
+ (iOS 13.0)
 
 ### bold.italic.underline
+ (iOS 13.0)
 
 ### bold.underline
+ (iOS 13.0)
 
 ### bolt
-- bolt
-- bolt.fill
-- bolt.circle
-- bolt.circle.fill
-- bolt.square
-- bolt.square.fill
-- bolt.slash
-- bolt.slash.fill
-- bolt.slash.circle
-- bolt.slash.circle.fill
+- bolt (iOS 13.0)
+- bolt.fill (iOS 13.0)
+- bolt.circle (iOS 13.0)
+- bolt.circle.fill (iOS 13.0)
+- bolt.square (iOS 15.0)
+- bolt.square.fill (iOS 15.0)
+- bolt.slash (iOS 13.0)
+- bolt.slash.fill (iOS 13.0)
+- bolt.slash.circle (iOS 14.0)
+- bolt.slash.circle.fill (iOS 14.0)
 
 ### bolt.badge.a
-- bolt.badge.a
-- bolt.badge.a.fill
+- bolt.badge.a (iOS 13.0)
+- bolt.badge.a.fill (iOS 13.0)
 
 ### bolt.batteryblock
-- bolt.batteryblock
-- bolt.batteryblock.fill
+- bolt.batteryblock (iOS 15.0)
+- bolt.batteryblock.fill (iOS 15.0)
 
 ### bolt.car
-- bolt.car
-- bolt.car.fill
-- bolt.car.circle
-- bolt.car.circle.fill
+- bolt.car (iOS 14.0)
+- bolt.car.fill (iOS 14.0)
+- bolt.car.circle (iOS 15.0)
+- bolt.car.circle.fill (iOS 15.0)
 
 ### bolt.fill.batteryblock
-- bolt.fill.batteryblock
-- bolt.fill.batteryblock.fill
+- bolt.fill.batteryblock (iOS, introduced: 14.0, deprecated: 15.0, renamed: [bolt.batteryblock](#boltbatteryblock))
+- bolt.fill.batteryblock.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [bolt.batteryblock.fill](#boltbatteryblock))
 
 ### bolt.heart
-- bolt.heart
-- bolt.heart.fill
+- bolt.heart (iOS 14.0)
+- bolt.heart.fill (iOS 14.0)
 
 ### bolt.horizontal
-- bolt.horizontal
-- bolt.horizontal.fill
-- bolt.horizontal.circle
-- bolt.horizontal.circle.fill
+- bolt.horizontal (iOS 13.0)
+- bolt.horizontal.fill (iOS 13.0)
+- bolt.horizontal.circle (iOS 13.0)
+- bolt.horizontal.circle.fill (iOS 13.0)
 
 ### bolt.horizontal.icloud
-- bolt.horizontal.icloud
-- bolt.horizontal.icloud.fill
+- bolt.horizontal.icloud (iOS 13.0)
+- bolt.horizontal.icloud.fill (iOS 13.0)
 
 ### bolt.shield
-- bolt.shield
-- bolt.shield.fill
+- bolt.shield (iOS 15.0)
+- bolt.shield.fill (iOS 15.0)
 
 ### bonjour
+ (iOS 14.0)
 
 ### book
-- book
-- book.fill
-- book.circle
-- book.circle.fill
+- book (iOS 13.0)
+- book.fill (iOS 13.0)
+- book.circle (iOS 13.0)
+- book.circle.fill (iOS 13.0)
 
 ### book.closed
-- book.closed
-- book.closed.fill
+- book.closed (iOS 14.0)
+- book.closed.fill (iOS 14.0)
 
 ### bookmark
-- bookmark
-- bookmark.fill
-- bookmark.circle
-- bookmark.circle.fill
-- bookmark.square
-- bookmark.square.fill
-- bookmark.slash
-- bookmark.slash.fill
+- bookmark (iOS 13.0)
+- bookmark.fill (iOS 13.0)
+- bookmark.circle (iOS 14.0)
+- bookmark.circle.fill (iOS 14.0)
+- bookmark.square (iOS 15.0)
+- bookmark.square.fill (iOS 15.0)
+- bookmark.slash (iOS 14.0)
+- bookmark.slash.fill (iOS 14.0)
 
 ### books.vertical
-- books.vertical
-- books.vertical.fill
+- books.vertical (iOS 14.0)
+- books.vertical.fill (iOS 14.0)
 
 ### brain
+ (iOS 15.0)
 
 ### brain.head.profile
+ (iOS 15.0)
 
 ### brazilianrealsign
-- brazilianrealsign.circle
-- brazilianrealsign.circle.fill
-- brazilianrealsign.square
-- brazilianrealsign.square.fill
+- brazilianrealsign.circle (iOS 14.2)
+- brazilianrealsign.circle.fill (iOS 14.2)
+- brazilianrealsign.square (iOS 14.2)
+- brazilianrealsign.square.fill (iOS 14.2)
 
 ### briefcase
-- briefcase
-- briefcase.fill
-- briefcase.circle
-- briefcase.circle.fill
+- briefcase (iOS 13.0)
+- briefcase.fill (iOS 13.0)
+- briefcase.circle (iOS 15.0)
+- briefcase.circle.fill (iOS 15.0)
 
 ### bubble.left
-- bubble.left
-- bubble.left.fill
+- bubble.left (iOS 13.0)
+- bubble.left.fill (iOS 13.0)
 
 ### bubble.left.and.bubble.right
-- bubble.left.and.bubble.right
-- bubble.left.and.bubble.right.fill
+- bubble.left.and.bubble.right (iOS 13.0)
+- bubble.left.and.bubble.right.fill (iOS 13.0)
 
 ### bubble.left.and.exclamationmark.bubble.right
-- bubble.left.and.exclamationmark.bubble.right
-- bubble.left.and.exclamationmark.bubble.right.fill
+- bubble.left.and.exclamationmark.bubble.right (iOS 15.0)
+- bubble.left.and.exclamationmark.bubble.right.fill (iOS 15.0)
 
 ### bubble.middle.bottom
-- bubble.middle.bottom
-- bubble.middle.bottom.fill
+- bubble.middle.bottom (iOS 13.0)
+- bubble.middle.bottom.fill (iOS 13.0)
 
 ### bubble.middle.top
-- bubble.middle.top
-- bubble.middle.top.fill
+- bubble.middle.top (iOS 13.0)
+- bubble.middle.top.fill (iOS 13.0)
 
 ### bubble.right
-- bubble.right
-- bubble.right.fill
+- bubble.right (iOS 13.0)
+- bubble.right.fill (iOS 13.0)
 
 ### building
-- building
-- building.fill
+- building (iOS 14.0)
+- building.fill (iOS 14.0)
 
 ### building.2
-- building.2
-- building.2.fill
+- building.2 (iOS 14.0)
+- building.2.fill (iOS 14.0)
 
 ### building.2.crop.circle
-- building.2.crop.circle
-- building.2.crop.circle.fill
+- building.2.crop.circle (iOS 14.0)
+- building.2.crop.circle.fill (iOS 14.0)
 
 ### building.columns
-- building.columns
-- building.columns.fill
+- building.columns (iOS 14.0)
+- building.columns.fill (iOS 14.0)
 
 ### burn
+ (iOS 13.0)
 
 ### burst
-- burst
-- burst.fill
+- burst (iOS 13.0)
+- burst.fill (iOS 13.0)
 
 ### bus
-- bus
-- bus.fill
+- bus (iOS 14.0)
+- bus.fill (iOS 14.0)
 
 ### bus.doubledecker
-- bus.doubledecker
-- bus.doubledecker.fill
+- bus.doubledecker (iOS 14.0)
+- bus.doubledecker.fill (iOS 14.0)
 
 ### c
-- c.circle
-- c.circle.fill
-- c.square
-- c.square.fill
+- c.circle (iOS 13.0)
+- c.circle.fill (iOS 13.0)
+- c.square (iOS 13.0)
+- c.square.fill (iOS 13.0)
 
 ### cable.connector
+ (iOS 15.0)
 
 ### cablecar
-- cablecar
-- cablecar.fill
+- cablecar (iOS 15.0)
+- cablecar.fill (iOS 15.0)
 
 ### calendar
-- calendar
-- calendar.circle
-- calendar.circle.fill
+- calendar (iOS 13.0)
+- calendar.circle (iOS 13.0)
+- calendar.circle.fill (iOS 13.0)
 
 ### calendar.badge.clock
-- calendar.badge.clock
-- calendar.badge.clock.rtl
+- calendar.badge.clock (iOS 14.0)
+- calendar.badge.clock.rtl (iOS 14.0)
 
 ### calendar.badge.exclamationmark
+ (iOS 14.0)
 
 ### calendar.badge.minus
+ (iOS 13.0)
 
 ### calendar.badge.plus
+ (iOS 13.0)
 
 ### calendar.day.timeline.leading
+ (iOS 15.0)
 
 ### calendar.day.timeline.left
+ (iOS 15.0)
 
 ### calendar.day.timeline.right
+ (iOS 15.0)
 
 ### calendar.day.timeline.trailing
+ (iOS 15.0)
 
 ### camera
-- camera
-- camera.fill
-- camera.circle
-- camera.circle.fill
+- camera (iOS 13.0)
+- camera.fill (iOS 13.0)
+- camera.circle (iOS 13.0)
+- camera.circle.fill (iOS 13.0)
 
 ### camera.aperture
+ (iOS 14.0)
 
 ### camera.badge.ellipsis
+ (iOS 14.0)
 
 ### camera.fill.badge.ellipsis
+ (iOS 14.0)
 
 ### camera.filters
+ (iOS 14.0)
 
 ### camera.metering.center.weighted
+ (iOS 14.0)
 
 ### camera.metering.center.weighted.average
+ (iOS 14.0)
 
 ### camera.metering.matrix
+ (iOS 14.0)
 
 ### camera.metering.multispot
+ (iOS 14.0)
 
 ### camera.metering.none
+ (iOS 14.0)
 
 ### camera.metering.partial
+ (iOS 14.0)
 
 ### camera.metering.spot
+ (iOS 14.0)
 
 ### camera.metering.unknown
-- camera.metering.unknown
-- camera.metering.unknown.ar
+- camera.metering.unknown (iOS 14.0)
+- camera.metering.unknown.ar (iOS 14.0)
 
 ### camera.on.rectangle
-- camera.on.rectangle
-- camera.on.rectangle.fill
+- camera.on.rectangle (iOS 13.0)
+- camera.on.rectangle.fill (iOS 13.0)
 
 ### camera.rotate
-- camera.rotate
-- camera.rotate.fill
+- camera.rotate (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.2.circlepath.camera](#arrowtriangle2circlepathcamera))
+- camera.rotate.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.triangle.2.circlepath.camera.fill](#arrowtriangle2circlepathcamera))
 
 ### camera.shutter.button
-- camera.shutter.button
-- camera.shutter.button.fill
+- camera.shutter.button (iOS 15.0)
+- camera.shutter.button.fill (iOS 15.0)
 
 ### camera.viewfinder
+ (iOS 13.0)
 
 ### candybarphone
+ (iOS 14.0)
 
 ### capslock
-- capslock
-- capslock.fill
+- capslock (iOS 13.0)
+- capslock.fill (iOS 13.0)
 
 ### capsule
-- capsule
-- capsule.fill
+- capsule (iOS 13.0)
+- capsule.fill (iOS 13.0)
 
 ### capsule.bottomhalf.filled
+ (iOS 15.0)
 
 ### capsule.inset.filled
+ (iOS 15.0)
 
 ### capsule.lefthalf.filled
+ (iOS 15.0)
 
 ### capsule.portrait
-- capsule.portrait
-- capsule.portrait.fill
+- capsule.portrait (iOS 14.0)
+- capsule.portrait.fill (iOS 14.0)
 
 ### capsule.portrait.bottomhalf.filled
+ (iOS 15.0)
 
 ### capsule.portrait.inset.filled
+ (iOS 15.0)
 
 ### capsule.portrait.lefthalf.filled
+ (iOS 15.0)
 
 ### capsule.portrait.righthalf.filled
+ (iOS 15.0)
 
 ### capsule.portrait.tophalf.filled
+ (iOS 15.0)
 
 ### capsule.righthalf.filled
+ (iOS 15.0)
 
 ### capsule.tophalf.filled
+ (iOS 15.0)
 
 ### captions.bubble
-- captions.bubble
-- captions.bubble.fill
+- captions.bubble (iOS 13.0)
+- captions.bubble.fill (iOS 13.0)
 
 ### car
-- car
-- car.fill
-- car.circle
-- car.circle.fill
+- car (iOS 13.0)
+- car.fill (iOS 13.0)
+- car.circle (iOS 14.0)
+- car.circle.fill (iOS 14.0)
 
 ### car.2
-- car.2
-- car.2.fill
+- car.2 (iOS 14.0)
+- car.2.fill (iOS 14.0)
 
 ### car.ferry
-- car.ferry
-- car.ferry.fill
+- car.ferry (iOS 15.0)
+- car.ferry.fill (iOS 15.0)
 
 ### cart
-- cart
-- cart.fill
-- cart.circle
-- cart.circle.fill
+- cart (iOS 13.0)
+- cart.fill (iOS 13.0)
+- cart.circle (iOS 14.2)
+- cart.circle.fill (iOS 14.2)
 
 ### cart.badge.minus
+ (iOS 13.0)
 
 ### cart.badge.plus
+ (iOS 13.0)
 
 ### cart.fill.badge.minus
+ (iOS 13.0)
 
 ### cart.fill.badge.plus
+ (iOS 13.0)
 
 ### case
-- case
-- case.fill
+- case (iOS 14.0)
+- case.fill (iOS 14.0)
 
 ### cedisign
-- cedisign.circle
-- cedisign.circle.fill
-- cedisign.square
-- cedisign.square.fill
+- cedisign.circle (iOS 13.0)
+- cedisign.circle.fill (iOS 13.0)
+- cedisign.square (iOS 13.0)
+- cedisign.square.fill (iOS 13.0)
 
 ### centsign
-- centsign.circle
-- centsign.circle.fill
-- centsign.square
-- centsign.square.fill
+- centsign.circle (iOS 13.0)
+- centsign.circle.fill (iOS 13.0)
+- centsign.square (iOS 13.0)
+- centsign.square.fill (iOS 13.0)
 
 ### character
-- character
-- character.ar
-- character.he
-- character.hi
-- character.ja
-- character.ko
-- character.th
-- character.zh
-- character.zh.traditional
+- character (iOS 14.2)
+- character.ar (iOS 14.2)
+- character.he (iOS 14.2)
+- character.hi (iOS 14.2)
+- character.ja (iOS 14.2)
+- character.ko (iOS 14.2)
+- character.th (iOS 14.2)
+- character.zh (iOS 14.2)
+- character.zh.traditional (iOS 14.2)
 
 ### character.book.closed
-- character.book.closed
-- character.book.closed.ar
-- character.book.closed.he
-- character.book.closed.hi
-- character.book.closed.ja
-- character.book.closed.ko
-- character.book.closed.th
-- character.book.closed.zh
-- character.book.closed.zh.traditional
-- character.book.closed.fill
-- character.book.closed.fill.ar
-- character.book.closed.fill.he
-- character.book.closed.fill.hi
-- character.book.closed.fill.ja
-- character.book.closed.fill.ko
-- character.book.closed.fill.th
-- character.book.closed.fill.zh
-- character.book.closed.fill.zh.traditional
+- character.book.closed (iOS 14.2)
+- character.book.closed.ar (iOS 14.2)
+- character.book.closed.he (iOS 14.2)
+- character.book.closed.hi (iOS 14.2)
+- character.book.closed.ja (iOS 14.2)
+- character.book.closed.ko (iOS 14.2)
+- character.book.closed.th (iOS 14.2)
+- character.book.closed.zh (iOS 14.2)
+- character.book.closed.zh.traditional (iOS 14.2)
+- character.book.closed.fill (iOS 14.2)
+- character.book.closed.fill.ar (iOS 14.2)
+- character.book.closed.fill.he (iOS 14.2)
+- character.book.closed.fill.hi (iOS 14.2)
+- character.book.closed.fill.ja (iOS 14.2)
+- character.book.closed.fill.ko (iOS 14.2)
+- character.book.closed.fill.th (iOS 14.2)
+- character.book.closed.fill.zh (iOS 14.2)
+- character.book.closed.fill.zh.traditional (iOS 14.2)
 
 ### character.bubble
-- character.bubble
-- character.bubble.ar
-- character.bubble.he
-- character.bubble.hi
-- character.bubble.ja
-- character.bubble.ko
-- character.bubble.th
-- character.bubble.zh
-- character.bubble.zh.traditional
-- character.bubble.fill
-- character.bubble.fill.ar
-- character.bubble.fill.he
-- character.bubble.fill.hi
-- character.bubble.fill.ja
-- character.bubble.fill.ko
-- character.bubble.fill.th
-- character.bubble.fill.zh
-- character.bubble.fill.zh.traditional
+- character.bubble (iOS 14.5)
+- character.bubble.ar (iOS 14.5)
+- character.bubble.he (iOS 14.5)
+- character.bubble.hi (iOS 15.0)
+- character.bubble.ja (iOS 15.0)
+- character.bubble.ko (iOS 15.0)
+- character.bubble.th (iOS 15.0)
+- character.bubble.zh (iOS 15.0)
+- character.bubble.zh.traditional (iOS 15.0)
+- character.bubble.fill (iOS 14.5)
+- character.bubble.fill.ar (iOS 14.5)
+- character.bubble.fill.he (iOS 14.5)
+- character.bubble.fill.hi (iOS 15.0)
+- character.bubble.fill.ja (iOS 15.0)
+- character.bubble.fill.ko (iOS 15.0)
+- character.bubble.fill.th (iOS 15.0)
+- character.bubble.fill.zh (iOS 15.0)
+- character.bubble.fill.zh.traditional (iOS 15.0)
 
 ### character.cursor.ibeam
-- character.cursor.ibeam
-- character.cursor.ibeam.ar
-- character.cursor.ibeam.he
-- character.cursor.ibeam.hi
-- character.cursor.ibeam.ja
-- character.cursor.ibeam.ko
-- character.cursor.ibeam.th
-- character.cursor.ibeam.zh
-- character.cursor.ibeam.zh.traditional
+- character.cursor.ibeam (iOS 14.5)
+- character.cursor.ibeam.ar (iOS 14.5)
+- character.cursor.ibeam.he (iOS 14.5)
+- character.cursor.ibeam.hi (iOS 14.5)
+- character.cursor.ibeam.ja (iOS 14.5)
+- character.cursor.ibeam.ko (iOS 14.5)
+- character.cursor.ibeam.th (iOS 14.5)
+- character.cursor.ibeam.zh (iOS 14.5)
+- character.cursor.ibeam.zh.traditional (iOS 14.5)
 
 ### character.textbox
-- character.textbox
-- character.textbox.ar
-- character.textbox.he
-- character.textbox.hi
-- character.textbox.ja
-- character.textbox.ko
-- character.textbox.th
-- character.textbox.zh
-- character.textbox.zh.traditional
+- character.textbox (iOS 14.5)
+- character.textbox.ar (iOS 14.5)
+- character.textbox.he (iOS 14.5)
+- character.textbox.hi (iOS 14.5)
+- character.textbox.ja (iOS 14.5)
+- character.textbox.ko (iOS 14.5)
+- character.textbox.th (iOS 14.5)
+- character.textbox.zh (iOS 14.5)
+- character.textbox.zh.traditional (iOS 14.5)
 
 ### chart.bar
-- chart.bar
-- chart.bar.fill
+- chart.bar (iOS 13.0)
+- chart.bar.fill (iOS 13.0)
 
 ### chart.bar.doc.horizontal
-- chart.bar.doc.horizontal
-- chart.bar.doc.horizontal.fill
+- chart.bar.doc.horizontal (iOS 14.0)
+- chart.bar.doc.horizontal.fill (iOS 14.0)
 
 ### chart.bar.xaxis
+ (iOS 14.0)
 
 ### chart.line.uptrend.xyaxis
+ (iOS 15.0)
 
 ### chart.pie
-- chart.pie
-- chart.pie.fill
+- chart.pie (iOS 13.0)
+- chart.pie.fill (iOS 13.0)
 
 ### chart.xyaxis.line
+ (iOS 15.0)
 
 ### checkerboard.rectangle
+ (iOS 14.0)
 
 ### checkerboard.shield
+ (iOS 15.0)
 
 ### checklist
-- checklist
-- checklist.rtl
+- checklist (iOS 15.0)
+- checklist.rtl (iOS 15.0)
 
 ### checkmark
-- checkmark
-- checkmark.circle
-- checkmark.circle.fill
-- checkmark.rectangle
-- checkmark.rectangle.fill
-- checkmark.square
-- checkmark.square.fill
+- checkmark (iOS 13.0)
+- checkmark.circle (iOS 13.0)
+- checkmark.circle.fill (iOS 13.0)
+- checkmark.rectangle (iOS 13.0)
+- checkmark.rectangle.fill (iOS 13.0)
+- checkmark.square (iOS 13.0)
+- checkmark.square.fill (iOS 13.0)
 
 ### checkmark.bubble
-- checkmark.bubble
-- checkmark.bubble.fill
+- checkmark.bubble (iOS 15.0)
+- checkmark.bubble.fill (iOS 15.0)
 
 ### checkmark.circle.trianglebadge.exclamationmark
+ (iOS 15.0)
 
 ### checkmark.diamond
-- checkmark.diamond
-- checkmark.diamond.fill
+- checkmark.diamond (iOS 15.0)
+- checkmark.diamond.fill (iOS 15.0)
 
 ### checkmark.icloud
-- checkmark.icloud
-- checkmark.icloud.fill
+- checkmark.icloud (iOS 14.0)
+- checkmark.icloud.fill (iOS 14.0)
 
 ### checkmark.rectangle.portrait
-- checkmark.rectangle.portrait
-- checkmark.rectangle.portrait.fill
+- checkmark.rectangle.portrait (iOS 14.0)
+- checkmark.rectangle.portrait.fill (iOS 14.0)
 
 ### checkmark.seal
-- checkmark.seal
-- checkmark.seal.fill
+- checkmark.seal (iOS 13.0)
+- checkmark.seal.fill (iOS 13.0)
 
 ### checkmark.shield
-- checkmark.shield
-- checkmark.shield.fill
+- checkmark.shield (iOS 13.0)
+- checkmark.shield.fill (iOS 13.0)
 
 ### chevron.backward
-- chevron.backward
-- chevron.backward.circle
-- chevron.backward.circle.fill
-- chevron.backward.square
-- chevron.backward.square.fill
+- chevron.backward (iOS 14.0)
+- chevron.backward.circle (iOS 14.0)
+- chevron.backward.circle.fill (iOS 14.0)
+- chevron.backward.square (iOS 14.0)
+- chevron.backward.square.fill (iOS 14.0)
 
 ### chevron.backward.2
+ (iOS 14.0)
 
 ### chevron.compact.down
+ (iOS 13.0)
 
 ### chevron.compact.left
+ (iOS 13.0)
 
 ### chevron.compact.right
+ (iOS 13.0)
 
 ### chevron.compact.up
+ (iOS 13.0)
 
 ### chevron.down
-- chevron.down
-- chevron.down.circle
-- chevron.down.circle.fill
-- chevron.down.square
-- chevron.down.square.fill
+- chevron.down (iOS 13.0)
+- chevron.down.circle (iOS 13.0)
+- chevron.down.circle.fill (iOS 13.0)
+- chevron.down.square (iOS 13.0)
+- chevron.down.square.fill (iOS 13.0)
 
 ### chevron.forward
-- chevron.forward
-- chevron.forward.circle
-- chevron.forward.circle.fill
-- chevron.forward.square
-- chevron.forward.square.fill
+- chevron.forward (iOS 14.0)
+- chevron.forward.circle (iOS 14.0)
+- chevron.forward.circle.fill (iOS 14.0)
+- chevron.forward.square (iOS 14.0)
+- chevron.forward.square.fill (iOS 14.0)
 
 ### chevron.forward.2
+ (iOS 14.0)
 
 ### chevron.left
-- chevron.left
-- chevron.left.circle
-- chevron.left.circle.fill
-- chevron.left.square
-- chevron.left.square.fill
+- chevron.left (iOS 13.0)
+- chevron.left.circle (iOS 13.0)
+- chevron.left.circle.fill (iOS 13.0)
+- chevron.left.square (iOS 13.0)
+- chevron.left.square.fill (iOS 13.0)
 
 ### chevron.left.2
+ (iOS 13.0)
 
 ### chevron.left.forwardslash.chevron.right
+ (iOS 15.0)
 
 ### chevron.left.slash.chevron.right
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [chevron.left.forwardslash.chevron.right](#chevronleftforwardslashchevronright))
 
 ### chevron.right
-- chevron.right
-- chevron.right.circle
-- chevron.right.circle.fill
-- chevron.right.square
-- chevron.right.square.fill
+- chevron.right (iOS 13.0)
+- chevron.right.circle (iOS 13.0)
+- chevron.right.circle.fill (iOS 13.0)
+- chevron.right.square (iOS 13.0)
+- chevron.right.square.fill (iOS 13.0)
 
 ### chevron.right.2
+ (iOS 13.0)
 
 ### chevron.up
-- chevron.up
-- chevron.up.circle
-- chevron.up.circle.fill
-- chevron.up.square
-- chevron.up.square.fill
+- chevron.up (iOS 13.0)
+- chevron.up.circle (iOS 13.0)
+- chevron.up.circle.fill (iOS 13.0)
+- chevron.up.square (iOS 13.0)
+- chevron.up.square.fill (iOS 13.0)
 
 ### chevron.up.chevron.down
+ (iOS 13.0)
 
 ### circle
-- circle
-- circle.fill
-- circle.circle
-- circle.circle.fill
-- circle.square
-- circle.slash
-- circle.slash.fill
+- circle (iOS 13.0)
+- circle.fill (iOS 13.0)
+- circle.circle (iOS 14.0)
+- circle.circle.fill (iOS 14.0)
+- circle.square (iOS 14.0)
+- circle.slash (iOS 15.0)
+- circle.slash.fill (iOS 15.0)
 
 ### circle.and.line.horizontal
-- circle.and.line.horizontal
-- circle.and.line.horizontal.fill
+- circle.and.line.horizontal (iOS 15.0)
+- circle.and.line.horizontal.fill (iOS 15.0)
 
 ### circle.bottomhalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.bottomhalf.filled](#circlebottomhalffilled))
 
 ### circle.bottomhalf.filled
+ (iOS 15.0)
 
 ### circle.bottomthird.split
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [sleep](#sleep))
 
 ### circle.dashed
+ (iOS 14.0)
 
 ### circle.dashed.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.dashed.inset.filled](#circledashedinsetfilled))
 
 ### circle.dashed.inset.filled
+ (iOS 15.0)
 
 ### circle.fill.square.fill
+ (iOS 14.0)
 
 ### circle.grid.2x1
-- circle.grid.2x1
-- circle.grid.2x1.fill
+- circle.grid.2x1 (iOS 15.0)
+- circle.grid.2x1.fill (iOS 15.0)
 
 ### circle.grid.2x1.left.filled
+ (iOS 15.0)
 
 ### circle.grid.2x1.right.filled
+ (iOS 15.0)
 
 ### circle.grid.2x2
-- circle.grid.2x2
-- circle.grid.2x2.fill
+- circle.grid.2x2 (iOS 13.0)
+- circle.grid.2x2.fill (iOS 13.0)
 
 ### circle.grid.3x3
-- circle.grid.3x3
-- circle.grid.3x3.fill
-- circle.grid.3x3.circle
-- circle.grid.3x3.circle.fill
+- circle.grid.3x3 (iOS 13.0)
+- circle.grid.3x3.fill (iOS 13.0)
+- circle.grid.3x3.circle (iOS 15.0)
+- circle.grid.3x3.circle.fill (iOS 15.0)
 
 ### circle.grid.cross
-- circle.grid.cross
-- circle.grid.cross.fill
+- circle.grid.cross (iOS 14.0)
+- circle.grid.cross.fill (iOS 14.0)
 
 ### circle.grid.cross.down.fill
+ (iOS 14.0)
 
 ### circle.grid.cross.left.fill
+ (iOS 14.0)
 
 ### circle.grid.cross.right.fill
+ (iOS 14.0)
 
 ### circle.grid.cross.up.fill
+ (iOS 14.0)
 
 ### circle.grid.hex
-- circle.grid.hex
-- circle.grid.hex.fill
+- circle.grid.hex (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.hexagongrid](#circlehexagongrid))
+- circle.grid.hex.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.hexagongrid.fill](#circlehexagongrid))
 
 ### circle.hexagongrid
-- circle.hexagongrid
-- circle.hexagongrid.fill
-- circle.hexagongrid.circle
-- circle.hexagongrid.circle.fill
+- circle.hexagongrid (iOS 15.0)
+- circle.hexagongrid.fill (iOS 15.0)
+- circle.hexagongrid.circle (iOS 15.0)
+- circle.hexagongrid.circle.fill (iOS 15.0)
 
 ### circle.hexagonpath
-- circle.hexagonpath
-- circle.hexagonpath.fill
+- circle.hexagonpath (iOS 15.0)
+- circle.hexagonpath.fill (iOS 15.0)
 
 ### circle.inset.filled
+ (iOS 15.0)
 
 ### circle.lefthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.lefthalf.filled](#circlelefthalffilled))
 
 ### circle.lefthalf.filled
+ (iOS 15.0)
 
 ### circle.righthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.righthalf.filled](#circlerighthalffilled))
 
 ### circle.righthalf.filled
+ (iOS 15.0)
 
 ### circle.tophalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.tophalf.filled](#circletophalffilled))
 
 ### circle.tophalf.filled
+ (iOS 15.0)
 
 ### circlebadge
-- circlebadge
-- circlebadge.fill
+- circlebadge (iOS 14.0)
+- circlebadge.fill (iOS 14.0)
 
 ### circlebadge.2
-- circlebadge.2
-- circlebadge.2.fill
+- circlebadge.2 (iOS 14.0)
+- circlebadge.2.fill (iOS 14.0)
 
 ### circles.hexagongrid
-- circles.hexagongrid
-- circles.hexagongrid.fill
+- circles.hexagongrid (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.hexagongrid](#circlehexagongrid))
+- circles.hexagongrid.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.hexagongrid.fill](#circlehexagongrid))
 
 ### circles.hexagonpath
-- circles.hexagonpath
-- circles.hexagonpath.fill
+- circles.hexagonpath (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.hexagonpath](#circlehexagonpath))
+- circles.hexagonpath.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.hexagonpath.fill](#circlehexagonpath))
 
 ### clear
-- clear
-- clear.fill
+- clear (iOS 13.0)
+- clear.fill (iOS 13.0)
 
 ### clock
-- clock
-- clock.fill
+- clock (iOS 13.0)
+- clock.fill (iOS 13.0)
 
 ### clock.arrow.2.circlepath
+ (iOS 14.2)
 
 ### clock.arrow.circlepath
+ (iOS 14.0)
 
 ### clock.badge.checkmark
-- clock.badge.checkmark
-- clock.badge.checkmark.fill
+- clock.badge.checkmark (iOS 15.0)
+- clock.badge.checkmark.fill (iOS 15.0)
 
 ### clock.badge.exclamationmark
-- clock.badge.exclamationmark
-- clock.badge.exclamationmark.fill
+- clock.badge.exclamationmark (iOS 15.0)
+- clock.badge.exclamationmark.fill (iOS 15.0)
 
 ### cloud
-- cloud
-- cloud.fill
+- cloud (iOS 13.0)
+- cloud.fill (iOS 13.0)
 
 ### cloud.bolt
-- cloud.bolt
-- cloud.bolt.fill
+- cloud.bolt (iOS 13.0)
+- cloud.bolt.fill (iOS 13.0)
 
 ### cloud.bolt.rain
-- cloud.bolt.rain
-- cloud.bolt.rain.fill
+- cloud.bolt.rain (iOS 13.0)
+- cloud.bolt.rain.fill (iOS 13.0)
 
 ### cloud.drizzle
-- cloud.drizzle
-- cloud.drizzle.fill
+- cloud.drizzle (iOS 13.0)
+- cloud.drizzle.fill (iOS 13.0)
 
 ### cloud.fog
-- cloud.fog
-- cloud.fog.fill
+- cloud.fog (iOS 13.0)
+- cloud.fog.fill (iOS 13.0)
 
 ### cloud.hail
-- cloud.hail
-- cloud.hail.fill
+- cloud.hail (iOS 13.0)
+- cloud.hail.fill (iOS 13.0)
 
 ### cloud.heavyrain
-- cloud.heavyrain
-- cloud.heavyrain.fill
+- cloud.heavyrain (iOS 13.0)
+- cloud.heavyrain.fill (iOS 13.0)
 
 ### cloud.moon
-- cloud.moon
-- cloud.moon.fill
+- cloud.moon (iOS 13.0)
+- cloud.moon.fill (iOS 13.0)
 
 ### cloud.moon.bolt
-- cloud.moon.bolt
-- cloud.moon.bolt.fill
+- cloud.moon.bolt (iOS 13.0)
+- cloud.moon.bolt.fill (iOS 13.0)
 
 ### cloud.moon.rain
-- cloud.moon.rain
-- cloud.moon.rain.fill
+- cloud.moon.rain (iOS 13.0)
+- cloud.moon.rain.fill (iOS 13.0)
 
 ### cloud.rain
-- cloud.rain
-- cloud.rain.fill
+- cloud.rain (iOS 13.0)
+- cloud.rain.fill (iOS 13.0)
 
 ### cloud.sleet
-- cloud.sleet
-- cloud.sleet.fill
+- cloud.sleet (iOS 13.0)
+- cloud.sleet.fill (iOS 13.0)
 
 ### cloud.snow
-- cloud.snow
-- cloud.snow.fill
+- cloud.snow (iOS 13.0)
+- cloud.snow.fill (iOS 13.0)
 
 ### cloud.sun
-- cloud.sun
-- cloud.sun.fill
+- cloud.sun (iOS 13.0)
+- cloud.sun.fill (iOS 13.0)
 
 ### cloud.sun.bolt
-- cloud.sun.bolt
-- cloud.sun.bolt.fill
+- cloud.sun.bolt (iOS 13.0)
+- cloud.sun.bolt.fill (iOS 13.0)
 
 ### cloud.sun.rain
-- cloud.sun.rain
-- cloud.sun.rain.fill
+- cloud.sun.rain (iOS 13.0)
+- cloud.sun.rain.fill (iOS 13.0)
 
 ### coloncurrencysign
-- coloncurrencysign.circle
-- coloncurrencysign.circle.fill
-- coloncurrencysign.square
-- coloncurrencysign.square.fill
+- coloncurrencysign.circle (iOS 13.0)
+- coloncurrencysign.circle.fill (iOS 13.0)
+- coloncurrencysign.square (iOS 13.0)
+- coloncurrencysign.square.fill (iOS 13.0)
 
 ### comb
-- comb
-- comb.fill
+- comb (iOS 14.0)
+- comb.fill (iOS 14.0)
 
 ### command
-- command
-- command.circle
-- command.circle.fill
-- command.square
-- command.square.fill
+- command (iOS 13.0)
+- command.circle (iOS 14.0)
+- command.circle.fill (iOS 14.0)
+- command.square (iOS 14.0)
+- command.square.fill (iOS 14.0)
 
 ### computermouse
-- computermouse
-- computermouse.fill
+- computermouse (iOS 15.0)
+- computermouse.fill (iOS 15.0)
 
 ### cone
-- cone
-- cone.fill
+- cone (iOS 14.0)
+- cone.fill (iOS 14.0)
 
 ### contextualmenu.and.cursorarrow
+ (iOS 14.0)
 
 ### control
+ (iOS 13.0)
 
 ### cpu
-- cpu
-- cpu.fill
+- cpu (iOS 14.0)
+- cpu.fill (iOS 15.0)
 
 ### creditcard
-- creditcard
-- creditcard.fill
-- creditcard.circle
-- creditcard.circle.fill
+- creditcard (iOS 13.0)
+- creditcard.fill (iOS 13.0)
+- creditcard.circle (iOS 14.0)
+- creditcard.circle.fill (iOS 14.0)
 
 ### creditcard.and.123
+ (iOS 15.0)
 
 ### creditcard.trianglebadge.exclamationmark
+ (iOS 15.0)
 
 ### crop
+ (iOS 13.0)
 
 ### crop.rotate
+ (iOS 13.0)
 
 ### cross
-- cross
-- cross.fill
-- cross.circle
-- cross.circle.fill
+- cross (iOS 14.0)
+- cross.fill (iOS 14.0)
+- cross.circle (iOS 14.0)
+- cross.circle.fill (iOS 14.0)
 
 ### cross.case
-- cross.case
-- cross.case.fill
+- cross.case (iOS 14.0)
+- cross.case.fill (iOS 14.0)
 
 ### cross.vial
-- cross.vial
-- cross.vial.fill
+- cross.vial (iOS 15.0)
+- cross.vial.fill (iOS 15.0)
 
 ### crown
-- crown
-- crown.fill
+- crown (iOS 14.0)
+- crown.fill (iOS 14.0)
 
 ### cruzeirosign
-- cruzeirosign.circle
-- cruzeirosign.circle.fill
-- cruzeirosign.square
-- cruzeirosign.square.fill
+- cruzeirosign.circle (iOS 13.0)
+- cruzeirosign.circle.fill (iOS 13.0)
+- cruzeirosign.square (iOS 13.0)
+- cruzeirosign.square.fill (iOS 13.0)
 
 ### cube
-- cube
-- cube.fill
+- cube (iOS 13.0)
+- cube.fill (iOS 13.0)
 
 ### cube.box
-- cube.box
-- cube.box.fill
+- cube.box (iOS, introduced: 13.0, deprecated: 14.0, renamed: [shippingbox](#shippingbox))
+- cube.box.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [shippingbox.fill](#shippingbox))
 
 ### cube.transparent
-- cube.transparent
-- cube.transparent.fill
+- cube.transparent (iOS 14.0)
+- cube.transparent.fill (iOS 14.0)
 
 ### curlybraces
-- curlybraces
-- curlybraces.square
-- curlybraces.square.fill
+- curlybraces (iOS 14.0)
+- curlybraces.square (iOS 14.0)
+- curlybraces.square.fill (iOS 14.0)
 
 ### cursor.rays
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [cursorarrow.rays](#cursorarrowrays))
 
 ### cursorarrow
-- cursorarrow
-- cursorarrow.square
+- cursorarrow (iOS 14.0)
+- cursorarrow.square (iOS 14.0)
 
 ### cursorarrow.and.square.on.square.dashed
+ (iOS 14.0)
 
 ### cursorarrow.click
+ (iOS 14.0)
 
 ### cursorarrow.click.2
+ (iOS 14.0)
 
 ### cursorarrow.click.badge.clock
+ (iOS 14.0)
 
 ### cursorarrow.motionlines
+ (iOS 14.0)
 
 ### cursorarrow.motionlines.click
+ (iOS 14.0)
 
 ### cursorarrow.rays
+ (iOS 14.0)
 
 ### cylinder
-- cylinder
-- cylinder.fill
+- cylinder (iOS 14.0)
+- cylinder.fill (iOS 14.0)
 
 ### cylinder.split.1x2
-- cylinder.split.1x2
-- cylinder.split.1x2.fill
+- cylinder.split.1x2 (iOS 14.0)
+- cylinder.split.1x2.fill (iOS 14.0)
 
 ### d
-- d.circle
-- d.circle.fill
-- d.square
-- d.square.fill
+- d.circle (iOS 13.0)
+- d.circle.fill (iOS 13.0)
+- d.square (iOS 13.0)
+- d.square.fill (iOS 13.0)
 
 ### decrease.indent
+ (iOS 13.0)
 
 ### decrease.quotelevel
+ (iOS 13.0)
 
 ### delete.backward
-- delete.backward
-- delete.backward.fill
+- delete.backward (iOS 15.0)
+- delete.backward.fill (iOS 15.0)
 
 ### delete.forward
-- delete.forward
-- delete.forward.fill
+- delete.forward (iOS 15.0)
+- delete.forward.fill (iOS 15.0)
 
 ### delete.left
-- delete.left
-- delete.left.fill
+- delete.left (iOS 13.0)
+- delete.left.fill (iOS 13.0)
 
 ### delete.right
-- delete.right
-- delete.right.fill
+- delete.right (iOS 13.0)
+- delete.right.fill (iOS 13.0)
 
 ### deskclock
-- deskclock
-- deskclock.fill
+- deskclock (iOS 14.0)
+- deskclock.fill (iOS 14.0)
 
 ### desktopcomputer
+ (iOS 13.0)
 
 ### desktopcomputer.and.arrow.down
+ (iOS 15.0)
 
 ### desktopcomputer.trianglebadge.exclamationmark
+ (iOS 15.0)
 
 ### dial
-- dial
-- dial.fill
+- dial (iOS, introduced: 13.0, deprecated: 14.0, renamed: [dial.min](#dialmin))
+- dial.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [dial.min.fill](#dialmin))
 
 ### dial.max
-- dial.max
-- dial.max.fill
+- dial.max (iOS 14.0)
+- dial.max.fill (iOS 14.0)
 
 ### dial.min
-- dial.min
-- dial.min.fill
+- dial.min (iOS 14.0)
+- dial.min.fill (iOS 14.0)
 
 ### diamond
-- diamond
-- diamond.fill
+- diamond (iOS 14.0)
+- diamond.fill (iOS 14.0)
 
 ### diamond.bottomhalf.filled
+ (iOS 15.0)
 
 ### diamond.inset.filled
+ (iOS 15.0)
 
 ### diamond.lefthalf.filled
+ (iOS 15.0)
 
 ### diamond.righthalf.filled
+ (iOS 15.0)
 
 ### diamond.tophalf.filled
+ (iOS 15.0)
 
 ### dice
-- dice
-- dice.fill
+- dice (iOS 15.0)
+- dice.fill (iOS 15.0)
 
 ### die.face.1
-- die.face.1
-- die.face.1.fill
+- die.face.1 (iOS 14.0)
+- die.face.1.fill (iOS 14.0)
 
 ### die.face.2
-- die.face.2
-- die.face.2.fill
+- die.face.2 (iOS 14.0)
+- die.face.2.fill (iOS 14.0)
 
 ### die.face.3
-- die.face.3
-- die.face.3.fill
+- die.face.3 (iOS 14.0)
+- die.face.3.fill (iOS 14.0)
 
 ### die.face.4
-- die.face.4
-- die.face.4.fill
+- die.face.4 (iOS 14.0)
+- die.face.4.fill (iOS 14.0)
 
 ### die.face.5
-- die.face.5
-- die.face.5.fill
+- die.face.5 (iOS 14.0)
+- die.face.5.fill (iOS 14.0)
 
 ### die.face.6
-- die.face.6
-- die.face.6.fill
+- die.face.6 (iOS 14.0)
+- die.face.6.fill (iOS 14.0)
 
 ### digitalcrown.arrow.clockwise
+ (iOS 15.0)
 
 ### digitalcrown.arrow.counterclockwise
+ (iOS 15.0)
 
 ### digitalcrown.fill.arrow.clockwise
+ (iOS 15.0)
 
 ### digitalcrown.fill.arrow.counterclockwise
+ (iOS 15.0)
 
 ### digitalcrown.horizontal.arrow.clockwise
+ (iOS 15.0)
 
 ### digitalcrown.horizontal.arrow.counterclockwise
+ (iOS 15.0)
 
 ### digitalcrown.horizontal.fill.arrow.clockwise
+ (iOS 15.0)
 
 ### digitalcrown.horizontal.fill.arrow.counterclockwise
+ (iOS 15.0)
 
 ### directcurrent
+ (iOS 14.2)
 
 ### display
+ (iOS 14.0)
 
 ### display.2
+ (iOS 14.0)
 
 ### display.and.arrow.down
+ (iOS 15.0)
 
 ### display.trianglebadge.exclamationmark
+ (iOS 14.0)
 
 ### divide
-- divide
-- divide.circle
-- divide.circle.fill
-- divide.square
-- divide.square.fill
+- divide (iOS 13.0)
+- divide.circle (iOS 13.0)
+- divide.circle.fill (iOS 13.0)
+- divide.square (iOS 13.0)
+- divide.square.fill (iOS 13.0)
 
 ### doc
-- doc
-- doc.fill
-- doc.circle
-- doc.circle.fill
+- doc (iOS 13.0)
+- doc.fill (iOS 13.0)
+- doc.circle (iOS 13.0)
+- doc.circle.fill (iOS 13.0)
 
 ### doc.append
-- doc.append
-- doc.append.rtl
-- doc.append.fill
-- doc.append.fill.rtl
+- doc.append (iOS 13.0)
+- doc.append.rtl (iOS 14.0)
+- doc.append.fill (iOS 14.0)
+- doc.append.fill.rtl (iOS 14.0)
 
 ### doc.badge.ellipsis
+ (iOS 14.0)
 
 ### doc.badge.gearshape
-- doc.badge.gearshape
-- doc.badge.gearshape.fill
+- doc.badge.gearshape (iOS 14.0)
+- doc.badge.gearshape.fill (iOS 14.0)
 
 ### doc.badge.plus
+ (iOS 14.0)
 
 ### doc.fill.badge.ellipsis
+ (iOS 14.0)
 
 ### doc.fill.badge.plus
+ (iOS 14.0)
 
 ### doc.on.clipboard
-- doc.on.clipboard
-- doc.on.clipboard.fill
+- doc.on.clipboard (iOS 13.0)
+- doc.on.clipboard.fill (iOS 13.0)
 
 ### doc.on.doc
-- doc.on.doc
-- doc.on.doc.fill
+- doc.on.doc (iOS 13.0)
+- doc.on.doc.fill (iOS 13.0)
 
 ### doc.plaintext
-- doc.plaintext
-- doc.plaintext.fill
+- doc.plaintext (iOS 13.0)
+- doc.plaintext.fill (iOS 14.0)
 
 ### doc.richtext
-- doc.richtext
-- doc.richtext.ar
-- doc.richtext.he
-- doc.richtext.hi
-- doc.richtext.ja
-- doc.richtext.ko
-- doc.richtext.th
-- doc.richtext.zh
-- doc.richtext.zh.traditional
-- doc.richtext.fill
-- doc.richtext.fill.ar
-- doc.richtext.fill.he
-- doc.richtext.fill.hi
-- doc.richtext.fill.ja
-- doc.richtext.fill.ko
-- doc.richtext.fill.th
-- doc.richtext.fill.zh
-- doc.richtext.fill.zh.traditional
+- doc.richtext (iOS 13.0)
+- doc.richtext.ar (iOS 14.0)
+- doc.richtext.he (iOS 14.0)
+- doc.richtext.hi (iOS 15.0)
+- doc.richtext.ja (iOS 15.0)
+- doc.richtext.ko (iOS 15.0)
+- doc.richtext.th (iOS 15.0)
+- doc.richtext.zh (iOS 15.0)
+- doc.richtext.zh.traditional (iOS 15.0)
+- doc.richtext.fill (iOS 14.0)
+- doc.richtext.fill.ar (iOS 14.0)
+- doc.richtext.fill.he (iOS 14.0)
+- doc.richtext.fill.hi (iOS 15.0)
+- doc.richtext.fill.ja (iOS 15.0)
+- doc.richtext.fill.ko (iOS 15.0)
+- doc.richtext.fill.th (iOS 15.0)
+- doc.richtext.fill.zh (iOS 15.0)
+- doc.richtext.fill.zh.traditional (iOS 15.0)
 
 ### doc.text
-- doc.text
-- doc.text.fill
+- doc.text (iOS 13.0)
+- doc.text.fill (iOS 13.0)
 
 ### doc.text.below.ecg
-- doc.text.below.ecg
-- doc.text.below.ecg.rtl
-- doc.text.below.ecg.fill
-- doc.text.below.ecg.fill.rtl
+- doc.text.below.ecg (iOS 14.0)
+- doc.text.below.ecg.rtl (iOS 14.2)
+- doc.text.below.ecg.fill (iOS 14.0)
+- doc.text.below.ecg.fill.rtl (iOS 14.2)
 
 ### doc.text.fill.viewfinder
+ (iOS 14.0)
 
 ### doc.text.image
-- doc.text.image
-- doc.text.image.fill
+- doc.text.image (iOS 15.0)
+- doc.text.image.fill (iOS 15.0)
 
 ### doc.text.magnifyingglass
+ (iOS 13.0)
 
 ### doc.text.viewfinder
+ (iOS 13.0)
 
 ### doc.zipper
+ (iOS 14.0)
 
 ### dock.arrow.down.rectangle
+ (iOS 14.0)
 
 ### dock.arrow.up.rectangle
+ (iOS 14.0)
 
 ### dock.rectangle
+ (iOS 14.0)
 
 ### dollarsign
-- dollarsign.circle
-- dollarsign.circle.fill
-- dollarsign.square
-- dollarsign.square.fill
+- dollarsign.circle (iOS 13.0)
+- dollarsign.circle.fill (iOS 13.0)
+- dollarsign.square (iOS 13.0)
+- dollarsign.square.fill (iOS 13.0)
 
 ### dongsign
-- dongsign.circle
-- dongsign.circle.fill
-- dongsign.square
-- dongsign.square.fill
+- dongsign.circle (iOS 13.0)
+- dongsign.circle.fill (iOS 13.0)
+- dongsign.square (iOS 13.0)
+- dongsign.square.fill (iOS 13.0)
 
 ### dot.arrowtriangles.up.right.down.left.circle
+ (iOS 14.0)
 
 ### dot.circle.and.cursorarrow
+ (iOS 14.0)
 
 ### dot.circle.and.hand.point.up.left.fill
+ (iOS 15.0)
 
 ### dot.radiowaves.forward
+ (iOS 14.0)
 
 ### dot.radiowaves.left.and.right
+ (iOS 13.0)
 
 ### dot.radiowaves.right
+ (iOS 13.0)
 
 ### dot.radiowaves.up.forward
+ (iOS 15.0)
 
 ### dot.square
-- dot.square
-- dot.square.fill
+- dot.square (iOS 13.0)
+- dot.square.fill (iOS 13.0)
 
 ### dot.squareshape
-- dot.squareshape
-- dot.squareshape.fill
+- dot.squareshape (iOS 14.0)
+- dot.squareshape.fill (iOS 14.0)
 
 ### dot.squareshape.split.2x2
+ (iOS 14.0)
 
 ### dpad
-- dpad
-- dpad.fill
+- dpad (iOS 14.0)
+- dpad.fill (iOS 14.0)
 
 ### dpad.down.fill
+ (iOS 14.0)
 
 ### dpad.left.fill
+ (iOS 14.0)
 
 ### dpad.right.fill
+ (iOS 14.0)
 
 ### dpad.up.fill
+ (iOS 14.0)
 
 ### drop
-- drop
-- drop.fill
+- drop (iOS 14.0)
+- drop.fill (iOS 14.0)
 
 ### drop.triangle
-- drop.triangle
-- drop.triangle.fill
+- drop.triangle (iOS 13.0)
+- drop.triangle.fill (iOS 13.0)
 
 ### e
-- e.circle
-- e.circle.fill
-- e.square
-- e.square.fill
+- e.circle (iOS 13.0)
+- e.circle.fill (iOS 13.0)
+- e.square (iOS 13.0)
+- e.square.fill (iOS 13.0)
 
 ### ear
-- ear
-- ear.fill
+- ear (iOS 13.0)
+- ear.fill (iOS 14.0)
 
 ### ear.badge.checkmark
+ (iOS 14.0)
 
 ### ear.trianglebadge.exclamationmark
+ (iOS 14.0)
 
 ### earbuds
+ (iOS 15.0)
 
 ### earbuds.case
-- earbuds.case
-- earbuds.case.fill
+- earbuds.case (iOS 15.0)
+- earbuds.case.fill (iOS 15.0)
 
 ### earpods
+ (iOS 14.0)
 
 ### eject
-- eject
-- eject.fill
-- eject.circle
-- eject.circle.fill
+- eject (iOS 13.0)
+- eject.fill (iOS 13.0)
+- eject.circle (iOS 14.0)
+- eject.circle.fill (iOS 14.0)
 
 ### ellipses.bubble
-- ellipses.bubble
-- ellipses.bubble.fill
+- ellipses.bubble (iOS, introduced: 13.0, deprecated: 14.0, renamed: [ellipsis.bubble](#ellipsisbubble))
+- ellipses.bubble.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [ellipsis.bubble.fill](#ellipsisbubble))
 
 ### ellipsis
-- ellipsis
-- ellipsis.circle
-- ellipsis.circle.fill
-- ellipsis.rectangle
-- ellipsis.rectangle.fill
+- ellipsis (iOS 13.0)
+- ellipsis.circle (iOS 13.0)
+- ellipsis.circle.fill (iOS 13.0)
+- ellipsis.rectangle (iOS 14.0)
+- ellipsis.rectangle.fill (iOS 14.0)
 
 ### ellipsis.bubble
-- ellipsis.bubble
-- ellipsis.bubble.fill
+- ellipsis.bubble (iOS 14.0)
+- ellipsis.bubble.fill (iOS 14.0)
 
 ### ellipsis.vertical.bubble
-- ellipsis.vertical.bubble
-- ellipsis.vertical.bubble.fill
+- ellipsis.vertical.bubble (iOS 15.0)
+- ellipsis.vertical.bubble.fill (iOS 15.0)
 
 ### envelope
-- envelope
-- envelope.fill
-- envelope.circle
-- envelope.circle.fill
+- envelope (iOS 13.0)
+- envelope.fill (iOS 13.0)
+- envelope.circle (iOS 13.0)
+- envelope.circle.fill (iOS 13.0)
 
 ### envelope.arrow.triangle.branch
-- envelope.arrow.triangle.branch
-- envelope.arrow.triangle.branch.fill
+- envelope.arrow.triangle.branch (iOS 14.0)
+- envelope.arrow.triangle.branch.fill (iOS 14.0)
 
 ### envelope.badge
-- envelope.badge
-- envelope.badge.fill
+- envelope.badge (iOS 13.0)
+- envelope.badge.fill (iOS 13.0)
 
 ### envelope.badge.shield.half.filled
-- envelope.badge.shield.half.filled
-- envelope.badge.shield.half.filled.fill
+- envelope.badge.shield.half.filled (iOS 15.0)
+- envelope.badge.shield.half.filled.fill (iOS 15.0)
 
 ### envelope.badge.shield.leadinghalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [envelope.badge.shield.half.filled](#envelopebadgeshieldhalffilled))
 
 ### envelope.fill.badge.shield.trailinghalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [envelope.badge.shield.half.filled.fill](#envelopebadgeshieldhalffilled))
 
 ### envelope.open
-- envelope.open
-- envelope.open.fill
+- envelope.open (iOS 13.0)
+- envelope.open.fill (iOS 13.0)
 
 ### equal
-- equal
-- equal.circle
-- equal.circle.fill
-- equal.square
-- equal.square.fill
+- equal (iOS 13.0)
+- equal.circle (iOS 13.0)
+- equal.circle.fill (iOS 13.0)
+- equal.square (iOS 13.0)
+- equal.square.fill (iOS 13.0)
 
 ### escape
+ (iOS 13.0)
 
 ### esim
-- esim
-- esim.fill
+- esim (iOS 14.0)
+- esim.fill (iOS 14.0)
 
 ### eurosign
-- eurosign.circle
-- eurosign.circle.fill
-- eurosign.square
-- eurosign.square.fill
+- eurosign.circle (iOS 13.0)
+- eurosign.circle.fill (iOS 13.0)
+- eurosign.square (iOS 13.0)
+- eurosign.square.fill (iOS 13.0)
 
 ### exclamationmark
-- exclamationmark
-- exclamationmark.circle
-- exclamationmark.circle.fill
-- exclamationmark.square
-- exclamationmark.square.fill
+- exclamationmark (iOS 13.0)
+- exclamationmark.circle (iOS 13.0)
+- exclamationmark.circle.fill (iOS 13.0)
+- exclamationmark.square (iOS 13.0)
+- exclamationmark.square.fill (iOS 13.0)
 
 ### exclamationmark.2
+ (iOS 14.0)
 
 ### exclamationmark.3
+ (iOS 14.0)
 
 ### exclamationmark.applewatch
+ (iOS 14.2)
 
 ### exclamationmark.arrow.circlepath
+ (iOS 14.0)
 
 ### exclamationmark.arrow.triangle.2.circlepath
+ (iOS 14.0)
 
 ### exclamationmark.bubble
-- exclamationmark.bubble
-- exclamationmark.bubble.fill
+- exclamationmark.bubble (iOS 13.0)
+- exclamationmark.bubble.fill (iOS 13.0)
 
 ### exclamationmark.icloud
-- exclamationmark.icloud
-- exclamationmark.icloud.fill
+- exclamationmark.icloud (iOS 13.0)
+- exclamationmark.icloud.fill (iOS 13.0)
 
 ### exclamationmark.octagon
-- exclamationmark.octagon
-- exclamationmark.octagon.fill
+- exclamationmark.octagon (iOS 13.0)
+- exclamationmark.octagon.fill (iOS 13.0)
 
 ### exclamationmark.shield
-- exclamationmark.shield
-- exclamationmark.shield.fill
+- exclamationmark.shield (iOS 13.0)
+- exclamationmark.shield.fill (iOS 13.0)
 
 ### exclamationmark.triangle
-- exclamationmark.triangle
-- exclamationmark.triangle.fill
+- exclamationmark.triangle (iOS 13.0)
+- exclamationmark.triangle.fill (iOS 13.0)
 
 ### externaldrive
-- externaldrive
-- externaldrive.fill
+- externaldrive (iOS 14.0)
+- externaldrive.fill (iOS 14.0)
 
 ### externaldrive.badge.checkmark
+ (iOS 14.0)
 
 ### externaldrive.badge.icloud
+ (iOS 14.0)
 
 ### externaldrive.badge.minus
+ (iOS 14.0)
 
 ### externaldrive.badge.person.crop
+ (iOS 14.0)
 
 ### externaldrive.badge.plus
+ (iOS 14.0)
 
 ### externaldrive.badge.timemachine
+ (iOS 14.0)
 
 ### externaldrive.badge.wifi
+ (iOS 14.0)
 
 ### externaldrive.badge.xmark
+ (iOS 14.0)
 
 ### externaldrive.connected.to.line.below
-- externaldrive.connected.to.line.below
-- externaldrive.connected.to.line.below.fill
+- externaldrive.connected.to.line.below (iOS 14.0)
+- externaldrive.connected.to.line.below.fill (iOS 14.0)
 
 ### externaldrive.fill.badge.checkmark
+ (iOS 14.0)
 
 ### externaldrive.fill.badge.icloud
+ (iOS 14.0)
 
 ### externaldrive.fill.badge.minus
+ (iOS 14.0)
 
 ### externaldrive.fill.badge.person.crop
+ (iOS 14.0)
 
 ### externaldrive.fill.badge.plus
+ (iOS 14.0)
 
 ### externaldrive.fill.badge.timemachine
+ (iOS 14.0)
 
 ### externaldrive.fill.badge.wifi
+ (iOS 14.0)
 
 ### externaldrive.fill.badge.xmark
+ (iOS 14.0)
 
 ### eye
-- eye
-- eye.fill
-- eye.circle
-- eye.circle.fill
-- eye.square
-- eye.square.fill
-- eye.slash
-- eye.slash.fill
-- eye.slash.circle
-- eye.slash.circle.fill
+- eye (iOS 13.0)
+- eye.fill (iOS 13.0)
+- eye.circle (iOS 14.0)
+- eye.circle.fill (iOS 14.0)
+- eye.square (iOS 15.0)
+- eye.square.fill (iOS 15.0)
+- eye.slash (iOS 13.0)
+- eye.slash.fill (iOS 13.0)
+- eye.slash.circle (iOS 15.0)
+- eye.slash.circle.fill (iOS 15.0)
 
 ### eye.trianglebadge.exclamationmark
-- eye.trianglebadge.exclamationmark
-- eye.trianglebadge.exclamationmark.fill
+- eye.trianglebadge.exclamationmark (iOS 15.0)
+- eye.trianglebadge.exclamationmark.fill (iOS 15.0)
 
 ### eyebrow
+ (iOS 14.0)
 
 ### eyedropper
+ (iOS 13.0)
 
 ### eyedropper.full
+ (iOS 13.0)
 
 ### eyedropper.halffull
+ (iOS 13.0)
 
 ### eyeglasses
+ (iOS 13.0)
 
 ### eyes
+ (iOS 14.0)
 
 ### eyes.inverse
+ (iOS 14.0)
 
 ### f
-- f.circle
-- f.circle.fill
-- f.square
-- f.square.fill
+- f.circle (iOS 13.0)
+- f.circle.fill (iOS 13.0)
+- f.square (iOS 13.0)
+- f.square.fill (iOS 13.0)
 
 ### f.cursive
-- f.cursive
-- f.cursive.circle
-- f.cursive.circle.fill
+- f.cursive (iOS 13.0)
+- f.cursive.circle (iOS 13.0)
+- f.cursive.circle.fill (iOS 13.0)
 
 ### face.dashed
-- face.dashed
-- face.dashed.fill
+- face.dashed (iOS 14.0)
+- face.dashed.fill (iOS 14.0)
 
 ### face.smiling
-- face.smiling
-- face.smiling.fill
+- face.smiling (iOS 14.0)
+- face.smiling.fill (iOS 14.0)
 
 ### faceid
+ (iOS 13.0)
 
 ### facemask
-- facemask
-- facemask.fill
+- facemask (iOS 15.0)
+- facemask.fill (iOS 15.0)
 
 ### fanblades
-- fanblades
-- fanblades.fill
+- fanblades (iOS 15.0)
+- fanblades.fill (iOS 15.0)
 
 ### faxmachine
+ (iOS 14.0)
 
 ### ferry
-- ferry
-- ferry.fill
+- ferry (iOS 15.0)
+- ferry.fill (iOS 15.0)
 
 ### fiberchannel
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [fibrechannel](#fibrechannel))
 
 ### fibrechannel
+ (iOS 15.0)
 
 ### figure.stand
+ (iOS 14.0)
 
 ### figure.stand.line.dotted.figure.stand
+ (iOS 14.0)
 
 ### figure.walk
-- figure.walk
-- figure.walk.circle
-- figure.walk.circle.fill
+- figure.walk (iOS 14.0)
+- figure.walk.circle (iOS 14.0)
+- figure.walk.circle.fill (iOS 14.0)
 
 ### figure.walk.diamond
-- figure.walk.diamond
-- figure.walk.diamond.fill
+- figure.walk.diamond (iOS 14.0)
+- figure.walk.diamond.fill (iOS 14.0)
 
 ### figure.wave
-- figure.wave
-- figure.wave.circle
-- figure.wave.circle.fill
+- figure.wave (iOS 14.0)
+- figure.wave.circle (iOS 14.0)
+- figure.wave.circle.fill (iOS 14.0)
 
 ### filemenu.and.cursorarrow
-- filemenu.and.cursorarrow
-- filemenu.and.cursorarrow.rtl
+- filemenu.and.cursorarrow (iOS 14.0)
+- filemenu.and.cursorarrow.rtl (iOS 14.0)
 
 ### filemenu.and.selection
+ (iOS 14.0)
 
 ### film
-- film
-- film.fill
-- film.circle
-- film.circle.fill
+- film (iOS 13.0)
+- film.fill (iOS 13.0)
+- film.circle (iOS 15.0)
+- film.circle.fill (iOS 15.0)
 
 ### flag
-- flag
-- flag.fill
-- flag.circle
-- flag.circle.fill
-- flag.square
-- flag.square.fill
-- flag.slash
-- flag.slash.fill
-- flag.slash.circle
-- flag.slash.circle.fill
+- flag (iOS 13.0)
+- flag.fill (iOS 13.0)
+- flag.circle (iOS 13.0)
+- flag.circle.fill (iOS 13.0)
+- flag.square (iOS 15.0)
+- flag.square.fill (iOS 15.0)
+- flag.slash (iOS 13.0)
+- flag.slash.fill (iOS 13.0)
+- flag.slash.circle (iOS 14.0)
+- flag.slash.circle.fill (iOS 14.0)
 
 ### flag.2.crossed
-- flag.2.crossed
-- flag.2.crossed.fill
+- flag.2.crossed (iOS 15.0)
+- flag.2.crossed.fill (iOS 15.0)
 
 ### flag.and.flag.filled.crossed
+ (iOS 15.0)
 
 ### flag.badge.ellipsis
-- flag.badge.ellipsis
-- flag.badge.ellipsis.fill
+- flag.badge.ellipsis (iOS 14.0)
+- flag.badge.ellipsis.fill (iOS 14.0)
 
 ### flag.filled.and.flag.crossed
+ (iOS 15.0)
 
 ### flame
-- flame
-- flame.fill
+- flame (iOS 13.0)
+- flame.fill (iOS 13.0)
 
 ### flashlight.off.fill
+ (iOS 13.0)
 
 ### flashlight.on.fill
+ (iOS 13.0)
 
 ### flip.horizontal
-- flip.horizontal
-- flip.horizontal.fill
+- flip.horizontal (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right](#arrowleftandrightrighttriangleleftrighttriangleright))
+- flip.horizontal.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right.fill](#arrowleftandrightrighttriangleleftrighttriangleright))
 
 ### flipphone
+ (iOS 14.0)
 
 ### florinsign
-- florinsign.circle
-- florinsign.circle.fill
-- florinsign.square
-- florinsign.square.fill
+- florinsign.circle (iOS 13.0)
+- florinsign.circle.fill (iOS 13.0)
+- florinsign.square (iOS 13.0)
+- florinsign.square.fill (iOS 13.0)
 
 ### flowchart
-- flowchart
-- flowchart.fill
+- flowchart (iOS 13.0)
+- flowchart.fill (iOS 13.0)
 
 ### fn
+ (iOS 14.0)
 
 ### folder
-- folder
-- folder.fill
-- folder.circle
-- folder.circle.fill
+- folder (iOS 13.0)
+- folder.fill (iOS 13.0)
+- folder.circle (iOS 13.0)
+- folder.circle.fill (iOS 13.0)
 
 ### folder.badge.gear
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [folder.badge.gearshape](#folderbadgegearshape))
 
 ### folder.badge.gearshape
+ (iOS 15.0)
 
 ### folder.badge.minus
+ (iOS 13.0)
 
 ### folder.badge.person.crop
+ (iOS 13.0)
 
 ### folder.badge.plus
+ (iOS 13.0)
 
 ### folder.badge.questionmark
-- folder.badge.questionmark
-- folder.badge.questionmark.ar
+- folder.badge.questionmark (iOS 14.0)
+- folder.badge.questionmark.ar (iOS 14.0)
 
 ### folder.fill.badge.gear
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [folder.fill.badge.gearshape](#folderfillbadgegearshape))
 
 ### folder.fill.badge.gearshape
+ (iOS 15.0)
 
 ### folder.fill.badge.minus
+ (iOS 13.0)
 
 ### folder.fill.badge.person.crop
+ (iOS 13.0)
 
 ### folder.fill.badge.plus
+ (iOS 13.0)
 
 ### folder.fill.badge.questionmark
-- folder.fill.badge.questionmark
-- folder.fill.badge.questionmark.ar
+- folder.fill.badge.questionmark (iOS 14.0)
+- folder.fill.badge.questionmark.ar (iOS 14.0)
 
 ### fork.knife
-- fork.knife
-- fork.knife.circle
-- fork.knife.circle.fill
+- fork.knife (iOS 15.0)
+- fork.knife.circle (iOS 15.0)
+- fork.knife.circle.fill (iOS 15.0)
 
 ### forward
-- forward
-- forward.fill
-- forward.circle
-- forward.circle.fill
+- forward (iOS 13.0)
+- forward.fill (iOS 13.0)
+- forward.circle (iOS 15.0)
+- forward.circle.fill (iOS 15.0)
 
 ### forward.end
-- forward.end
-- forward.end.fill
+- forward.end (iOS 13.0)
+- forward.end.fill (iOS 13.0)
 
 ### forward.end.alt
-- forward.end.alt
-- forward.end.alt.fill
+- forward.end.alt (iOS 13.0)
+- forward.end.alt.fill (iOS 13.0)
 
 ### forward.frame
-- forward.frame
-- forward.frame.fill
+- forward.frame (iOS 14.0)
+- forward.frame.fill (iOS 14.0)
 
 ### francsign
-- francsign.circle
-- francsign.circle.fill
-- francsign.square
-- francsign.square.fill
+- francsign.circle (iOS 13.0)
+- francsign.circle.fill (iOS 13.0)
+- francsign.square (iOS 13.0)
+- francsign.square.fill (iOS 13.0)
 
 ### fuelpump
-- fuelpump
-- fuelpump.fill
-- fuelpump.circle
-- fuelpump.circle.fill
+- fuelpump (iOS 15.0)
+- fuelpump.fill (iOS 15.0)
+- fuelpump.circle (iOS 15.0)
+- fuelpump.circle.fill (iOS 15.0)
 
 ### function
+ (iOS 13.0)
 
 ### fx
+ (iOS 13.0)
 
 ### g
-- g.circle
-- g.circle.fill
-- g.square
-- g.square.fill
+- g.circle (iOS 13.0)
+- g.circle.fill (iOS 13.0)
+- g.square (iOS 13.0)
+- g.square.fill (iOS 13.0)
 
 ### gamecontroller
-- gamecontroller
-- gamecontroller.fill
+- gamecontroller (iOS 13.0)
+- gamecontroller.fill (iOS 13.0)
 
 ### gauge
+ (iOS 13.0)
 
 ### gauge.badge.minus
+ (iOS 13.0)
 
 ### gauge.badge.plus
+ (iOS 13.0)
 
 ### gear
-- gear
-- gear.circle
-- gear.circle.fill
+- gear (iOS 13.0)
+- gear.circle (iOS 15.0)
+- gear.circle.fill (iOS 15.0)
 
 ### gearshape
-- gearshape
-- gearshape.fill
-- gearshape.circle
-- gearshape.circle.fill
+- gearshape (iOS 14.0)
+- gearshape.fill (iOS 14.0)
+- gearshape.circle (iOS 15.0)
+- gearshape.circle.fill (iOS 15.0)
 
 ### gearshape.2
-- gearshape.2
-- gearshape.2.fill
+- gearshape.2 (iOS 14.0)
+- gearshape.2.fill (iOS 14.0)
 
 ### gift
-- gift
-- gift.fill
-- gift.circle
-- gift.circle.fill
+- gift (iOS 13.0)
+- gift.fill (iOS 13.0)
+- gift.circle (iOS 14.0)
+- gift.circle.fill (iOS 14.0)
 
 ### giftcard
-- giftcard
-- giftcard.fill
+- giftcard (iOS 14.0)
+- giftcard.fill (iOS 14.0)
 
 ### globe
+ (iOS 13.0)
 
 ### globe.americas
-- globe.americas
-- globe.americas.fill
+- globe.americas (iOS 15.0)
+- globe.americas.fill (iOS 15.0)
 
 ### globe.asia.australia
-- globe.asia.australia
-- globe.asia.australia.fill
+- globe.asia.australia (iOS 15.0)
+- globe.asia.australia.fill (iOS 15.0)
 
 ### globe.europe.africa
-- globe.europe.africa
-- globe.europe.africa.fill
+- globe.europe.africa (iOS 15.0)
+- globe.europe.africa.fill (iOS 15.0)
 
 ### gobackward
+ (iOS 13.0)
 
 ### gobackward.10
-- gobackward.10
-- gobackward.10.ar
-- gobackward.10.hi
+- gobackward.10 (iOS 13.0)
+- gobackward.10.ar (iOS 13.0)
+- gobackward.10.hi (iOS 13.0)
 
 ### gobackward.15
-- gobackward.15
-- gobackward.15.ar
-- gobackward.15.hi
+- gobackward.15 (iOS 13.0)
+- gobackward.15.ar (iOS 13.0)
+- gobackward.15.hi (iOS 13.0)
 
 ### gobackward.30
-- gobackward.30
-- gobackward.30.ar
-- gobackward.30.hi
+- gobackward.30 (iOS 13.0)
+- gobackward.30.ar (iOS 13.0)
+- gobackward.30.hi (iOS 13.0)
 
 ### gobackward.45
-- gobackward.45
-- gobackward.45.ar
-- gobackward.45.hi
+- gobackward.45 (iOS 13.0)
+- gobackward.45.ar (iOS 13.0)
+- gobackward.45.hi (iOS 13.0)
 
 ### gobackward.5
-- gobackward.5
-- gobackward.5.ar
-- gobackward.5.hi
+- gobackward.5 (iOS 15.0)
+- gobackward.5.ar (iOS 15.0)
+- gobackward.5.hi (iOS 15.0)
 
 ### gobackward.60
-- gobackward.60
-- gobackward.60.ar
-- gobackward.60.hi
+- gobackward.60 (iOS 13.0)
+- gobackward.60.ar (iOS 13.0)
+- gobackward.60.hi (iOS 13.0)
 
 ### gobackward.75
-- gobackward.75
-- gobackward.75.ar
-- gobackward.75.hi
+- gobackward.75 (iOS 13.0)
+- gobackward.75.ar (iOS 13.0)
+- gobackward.75.hi (iOS 13.0)
 
 ### gobackward.90
-- gobackward.90
-- gobackward.90.ar
-- gobackward.90.hi
+- gobackward.90 (iOS 13.0)
+- gobackward.90.ar (iOS 13.0)
+- gobackward.90.hi (iOS 13.0)
 
 ### gobackward.minus
+ (iOS 13.0)
 
 ### goforward
+ (iOS 13.0)
 
 ### goforward.10
-- goforward.10
-- goforward.10.ar
-- goforward.10.hi
+- goforward.10 (iOS 13.0)
+- goforward.10.ar (iOS 13.0)
+- goforward.10.hi (iOS 13.0)
 
 ### goforward.15
-- goforward.15
-- goforward.15.ar
-- goforward.15.hi
+- goforward.15 (iOS 13.0)
+- goforward.15.ar (iOS 13.0)
+- goforward.15.hi (iOS 13.0)
 
 ### goforward.30
-- goforward.30
-- goforward.30.ar
-- goforward.30.hi
+- goforward.30 (iOS 13.0)
+- goforward.30.ar (iOS 13.0)
+- goforward.30.hi (iOS 13.0)
 
 ### goforward.45
-- goforward.45
-- goforward.45.ar
-- goforward.45.hi
+- goforward.45 (iOS 13.0)
+- goforward.45.ar (iOS 13.0)
+- goforward.45.hi (iOS 13.0)
 
 ### goforward.5
-- goforward.5
-- goforward.5.ar
-- goforward.5.hi
+- goforward.5 (iOS 15.0)
+- goforward.5.ar (iOS 15.0)
+- goforward.5.hi (iOS 15.0)
 
 ### goforward.60
-- goforward.60
-- goforward.60.ar
-- goforward.60.hi
+- goforward.60 (iOS 13.0)
+- goforward.60.ar (iOS 13.0)
+- goforward.60.hi (iOS 13.0)
 
 ### goforward.75
-- goforward.75
-- goforward.75.ar
-- goforward.75.hi
+- goforward.75 (iOS 13.0)
+- goforward.75.ar (iOS 13.0)
+- goforward.75.hi (iOS 13.0)
 
 ### goforward.90
-- goforward.90
-- goforward.90.ar
-- goforward.90.hi
+- goforward.90 (iOS 13.0)
+- goforward.90.ar (iOS 13.0)
+- goforward.90.hi (iOS 13.0)
 
 ### goforward.plus
+ (iOS 13.0)
 
 ### graduationcap
-- graduationcap
-- graduationcap.fill
+- graduationcap (iOS 14.0)
+- graduationcap.fill (iOS 14.0)
 
 ### greaterthan
-- greaterthan
-- greaterthan.circle
-- greaterthan.circle.fill
-- greaterthan.square
-- greaterthan.square.fill
+- greaterthan (iOS 13.0)
+- greaterthan.circle (iOS 13.0)
+- greaterthan.circle.fill (iOS 13.0)
+- greaterthan.square (iOS 13.0)
+- greaterthan.square.fill (iOS 13.0)
 
 ### greetingcard
-- greetingcard
-- greetingcard.fill
+- greetingcard (iOS 14.0)
+- greetingcard.fill (iOS 14.0)
 
 ### grid
-- grid
-- grid.circle
-- grid.circle.fill
+- grid (iOS 13.0)
+- grid.circle (iOS 13.0)
+- grid.circle.fill (iOS 13.0)
 
 ### guaranisign
-- guaranisign.circle
-- guaranisign.circle.fill
-- guaranisign.square
-- guaranisign.square.fill
+- guaranisign.circle (iOS 13.0)
+- guaranisign.circle.fill (iOS 13.0)
+- guaranisign.square (iOS 13.0)
+- guaranisign.square.fill (iOS 13.0)
 
 ### guitars
-- guitars
-- guitars.fill
+- guitars (iOS 13.0)
+- guitars.fill (iOS 14.0)
 
 ### gyroscope
+ (iOS 14.0)
 
 ### h
-- h.circle
-- h.circle.fill
-- h.square
-- h.square.fill
+- h.circle (iOS 13.0)
+- h.circle.fill (iOS 13.0)
+- h.square (iOS 13.0)
+- h.square.fill (iOS 13.0)
 
 ### h.square.fill.on.square.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [h.square.on.square.fill](#hsquareonsquare))
 
 ### h.square.on.square
-- h.square.on.square
-- h.square.on.square.fill
+- h.square.on.square (iOS 14.0)
+- h.square.on.square.fill (iOS 15.0)
 
 ### hammer
-- hammer
-- hammer.fill
-- hammer.circle
-- hammer.circle.fill
+- hammer (iOS 13.0)
+- hammer.fill (iOS 13.0)
+- hammer.circle (iOS 15.0)
+- hammer.circle.fill (iOS 15.0)
 
 ### hand.draw
-- hand.draw
-- hand.draw.fill
+- hand.draw (iOS 13.0)
+- hand.draw.fill (iOS 13.0)
 
 ### hand.point.down
-- hand.point.down
-- hand.point.down.fill
+- hand.point.down (iOS 14.0)
+- hand.point.down.fill (iOS 14.0)
 
 ### hand.point.left
-- hand.point.left
-- hand.point.left.fill
+- hand.point.left (iOS 13.0)
+- hand.point.left.fill (iOS 13.0)
 
 ### hand.point.right
-- hand.point.right
-- hand.point.right.fill
+- hand.point.right (iOS 13.0)
+- hand.point.right.fill (iOS 13.0)
 
 ### hand.point.up
-- hand.point.up
-- hand.point.up.fill
+- hand.point.up (iOS 14.0)
+- hand.point.up.fill (iOS 14.0)
 
 ### hand.point.up.braille
-- hand.point.up.braille
-- hand.point.up.braille.fill
+- hand.point.up.braille (iOS 14.0)
+- hand.point.up.braille.fill (iOS 14.0)
 
 ### hand.point.up.left
-- hand.point.up.left
-- hand.point.up.left.fill
+- hand.point.up.left (iOS 14.0)
+- hand.point.up.left.fill (iOS 14.0)
 
 ### hand.raised
-- hand.raised
-- hand.raised.fill
-- hand.raised.circle
-- hand.raised.circle.fill
-- hand.raised.square
-- hand.raised.square.fill
-- hand.raised.slash
-- hand.raised.slash.fill
+- hand.raised (iOS 13.0)
+- hand.raised.fill (iOS 13.0)
+- hand.raised.circle (iOS 15.0)
+- hand.raised.circle.fill (iOS 15.0)
+- hand.raised.square (iOS 15.0)
+- hand.raised.square.fill (iOS 15.0)
+- hand.raised.slash (iOS 13.0)
+- hand.raised.slash.fill (iOS 13.0)
 
 ### hand.tap
-- hand.tap
-- hand.tap.fill
+- hand.tap (iOS 14.0)
+- hand.tap.fill (iOS 14.0)
 
 ### hand.thumbsdown
-- hand.thumbsdown
-- hand.thumbsdown.fill
-- hand.thumbsdown.circle
-- hand.thumbsdown.circle.fill
+- hand.thumbsdown (iOS 13.0)
+- hand.thumbsdown.fill (iOS 13.0)
+- hand.thumbsdown.circle (iOS 15.0)
+- hand.thumbsdown.circle.fill (iOS 15.0)
 
 ### hand.thumbsup
-- hand.thumbsup
-- hand.thumbsup.fill
-- hand.thumbsup.circle
-- hand.thumbsup.circle.fill
+- hand.thumbsup (iOS 13.0)
+- hand.thumbsup.fill (iOS 13.0)
+- hand.thumbsup.circle (iOS 15.0)
+- hand.thumbsup.circle.fill (iOS 15.0)
 
 ### hand.wave
-- hand.wave
-- hand.wave.fill
+- hand.wave (iOS 14.0)
+- hand.wave.fill (iOS 14.0)
 
 ### hands.clap
-- hands.clap
-- hands.clap.fill
+- hands.clap (iOS 14.0)
+- hands.clap.fill (iOS 14.0)
 
 ### hands.sparkles
-- hands.sparkles
-- hands.sparkles.fill
+- hands.sparkles (iOS 14.0)
+- hands.sparkles.fill (iOS 14.0)
 
 ### hare
-- hare
-- hare.fill
+- hare (iOS 13.0)
+- hare.fill (iOS 13.0)
 
 ### headphones
-- headphones
-- headphones.circle
-- headphones.circle.fill
+- headphones (iOS 13.0)
+- headphones.circle (iOS 14.0)
+- headphones.circle.fill (iOS 14.0)
 
 ### hearingaid.ear
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [hearingdevice.ear](#hearingdeviceear))
 
 ### hearingdevice.ear
+ (iOS 15.0)
 
 ### heart
-- heart
-- heart.fill
-- heart.circle
-- heart.circle.fill
-- heart.rectangle
-- heart.rectangle.fill
-- heart.square
-- heart.square.fill
-- heart.slash
-- heart.slash.fill
-- heart.slash.circle
-- heart.slash.circle.fill
+- heart (iOS 13.0)
+- heart.fill (iOS 13.0)
+- heart.circle (iOS 13.0)
+- heart.circle.fill (iOS 13.0)
+- heart.rectangle (iOS 15.0)
+- heart.rectangle.fill (iOS 15.0)
+- heart.square (iOS 15.0)
+- heart.square.fill (iOS 15.0)
+- heart.slash (iOS 13.0)
+- heart.slash.fill (iOS 13.0)
+- heart.slash.circle (iOS 13.0)
+- heart.slash.circle.fill (iOS 13.0)
 
 ### heart.text.square
-- heart.text.square
-- heart.text.square.fill
+- heart.text.square (iOS 14.0)
+- heart.text.square.fill (iOS 14.0)
 
 ### helm
+ (iOS 13.0)
 
 ### hexagon
-- hexagon
-- hexagon.fill
+- hexagon (iOS 13.0)
+- hexagon.fill (iOS 13.0)
 
 ### hexagon.bottomhalf.filled
+ (iOS 15.0)
 
 ### hexagon.lefthalf.filled
+ (iOS 15.0)
 
 ### hexagon.righthalf.filled
+ (iOS 15.0)
 
 ### hexagon.tophalf.filled
+ (iOS 15.0)
 
 ### hifispeaker
-- hifispeaker
-- hifispeaker.fill
+- hifispeaker (iOS 13.0)
+- hifispeaker.fill (iOS 13.0)
 
 ### hifispeaker.2
-- hifispeaker.2
-- hifispeaker.2.fill
+- hifispeaker.2 (iOS 14.0)
+- hifispeaker.2.fill (iOS 14.0)
 
 ### hifispeaker.and.appletv
-- hifispeaker.and.appletv
-- hifispeaker.and.appletv.fill
+- hifispeaker.and.appletv (iOS 15.0)
+- hifispeaker.and.appletv.fill (iOS 15.0)
 
 ### hifispeaker.and.homepod
-- hifispeaker.and.homepod
-- hifispeaker.and.homepod.fill
+- hifispeaker.and.homepod (iOS 14.0)
+- hifispeaker.and.homepod.fill (iOS 14.0)
 
 ### hifispeaker.and.homepodmini
-- hifispeaker.and.homepodmini
-- hifispeaker.and.homepodmini.fill
+- hifispeaker.and.homepodmini (iOS 14.5)
+- hifispeaker.and.homepodmini.fill (iOS 14.5)
 
 ### highlighter
+ (iOS 14.0)
 
 ### homekit
+ (iOS 14.0)
 
 ### homepod
-- homepod
-- homepod.fill
+- homepod (iOS 14.0)
+- homepod.fill (iOS 14.0)
 
 ### homepod.2
-- homepod.2
-- homepod.2.fill
+- homepod.2 (iOS 14.0)
+- homepod.2.fill (iOS 14.0)
 
 ### homepod.and.appletv
-- homepod.and.appletv
-- homepod.and.appletv.fill
+- homepod.and.appletv (iOS 15.0)
+- homepod.and.appletv.fill (iOS 15.0)
 
 ### homepod.and.homepodmini
-- homepod.and.homepodmini
-- homepod.and.homepodmini.fill
+- homepod.and.homepodmini (iOS 14.5)
+- homepod.and.homepodmini.fill (iOS 14.5)
 
 ### homepodmini
-- homepodmini
-- homepodmini.fill
+- homepodmini (iOS 14.5)
+- homepodmini.fill (iOS 14.5)
 
 ### homepodmini.2
-- homepodmini.2
-- homepodmini.2.fill
+- homepodmini.2 (iOS 14.5)
+- homepodmini.2.fill (iOS 14.5)
 
 ### homepodmini.and.appletv
-- homepodmini.and.appletv
-- homepodmini.and.appletv.fill
+- homepodmini.and.appletv (iOS 15.0)
+- homepodmini.and.appletv.fill (iOS 15.0)
 
 ### hourglass
+ (iOS 13.0)
 
 ### hourglass.badge.plus
+ (iOS 14.0)
 
 ### hourglass.bottomhalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [hourglass.bottomhalf.filled](#hourglassbottomhalffilled))
 
 ### hourglass.bottomhalf.filled
+ (iOS 15.0)
 
 ### hourglass.tophalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [hourglass.tophalf.filled](#hourglasstophalffilled))
 
 ### hourglass.tophalf.filled
+ (iOS 15.0)
 
 ### house
-- house
-- house.fill
-- house.circle
-- house.circle.fill
+- house (iOS 13.0)
+- house.fill (iOS 13.0)
+- house.circle (iOS 14.0)
+- house.circle.fill (iOS 14.0)
 
 ### hryvniasign
-- hryvniasign.circle
-- hryvniasign.circle.fill
-- hryvniasign.square
-- hryvniasign.square.fill
+- hryvniasign.circle (iOS 13.0)
+- hryvniasign.circle.fill (iOS 13.0)
+- hryvniasign.square (iOS 13.0)
+- hryvniasign.square.fill (iOS 13.0)
 
 ### humidity
-- humidity
-- humidity.fill
+- humidity (iOS 15.0)
+- humidity.fill (iOS 15.0)
 
 ### hurricane
+ (iOS 13.0)
 
 ### i
-- i.circle
-- i.circle.fill
-- i.square
-- i.square.fill
+- i.circle (iOS 13.0)
+- i.circle.fill (iOS 13.0)
+- i.square (iOS 13.0)
+- i.square.fill (iOS 13.0)
 
 ### icloud
-- icloud
-- icloud.fill
-- icloud.circle
-- icloud.circle.fill
-- icloud.square
-- icloud.square.fill
-- icloud.slash
-- icloud.slash.fill
+- icloud (iOS 13.0)
+- icloud.fill (iOS 13.0)
+- icloud.circle (iOS 13.0)
+- icloud.circle.fill (iOS 13.0)
+- icloud.square (iOS 15.0)
+- icloud.square.fill (iOS 15.0)
+- icloud.slash (iOS 13.0)
+- icloud.slash.fill (iOS 13.0)
 
 ### icloud.and.arrow.down
-- icloud.and.arrow.down
-- icloud.and.arrow.down.fill
+- icloud.and.arrow.down (iOS 13.0)
+- icloud.and.arrow.down.fill (iOS 13.0)
 
 ### icloud.and.arrow.up
-- icloud.and.arrow.up
-- icloud.and.arrow.up.fill
+- icloud.and.arrow.up (iOS 13.0)
+- icloud.and.arrow.up.fill (iOS 13.0)
 
 ### increase.indent
+ (iOS 13.0)
 
 ### increase.quotelevel
+ (iOS 13.0)
 
 ### indianrupeesign
-- indianrupeesign.circle
-- indianrupeesign.circle.fill
-- indianrupeesign.square
-- indianrupeesign.square.fill
+- indianrupeesign.circle (iOS 13.0)
+- indianrupeesign.circle.fill (iOS 13.0)
+- indianrupeesign.square (iOS 13.0)
+- indianrupeesign.square.fill (iOS 13.0)
 
 ### infinity
-- infinity
-- infinity.circle
-- infinity.circle.fill
+- infinity (iOS 14.0)
+- infinity.circle (iOS 14.2)
+- infinity.circle.fill (iOS 14.2)
 
 ### info
-- info
-- info.circle
-- info.circle.fill
+- info (iOS 13.0)
+- info.circle (iOS 13.0)
+- info.circle.fill (iOS 13.0)
 
 ### internaldrive
-- internaldrive
-- internaldrive.fill
+- internaldrive (iOS 14.0)
+- internaldrive.fill (iOS 14.0)
 
 ### ipad
+ (iOS 14.0)
 
 ### ipad.and.arrow.forward
+ (iOS 15.0)
 
 ### ipad.and.iphone
+ (iOS 15.0)
 
 ### ipad.badge.play
+ (iOS 14.2)
 
 ### ipad.homebutton
+ (iOS 14.0)
 
 ### ipad.homebutton.badge.play
+ (iOS 14.2)
 
 ### ipad.homebutton.landscape
+ (iOS 14.0)
 
 ### ipad.homebutton.landscape.badge.play
+ (iOS 14.2)
 
 ### ipad.landscape
+ (iOS 14.0)
 
 ### ipad.landscape.badge.play
+ (iOS 14.2)
 
 ### ipad.rear.camera
+ (iOS 15.0)
 
 ### iphone
-- iphone
-- iphone.circle
-- iphone.circle.fill
-- iphone.slash
-- iphone.slash.circle
-- iphone.slash.circle.fill
+- iphone (iOS 14.0)
+- iphone.circle (iOS 15.0)
+- iphone.circle.fill (iOS 15.0)
+- iphone.slash (iOS 14.0)
+- iphone.slash.circle (iOS 15.0)
+- iphone.slash.circle.fill (iOS 15.0)
 
 ### iphone.and.arrow.forward
+ (iOS 15.0)
 
 ### iphone.badge.play
+ (iOS 14.2)
 
 ### iphone.homebutton
-- iphone.homebutton
-- iphone.homebutton.circle
-- iphone.homebutton.circle.fill
-- iphone.homebutton.slash
-- iphone.homebutton.slash.circle
-- iphone.homebutton.slash.circle.fill
+- iphone.homebutton (iOS 14.0)
+- iphone.homebutton.circle (iOS 15.0)
+- iphone.homebutton.circle.fill (iOS 15.0)
+- iphone.homebutton.slash (iOS 14.0)
+- iphone.homebutton.slash.circle (iOS 15.0)
+- iphone.homebutton.slash.circle.fill (iOS 15.0)
 
 ### iphone.homebutton.badge.play
+ (iOS 14.2)
 
 ### iphone.homebutton.landscape
+ (iOS 14.2)
 
 ### iphone.homebutton.radiowaves.left.and.right
+ (iOS 14.0)
 
 ### iphone.landscape
+ (iOS 14.2)
 
 ### iphone.radiowaves.left.and.right
+ (iOS 14.0)
 
 ### iphone.rear.camera
+ (iOS 15.0)
 
 ### iphone.smartbatterycase.gen1
+ (iOS 15.0)
 
 ### iphone.smartbatterycase.gen2
+ (iOS 15.0)
 
 ### ipod
+ (iOS 14.0)
 
 ### ipodshuffle.gen1
+ (iOS 14.0)
 
 ### ipodshuffle.gen2
+ (iOS 14.0)
 
 ### ipodshuffle.gen3
+ (iOS 14.0)
 
 ### ipodshuffle.gen4
+ (iOS 14.0)
 
 ### ipodtouch
-- ipodtouch
-- ipodtouch.slash
+- ipodtouch (iOS 14.0)
+- ipodtouch.slash (iOS 15.0)
 
 ### ipodtouch.landscape
+ (iOS 14.2)
 
 ### italic
+ (iOS 13.0)
 
 ### ivfluid.bag
-- ivfluid.bag
-- ivfluid.bag.fill
+- ivfluid.bag (iOS 15.0)
+- ivfluid.bag.fill (iOS 15.0)
 
 ### j
-- j.circle
-- j.circle.fill
-- j.square
-- j.square.fill
+- j.circle (iOS 13.0)
+- j.circle.fill (iOS 13.0)
+- j.square (iOS 13.0)
+- j.square.fill (iOS 13.0)
 
 ### j.square.fill.on.square.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [j.square.on.square.fill](#jsquareonsquare))
 
 ### j.square.on.square
-- j.square.on.square
-- j.square.on.square.fill
+- j.square.on.square (iOS 14.0)
+- j.square.on.square.fill (iOS 15.0)
 
 ### k
-- k
-- k.circle
-- k.circle.fill
-- k.square
-- k.square.fill
+- k (iOS 14.0)
+- k.circle (iOS 13.0)
+- k.circle.fill (iOS 13.0)
+- k.square (iOS 13.0)
+- k.square.fill (iOS 13.0)
 
 ### key
-- key
-- key.fill
+- key (iOS 14.0)
+- key.fill (iOS 14.0)
 
 ### key.icloud
-- key.icloud
-- key.icloud.fill
+- key.icloud (iOS 14.0)
+- key.icloud.fill (iOS 14.0)
 
 ### keyboard
-- keyboard
-- keyboard.fill
+- keyboard (iOS 13.0)
+- keyboard.fill (iOS 15.0)
 
 ### keyboard.badge.ellipsis
+ (iOS 14.0)
 
 ### keyboard.chevron.compact.down
+ (iOS 13.0)
 
 ### keyboard.chevron.compact.left
+ (iOS 14.0)
 
 ### keyboard.macwindow
+ (iOS 14.0)
 
 ### keyboard.onehanded.left
+ (iOS 14.0)
 
 ### keyboard.onehanded.right
+ (iOS 14.0)
 
 ### kipsign
-- kipsign.circle
-- kipsign.circle.fill
-- kipsign.square
-- kipsign.square.fill
+- kipsign.circle (iOS 13.0)
+- kipsign.circle.fill (iOS 13.0)
+- kipsign.square (iOS 13.0)
+- kipsign.square.fill (iOS 13.0)
 
 ### l
-- l.circle
-- l.circle.fill
-- l.square
-- l.square.fill
+- l.circle (iOS 13.0)
+- l.circle.fill (iOS 13.0)
+- l.square (iOS 13.0)
+- l.square.fill (iOS 13.0)
 
 ### l.joystick
-- l.joystick
-- l.joystick.fill
+- l.joystick (iOS 14.0)
+- l.joystick.fill (iOS 14.0)
 
 ### l.joystick.down
-- l.joystick.down
-- l.joystick.down.fill
+- l.joystick.down (iOS, introduced: 14.0, deprecated: 15.0, renamed: [l.joystick.press.down](#ljoystickpressdown))
+- l.joystick.down.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [l.joystick.press.down.fill](#ljoystickpressdown))
 
 ### l.joystick.press.down
-- l.joystick.press.down
-- l.joystick.press.down.fill
+- l.joystick.press.down (iOS 15.0)
+- l.joystick.press.down.fill (iOS 15.0)
 
 ### l.joystick.tilt.down
-- l.joystick.tilt.down
-- l.joystick.tilt.down.fill
+- l.joystick.tilt.down (iOS 15.0)
+- l.joystick.tilt.down.fill (iOS 15.0)
 
 ### l.joystick.tilt.left
-- l.joystick.tilt.left
-- l.joystick.tilt.left.fill
+- l.joystick.tilt.left (iOS 15.0)
+- l.joystick.tilt.left.fill (iOS 15.0)
 
 ### l.joystick.tilt.right
-- l.joystick.tilt.right
-- l.joystick.tilt.right.fill
+- l.joystick.tilt.right (iOS 15.0)
+- l.joystick.tilt.right.fill (iOS 15.0)
 
 ### l.joystick.tilt.up
-- l.joystick.tilt.up
-- l.joystick.tilt.up.fill
+- l.joystick.tilt.up (iOS 15.0)
+- l.joystick.tilt.up.fill (iOS 15.0)
 
 ### l.rectangle.roundedbottom
-- l.rectangle.roundedbottom
-- l.rectangle.roundedbottom.fill
+- l.rectangle.roundedbottom (iOS 14.0)
+- l.rectangle.roundedbottom.fill (iOS 14.0)
 
 ### l1.rectangle.roundedbottom
-- l1.rectangle.roundedbottom
-- l1.rectangle.roundedbottom.fill
+- l1.rectangle.roundedbottom (iOS 14.0)
+- l1.rectangle.roundedbottom.fill (iOS 14.0)
 
 ### l2.rectangle.roundedtop
-- l2.rectangle.roundedtop
-- l2.rectangle.roundedtop.fill
+- l2.rectangle.roundedtop (iOS 14.0)
+- l2.rectangle.roundedtop.fill (iOS 14.0)
 
 ### ladybug
-- ladybug
-- ladybug.fill
+- ladybug (iOS 14.0)
+- ladybug.fill (iOS 14.0)
 
 ### lanyardcard
-- lanyardcard
-- lanyardcard.fill
+- lanyardcard (iOS 15.0)
+- lanyardcard.fill (iOS 15.0)
 
 ### laptopcomputer
+ (iOS 14.0)
 
 ### laptopcomputer.and.arrow.down
+ (iOS 15.0)
 
 ### laptopcomputer.and.iphone
+ (iOS 14.0)
 
 ### laptopcomputer.trianglebadge.exclamationmark
+ (iOS 15.0)
 
 ### largecircle.fill.circle
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.inset.filled](#circleinsetfilled))
 
 ### larisign
-- larisign.circle
-- larisign.circle.fill
-- larisign.square
-- larisign.square.fill
+- larisign.circle (iOS 13.0)
+- larisign.circle.fill (iOS 13.0)
+- larisign.square (iOS 13.0)
+- larisign.square.fill (iOS 13.0)
 
 ### lasso
+ (iOS 13.0)
 
 ### lasso.and.sparkles
+ (iOS 15.0)
 
 ### lasso.sparkles
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [lasso.and.sparkles](#lassoandsparkles))
 
 ### latch.2.case
-- latch.2.case
-- latch.2.case.fill
+- latch.2.case (iOS 14.0)
+- latch.2.case.fill (iOS 14.0)
 
 ### lb.rectangle.roundedbottom
-- lb.rectangle.roundedbottom
-- lb.rectangle.roundedbottom.fill
+- lb.rectangle.roundedbottom (iOS 14.0)
+- lb.rectangle.roundedbottom.fill (iOS 14.0)
 
 ### leaf
-- leaf
-- leaf.fill
-- leaf.circle
-- leaf.circle.fill
+- leaf (iOS 14.0)
+- leaf.fill (iOS 14.0)
+- leaf.circle (iOS 15.0)
+- leaf.circle.fill (iOS 15.0)
 
 ### leaf.arrow.circlepath
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [leaf.arrow.triangle.circlepath](#leafarrowtrianglecirclepath))
 
 ### leaf.arrow.triangle.circlepath
+ (iOS 14.0)
 
 ### lessthan
-- lessthan
-- lessthan.circle
-- lessthan.circle.fill
-- lessthan.square
-- lessthan.square.fill
+- lessthan (iOS 13.0)
+- lessthan.circle (iOS 13.0)
+- lessthan.circle.fill (iOS 13.0)
+- lessthan.square (iOS 13.0)
+- lessthan.square.fill (iOS 13.0)
 
 ### level
-- level
-- level.fill
+- level (iOS 14.0)
+- level.fill (iOS 14.0)
 
 ### lifepreserver
-- lifepreserver
-- lifepreserver.fill
+- lifepreserver (iOS 14.0)
+- lifepreserver.fill (iOS 14.0)
 
 ### light.max
+ (iOS 13.0)
 
 ### light.min
+ (iOS 13.0)
 
 ### lightbulb
-- lightbulb
-- lightbulb.fill
-- lightbulb.slash
-- lightbulb.slash.fill
+- lightbulb (iOS 13.0)
+- lightbulb.fill (iOS 13.0)
+- lightbulb.slash (iOS 13.0)
+- lightbulb.slash.fill (iOS 13.0)
 
 ### line.2.horizontal.decrease.circle
-- line.2.horizontal.decrease.circle
-- line.2.horizontal.decrease.circle.fill
+- line.2.horizontal.decrease.circle (iOS 15.0)
+- line.2.horizontal.decrease.circle.fill (iOS 15.0)
 
 ### line.3.crossed.swirl.circle
-- line.3.crossed.swirl.circle
-- line.3.crossed.swirl.circle.fill
+- line.3.crossed.swirl.circle (iOS 14.0)
+- line.3.crossed.swirl.circle.fill (iOS 14.0)
 
 ### line.3.horizontal
-- line.3.horizontal
-- line.3.horizontal.circle
-- line.3.horizontal.circle.fill
+- line.3.horizontal (iOS 15.0)
+- line.3.horizontal.circle (iOS 15.0)
+- line.3.horizontal.circle.fill (iOS 15.0)
 
 ### line.3.horizontal.decrease
-- line.3.horizontal.decrease
-- line.3.horizontal.decrease.circle
-- line.3.horizontal.decrease.circle.fill
+- line.3.horizontal.decrease (iOS 15.0)
+- line.3.horizontal.decrease.circle (iOS 15.0)
+- line.3.horizontal.decrease.circle.fill (iOS 15.0)
 
 ### line.diagonal
+ (iOS 14.0)
 
 ### line.diagonal.arrow
+ (iOS 14.0)
 
 ### line.horizontal.2.decrease.circle
-- line.horizontal.2.decrease.circle
-- line.horizontal.2.decrease.circle.fill
+- line.horizontal.2.decrease.circle (iOS, introduced: 14.0, deprecated: 15.0, renamed: [line.2.horizontal.decrease.circle](#line2horizontaldecreasecircle))
+- line.horizontal.2.decrease.circle.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [line.2.horizontal.decrease.circle.fill](#line2horizontaldecreasecircle))
 
 ### line.horizontal.3
-- line.horizontal.3
-- line.horizontal.3.circle
-- line.horizontal.3.circle.fill
+- line.horizontal.3 (iOS, introduced: 13.0, deprecated: 15.0, renamed: [line.3.horizontal](#line3horizontal))
+- line.horizontal.3.circle (iOS, introduced: 14.0, deprecated: 15.0, renamed: [line.3.horizontal.circle](#line3horizontal))
+- line.horizontal.3.circle.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [line.3.horizontal.circle.fill](#line3horizontal))
 
 ### line.horizontal.3.decrease
-- line.horizontal.3.decrease
-- line.horizontal.3.decrease.circle
-- line.horizontal.3.decrease.circle.fill
+- line.horizontal.3.decrease (iOS, introduced: 13.0, deprecated: 15.0, renamed: [line.3.horizontal.decrease](#line3horizontaldecrease))
+- line.horizontal.3.decrease.circle (iOS, introduced: 13.0, deprecated: 15.0, renamed: [line.3.horizontal.decrease.circle](#line3horizontaldecrease))
+- line.horizontal.3.decrease.circle.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [line.3.horizontal.decrease.circle.fill](#line3horizontaldecrease))
 
 ### line.horizontal.star.fill.line.horizontal
+ (iOS 14.0)
 
 ### lines.measurement.horizontal
+ (iOS 15.0)
 
 ### lineweight
+ (iOS 14.0)
 
 ### link
-- link
-- link.circle
-- link.circle.fill
+- link (iOS 13.0)
+- link.circle (iOS 13.0)
+- link.circle.fill (iOS 13.0)
 
 ### link.badge.plus
+ (iOS 14.0)
 
 ### link.icloud
-- link.icloud
-- link.icloud.fill
+- link.icloud (iOS 13.0)
+- link.icloud.fill (iOS 13.0)
 
 ### lirasign
-- lirasign.circle
-- lirasign.circle.fill
-- lirasign.square
-- lirasign.square.fill
+- lirasign.circle (iOS 13.0)
+- lirasign.circle.fill (iOS 13.0)
+- lirasign.square (iOS 13.0)
+- lirasign.square.fill (iOS 13.0)
 
 ### list.and.film
+ (iOS 14.0)
 
 ### list.bullet
-- list.bullet
-- list.bullet.circle
-- list.bullet.circle.fill
-- list.bullet.rectangle
-- list.bullet.rectangle.fill
+- list.bullet (iOS 13.0)
+- list.bullet.circle (iOS 15.0)
+- list.bullet.circle.fill (iOS 15.0)
+- list.bullet.rectangle (iOS 14.0)
+- list.bullet.rectangle.fill (iOS 15.0)
 
 ### list.bullet.below.rectangle
+ (iOS 13.0)
 
 ### list.bullet.indent
+ (iOS 13.0)
 
 ### list.bullet.rectangle.portrait
-- list.bullet.rectangle.portrait
-- list.bullet.rectangle.portrait.fill
+- list.bullet.rectangle.portrait (iOS 15.0)
+- list.bullet.rectangle.portrait.fill (iOS 15.0)
 
 ### list.dash
+ (iOS 13.0)
 
 ### list.dash.header.rectangle
+ (iOS 15.0)
 
 ### list.number
-- list.number
-- list.number.ar
-- list.number.rtl
+- list.number (iOS 13.0)
+- list.number.ar (iOS 14.0)
+- list.number.rtl (iOS 13.0)
 
 ### list.star
+ (iOS 14.0)
 
 ### list.triangle
+ (iOS 14.0)
 
 ### livephoto
-- livephoto
-- livephoto.slash
+- livephoto (iOS 13.0)
+- livephoto.slash (iOS 13.0)
 
 ### livephoto.badge.a
+ (iOS 14.0)
 
 ### livephoto.play
+ (iOS 13.0)
 
 ### location
-- location
-- location.fill
-- location.circle
-- location.circle.fill
-- location.square
-- location.square.fill
-- location.slash
-- location.slash.fill
+- location (iOS 13.0)
+- location.fill (iOS 13.0)
+- location.circle (iOS 13.0)
+- location.circle.fill (iOS 13.0)
+- location.square (iOS 15.0)
+- location.square.fill (iOS 15.0)
+- location.slash (iOS 13.0)
+- location.slash.fill (iOS 13.0)
 
 ### location.fill.viewfinder
+ (iOS 14.0)
 
 ### location.north
-- location.north
-- location.north.fill
-- location.north.circle
-- location.north.circle.fill
+- location.north (iOS 13.0)
+- location.north.fill (iOS 13.0)
+- location.north.circle (iOS 15.0)
+- location.north.circle.fill (iOS 15.0)
 
 ### location.north.line
-- location.north.line
-- location.north.line.fill
+- location.north.line (iOS 13.0)
+- location.north.line.fill (iOS 13.0)
 
 ### location.viewfinder
+ (iOS 14.0)
 
 ### lock
-- lock
-- lock.fill
-- lock.circle
-- lock.circle.fill
-- lock.rectangle
-- lock.rectangle.fill
-- lock.square
-- lock.square.fill
-- lock.slash
-- lock.slash.fill
+- lock (iOS 13.0)
+- lock.fill (iOS 13.0)
+- lock.circle (iOS 13.0)
+- lock.circle.fill (iOS 13.0)
+- lock.rectangle (iOS 14.0)
+- lock.rectangle.fill (iOS 14.0)
+- lock.square (iOS 14.0)
+- lock.square.fill (iOS 14.0)
+- lock.slash (iOS 13.0)
+- lock.slash.fill (iOS 13.0)
 
 ### lock.applewatch
+ (iOS 14.2)
 
 ### lock.desktopcomputer
+ (iOS 15.0)
 
 ### lock.display
+ (iOS 15.0)
 
 ### lock.doc
-- lock.doc
-- lock.doc.fill
+- lock.doc (iOS 14.0)
+- lock.doc.fill (iOS 14.0)
 
 ### lock.icloud
-- lock.icloud
-- lock.icloud.fill
+- lock.icloud (iOS 13.0)
+- lock.icloud.fill (iOS 13.0)
 
 ### lock.ipad
+ (iOS 15.0)
 
 ### lock.iphone
+ (iOS 15.0)
 
 ### lock.laptopcomputer
+ (iOS 15.0)
 
 ### lock.open
-- lock.open
-- lock.open.fill
+- lock.open (iOS 13.0)
+- lock.open.fill (iOS 13.0)
 
 ### lock.open.applewatch
+ (iOS 15.0)
 
 ### lock.open.desktopcomputer
+ (iOS 15.0)
 
 ### lock.open.display
+ (iOS 15.0)
 
 ### lock.open.ipad
+ (iOS 15.0)
 
 ### lock.open.iphone
+ (iOS 15.0)
 
 ### lock.open.laptopcomputer
+ (iOS 15.0)
 
 ### lock.rectangle.on.rectangle
-- lock.rectangle.on.rectangle
-- lock.rectangle.on.rectangle.fill
+- lock.rectangle.on.rectangle (iOS 14.0)
+- lock.rectangle.on.rectangle.fill (iOS 14.0)
 
 ### lock.rectangle.stack
-- lock.rectangle.stack
-- lock.rectangle.stack.fill
+- lock.rectangle.stack (iOS 14.0)
+- lock.rectangle.stack.fill (iOS 14.0)
 
 ### lock.rotation
+ (iOS 13.0)
 
 ### lock.rotation.open
+ (iOS 13.0)
 
 ### lock.shield
-- lock.shield
-- lock.shield.fill
+- lock.shield (iOS 13.0)
+- lock.shield.fill (iOS 13.0)
 
 ### lock.square.stack
-- lock.square.stack
-- lock.square.stack.fill
+- lock.square.stack (iOS 14.0)
+- lock.square.stack.fill (iOS 14.0)
 
 ### logo.playstation
+ (iOS 15.0)
 
 ### logo.xbox
+ (iOS 15.0)
 
 ### loupe
+ (iOS 14.0)
 
 ### lt.rectangle.roundedtop
-- lt.rectangle.roundedtop
-- lt.rectangle.roundedtop.fill
+- lt.rectangle.roundedtop (iOS 14.0)
+- lt.rectangle.roundedtop.fill (iOS 14.0)
 
 ### lungs
-- lungs
-- lungs.fill
+- lungs (iOS 14.0)
+- lungs.fill (iOS 14.0)
 
 ### m
-- m.circle
-- m.circle.fill
-- m.square
-- m.square.fill
+- m.circle (iOS 13.0)
+- m.circle.fill (iOS 13.0)
+- m.square (iOS 13.0)
+- m.square.fill (iOS 13.0)
 
 ### macmini
-- macmini
-- macmini.fill
+- macmini (iOS 14.0)
+- macmini.fill (iOS 14.0)
 
 ### macpro.gen1
-- macpro.gen1
-- macpro.gen1.fill
+- macpro.gen1 (iOS 14.0)
+- macpro.gen1.fill (iOS 15.0)
 
 ### macpro.gen2
-- macpro.gen2
-- macpro.gen2.fill
+- macpro.gen2 (iOS 14.0)
+- macpro.gen2.fill (iOS 14.0)
 
 ### macpro.gen3
-- macpro.gen3
-- macpro.gen3.fill
+- macpro.gen3 (iOS 14.0)
+- macpro.gen3.fill (iOS 15.0)
 
 ### macpro.gen3.server
+ (iOS 14.0)
 
 ### macwindow
+ (iOS 13.0)
 
 ### macwindow.badge.plus
+ (iOS 14.0)
 
 ### macwindow.on.rectangle
-- macwindow.on.rectangle
-- macwindow.on.rectangle.rtl
+- macwindow.on.rectangle (iOS 14.0)
+- macwindow.on.rectangle.rtl (iOS 14.0)
 
 ### magazine
-- magazine
-- magazine.fill
+- magazine (iOS 15.0)
+- magazine.fill (iOS 15.0)
 
 ### magicmouse
-- magicmouse
-- magicmouse.fill
+- magicmouse (iOS 15.0)
+- magicmouse.fill (iOS 15.0)
 
 ### magnifyingglass
-- magnifyingglass
-- magnifyingglass.circle
-- magnifyingglass.circle.fill
+- magnifyingglass (iOS 13.0)
+- magnifyingglass.circle (iOS 13.0)
+- magnifyingglass.circle.fill (iOS 13.0)
 
 ### mail
-- mail
-- mail.fill
+- mail (iOS 14.0)
+- mail.fill (iOS 14.0)
 
 ### mail.and.text.magnifyingglass
-- mail.and.text.magnifyingglass
-- mail.and.text.magnifyingglass.rtl
+- mail.and.text.magnifyingglass (iOS 14.0)
+- mail.and.text.magnifyingglass.rtl (iOS 14.0)
 
 ### mail.stack
-- mail.stack
-- mail.stack.fill
+- mail.stack (iOS 14.0)
+- mail.stack.fill (iOS 14.0)
 
 ### manatsign
-- manatsign.circle
-- manatsign.circle.fill
-- manatsign.square
-- manatsign.square.fill
+- manatsign.circle (iOS 13.0)
+- manatsign.circle.fill (iOS 13.0)
+- manatsign.square (iOS 13.0)
+- manatsign.square.fill (iOS 13.0)
 
 ### map
-- map
-- map.fill
-- map.circle
-- map.circle.fill
+- map (iOS 13.0)
+- map.fill (iOS 13.0)
+- map.circle (iOS 15.0)
+- map.circle.fill (iOS 15.0)
 
 ### mappin
-- mappin
-- mappin.circle
-- mappin.circle.fill
-- mappin.square
-- mappin.square.fill
-- mappin.slash
+- mappin (iOS 13.0)
+- mappin.circle (iOS 13.0)
+- mappin.circle.fill (iOS 13.0)
+- mappin.square (iOS 15.0)
+- mappin.square.fill (iOS 15.0)
+- mappin.slash (iOS 13.0)
 
 ### mappin.and.ellipse
+ (iOS 13.0)
 
 ### mediastick
+ (iOS 15.0)
 
 ### megaphone
-- megaphone
-- megaphone.fill
+- megaphone (iOS 14.0)
+- megaphone.fill (iOS 14.0)
 
 ### memories
+ (iOS 13.0)
 
 ### memories.badge.minus
+ (iOS 13.0)
 
 ### memories.badge.plus
+ (iOS 13.0)
 
 ### memorychip
-- memorychip
-- memorychip.fill
+- memorychip (iOS 14.0)
+- memorychip.fill (iOS 15.0)
 
 ### menubar.arrow.down.rectangle
+ (iOS 14.0)
 
 ### menubar.arrow.up.rectangle
+ (iOS 14.0)
 
 ### menubar.dock.rectangle
+ (iOS 14.0)
 
 ### menubar.dock.rectangle.badge.record
+ (iOS 14.0)
 
 ### menubar.rectangle
+ (iOS 14.0)
 
 ### menucard
-- menucard
-- menucard.fill
+- menucard (iOS 15.0)
+- menucard.fill (iOS 15.0)
 
 ### message
-- message
-- message.fill
-- message.circle
-- message.circle.fill
+- message (iOS 13.0)
+- message.fill (iOS 13.0)
+- message.circle (iOS 13.0)
+- message.circle.fill (iOS 13.0)
 
 ### message.and.waveform
-- message.and.waveform
-- message.and.waveform.fill
+- message.and.waveform (iOS 15.0)
+- message.and.waveform.fill (iOS 15.0)
 
 ### metronome
-- metronome
-- metronome.fill
+- metronome (iOS 13.0)
+- metronome.fill (iOS 14.0)
 
 ### mic
-- mic
-- mic.fill
-- mic.circle
-- mic.circle.fill
-- mic.square
-- mic.square.fill
-- mic.slash
-- mic.slash.fill
-- mic.slash.circle
-- mic.slash.circle.fill
+- mic (iOS 13.0)
+- mic.fill (iOS 13.0)
+- mic.circle (iOS 13.0)
+- mic.circle.fill (iOS 13.0)
+- mic.square (iOS 15.0)
+- mic.square.fill (iOS 15.0)
+- mic.slash (iOS 13.0)
+- mic.slash.fill (iOS 13.0)
+- mic.slash.circle (iOS 15.0)
+- mic.slash.circle.fill (iOS 15.0)
 
 ### mic.badge.plus
+ (iOS 15.0)
 
 ### mic.fill.badge.plus
+ (iOS 15.0)
 
 ### millsign
-- millsign.circle
-- millsign.circle.fill
-- millsign.square
-- millsign.square.fill
+- millsign.circle (iOS 13.0)
+- millsign.circle.fill (iOS 13.0)
+- millsign.square (iOS 13.0)
+- millsign.square.fill (iOS 13.0)
 
 ### minus
-- minus
-- minus.circle
-- minus.circle.fill
-- minus.rectangle
-- minus.rectangle.fill
-- minus.square
-- minus.square.fill
+- minus (iOS 13.0)
+- minus.circle (iOS 13.0)
+- minus.circle.fill (iOS 13.0)
+- minus.rectangle (iOS 13.0)
+- minus.rectangle.fill (iOS 13.0)
+- minus.square (iOS 13.0)
+- minus.square.fill (iOS 13.0)
 
 ### minus.diamond
-- minus.diamond
-- minus.diamond.fill
+- minus.diamond (iOS 14.0)
+- minus.diamond.fill (iOS 14.0)
 
 ### minus.forwardslash.plus
+ (iOS 15.0)
 
 ### minus.magnifyingglass
+ (iOS 13.0)
 
 ### minus.plus.batteryblock
-- minus.plus.batteryblock
-- minus.plus.batteryblock.fill
+- minus.plus.batteryblock (iOS 14.0)
+- minus.plus.batteryblock.fill (iOS 14.0)
 
 ### minus.rectangle.portrait
-- minus.rectangle.portrait
-- minus.rectangle.portrait.fill
+- minus.rectangle.portrait (iOS 14.0)
+- minus.rectangle.portrait.fill (iOS 14.0)
 
 ### minus.slash.plus
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [minus.forwardslash.plus](#minusforwardslashplus))
 
 ### moon
-- moon
-- moon.fill
-- moon.circle
-- moon.circle.fill
+- moon (iOS 13.0)
+- moon.fill (iOS 13.0)
+- moon.circle (iOS 13.0)
+- moon.circle.fill (iOS 13.0)
 
 ### moon.stars
-- moon.stars
-- moon.stars.fill
+- moon.stars (iOS 13.0)
+- moon.stars.fill (iOS 13.0)
 
 ### moon.zzz
-- moon.zzz
-- moon.zzz.fill
+- moon.zzz (iOS 13.0)
+- moon.zzz.fill (iOS 13.0)
 
 ### mosaic
-- mosaic
-- mosaic.fill
+- mosaic (iOS 14.0)
+- mosaic.fill (iOS 14.0)
 
 ### mount
-- mount
-- mount.fill
+- mount (iOS 14.0)
+- mount.fill (iOS 14.0)
 
 ### mouth
-- mouth
-- mouth.fill
+- mouth (iOS 14.0)
+- mouth.fill (iOS 14.0)
 
 ### move.3d
+ (iOS 14.0)
 
 ### multiply
-- multiply
-- multiply.circle
-- multiply.circle.fill
-- multiply.square
-- multiply.square.fill
+- multiply (iOS 13.0)
+- multiply.circle (iOS 13.0)
+- multiply.circle.fill (iOS 13.0)
+- multiply.square (iOS 13.0)
+- multiply.square.fill (iOS 13.0)
 
 ### music.house
-- music.house
-- music.house.fill
+- music.house (iOS, introduced: 13.0, deprecated: 14.0, renamed: [music.note.house](#musicnotehouse))
+- music.house.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [music.note.house.fill](#musicnotehouse))
 
 ### music.mic
-- music.mic
-- music.mic.circle
-- music.mic.circle.fill
+- music.mic (iOS 13.0)
+- music.mic.circle (iOS 15.0)
+- music.mic.circle.fill (iOS 15.0)
 
 ### music.note
+ (iOS 13.0)
 
 ### music.note.house
-- music.note.house
-- music.note.house.fill
+- music.note.house (iOS 14.0)
+- music.note.house.fill (iOS 14.0)
 
 ### music.note.list
+ (iOS 13.0)
 
 ### music.note.tv
-- music.note.tv
-- music.note.tv.fill
+- music.note.tv (iOS 15.0)
+- music.note.tv.fill (iOS 15.0)
 
 ### music.quarternote.3
+ (iOS 14.0)
 
 ### mustache
-- mustache
-- mustache.fill
+- mustache (iOS 14.0)
+- mustache.fill (iOS 14.0)
 
 ### n
-- n.circle
-- n.circle.fill
-- n.square
-- n.square.fill
+- n.circle (iOS 13.0)
+- n.circle.fill (iOS 13.0)
+- n.square (iOS 13.0)
+- n.square.fill (iOS 13.0)
 
 ### nairasign
-- nairasign.circle
-- nairasign.circle.fill
-- nairasign.square
-- nairasign.square.fill
+- nairasign.circle (iOS 13.0)
+- nairasign.circle.fill (iOS 13.0)
+- nairasign.square (iOS 13.0)
+- nairasign.square.fill (iOS 13.0)
 
 ### network
+ (iOS 14.0)
 
 ### newspaper
-- newspaper
-- newspaper.fill
+- newspaper (iOS 14.0)
+- newspaper.fill (iOS 14.0)
 
 ### nose
-- nose
-- nose.fill
+- nose (iOS 14.0)
+- nose.fill (iOS 14.0)
 
 ### nosign
+ (iOS 13.0)
 
 ### note
+ (iOS 14.0)
 
 ### note.text
+ (iOS 14.0)
 
 ### note.text.badge.plus
+ (iOS 14.0)
 
 ### number
-- number
-- number.circle
-- number.circle.fill
-- number.square
-- number.square.fill
+- number (iOS 13.0)
+- number.circle (iOS 13.0)
+- number.circle.fill (iOS 13.0)
+- number.square (iOS 13.0)
+- number.square.fill (iOS 13.0)
 
 ### o
-- o.circle
-- o.circle.fill
-- o.square
-- o.square.fill
+- o.circle (iOS 13.0)
+- o.circle.fill (iOS 13.0)
+- o.square (iOS 13.0)
+- o.square.fill (iOS 13.0)
 
 ### octagon
-- octagon
-- octagon.fill
+- octagon (iOS 14.0)
+- octagon.fill (iOS 14.0)
 
 ### octagon.bottomhalf.filled
+ (iOS 15.0)
 
 ### octagon.lefthalf.filled
+ (iOS 15.0)
 
 ### octagon.righthalf.filled
+ (iOS 15.0)
 
 ### octagon.tophalf.filled
+ (iOS 15.0)
 
 ### opticaldisc
+ (iOS 14.0)
 
 ### opticaldiscdrive
-- opticaldiscdrive
-- opticaldiscdrive.fill
+- opticaldiscdrive (iOS 14.0)
+- opticaldiscdrive.fill (iOS 14.0)
 
 ### option
+ (iOS 13.0)
 
 ### oval
-- oval
-- oval.fill
+- oval (iOS 14.0)
+- oval.fill (iOS 14.0)
 
 ### oval.bottomhalf.filled
+ (iOS 15.0)
 
 ### oval.inset.filled
+ (iOS 15.0)
 
 ### oval.lefthalf.filled
+ (iOS 15.0)
 
 ### oval.portrait
-- oval.portrait
-- oval.portrait.fill
+- oval.portrait (iOS 14.0)
+- oval.portrait.fill (iOS 14.0)
 
 ### oval.portrait.bottomhalf.filled
+ (iOS 15.0)
 
 ### oval.portrait.inset.filled
+ (iOS 15.0)
 
 ### oval.portrait.lefthalf.filled
+ (iOS 15.0)
 
 ### oval.portrait.righthalf.filled
+ (iOS 15.0)
 
 ### oval.portrait.tophalf.filled
+ (iOS 15.0)
 
 ### oval.righthalf.filled
+ (iOS 15.0)
 
 ### oval.tophalf.filled
+ (iOS 15.0)
 
 ### p
-- p.circle
-- p.circle.fill
-- p.square
-- p.square.fill
+- p.circle (iOS 13.0)
+- p.circle.fill (iOS 13.0)
+- p.square (iOS 13.0)
+- p.square.fill (iOS 13.0)
 
 ### paintbrush
-- paintbrush
-- paintbrush.fill
+- paintbrush (iOS 13.0)
+- paintbrush.fill (iOS 13.0)
 
 ### paintbrush.pointed
-- paintbrush.pointed
-- paintbrush.pointed.fill
+- paintbrush.pointed (iOS 14.0)
+- paintbrush.pointed.fill (iOS 14.0)
 
 ### paintpalette
-- paintpalette
-- paintpalette.fill
+- paintpalette (iOS 14.0)
+- paintpalette.fill (iOS 14.0)
 
 ### pano
-- pano
-- pano.fill
+- pano (iOS 13.0)
+- pano.fill (iOS 13.0)
 
 ### paperclip
-- paperclip
-- paperclip.circle
-- paperclip.circle.fill
+- paperclip (iOS 13.0)
+- paperclip.circle (iOS 13.0)
+- paperclip.circle.fill (iOS 13.0)
 
 ### paperclip.badge.ellipsis
+ (iOS 14.0)
 
 ### paperplane
-- paperplane
-- paperplane.fill
-- paperplane.circle
-- paperplane.circle.fill
+- paperplane (iOS 13.0)
+- paperplane.fill (iOS 13.0)
+- paperplane.circle (iOS 14.0)
+- paperplane.circle.fill (iOS 14.0)
 
 ### paragraph
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [paragraphsign](#paragraphsign))
 
 ### paragraphsign
+ (iOS 14.0)
 
 ### parentheses
+ (iOS 15.0)
 
 ### parkingsign
-- parkingsign
-- parkingsign.circle
-- parkingsign.circle.fill
+- parkingsign (iOS 15.0)
+- parkingsign.circle (iOS 15.0)
+- parkingsign.circle.fill (iOS 15.0)
 
 ### pause
-- pause
-- pause.fill
-- pause.circle
-- pause.circle.fill
-- pause.rectangle
-- pause.rectangle.fill
+- pause (iOS 13.0)
+- pause.fill (iOS 13.0)
+- pause.circle (iOS 13.0)
+- pause.circle.fill (iOS 13.0)
+- pause.rectangle (iOS 13.0)
+- pause.rectangle.fill (iOS 13.0)
 
 ### pawprint
-- pawprint
-- pawprint.fill
-- pawprint.circle
-- pawprint.circle.fill
+- pawprint (iOS 15.0)
+- pawprint.fill (iOS 15.0)
+- pawprint.circle (iOS 15.0)
+- pawprint.circle.fill (iOS 15.0)
 
 ### pc
+ (iOS 14.0)
 
 ### peacesign
+ (iOS 15.0)
 
 ### pencil
-- pencil
-- pencil.circle
-- pencil.circle.fill
-- pencil.slash
+- pencil (iOS 13.0)
+- pencil.circle (iOS 13.0)
+- pencil.circle.fill (iOS 13.0)
+- pencil.slash (iOS 13.0)
 
 ### pencil.and.ellipsis.rectangle
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [rectangle.and.pencil.and.ellipsis](#rectangleandpencilandellipsis))
 
 ### pencil.and.outline
+ (iOS 13.0)
 
 ### pencil.tip
+ (iOS 13.0)
 
 ### pencil.tip.crop.circle
+ (iOS 13.0)
 
 ### pencil.tip.crop.circle.badge.arrow.forward
+ (iOS 14.0)
 
 ### pencil.tip.crop.circle.badge.minus
+ (iOS 13.0)
 
 ### pencil.tip.crop.circle.badge.plus
+ (iOS 13.0)
 
 ### pentagon
-- pentagon
-- pentagon.fill
+- pentagon (iOS 15.0)
+- pentagon.fill (iOS 15.0)
 
 ### pentagon.bottomhalf.filled
+ (iOS 15.0)
 
 ### pentagon.lefthalf.filled
+ (iOS 15.0)
 
 ### pentagon.righthalf.filled
+ (iOS 15.0)
 
 ### pentagon.tophalf.filled
+ (iOS 15.0)
 
 ### percent
-- percent
-- percent.ar
+- percent (iOS 13.0)
+- percent.ar (iOS 14.0)
 
 ### person
-- person
-- person.fill
-- person.circle
-- person.circle.fill
+- person (iOS 13.0)
+- person.fill (iOS 13.0)
+- person.circle (iOS 13.0)
+- person.circle.fill (iOS 13.0)
 
 ### person.2
-- person.2
-- person.2.fill
-- person.2.circle
-- person.2.circle.fill
+- person.2 (iOS 13.0)
+- person.2.fill (iOS 13.0)
+- person.2.circle (iOS 14.0)
+- person.2.circle.fill (iOS 14.0)
 
 ### person.2.crop.square.stack
-- person.2.crop.square.stack
-- person.2.crop.square.stack.fill
+- person.2.crop.square.stack (iOS 15.0)
+- person.2.crop.square.stack.fill (iOS 15.0)
 
 ### person.2.square.stack
-- person.2.square.stack
-- person.2.square.stack.fill
+- person.2.square.stack (iOS, introduced: 13.0, deprecated: 15.0, renamed: [person.2.crop.square.stack](#person2cropsquarestack))
+- person.2.square.stack.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [person.2.crop.square.stack.fill](#person2cropsquarestack))
 
 ### person.2.wave.2
-- person.2.wave.2
-- person.2.wave.2.fill
+- person.2.wave.2 (iOS 15.0)
+- person.2.wave.2.fill (iOS 15.0)
 
 ### person.3
-- person.3
-- person.3.fill
+- person.3 (iOS 13.0)
+- person.3.fill (iOS 13.0)
 
 ### person.3.sequence
-- person.3.sequence
-- person.3.sequence.fill
+- person.3.sequence (iOS 15.0)
+- person.3.sequence.fill (iOS 15.0)
 
 ### person.and.arrow.left.and.arrow.right
+ (iOS 14.0)
 
 ### person.badge.minus
-- person.badge.minus
-- person.badge.minus.fill
+- person.badge.minus (iOS 13.0)
+- person.badge.minus.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [person.fill.badge.minus](#personfillbadgeminus))
 
 ### person.badge.plus
-- person.badge.plus
-- person.badge.plus.fill
+- person.badge.plus (iOS 13.0)
+- person.badge.plus.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [person.fill.badge.plus](#personfillbadgeplus))
 
 ### person.crop
-- person.crop.circle
-- person.crop.circle.fill
-- person.crop.rectangle
-- person.crop.rectangle.fill
-- person.crop.square
-- person.crop.square.fill
+- person.crop.circle (iOS 13.0)
+- person.crop.circle.fill (iOS 13.0)
+- person.crop.rectangle (iOS 13.0)
+- person.crop.rectangle.fill (iOS 13.0)
+- person.crop.square (iOS 13.0)
+- person.crop.square.fill (iOS 13.0)
 
 ### person.crop.artframe
+ (iOS 15.0)
 
 ### person.crop.circle.badge
-- person.crop.circle.badge
-- person.crop.circle.badge.fill
+- person.crop.circle.badge (iOS 15.0)
+- person.crop.circle.badge.fill (iOS 15.0)
 
 ### person.crop.circle.badge.checkmark
+ (iOS 13.0)
 
 ### person.crop.circle.badge.exclam
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [person.crop.circle.badge.exclamationmark](#personcropcirclebadgeexclamationmark))
 
 ### person.crop.circle.badge.exclamationmark
-- person.crop.circle.badge.exclamationmark
-- person.crop.circle.badge.exclamationmark.fill
+- person.crop.circle.badge.exclamationmark (iOS 14.0)
+- person.crop.circle.badge.exclamationmark.fill (iOS 15.0)
 
 ### person.crop.circle.badge.minus
+ (iOS 13.0)
 
 ### person.crop.circle.badge.moon
-- person.crop.circle.badge.moon
-- person.crop.circle.badge.moon.fill
+- person.crop.circle.badge.moon (iOS 15.0)
+- person.crop.circle.badge.moon.fill (iOS 15.0)
 
 ### person.crop.circle.badge.plus
+ (iOS 13.0)
 
 ### person.crop.circle.badge.questionmark
-- person.crop.circle.badge.questionmark
-- person.crop.circle.badge.questionmark.ar
-- person.crop.circle.badge.questionmark.fill
-- person.crop.circle.badge.questionmark.fill.ar
+- person.crop.circle.badge.questionmark (iOS 14.0)
+- person.crop.circle.badge.questionmark.ar (iOS 14.0)
+- person.crop.circle.badge.questionmark.fill (iOS 15.0)
+- person.crop.circle.badge.questionmark.fill.ar (iOS 15.0)
 
 ### person.crop.circle.badge.xmark
+ (iOS 13.0)
 
 ### person.crop.circle.fill.badge.checkmark
+ (iOS 13.0)
 
 ### person.crop.circle.fill.badge.exclam
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [person.crop.circle.badge.exclamationmark.fill](#personcropcirclebadgeexclamationmark))
 
 ### person.crop.circle.fill.badge.exclamationmark
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [person.crop.circle.badge.exclamationmark.fill](#personcropcirclebadgeexclamationmark))
 
 ### person.crop.circle.fill.badge.minus
+ (iOS 13.0)
 
 ### person.crop.circle.fill.badge.plus
+ (iOS 13.0)
 
 ### person.crop.circle.fill.badge.questionmark
-- person.crop.circle.fill.badge.questionmark
-- person.crop.circle.fill.badge.questionmark.ar
+- person.crop.circle.fill.badge.questionmark (iOS, introduced: 14.0, deprecated: 15.0, renamed: [person.crop.circle.badge.questionmark.fill](#personcropcirclebadgequestionmark))
+- person.crop.circle.fill.badge.questionmark.ar (iOS, introduced: 14.0, deprecated: 15.0, renamed: [person.crop.circle.badge.questionmark.fill.ar](#personcropcirclebadgequestionmark))
 
 ### person.crop.circle.fill.badge.xmark
+ (iOS 13.0)
 
 ### person.crop.rectangle.stack
-- person.crop.rectangle.stack
-- person.crop.rectangle.stack.fill
+- person.crop.rectangle.stack (iOS 15.0)
+- person.crop.rectangle.stack.fill (iOS 15.0)
 
 ### person.crop.square.fill.and.at.rectangle
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [person.crop.square.filled.and.at.rectangle](#personcropsquarefilledandatrectangle))
 
 ### person.crop.square.filled.and.at.rectangle
-- person.crop.square.filled.and.at.rectangle
-- person.crop.square.filled.and.at.rectangle.fill
+- person.crop.square.filled.and.at.rectangle (iOS 15.0)
+- person.crop.square.filled.and.at.rectangle.fill (iOS 15.0)
 
 ### person.fill.and.arrow.left.and.arrow.right
+ (iOS 14.0)
 
 ### person.fill.badge.minus
+ (iOS 14.0)
 
 ### person.fill.badge.plus
+ (iOS 14.0)
 
 ### person.fill.checkmark
-- person.fill.checkmark
-- person.fill.checkmark.rtl
+- person.fill.checkmark (iOS 14.0)
+- person.fill.checkmark.rtl (iOS 14.0)
 
 ### person.fill.questionmark
-- person.fill.questionmark
-- person.fill.questionmark.ar
-- person.fill.questionmark.rtl
+- person.fill.questionmark (iOS 14.0)
+- person.fill.questionmark.ar (iOS 14.0)
+- person.fill.questionmark.rtl (iOS 14.0)
 
 ### person.fill.turn.down
+ (iOS 14.0)
 
 ### person.fill.turn.left
+ (iOS 14.0)
 
 ### person.fill.turn.right
+ (iOS 14.0)
 
 ### person.fill.viewfinder
+ (iOS 14.0)
 
 ### person.fill.xmark
-- person.fill.xmark
-- person.fill.xmark.rtl
+- person.fill.xmark (iOS 14.0)
+- person.fill.xmark.rtl (iOS 14.0)
 
 ### person.icloud
-- person.icloud
-- person.icloud.fill
+- person.icloud (iOS 13.0)
+- person.icloud.fill (iOS 13.0)
 
 ### person.text.rectangle
-- person.text.rectangle
-- person.text.rectangle.fill
+- person.text.rectangle (iOS 15.0)
+- person.text.rectangle.fill (iOS 15.0)
 
 ### personalhotspot
+ (iOS 13.0)
 
 ### perspective
+ (iOS 13.0)
 
 ### pesetasign
-- pesetasign.circle
-- pesetasign.circle.fill
-- pesetasign.square
-- pesetasign.square.fill
+- pesetasign.circle (iOS 13.0)
+- pesetasign.circle.fill (iOS 13.0)
+- pesetasign.square (iOS 13.0)
+- pesetasign.square.fill (iOS 13.0)
 
 ### pesosign
-- pesosign.circle
-- pesosign.circle.fill
-- pesosign.square
-- pesosign.square.fill
+- pesosign.circle (iOS 13.0)
+- pesosign.circle.fill (iOS 13.0)
+- pesosign.square (iOS 13.0)
+- pesosign.square.fill (iOS 13.0)
 
 ### phone
-- phone
-- phone.fill
-- phone.circle
-- phone.circle.fill
+- phone (iOS 13.0)
+- phone.fill (iOS 13.0)
+- phone.circle (iOS 13.0)
+- phone.circle.fill (iOS 13.0)
 
 ### phone.and.waveform
-- phone.and.waveform
-- phone.and.waveform.fill
+- phone.and.waveform (iOS 15.0)
+- phone.and.waveform.fill (iOS 15.0)
 
 ### phone.arrow.down.left
+ (iOS 13.0)
 
 ### phone.arrow.right
+ (iOS 13.0)
 
 ### phone.arrow.up.right
+ (iOS 13.0)
 
 ### phone.badge.plus
+ (iOS 13.0)
 
 ### phone.bubble.left
-- phone.bubble.left
-- phone.bubble.left.fill
+- phone.bubble.left (iOS 14.0)
+- phone.bubble.left.fill (iOS 14.0)
 
 ### phone.connection
+ (iOS 14.0)
 
 ### phone.down
-- phone.down
-- phone.down.fill
-- phone.down.circle
-- phone.down.circle.fill
+- phone.down (iOS 13.0)
+- phone.down.fill (iOS 13.0)
+- phone.down.circle (iOS 13.0)
+- phone.down.circle.fill (iOS 13.0)
 
 ### phone.fill.arrow.down.left
+ (iOS 13.0)
 
 ### phone.fill.arrow.right
+ (iOS 13.0)
 
 ### phone.fill.arrow.up.right
+ (iOS 13.0)
 
 ### phone.fill.badge.plus
+ (iOS 13.0)
 
 ### phone.fill.connection
+ (iOS 14.0)
 
 ### photo
-- photo
-- photo.fill
-- photo.circle
-- photo.circle.fill
+- photo (iOS 13.0)
+- photo.fill (iOS 13.0)
+- photo.circle (iOS 15.0)
+- photo.circle.fill (iOS 15.0)
 
 ### photo.fill.on.rectangle.fill
+ (iOS 13.0)
 
 ### photo.on.rectangle
+ (iOS 13.0)
 
 ### photo.on.rectangle.angled
+ (iOS 14.0)
 
 ### photo.tv
+ (iOS 14.2)
 
 ### pianokeys
+ (iOS 14.0)
 
 ### pianokeys.inverse
+ (iOS 14.0)
 
 ### pills
-- pills
-- pills.fill
+- pills (iOS 14.0)
+- pills.fill (iOS 14.0)
 
 ### pin
-- pin
-- pin.fill
-- pin.circle
-- pin.circle.fill
-- pin.square
-- pin.square.fill
-- pin.slash
-- pin.slash.fill
+- pin (iOS 13.0)
+- pin.fill (iOS 13.0)
+- pin.circle (iOS 13.0)
+- pin.circle.fill (iOS 13.0)
+- pin.square (iOS 15.0)
+- pin.square.fill (iOS 15.0)
+- pin.slash (iOS 13.0)
+- pin.slash.fill (iOS 13.0)
 
 ### pip
-- pip
-- pip.fill
+- pip (iOS 14.0)
+- pip.fill (iOS 14.0)
 
 ### pip.enter
+ (iOS 14.0)
 
 ### pip.exit
+ (iOS 14.0)
 
 ### pip.remove
+ (iOS 14.0)
 
 ### pip.swap
+ (iOS 14.0)
 
 ### placeholdertext.fill
+ (iOS 14.0)
 
 ### platter.2.filled.ipad
+ (iOS 15.0)
 
 ### platter.2.filled.ipad.landscape
+ (iOS 15.0)
 
 ### platter.2.filled.iphone
+ (iOS 15.0)
 
 ### platter.2.filled.iphone.landscape
+ (iOS 15.0)
 
 ### platter.bottom.applewatch.case
+ (iOS 15.0)
 
 ### platter.filled.bottom.applewatch.case
+ (iOS 15.0)
 
 ### platter.filled.top.applewatch.case
+ (iOS 15.0)
 
 ### platter.top.applewatch.case
+ (iOS 15.0)
 
 ### play
-- play
-- play.fill
-- play.circle
-- play.circle.fill
-- play.rectangle
-- play.rectangle.fill
-- play.square
-- play.square.fill
-- play.slash
-- play.slash.fill
+- play (iOS 13.0)
+- play.fill (iOS 13.0)
+- play.circle (iOS 13.0)
+- play.circle.fill (iOS 13.0)
+- play.rectangle (iOS 13.0)
+- play.rectangle.fill (iOS 13.0)
+- play.square (iOS 15.0)
+- play.square.fill (iOS 15.0)
+- play.slash (iOS 14.0)
+- play.slash.fill (iOS 14.0)
 
 ### play.rectangle.on.rectangle
-- play.rectangle.on.rectangle
-- play.rectangle.on.rectangle.fill
-- play.rectangle.on.rectangle.circle
-- play.rectangle.on.rectangle.circle.fill
+- play.rectangle.on.rectangle (iOS 15.0)
+- play.rectangle.on.rectangle.fill (iOS 15.0)
+- play.rectangle.on.rectangle.circle (iOS 15.0)
+- play.rectangle.on.rectangle.circle.fill (iOS 15.0)
 
 ### play.tv
-- play.tv
-- play.tv.fill
+- play.tv (iOS 14.2)
+- play.tv.fill (iOS 14.2)
 
 ### playpause
-- playpause
-- playpause.fill
+- playpause (iOS 13.0)
+- playpause.fill (iOS 13.0)
 
 ### plus
-- plus
-- plus.circle
-- plus.circle.fill
-- plus.rectangle
-- plus.rectangle.fill
-- plus.square
-- plus.square.fill
+- plus (iOS 13.0)
+- plus.circle (iOS 13.0)
+- plus.circle.fill (iOS 13.0)
+- plus.rectangle (iOS 13.0)
+- plus.rectangle.fill (iOS 13.0)
+- plus.square (iOS 13.0)
+- plus.square.fill (iOS 13.0)
 
 ### plus.app
-- plus.app
-- plus.app.fill
+- plus.app (iOS 13.0)
+- plus.app.fill (iOS 13.0)
 
 ### plus.bubble
-- plus.bubble
-- plus.bubble.fill
+- plus.bubble (iOS 13.0)
+- plus.bubble.fill (iOS 13.0)
 
 ### plus.diamond
-- plus.diamond
-- plus.diamond.fill
+- plus.diamond (iOS 14.0)
+- plus.diamond.fill (iOS 14.0)
 
 ### plus.forwardslash.minus
+ (iOS 15.0)
 
 ### plus.magnifyingglass
+ (iOS 13.0)
 
 ### plus.message
-- plus.message
-- plus.message.fill
+- plus.message (iOS 14.0)
+- plus.message.fill (iOS 14.0)
 
 ### plus.rectangle.fill.on.folder.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [plus.rectangle.on.folder.fill](#plusrectangleonfolder))
 
 ### plus.rectangle.fill.on.rectangle.fill
+ (iOS 13.0)
 
 ### plus.rectangle.on.folder
-- plus.rectangle.on.folder
-- plus.rectangle.on.folder.fill
+- plus.rectangle.on.folder (iOS 14.0)
+- plus.rectangle.on.folder.fill (iOS 15.0)
 
 ### plus.rectangle.on.rectangle
+ (iOS 13.0)
 
 ### plus.rectangle.portrait
-- plus.rectangle.portrait
-- plus.rectangle.portrait.fill
+- plus.rectangle.portrait (iOS 14.0)
+- plus.rectangle.portrait.fill (iOS 14.0)
 
 ### plus.slash.minus
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [plus.forwardslash.minus](#plusforwardslashminus))
 
 ### plus.square.fill.on.square.fill
+ (iOS 13.0)
 
 ### plus.square.on.square
+ (iOS 13.0)
 
 ### plus.viewfinder
+ (iOS 14.0)
 
 ### plusminus
-- plusminus
-- plusminus.circle
-- plusminus.circle.fill
+- plusminus (iOS 13.0)
+- plusminus.circle (iOS 13.0)
+- plusminus.circle.fill (iOS 13.0)
 
 ### point.fill.topleft.down.curvedto.point.fill.bottomright.up
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [point.topleft.down.curvedto.point.bottomright.up.fill](#pointtopleftdowncurvedtopointbottomrightup))
 
 ### point.filled.topleft.down.curvedto.point.bottomright.up
+ (iOS 15.0)
 
 ### point.topleft.down.curvedto.point.bottomright.up
-- point.topleft.down.curvedto.point.bottomright.up
-- point.topleft.down.curvedto.point.bottomright.up.fill
+- point.topleft.down.curvedto.point.bottomright.up (iOS 14.0)
+- point.topleft.down.curvedto.point.bottomright.up.fill (iOS 15.0)
 
 ### point.topleft.down.curvedto.point.filled.bottomright.up
+ (iOS 15.0)
 
 ### power
-- power
-- power.circle
-- power.circle.fill
+- power (iOS 13.0)
+- power.circle (iOS 15.0)
+- power.circle.fill (iOS 15.0)
 
 ### power.dotted
+ (iOS 15.0)
 
 ### poweroff
+ (iOS 14.0)
 
 ### poweron
+ (iOS 14.0)
 
 ### powerplug
-- powerplug
-- powerplug.fill
+- powerplug (iOS 15.0)
+- powerplug.fill (iOS 15.0)
 
 ### powersleep
+ (iOS 14.0)
 
 ### printer
-- printer
-- printer.fill
+- printer (iOS 13.0)
+- printer.fill (iOS 13.0)
 
 ### printer.dotmatrix
-- printer.dotmatrix
-- printer.dotmatrix.fill
+- printer.dotmatrix (iOS 14.0)
+- printer.dotmatrix.fill (iOS 14.0)
 
 ### printer.dotmatrix.fill.and.paper.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [printer.dotmatrix.filled.and.paper](#printerdotmatrixfilledandpaper))
 
 ### printer.dotmatrix.filled.and.paper
+ (iOS 15.0)
 
 ### printer.fill.and.paper.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [printer.filled.and.paper](#printerfilledandpaper))
 
 ### printer.filled.and.paper
+ (iOS 15.0)
 
 ### projective
+ (iOS 13.0)
 
 ### purchased
-- purchased
-- purchased.circle
-- purchased.circle.fill
+- purchased (iOS 13.0)
+- purchased.circle (iOS 13.0)
+- purchased.circle.fill (iOS 13.0)
 
 ### puzzlepiece
-- puzzlepiece
-- puzzlepiece.fill
+- puzzlepiece (iOS 14.0)
+- puzzlepiece.fill (iOS 14.0)
 
 ### puzzlepiece.extension
-- puzzlepiece.extension
-- puzzlepiece.extension.fill
+- puzzlepiece.extension (iOS 15.0)
+- puzzlepiece.extension.fill (iOS 15.0)
 
 ### pyramid
-- pyramid
-- pyramid.fill
+- pyramid (iOS 14.0)
+- pyramid.fill (iOS 14.0)
 
 ### q
-- q.circle
-- q.circle.fill
-- q.square
-- q.square.fill
+- q.circle (iOS 13.0)
+- q.circle.fill (iOS 13.0)
+- q.square (iOS 13.0)
+- q.square.fill (iOS 13.0)
 
 ### qrcode
+ (iOS 13.0)
 
 ### qrcode.viewfinder
+ (iOS 13.0)
 
 ### questionmark
-- questionmark
-- questionmark.ar
-- questionmark.circle
-- questionmark.circle.ar
-- questionmark.circle.fill
-- questionmark.circle.fill.ar
-- questionmark.square
-- questionmark.square.ar
-- questionmark.square.fill
-- questionmark.square.fill.ar
+- questionmark (iOS 13.0)
+- questionmark.ar (iOS 14.0)
+- questionmark.circle (iOS 13.0)
+- questionmark.circle.ar (iOS 14.0)
+- questionmark.circle.fill (iOS 13.0)
+- questionmark.circle.fill.ar (iOS 14.0)
+- questionmark.square (iOS 13.0)
+- questionmark.square.ar (iOS 14.0)
+- questionmark.square.fill (iOS 13.0)
+- questionmark.square.fill.ar (iOS 14.0)
 
 ### questionmark.app
-- questionmark.app
-- questionmark.app.ar
-- questionmark.app.fill
-- questionmark.app.fill.ar
+- questionmark.app (iOS 15.0)
+- questionmark.app.ar (iOS 15.0)
+- questionmark.app.fill (iOS 15.0)
+- questionmark.app.fill.ar (iOS 15.0)
 
 ### questionmark.app.dashed
-- questionmark.app.dashed
-- questionmark.app.dashed.ar
+- questionmark.app.dashed (iOS 15.0)
+- questionmark.app.dashed.ar (iOS 15.0)
 
 ### questionmark.diamond
-- questionmark.diamond
-- questionmark.diamond.ar
-- questionmark.diamond.fill
-- questionmark.diamond.fill.ar
+- questionmark.diamond (iOS 13.0)
+- questionmark.diamond.ar (iOS 14.0)
+- questionmark.diamond.fill (iOS 13.0)
+- questionmark.diamond.fill.ar (iOS 14.0)
 
 ### questionmark.folder
-- questionmark.folder
-- questionmark.folder.ar
-- questionmark.folder.fill
-- questionmark.folder.fill.ar
+- questionmark.folder (iOS 14.0)
+- questionmark.folder.ar (iOS 14.0)
+- questionmark.folder.fill (iOS 14.0)
+- questionmark.folder.fill.ar (iOS 14.0)
 
 ### questionmark.square.dashed
-- questionmark.square.dashed
-- questionmark.square.dashed.ar
+- questionmark.square.dashed (iOS 14.0)
+- questionmark.square.dashed.ar (iOS 14.0)
 
 ### questionmark.video
-- questionmark.video
-- questionmark.video.ar
-- questionmark.video.rtl
-- questionmark.video.fill
-- questionmark.video.fill.ar
-- questionmark.video.fill.rtl
+- questionmark.video (iOS 13.0)
+- questionmark.video.ar (iOS 14.0)
+- questionmark.video.rtl (iOS, introduced: 13.0, deprecated: 14.0, renamed: [questionmark.video.ar](#questionmarkvideo))
+- questionmark.video.fill (iOS 13.0)
+- questionmark.video.fill.ar (iOS 14.0)
+- questionmark.video.fill.rtl (iOS, introduced: 13.0, deprecated: 14.0, renamed: [questionmark.video.fill.ar](#questionmarkvideo))
 
 ### quote.bubble
-- quote.bubble
-- quote.bubble.rtl
-- quote.bubble.fill
-- quote.bubble.fill.rtl
+- quote.bubble (iOS 13.0)
+- quote.bubble.rtl (iOS 14.0)
+- quote.bubble.fill (iOS 13.0)
+- quote.bubble.fill.rtl (iOS 14.0)
 
 ### r
-- r.circle
-- r.circle.fill
-- r.square
-- r.square.fill
+- r.circle (iOS 13.0)
+- r.circle.fill (iOS 13.0)
+- r.square (iOS 13.0)
+- r.square.fill (iOS 13.0)
 
 ### r.joystick
-- r.joystick
-- r.joystick.fill
+- r.joystick (iOS 14.0)
+- r.joystick.fill (iOS 14.0)
 
 ### r.joystick.down
-- r.joystick.down
-- r.joystick.down.fill
+- r.joystick.down (iOS, introduced: 14.0, deprecated: 15.0, renamed: [r.joystick.press.down](#rjoystickpressdown))
+- r.joystick.down.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [r.joystick.press.down.fill](#rjoystickpressdown))
 
 ### r.joystick.press.down
-- r.joystick.press.down
-- r.joystick.press.down.fill
+- r.joystick.press.down (iOS 15.0)
+- r.joystick.press.down.fill (iOS 15.0)
 
 ### r.joystick.tilt.down
-- r.joystick.tilt.down
-- r.joystick.tilt.down.fill
+- r.joystick.tilt.down (iOS 15.0)
+- r.joystick.tilt.down.fill (iOS 15.0)
 
 ### r.joystick.tilt.left
-- r.joystick.tilt.left
-- r.joystick.tilt.left.fill
+- r.joystick.tilt.left (iOS 15.0)
+- r.joystick.tilt.left.fill (iOS 15.0)
 
 ### r.joystick.tilt.right
-- r.joystick.tilt.right
-- r.joystick.tilt.right.fill
+- r.joystick.tilt.right (iOS 15.0)
+- r.joystick.tilt.right.fill (iOS 15.0)
 
 ### r.joystick.tilt.up
-- r.joystick.tilt.up
-- r.joystick.tilt.up.fill
+- r.joystick.tilt.up (iOS 15.0)
+- r.joystick.tilt.up.fill (iOS 15.0)
 
 ### r.rectangle.roundedbottom
-- r.rectangle.roundedbottom
-- r.rectangle.roundedbottom.fill
+- r.rectangle.roundedbottom (iOS 14.0)
+- r.rectangle.roundedbottom.fill (iOS 14.0)
 
 ### r.square.fill.on.square.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [r.square.on.square.fill](#rsquareonsquare))
 
 ### r.square.on.square
-- r.square.on.square
-- r.square.on.square.fill
+- r.square.on.square (iOS 14.0)
+- r.square.on.square.fill (iOS 15.0)
 
 ### r1.rectangle.roundedbottom
-- r1.rectangle.roundedbottom
-- r1.rectangle.roundedbottom.fill
+- r1.rectangle.roundedbottom (iOS 14.0)
+- r1.rectangle.roundedbottom.fill (iOS 14.0)
 
 ### r2.rectangle.roundedtop
-- r2.rectangle.roundedtop
-- r2.rectangle.roundedtop.fill
+- r2.rectangle.roundedtop (iOS 14.0)
+- r2.rectangle.roundedtop.fill (iOS 14.0)
 
 ### radio
-- radio
-- radio.fill
+- radio (iOS 14.0)
+- radio.fill (iOS 14.0)
 
 ### radiowaves.left
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [wave.3.left](#wave3left))
 
 ### radiowaves.right
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [wave.3.right](#wave3right))
 
 ### rays
+ (iOS 13.0)
 
 ### rb.rectangle.roundedbottom
-- rb.rectangle.roundedbottom
-- rb.rectangle.roundedbottom.fill
+- rb.rectangle.roundedbottom (iOS 14.0)
+- rb.rectangle.roundedbottom.fill (iOS 14.0)
 
 ### record.circle
-- record.circle
-- record.circle.fill
+- record.circle (iOS 14.0)
+- record.circle.fill (iOS 14.0)
 
 ### recordingtape
+ (iOS 13.0)
 
 ### rectangle
-- rectangle
-- rectangle.fill
-- rectangle.slash
-- rectangle.slash.fill
+- rectangle (iOS 13.0)
+- rectangle.fill (iOS 13.0)
+- rectangle.slash (iOS 14.0)
+- rectangle.slash.fill (iOS 14.0)
 
 ### rectangle.2.swap
+ (iOS 15.0)
 
 ### rectangle.3.offgrid
-- rectangle.3.offgrid
-- rectangle.3.offgrid.fill
+- rectangle.3.offgrid (iOS 13.0)
+- rectangle.3.offgrid.fill (iOS 13.0)
 
 ### rectangle.3.offgrid.bubble.left
-- rectangle.3.offgrid.bubble.left
-- rectangle.3.offgrid.bubble.left.fill
+- rectangle.3.offgrid.bubble.left (iOS 14.0)
+- rectangle.3.offgrid.bubble.left.fill (iOS 14.0)
 
 ### rectangle.and.arrow.up.right.and.arrow.down.left
-- rectangle.and.arrow.up.right.and.arrow.down.left
-- rectangle.and.arrow.up.right.and.arrow.down.left.slash
+- rectangle.and.arrow.up.right.and.arrow.down.left (iOS 13.0)
+- rectangle.and.arrow.up.right.and.arrow.down.left.slash (iOS 13.0)
 
 ### rectangle.and.hand.point.up.left
-- rectangle.and.hand.point.up.left
-- rectangle.and.hand.point.up.left.fill
+- rectangle.and.hand.point.up.left (iOS 15.0)
+- rectangle.and.hand.point.up.left.fill (iOS 15.0)
 
 ### rectangle.and.hand.point.up.left.filled
+ (iOS 15.0)
 
 ### rectangle.and.paperclip
+ (iOS 13.0)
 
 ### rectangle.and.pencil.and.ellipsis
-- rectangle.and.pencil.and.ellipsis
-- rectangle.and.pencil.and.ellipsis.rtl
+- rectangle.and.pencil.and.ellipsis (iOS 14.0)
+- rectangle.and.pencil.and.ellipsis.rtl (iOS 14.0)
 
 ### rectangle.and.text.magnifyingglass
-- rectangle.and.text.magnifyingglass
-- rectangle.and.text.magnifyingglass.rtl
+- rectangle.and.text.magnifyingglass (iOS 14.0)
+- rectangle.and.text.magnifyingglass.rtl (iOS 14.0)
 
 ### rectangle.arrowtriangle.2.inward
+ (iOS 14.0)
 
 ### rectangle.arrowtriangle.2.outward
+ (iOS 14.0)
 
 ### rectangle.badge.checkmark
+ (iOS 13.0)
 
 ### rectangle.badge.minus
+ (iOS 14.0)
 
 ### rectangle.badge.person.crop
+ (iOS 14.2)
 
 ### rectangle.badge.plus
+ (iOS 14.0)
 
 ### rectangle.badge.xmark
+ (iOS 13.0)
 
 ### rectangle.bottomhalf.filled
+ (iOS 15.0)
 
 ### rectangle.bottomhalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.bottomthird.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.bottomthird.inset.filled](#rectanglebottomthirdinsetfilled))
 
 ### rectangle.bottomthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.center.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.center.inset.filled](#rectanglecenterinsetfilled))
 
 ### rectangle.center.inset.filled
+ (iOS 15.0)
 
 ### rectangle.compress.vertical
+ (iOS 13.0)
 
 ### rectangle.connected.to.line.below
+ (iOS 14.0)
 
 ### rectangle.dashed
+ (iOS 14.0)
 
 ### rectangle.dashed.and.paperclip
+ (iOS 14.0)
 
 ### rectangle.dashed.badge.record
+ (iOS 14.0)
 
 ### rectangle.dock
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [dock.rectangle](#dockrectangle))
 
 ### rectangle.expand.vertical
+ (iOS 13.0)
 
 ### rectangle.fill.badge.checkmark
+ (iOS 13.0)
 
 ### rectangle.fill.badge.minus
+ (iOS 14.0)
 
 ### rectangle.fill.badge.person.crop
+ (iOS 14.2)
 
 ### rectangle.fill.badge.plus
+ (iOS 14.0)
 
 ### rectangle.fill.badge.xmark
+ (iOS 13.0)
 
 ### rectangle.fill.on.rectangle.angled.fill
+ (iOS 13.0)
 
 ### rectangle.fill.on.rectangle.fill
-- rectangle.fill.on.rectangle.fill
-- rectangle.fill.on.rectangle.fill.circle
-- rectangle.fill.on.rectangle.fill.circle.fill
-- rectangle.fill.on.rectangle.fill.slash.fill
+- rectangle.fill.on.rectangle.fill (iOS 13.0)
+- rectangle.fill.on.rectangle.fill.circle (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.on.rectangle.circle](#rectangleonrectangle))
+- rectangle.fill.on.rectangle.fill.circle.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.on.rectangle.circle.fill](#rectangleonrectangle))
+- rectangle.fill.on.rectangle.fill.slash.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.on.rectangle.slash.fill](#rectangleonrectangle))
 
 ### rectangle.filled.and.hand.point.up.left
+ (iOS 15.0)
 
 ### rectangle.grid.1x2
-- rectangle.grid.1x2
-- rectangle.grid.1x2.fill
+- rectangle.grid.1x2 (iOS 13.0)
+- rectangle.grid.1x2.fill (iOS 13.0)
 
 ### rectangle.grid.2x2
-- rectangle.grid.2x2
-- rectangle.grid.2x2.fill
+- rectangle.grid.2x2 (iOS 13.0)
+- rectangle.grid.2x2.fill (iOS 13.0)
 
 ### rectangle.grid.3x2
-- rectangle.grid.3x2
-- rectangle.grid.3x2.fill
+- rectangle.grid.3x2 (iOS 13.0)
+- rectangle.grid.3x2.fill (iOS 13.0)
 
 ### rectangle.inset.fill
+ (iOS 14.0)
 
 ### rectangle.inset.bottomleading.filled
+ (iOS 15.0)
 
 ### rectangle.inset.bottomleft.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.inset.bottomleft.filled](#rectangleinsetbottomleftfilled))
 
 ### rectangle.inset.bottomleft.filled
+ (iOS 15.0)
 
 ### rectangle.inset.bottomright.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.inset.bottomright.filled](#rectangleinsetbottomrightfilled))
 
 ### rectangle.inset.bottomright.filled
+ (iOS 15.0)
 
 ### rectangle.inset.bottomtrailing.filled
+ (iOS 15.0)
 
 ### rectangle.inset.filled.on.rectangle
+ (iOS 15.0)
 
 ### rectangle.inset.topleading.filled
+ (iOS 15.0)
 
 ### rectangle.inset.topleft.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.inset.topleft.filled](#rectangleinsettopleftfilled))
 
 ### rectangle.inset.topleft.filled
+ (iOS 15.0)
 
 ### rectangle.inset.topright.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.inset.topright.filled](#rectangleinsettoprightfilled))
 
 ### rectangle.inset.topright.filled
+ (iOS 15.0)
 
 ### rectangle.inset.toptrailing.filled
+ (iOS 15.0)
 
 ### rectangle.leadinghalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.leadinghalf.inset.filled.arrow.leading
+ (iOS 15.0)
 
 ### rectangle.leadingthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.lefthalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.lefthalf.filled](#rectanglelefthalffilled))
 
 ### rectangle.lefthalf.filled
+ (iOS 15.0)
 
 ### rectangle.lefthalf.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.lefthalf.inset.filled](#rectanglelefthalfinsetfilled))
 
 ### rectangle.lefthalf.inset.fill.arrow.left
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.lefthalf.inset.filled.arrow.left](#rectanglelefthalfinsetfilledarrowleft))
 
 ### rectangle.lefthalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.lefthalf.inset.filled.arrow.left
+ (iOS 15.0)
 
 ### rectangle.leftthird.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.leftthird.inset.filled](#rectangleleftthirdinsetfilled))
 
 ### rectangle.leftthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.on.rectangle
-- rectangle.on.rectangle
-- rectangle.on.rectangle.circle
-- rectangle.on.rectangle.circle.fill
-- rectangle.on.rectangle.square
-- rectangle.on.rectangle.square.fill
-- rectangle.on.rectangle.slash
-- rectangle.on.rectangle.slash.fill
-- rectangle.on.rectangle.slash.circle
-- rectangle.on.rectangle.slash.circle.fill
+- rectangle.on.rectangle (iOS 13.0)
+- rectangle.on.rectangle.circle (iOS 15.0)
+- rectangle.on.rectangle.circle.fill (iOS 15.0)
+- rectangle.on.rectangle.square (iOS 15.0)
+- rectangle.on.rectangle.square.fill (iOS 15.0)
+- rectangle.on.rectangle.slash (iOS 14.0)
+- rectangle.on.rectangle.slash.fill (iOS 15.0)
+- rectangle.on.rectangle.slash.circle (iOS 15.0)
+- rectangle.on.rectangle.slash.circle.fill (iOS 15.0)
 
 ### rectangle.on.rectangle.angled
+ (iOS 13.0)
 
 ### rectangle.portrait
-- rectangle.portrait
-- rectangle.portrait.fill
-- rectangle.portrait.slash
-- rectangle.portrait.slash.fill
+- rectangle.portrait (iOS 14.0)
+- rectangle.portrait.fill (iOS 14.0)
+- rectangle.portrait.slash (iOS 15.0)
+- rectangle.portrait.slash.fill (iOS 15.0)
 
 ### rectangle.portrait.and.arrow.right
-- rectangle.portrait.and.arrow.right
-- rectangle.portrait.and.arrow.right.fill
+- rectangle.portrait.and.arrow.right (iOS 15.0)
+- rectangle.portrait.and.arrow.right.fill (iOS 15.0)
 
 ### rectangle.portrait.arrowtriangle.2.inward
+ (iOS 14.0)
 
 ### rectangle.portrait.arrowtriangle.2.outward
+ (iOS 14.0)
 
 ### rectangle.portrait.bottomhalf.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.bottomhalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.bottomleading.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.bottomleft.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.bottomright.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.bottomthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.bottomtrailing.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.center.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.leadinghalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.leadingthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.lefthalf.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.lefthalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.leftthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.on.rectangle.portrait
-- rectangle.portrait.on.rectangle.portrait
-- rectangle.portrait.on.rectangle.portrait.fill
-- rectangle.portrait.on.rectangle.portrait.slash
-- rectangle.portrait.on.rectangle.portrait.slash.fill
+- rectangle.portrait.on.rectangle.portrait (iOS 15.0)
+- rectangle.portrait.on.rectangle.portrait.fill (iOS 15.0)
+- rectangle.portrait.on.rectangle.portrait.slash (iOS 15.0)
+- rectangle.portrait.on.rectangle.portrait.slash.fill (iOS 15.0)
 
 ### rectangle.portrait.righthalf.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.righthalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.rightthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.split.2x1
-- rectangle.portrait.split.2x1
-- rectangle.portrait.split.2x1.fill
-- rectangle.portrait.split.2x1.slash
-- rectangle.portrait.split.2x1.slash.fill
+- rectangle.portrait.split.2x1 (iOS 15.0)
+- rectangle.portrait.split.2x1.fill (iOS 15.0)
+- rectangle.portrait.split.2x1.slash (iOS 15.0)
+- rectangle.portrait.split.2x1.slash.fill (iOS 15.0)
 
 ### rectangle.portrait.tophalf.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.tophalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.topleading.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.topleft.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.topright.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.topthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.toptrailing.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.trailinghalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.portrait.trailingthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.righthalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.righthalf.filled](#rectanglerighthalffilled))
 
 ### rectangle.righthalf.filled
+ (iOS 15.0)
 
 ### rectangle.righthalf.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.righthalf.inset.filled](#rectanglerighthalfinsetfilled))
 
 ### rectangle.righthalf.inset.fill.arrow.right
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.righthalf.inset.filled.arrow.right](#rectanglerighthalfinsetfilledarrowright))
 
 ### rectangle.righthalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.righthalf.inset.filled.arrow.right
+ (iOS 15.0)
 
 ### rectangle.rightthird.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.rightthird.inset.filled](#rectanglerightthirdinsetfilled))
 
 ### rectangle.rightthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.roundedbottom
-- rectangle.roundedbottom
-- rectangle.roundedbottom.fill
+- rectangle.roundedbottom (iOS 14.0)
+- rectangle.roundedbottom.fill (iOS 14.0)
 
 ### rectangle.roundedtop
-- rectangle.roundedtop
-- rectangle.roundedtop.fill
+- rectangle.roundedtop (iOS 14.0)
+- rectangle.roundedtop.fill (iOS 14.0)
 
 ### rectangle.split.1x2
-- rectangle.split.1x2
-- rectangle.split.1x2.fill
+- rectangle.split.1x2 (iOS 14.0)
+- rectangle.split.1x2.fill (iOS 14.0)
 
 ### rectangle.split.2x1
-- rectangle.split.2x1
-- rectangle.split.2x1.fill
-- rectangle.split.2x1.slash
-- rectangle.split.2x1.slash.fill
+- rectangle.split.2x1 (iOS 14.0)
+- rectangle.split.2x1.fill (iOS 14.0)
+- rectangle.split.2x1.slash (iOS 15.0)
+- rectangle.split.2x1.slash.fill (iOS 15.0)
 
 ### rectangle.split.2x2
-- rectangle.split.2x2
-- rectangle.split.2x2.fill
+- rectangle.split.2x2 (iOS 14.0)
+- rectangle.split.2x2.fill (iOS 14.0)
 
 ### rectangle.split.3x1
-- rectangle.split.3x1
-- rectangle.split.3x1.fill
+- rectangle.split.3x1 (iOS 13.0)
+- rectangle.split.3x1.fill (iOS 13.0)
 
 ### rectangle.split.3x3
-- rectangle.split.3x3
-- rectangle.split.3x3.fill
+- rectangle.split.3x3 (iOS 13.0)
+- rectangle.split.3x3.fill (iOS 13.0)
 
 ### rectangle.stack
-- rectangle.stack
-- rectangle.stack.fill
+- rectangle.stack (iOS 13.0)
+- rectangle.stack.fill (iOS 13.0)
 
 ### rectangle.stack.badge.minus
+ (iOS 13.0)
 
 ### rectangle.stack.badge.person.crop
+ (iOS 13.0)
 
 ### rectangle.stack.badge.play.crop
+ (iOS 15.0)
 
 ### rectangle.stack.badge.plus
+ (iOS 13.0)
 
 ### rectangle.stack.fill.badge.minus
+ (iOS 13.0)
 
 ### rectangle.stack.fill.badge.person.crop
+ (iOS 13.0)
 
 ### rectangle.stack.fill.badge.play.crop.fill
+ (iOS 15.0)
 
 ### rectangle.stack.fill.badge.plus
+ (iOS 13.0)
 
 ### rectangle.stack.person.crop
-- rectangle.stack.person.crop
-- rectangle.stack.person.crop.fill
+- rectangle.stack.person.crop (iOS, introduced: 13.0, deprecated: 15.0, renamed: [person.crop.rectangle.stack](#personcroprectanglestack))
+- rectangle.stack.person.crop.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [person.crop.rectangle.stack.fill](#personcroprectanglestack))
 
 ### rectangle.tophalf.filled
+ (iOS 15.0)
 
 ### rectangle.tophalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.topthird.inset
-- rectangle.topthird.inset
-- rectangle.topthird.inset.fill
+- rectangle.topthird.inset (iOS, introduced: 14.2, deprecated: 15.0, renamed: [rectangle.topthird.inset.filled](#rectangletopthirdinsetfilled))
+- rectangle.topthird.inset.fill (iOS, introduced: 14.5, deprecated: 15.0, renamed: [rectangle.topthird.inset.filled](#rectangletopthirdinsetfilled))
 
 ### rectangle.topthird.inset.filled
+ (iOS 15.0)
 
 ### rectangle.trailinghalf.inset.filled
+ (iOS 15.0)
 
 ### rectangle.trailinghalf.inset.filled.arrow.trailing
+ (iOS 15.0)
 
 ### rectangle.trailingthird.inset.filled
+ (iOS 15.0)
 
 ### repeat
-- repeat
-- repeat.circle
-- repeat.circle.fill
+- repeat (iOS 13.0)
+- repeat.circle (iOS 14.2)
+- repeat.circle.fill (iOS 14.2)
 
 ### repeat.1
-- repeat.1
-- repeat.1.ar
-- repeat.1.hi
-- repeat.1.circle
-- repeat.1.circle.ar
-- repeat.1.circle.hi
-- repeat.1.circle.fill
-- repeat.1.circle.fill.ar
-- repeat.1.circle.fill.hi
+- repeat.1 (iOS 13.0)
+- repeat.1.ar (iOS 15.0)
+- repeat.1.hi (iOS 15.0)
+- repeat.1.circle (iOS 14.2)
+- repeat.1.circle.ar (iOS 15.0)
+- repeat.1.circle.hi (iOS 15.0)
+- repeat.1.circle.fill (iOS 14.2)
+- repeat.1.circle.fill.ar (iOS 15.0)
+- repeat.1.circle.fill.hi (iOS 15.0)
 
 ### restart
-- restart
-- restart.circle
-- restart.circle.fill
+- restart (iOS 14.0)
+- restart.circle (iOS 14.0)
+- restart.circle.fill (iOS 15.0)
 
 ### return
+ (iOS 13.0)
 
 ### return.left
+ (iOS 15.0)
 
 ### return.right
+ (iOS 15.0)
 
 ### rhombus
-- rhombus
-- rhombus.fill
+- rhombus (iOS 13.0)
+- rhombus.fill (iOS 13.0)
 
 ### rosette
+ (iOS 13.0)
 
 ### rotate.3d
+ (iOS 14.0)
 
 ### rotate.left
-- rotate.left
-- rotate.left.fill
+- rotate.left (iOS 13.0)
+- rotate.left.fill (iOS 13.0)
 
 ### rotate.right
-- rotate.right
-- rotate.right.fill
+- rotate.right (iOS 13.0)
+- rotate.right.fill (iOS 13.0)
 
 ### rt.rectangle.roundedtop
-- rt.rectangle.roundedtop
-- rt.rectangle.roundedtop.fill
+- rt.rectangle.roundedtop (iOS 14.0)
+- rt.rectangle.roundedtop.fill (iOS 14.0)
 
 ### rublesign
-- rublesign.circle
-- rublesign.circle.fill
-- rublesign.square
-- rublesign.square.fill
+- rublesign.circle (iOS 13.0)
+- rublesign.circle.fill (iOS 13.0)
+- rublesign.square (iOS 13.0)
+- rublesign.square.fill (iOS 13.0)
 
 ### ruler
-- ruler
-- ruler.fill
+- ruler (iOS 14.0)
+- ruler.fill (iOS 14.0)
 
 ### rupeesign
-- rupeesign.circle
-- rupeesign.circle.fill
-- rupeesign.square
-- rupeesign.square.fill
+- rupeesign.circle (iOS 13.0)
+- rupeesign.circle.fill (iOS 13.0)
+- rupeesign.square (iOS 13.0)
+- rupeesign.square.fill (iOS 13.0)
 
 ### s
-- s.circle
-- s.circle.fill
-- s.square
-- s.square.fill
+- s.circle (iOS 13.0)
+- s.circle.fill (iOS 13.0)
+- s.square (iOS 13.0)
+- s.square.fill (iOS 13.0)
 
 ### safari
-- safari
-- safari.fill
+- safari (iOS 13.0)
+- safari.fill (iOS 13.0)
 
 ### scale.3d
+ (iOS 14.0)
 
 ### scalemass
-- scalemass
-- scalemass.fill
+- scalemass (iOS 14.0)
+- scalemass.fill (iOS 14.0)
 
 ### scanner
-- scanner
-- scanner.fill
+- scanner (iOS 14.0)
+- scanner.fill (iOS 14.0)
 
 ### scissors
+ (iOS 13.0)
 
 ### scissors.badge.ellipsis
+ (iOS 13.0)
 
 ### scope
+ (iOS 13.0)
 
 ### screwdriver
-- screwdriver
-- screwdriver.fill
+- screwdriver (iOS 15.0)
+- screwdriver.fill (iOS 15.0)
 
 ### scribble
+ (iOS 13.0)
 
 ### scribble.variable
+ (iOS 14.0)
 
 ### scroll
-- scroll
-- scroll.fill
+- scroll (iOS 14.0)
+- scroll.fill (iOS 14.0)
 
 ### sdcard
-- sdcard
-- sdcard.fill
+- sdcard (iOS 14.0)
+- sdcard.fill (iOS 14.0)
 
 ### seal
-- seal
-- seal.fill
+- seal (iOS 14.0)
+- seal.fill (iOS 14.0)
 
 ### selection.pin.in.out
+ (iOS 13.0)
 
 ### sensor.tag.radiowaves.forward
-- sensor.tag.radiowaves.forward
-- sensor.tag.radiowaves.forward.fill
+- sensor.tag.radiowaves.forward (iOS 15.0)
+- sensor.tag.radiowaves.forward.fill (iOS 15.0)
 
 ### server.rack
+ (iOS 14.0)
 
 ### shadow
+ (iOS 14.0)
 
 ### shareplay
+ (iOS 15.0)
 
 ### shekelsign
-- shekelsign.circle
-- shekelsign.circle.fill
-- shekelsign.square
-- shekelsign.square.fill
+- shekelsign.circle (iOS 14.0)
+- shekelsign.circle.fill (iOS 14.0)
+- shekelsign.square (iOS 14.0)
+- shekelsign.square.fill (iOS 14.0)
 
 ### sheqelsign
-- sheqelsign.circle
-- sheqelsign.circle.fill
-- sheqelsign.square
-- sheqelsign.square.fill
+- sheqelsign.circle (iOS, introduced: 13.0, deprecated: 14.0, renamed: [shekelsign.circle](#shekelsign))
+- sheqelsign.circle.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [shekelsign.circle.fill](#shekelsign))
+- sheqelsign.square (iOS, introduced: 13.0, deprecated: 14.0, renamed: [shekelsign.square](#shekelsign))
+- sheqelsign.square.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [shekelsign.square.fill](#shekelsign))
 
 ### shield
-- shield
-- shield.fill
-- shield.slash
-- shield.slash.fill
+- shield (iOS 13.0)
+- shield.fill (iOS 13.0)
+- shield.slash (iOS 13.0)
+- shield.slash.fill (iOS 13.0)
 
 ### shield.checkerboard
+ (iOS, introduced: 14.2, deprecated: 15.0, renamed: [checkerboard.shield](#checkerboardshield))
 
 ### shield.lefthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [shield.lefthalf.filled](#shieldlefthalffilled))
 
 ### shield.lefthalf.fill.slash
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [shield.lefthalf.filled.slash](#shieldlefthalffilled))
 
 ### shield.lefthalf.filled
-- shield.lefthalf.filled
-- shield.lefthalf.filled.slash
+- shield.lefthalf.filled (iOS 15.0)
+- shield.lefthalf.filled.slash (iOS 15.0)
 
 ### shield.righthalf.filled
+ (iOS 15.0)
 
 ### shift
-- shift
-- shift.fill
+- shift (iOS 13.0)
+- shift.fill (iOS 13.0)
 
 ### shippingbox
-- shippingbox
-- shippingbox.fill
+- shippingbox (iOS 14.0)
+- shippingbox.fill (iOS 14.0)
 
 ### shuffle
-- shuffle
-- shuffle.circle
-- shuffle.circle.fill
+- shuffle (iOS 13.0)
+- shuffle.circle (iOS 14.2)
+- shuffle.circle.fill (iOS 14.2)
 
 ### sidebar.leading
+ (iOS 14.0)
 
 ### sidebar.left
+ (iOS 13.0)
 
 ### sidebar.right
+ (iOS 13.0)
 
 ### sidebar.squares.leading
+ (iOS 14.0)
 
 ### sidebar.squares.left
+ (iOS 14.0)
 
 ### sidebar.squares.right
+ (iOS 14.0)
 
 ### sidebar.squares.trailing
+ (iOS 14.0)
 
 ### sidebar.trailing
+ (iOS 14.0)
 
 ### signature
-- signature
-- signature.ar
-- signature.he
-- signature.ja
-- signature.th
-- signature.zh
-- signature.zh.traditional
+- signature (iOS 13.0)
+- signature.ar (iOS 14.0)
+- signature.he (iOS 14.0)
+- signature.ja (iOS 15.0)
+- signature.th (iOS 15.0)
+- signature.zh (iOS 15.0)
+- signature.zh.traditional (iOS 15.0)
 
 ### signpost.left
-- signpost.left
-- signpost.left.fill
+- signpost.left (iOS 14.0)
+- signpost.left.fill (iOS 14.0)
 
 ### signpost.right
-- signpost.right
-- signpost.right.fill
+- signpost.right (iOS 14.0)
+- signpost.right.fill (iOS 14.0)
 
 ### simcard
-- simcard
-- simcard.fill
+- simcard (iOS 14.0)
+- simcard.fill (iOS 14.0)
 
 ### simcard.2
-- simcard.2
-- simcard.2.fill
+- simcard.2 (iOS 14.0)
+- simcard.2.fill (iOS 14.0)
 
 ### skew
+ (iOS 13.0)
 
 ### slash.circle
-- slash.circle
-- slash.circle.fill
+- slash.circle (iOS 13.0)
+- slash.circle.fill (iOS 13.0)
 
 ### sleep
-- sleep
-- sleep.circle
-- sleep.circle.fill
+- sleep (iOS 14.0)
+- sleep.circle (iOS 15.0)
+- sleep.circle.fill (iOS 15.0)
 
 ### slider.horizontal.3
+ (iOS 13.0)
 
 ### slider.horizontal.below.rectangle
+ (iOS 13.0)
 
 ### slider.horizontal.below.square.fill.and.square
+ (iOS 14.0)
 
 ### slider.vertical.3
+ (iOS 14.0)
 
 ### slowmo
+ (iOS 13.0)
 
 ### smallcircle.circle
-- smallcircle.circle
-- smallcircle.circle.fill
+- smallcircle.circle (iOS 13.0)
+- smallcircle.circle.fill (iOS 13.0)
 
 ### smallcircle.fill.circle
-- smallcircle.fill.circle
-- smallcircle.fill.circle.fill
+- smallcircle.fill.circle (iOS 13.0)
+- smallcircle.fill.circle.fill (iOS 13.0)
 
 ### smiley
-- smiley
-- smiley.fill
+- smiley (iOS, introduced: 13.0, deprecated: 14.0, renamed: [face.smiling](#facesmiling))
+- smiley.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [face.smiling.fill](#facesmiling))
 
 ### smoke
-- smoke
-- smoke.fill
+- smoke (iOS 13.0)
+- smoke.fill (iOS 13.0)
 
 ### snow
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [snowflake](#snowflake))
 
 ### snowflake
+ (iOS 15.0)
 
 ### sparkle
+ (iOS 14.0)
 
 ### sparkles
+ (iOS 13.0)
 
 ### sparkles.rectangle.stack
-- sparkles.rectangle.stack
-- sparkles.rectangle.stack.fill
+- sparkles.rectangle.stack (iOS 14.0)
+- sparkles.rectangle.stack.fill (iOS 14.0)
 
 ### sparkles.square.fill.on.square
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [sparkles.square.filled.on.square](#sparklessquarefilledonsquare))
 
 ### sparkles.square.filled.on.square
+ (iOS 15.0)
 
 ### speaker
-- speaker
-- speaker.fill
-- speaker.circle
-- speaker.circle.fill
-- speaker.slash
-- speaker.slash.rtl
-- speaker.slash.fill
-- speaker.slash.fill.rtl
-- speaker.slash.circle
-- speaker.slash.circle.rtl
-- speaker.slash.circle.fill
-- speaker.slash.circle.fill.rtl
+- speaker (iOS 13.0)
+- speaker.fill (iOS 13.0)
+- speaker.circle (iOS 15.0)
+- speaker.circle.fill (iOS 15.0)
+- speaker.slash (iOS 13.0)
+- speaker.slash.rtl (iOS 13.0)
+- speaker.slash.fill (iOS 13.0)
+- speaker.slash.fill.rtl (iOS 13.0)
+- speaker.slash.circle (iOS 14.0)
+- speaker.slash.circle.rtl (iOS 14.0)
+- speaker.slash.circle.fill (iOS 14.0)
+- speaker.slash.circle.fill.rtl (iOS 14.0)
 
 ### speaker.1
-- speaker.1
-- speaker.1.fill
+- speaker.1 (iOS, introduced: 13.0, deprecated: 14.0, renamed: [speaker.wave.1](#speakerwave1))
+- speaker.1.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [speaker.wave.1.fill](#speakerwave1))
 
 ### speaker.2
-- speaker.2
-- speaker.2.fill
+- speaker.2 (iOS, introduced: 13.0, deprecated: 14.0, renamed: [speaker.wave.2](#speakerwave2))
+- speaker.2.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [speaker.wave.2.fill](#speakerwave2))
 
 ### speaker.3
-- speaker.3
-- speaker.3.fill
+- speaker.3 (iOS, introduced: 13.0, deprecated: 14.0, renamed: [speaker.wave.3](#speakerwave3))
+- speaker.3.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [speaker.wave.3.fill](#speakerwave3))
 
 ### speaker.badge.exclamationmark
-- speaker.badge.exclamationmark
-- speaker.badge.exclamationmark.fill
+- speaker.badge.exclamationmark (iOS 15.0)
+- speaker.badge.exclamationmark.fill (iOS 15.0)
 
 ### speaker.wave.1
-- speaker.wave.1
-- speaker.wave.1.fill
+- speaker.wave.1 (iOS 14.0)
+- speaker.wave.1.fill (iOS 14.0)
 
 ### speaker.wave.2
-- speaker.wave.2
-- speaker.wave.2.fill
-- speaker.wave.2.circle
-- speaker.wave.2.circle.fill
+- speaker.wave.2 (iOS 14.0)
+- speaker.wave.2.fill (iOS 14.0)
+- speaker.wave.2.circle (iOS 14.0)
+- speaker.wave.2.circle.fill (iOS 14.0)
 
 ### speaker.wave.3
-- speaker.wave.3
-- speaker.wave.3.fill
+- speaker.wave.3 (iOS 14.0)
+- speaker.wave.3.fill (iOS 14.0)
 
 ### speaker.zzz
-- speaker.zzz
-- speaker.zzz.rtl
-- speaker.zzz.fill
-- speaker.zzz.fill.rtl
+- speaker.zzz (iOS 13.0)
+- speaker.zzz.rtl (iOS 13.0)
+- speaker.zzz.fill (iOS 13.0)
+- speaker.zzz.fill.rtl (iOS 13.0)
 
 ### speedometer
+ (iOS 13.0)
 
 ### sportscourt
-- sportscourt
-- sportscourt.fill
+- sportscourt (iOS 13.0)
+- sportscourt.fill (iOS 13.0)
 
 ### square
-- square
-- square.fill
-- square.circle
-- square.circle.fill
-- square.slash
-- square.slash.fill
+- square (iOS 13.0)
+- square.fill (iOS 13.0)
+- square.circle (iOS 14.0)
+- square.circle.fill (iOS 14.0)
+- square.slash (iOS 14.0)
+- square.slash.fill (iOS 14.0)
 
 ### square.2.stack.3d
+ (iOS 14.0)
 
 ### square.2.stack.3d.bottom.fill
+ (iOS 14.0)
 
 ### square.2.stack.3d.top.fill
+ (iOS 14.0)
 
 ### square.3.stack.3d
+ (iOS 14.0)
 
 ### square.3.stack.3d.bottom.fill
+ (iOS 14.0)
 
 ### square.3.stack.3d.middle.fill
+ (iOS 14.0)
 
 ### square.3.stack.3d.top.fill
+ (iOS 14.0)
 
 ### square.and.arrow.down
-- square.and.arrow.down
-- square.and.arrow.down.fill
+- square.and.arrow.down (iOS 13.0)
+- square.and.arrow.down.fill (iOS 13.0)
 
 ### square.and.arrow.down.on.square
-- square.and.arrow.down.on.square
-- square.and.arrow.down.on.square.fill
+- square.and.arrow.down.on.square (iOS 13.0)
+- square.and.arrow.down.on.square.fill (iOS 13.0)
 
 ### square.and.arrow.up
-- square.and.arrow.up
-- square.and.arrow.up.fill
+- square.and.arrow.up (iOS 13.0)
+- square.and.arrow.up.fill (iOS 13.0)
 
 ### square.and.arrow.up.on.square
-- square.and.arrow.up.on.square
-- square.and.arrow.up.on.square.fill
+- square.and.arrow.up.on.square (iOS 13.0)
+- square.and.arrow.up.on.square.fill (iOS 13.0)
 
 ### square.and.arrow.up.trianglebadge.exclamationmark
+ (iOS 15.0)
 
 ### square.and.at.rectangle
-- square.and.at.rectangle
-- square.and.at.rectangle.fill
+- square.and.at.rectangle (iOS 14.0)
+- square.and.at.rectangle.fill (iOS 15.0)
 
 ### square.and.line.vertical.and.square
-- square.and.line.vertical.and.square
-- square.and.line.vertical.and.square.fill
+- square.and.line.vertical.and.square (iOS 13.0)
+- square.and.line.vertical.and.square.fill (iOS 13.0)
 
 ### square.and.pencil
+ (iOS 13.0)
 
 ### square.bottomhalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.bottomhalf.filled](#squarebottomhalffilled))
 
 ### square.bottomhalf.filled
+ (iOS 15.0)
 
 ### square.dashed
+ (iOS 14.0)
 
 ### square.dashed.inset.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.dashed.inset.filled](#squaredashedinsetfilled))
 
 ### square.dashed.inset.filled
+ (iOS 15.0)
 
 ### square.fill.and.line.vertical.and.square
-- square.fill.and.line.vertical.and.square
-- square.fill.and.line.vertical.and.square.fill
+- square.fill.and.line.vertical.and.square (iOS 13.0)
+- square.fill.and.line.vertical.and.square.fill (iOS 15.0)
 
 ### square.fill.and.line.vertical.square.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [square.fill.and.line.vertical.and.square.fill](#squarefillandlineverticalandsquare))
 
 ### square.fill.on.circle.fill
+ (iOS 13.0)
 
 ### square.fill.on.square
-- square.fill.on.square
-- square.fill.on.square.fill
+- square.fill.on.square (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.filled.on.square](#squarefilledonsquare))
+- square.fill.on.square.fill (iOS 13.0)
 
 ### square.fill.text.grid.1x2
+ (iOS 14.0)
 
 ### square.filled.on.square
+ (iOS 15.0)
 
 ### square.grid.2x2
-- square.grid.2x2
-- square.grid.2x2.fill
+- square.grid.2x2 (iOS 13.0)
+- square.grid.2x2.fill (iOS 13.0)
 
 ### square.grid.3x1.below.line.grid.1x2
+ (iOS 14.0)
 
 ### square.grid.3x1.fill.below.line.grid.1x2
+ (iOS 14.0)
 
 ### square.grid.3x1.folder.badge.plus
+ (iOS 14.0)
 
 ### square.grid.3x1.folder.fill.badge.plus
+ (iOS 14.0)
 
 ### square.grid.3x2
-- square.grid.3x2
-- square.grid.3x2.fill
+- square.grid.3x2 (iOS 13.0)
+- square.grid.3x2.fill (iOS 13.0)
 
 ### square.grid.3x3
-- square.grid.3x3
-- square.grid.3x3.fill
-- square.grid.3x3.square
+- square.grid.3x3 (iOS 14.0)
+- square.grid.3x3.fill (iOS 14.0)
+- square.grid.3x3.square (iOS 15.0)
 
 ### square.grid.3x3.bottomleft.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.bottomleft.filled](#squaregrid3x3bottomleftfilled))
 
 ### square.grid.3x3.bottomleft.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.bottommiddle.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.bottommiddle.filled](#squaregrid3x3bottommiddlefilled))
 
 ### square.grid.3x3.bottommiddle.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.bottomright.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.bottomright.filled](#squaregrid3x3bottomrightfilled))
 
 ### square.grid.3x3.bottomright.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.fill.square
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.square](#squaregrid3x3))
 
 ### square.grid.3x3.middle.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.middle.filled](#squaregrid3x3middlefilled))
 
 ### square.grid.3x3.middle.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.middleleft.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.middleleft.filled](#squaregrid3x3middleleftfilled))
 
 ### square.grid.3x3.middleleft.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.middleright.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.middleright.filled](#squaregrid3x3middlerightfilled))
 
 ### square.grid.3x3.middleright.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.topleft.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.topleft.filled](#squaregrid3x3topleftfilled))
 
 ### square.grid.3x3.topleft.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.topmiddle.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.topmiddle.filled](#squaregrid3x3topmiddlefilled))
 
 ### square.grid.3x3.topmiddle.filled
+ (iOS 15.0)
 
 ### square.grid.3x3.topright.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x3.topright.filled](#squaregrid3x3toprightfilled))
 
 ### square.grid.3x3.topright.filled
+ (iOS 15.0)
 
 ### square.grid.4x3.fill
+ (iOS 13.0)
 
 ### square.inset.filled
+ (iOS 15.0)
 
 ### square.lefthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [square.lefthalf.filled](#squarelefthalffilled))
 
 ### square.lefthalf.filled
+ (iOS 15.0)
 
 ### square.on.circle
+ (iOS 13.0)
 
 ### square.on.square
+ (iOS 13.0)
 
 ### square.on.square.dashed
+ (iOS 14.0)
 
 ### square.on.square.squareshape.controlhandles
+ (iOS 14.0)
 
 ### square.righthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [square.righthalf.filled](#squarerighthalffilled))
 
 ### square.righthalf.filled
+ (iOS 15.0)
 
 ### square.split.1x2
-- square.split.1x2
-- square.split.1x2.fill
+- square.split.1x2 (iOS 13.0)
+- square.split.1x2.fill (iOS 13.0)
 
 ### square.split.2x1
-- square.split.2x1
-- square.split.2x1.fill
+- square.split.2x1 (iOS 13.0)
+- square.split.2x1.fill (iOS 13.0)
 
 ### square.split.2x2
-- square.split.2x2
-- square.split.2x2.fill
+- square.split.2x2 (iOS 13.0)
+- square.split.2x2.fill (iOS 13.0)
 
 ### square.split.bottomrightquarter
-- square.split.bottomrightquarter
-- square.split.bottomrightquarter.fill
+- square.split.bottomrightquarter (iOS 14.0)
+- square.split.bottomrightquarter.fill (iOS 14.0)
 
 ### square.split.diagonal
-- square.split.diagonal
-- square.split.diagonal.fill
+- square.split.diagonal (iOS 14.0)
+- square.split.diagonal.fill (iOS 14.0)
 
 ### square.split.diagonal.2x2
-- square.split.diagonal.2x2
-- square.split.diagonal.2x2.fill
+- square.split.diagonal.2x2 (iOS 14.0)
+- square.split.diagonal.2x2.fill (iOS 14.0)
 
 ### square.stack
-- square.stack
-- square.stack.fill
+- square.stack (iOS 13.0)
+- square.stack.fill (iOS 13.0)
 
 ### square.stack.3d.down.dottedline
+ (iOS, introduced: 13.0, deprecated: 14.0, renamed: [square.stack.3d.forward.dottedline](#squarestack3dforwarddottedline))
 
 ### square.stack.3d.down.forward
-- square.stack.3d.down.forward
-- square.stack.3d.down.forward.fill
+- square.stack.3d.down.forward (iOS 14.0)
+- square.stack.3d.down.forward.fill (iOS 14.0)
 
 ### square.stack.3d.down.right
-- square.stack.3d.down.right
-- square.stack.3d.down.right.fill
+- square.stack.3d.down.right (iOS 13.0)
+- square.stack.3d.down.right.fill (iOS 13.0)
 
 ### square.stack.3d.forward.dottedline
-- square.stack.3d.forward.dottedline
-- square.stack.3d.forward.dottedline.fill
+- square.stack.3d.forward.dottedline (iOS 14.0)
+- square.stack.3d.forward.dottedline.fill (iOS 14.0)
 
 ### square.stack.3d.up
-- square.stack.3d.up
-- square.stack.3d.up.fill
-- square.stack.3d.up.slash
-- square.stack.3d.up.slash.fill
+- square.stack.3d.up (iOS 13.0)
+- square.stack.3d.up.fill (iOS 13.0)
+- square.stack.3d.up.slash (iOS 13.0)
+- square.stack.3d.up.slash.fill (iOS 13.0)
 
 ### square.stack.3d.up.badge.a
-- square.stack.3d.up.badge.a
-- square.stack.3d.up.badge.a.fill
+- square.stack.3d.up.badge.a (iOS 14.0)
+- square.stack.3d.up.badge.a.fill (iOS 14.0)
 
 ### square.text.square
-- square.text.square
-- square.text.square.fill
+- square.text.square (iOS 15.0)
+- square.text.square.fill (iOS 15.0)
 
 ### square.tophalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.tophalf.filled](#squaretophalffilled))
 
 ### square.tophalf.filled
+ (iOS 15.0)
 
 ### squares.below.rectangle
+ (iOS 13.0)
 
 ### squareshape
-- squareshape
-- squareshape.fill
+- squareshape (iOS 14.0)
+- squareshape.fill (iOS 14.0)
 
 ### squareshape.controlhandles.on.squareshape.controlhandles
+ (iOS 14.0)
 
 ### squareshape.dashed.squareshape
+ (iOS 14.0)
 
 ### squareshape.split.2x2
+ (iOS 14.0)
 
 ### squareshape.split.2x2.dotted
+ (iOS 14.0)
 
 ### squareshape.split.3x3
+ (iOS 14.0)
 
 ### squareshape.squareshape.dashed
+ (iOS 14.0)
 
 ### star
-- star
-- star.fill
-- star.circle
-- star.circle.fill
-- star.square
-- star.square.fill
-- star.slash
-- star.slash.fill
+- star (iOS 13.0)
+- star.fill (iOS 13.0)
+- star.circle (iOS 13.0)
+- star.circle.fill (iOS 13.0)
+- star.square (iOS 14.0)
+- star.square.fill (iOS 14.0)
+- star.slash (iOS 13.0)
+- star.slash.fill (iOS 13.0)
 
 ### star.bubble
-- star.bubble
-- star.bubble.fill
+- star.bubble (iOS 15.0)
+- star.bubble.fill (iOS 15.0)
 
 ### star.leadinghalf.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [star.leadinghalf.filled](#starleadinghalffilled))
 
 ### star.leadinghalf.filled
+ (iOS 15.0)
 
 ### star.lefthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [star.leadinghalf.filled](#starleadinghalffilled))
 
 ### staroflife
-- staroflife
-- staroflife.fill
-- staroflife.circle
-- staroflife.circle.fill
+- staroflife (iOS 13.0)
+- staroflife.fill (iOS 13.0)
+- staroflife.circle (iOS 14.0)
+- staroflife.circle.fill (iOS 14.0)
 
 ### sterlingsign
-- sterlingsign.circle
-- sterlingsign.circle.fill
-- sterlingsign.square
-- sterlingsign.square.fill
+- sterlingsign.circle (iOS 13.0)
+- sterlingsign.circle.fill (iOS 13.0)
+- sterlingsign.square (iOS 13.0)
+- sterlingsign.square.fill (iOS 13.0)
 
 ### stethoscope
+ (iOS 14.0)
 
 ### stop
-- stop
-- stop.fill
-- stop.circle
-- stop.circle.fill
+- stop (iOS 13.0)
+- stop.fill (iOS 13.0)
+- stop.circle (iOS 13.0)
+- stop.circle.fill (iOS 13.0)
 
 ### stopwatch
-- stopwatch
-- stopwatch.fill
+- stopwatch (iOS 13.0)
+- stopwatch.fill (iOS 13.0)
 
 ### strikethrough
+ (iOS 13.0)
 
 ### studentdesk
+ (iOS 13.0)
 
 ### suit.club
-- suit.club
-- suit.club.fill
+- suit.club (iOS 13.0)
+- suit.club.fill (iOS 13.0)
 
 ### suit.diamond
-- suit.diamond
-- suit.diamond.fill
+- suit.diamond (iOS 13.0)
+- suit.diamond.fill (iOS 13.0)
 
 ### suit.heart
-- suit.heart
-- suit.heart.fill
+- suit.heart (iOS 13.0)
+- suit.heart.fill (iOS 13.0)
 
 ### suit.spade
-- suit.spade
-- suit.spade.fill
+- suit.spade (iOS 13.0)
+- suit.spade.fill (iOS 13.0)
 
 ### suitcase
-- suitcase
-- suitcase.fill
+- suitcase (iOS 15.0)
+- suitcase.fill (iOS 15.0)
 
 ### suitcase.cart
-- suitcase.cart
-- suitcase.cart.fill
+- suitcase.cart (iOS 15.0)
+- suitcase.cart.fill (iOS 15.0)
 
 ### sum
-- sum
-- sum.ar
+- sum (iOS 13.0)
+- sum.ar (iOS 14.0)
 
 ### sun.and.horizon
-- sun.and.horizon
-- sun.and.horizon.fill
+- sun.and.horizon (iOS 15.0)
+- sun.and.horizon.fill (iOS 15.0)
 
 ### sun.dust
-- sun.dust
-- sun.dust.fill
+- sun.dust (iOS 13.0)
+- sun.dust.fill (iOS 13.0)
 
 ### sun.haze
-- sun.haze
-- sun.haze.fill
+- sun.haze (iOS 13.0)
+- sun.haze.fill (iOS 13.0)
 
 ### sun.max
-- sun.max
-- sun.max.fill
-- sun.max.circle
-- sun.max.circle.fill
+- sun.max (iOS 13.0)
+- sun.max.fill (iOS 13.0)
+- sun.max.circle (iOS 15.0)
+- sun.max.circle.fill (iOS 15.0)
 
 ### sun.min
-- sun.min
-- sun.min.fill
+- sun.min (iOS 13.0)
+- sun.min.fill (iOS 13.0)
 
 ### sunrise
-- sunrise
-- sunrise.fill
+- sunrise (iOS 13.0)
+- sunrise.fill (iOS 13.0)
 
 ### sunset
-- sunset
-- sunset.fill
+- sunset (iOS 13.0)
+- sunset.fill (iOS 13.0)
 
 ### swift
+ (iOS 14.0)
 
 ### switch.2
+ (iOS 14.0)
 
 ### t
-- t.circle
-- t.circle.fill
-- t.square
-- t.square.fill
+- t.circle (iOS 13.0)
+- t.circle.fill (iOS 13.0)
+- t.square (iOS 13.0)
+- t.square.fill (iOS 13.0)
 
 ### t.bubble
-- t.bubble
-- t.bubble.ar
-- t.bubble.he
-- t.bubble.fill
-- t.bubble.fill.ar
-- t.bubble.fill.he
+- t.bubble (iOS, introduced: 13.0, deprecated: 14.5, renamed: [character.bubble](#characterbubble))
+- t.bubble.ar (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.bubble.ar](#characterbubble))
+- t.bubble.he (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.bubble.he](#characterbubble))
+- t.bubble.fill (iOS, introduced: 13.0, deprecated: 14.5, renamed: [character.bubble.fill](#characterbubble))
+- t.bubble.fill.ar (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.bubble.fill.ar](#characterbubble))
+- t.bubble.fill.he (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.bubble.fill.he](#characterbubble))
 
 ### table
-- table
-- table.fill
+- table (iOS, introduced: 13.0, deprecated: 14.0, renamed: [tablecells](#tablecells))
+- table.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [tablecells.fill](#tablecells))
 
 ### table.badge.more
-- table.badge.more
-- table.badge.more.fill
+- table.badge.more (iOS, introduced: 13.0, deprecated: 14.0, renamed: [tablecells.badge.ellipsis](#tablecellsbadgeellipsis))
+- table.badge.more.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [tablecells.fill.badge.ellipsis](#tablecellsfillbadgeellipsis))
 
 ### tablecells
-- tablecells
-- tablecells.fill
+- tablecells (iOS 14.0)
+- tablecells.fill (iOS 14.0)
 
 ### tablecells.badge.ellipsis
-- tablecells.badge.ellipsis
-- tablecells.badge.ellipsis.fill
+- tablecells.badge.ellipsis (iOS 14.0)
+- tablecells.badge.ellipsis.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [tablecells.fill.badge.ellipsis](#tablecellsfillbadgeellipsis))
 
 ### tablecells.fill.badge.ellipsis
+ (iOS 15.0)
 
 ### tag
-- tag
-- tag.fill
-- tag.circle
-- tag.circle.fill
-- tag.square
-- tag.square.fill
-- tag.slash
-- tag.slash.fill
+- tag (iOS 13.0)
+- tag.fill (iOS 13.0)
+- tag.circle (iOS 13.0)
+- tag.circle.fill (iOS 13.0)
+- tag.square (iOS 15.0)
+- tag.square.fill (iOS 15.0)
+- tag.slash (iOS 14.0)
+- tag.slash.fill (iOS 14.0)
 
 ### takeoutbag.and.cup.and.straw
-- takeoutbag.and.cup.and.straw
-- takeoutbag.and.cup.and.straw.fill
+- takeoutbag.and.cup.and.straw (iOS 15.0)
+- takeoutbag.and.cup.and.straw.fill (iOS 15.0)
 
 ### target
+ (iOS 14.0)
 
 ### teletype
-- teletype
-- teletype.circle
-- teletype.circle.fill
+- teletype (iOS 13.0)
+- teletype.circle (iOS 14.0)
+- teletype.circle.fill (iOS 14.0)
 
 ### teletype.answer
+ (iOS 13.0)
 
 ### tengesign
-- tengesign.circle
-- tengesign.circle.fill
-- tengesign.square
-- tengesign.square.fill
+- tengesign.circle (iOS 13.0)
+- tengesign.circle.fill (iOS 13.0)
+- tengesign.square (iOS 13.0)
+- tengesign.square.fill (iOS 13.0)
 
 ### terminal
-- terminal
-- terminal.fill
+- terminal (iOS 14.0)
+- terminal.fill (iOS 14.0)
 
 ### testtube.2
+ (iOS 15.0)
 
 ### text.aligncenter
+ (iOS 13.0)
 
 ### text.alignleft
+ (iOS 13.0)
 
 ### text.alignright
+ (iOS 13.0)
 
 ### text.and.command.macwindow
+ (iOS 14.0)
 
 ### text.append
+ (iOS 13.0)
 
 ### text.badge.checkmark
-- text.badge.checkmark
-- text.badge.checkmark.rtl
+- text.badge.checkmark (iOS 13.0)
+- text.badge.checkmark.rtl (iOS 14.0)
 
 ### text.badge.minus
+ (iOS 13.0)
 
 ### text.badge.plus
+ (iOS 13.0)
 
 ### text.badge.star
+ (iOS 13.0)
 
 ### text.badge.xmark
+ (iOS 13.0)
 
 ### text.below.photo
-- text.below.photo
-- text.below.photo.rtl
-- text.below.photo.fill
-- text.below.photo.fill.rtl
+- text.below.photo (iOS 14.0)
+- text.below.photo.rtl (iOS 14.2)
+- text.below.photo.fill (iOS 14.0)
+- text.below.photo.fill.rtl (iOS 14.2)
 
 ### text.book.closed
-- text.book.closed
-- text.book.closed.fill
+- text.book.closed (iOS 14.0)
+- text.book.closed.fill (iOS 14.0)
 
 ### text.bubble
-- text.bubble
-- text.bubble.rtl
-- text.bubble.fill
-- text.bubble.fill.rtl
+- text.bubble (iOS 13.0)
+- text.bubble.rtl (iOS 14.0)
+- text.bubble.fill (iOS 13.0)
+- text.bubble.fill.rtl (iOS 14.0)
 
 ### text.cursor
-- text.cursor
-- text.cursor.ar
-- text.cursor.he
-- text.cursor.hi
-- text.cursor.ja
-- text.cursor.ko
-- text.cursor.th
-- text.cursor.zh
-- text.cursor.zh.traditional
+- text.cursor (iOS, introduced: 13.0, deprecated: 14.5, renamed: [character.cursor.ibeam](#charactercursoribeam))
+- text.cursor.ar (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.cursor.ibeam.ar](#charactercursoribeam))
+- text.cursor.he (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.cursor.ibeam.he](#charactercursoribeam))
+- text.cursor.hi (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.cursor.ibeam.hi](#charactercursoribeam))
+- text.cursor.ja (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.cursor.ibeam.ja](#charactercursoribeam))
+- text.cursor.ko (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.cursor.ibeam.ko](#charactercursoribeam))
+- text.cursor.th (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.cursor.ibeam.th](#charactercursoribeam))
+- text.cursor.zh (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.cursor.ibeam.zh](#charactercursoribeam))
+- text.cursor.zh.traditional (iOS, introduced: 14.2, deprecated: 14.5, renamed: [character.cursor.ibeam.zh.traditional](#charactercursoribeam))
 
 ### text.insert
+ (iOS 13.0)
 
 ### text.justify
+ (iOS 13.0)
 
 ### text.justifyleft
+ (iOS 13.0)
 
 ### text.justifyright
+ (iOS 13.0)
 
 ### text.magnifyingglass
-- text.magnifyingglass
-- text.magnifyingglass.rtl
+- text.magnifyingglass (iOS 14.0)
+- text.magnifyingglass.rtl (iOS 14.0)
 
 ### text.quote
-- text.quote
-- text.quote.rtl
+- text.quote (iOS 13.0)
+- text.quote.rtl (iOS 14.0)
 
 ### text.redaction
+ (iOS 14.0)
 
 ### text.viewfinder
+ (iOS 15.0)
 
 ### textbox
-- textbox
-- textbox.ar
-- textbox.he
-- textbox.hi
-- textbox.ja
-- textbox.ko
-- textbox.th
-- textbox.zh
-- textbox.zh.traditional
+- textbox (iOS, introduced: 13.0, deprecated: 14.5, renamed: [character.textbox](#charactertextbox))
+- textbox.ar (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.ar](#charactertextbox))
+- textbox.he (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.he](#charactertextbox))
+- textbox.hi (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.hi](#charactertextbox))
+- textbox.ja (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.ja](#charactertextbox))
+- textbox.ko (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.ko](#charactertextbox))
+- textbox.th (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.th](#charactertextbox))
+- textbox.zh (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.zh](#charactertextbox))
+- textbox.zh.traditional (iOS, introduced: 14.2, deprecated: 14.5, renamed: [character.textbox.zh.traditional](#charactertextbox))
 
 ### textformat
+ (iOS 13.0)
 
 ### textformat.123
-- textformat.123
-- textformat.123.ar
+- textformat.123 (iOS 13.0)
+- textformat.123.ar (iOS 14.0)
 
 ### textformat.abc
+ (iOS 13.0)
 
 ### textformat.abc.dottedunderline
+ (iOS 13.0)
 
 ### textformat.alt
+ (iOS 13.0)
 
 ### textformat.size
-- textformat.size
-- textformat.size.ar
-- textformat.size.he
-- textformat.size.hi
-- textformat.size.ja
-- textformat.size.ko
-- textformat.size.th
-- textformat.size.zh
-- textformat.size.zh.traditional
+- textformat.size (iOS 13.0)
+- textformat.size.ar (iOS 14.2)
+- textformat.size.he (iOS 14.2)
+- textformat.size.hi (iOS 14.2)
+- textformat.size.ja (iOS 14.2)
+- textformat.size.ko (iOS 14.2)
+- textformat.size.th (iOS 14.2)
+- textformat.size.zh (iOS 14.2)
+- textformat.size.zh.traditional (iOS 14.2)
 
 ### textformat.size.larger
-- textformat.size.larger
-- textformat.size.larger.ar
-- textformat.size.larger.he
-- textformat.size.larger.hi
-- textformat.size.larger.ja
-- textformat.size.larger.ko
-- textformat.size.larger.th
-- textformat.size.larger.zh
-- textformat.size.larger.zh.traditional
+- textformat.size.larger (iOS 14.2)
+- textformat.size.larger.ar (iOS 14.2)
+- textformat.size.larger.he (iOS 14.2)
+- textformat.size.larger.hi (iOS 14.2)
+- textformat.size.larger.ja (iOS 14.2)
+- textformat.size.larger.ko (iOS 14.2)
+- textformat.size.larger.th (iOS 14.2)
+- textformat.size.larger.zh (iOS 14.2)
+- textformat.size.larger.zh.traditional (iOS 14.2)
 
 ### textformat.size.smaller
-- textformat.size.smaller
-- textformat.size.smaller.ar
-- textformat.size.smaller.he
-- textformat.size.smaller.hi
-- textformat.size.smaller.ja
-- textformat.size.smaller.ko
-- textformat.size.smaller.th
-- textformat.size.smaller.zh
-- textformat.size.smaller.zh.traditional
+- textformat.size.smaller (iOS 14.2)
+- textformat.size.smaller.ar (iOS 14.2)
+- textformat.size.smaller.he (iOS 14.2)
+- textformat.size.smaller.hi (iOS 14.2)
+- textformat.size.smaller.ja (iOS 14.2)
+- textformat.size.smaller.ko (iOS 14.2)
+- textformat.size.smaller.th (iOS 14.2)
+- textformat.size.smaller.zh (iOS 14.2)
+- textformat.size.smaller.zh.traditional (iOS 14.2)
 
 ### textformat.subscript
-- textformat.subscript
-- textformat.subscript.ar
-- textformat.subscript.he
-- textformat.subscript.hi
-- textformat.subscript.ja
-- textformat.subscript.ko
-- textformat.subscript.th
-- textformat.subscript.zh
-- textformat.subscript.zh.traditional
+- textformat.subscript (iOS 13.0)
+- textformat.subscript.ar (iOS 14.2)
+- textformat.subscript.he (iOS 14.2)
+- textformat.subscript.hi (iOS 14.2)
+- textformat.subscript.ja (iOS 14.2)
+- textformat.subscript.ko (iOS 14.2)
+- textformat.subscript.th (iOS 14.2)
+- textformat.subscript.zh (iOS 14.2)
+- textformat.subscript.zh.traditional (iOS 14.2)
 
 ### textformat.superscript
-- textformat.superscript
-- textformat.superscript.ar
-- textformat.superscript.he
-- textformat.superscript.hi
-- textformat.superscript.ja
-- textformat.superscript.ko
-- textformat.superscript.th
-- textformat.superscript.zh
-- textformat.superscript.zh.traditional
+- textformat.superscript (iOS 13.0)
+- textformat.superscript.ar (iOS 14.2)
+- textformat.superscript.he (iOS 14.2)
+- textformat.superscript.hi (iOS 14.2)
+- textformat.superscript.ja (iOS 14.2)
+- textformat.superscript.ko (iOS 14.2)
+- textformat.superscript.th (iOS 14.2)
+- textformat.superscript.zh (iOS 14.2)
+- textformat.superscript.zh.traditional (iOS 14.2)
 
 ### theatermasks
-- theatermasks
-- theatermasks.fill
-- theatermasks.circle
-- theatermasks.circle.fill
+- theatermasks (iOS 15.0)
+- theatermasks.fill (iOS 15.0)
+- theatermasks.circle (iOS 15.0)
+- theatermasks.circle.fill (iOS 15.0)
 
 ### thermometer
+ (iOS 13.0)
 
 ### thermometer.snowflake
+ (iOS 13.0)
 
 ### thermometer.sun
-- thermometer.sun
-- thermometer.sun.fill
+- thermometer.sun (iOS 13.0)
+- thermometer.sun.fill (iOS 14.0)
 
 ### ticket
-- ticket
-- ticket.fill
+- ticket (iOS 14.0)
+- ticket.fill (iOS 14.0)
 
 ### timelapse
+ (iOS 13.0)
 
 ### timeline.selection
+ (iOS 14.0)
 
 ### timer
-- timer
-- timer.square
+- timer (iOS 13.0)
+- timer.square (iOS 14.0)
 
 ### togglepower
+ (iOS 14.0)
 
 ### tornado
+ (iOS 13.0)
 
 ### tortoise
-- tortoise
-- tortoise.fill
+- tortoise (iOS 13.0)
+- tortoise.fill (iOS 13.0)
 
 ### torus
+ (iOS 14.2)
 
 ### touchid
+ (iOS 14.0)
 
 ### train.side.front.car
+ (iOS 15.0)
 
 ### train.side.middle.car
+ (iOS 15.0)
 
 ### train.side.rear.car
+ (iOS 15.0)
 
 ### tram
-- tram
-- tram.fill
-- tram.circle
-- tram.circle.fill
+- tram (iOS 14.0)
+- tram.fill (iOS 13.0)
+- tram.circle (iOS 14.0)
+- tram.circle.fill (iOS 14.0)
 
 ### tram.fill.tunnel
+ (iOS 15.0)
 
 ### tram.tunnel.fill
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [tram.fill.tunnel](#tramfilltunnel))
 
 ### trapezoid.and.line.horizontal
-- trapezoid.and.line.horizontal
-- trapezoid.and.line.horizontal.fill
+- trapezoid.and.line.horizontal (iOS 15.0)
+- trapezoid.and.line.horizontal.fill (iOS 15.0)
 
 ### trapezoid.and.line.vertical
-- trapezoid.and.line.vertical
-- trapezoid.and.line.vertical.fill
+- trapezoid.and.line.vertical (iOS 15.0)
+- trapezoid.and.line.vertical.fill (iOS 15.0)
 
 ### trash
-- trash
-- trash.fill
-- trash.circle
-- trash.circle.fill
-- trash.square
-- trash.square.fill
-- trash.slash
-- trash.slash.fill
-- trash.slash.circle
-- trash.slash.circle.fill
-- trash.slash.square
-- trash.slash.square.fill
+- trash (iOS 13.0)
+- trash.fill (iOS 13.0)
+- trash.circle (iOS 13.0)
+- trash.circle.fill (iOS 13.0)
+- trash.square (iOS 15.0)
+- trash.square.fill (iOS 15.0)
+- trash.slash (iOS 13.0)
+- trash.slash.fill (iOS 13.0)
+- trash.slash.circle (iOS 15.0)
+- trash.slash.circle.fill (iOS 15.0)
+- trash.slash.square (iOS 15.0)
+- trash.slash.square.fill (iOS 15.0)
 
 ### tray
-- tray
-- tray.fill
-- tray.circle
-- tray.circle.fill
+- tray (iOS 13.0)
+- tray.fill (iOS 13.0)
+- tray.circle (iOS 14.0)
+- tray.circle.fill (iOS 14.0)
 
 ### tray.2
-- tray.2
-- tray.2.fill
+- tray.2 (iOS 13.0)
+- tray.2.fill (iOS 13.0)
 
 ### tray.and.arrow.down
-- tray.and.arrow.down
-- tray.and.arrow.down.fill
+- tray.and.arrow.down (iOS 13.0)
+- tray.and.arrow.down.fill (iOS 13.0)
 
 ### tray.and.arrow.up
-- tray.and.arrow.up
-- tray.and.arrow.up.fill
+- tray.and.arrow.up (iOS 13.0)
+- tray.and.arrow.up.fill (iOS 13.0)
 
 ### tray.full
-- tray.full
-- tray.full.fill
+- tray.full (iOS 13.0)
+- tray.full.fill (iOS 13.0)
 
 ### triangle
-- triangle
-- triangle.fill
-- triangle.circle
-- triangle.circle.fill
+- triangle (iOS 13.0)
+- triangle.fill (iOS 13.0)
+- triangle.circle (iOS 14.0)
+- triangle.circle.fill (iOS 14.0)
 
 ### triangle.bottomhalf.filled
+ (iOS 15.0)
 
 ### triangle.inset.filled
+ (iOS 15.0)
 
 ### triangle.lefthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [triangle.lefthalf.filled](#trianglelefthalffilled))
 
 ### triangle.lefthalf.filled
+ (iOS 15.0)
 
 ### triangle.righthalf.fill
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [triangle.righthalf.filled](#trianglerighthalffilled))
 
 ### triangle.righthalf.filled
+ (iOS 15.0)
 
 ### triangle.tophalf.filled
+ (iOS 15.0)
 
 ### tropicalstorm
+ (iOS 13.0)
 
 ### tshirt
-- tshirt
-- tshirt.fill
+- tshirt (iOS 15.0)
+- tshirt.fill (iOS 15.0)
 
 ### tugriksign
-- tugriksign.circle
-- tugriksign.circle.fill
-- tugriksign.square
-- tugriksign.square.fill
+- tugriksign.circle (iOS 13.0)
+- tugriksign.circle.fill (iOS 13.0)
+- tugriksign.square (iOS 13.0)
+- tugriksign.square.fill (iOS 13.0)
 
 ### tuningfork
+ (iOS 13.0)
 
 ### turkishlirasign
-- turkishlirasign.circle
-- turkishlirasign.circle.fill
-- turkishlirasign.square
-- turkishlirasign.square.fill
+- turkishlirasign.circle (iOS 13.0)
+- turkishlirasign.circle.fill (iOS 13.0)
+- turkishlirasign.square (iOS 13.0)
+- turkishlirasign.square.fill (iOS 13.0)
 
 ### tv
-- tv
-- tv.fill
-- tv.circle
-- tv.circle.fill
+- tv (iOS 13.0)
+- tv.fill (iOS 13.0)
+- tv.circle (iOS 13.0)
+- tv.circle.fill (iOS 13.0)
 
 ### tv.and.hifispeaker.fill
+ (iOS 14.0)
 
 ### tv.and.mediabox
+ (iOS 14.2)
 
 ### tv.inset.filled
+ (iOS 15.0)
 
 ### tv.music.note
-- tv.music.note
-- tv.music.note.fill
+- tv.music.note (iOS, introduced: 13.0, deprecated: 15.0, renamed: [music.note.tv](#musicnotetv))
+- tv.music.note.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [music.note.tv.fill](#musicnotetv))
 
 ### u
-- u.circle
-- u.circle.fill
-- u.square
-- u.square.fill
+- u.circle (iOS 13.0)
+- u.circle.fill (iOS 13.0)
+- u.square (iOS 13.0)
+- u.square.fill (iOS 13.0)
 
 ### uiwindow.split.2x1
+ (iOS 13.0)
 
 ### umbrella
-- umbrella
-- umbrella.fill
+- umbrella (iOS 13.0)
+- umbrella.fill (iOS 13.0)
 
 ### underline
+ (iOS 13.0)
 
 ### v
-- v.circle
-- v.circle.fill
-- v.square
-- v.square.fill
+- v.circle (iOS 13.0)
+- v.circle.fill (iOS 13.0)
+- v.square (iOS 13.0)
+- v.square.fill (iOS 13.0)
 
 ### video
-- video
-- video.fill
-- video.circle
-- video.circle.fill
-- video.square
-- video.square.fill
-- video.slash
-- video.slash.fill
+- video (iOS 13.0)
+- video.fill (iOS 13.0)
+- video.circle (iOS 13.0)
+- video.circle.fill (iOS 13.0)
+- video.square (iOS 15.0)
+- video.square.fill (iOS 15.0)
+- video.slash (iOS 13.0)
+- video.slash.fill (iOS 13.0)
 
 ### video.and.waveform
-- video.and.waveform
-- video.and.waveform.fill
+- video.and.waveform (iOS 15.0)
+- video.and.waveform.fill (iOS 15.0)
 
 ### video.badge.checkmark
+ (iOS 14.0)
 
 ### video.badge.ellipsis
+ (iOS 15.0)
 
 ### video.badge.plus
-- video.badge.plus
-- video.badge.plus.fill
+- video.badge.plus (iOS 13.0)
+- video.badge.plus.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [video.fill.badge.plus](#videofillbadgeplus))
 
 ### video.bubble.left
-- video.bubble.left
-- video.bubble.left.fill
+- video.bubble.left (iOS 14.0)
+- video.bubble.left.fill (iOS 14.0)
 
 ### video.fill.badge.checkmark
+ (iOS 14.0)
 
 ### video.fill.badge.ellipsis
+ (iOS 15.0)
 
 ### video.fill.badge.plus
+ (iOS 14.0)
 
 ### view.2d
+ (iOS 13.0)
 
 ### view.3d
+ (iOS 13.0)
 
 ### viewfinder
-- viewfinder
-- viewfinder.circle
-- viewfinder.circle.fill
+- viewfinder (iOS 13.0)
+- viewfinder.circle (iOS 13.0)
+- viewfinder.circle.fill (iOS 13.0)
 
 ### w
-- w.circle
-- w.circle.fill
-- w.square
-- w.square.fill
+- w.circle (iOS 13.0)
+- w.circle.fill (iOS 13.0)
+- w.square (iOS 13.0)
+- w.square.fill (iOS 13.0)
 
 ### wake
-- wake
-- wake.circle
-- wake.circle.fill
+- wake (iOS 14.0)
+- wake.circle (iOS 15.0)
+- wake.circle.fill (iOS 15.0)
 
 ### wallet.pass
-- wallet.pass
-- wallet.pass.fill
+- wallet.pass (iOS 14.0)
+- wallet.pass.fill (iOS 14.0)
 
 ### wand.and.rays
+ (iOS 13.0)
 
 ### wand.and.rays.inverse
+ (iOS 13.0)
 
 ### wand.and.stars
+ (iOS 13.0)
 
 ### wand.and.stars.inverse
+ (iOS 13.0)
 
 ### watchface.applewatch.case
+ (iOS 15.0)
 
 ### wave.3.backward
-- wave.3.backward
-- wave.3.backward.circle
-- wave.3.backward.circle.fill
+- wave.3.backward (iOS 14.0)
+- wave.3.backward.circle (iOS 14.0)
+- wave.3.backward.circle.fill (iOS 14.0)
 
 ### wave.3.forward
-- wave.3.forward
-- wave.3.forward.circle
-- wave.3.forward.circle.fill
+- wave.3.forward (iOS 14.0)
+- wave.3.forward.circle (iOS 14.0)
+- wave.3.forward.circle.fill (iOS 14.0)
 
 ### wave.3.left
-- wave.3.left
-- wave.3.left.circle
-- wave.3.left.circle.fill
+- wave.3.left (iOS 14.0)
+- wave.3.left.circle (iOS 14.0)
+- wave.3.left.circle.fill (iOS 14.0)
 
 ### wave.3.right
-- wave.3.right
-- wave.3.right.circle
-- wave.3.right.circle.fill
+- wave.3.right (iOS 14.0)
+- wave.3.right.circle (iOS 14.0)
+- wave.3.right.circle.fill (iOS 14.0)
 
 ### waveform
-- waveform
-- waveform.circle
-- waveform.circle.fill
+- waveform (iOS 13.0)
+- waveform.circle (iOS 13.0)
+- waveform.circle.fill (iOS 13.0)
 
 ### waveform.and.magnifyingglass
+ (iOS 15.0)
 
 ### waveform.and.mic
+ (iOS 15.0)
 
 ### waveform.badge.exclamationmark
+ (iOS 15.0)
 
 ### waveform.badge.minus
+ (iOS 15.0)
 
 ### waveform.badge.plus
+ (iOS 15.0)
 
 ### waveform.path
+ (iOS 13.0)
 
 ### waveform.path.badge.minus
+ (iOS 13.0)
 
 ### waveform.path.badge.plus
+ (iOS 13.0)
 
 ### waveform.path.ecg
-- waveform.path.ecg
-- waveform.path.ecg.rectangle
-- waveform.path.ecg.rectangle.fill
+- waveform.path.ecg (iOS 13.0)
+- waveform.path.ecg.rectangle (iOS 14.0)
+- waveform.path.ecg.rectangle.fill (iOS 14.0)
 
 ### wifi
-- wifi
-- wifi.circle
-- wifi.circle.fill
-- wifi.square
-- wifi.square.fill
-- wifi.slash
+- wifi (iOS 13.0)
+- wifi.circle (iOS 15.0)
+- wifi.circle.fill (iOS 15.0)
+- wifi.square (iOS 15.0)
+- wifi.square.fill (iOS 15.0)
+- wifi.slash (iOS 13.0)
 
 ### wifi.exclamationmark
+ (iOS 13.0)
 
 ### wind
+ (iOS 13.0)
 
 ### wind.snow
+ (iOS 13.0)
 
 ### wonsign
-- wonsign.circle
-- wonsign.circle.fill
-- wonsign.square
-- wonsign.square.fill
+- wonsign.circle (iOS 13.0)
+- wonsign.circle.fill (iOS 13.0)
+- wonsign.square (iOS 13.0)
+- wonsign.square.fill (iOS 13.0)
 
 ### wrench
-- wrench
-- wrench.fill
+- wrench (iOS 13.0)
+- wrench.fill (iOS 13.0)
 
 ### wrench.and.screwdriver
-- wrench.and.screwdriver
-- wrench.and.screwdriver.fill
+- wrench.and.screwdriver (iOS 14.0)
+- wrench.and.screwdriver.fill (iOS 14.0)
 
 ### x
-- x.circle
-- x.circle.fill
-- x.square
-- x.square.fill
+- x.circle (iOS 13.0)
+- x.circle.fill (iOS 13.0)
+- x.square (iOS 13.0)
+- x.square.fill (iOS 13.0)
 
 ### x.squareroot
+ (iOS 13.0)
 
 ### xmark
-- xmark
-- xmark.circle
-- xmark.circle.fill
-- xmark.rectangle
-- xmark.rectangle.fill
-- xmark.square
-- xmark.square.fill
+- xmark (iOS 13.0)
+- xmark.circle (iOS 13.0)
+- xmark.circle.fill (iOS 13.0)
+- xmark.rectangle (iOS 13.0)
+- xmark.rectangle.fill (iOS 13.0)
+- xmark.square (iOS 13.0)
+- xmark.square.fill (iOS 13.0)
 
 ### xmark.app
-- xmark.app
-- xmark.app.fill
+- xmark.app (iOS 15.0)
+- xmark.app.fill (iOS 15.0)
 
 ### xmark.bin
-- xmark.bin
-- xmark.bin.fill
-- xmark.bin.circle
-- xmark.bin.circle.fill
+- xmark.bin (iOS 14.0)
+- xmark.bin.fill (iOS 14.0)
+- xmark.bin.circle (iOS 14.0)
+- xmark.bin.circle.fill (iOS 14.0)
 
 ### xmark.diamond
-- xmark.diamond
-- xmark.diamond.fill
+- xmark.diamond (iOS 14.0)
+- xmark.diamond.fill (iOS 14.0)
 
 ### xmark.icloud
-- xmark.icloud
-- xmark.icloud.fill
+- xmark.icloud (iOS 13.0)
+- xmark.icloud.fill (iOS 13.0)
 
 ### xmark.octagon
-- xmark.octagon
-- xmark.octagon.fill
+- xmark.octagon (iOS 13.0)
+- xmark.octagon.fill (iOS 13.0)
 
 ### xmark.rectangle.portrait
-- xmark.rectangle.portrait
-- xmark.rectangle.portrait.fill
+- xmark.rectangle.portrait (iOS 14.0)
+- xmark.rectangle.portrait.fill (iOS 14.0)
 
 ### xmark.seal
-- xmark.seal
-- xmark.seal.fill
+- xmark.seal (iOS 13.0)
+- xmark.seal.fill (iOS 13.0)
 
 ### xmark.shield
-- xmark.shield
-- xmark.shield.fill
+- xmark.shield (iOS 13.0)
+- xmark.shield.fill (iOS 13.0)
 
 ### xserve
+ (iOS 14.0)
 
 ### y
-- y.circle
-- y.circle.fill
-- y.square
-- y.square.fill
+- y.circle (iOS 13.0)
+- y.circle.fill (iOS 13.0)
+- y.square (iOS 13.0)
+- y.square.fill (iOS 13.0)
 
 ### yensign
-- yensign.circle
-- yensign.circle.fill
-- yensign.square
-- yensign.square.fill
+- yensign.circle (iOS 13.0)
+- yensign.circle.fill (iOS 13.0)
+- yensign.square (iOS 13.0)
+- yensign.square.fill (iOS 13.0)
 
 ### z
-- z.circle
-- z.circle.fill
-- z.square
-- z.square.fill
+- z.circle (iOS 13.0)
+- z.circle.fill (iOS 13.0)
+- z.square (iOS 13.0)
+- z.square.fill (iOS 13.0)
 
 ### zl.rectangle.roundedtop
-- zl.rectangle.roundedtop
-- zl.rectangle.roundedtop.fill
+- zl.rectangle.roundedtop (iOS 14.0)
+- zl.rectangle.roundedtop.fill (iOS 14.0)
 
 ### zr.rectangle.roundedtop
-- zr.rectangle.roundedtop
-- zr.rectangle.roundedtop.fill
+- zr.rectangle.roundedtop (iOS 14.0)
+- zr.rectangle.roundedtop.fill (iOS 14.0)
 
 ### zzz
+ (iOS 13.0)
 
