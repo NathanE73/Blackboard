@@ -74,9 +74,9 @@ class SymbolAvailabilityTests: XCTestCase {
             .forEach { variantSymbols in
                 let symbols = variantSymbols.symbols.sorted().names
                 if symbols.count == 1, let symbolName = symbols.first {
-                    text.append("\(symbolName)\n")
+                    text.append("### \(symbolName)\n")
                 } else {
-                    text.append("\(variantSymbols.baseName)\n")
+                    text.append("### \(variantSymbols.baseName)\n")
                     symbols.forEach { symbol in
                         text.append("- \(symbol)\n")
                     }
