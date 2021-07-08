@@ -47,10 +47,45 @@ class SymbolAvailabilityTests: XCTestCase {
         XCTAssertEqual(availability.symbols["repeat"], "2019")
         XCTAssertEqual(availability.symbols["repeat.circle"], "2020.1")
         
-        XCTAssertEqual(availability.yearToRelease.count, 3)
+        XCTAssertEqual(availability.yearToRelease.count, 5)
         XCTAssertEqual(availability.yearToRelease["2019"]?.iOS, "13.0")
         XCTAssertEqual(availability.yearToRelease["2020"]?.iOS, "14.0")
         XCTAssertEqual(availability.yearToRelease["2020.1"]?.iOS, "14.2")
+        XCTAssertEqual(availability.yearToRelease["2020.2"]?.iOS, "14.5")
+        XCTAssertEqual(availability.yearToRelease["2021"]?.iOS, "15.0")
+    }
+    
+    func testSymbolGrouping() throws {
+        let file = #filePath
+            .deletingLastPathComponent // SymbolAvailabilityTests.swift
+            .deletingLastPathComponent // Symbol Assets
+            .deletingLastPathComponent // BlackboardFrameworkTests
+            .deletingLastPathComponent // Tests
+            .appendingPathComponent("README")
+            .appendingPathComponent("Symbols.md")
+        
+        let availability = try XCTUnwrap(SymbolAvailability.resource)
+        
+        let variantSymbols = availability.variantSymbols
+        
+        var text = ""
+        
+        variantSymbols.values.sorted(by: \.baseName)
+            .forEach { variantSymbols in
+                let symbols = variantSymbols.symbols.sorted().names
+                if symbols.count == 1, let symbolName = symbols.first {
+                    text.append("\(symbolName)\n")
+                } else {
+                    text.append("\(variantSymbols.baseName)\n")
+                    symbols.forEach { symbol in
+                        text.append("- \(symbol)\n")
+                    }
+                }
+                text.append("\n")
+            }
+        
+        try text.write(toFile: file, atomically: true, encoding: .utf8)
     }
     
 }
+
