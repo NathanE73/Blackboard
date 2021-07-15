@@ -497,6 +497,16 @@
 ### airport.extreme.tower
  (iOS 14.0)
 
+### airtag
+- airtag (iOS 15.0)
+- airtag.fill (iOS 15.0)
+
+### airtag.radiowaves.forward
+- airtag.radiowaves.forward (iOS 15.0)
+- airtag.radiowaves.forward.rtl (iOS 15.0)
+- airtag.radiowaves.forward.fill (iOS 15.0)
+- airtag.radiowaves.forward.fill.rtl (iOS 15.0)
+
 ### alarm
 - alarm (iOS 13.0)
 - alarm.fill (iOS 13.0)
@@ -506,6 +516,9 @@
 
 ### alt
  (iOS 13.0)
+
+### alternatingcurrent
+ (iOS 15.0)
 
 ### amplifier
  (iOS 14.0)
@@ -520,6 +533,7 @@
 - antenna.radiowaves.left.and.right (iOS 13.0)
 - antenna.radiowaves.left.and.right.circle (iOS 15.0)
 - antenna.radiowaves.left.and.right.circle.fill (iOS 15.0)
+- antenna.radiowaves.left.and.right.slash (iOS 15.0)
 
 ### app
 - app (iOS 13.0)
@@ -579,6 +593,9 @@
 ### applewatch
 - applewatch (iOS 14.0)
 - applewatch.slash (iOS 14.0)
+
+### applewatch.case.inset.filled
+ (iOS 15.0)
 
 ### applewatch.radiowaves.left.and.right
  (iOS 14.0)
@@ -1540,6 +1557,9 @@
 ### cable.connector
  (iOS 15.0)
 
+### cable.connector.horizontal
+ (iOS 15.0)
+
 ### cablecar
 - cablecar (iOS 15.0)
 - cablecar.fill (iOS 15.0)
@@ -1814,7 +1834,9 @@
  (iOS 14.0)
 
 ### chart.line.uptrend.xyaxis
- (iOS 15.0)
+- chart.line.uptrend.xyaxis (iOS 15.0)
+- chart.line.uptrend.xyaxis.circle (iOS 15.0)
+- chart.line.uptrend.xyaxis.circle.fill (iOS 15.0)
 
 ### chart.pie
 - chart.pie (iOS 13.0)
@@ -1973,6 +1995,9 @@
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.dashed.inset.filled](#circledashedinsetfilled))
 
 ### circle.dashed.inset.filled
+ (iOS 15.0)
+
+### circle.dotted
  (iOS 15.0)
 
 ### circle.fill.square.fill
@@ -2382,28 +2407,28 @@
 - die.face.6.fill (iOS 14.0)
 
 ### digitalcrown.arrow.clockwise
- (iOS 15.0)
+- digitalcrown.arrow.clockwise (iOS 15.0)
+- digitalcrown.arrow.clockwise.fill (iOS 15.0)
 
 ### digitalcrown.arrow.counterclockwise
- (iOS 15.0)
-
-### digitalcrown.fill.arrow.clockwise
- (iOS 15.0)
-
-### digitalcrown.fill.arrow.counterclockwise
- (iOS 15.0)
+- digitalcrown.arrow.counterclockwise (iOS 15.0)
+- digitalcrown.arrow.counterclockwise.fill (iOS 15.0)
 
 ### digitalcrown.horizontal.arrow.clockwise
- (iOS 15.0)
+- digitalcrown.horizontal.arrow.clockwise (iOS 15.0)
+- digitalcrown.horizontal.arrow.clockwise.fill (iOS 15.0)
 
 ### digitalcrown.horizontal.arrow.counterclockwise
- (iOS 15.0)
+- digitalcrown.horizontal.arrow.counterclockwise (iOS 15.0)
+- digitalcrown.horizontal.arrow.counterclockwise.fill (iOS 15.0)
 
-### digitalcrown.horizontal.fill.arrow.clockwise
- (iOS 15.0)
+### digitalcrown.horizontal.press
+- digitalcrown.horizontal.press (iOS 15.0)
+- digitalcrown.horizontal.press.fill (iOS 15.0)
 
-### digitalcrown.horizontal.fill.arrow.counterclockwise
- (iOS 15.0)
+### digitalcrown.press
+- digitalcrown.press (iOS 15.0)
+- digitalcrown.press.fill (iOS 15.0)
 
 ### directcurrent
  (iOS 14.2)
@@ -2599,6 +2624,9 @@
 ### ear
 - ear (iOS 13.0)
 - ear.fill (iOS 14.0)
+
+### ear.and.waveform
+ (iOS 15.0)
 
 ### ear.badge.checkmark
  (iOS 14.0)
@@ -3065,6 +3093,15 @@
 - gear.circle (iOS 15.0)
 - gear.circle.fill (iOS 15.0)
 
+### gear.badge.checkmark
+ (iOS 15.0)
+
+### gear.badge.questionmark
+ (iOS 15.0)
+
+### gear.badge.xmark
+ (iOS 15.0)
+
 ### gearshape
 - gearshape (iOS 14.0)
 - gearshape.fill (iOS 14.0)
@@ -3095,6 +3132,9 @@
 ### globe.asia.australia
 - globe.asia.australia (iOS 15.0)
 - globe.asia.australia.fill (iOS 15.0)
+
+### globe.badge.chevron.backward
+ (iOS 15.0)
 
 ### globe.europe.africa
 - globe.europe.africa (iOS 15.0)
@@ -3281,6 +3321,10 @@
 - hand.raised.square.fill (iOS 15.0)
 - hand.raised.slash (iOS 13.0)
 - hand.raised.slash.fill (iOS 13.0)
+
+### hand.raised.square.on.square
+- hand.raised.square.on.square (iOS 15.0)
+- hand.raised.square.on.square.fill (iOS 15.0)
 
 ### hand.tap
 - hand.tap (iOS 14.0)
@@ -3565,13 +3609,17 @@
  (iOS 14.2)
 
 ### iphone.homebutton.radiowaves.left.and.right
- (iOS 14.0)
+- iphone.homebutton.radiowaves.left.and.right (iOS 14.0)
+- iphone.homebutton.radiowaves.left.and.right.circle (iOS 15.0)
+- iphone.homebutton.radiowaves.left.and.right.circle.fill (iOS 15.0)
 
 ### iphone.landscape
  (iOS 14.2)
 
 ### iphone.radiowaves.left.and.right
- (iOS 14.0)
+- iphone.radiowaves.left.and.right (iOS 14.0)
+- iphone.radiowaves.left.and.right.circle (iOS 15.0)
+- iphone.radiowaves.left.and.right.circle.fill (iOS 15.0)
 
 ### iphone.rear.camera
  (iOS 15.0)
@@ -3716,6 +3764,9 @@
 ### ladybug
 - ladybug (iOS 14.0)
 - ladybug.fill (iOS 14.0)
+
+### landscape.artframe
+ (iOS 15.0)
 
 ### lanyardcard
 - lanyardcard (iOS 15.0)
@@ -4306,6 +4357,9 @@
 ### network
  (iOS 14.0)
 
+### network.badge.shield.half.filled
+ (iOS 15.0)
+
 ### newspaper
 - newspaper (iOS 14.0)
 - newspaper.fill (iOS 14.0)
@@ -4555,6 +4609,10 @@
 ### person.and.arrow.left.and.arrow.right
  (iOS 14.0)
 
+### person.badge.clock
+- person.badge.clock (iOS 15.0)
+- person.badge.clock.fill (iOS 15.0)
+
 ### person.badge.minus
 - person.badge.minus (iOS 13.0)
 - person.badge.minus.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [person.fill.badge.minus](#personfillbadgeminus))
@@ -4580,6 +4638,10 @@
 
 ### person.crop.circle.badge.checkmark
  (iOS 13.0)
+
+### person.crop.circle.badge.clock
+- person.crop.circle.badge.clock (iOS 15.0)
+- person.crop.circle.badge.clock.fill (iOS 15.0)
 
 ### person.crop.circle.badge.exclam
  (iOS, introduced: 13.0, deprecated: 14.0, renamed: [person.crop.circle.badge.exclamationmark](#personcropcirclebadgeexclamationmark))
@@ -4681,6 +4743,10 @@
 ### person.text.rectangle
 - person.text.rectangle (iOS 15.0)
 - person.text.rectangle.fill (iOS 15.0)
+
+### person.wave.2
+- person.wave.2 (iOS 15.0)
+- person.wave.2.fill (iOS 15.0)
 
 ### personalhotspot
  (iOS 13.0)
@@ -4908,6 +4974,9 @@
 ### plus.slash.minus
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [plus.forwardslash.minus](#plusforwardslashminus))
 
+### plus.square.dashed
+ (iOS 15.0)
+
 ### plus.square.fill.on.square.fill
  (iOS 13.0)
 
@@ -4921,6 +4990,12 @@
 - plusminus (iOS 13.0)
 - plusminus.circle (iOS 13.0)
 - plusminus.circle.fill (iOS 13.0)
+
+### point.3.connected.trianglepath.dotted
+ (iOS 15.0)
+
+### point.3.filled.connected.trianglepath.dotted
+ (iOS 15.0)
 
 ### point.fill.topleft.down.curvedto.point.fill.bottomright.up
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [point.topleft.down.curvedto.point.bottomright.up.fill](#pointtopleftdowncurvedtopointbottomrightup))
@@ -5147,12 +5222,12 @@
  (iOS 15.0)
 
 ### rectangle.3.offgrid
-- rectangle.3.offgrid (iOS 13.0)
-- rectangle.3.offgrid.fill (iOS 13.0)
+- rectangle.3.offgrid (iOS, introduced: 13.0, deprecated: 15.0, renamed: [rectangles.group](#rectanglesgroup))
+- rectangle.3.offgrid.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [rectangles.group.fill](#rectanglesgroup))
 
 ### rectangle.3.offgrid.bubble.left
-- rectangle.3.offgrid.bubble.left (iOS 14.0)
-- rectangle.3.offgrid.bubble.left.fill (iOS 14.0)
+- rectangle.3.offgrid.bubble.left (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangles.group.bubble.left](#rectanglesgroupbubbleleft))
+- rectangle.3.offgrid.bubble.left.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangles.group.bubble.left.fill](#rectanglesgroupbubbleleft))
 
 ### rectangle.and.arrow.up.right.and.arrow.down.left
 - rectangle.and.arrow.up.right.and.arrow.down.left (iOS 13.0)
@@ -5276,7 +5351,7 @@
 - rectangle.grid.3x2.fill (iOS 13.0)
 
 ### rectangle.inset.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.inset.filled](#rectangleinsetfilled))
 
 ### rectangle.inset.bottomleading.filled
  (iOS 15.0)
@@ -5294,6 +5369,12 @@
  (iOS 15.0)
 
 ### rectangle.inset.bottomtrailing.filled
+ (iOS 15.0)
+
+### rectangle.inset.filled
+ (iOS 15.0)
+
+### rectangle.inset.filled.and.person.filled
  (iOS 15.0)
 
 ### rectangle.inset.filled.on.rectangle
@@ -5578,6 +5659,14 @@
 ### rectangle.trailingthird.inset.filled
  (iOS 15.0)
 
+### rectangles.group
+- rectangles.group (iOS 15.0)
+- rectangles.group.fill (iOS 15.0)
+
+### rectangles.group.bubble.left
+- rectangles.group.bubble.left (iOS 15.0)
+- rectangles.group.bubble.left.fill (iOS 15.0)
+
 ### repeat
 - repeat (iOS 13.0)
 - repeat.circle (iOS 14.2)
@@ -5712,7 +5801,8 @@
  (iOS 14.0)
 
 ### shareplay
- (iOS 15.0)
+- shareplay (iOS 15.0)
+- shareplay.slash (iOS 15.0)
 
 ### shekelsign
 - shekelsign.circle (iOS 14.0)
@@ -5822,6 +5912,9 @@
 - sleep.circle (iOS 15.0)
 - sleep.circle.fill (iOS 15.0)
 
+### slider.horizontal.2.rectangle.and.arrow.triangle.2.circlepath
+ (iOS 15.0)
+
 ### slider.horizontal.3
  (iOS 13.0)
 
@@ -5874,6 +5967,10 @@
 
 ### sparkles.square.filled.on.square
  (iOS 15.0)
+
+### sparkles.tv
+- sparkles.tv (iOS 15.0)
+- sparkles.tv.fill (iOS 15.0)
 
 ### speaker
 - speaker (iOS 13.0)
@@ -6400,7 +6497,9 @@
 - teletype.circle.fill (iOS 14.0)
 
 ### teletype.answer
- (iOS 13.0)
+- teletype.answer (iOS 13.0)
+- teletype.answer.circle (iOS 15.0)
+- teletype.answer.circle.fill (iOS 15.0)
 
 ### tengesign
 - tengesign.circle (iOS 13.0)

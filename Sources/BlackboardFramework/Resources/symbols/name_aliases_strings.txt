@@ -137,6 +137,10 @@
 "radiowaves.left" = "wave.3.left";
 "radiowaves.right" = "wave.3.right";
 "realtimetext" = "teletype.answer";
+"rectangle.3.offgrid" = "rectangles.group";
+"rectangle.3.offgrid.bubble.left" = "rectangles.group.bubble.left";
+"rectangle.3.offgrid.bubble.left.fill" = "rectangles.group.bubble.left.fill";
+"rectangle.3.offgrid.fill" = "rectangles.group.fill";
 "rectangle.badge.checkmark.fill" = "rectangle.fill.badge.checkmark";
 "rectangle.badge.xmark.fill" = "rectangle.fill.badge.xmark";
 "rectangle.bottomthird.inset.fill" = "rectangle.bottomthird.inset.filled";
@@ -147,6 +151,7 @@
 "rectangle.fill.on.rectangle.fill.slash.fill" = "rectangle.on.rectangle.slash.fill";
 "rectangle.inset.bottomleft.fill" = "rectangle.inset.bottomleft.filled";
 "rectangle.inset.bottomright.fill" = "rectangle.inset.bottomright.filled";
+"rectangle.inset.fill" = "rectangle.inset.filled";
 "rectangle.inset.topleft.fill" = "rectangle.inset.topleft.filled";
 "rectangle.inset.topright.fill" = "rectangle.inset.topright.filled";
 "rectangle.lefthalf.fill" = "rectangle.lefthalf.filled";

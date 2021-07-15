@@ -31,7 +31,7 @@ class SymbolAliasesTests: XCTestCase {
     func testResource() throws {
         let aliases = try XCTUnwrap(SymbolAliases.resource)
         
-        XCTAssertEqual(aliases.symbols.count, 262)
+        XCTAssertEqual(aliases.symbols.count, 267)
         
         XCTAssertEqual(aliases.symbols["a.book.closed"], "character.book.closed")
         XCTAssertEqual(aliases.symbols["dial.fill"], "dial.min.fill")

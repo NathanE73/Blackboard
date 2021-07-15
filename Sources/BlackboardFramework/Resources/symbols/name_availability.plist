@@ -638,6 +638,18 @@
 		<string>2020</string>
 		<key>airport.extreme.tower</key>
 		<string>2020</string>
+		<key>airtag</key>
+		<string>2021</string>
+		<key>airtag.fill</key>
+		<string>2021</string>
+		<key>airtag.radiowaves.forward</key>
+		<string>2021</string>
+		<key>airtag.radiowaves.forward.fill</key>
+		<string>2021</string>
+		<key>airtag.radiowaves.forward.fill.rtl</key>
+		<string>2021</string>
+		<key>airtag.radiowaves.forward.rtl</key>
+		<string>2021</string>
 		<key>alarm</key>
 		<string>2019</string>
 		<key>alarm.fill</key>
@@ -646,6 +658,8 @@
 		<string>2021</string>
 		<key>alt</key>
 		<string>2019</string>
+		<key>alternatingcurrent</key>
+		<string>2021</string>
 		<key>amplifier</key>
 		<string>2020</string>
 		<key>ant</key>
@@ -661,6 +675,8 @@
 		<key>antenna.radiowaves.left.and.right.circle</key>
 		<string>2021</string>
 		<key>antenna.radiowaves.left.and.right.circle.fill</key>
+		<string>2021</string>
+		<key>antenna.radiowaves.left.and.right.slash</key>
 		<string>2021</string>
 		<key>app</key>
 		<string>2019</string>
@@ -714,6 +730,8 @@
 		<string>2021</string>
 		<key>applewatch</key>
 		<string>2020</string>
+		<key>applewatch.case.inset.filled</key>
+		<string>2021</string>
 		<key>applewatch.radiowaves.left.and.right</key>
 		<string>2020</string>
 		<key>applewatch.side.right</key>
@@ -1768,6 +1786,8 @@
 		<string>2019</string>
 		<key>cable.connector</key>
 		<string>2021</string>
+		<key>cable.connector.horizontal</key>
+		<string>2021</string>
 		<key>cablecar</key>
 		<string>2021</string>
 		<key>cablecar.fill</key>
@@ -2072,6 +2092,10 @@
 		<string>2020</string>
 		<key>chart.line.uptrend.xyaxis</key>
 		<string>2021</string>
+		<key>chart.line.uptrend.xyaxis.circle</key>
+		<string>2021</string>
+		<key>chart.line.uptrend.xyaxis.circle.fill</key>
+		<string>2021</string>
 		<key>chart.pie</key>
 		<string>2019</string>
 		<key>chart.pie.fill</key>
@@ -2229,6 +2253,8 @@
 		<key>circle.dashed.inset.fill</key>
 		<string>2020</string>
 		<key>circle.dashed.inset.filled</key>
+		<string>2021</string>
+		<key>circle.dotted</key>
 		<string>2021</string>
 		<key>circle.fill</key>
 		<string>2019</string>
@@ -2624,19 +2650,27 @@
 		<string>2020</string>
 		<key>digitalcrown.arrow.clockwise</key>
 		<string>2021</string>
+		<key>digitalcrown.arrow.clockwise.fill</key>
+		<string>2021</string>
 		<key>digitalcrown.arrow.counterclockwise</key>
 		<string>2021</string>
-		<key>digitalcrown.fill.arrow.clockwise</key>
-		<string>2021</string>
-		<key>digitalcrown.fill.arrow.counterclockwise</key>
+		<key>digitalcrown.arrow.counterclockwise.fill</key>
 		<string>2021</string>
 		<key>digitalcrown.horizontal.arrow.clockwise</key>
 		<string>2021</string>
+		<key>digitalcrown.horizontal.arrow.clockwise.fill</key>
+		<string>2021</string>
 		<key>digitalcrown.horizontal.arrow.counterclockwise</key>
 		<string>2021</string>
-		<key>digitalcrown.horizontal.fill.arrow.clockwise</key>
+		<key>digitalcrown.horizontal.arrow.counterclockwise.fill</key>
 		<string>2021</string>
-		<key>digitalcrown.horizontal.fill.arrow.counterclockwise</key>
+		<key>digitalcrown.horizontal.press</key>
+		<string>2021</string>
+		<key>digitalcrown.horizontal.press.fill</key>
+		<string>2021</string>
+		<key>digitalcrown.press</key>
+		<string>2021</string>
+		<key>digitalcrown.press.fill</key>
 		<string>2021</string>
 		<key>directcurrent</key>
 		<string>2020.1</string>
@@ -2834,6 +2868,8 @@
 		<string>2019</string>
 		<key>ear</key>
 		<string>2019</string>
+		<key>ear.and.waveform</key>
+		<string>2021</string>
 		<key>ear.badge.checkmark</key>
 		<string>2020</string>
 		<key>ear.fill</key>
@@ -3286,6 +3322,12 @@
 		<string>2019</string>
 		<key>gear</key>
 		<string>2019</string>
+		<key>gear.badge.checkmark</key>
+		<string>2021</string>
+		<key>gear.badge.questionmark</key>
+		<string>2021</string>
+		<key>gear.badge.xmark</key>
+		<string>2021</string>
 		<key>gear.circle</key>
 		<string>2021</string>
 		<key>gear.circle.fill</key>
@@ -3323,6 +3365,8 @@
 		<key>globe.asia.australia</key>
 		<string>2021</string>
 		<key>globe.asia.australia.fill</key>
+		<string>2021</string>
+		<key>globe.badge.chevron.backward</key>
 		<string>2021</string>
 		<key>globe.europe.africa</key>
 		<string>2021</string>
@@ -3535,6 +3579,10 @@
 		<key>hand.raised.square</key>
 		<string>2021</string>
 		<key>hand.raised.square.fill</key>
+		<string>2021</string>
+		<key>hand.raised.square.on.square</key>
+		<string>2021</string>
+		<key>hand.raised.square.on.square.fill</key>
 		<string>2021</string>
 		<key>hand.tap</key>
 		<string>2020</string>
@@ -3814,6 +3862,10 @@
 		<string>2020.1</string>
 		<key>iphone.homebutton.radiowaves.left.and.right</key>
 		<string>2020</string>
+		<key>iphone.homebutton.radiowaves.left.and.right.circle</key>
+		<string>2021</string>
+		<key>iphone.homebutton.radiowaves.left.and.right.circle.fill</key>
+		<string>2021</string>
 		<key>iphone.homebutton.slash</key>
 		<string>2020</string>
 		<key>iphone.homebutton.slash.circle</key>
@@ -3824,6 +3876,10 @@
 		<string>2020.1</string>
 		<key>iphone.radiowaves.left.and.right</key>
 		<string>2020</string>
+		<key>iphone.radiowaves.left.and.right.circle</key>
+		<string>2021</string>
+		<key>iphone.radiowaves.left.and.right.circle.fill</key>
+		<string>2021</string>
 		<key>iphone.rear.camera</key>
 		<string>2021</string>
 		<key>iphone.slash</key>
@@ -3966,6 +4022,8 @@
 		<string>2020</string>
 		<key>ladybug.fill</key>
 		<string>2020</string>
+		<key>landscape.artframe</key>
+		<string>2021</string>
 		<key>lanyardcard</key>
 		<string>2021</string>
 		<key>lanyardcard.fill</key>
@@ -4560,6 +4618,8 @@
 		<string>2019</string>
 		<key>network</key>
 		<string>2020</string>
+		<key>network.badge.shield.half.filled</key>
+		<string>2021</string>
 		<key>newspaper</key>
 		<string>2020</string>
 		<key>newspaper.fill</key>
@@ -4788,6 +4848,10 @@
 		<string>2021</string>
 		<key>person.and.arrow.left.and.arrow.right</key>
 		<string>2020</string>
+		<key>person.badge.clock</key>
+		<string>2021</string>
+		<key>person.badge.clock.fill</key>
+		<string>2021</string>
 		<key>person.badge.minus</key>
 		<string>2019</string>
 		<key>person.badge.minus.fill</key>
@@ -4808,6 +4872,10 @@
 		<string>2021</string>
 		<key>person.crop.circle.badge.checkmark</key>
 		<string>2019</string>
+		<key>person.crop.circle.badge.clock</key>
+		<string>2021</string>
+		<key>person.crop.circle.badge.clock.fill</key>
+		<string>2021</string>
 		<key>person.crop.circle.badge.exclam</key>
 		<string>2019</string>
 		<key>person.crop.circle.badge.exclamationmark</key>
@@ -4907,6 +4975,10 @@
 		<key>person.text.rectangle</key>
 		<string>2021</string>
 		<key>person.text.rectangle.fill</key>
+		<string>2021</string>
+		<key>person.wave.2</key>
+		<string>2021</string>
+		<key>person.wave.2.fill</key>
 		<string>2021</string>
 		<key>personalhotspot</key>
 		<string>2019</string>
@@ -5126,6 +5198,8 @@
 		<string>2019</string>
 		<key>plus.square</key>
 		<string>2019</string>
+		<key>plus.square.dashed</key>
+		<string>2021</string>
 		<key>plus.square.fill</key>
 		<string>2019</string>
 		<key>plus.square.fill.on.square.fill</key>
@@ -5140,6 +5214,10 @@
 		<string>2019</string>
 		<key>plusminus.circle.fill</key>
 		<string>2019</string>
+		<key>point.3.connected.trianglepath.dotted</key>
+		<string>2021</string>
+		<key>point.3.filled.connected.trianglepath.dotted</key>
+		<string>2021</string>
 		<key>point.fill.topleft.down.curvedto.point.fill.bottomright.up</key>
 		<string>2020</string>
 		<key>point.filled.topleft.down.curvedto.point.bottomright.up</key>
@@ -5484,6 +5562,10 @@
 		<string>2021</string>
 		<key>rectangle.inset.fill</key>
 		<string>2020</string>
+		<key>rectangle.inset.filled</key>
+		<string>2021</string>
+		<key>rectangle.inset.filled.and.person.filled</key>
+		<string>2021</string>
 		<key>rectangle.inset.filled.on.rectangle</key>
 		<string>2021</string>
 		<key>rectangle.inset.topleading.filled</key>
@@ -5716,6 +5798,14 @@
 		<string>2021</string>
 		<key>rectangle.trailingthird.inset.filled</key>
 		<string>2021</string>
+		<key>rectangles.group</key>
+		<string>2021</string>
+		<key>rectangles.group.bubble.left</key>
+		<string>2021</string>
+		<key>rectangles.group.bubble.left.fill</key>
+		<string>2021</string>
+		<key>rectangles.group.fill</key>
+		<string>2021</string>
 		<key>repeat</key>
 		<string>2019</string>
 		<key>repeat.1</key>
@@ -5852,6 +5942,8 @@
 		<string>2020</string>
 		<key>shareplay</key>
 		<string>2021</string>
+		<key>shareplay.slash</key>
+		<string>2021</string>
 		<key>shekelsign.circle</key>
 		<string>2020</string>
 		<key>shekelsign.circle.fill</key>
@@ -5960,6 +6052,8 @@
 		<string>2021</string>
 		<key>sleep.circle.fill</key>
 		<string>2021</string>
+		<key>slider.horizontal.2.rectangle.and.arrow.triangle.2.circlepath</key>
+		<string>2021</string>
 		<key>slider.horizontal.3</key>
 		<string>2019</string>
 		<key>slider.horizontal.below.rectangle</key>
@@ -6001,6 +6095,10 @@
 		<key>sparkles.square.fill.on.square</key>
 		<string>2020</string>
 		<key>sparkles.square.filled.on.square</key>
+		<string>2021</string>
+		<key>sparkles.tv</key>
+		<string>2021</string>
+		<key>sparkles.tv.fill</key>
 		<string>2021</string>
 		<key>speaker</key>
 		<string>2019</string>
@@ -6500,6 +6598,10 @@
 		<string>2019</string>
 		<key>teletype.answer</key>
 		<string>2019</string>
+		<key>teletype.answer.circle</key>
+		<string>2021</string>
+		<key>teletype.answer.circle.fill</key>
+		<string>2021</string>
 		<key>teletype.circle</key>
 		<string>2020</string>
 		<key>teletype.circle.fill</key>
