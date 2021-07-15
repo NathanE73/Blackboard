@@ -87,6 +87,9 @@ one of the two following warning messages will be generate:
 ### Missing Named Image
 ![Missing Named Image Warning](README/Images/NibWarningMissingNamedImage.png)
 
+### San Francisco Symbol
+- [Symbol Availability](README/SymbolAvailability.md#symbol-availability)
+
 ## Authors
 
 - Nathan E. Walczak, knate@knate.com

@@ -28,14 +28,14 @@ import XCTest
 
 class SymbolKnowledgeTests: XCTestCase {
     
-    func testSymbolGrouping() throws {
+    func testSymbolAvailability() throws {
         let file = #filePath
             .deletingLastPathComponent // SymbolAvailabilityTests.swift
             .deletingLastPathComponent // Symbol Assets
             .deletingLastPathComponent // BlackboardFrameworkTests
             .deletingLastPathComponent // Tests
             .appendingPathComponent("README")
-            .appendingPathComponent("Symbols.md")
+            .appendingPathComponent("SymbolAvailability.md")
         
         let symbolKnowledge = try XCTUnwrap(SymbolKnowledge())
         
@@ -65,7 +65,14 @@ class SymbolKnowledgeTests: XCTestCase {
             }
         }
         
-        var text = ""
+        var text = "# Symbol Availability\n\n"
+        
+        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        Array(alphabet).forEach { letter in
+            text += "[\(letter)](#\(letter.lowercased()))\n"
+        }
+        
+        text += "_____\n\n"
         
         variantSymbols.values.sorted(by: \.baseName)
             .forEach { variantSymbols in
