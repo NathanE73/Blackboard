@@ -32,7 +32,6 @@ extension SwiftSource {
             guard version != target else { return }
             append("@available(\(platform) \(version), *)")
         case let .renamed(platform, introduced, deprecated, renamed):
-            let renamed = Naming.symbolCaseName(from: renamed)
             append("@available(\(platform), introduced: \(introduced), deprecated: \(deprecated), renamed: \"\(renamed)\")")
         }
     }

@@ -26,6 +26,20 @@ import Foundation
 
 extension SwiftSource {
     
+    func appendSymbolAvailability(_ availability: Availability, target: String? = nil) {
+        switch availability {
+        case let .renamed(platform, introduced, deprecated, renamed):
+            let renamed = Naming.symbolCaseName(from: renamed)
+            appendAvailability(.renamed(platform: platform,
+                                        introduced: introduced,
+                                        deprecated: deprecated,
+                                        renamed: renamed),
+                               target: target)
+        default:
+            appendAvailability(availability, target: target)
+        }
+    }
+    
     // MARK: Symbol Asset
     
     func appendSymbolAssets(symbols: [BlackboardSymbol]) -> Self {
@@ -33,7 +47,7 @@ extension SwiftSource {
         appendAvailability(.available(platform: .iOS, version: "13.0"))
         append("public enum SymbolAsset: String") {
             symbols.sorted(by: \.caseName).forEach { symbol in
-                appendAvailability(symbol.iOSAvailability, target: "13.0")
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
                 if symbol.caseName == symbol.name {
                     append("case \(symbol.caseName)")
                 } else {
@@ -58,7 +72,7 @@ extension SwiftSource {
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
-                appendAvailability(symbol.iOSAvailability, target: "13.0")
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
                 append("static var \(symbol.functionName): Image { Image(symbol: .\(symbol.caseName)) }")
             }
             append()
@@ -107,7 +121,7 @@ extension SwiftSource {
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
-                appendAvailability(symbol.iOSAvailability, target: "13.0")
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
                 append("static var \(symbol.functionName): UIImage { UIImage(symbol: .\(symbol.caseName)) }")
             }
             append()
