@@ -30,9 +30,11 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
     
     var blackboardSymbols: [BlackboardSymbol] {
         let symbols: Set<String> = [
+            "a.book.closed",
             "14.square.fill",
             "case",
             "case.fill",
+            "character.book.closed",
             "chevron.down",
             "chevron.up",
             "die.face.1",
@@ -56,7 +58,7 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
     }
     
     func testNumberOfSymbols() {
-        XCTAssertEqual(blackboardSymbols.count, 15)
+        XCTAssertEqual(blackboardSymbols.count, 17)
     }
     
     func testImageAssetSource() {

@@ -8,10 +8,14 @@ import Foundation
 
 @available(iOS 13.0, *)
 public enum SymbolAsset: String {
+    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
+    case aBookClosed = "a.book.closed"
     @available(iOS 14.0, *)
     case caseFill = "case.fill"
     @available(iOS 14.0, *)
     case caseSymbol = "case"
+    @available(iOS 14.2, *)
+    case characterBookClosed = "character.book.closed"
     case chevronDown = "chevron.down"
     case chevronUp = "chevron.up"
     @available(iOS 14.0, *)

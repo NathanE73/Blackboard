@@ -24,23 +24,7 @@
 
 import Foundation
 
-struct BlackboardSymbol {
-    var name: String
-    var functionName: String
-    var caseName: String
-    var iOSAvailability: Availability
-}
-
-extension BlackboardSymbol {
-    
-    init(name: String, iOSAvailability: Availability) {
-        self.name = name
-        
-        functionName = Naming.symbolMethodName(from: name)
-        
-        caseName = Naming.symbolCaseName(from: name)
-        
-        self.iOSAvailability = iOSAvailability
-    }
-    
+enum Availability {
+    case available(platform: Platform, version: String)
+    case renamed(platform: Platform, introduced: String, deprecated: String, renamed: String)
 }

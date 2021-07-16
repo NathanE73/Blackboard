@@ -28,8 +28,10 @@ import XCTest
 
 class BlackboardSymbolTests: XCTestCase {
     
+    let iOSAvailability = Availability.available(platform: .iOS, version: "13.0")
+    
     func testNumber14SquareFill() {
-        let blackboardSymbol = BlackboardSymbol(name: "14.square.fill", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "14.square.fill", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "14.square.fill")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolNumber14SquareFill")
@@ -37,7 +39,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testCaseSymbol() {
-        let blackboardSymbol = BlackboardSymbol(name: "case", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "case", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "case")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolCase")
@@ -45,7 +47,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testCaseSymbolFill() {
-        let blackboardSymbol = BlackboardSymbol(name: "case.fill", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "case.fill", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "case.fill")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolCaseFill")
@@ -53,7 +55,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testChevronDown() {
-        let blackboardSymbol = BlackboardSymbol(name: "chevron.down", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "chevron.down", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "chevron.down")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolChevronDown")
@@ -61,7 +63,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testChevronUp() {
-        let blackboardSymbol = BlackboardSymbol(name: "chevron.up", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "chevron.up", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "chevron.up")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolChevronUp")
@@ -69,7 +71,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testDieFace1() {
-        let blackboardSymbol = BlackboardSymbol(name: "die.face.1", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "die.face.1", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "die.face.1")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolDieFace1")
@@ -77,7 +79,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testDieFace4() {
-        let blackboardSymbol = BlackboardSymbol(name: "die.face.4", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "die.face.4", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "die.face.4")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolDieFace4")
@@ -85,7 +87,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testInfinityCircleFill() {
-        let blackboardSymbol = BlackboardSymbol(name: "infinity.circle.fill", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "infinity.circle.fill", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "infinity.circle.fill")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolInfinityCircleFill")
@@ -93,7 +95,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testMinusCircleFill() {
-        let blackboardSymbol = BlackboardSymbol(name: "minus.circle.fill", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "minus.circle.fill", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "minus.circle.fill")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolMinusCircleFill")
@@ -101,7 +103,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testPerson() {
-        let blackboardSymbol = BlackboardSymbol(name: "person", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "person", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "person")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolPerson")
@@ -109,7 +111,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testPerson2() {
-        let blackboardSymbol = BlackboardSymbol(name: "person2", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "person2", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "person2")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolPerson2")
@@ -117,7 +119,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testPlusCircleFill() {
-        let blackboardSymbol = BlackboardSymbol(name: "plus.circle.fill", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "plus.circle.fill", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "plus.circle.fill")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolPlusCircleFill")
@@ -125,7 +127,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testReturnSymbol() {
-        let blackboardSymbol = BlackboardSymbol(name: "return", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "return", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "return")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolReturn")
@@ -133,7 +135,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testRepeatSymbol() {
-        let blackboardSymbol = BlackboardSymbol(name: "repeat", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "repeat", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "repeat")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolRepeat")
@@ -141,7 +143,7 @@ class BlackboardSymbolTests: XCTestCase {
     }
     
     func testRepeatSymbolCircle() {
-        let blackboardSymbol = BlackboardSymbol(name: "repeat.circle", iosAvailable: "*")
+        let blackboardSymbol = BlackboardSymbol(name: "repeat.circle", iOSAvailability: iOSAvailability)
         
         XCTAssertEqual(blackboardSymbol.name, "repeat.circle")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolRepeatCircle")

@@ -22,25 +22,19 @@
 // THE SOFTWARE.
 //
 
-import Foundation
+import XCTest
 
-struct BlackboardSymbol {
-    var name: String
-    var functionName: String
-    var caseName: String
-    var iOSAvailability: Availability
-}
+@testable import BlackboardFramework
 
-extension BlackboardSymbol {
+class SymbolAliasesTests: XCTestCase {
     
-    init(name: String, iOSAvailability: Availability) {
-        self.name = name
+    func testResource() throws {
+        let aliases = try XCTUnwrap(SymbolAliases.resource)
         
-        functionName = Naming.symbolMethodName(from: name)
+        XCTAssertEqual(aliases.symbols.count, 267)
         
-        caseName = Naming.symbolCaseName(from: name)
-        
-        self.iOSAvailability = iOSAvailability
+        XCTAssertEqual(aliases.symbols["a.book.closed"], "character.book.closed")
+        XCTAssertEqual(aliases.symbols["dial.fill"], "dial.min.fill")
     }
     
 }

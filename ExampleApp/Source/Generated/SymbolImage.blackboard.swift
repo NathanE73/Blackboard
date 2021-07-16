@@ -13,10 +13,14 @@ public extension Image {
         self.init(systemName: symbolAsset.rawValue)
     }
     
+    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
+    static var symbolABookClosed: Image { Image(symbol: .aBookClosed) }
     @available(iOS 14.0, *)
     static var symbolCase: Image { Image(symbol: .caseSymbol) }
     @available(iOS 14.0, *)
     static var symbolCaseFill: Image { Image(symbol: .caseFill) }
+    @available(iOS 14.2, *)
+    static var symbolCharacterBookClosed: Image { Image(symbol: .characterBookClosed) }
     static var symbolChevronDown: Image { Image(symbol: .chevronDown) }
     static var symbolChevronUp: Image { Image(symbol: .chevronUp) }
     @available(iOS 14.0, *)

@@ -26,16 +26,28 @@ import Foundation
 
 extension SwiftSource {
     
+    func appendSymbolAvailability(_ availability: Availability, target: String? = nil) {
+        switch availability {
+        case let .renamed(platform, introduced, deprecated, renamed):
+            let renamed = Naming.symbolCaseName(from: renamed)
+            appendAvailability(.renamed(platform: platform,
+                                        introduced: introduced,
+                                        deprecated: deprecated,
+                                        renamed: renamed),
+                               target: target)
+        default:
+            appendAvailability(availability, target: target)
+        }
+    }
+    
     // MARK: Symbol Asset
     
     func appendSymbolAssets(symbols: [BlackboardSymbol]) -> Self {
         appendHeading(filename: Filename.SymbolAsset, modules: ["Foundation"])
-        append("@available(iOS 13.0, *)")
+        appendAvailability(.available(platform: .iOS, version: "13.0"))
         append("public enum SymbolAsset: String") {
             symbols.sorted(by: \.caseName).forEach { symbol in
-                if symbol.iosAvailable != "13.0" {
-                    append("@available(iOS \(symbol.iosAvailable), *)")
-                }
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
                 if symbol.caseName == symbol.name {
                     append("case \(symbol.caseName)")
                 } else {
@@ -52,7 +64,7 @@ extension SwiftSource {
     
     func appendSymbolImages(symbols: [BlackboardSymbol]) -> Self {
         appendHeading(filename: Filename.SymbolImage, modules: ["SwiftUI"])
-        append("@available(iOS 13.0, *)")
+        appendAvailability(.available(platform: .iOS, version: "13.0"))
         append("public extension Image") {
             append()
             append("init(symbol symbolAsset: SymbolAsset)") {
@@ -60,16 +72,14 @@ extension SwiftSource {
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
-                if symbol.iosAvailable != "13.0" {
-                    append("@available(iOS \(symbol.iosAvailable), *)")
-                }
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
                 append("static var \(symbol.functionName): Image { Image(symbol: .\(symbol.caseName)) }")
             }
             append()
         }
         append()
         
-        append("@available(iOS 14.0, *)")
+        appendAvailability(.available(platform: .iOS, version: "14.0"))
         append("public extension Label where Title == Text, Icon == Image") {
             append()
             append("init(_ titleKey: LocalizedStringKey, symbol symbolAsset: SymbolAsset)") {
@@ -90,12 +100,12 @@ extension SwiftSource {
     
     func appendSymbolUIImages(symbols: [BlackboardSymbol]) -> Self {
         appendHeading(filename: Filename.SymbolUIImage, modules: ["UIKit"])
-        append("@available(iOS 13.0, *)")
+        appendAvailability(.available(platform: .iOS, version: "13.0"))
         append("public extension SymbolAsset") {
             append("var image: UIImage? { UIImage(symbol: self) }")
         }
         append()
-        append("@available(iOS 13.0, *)")
+        appendAvailability(.available(platform: .iOS, version: "13.0"))
         append("public extension UIImage") {
             append()
             append("convenience init(symbol symbolAsset: SymbolAsset)") {
@@ -111,9 +121,7 @@ extension SwiftSource {
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
-                if symbol.iosAvailable != "13.0" {
-                    append("@available(iOS \(symbol.iosAvailable), *)")
-                }
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
                 append("static var \(symbol.functionName): UIImage { UIImage(symbol: .\(symbol.caseName)) }")
             }
             append()

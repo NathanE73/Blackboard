@@ -48,7 +48,7 @@ extension SwiftSource {
     
     func appendImages(images: [BlackboardImage]) -> Self {
         appendHeading(filename: Filename.Image, modules: ["SwiftUI"], includeBundle: true)
-        append("@available(iOS 13.0, *)")
+        appendAvailability(.available(platform: .iOS, version: "13.0"))
         append("public extension Image") {
             append()
             append("init(asset imageAsset: ImageAsset)") {
@@ -70,7 +70,7 @@ extension SwiftSource {
         }
         append()
         
-        append("@available(iOS 14.0, *)")
+        appendAvailability(.available(platform: .iOS, version: "14.0"))
         append("public extension Label where Title == Text, Icon == Image") {
             append()
             append("init(_ titleKey: LocalizedStringKey, asset imageAsset: ImageAsset)") {
