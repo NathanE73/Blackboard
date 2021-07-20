@@ -36,7 +36,7 @@ extension BlackboardData {
     init(_ dataSet: DataSet) {
         name = dataSet.name
         
-        caseName = Naming.methodName(fromIdentifier: dataSet.name)
+        caseName = Naming.methodName(from: dataSet.name)
             .removingSuffix("Data")
     }
     

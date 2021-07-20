@@ -29,50 +29,50 @@ import XCTest
 class NamingTests: XCTestCase {
     
     func testMemberNameFromIdentifier() {
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "ApplePie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(from: "ApplePie"), "ApplePie")
         
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(from: "apple pie"), "ApplePie")
         
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple.pie"), "ApplePie")
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple-pie"), "ApplePie")
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple_pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(from: "apple.pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(from: "apple-pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(from: "apple_pie"), "ApplePie")
         
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "apple->pie"), "ApplePie")
+        XCTAssertEqual(Naming.memberName(from: "apple->pie"), "ApplePie")
         
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "Fluorescent/Radical Red"), "FluorescentRadicalRed")
-        XCTAssertEqual(Naming.memberName(fromIdentifier: "One/Two/Three/Blue"), "OneTwoThreeBlue")
+        XCTAssertEqual(Naming.memberName(from: "Fluorescent/Radical Red"), "FluorescentRadicalRed")
+        XCTAssertEqual(Naming.memberName(from: "One/Two/Three/Blue"), "OneTwoThreeBlue")
     }
     
     func testMethodNameFromIdentifier() {
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "ApplePie"), "applePie")
+        XCTAssertEqual(Naming.methodName(from: "ApplePie"), "applePie")
         
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(from: "apple pie"), "applePie")
         
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple.pie"), "applePie")
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple-pie"), "applePie")
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple_pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(from: "apple.pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(from: "apple-pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(from: "apple_pie"), "applePie")
         
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "apple->pie"), "applePie")
+        XCTAssertEqual(Naming.methodName(from: "apple->pie"), "applePie")
         
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "Fluorescent/Radical Red"), "fluorescentRadicalRed")
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "One/Two/Three/Blue"), "oneTwoThreeBlue")
+        XCTAssertEqual(Naming.methodName(from: "Fluorescent/Radical Red"), "fluorescentRadicalRed")
+        XCTAssertEqual(Naming.methodName(from: "One/Two/Three/Blue"), "oneTwoThreeBlue")
         
-        XCTAssertEqual(Naming.methodName(fromIdentifier: "1.infinite.loop"), "number1InfiniteLoop")
+        XCTAssertEqual(Naming.methodName(from: "1.infinite.loop"), "number1InfiniteLoop")
     }
     
     func testNameFromIdentifier() {
-        XCTAssertEqual(Naming.name(fromIdentifier: "ApplePie"), "ApplePie")
+        XCTAssertEqual(Naming.name(from: "ApplePie"), "ApplePie")
         
-        XCTAssertEqual(Naming.name(fromIdentifier: "apple pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(from: "apple pie"), "ApplePie")
         
-        XCTAssertEqual(Naming.name(fromIdentifier: "apple.pie"), "ApplePie")
-        XCTAssertEqual(Naming.name(fromIdentifier: "apple-pie"), "ApplePie")
-        XCTAssertEqual(Naming.name(fromIdentifier: "apple_pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(from: "apple.pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(from: "apple-pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(from: "apple_pie"), "ApplePie")
         
-        XCTAssertEqual(Naming.name(fromIdentifier: "apple->pie"), "ApplePie")
+        XCTAssertEqual(Naming.name(from: "apple->pie"), "ApplePie")
         
-        XCTAssertEqual(Naming.name(fromIdentifier: "Fluorescent/Radical Red"), "FluorescentRadicalRed")
-        XCTAssertEqual(Naming.name(fromIdentifier: "One/Two/Three/Blue"), "OneTwoThreeBlue")
+        XCTAssertEqual(Naming.name(from: "Fluorescent/Radical Red"), "FluorescentRadicalRed")
+        XCTAssertEqual(Naming.name(from: "One/Two/Three/Blue"), "OneTwoThreeBlue")
     }
     
     func testNamespace() {

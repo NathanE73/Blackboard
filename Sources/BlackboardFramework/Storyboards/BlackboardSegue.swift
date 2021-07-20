@@ -45,7 +45,7 @@ extension BlackboardSegue {
             return nil
         }
         
-        name = Naming.name(fromIdentifier: identifier)
+        name = Naming.name(from: identifier)
         
         enumName = name.firstCharacterLowercased
         
