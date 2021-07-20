@@ -49,7 +49,7 @@ extension SwiftSource {
             symbols.sorted(by: \.caseName).forEach { symbol in
                 appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
                 if symbol.caseName == symbol.name {
-                    append("case \(symbol.caseName)")
+                    append("case \(Naming.escapeKeyword(symbol.caseName))")
                 } else {
                     append("case \(symbol.caseName) = \"\(symbol.name)\"")
                 }

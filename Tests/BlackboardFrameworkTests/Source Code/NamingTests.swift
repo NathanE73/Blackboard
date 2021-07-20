@@ -83,7 +83,7 @@ class NamingTests: XCTestCase {
     
     func testSymbolCaseName() {
         XCTAssertEqual(Naming.symbolCaseName(from: "14.square.fill"), "number14SquareFill")
-        XCTAssertEqual(Naming.symbolCaseName(from: "case"), "caseSymbol")
+        XCTAssertEqual(Naming.symbolCaseName(from: "case"), "case")
         XCTAssertEqual(Naming.symbolCaseName(from: "case.fill"), "caseFill")
         XCTAssertEqual(Naming.symbolCaseName(from: "chevron.down"), "chevronDown")
         XCTAssertEqual(Naming.symbolCaseName(from: "chevron.up"), "chevronUp")
@@ -94,8 +94,8 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.symbolCaseName(from: "person"), "person")
         XCTAssertEqual(Naming.symbolCaseName(from: "person2"), "person2")
         XCTAssertEqual(Naming.symbolCaseName(from: "plus.circle.fill"), "plusCircleFill")
-        XCTAssertEqual(Naming.symbolCaseName(from: "return"), "returnSymbol")
-        XCTAssertEqual(Naming.symbolCaseName(from: "repeat"), "repeatSymbol")
+        XCTAssertEqual(Naming.symbolCaseName(from: "return"), "return")
+        XCTAssertEqual(Naming.symbolCaseName(from: "repeat"), "repeat")
         XCTAssertEqual(Naming.symbolCaseName(from: "repeat.circle"), "repeatCircle")
     }
     

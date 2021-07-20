@@ -29,7 +29,7 @@ public extension UIImage {
     @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
     static var symbolABookClosed: UIImage { UIImage(symbol: .aBookClosed) }
     @available(iOS 14.0, *)
-    static var symbolCase: UIImage { UIImage(symbol: .caseSymbol) }
+    static var symbolCase: UIImage { UIImage(symbol: .case) }
     @available(iOS 14.0, *)
     static var symbolCaseFill: UIImage { UIImage(symbol: .caseFill) }
     @available(iOS 14.2, *)
@@ -47,9 +47,9 @@ public extension UIImage {
     static var symbolPerson: UIImage { UIImage(symbol: .person) }
     static var symbolPerson2: UIImage { UIImage(symbol: .person2) }
     static var symbolPlusCircleFill: UIImage { UIImage(symbol: .plusCircleFill) }
-    static var symbolRepeat: UIImage { UIImage(symbol: .repeatSymbol) }
+    static var symbolRepeat: UIImage { UIImage(symbol: .repeat) }
     @available(iOS 14.2, *)
     static var symbolRepeatCircle: UIImage { UIImage(symbol: .repeatCircle) }
-    static var symbolReturn: UIImage { UIImage(symbol: .returnSymbol) }
+    static var symbolReturn: UIImage { UIImage(symbol: .return) }
     
 }

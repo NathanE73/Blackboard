@@ -26,6 +26,29 @@ import Foundation
 
 enum Naming {
     
+    static var keywords = [
+        // used in declarations
+        "associatedtype", "class", "deinit", "enum", "extension", "fileprivate",
+        "func", "import", "init", "inout", "internal", "let", "open", "operator",
+        "private", "protocol", "public", "rethrows", "static", "struct", "subscript",
+        "typealias", "var",
+        // used in statements
+        "break", "case", "continue", "default", "defer", "do", "else", "fallthrough",
+        "for", "guard", "if", "in", "repeat", "return", "switch", "where", "while",
+        // used in expressions and types
+        "as", "Any", "catch", "false", "is", "nil", "super", "self", "Self", "throw",
+        "throws", "true", "try",
+        // reserved in particular contexts
+        "associativity", "convenience", "dynamic", "didSet", "final", "get", "infix",
+        "indirect", "lazy", "left", "mutating", "none", "nonmutating", "optional",
+        "override", "postfix", "precedence", "prefix", "Protocol", "required", "right",
+        "set", "Type", "unowned", "weak", "and willSet"
+    ]
+    
+    static func escapeKeyword(_ identifier: String) -> String {
+        keywords.contains(identifier) ? "`\(identifier)`" : identifier
+    }
+    
     static func memberName(fromIdentifier identifier: String) -> String {
         name(fromIdentifier: identifier)
     }
@@ -78,11 +101,7 @@ enum Naming {
     }
     
     static func symbolCaseName(from name: String) -> String {
-        if ["case", "return", "repeat"].contains(name) {
-            return methodName(fromIdentifier: "\(name).symbol")
-        }
-        
-        return methodName(fromIdentifier: name)
+        methodName(fromIdentifier: name)
     }
     
     static func symbolMethodName(from name: String) -> String {

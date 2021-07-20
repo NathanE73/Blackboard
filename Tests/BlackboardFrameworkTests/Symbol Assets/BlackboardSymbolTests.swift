@@ -43,7 +43,7 @@ class BlackboardSymbolTests: XCTestCase {
         
         XCTAssertEqual(blackboardSymbol.name, "case")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolCase")
-        XCTAssertEqual(blackboardSymbol.caseName, "caseSymbol")
+        XCTAssertEqual(blackboardSymbol.caseName, "case")
     }
     
     func testCaseSymbolFill() {
@@ -131,7 +131,7 @@ class BlackboardSymbolTests: XCTestCase {
         
         XCTAssertEqual(blackboardSymbol.name, "return")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolReturn")
-        XCTAssertEqual(blackboardSymbol.caseName, "returnSymbol")
+        XCTAssertEqual(blackboardSymbol.caseName, "return")
     }
     
     func testRepeatSymbol() {
@@ -139,7 +139,7 @@ class BlackboardSymbolTests: XCTestCase {
         
         XCTAssertEqual(blackboardSymbol.name, "repeat")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolRepeat")
-        XCTAssertEqual(blackboardSymbol.caseName, "repeatSymbol")
+        XCTAssertEqual(blackboardSymbol.caseName, "repeat")
     }
     
     func testRepeatSymbolCircle() {
