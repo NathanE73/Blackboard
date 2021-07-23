@@ -26,7 +26,7 @@ public extension UIImage {
         self.init(systemName: symbolAsset.rawValue, compatibleWith: traitCollection)!
     }
     
-    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
+    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "symbolCharacterBookClosed")
     static var symbolABookClosed: UIImage { UIImage(symbol: .aBookClosed) }
     @available(iOS 14.0, *)
     static var symbolCase: UIImage { UIImage(symbol: .case) }

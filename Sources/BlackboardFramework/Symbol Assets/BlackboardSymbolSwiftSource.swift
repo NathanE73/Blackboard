@@ -26,10 +26,10 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendSymbolAvailability(_ availability: Availability, target: String? = nil) {
+    func appendSymbolAvailability(_ availability: Availability, target: String? = nil, prefix: String? = nil) {
         switch availability {
         case let .renamed(platform, introduced, deprecated, renamed):
-            let renamed = Naming.methodName(from: renamed)
+            let renamed = Naming.methodName(from: renamed, prefix: prefix)
             appendAvailability(.renamed(platform: platform,
                                         introduced: introduced,
                                         deprecated: deprecated,
@@ -72,7 +72,7 @@ extension SwiftSource {
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
-                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0", prefix: "symbol")
                 append("static var \(symbol.functionName): Image { Image(symbol: .\(symbol.caseName)) }")
             }
             append()
@@ -121,7 +121,7 @@ extension SwiftSource {
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
-                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0")
+                appendSymbolAvailability(symbol.iOSAvailability, target: "13.0", prefix: "symbol")
                 append("static var \(symbol.functionName): UIImage { UIImage(symbol: .\(symbol.caseName)) }")
             }
             append()
