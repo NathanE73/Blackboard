@@ -29,7 +29,7 @@ extension SwiftSource {
     func appendSymbolAvailability(_ availability: Availability, target: String? = nil) {
         switch availability {
         case let .renamed(platform, introduced, deprecated, renamed):
-            let renamed = Naming.symbolCaseName(from: renamed)
+            let renamed = Naming.methodName(from: renamed)
             appendAvailability(.renamed(platform: platform,
                                         introduced: introduced,
                                         deprecated: deprecated,

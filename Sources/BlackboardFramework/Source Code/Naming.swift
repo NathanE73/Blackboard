@@ -49,17 +49,22 @@ enum Naming {
         keywords.contains(identifier) ? "`\(identifier)`" : identifier
     }
     
-    static func methodName(from identifier: String) -> String {
-        let name = self.name(from: identifier)
+    static func methodName(from identifier: String, prefix: String? = nil) -> String {
+        var name = identifier
         
         if name.startsWithDecimalDigit {
-            return "number\(name)".firstCharacterLowercased
+            name = "number\(name)"
         }
         
-        return name.firstCharacterLowercased
+        if let prefix = prefix {
+            name = "\(prefix).\(name)"
+        }
+        
+        return self.name(from: name, prefix: prefix)
+            .firstCharacterLowercased
     }
     
-    static func name(from identifier: String) -> String {
+    static func name(from identifier: String, prefix: String? = nil) -> String {
         let allowedCharacters = CharacterSet.alphanumerics
         
         var name = ""
@@ -94,14 +99,6 @@ enum Naming {
         }
         
         return namespaces.joined(separator: "/")
-    }
-    
-    static func symbolCaseName(from name: String) -> String {
-        methodName(from: name)
-    }
-    
-    static func symbolMethodName(from name: String) -> String {
-        "symbol" + methodName(from: name).firstCharacterUppercased
     }
     
 }
