@@ -28,21 +28,6 @@ import XCTest
 
 class NamingTests: XCTestCase {
     
-    func testMemberNameFromIdentifier() {
-        XCTAssertEqual(Naming.memberName(from: "ApplePie"), "ApplePie")
-        
-        XCTAssertEqual(Naming.memberName(from: "apple pie"), "ApplePie")
-        
-        XCTAssertEqual(Naming.memberName(from: "apple.pie"), "ApplePie")
-        XCTAssertEqual(Naming.memberName(from: "apple-pie"), "ApplePie")
-        XCTAssertEqual(Naming.memberName(from: "apple_pie"), "ApplePie")
-        
-        XCTAssertEqual(Naming.memberName(from: "apple->pie"), "ApplePie")
-        
-        XCTAssertEqual(Naming.memberName(from: "Fluorescent/Radical Red"), "FluorescentRadicalRed")
-        XCTAssertEqual(Naming.memberName(from: "One/Two/Three/Blue"), "OneTwoThreeBlue")
-    }
-    
     func testMethodNameFromIdentifier() {
         XCTAssertEqual(Naming.methodName(from: "ApplePie"), "applePie")
         

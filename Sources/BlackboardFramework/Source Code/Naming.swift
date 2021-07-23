@@ -49,10 +49,6 @@ enum Naming {
         keywords.contains(identifier) ? "`\(identifier)`" : identifier
     }
     
-    static func memberName(from identifier: String) -> String {
-        name(from: identifier)
-    }
-    
     static func methodName(from identifier: String) -> String {
         let name = self.name(from: identifier)
         
