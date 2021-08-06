@@ -65,7 +65,7 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
         let expectedSource = Fixture.generated(project: .example, name: "SymbolAsset")
         
         let source = SwiftSource()
-            .appendSymbolAssets(symbols: blackboardSymbols)
+            .appendSymbolAssets(symbols: blackboardSymbols, target: Version(13, 0))
             .source
         
         XCTAssertEqual(source, expectedSource)
@@ -75,7 +75,9 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
         let expectedSource = Fixture.generated(project: .example, name: "SymbolImage")
         
         let source = SwiftSource()
-            .appendSymbolImages(symbols: blackboardSymbols)
+            .appendSymbolImages(symbols: blackboardSymbols,
+                                target: Version(13, 0),
+                                sdk: Version(14, 0))
             .source
         
         XCTAssertEqual(source, expectedSource)
@@ -85,7 +87,7 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
         let expectedSource = Fixture.generated(project: .example, name: "SymbolUIImage")
         
         let source = SwiftSource()
-            .appendSymbolUIImages(symbols: blackboardSymbols)
+            .appendSymbolUIImages(symbols: blackboardSymbols, target: Version(13, 0))
             .source
         
         XCTAssertEqual(source, expectedSource)

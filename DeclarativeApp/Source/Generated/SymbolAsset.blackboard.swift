@@ -6,7 +6,6 @@
 
 import Foundation
 
-@available(iOS 13.0, *)
 public enum SymbolAsset: String {
     @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
     case aBookClosed = "a.book.closed"

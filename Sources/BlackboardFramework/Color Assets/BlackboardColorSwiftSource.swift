@@ -46,9 +46,9 @@ extension SwiftSource {
 
     // MARK: Color
     
-    func appendColors(colors: [BlackboardColor]) -> Self {
+    func appendColors(colors: [BlackboardColor], target: Version) -> Self {
         appendHeading(filename: Filename.Color, modules: ["SwiftUI"], includeBundle: true)
-        appendAvailability(.available(platform: .iOS, version: "13.0"))
+        appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Color") {
             append()
             append("init(asset colorAsset: ColorAsset)") {
@@ -61,7 +61,7 @@ extension SwiftSource {
             append()
         }
         append()
-        appendAvailability(.available(platform: .iOS, version: "13.0"))
+        appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension ShapeStyle where Self == Color") {
             append()
             colors.forEach { color in

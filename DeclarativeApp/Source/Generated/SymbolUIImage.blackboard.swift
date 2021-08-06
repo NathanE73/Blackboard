@@ -6,12 +6,10 @@
 
 import UIKit
 
-@available(iOS 13.0, *)
 public extension SymbolAsset {
     var image: UIImage? { UIImage(symbol: self) }
 }
 
-@available(iOS 13.0, *)
 public extension UIImage {
     
     convenience init(symbol symbolAsset: SymbolAsset) {

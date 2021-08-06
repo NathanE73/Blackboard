@@ -34,7 +34,7 @@ struct SymbolAvailability: Decodable {
     }
     
     struct YearToRelease: Decodable {
-        var iOS: String
+        var iOS: Version
     }
 }
 

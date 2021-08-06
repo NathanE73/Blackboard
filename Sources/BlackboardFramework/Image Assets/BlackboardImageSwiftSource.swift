@@ -46,9 +46,9 @@ extension SwiftSource {
     
     // MARK: Image
     
-    func appendImages(images: [BlackboardImage]) -> Self {
+    func appendImages(images: [BlackboardImage], target: Version, sdk: Version) -> Self {
         appendHeading(filename: Filename.Image, modules: ["SwiftUI"], includeBundle: true)
-        appendAvailability(.available(platform: .iOS, version: "13.0"))
+        appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Image") {
             append()
             append("init(asset imageAsset: ImageAsset)") {
@@ -70,19 +70,21 @@ extension SwiftSource {
         }
         append()
         
-        appendAvailability(.available(platform: .iOS, version: "14.0"))
-        append("public extension Label where Title == Text, Icon == Image") {
-            append()
-            append("init(_ titleKey: LocalizedStringKey, asset imageAsset: ImageAsset)") {
-                append("self.init(titleKey, image: imageAsset.rawValue)")
-            }
-            append()
-            append("init<S>(_ title: S, asset imageAsset: ImageAsset) where S: StringProtocol") {
-                append("self.init(title, image: imageAsset.rawValue)")
+        if Version(14, 0) <= sdk {
+            appendAvailability(.available(platform: .iOS, version: Version(14, 0)), target: target)
+            append("public extension Label where Title == Text, Icon == Image") {
+                append()
+                append("init(_ titleKey: LocalizedStringKey, asset imageAsset: ImageAsset)") {
+                    append("self.init(titleKey, image: imageAsset.rawValue)")
+                }
+                append()
+                append("init<S>(_ title: S, asset imageAsset: ImageAsset) where S: StringProtocol") {
+                    append("self.init(title, image: imageAsset.rawValue)")
+                }
+                append()
             }
             append()
         }
-        append()
         
         return self
     }

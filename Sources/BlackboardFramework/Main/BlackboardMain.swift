@@ -27,6 +27,12 @@ import Foundation
 
 public struct BlackboardMain {
     
+    struct PlatformConfiguration: Decodable {
+        var target: Version
+        var sdk: Version
+    }
+    var ios: PlatformConfiguration
+    
     var input: [String]
     
     var output: String
@@ -45,6 +51,11 @@ public struct BlackboardMain {
     var skipValidation: Bool
     
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
+        ios = PlatformConfiguration(
+            target: configuration?.ios?.target ?? Version(13, 0),
+            sdk: configuration?.ios?.sdk ?? Version(14, 5)
+        )
+        
         if !command.input.isEmpty {
             self.input = command.input
         } else if let input = configuration?.input, !input.isEmpty {
@@ -113,6 +124,11 @@ public struct BlackboardMain {
         
         print("Output: \(output)")
         
+        // Platform Configuration
+        
+        print("iOS Deployment Target: \(ios.target)")
+        print("iOS SDK: \(ios.sdk)")
+        
         // Process Symbols
         
         processSymbols(symbols, output)
@@ -146,19 +162,19 @@ public struct BlackboardMain {
         
         if !skipSwiftUI || !skipUIKit {
             SwiftSourceFile(Filename.SymbolAsset, at: output)
-                .appendSymbolAssets(symbols: blackboardSymbols)
+                .appendSymbolAssets(symbols: blackboardSymbols, target: ios.target)
                 .write()
         }
         
         if !skipSwiftUI {
             SwiftSourceFile(Filename.SymbolImage, at: output)
-                .appendSymbolImages(symbols: blackboardSymbols)
+                .appendSymbolImages(symbols: blackboardSymbols, target: ios.target, sdk: ios.sdk)
                 .write()
         }
         
         if !skipUIKit {
             SwiftSourceFile(Filename.SymbolUIImage, at: output)
-                .appendSymbolUIImages(symbols: blackboardSymbols)
+                .appendSymbolUIImages(symbols: blackboardSymbols, target: ios.target)
                 .write()
         }
     }
@@ -214,7 +230,7 @@ public struct BlackboardMain {
         
         if !skipSwiftUI {
             SwiftSourceFile(Filename.Color, at: output)
-                .appendColors(colors: blackboardColors)
+                .appendColors(colors: blackboardColors, target: ios.target)
                 .write()
         }
         
@@ -268,7 +284,7 @@ public struct BlackboardMain {
         
         if !skipSwiftUI {
             SwiftSourceFile(Filename.Image, at: output)
-                .appendImages(images: blackboardImages)
+                .appendImages(images: blackboardImages, target: ios.target, sdk: ios.sdk)
                 .write()
         }
         

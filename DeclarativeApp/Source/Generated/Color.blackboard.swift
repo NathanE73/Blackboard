@@ -11,7 +11,6 @@ private let bundle: Bundle = {
     return Bundle(for: Object.self)
 }()
 
-@available(iOS 13.0, *)
 public extension Color {
     
     init(asset colorAsset: ColorAsset) {
@@ -34,7 +33,6 @@ public extension Color {
     
 }
 
-@available(iOS 13.0, *)
 public extension ShapeStyle where Self == Color {
     
     static var absoluteZero: Color { Color(asset: .absoluteZero) }

@@ -28,7 +28,7 @@ import XCTest
 
 class BlackboardSymbolTests: XCTestCase {
     
-    let iOSAvailability = Availability.available(platform: .iOS, version: "13.0")
+    let iOSAvailability = Availability.available(platform: .iOS, version: Version(13, 0))
     
     func testNumber14SquareFill() {
         let blackboardSymbol = BlackboardSymbol(name: "14.square.fill", iOSAvailability: iOSAvailability)

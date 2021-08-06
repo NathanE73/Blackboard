@@ -29,6 +29,26 @@ import Yams
 
 class BlackboardConfigurationTests: XCTestCase {
     
+    func testDecodablePlatform() {
+        let yaml = """
+        ios:
+          target: 13.0
+          sdk: 15.0
+        """
+        
+        let data = Data(yaml.utf8)
+        
+        do {
+            let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
+            
+            XCTAssertEqual(configuration.ios?.target, Version(13, 0))
+            XCTAssertEqual(configuration.ios?.sdk, Version(15, 0))
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
     func testDecodableInput() {
         let yaml = """
         input:
