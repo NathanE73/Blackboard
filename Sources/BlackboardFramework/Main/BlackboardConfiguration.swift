@@ -27,6 +27,12 @@ import Yams
 
 struct BlackboardConfiguration: Decodable {
     
+    struct PlatformConfiguration: Decodable {
+        var target: Version?
+        var sdk: Version?
+    }
+    var ios: PlatformConfiguration?
+    
     var input: [String]?
     
     var output: String?
@@ -49,6 +55,7 @@ struct BlackboardConfiguration: Decodable {
     }
     
     enum CodingKeys: String, CodingKey {
+        case ios
         case input
         case output
         case symbols

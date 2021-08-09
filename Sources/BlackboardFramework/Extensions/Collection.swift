@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2019 Nathan E. Walczak
+// Copyright (c) 2021 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,20 +24,34 @@
 
 import Foundation
 
-struct BlackboardData {
+extension Collection {
     
-    var name: String
-    var caseName: String
+    // MARK: - Safe Subscript
+    
+    @inlinable
+    subscript(safe index: Index) -> Element? {
+        indices.contains(index) ? self[index] : nil
+    }
     
 }
 
-extension BlackboardData {
+extension Collection where Index == Int {
     
-    init(_ dataSet: DataSet) {
-        name = dataSet.name
-        
-        caseName = Naming.methodName(from: dataSet.name)
-            .removingSuffix("Data")
+    // MARK: - Second, Third, Fourth
+    
+    /// The second element of the collection.
+    @inlinable var second: Element? {
+        self[safe: 1]
+    }
+    
+    /// The third element of the collection.
+    @inlinable var third: Element? {
+        self[safe: 2]
+    }
+    
+    /// The fourth element of the collection.
+    @inlinable var fourth: Element? {
+        self[safe: 3]
     }
     
 }

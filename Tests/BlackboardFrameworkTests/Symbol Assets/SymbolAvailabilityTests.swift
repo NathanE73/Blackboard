@@ -50,11 +50,11 @@ class SymbolAvailabilityTests: XCTestCase {
         XCTAssertEqual(availability.symbols["repeat.circle"], "2020.1")
         
         XCTAssertEqual(availability.yearToRelease.count, 5)
-        XCTAssertEqual(availability.yearToRelease["2019"]?.iOS, "13.0")
-        XCTAssertEqual(availability.yearToRelease["2020"]?.iOS, "14.0")
-        XCTAssertEqual(availability.yearToRelease["2020.1"]?.iOS, "14.2")
-        XCTAssertEqual(availability.yearToRelease["2020.2"]?.iOS, "14.5")
-        XCTAssertEqual(availability.yearToRelease["2021"]?.iOS, "15.0")
+        XCTAssertEqual(availability.yearToRelease["2019"]?.iOS, Version(13, 0))
+        XCTAssertEqual(availability.yearToRelease["2020"]?.iOS, Version(14, 0))
+        XCTAssertEqual(availability.yearToRelease["2020.1"]?.iOS, Version(14, 2))
+        XCTAssertEqual(availability.yearToRelease["2020.2"]?.iOS, Version(14, 5))
+        XCTAssertEqual(availability.yearToRelease["2021"]?.iOS, Version(15, 0))
     }
     
 }

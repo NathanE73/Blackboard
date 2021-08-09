@@ -26,13 +26,17 @@ import Foundation
 
 extension SwiftSource {
     
-    func appendAvailability(_ availability: Availability, target: String? = nil) {
+    func appendAvailability(_ availability: Availability, target: Version) {
         switch availability {
         case let .available(platform, version):
-            guard version != target else { return }
+            guard target < version else { return }
             append("@available(\(platform) \(version), *)")
         case let .renamed(platform, introduced, deprecated, renamed):
-            append("@available(\(platform), introduced: \(introduced), deprecated: \(deprecated), renamed: \"\(renamed)\")")
+            if target < introduced {
+                append("@available(\(platform), introduced: \(introduced), deprecated: \(deprecated), renamed: \"\(renamed)\")")
+            } else {
+                append("@available(\(platform), deprecated: \(deprecated), renamed: \"\(renamed)\")")
+            }
         }
     }
     

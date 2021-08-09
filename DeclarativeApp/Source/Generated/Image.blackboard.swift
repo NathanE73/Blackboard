@@ -11,7 +11,6 @@ private let bundle: Bundle = {
     return Bundle(for: Object.self)
 }()
 
-@available(iOS 13.0, *)
 public extension Image {
     
     init(asset imageAsset: ImageAsset) {

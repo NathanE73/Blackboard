@@ -36,7 +36,7 @@ extension BlackboardImage {
     
     init(_ imageSet: ImageSet) {
         name = imageSet.name
-        functionName = Naming.methodName(fromIdentifier: imageSet.name)
+        functionName = Naming.methodName(from: imageSet.name)
         caseName = functionName
     }
     

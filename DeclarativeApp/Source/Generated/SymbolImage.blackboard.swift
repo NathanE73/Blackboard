@@ -6,17 +6,16 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
 public extension Image {
     
     init(symbol symbolAsset: SymbolAsset) {
         self.init(systemName: symbolAsset.rawValue)
     }
     
-    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
+    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "symbolCharacterBookClosed")
     static var symbolABookClosed: Image { Image(symbol: .aBookClosed) }
     @available(iOS 14.0, *)
-    static var symbolCase: Image { Image(symbol: .caseSymbol) }
+    static var symbolCase: Image { Image(symbol: .case) }
     @available(iOS 14.0, *)
     static var symbolCaseFill: Image { Image(symbol: .caseFill) }
     @available(iOS 14.2, *)
@@ -34,10 +33,10 @@ public extension Image {
     static var symbolPerson: Image { Image(symbol: .person) }
     static var symbolPerson2: Image { Image(symbol: .person2) }
     static var symbolPlusCircleFill: Image { Image(symbol: .plusCircleFill) }
-    static var symbolRepeat: Image { Image(symbol: .repeatSymbol) }
+    static var symbolRepeat: Image { Image(symbol: .repeat) }
     @available(iOS 14.2, *)
     static var symbolRepeatCircle: Image { Image(symbol: .repeatCircle) }
-    static var symbolReturn: Image { Image(symbol: .returnSymbol) }
+    static var symbolReturn: Image { Image(symbol: .return) }
     
 }
 

@@ -28,7 +28,7 @@ import XCTest
 
 class BlackboardSymbolTests: XCTestCase {
     
-    let iOSAvailability = Availability.available(platform: .iOS, version: "13.0")
+    let iOSAvailability = Availability.available(platform: .iOS, version: Version(13, 0))
     
     func testNumber14SquareFill() {
         let blackboardSymbol = BlackboardSymbol(name: "14.square.fill", iOSAvailability: iOSAvailability)
@@ -43,7 +43,7 @@ class BlackboardSymbolTests: XCTestCase {
         
         XCTAssertEqual(blackboardSymbol.name, "case")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolCase")
-        XCTAssertEqual(blackboardSymbol.caseName, "caseSymbol")
+        XCTAssertEqual(blackboardSymbol.caseName, "case")
     }
     
     func testCaseSymbolFill() {
@@ -131,7 +131,7 @@ class BlackboardSymbolTests: XCTestCase {
         
         XCTAssertEqual(blackboardSymbol.name, "return")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolReturn")
-        XCTAssertEqual(blackboardSymbol.caseName, "returnSymbol")
+        XCTAssertEqual(blackboardSymbol.caseName, "return")
     }
     
     func testRepeatSymbol() {
@@ -139,7 +139,7 @@ class BlackboardSymbolTests: XCTestCase {
         
         XCTAssertEqual(blackboardSymbol.name, "repeat")
         XCTAssertEqual(blackboardSymbol.functionName, "symbolRepeat")
-        XCTAssertEqual(blackboardSymbol.caseName, "repeatSymbol")
+        XCTAssertEqual(blackboardSymbol.caseName, "repeat")
     }
     
     func testRepeatSymbolCircle() {

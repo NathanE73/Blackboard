@@ -25,6 +25,6 @@
 import Foundation
 
 enum Availability {
-    case available(platform: Platform, version: String)
-    case renamed(platform: Platform, introduced: String, deprecated: String, renamed: String)
+    case available(platform: Platform, version: Version)
+    case renamed(platform: Platform, introduced: Version, deprecated: Version, renamed: String)
 }

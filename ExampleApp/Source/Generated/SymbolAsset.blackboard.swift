@@ -6,14 +6,13 @@
 
 import Foundation
 
-@available(iOS 13.0, *)
 public enum SymbolAsset: String {
     @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
     case aBookClosed = "a.book.closed"
     @available(iOS 14.0, *)
-    case caseFill = "case.fill"
+    case `case`
     @available(iOS 14.0, *)
-    case caseSymbol = "case"
+    case caseFill = "case.fill"
     @available(iOS 14.2, *)
     case characterBookClosed = "character.book.closed"
     case chevronDown = "chevron.down"
@@ -29,8 +28,8 @@ public enum SymbolAsset: String {
     case person
     case person2 = "person.2"
     case plusCircleFill = "plus.circle.fill"
+    case `repeat`
     @available(iOS 14.2, *)
     case repeatCircle = "repeat.circle"
-    case repeatSymbol = "repeat"
-    case returnSymbol = "return"
+    case `return`
 }
