@@ -29,6 +29,7 @@ OPTIONS:
 
 Configure Blackboard by adding a .blackboard.yml file from the directory you'll run Blackboard from. The following parameters can be configured:
 
+* `ios`: iOS deployment target and SDK versions
 * `input`: List of input directory
 * `output`: Output directory; where generated code will be stored
 * `symbols`: List of symbol names
@@ -37,6 +38,10 @@ Configure Blackboard by adding a .blackboard.yml file from the directory you'll 
 Here is a sample configuration:
 
 ```yaml
+ios:
+  target: 13.0
+  sdk: 14.5
+
 input:
 - Shared/Resources
 - ExampleApp/Resources
@@ -44,9 +49,11 @@ input:
 output: ExampleApp/Source/Generated
 
 symbols:
+- a.book.closed
 - 14.square.fill
 - case
 - case.fill
+- character.book.closed
 - chevron.down
 - chevron.up
 - die.face.1
