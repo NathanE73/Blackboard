@@ -33,6 +33,8 @@
 		4368049A2245AA2200A69FE8 /* UIKit.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436804992245AA2200A69FE8 /* UIKit.blackboard.swift */; };
 		436FA62925E6013100E0599C /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 436FA62125E5FDDF00E0599C /* ExampleView.xib */; };
 		43A2081D239860880073A2B2 /* Data.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A2081C239860880073A2B2 /* Data.xcassets */; };
+		43B32BC62658A14100D68AA4 /* Localizable.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B32BC52658A14100D68AA4 /* Localizable.blackboard.swift */; };
+		43B32BD0265C85C900D68AA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43B32BCE265C85C900D68AA4 /* Localizable.strings */; };
 		43C2B19C1D01F86A001B08CA /* MainStoryboard.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */; };
 		43C2B19E1D021533001B08CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2B19D1D021533001B08CA /* MainViewController.swift */; };
 		43C32F17223849B500D270C1 /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C32F15223849B500D270C1 /* AccountsTableViewController.swift */; };
@@ -90,6 +92,8 @@
 		436804992245AA2200A69FE8 /* UIKit.blackboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.blackboard.swift; sourceTree = "<group>"; };
 		436FA62125E5FDDF00E0599C /* ExampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleView.xib; sourceTree = "<group>"; };
 		43A2081C239860880073A2B2 /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Data.xcassets; path = ../../Shared/Resources/Data.xcassets; sourceTree = "<group>"; };
+		43B32BC52658A14100D68AA4 /* Localizable.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.blackboard.swift; sourceTree = "<group>"; };
+		43B32BCF265C85C900D68AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Shared/Resources/Localizable/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboard.blackboard.swift; sourceTree = "<group>"; };
 		43C2B19D1D021533001B08CA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		43C32F15223849B500D270C1 /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				436292E31F27CEBC0000C651 /* Colors.xcassets */,
 				43A2081C239860880073A2B2 /* Data.xcassets */,
 				4351B62C21E502E5007B4622 /* Images.xcassets */,
+				43B32BCE265C85C900D68AA4 /* Localizable.strings */,
 				436FA62025E5FDB200E0599C /* Nibs */,
 				436292E51F27CF6F0000C651 /* Storyboards */,
 			);
@@ -212,6 +217,7 @@
 				43237C7D23995E4100CF404C /* DataAsset.blackboard.swift */,
 				4365E21225DCB7EF003E4ABC /* Image.blackboard.swift */,
 				43CC4BD422F0890200C03F21 /* ImageAsset.blackboard.swift */,
+				43B32BC52658A14100D68AA4 /* Localizable.blackboard.swift */,
 				43C2B19B1D01F86A001B08CA /* MainStoryboard.blackboard.swift */,
 				43237C7C23995E4000CF404C /* NSDataAsset.blackboard.swift */,
 				43C32F2722384C1000D270C1 /* PhotoStoryboard.blackboard.swift */,
@@ -347,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				436292E41F27CEBC0000C651 /* Colors.xcassets in Resources */,
+				43B32BD0265C85C900D68AA4 /* Localizable.strings in Resources */,
 				435E2B011D01F600008E1170 /* LaunchScreen.storyboard in Resources */,
 				435E2AFE1D01F600008E1170 /* Assets.xcassets in Resources */,
 				43A2081D239860880073A2B2 /* Data.xcassets in Resources */,
@@ -440,6 +447,7 @@
 				431BCB52223AC73A00E01B48 /* OpenAccountViewController.swift in Sources */,
 				43D7E26025D5DF210091B4C7 /* SymbolAsset.blackboard.swift in Sources */,
 				43C32F2F22394B7C00D270C1 /* AccountsViewModel.swift in Sources */,
+				43B32BC62658A14100D68AA4 /* Localizable.blackboard.swift in Sources */,
 				43C32F1C223849C400D270C1 /* PhotosNavigationController.swift in Sources */,
 				43237C7E23995E4100CF404C /* NSDataAsset.blackboard.swift in Sources */,
 				4365E20B25DC9ED7003E4ABC /* SymbolUIImage.blackboard.swift in Sources */,
@@ -491,6 +499,14 @@
 				435E2B001D01F600008E1170 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		43B32BCE265C85C900D68AA4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B32BCF265C85C900D68AA4 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		43E982102245553D00C0B1B7 /* Supported.storyboard */ = {

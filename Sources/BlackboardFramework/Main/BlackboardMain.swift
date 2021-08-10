@@ -25,9 +25,10 @@
 import ArgumentParser
 import Foundation
 
+// swiftlint:disable:next type_body_length
 public struct BlackboardMain {
     
-    struct PlatformConfiguration: Decodable {
+    struct PlatformConfiguration {
         var target: Version
         var sdk: Version
     }
@@ -43,6 +44,7 @@ public struct BlackboardMain {
     var skipDataAssets: Bool
     var skipImages: Bool
     var skipLocalizable: Bool
+    var skipLocalizableValidation: Bool
     var skipNibValidation: Bool
     var skipStoryboards: Bool
     var skipStoryboardValidation: Bool
@@ -50,6 +52,11 @@ public struct BlackboardMain {
     var skipSymbols: Bool
     var skipUIKit: Bool
     var skipValidation: Bool
+    
+    struct LocalizableConfiguration {
+        var base: String
+    }
+    var localizable: LocalizableConfiguration
     
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
         ios = PlatformConfiguration(
@@ -78,6 +85,7 @@ public struct BlackboardMain {
         self.skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
         self.skipImages = command.skipImages || skips.contains(.images)
         self.skipLocalizable = command.skipLocalizable || skips.contains(.localizable)
+        self.skipLocalizableValidation = command.skipLocalizableValidation || skips.contains(.localizableValidation)
         self.skipNibValidation = command.skipNibValidation || skips.contains(.nibValidation)
         self.skipStoryboards = command.skipStoryboards || skips.contains(.storyboards)
         self.skipStoryboardValidation = command.skipStoryboardValidation || skips.contains(.storyboardValidation)
@@ -85,6 +93,10 @@ public struct BlackboardMain {
         self.skipSymbols = command.skipSymbols || skips.contains(.symbols)
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
         self.skipValidation = command.skipValidation || skips.contains(.validation)
+        
+        self.localizable = LocalizableConfiguration(
+            base: configuration?.localizable?.base ?? "en"
+        )
     }
     
     public static func main() {
@@ -141,6 +153,7 @@ public struct BlackboardMain {
         let colorSets = processColors(input, output)
         processDataAssets(input, output)
         let imageSets = processImages(input, output)
+        let localizables = processLocalizable(input, output)
         
         // Validate Storyboard Resources
         
@@ -149,6 +162,10 @@ public struct BlackboardMain {
         // Valiate Nib Resources
         
         valiateNibs(input, colorSets, imageSets)
+        
+        // Validate Localizable Resources
+        
+        validateLocalizables(localizables)
     }
     
     private func processSymbols(_ symbols: Set<String>, _ output: String) {
@@ -299,6 +316,27 @@ public struct BlackboardMain {
         return imageSets
     }
     
+    func processLocalizable(_ input: [String], _ output: String) -> [BlackboardLocalizable] {
+        guard !skipLocalizable else { return [] }
+        
+        let localizables = LocalizableFactory().localizablesAt(paths: input).sorted {
+            $0.localeCode == localizable.base ||
+            $0.localeDescription.localizedCaseInsensitiveCompare($1.localeDescription) == .orderedAscending
+        }
+        
+        let blackboardLocalizables = localizables.blackboardLocalizables.sorted {
+            $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending
+        }
+        
+        guard !blackboardLocalizables.isEmpty else { return [] }
+        
+        SwiftSourceFile(Filename.Localizable, at: output)
+            .appendLocalizable(localizables: blackboardLocalizables)
+            .write()
+        
+        return blackboardLocalizables
+    }
+    
     func valiateStoryboards(_ storyboards: [Storyboard], _ colorSets: [ColorSet], _ imageSets: [ImageSet]) {
         guard !skipValidation && !skipStoryboardValidation else { return }
         
@@ -347,6 +385,11 @@ public struct BlackboardMain {
                     }
             }
         }
+    }
+    
+    func validateLocalizables(_ localizables: [BlackboardLocalizable]) {
+        guard !skipValidation && !skipLocalizableValidation else { return }
+        
     }
     
 }

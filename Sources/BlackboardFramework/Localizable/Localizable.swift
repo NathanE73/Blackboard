@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2019 Nathan E. Walczak
+// Copyright (c) 2021 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,42 +24,30 @@
 
 import Foundation
 
-class AccountViewModel {
-    
-    let account: Account
-    
-    init(account: Account) {
-        self.account = account
-    }
-    
-    var name: String {
-        account.name
-    }
-    
-    var balance: String {
-        formatBalance(account.balance)
-    }
-    
+struct Localizable {
+    var file: String
+    var localeCode: String
+    var localeDescription: String
+    var strings: [LocalizableString]
 }
 
-let formatBalance: ((Double) -> String) = {
-    let formatter = NumberFormatter()
-    formatter.numberStyle = .currency
+extension Localizable {
     
-    return { (balance: Double) in
-        formatter.string(from: NSNumber(value: balance)) ?? "\(balance)"
-    }
-}()
-
-extension AccountViewModel {
-    
-    static var examples: [AccountViewModel] {
-        let accounts = [
-            Account(name: L.accountTypeSavings, balance: 1_456.87),
-            Account(name: L.accountTypeChecking, balance: 0.23),
-            Account(name: L.accountTypeRoth, balance: 1_234_567_890.92)
-        ]
-        return accounts.map(AccountViewModel.init)
+    init(file: String, data: [String: String]) {
+        self.file = file
+        
+        let localeCode = file
+            .deletingLastPathComponent
+            .lastPathComponent
+            .removingSuffix(".lproj")
+        
+        self.localeCode = localeCode
+        self.localeDescription = Locale.current
+            .localizedString(forIdentifier: localeCode) ?? localeCode
+        
+        self.strings = data.map { key, value in
+            LocalizableString(key: key, value: value)
+        }
     }
     
 }

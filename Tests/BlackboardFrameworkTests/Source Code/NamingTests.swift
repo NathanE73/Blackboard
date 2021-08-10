@@ -39,6 +39,8 @@ class NamingTests: XCTestCase {
         
         XCTAssertEqual(Naming.methodName(from: "apple->pie"), "applePie")
         
+        XCTAssertEqual(Naming.methodName(from: "APPLE_PIE"), "applePie")
+        
         XCTAssertEqual(Naming.methodName(from: "Fluorescent/Radical Red"), "fluorescentRadicalRed")
         XCTAssertEqual(Naming.methodName(from: "One/Two/Three/Blue"), "oneTwoThreeBlue")
         
@@ -55,6 +57,8 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.name(from: "apple_pie"), "ApplePie")
         
         XCTAssertEqual(Naming.name(from: "apple->pie"), "ApplePie")
+        
+        XCTAssertEqual(Naming.name(from: "APPLE_PIE"), "ApplePie")
         
         XCTAssertEqual(Naming.name(from: "Fluorescent/Radical Red"), "FluorescentRadicalRed")
         XCTAssertEqual(Naming.name(from: "One/Two/Three/Blue"), "OneTwoThreeBlue")

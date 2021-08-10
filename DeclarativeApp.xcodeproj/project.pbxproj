@@ -28,6 +28,7 @@
 		43B3025222F0CC3200D97542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B3025122F0CC3200D97542 /* Assets.xcassets */; };
 		43B3025522F0CC3200D97542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B3025422F0CC3200D97542 /* Preview Assets.xcassets */; };
 		43B3025822F0CC3200D97542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B3025622F0CC3200D97542 /* LaunchScreen.storyboard */; };
+		43C6415626D00ABC00A3283F /* Localizable.blackboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C6415526D00ABC00A3283F /* Localizable.blackboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		43B3025422F0CC3200D97542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43B3025722F0CC3200D97542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43B3025922F0CC3200D97542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C6415526D00ABC00A3283F /* Localizable.blackboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.blackboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				4327E26F25DF54BE00F43FEC /* DataAsset.blackboard.swift */,
 				4377FF5622F0DA1700E275E5 /* Image.blackboard.swift */,
 				4377FF5322F0DA1700E275E5 /* ImageAsset.blackboard.swift */,
+				43C6415526D00ABC00A3283F /* Localizable.blackboard.swift */,
 				4327E26E25DF54BE00F43FEC /* NSDataAsset.blackboard.swift */,
 				4365E20425D96E92003E4ABC /* SymbolAsset.blackboard.swift */,
 				4365E20225D96E92003E4ABC /* SymbolImage.blackboard.swift */,
@@ -287,6 +290,7 @@
 				4327E27025DF54BE00F43FEC /* NSDataAsset.blackboard.swift in Sources */,
 				4365E20725D96E92003E4ABC /* SymbolAsset.blackboard.swift in Sources */,
 				43B3025022F0CC3100D97542 /* ContentView.swift in Sources */,
+				43C6415626D00ABC00A3283F /* Localizable.blackboard.swift in Sources */,
 				4377FF5922F0DA1700E275E5 /* UIColor.blackboard.swift in Sources */,
 				4327E27125DF54BE00F43FEC /* DataAsset.blackboard.swift in Sources */,
 				4377FF5C22F0DA1700E275E5 /* UIImage.blackboard.swift in Sources */,
