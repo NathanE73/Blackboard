@@ -126,8 +126,10 @@ _____
 ### 123.rectangle
 - 123.rectangle (iOS 15.0)
 - 123.rectangle.ar (iOS 15.0)
+- 123.rectangle.hi (iOS 15.0)
 - 123.rectangle.fill (iOS 15.0)
 - 123.rectangle.fill.ar (iOS 15.0)
+- 123.rectangle.fill.hi (iOS 15.0)
 
 ### 13
 - 13.circle (iOS 13.0)
@@ -540,6 +542,30 @@ _____
 ### alarm
 - alarm (iOS 13.0)
 - alarm.fill (iOS 13.0)
+
+### align.horizontal.center
+- align.horizontal.center (iOS 15.0)
+- align.horizontal.center.fill (iOS 15.0)
+
+### align.horizontal.left
+- align.horizontal.left (iOS 15.0)
+- align.horizontal.left.fill (iOS 15.0)
+
+### align.horizontal.right
+- align.horizontal.right (iOS 15.0)
+- align.horizontal.right.fill (iOS 15.0)
+
+### align.vertical.bottom
+- align.vertical.bottom (iOS 15.0)
+- align.vertical.bottom.fill (iOS 15.0)
+
+### align.vertical.center
+- align.vertical.center (iOS 15.0)
+- align.vertical.center.fill (iOS 15.0)
+
+### align.vertical.top
+- align.vertical.top (iOS 15.0)
+- align.vertical.top.fill (iOS 15.0)
 
 ### allergens
  (iOS 15.0)
@@ -959,10 +985,11 @@ _____
  (iOS 14.0)
 
 ### arrow.up.and.down.righttriangle.up.fill.righttriangle.down.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [arrow.up.and.down.righttriangle.up.righttriangle.down.fill](#arrowupanddownrighttriangleuprighttriangledown))
 
 ### arrow.up.and.down.righttriangle.up.righttriangle.down
- (iOS 14.0)
+- arrow.up.and.down.righttriangle.up.righttriangle.down (iOS 14.0)
+- arrow.up.and.down.righttriangle.up.righttriangle.down.fill (iOS 15.0)
 
 ### arrow.up.and.person.rectangle.portrait
  (iOS 14.0)
@@ -1203,10 +1230,11 @@ _____
 - arrowtriangle.left.square.fill (iOS 13.0)
 
 ### arrowtriangle.left.and.line.vertical.and.arrowtriangle.right
- (iOS 14.0)
+- arrowtriangle.left.and.line.vertical.and.arrowtriangle.right (iOS 14.0)
+- arrowtriangle.left.and.line.vertical.and.arrowtriangle.right.fill (iOS 15.0)
 
 ### arrowtriangle.left.fill.and.line.vertical.and.arrowtriangle.right.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [arrowtriangle.left.and.line.vertical.and.arrowtriangle.right.fill](#arrowtriangleleftandlineverticalandarrowtriangleright))
 
 ### arrowtriangle.right
 - arrowtriangle.right (iOS 13.0)
@@ -1217,10 +1245,11 @@ _____
 - arrowtriangle.right.square.fill (iOS 13.0)
 
 ### arrowtriangle.right.and.line.vertical.and.arrowtriangle.left
- (iOS 14.0)
+- arrowtriangle.right.and.line.vertical.and.arrowtriangle.left (iOS 14.0)
+- arrowtriangle.right.and.line.vertical.and.arrowtriangle.left.fill (iOS 15.0)
 
 ### arrowtriangle.right.fill.and.line.vertical.and.arrowtriangle.left.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [arrowtriangle.right.and.line.vertical.and.arrowtriangle.left.fill](#arrowtrianglerightandlineverticalandarrowtriangleleft))
 
 ### arrowtriangle.up
 - arrowtriangle.up (iOS 13.0)
@@ -1374,6 +1403,19 @@ _____
 ### beats.powerbeatspro.right
  (iOS 15.0)
 
+### beats.studiobud.left
+ (iOS 15.0)
+
+### beats.studiobud.right
+ (iOS 15.0)
+
+### beats.studiobuds
+ (iOS 15.0)
+
+### beats.studiobuds.chargingcase
+- beats.studiobuds.chargingcase (iOS 15.0)
+- beats.studiobuds.chargingcase.fill (iOS 15.0)
+
 ### bed.double
 - bed.double (iOS 13.0)
 - bed.double.fill (iOS 13.0)
@@ -1490,6 +1532,8 @@ _____
 ### book.closed
 - book.closed (iOS 14.0)
 - book.closed.fill (iOS 14.0)
+- book.closed.circle (iOS 15.0)
+- book.closed.circle.fill (iOS 15.0)
 
 ### bookmark
 - bookmark (iOS 13.0)
@@ -1504,6 +1548,8 @@ _____
 ### books.vertical
 - books.vertical (iOS 14.0)
 - books.vertical.fill (iOS 14.0)
+- books.vertical.circle (iOS 15.0)
+- books.vertical.circle.fill (iOS 15.0)
 
 ### brain
  (iOS 15.0)
@@ -1526,6 +1572,8 @@ _____
 ### bubble.left
 - bubble.left (iOS 13.0)
 - bubble.left.fill (iOS 13.0)
+- bubble.left.circle (iOS 15.0)
+- bubble.left.circle.fill (iOS 15.0)
 
 ### bubble.left.and.bubble.right
 - bubble.left.and.bubble.right (iOS 13.0)
@@ -1546,6 +1594,8 @@ _____
 ### bubble.right
 - bubble.right (iOS 13.0)
 - bubble.right.fill (iOS 13.0)
+- bubble.right.circle (iOS 15.0)
+- bubble.right.circle.fill (iOS 15.0)
 
 ### building
 - building (iOS 14.0)
@@ -1562,6 +1612,8 @@ _____
 ### building.columns
 - building.columns (iOS 14.0)
 - building.columns.fill (iOS 14.0)
+- building.columns.circle (iOS 15.0)
+- building.columns.circle.fill (iOS 15.0)
 
 ### burn
  (iOS 13.0)
@@ -2002,6 +2054,7 @@ _____
 - circle.circle (iOS 14.0)
 - circle.circle.fill (iOS 14.0)
 - circle.square (iOS 14.0)
+- circle.square.fill (iOS 15.0)
 - circle.slash (iOS 15.0)
 - circle.slash.fill (iOS 15.0)
 
@@ -2031,7 +2084,7 @@ _____
  (iOS 15.0)
 
 ### circle.fill.square.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.square.fill](#circle))
 
 ### circle.grid.2x1
 - circle.grid.2x1 (iOS 15.0)
@@ -2058,16 +2111,28 @@ _____
 - circle.grid.cross.fill (iOS 14.0)
 
 ### circle.grid.cross.down.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.grid.cross.down.filled](#circlegridcrossdownfilled))
+
+### circle.grid.cross.down.filled
+ (iOS 15.0)
 
 ### circle.grid.cross.left.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.grid.cross.left.filled](#circlegridcrossleftfilled))
+
+### circle.grid.cross.left.filled
+ (iOS 15.0)
 
 ### circle.grid.cross.right.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.grid.cross.right.filled](#circlegridcrossrightfilled))
+
+### circle.grid.cross.right.filled
+ (iOS 15.0)
 
 ### circle.grid.cross.up.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.grid.cross.up.filled](#circlegridcrossupfilled))
+
+### circle.grid.cross.up.filled
+ (iOS 15.0)
 
 ### circle.grid.hex
 - circle.grid.hex (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.hexagongrid](#circlehexagongrid))
@@ -2127,6 +2192,8 @@ _____
 ### clock
 - clock (iOS 13.0)
 - clock.fill (iOS 13.0)
+- clock.circle (iOS 15.0)
+- clock.circle.fill (iOS 15.0)
 
 ### clock.arrow.2.circlepath
  (iOS 14.2)
@@ -2295,6 +2362,10 @@ _____
 - cube.transparent (iOS 14.0)
 - cube.transparent.fill (iOS 14.0)
 
+### cup.and.saucer
+- cup.and.saucer (iOS 15.0)
+- cup.and.saucer.fill (iOS 15.0)
+
 ### curlybraces
 - curlybraces (iOS 14.0)
 - curlybraces.square (iOS 14.0)
@@ -2392,6 +2463,8 @@ _____
 ### diamond
 - diamond (iOS 14.0)
 - diamond.fill (iOS 14.0)
+- diamond.circle (iOS 15.0)
+- diamond.circle.fill (iOS 15.0)
 
 ### diamond.bottomhalf.filled
  (iOS 15.0)
@@ -2553,7 +2626,7 @@ _____
 - doc.text.below.ecg.fill.rtl (iOS 14.2)
 
 ### doc.text.fill.viewfinder
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [doc.viewfinder.fill](#docviewfinder))
 
 ### doc.text.image
 - doc.text.image (iOS 15.0)
@@ -2563,7 +2636,11 @@ _____
  (iOS 13.0)
 
 ### doc.text.viewfinder
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [doc.viewfinder](#docviewfinder))
+
+### doc.viewfinder
+- doc.viewfinder (iOS 15.0)
+- doc.viewfinder.fill (iOS 15.0)
 
 ### doc.zipper
  (iOS 14.0)
@@ -2598,6 +2675,9 @@ _____
 ### dot.circle.and.hand.point.up.left.fill
  (iOS 15.0)
 
+### dot.circle.viewfinder
+ (iOS 15.0)
+
 ### dot.radiowaves.forward
  (iOS 14.0)
 
@@ -2621,25 +2701,42 @@ _____
 ### dot.squareshape.split.2x2
  (iOS 14.0)
 
+### dot.viewfinder
+ (iOS 15.0)
+
 ### dpad
 - dpad (iOS 14.0)
 - dpad.fill (iOS 14.0)
 
 ### dpad.down.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [dpad.down.filled](#dpaddownfilled))
+
+### dpad.down.filled
+ (iOS 15.0)
 
 ### dpad.left.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [dpad.left.filled](#dpadleftfilled))
+
+### dpad.left.filled
+ (iOS 15.0)
 
 ### dpad.right.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [dpad.right.filled](#dpadrightfilled))
+
+### dpad.right.filled
+ (iOS 15.0)
 
 ### dpad.up.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [dpad.up.filled](#dpadupfilled))
+
+### dpad.up.filled
+ (iOS 15.0)
 
 ### drop
 - drop (iOS 14.0)
 - drop.fill (iOS 14.0)
+- drop.circle (iOS 15.0)
+- drop.circle.fill (iOS 15.0)
 
 ### drop.triangle
 - drop.triangle (iOS 13.0)
@@ -2694,6 +2791,9 @@ _____
 ### ellipsis.bubble
 - ellipsis.bubble (iOS 14.0)
 - ellipsis.bubble.fill (iOS 14.0)
+
+### ellipsis.curlybraces
+ (iOS 15.0)
 
 ### ellipsis.vertical.bubble
 - ellipsis.vertical.bubble (iOS 15.0)
@@ -2772,6 +2872,8 @@ _____
 ### exclamationmark.bubble
 - exclamationmark.bubble (iOS 13.0)
 - exclamationmark.bubble.fill (iOS 13.0)
+- exclamationmark.bubble.circle (iOS 15.0)
+- exclamationmark.bubble.circle.fill (iOS 15.0)
 
 ### exclamationmark.icloud
 - exclamationmark.icloud (iOS 13.0)
@@ -2925,6 +3027,9 @@ _____
 ### fibrechannel
  (iOS 15.0)
 
+### figure.roll
+ (iOS 15.0)
+
 ### figure.stand
  (iOS 14.0)
 
@@ -2987,6 +3092,8 @@ _____
 ### flame
 - flame (iOS 13.0)
 - flame.fill (iOS 13.0)
+- flame.circle (iOS 15.0)
+- flame.circle.fill (iOS 15.0)
 
 ### flashlight.off.fill
  (iOS 13.0)
@@ -3265,6 +3372,8 @@ _____
 ### graduationcap
 - graduationcap (iOS 14.0)
 - graduationcap.fill (iOS 14.0)
+- graduationcap.circle (iOS 15.0)
+- graduationcap.circle.fill (iOS 15.0)
 
 ### greaterthan
 - greaterthan (iOS 13.0)
@@ -3491,7 +3600,9 @@ _____
 - homepodmini.and.appletv.fill (iOS 15.0)
 
 ### hourglass
- (iOS 13.0)
+- hourglass (iOS 13.0)
+- hourglass.circle (iOS 15.0)
+- hourglass.circle.fill (iOS 15.0)
 
 ### hourglass.badge.plus
  (iOS 14.0)
@@ -3795,9 +3906,6 @@ _____
 - ladybug (iOS 14.0)
 - ladybug.fill (iOS 14.0)
 
-### landscape.artframe
- (iOS 15.0)
-
 ### lanyardcard
 - lanyardcard (iOS 15.0)
 - lanyardcard.fill (iOS 15.0)
@@ -3876,6 +3984,8 @@ _____
 ### lightbulb
 - lightbulb (iOS 13.0)
 - lightbulb.fill (iOS 13.0)
+- lightbulb.circle (iOS 15.0)
+- lightbulb.circle.fill (iOS 15.0)
 - lightbulb.slash (iOS 13.0)
 - lightbulb.slash.fill (iOS 13.0)
 
@@ -3973,6 +4083,7 @@ _____
 ### list.number
 - list.number (iOS 13.0)
 - list.number.ar (iOS 14.0)
+- list.number.hi (iOS 15.0)
 - list.number.rtl (iOS 13.0)
 
 ### list.star
@@ -4003,6 +4114,9 @@ _____
 
 ### location.fill.viewfinder
  (iOS 14.0)
+
+### location.magnifyingglass
+ (iOS 15.0)
 
 ### location.north
 - location.north (iOS 13.0)
@@ -4164,6 +4278,10 @@ _____
 - magnifyingglass.circle (iOS 13.0)
 - magnifyingglass.circle.fill (iOS 13.0)
 
+### magsafe.batterypack
+- magsafe.batterypack (iOS 15.0)
+- magsafe.batterypack.fill (iOS 15.0)
+
 ### mail
 - mail (iOS 14.0)
 - mail.fill (iOS 14.0)
@@ -4195,6 +4313,8 @@ _____
 - mappin.square (iOS 15.0)
 - mappin.square.fill (iOS 15.0)
 - mappin.slash (iOS 13.0)
+- mappin.slash.circle (iOS 15.0)
+- mappin.slash.circle.fill (iOS 15.0)
 
 ### mappin.and.ellipse
  (iOS 13.0)
@@ -4393,6 +4513,8 @@ _____
 ### newspaper
 - newspaper (iOS 14.0)
 - newspaper.fill (iOS 14.0)
+- newspaper.circle (iOS 15.0)
+- newspaper.circle.fill (iOS 15.0)
 
 ### nose
 - nose (iOS 14.0)
@@ -4779,7 +4901,9 @@ _____
 - person.wave.2.fill (iOS 15.0)
 
 ### personalhotspot
- (iOS 13.0)
+- personalhotspot (iOS 13.0)
+- personalhotspot.circle (iOS 15.0)
+- personalhotspot.circle.fill (iOS 15.0)
 
 ### perspective
  (iOS 13.0)
@@ -4852,6 +4976,9 @@ _____
 - photo.circle (iOS 15.0)
 - photo.circle.fill (iOS 15.0)
 
+### photo.artframe
+ (iOS 15.0)
+
 ### photo.fill.on.rectangle.fill
  (iOS 13.0)
 
@@ -4873,6 +5000,8 @@ _____
 ### pills
 - pills (iOS 14.0)
 - pills.fill (iOS 14.0)
+- pills.circle (iOS 15.0)
+- pills.circle.fill (iOS 15.0)
 
 ### pin
 - pin (iOS 13.0)
@@ -5165,6 +5294,12 @@ _____
 - quote.bubble.fill (iOS 13.0)
 - quote.bubble.fill.rtl (iOS 14.0)
 
+### quote.closing
+ (iOS 15.0)
+
+### quote.opening
+ (iOS 15.0)
+
 ### r
 - r.circle (iOS 13.0)
 - r.circle.fill (iOS 13.0)
@@ -5251,13 +5386,21 @@ _____
 ### rectangle.2.swap
  (iOS 15.0)
 
+### rectangle.3.group
+- rectangle.3.group (iOS 15.0)
+- rectangle.3.group.fill (iOS 15.0)
+
+### rectangle.3.group.bubble.left
+- rectangle.3.group.bubble.left (iOS 15.0)
+- rectangle.3.group.bubble.left.fill (iOS 15.0)
+
 ### rectangle.3.offgrid
-- rectangle.3.offgrid (iOS, introduced: 13.0, deprecated: 15.0, renamed: [rectangles.group](#rectanglesgroup))
-- rectangle.3.offgrid.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [rectangles.group.fill](#rectanglesgroup))
+- rectangle.3.offgrid (iOS, introduced: 13.0, deprecated: 15.0, renamed: [rectangle.3.group](#rectangle3group))
+- rectangle.3.offgrid.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [rectangle.3.group.fill](#rectangle3group))
 
 ### rectangle.3.offgrid.bubble.left
-- rectangle.3.offgrid.bubble.left (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangles.group.bubble.left](#rectanglesgroupbubbleleft))
-- rectangle.3.offgrid.bubble.left.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangles.group.bubble.left.fill](#rectanglesgroupbubbleleft))
+- rectangle.3.offgrid.bubble.left (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.3.group.bubble.left](#rectangle3groupbubbleleft))
+- rectangle.3.offgrid.bubble.left.fill (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.3.group.bubble.left.fill](#rectangle3groupbubbleleft))
 
 ### rectangle.and.arrow.up.right.and.arrow.down.left
 - rectangle.and.arrow.up.right.and.arrow.down.left (iOS 13.0)
@@ -5318,6 +5461,9 @@ _____
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.center.inset.filled](#rectanglecenterinsetfilled))
 
 ### rectangle.center.inset.filled
+ (iOS 15.0)
+
+### rectangle.center.inset.filled.badge.plus
  (iOS 15.0)
 
 ### rectangle.compress.vertical
@@ -5643,10 +5789,12 @@ _____
  (iOS 13.0)
 
 ### rectangle.stack.badge.person.crop
- (iOS 13.0)
+- rectangle.stack.badge.person.crop (iOS 13.0)
+- rectangle.stack.badge.person.crop.fill (iOS 15.0)
 
-### rectangle.stack.badge.play.crop
- (iOS 15.0)
+### rectangle.stack.badge.play
+- rectangle.stack.badge.play (iOS 15.0)
+- rectangle.stack.badge.play.fill (iOS 15.0)
 
 ### rectangle.stack.badge.plus
  (iOS 13.0)
@@ -5655,10 +5803,7 @@ _____
  (iOS 13.0)
 
 ### rectangle.stack.fill.badge.person.crop
- (iOS 13.0)
-
-### rectangle.stack.fill.badge.play.crop.fill
- (iOS 15.0)
+ (iOS, introduced: 13.0, deprecated: 15.0, renamed: [rectangle.stack.badge.person.crop.fill](#rectanglestackbadgepersoncrop))
 
 ### rectangle.stack.fill.badge.plus
  (iOS 13.0)
@@ -5688,14 +5833,6 @@ _____
 
 ### rectangle.trailingthird.inset.filled
  (iOS 15.0)
-
-### rectangles.group
-- rectangles.group (iOS 15.0)
-- rectangles.group.fill (iOS 15.0)
-
-### rectangles.group.bubble.left
-- rectangles.group.bubble.left (iOS 15.0)
-- rectangles.group.bubble.left.fill (iOS 15.0)
 
 ### repeat
 - repeat (iOS 13.0)
@@ -5787,10 +5924,15 @@ _____
 - scanner.fill (iOS 14.0)
 
 ### scissors
- (iOS 13.0)
+- scissors (iOS 13.0)
+- scissors.circle (iOS 15.0)
+- scissors.circle.fill (iOS 15.0)
 
 ### scissors.badge.ellipsis
  (iOS 13.0)
+
+### scooter
+ (iOS 15.0)
 
 ### scope
  (iOS 13.0)
@@ -5875,6 +6017,8 @@ _____
 ### shippingbox
 - shippingbox (iOS 14.0)
 - shippingbox.fill (iOS 14.0)
+- shippingbox.circle (iOS 15.0)
+- shippingbox.circle.fill (iOS 15.0)
 
 ### shuffle
 - shuffle (iOS 13.0)
@@ -5952,7 +6096,10 @@ _____
  (iOS 13.0)
 
 ### slider.horizontal.below.square.fill.and.square
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [slider.horizontal.below.square.filled.and.square](#sliderhorizontalbelowsquarefilledandsquare))
+
+### slider.horizontal.below.square.filled.and.square
+ (iOS 15.0)
 
 ### slider.vertical.3
  (iOS 14.0)
@@ -5965,8 +6112,12 @@ _____
 - smallcircle.circle.fill (iOS 13.0)
 
 ### smallcircle.fill.circle
-- smallcircle.fill.circle (iOS 13.0)
-- smallcircle.fill.circle.fill (iOS 13.0)
+- smallcircle.fill.circle (iOS, introduced: 13.0, deprecated: 15.0, renamed: [smallcircle.filled.circle](#smallcirclefilledcircle))
+- smallcircle.fill.circle.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [smallcircle.filled.circle.fill](#smallcirclefilledcircle))
+
+### smallcircle.filled.circle
+- smallcircle.filled.circle (iOS 15.0)
+- smallcircle.filled.circle.fill (iOS 15.0)
 
 ### smiley
 - smiley (iOS, introduced: 13.0, deprecated: 14.0, renamed: [face.smiling](#facesmiling))
@@ -5980,10 +6131,15 @@ _____
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [snowflake](#snowflake))
 
 ### snowflake
- (iOS 15.0)
+- snowflake (iOS 15.0)
+- snowflake.circle (iOS 15.0)
+- snowflake.circle.fill (iOS 15.0)
 
 ### sparkle
  (iOS 14.0)
+
+### sparkle.magnifyingglass
+ (iOS 15.0)
 
 ### sparkles
  (iOS 13.0)
@@ -6071,22 +6227,37 @@ _____
  (iOS 14.0)
 
 ### square.2.stack.3d.bottom.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.2.stack.3d.bottom.filled](#square2stack3dbottomfilled))
+
+### square.2.stack.3d.bottom.filled
+ (iOS 15.0)
 
 ### square.2.stack.3d.top.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.2.stack.3d.top.filled](#square2stack3dtopfilled))
+
+### square.2.stack.3d.top.filled
+ (iOS 15.0)
 
 ### square.3.stack.3d
  (iOS 14.0)
 
 ### square.3.stack.3d.bottom.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.3.stack.3d.bottom.filled](#square3stack3dbottomfilled))
+
+### square.3.stack.3d.bottom.filled
+ (iOS 15.0)
 
 ### square.3.stack.3d.middle.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.3.stack.3d.middle.filled](#square3stack3dmiddlefilled))
+
+### square.3.stack.3d.middle.filled
+ (iOS 15.0)
 
 ### square.3.stack.3d.top.fill
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.3.stack.3d.top.filled](#square3stack3dtopfilled))
+
+### square.3.stack.3d.top.filled
+ (iOS 15.0)
 
 ### square.and.arrow.down
 - square.and.arrow.down (iOS 13.0)
@@ -6099,6 +6270,8 @@ _____
 ### square.and.arrow.up
 - square.and.arrow.up (iOS 13.0)
 - square.and.arrow.up.fill (iOS 13.0)
+- square.and.arrow.up.circle (iOS 15.0)
+- square.and.arrow.up.circle.fill (iOS 15.0)
 
 ### square.and.arrow.up.on.square
 - square.and.arrow.up.on.square (iOS 13.0)
@@ -6113,7 +6286,10 @@ _____
 
 ### square.and.line.vertical.and.square
 - square.and.line.vertical.and.square (iOS 13.0)
-- square.and.line.vertical.and.square.fill (iOS 13.0)
+- square.and.line.vertical.and.square.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [square.and.line.vertical.and.square.filled](#squareandlineverticalandsquarefilled))
+
+### square.and.line.vertical.and.square.filled
+ (iOS 15.0)
 
 ### square.and.pencil
  (iOS 13.0)
@@ -6134,7 +6310,7 @@ _____
  (iOS 15.0)
 
 ### square.fill.and.line.vertical.and.square
-- square.fill.and.line.vertical.and.square (iOS 13.0)
+- square.fill.and.line.vertical.and.square (iOS, introduced: 13.0, deprecated: 15.0, renamed: [square.filled.and.line.vertical.and.square](#squarefilledandlineverticalandsquare))
 - square.fill.and.line.vertical.and.square.fill (iOS 15.0)
 
 ### square.fill.and.line.vertical.square.fill
@@ -6150,6 +6326,9 @@ _____
 ### square.fill.text.grid.1x2
  (iOS 14.0)
 
+### square.filled.and.line.vertical.and.square
+ (iOS 15.0)
+
 ### square.filled.on.square
  (iOS 15.0)
 
@@ -6158,10 +6337,11 @@ _____
 - square.grid.2x2.fill (iOS 13.0)
 
 ### square.grid.3x1.below.line.grid.1x2
- (iOS 14.0)
+- square.grid.3x1.below.line.grid.1x2 (iOS 14.0)
+- square.grid.3x1.below.line.grid.1x2.fill (iOS 15.0)
 
 ### square.grid.3x1.fill.below.line.grid.1x2
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.grid.3x1.below.line.grid.1x2.fill](#squaregrid3x1belowlinegrid1x2))
 
 ### square.grid.3x1.folder.badge.plus
  (iOS 14.0)
@@ -6389,7 +6569,9 @@ _____
 - sterlingsign.square.fill (iOS 13.0)
 
 ### stethoscope
- (iOS 14.0)
+- stethoscope (iOS 14.0)
+- stethoscope.circle (iOS 15.0)
+- stethoscope.circle.fill (iOS 15.0)
 
 ### stop
 - stop (iOS 13.0)
@@ -6645,6 +6827,7 @@ _____
 ### textformat.123
 - textformat.123 (iOS 13.0)
 - textformat.123.ar (iOS 14.0)
+- textformat.123.hi (iOS 15.0)
 
 ### textformat.abc
  (iOS 13.0)
