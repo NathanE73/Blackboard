@@ -10,9 +10,11 @@
 
 ```yml
 symbols:
+- a.book.closed
 - 14.square.fill
 - case
 - case.fill
+- character.book.closed
 - chevron.down
 - chevron.up
 - die.face.1
@@ -32,12 +34,15 @@ symbols:
 [SymbolAsset.blackboard.swift](/ExampleApp/Source/Generated/SymbolAsset.blackboard.swift#L9)
 
 ```swift
-@available(iOS 13.0, *)
 public enum SymbolAsset: String {
+    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
+    case aBookClosed = "a.book.closed"
+    @available(iOS 14.0, *)
+    case `case`
     @available(iOS 14.0, *)
     case caseFill = "case.fill"
-    @available(iOS 14.0, *)
-    case caseSymbol = "case"
+    @available(iOS 14.2, *)
+    case characterBookClosed = "character.book.closed"
     case chevronDown = "chevron.down"
     case chevronUp = "chevron.up"
     @available(iOS 14.0, *)
@@ -51,11 +56,10 @@ public enum SymbolAsset: String {
     case person
     case person2 = "person.2"
     case plusCircleFill = "plus.circle.fill"
+    case `repeat`
     @available(iOS 14.2, *)
     case repeatCircle = "repeat.circle"
-    case repeatSymbol = "repeat"
-    case returnSymbol = "return"
-}
+    case `return`
 ```
 
 [SymbolUIImage.blackboard.swift](/ExampleApp/Source/Generated/SymbolUIImage.blackboard.swift#L9)
@@ -72,10 +76,14 @@ public extension UIImage {
     init(symbol: SymbolAsset, withConfiguration configuration: UIImage.Configuration?)
     init(symbol: SymbolAsset, compatibleWith traitCollection: UITraitCollection?)
     
+    @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "symbolCharacterBookClosed")
+    static var symbolABookClosed: UIImage
     @available(iOS 14.0, *)
     static var symbolCase: UIImage
     @available(iOS 14.0, *)
     static var symbolCaseFill: UIImage
+    @available(iOS 14.2, *)
+    static var symbolCharacterBookClosed: UIImage
     static var symbolChevronDown: UIImage
     static var symbolChevronUp: UIImage
     @available(iOS 14.0, *)
