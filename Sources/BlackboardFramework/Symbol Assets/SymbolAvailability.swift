@@ -40,21 +40,10 @@ struct SymbolAvailability: Decodable {
 
 extension SymbolAvailability {
     
-    static var resourcePath: String? {
-        Bundle.module.path(forResource: "name_availability",
-                           ofType: "plist",
-                           inDirectory: "symbols")
-    }
-    
     static var resource: SymbolAvailability? {
-        guard let resourcePath = resourcePath else {
-            print("error: Failed to locate symbol name availability resource")
-            return nil
-        }
-        
         do {
-            let json = try String(contentsOfFile: resourcePath)
-            let data = Data(json.utf8)
+            let plist = Resource.name_availability_plist
+            let data = Data(plist.utf8)
             return try PropertyListDecoder().decode(SymbolAvailability.self, from: data)
         } catch {
             print("error: Failed to decode symbol name availability resource")
