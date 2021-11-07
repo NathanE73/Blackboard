@@ -6,14 +6,13 @@ SWIFT_BUILD_FLAGS=--arch x86_64 --configuration release
 BUILD_PATH=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)
 
 BLACKBOARD_EXECUTABLE=blackboard
-BLACKBOARD_BUNDLE=Blackboard_BlackboardFramework.bundle
 
 PORTABLE_ZIP=portable-blackboard.zip
 
 VERSION_FILE=.version
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
-.PHONY: clean build test install portable-zip release get-version set-version git-tag pod-publish publish generate
+.PHONY: clean build test install portable-zip release get-version set-version git-tag pod-publish publish lint generate resources
 
 clean:
 	swift package clean
@@ -27,13 +26,10 @@ test:
 install: build
 	install -d "$(BINARIES_FOLDER)"
 	install "$(BUILD_PATH)/$(BLACKBOARD_EXECUTABLE)" "$(BINARIES_FOLDER)"
-	rm -rf "$(BINARIES_FOLDER)/$(BLACKBOARD_BUNDLE)"
-	cp -r "$(BUILD_PATH)/$(BLACKBOARD_BUNDLE)" "$(BINARIES_FOLDER)"
 
 portable-zip: install
 	mkdir -p "$(TEMPORARY_FOLDER)"
 	zip -j - "$(BINARIES_FOLDER)/$(BLACKBOARD_EXECUTABLE)" "LICENSE" > "$(TEMPORARY_FOLDER)/$(PORTABLE_ZIP)"
-	pushd "$(BINARIES_FOLDER)"; zip -ur "../$(TEMPORARY_FOLDER)/$(PORTABLE_ZIP)" "$(BLACKBOARD_BUNDLE)"
 
 release: clean portable-zip
 
@@ -60,9 +56,22 @@ pod-publish:
 
 publish: pod-publish
 
+lint:
+	mint run swiftlint
+
 generate:
 	bin/blackboard --input Shared/Resources/ DeclarativeApp/Resources/ --output DeclarativeApp/Source/Generated/
 	bin/blackboard --input Shared/Resources/ ExampleApp/Resources/ --output ExampleApp/Source/Generated/
+
+resources:
+	cat Templates/symbols/NameAliasesStringsResourceHeader.swift \
+		Resources/symbols/name_aliases_strings.txt \
+		Templates/symbols/NameAliasesStringsResourceFooter.swift \
+		> Sources/BlackboardFramework/Resources/NameAliasesStringsResource.swift
+	cat Templates/symbols/NameAvailabilityResourceHeader.swift \
+		Resources/symbols/name_availability.plist \
+		Templates/symbols/NameAvailabilityResourceFooter.swift \
+		> Sources/BlackboardFramework/Resources/NameAvailabilityResource.swift
 
 %:
 	@:

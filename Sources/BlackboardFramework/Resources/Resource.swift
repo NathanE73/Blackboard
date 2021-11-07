@@ -24,24 +24,5 @@
 
 import Foundation
 
-struct SymbolAliases {
-    var symbols: [String: String]
-}
-
-extension SymbolAliases {
-    
-    static var resource: SymbolAliases? {
-        let text = Resource.name_aliases_strings_txt
-        let data = Data(text.utf8)
-        
-        guard let symbols = try? PropertyListSerialization
-                .propertyList(from: data, options: [], format: nil)
-                as? [String: String] else {
-                    print("error: Failed to decode symbol name aliases resource")
-                    return nil
-        }
-        
-        return SymbolAliases(symbols: symbols)
-    }
-    
+struct Resource {
 }

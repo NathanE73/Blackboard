@@ -11,6 +11,7 @@ excluded:
   - ExampleApp/Source/Generated
 
 disabled_rules:
+  - file_length
   - line_length
   - nesting
   - trailing_whitespace
