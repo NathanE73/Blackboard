@@ -29,7 +29,7 @@ extension NSRegularExpression {
     func groupsFor(_ text: String) -> [[String]]? {
         let range = NSRange(text.startIndex..., in: text)
         return matches(in: text, range: range).map { match in
-            return (0..<match.numberOfRanges).map {
+            (0..<match.numberOfRanges).map {
                 let rangeBounds = match.range(at: $0)
                 guard let range = Range(rangeBounds, in: text) else {
                     return ""
