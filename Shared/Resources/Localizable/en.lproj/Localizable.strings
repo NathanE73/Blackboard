@@ -1,0 +1,20 @@
+"7" = "Seven";
+"Days since last injury: %@" = "Days since last injury: %@";
+"COOKIE_COUNT" = "Number of cookies: %d";
+"greetings" = "Greetings, %@ %@!";
+"one_hundred_percent" = "100%%";
+"Will it rain today?" = "Will it rain today?";
+
+/* Account Types */
+"account-type-savings" = "Savings";
+"account-type-checking" = "Checking";
+"account-type-roth" = "Roth IRA";
+
+/* Photos */
+"photoButton" = "Button";
+"photoGreenPaperClip" = "Green Paper Clip";
+"photoGreenPencil" = "Green Pencil";
+"photoRedCup" = "Red Cup";
+"photoStapler" = "Stapler";
+"photoSilverPaperClip" = "Silver Paper Clip";
+"photoWhiteDice" = "White Dice";

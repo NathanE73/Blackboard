@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2019 Nathan E. Walczak
+// Copyright (c) 2021 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,42 +24,35 @@
 
 import Foundation
 
-class AccountViewModel {
+class LocalizableFactory {
     
-    let account: Account
-    
-    init(account: Account) {
-        self.account = account
+    func localizablesAt(paths: [String]) -> [Localizable] {
+        let fileManager = FileManager.default
+        
+        var files: [String] = []
+        
+        paths.forEach { path in
+            let enumerator = fileManager.enumerator(atPath: path)
+            while let file = enumerator?.nextObject() as? String {
+                if file.lastPathComponent == "Localizable.strings" {
+                    files.append(path.appendingPathComponent(file))
+                }
+            }
+        }
+        
+        files.sort(by: <)
+        
+        return files.compactMap { localizableAt(path: $0) }
     }
     
-    var name: String {
-        account.name
-    }
-    
-    var balance: String {
-        formatBalance(account.balance)
-    }
-    
-}
-
-let formatBalance: ((Double) -> String) = {
-    let formatter = NumberFormatter()
-    formatter.numberStyle = .currency
-    
-    return { (balance: Double) in
-        formatter.string(from: NSNumber(value: balance)) ?? "\(balance)"
-    }
-}()
-
-extension AccountViewModel {
-    
-    static var examples: [AccountViewModel] {
-        let accounts = [
-            Account(name: L.accountTypeSavings, balance: 1_456.87),
-            Account(name: L.accountTypeChecking, balance: 0.23),
-            Account(name: L.accountTypeRoth, balance: 1_234_567_890.92)
-        ]
-        return accounts.map(AccountViewModel.init)
+    func localizableAt(path: String) -> Localizable? {
+        let url = URL(fileURLWithPath: path, isDirectory: false)
+        
+        guard let data = NSDictionary(contentsOf: url) else {
+            return nil
+        }
+        
+        return Localizable(file: url.path, data: Dictionary(data))
     }
     
 }

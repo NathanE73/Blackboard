@@ -73,7 +73,10 @@ class MainViewController: UIViewController {
         
         menuContainerView.alpha = 0
         
-        footerViewController.footerText = "Greetings!"
+        let firstName = "Steve"
+        let lastName = "Dave"
+        let greetingsFormat = NSLocalizedString("greetings", comment: "")
+        footerViewController.footerText = .localizedStringWithFormat(greetingsFormat, firstName, lastName)
     }
     
     override func viewDidAppear(_ animated: Bool) {

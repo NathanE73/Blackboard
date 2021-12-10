@@ -39,13 +39,12 @@ struct BlackboardConfiguration: Decodable {
     
     var symbols: Set<String>?
     
-    var skips: Set<Skip>?
-    
     enum Skip: String, Decodable {
         case colors
         case dataAssets = "data-assets"
         case images
         case localizable
+        case localizableValidation = "localizable-validation"
         case nibValidation = "nib-validation"
         case storyboards
         case storyboardValidation = "storyboard-validation"
@@ -54,6 +53,12 @@ struct BlackboardConfiguration: Decodable {
         case uikit
         case validation
     }
+    var skips: Set<Skip>?
+    
+    struct LocalizableConfiguration: Decodable {
+        var base: String?
+    }
+    var localizable: LocalizableConfiguration?
     
     enum CodingKeys: String, CodingKey {
         case ios
@@ -61,6 +66,7 @@ struct BlackboardConfiguration: Decodable {
         case output
         case symbols
         case skips = "skip"
+        case localizable
     }
     
 }

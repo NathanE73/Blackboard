@@ -65,30 +65,21 @@ enum Naming {
     }
     
     static func name(from identifier: String, prefix: String? = nil) -> String {
-        let allowedCharacters = CharacterSet.alphanumerics
-        
-        var name = ""
-        
-        var shouldUppercaseNextCharacter = true
-        
-        for unicodeScalar in identifier.unicodeScalars {
-            if !allowedCharacters.contains(unicodeScalar) {
-                shouldUppercaseNextCharacter = true
-                continue
+        identifier.split { character in
+            for unicodeScalar in character.unicodeScalars {
+                if !CharacterSet.alphanumerics.contains(unicodeScalar) {
+                    return true
+                }
             }
-            
-            let character = String(unicodeScalar)
-            
-            if shouldUppercaseNextCharacter {
-                shouldUppercaseNextCharacter = false
-                name.append(character.uppercased())
-                continue
-            }
-            
-            name.append(character)
+            return false
         }
-        
-        return name
+        .map { part in
+            if part == part.uppercased() {
+                return part.lowercased().firstCharacterUppercased
+            }
+            return String(part).firstCharacterUppercased
+        }
+        .joined()
     }
     
     static func namespace(from namespaces: String?...) -> String? {

@@ -42,7 +42,9 @@ class MainViewController: UIViewController {
         
         menuContainerView.alpha = 0
         
-        footerViewController.footerText = "Greetings!"
+        let firstName = "Steve"
+        let lastName = "Dave"
+        footerViewController.footerText = L.greetings(arg1: firstName, arg2: lastName)
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -34,6 +34,7 @@
 		434AD50C2277835500AE99AD /* Empty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD5032277835500AE99AD /* Empty.storyboard */; };
 		434AD50D2277835500AE99AD /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD5052277835500AE99AD /* Photo.storyboard */; };
 		434AD50E2277835500AE99AD /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434AD5072277835500AE99AD /* Account.storyboard */; };
+		4369D3882761AC38006A177C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4369D38A2761AC38006A177C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		434AD5042277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Empty.storyboard; sourceTree = "<group>"; };
 		434AD5062277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Photo.storyboard; sourceTree = "<group>"; };
 		434AD5082277835500AE99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Account.storyboard; sourceTree = "<group>"; };
+		4369D3892761AC38006A177C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Shared/Resources/Localizable/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		43C249A322777EAA00EA6343 /* StandardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C249B222777EAB00EA6343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				434AD4F42277834300AE99AD /* Colors.xcassets */,
 				4316F36E25DF5767004AAA6A /* Data.xcassets */,
 				434AD4F62277834300AE99AD /* Images.xcassets */,
+				4369D38A2761AC38006A177C /* Localizable.strings */,
 				434AD4FC2277835500AE99AD /* Storyboards */,
 			);
 			path = Resources;
@@ -251,6 +254,7 @@
 				434AD50D2277835500AE99AD /* Photo.storyboard in Resources */,
 				434AD50C2277835500AE99AD /* Empty.storyboard in Resources */,
 				434AD5092277835500AE99AD /* LaunchScreen.storyboard in Resources */,
+				4369D3882761AC38006A177C /* Localizable.strings in Resources */,
 				434AD50B2277835500AE99AD /* Main.storyboard in Resources */,
 				434AD4F82277834300AE99AD /* Colors.xcassets in Resources */,
 				434AD50E2277835500AE99AD /* Account.storyboard in Resources */,
@@ -348,6 +352,14 @@
 				434AD5082277835500AE99AD /* Base */,
 			);
 			name = Account.storyboard;
+			sourceTree = "<group>";
+		};
+		4369D38A2761AC38006A177C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4369D3892761AC38006A177C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

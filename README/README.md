@@ -1,6 +1,6 @@
 
 ## Documentation
 
-- [Installation](Installation)
-- [Usage](Usage)
+- [Installation](Installation#installation)
+- [Usage](Usage#usage)
 - [Symbol Availability](SymbolAvailability.md#symbol-availability)

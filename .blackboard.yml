@@ -20,3 +20,6 @@ symbols:
 - return
 - repeat
 - repeat.circle
+
+localizable:
+  base: en

@@ -33,7 +33,14 @@ class SwiftSource {
             return // don't allow multiple blank lines
         }
         
-        lines.append((indentLevel, line))
+        if insideCommentBlock {
+            line.components(separatedBy: CharacterSet.newlines)
+                .forEach { comment in
+                    lines.append((indentLevel, "/// \(comment)"))
+                }
+        } else {
+            lines.append((indentLevel, line))
+        }
     }
     
     func append(_ line: String, block: () -> Void) {
@@ -89,6 +96,10 @@ class SwiftSource {
         unindent()
     }
     
+    // MARK: Comment Block
+    
+    var insideCommentBlock = false
+    
 }
 
 extension SwiftSource {
@@ -97,6 +108,14 @@ extension SwiftSource {
         source.components(separatedBy: CharacterSet.newlines)
             .forEach(append)
         return self
+    }
+    
+    func commentBlock(block: () -> Void) {
+        insideCommentBlock = true
+        
+        block()
+        
+        insideCommentBlock = false
     }
     
     func appendHeading(filename: String, modules: [String], includeBundle: Bool = false) {
