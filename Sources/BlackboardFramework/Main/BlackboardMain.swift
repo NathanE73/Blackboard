@@ -55,6 +55,7 @@ public struct BlackboardMain {
     
     struct LocalizableConfiguration {
         var base: String
+        var useMainBundle: Bool
     }
     var localizable: LocalizableConfiguration
     
@@ -95,7 +96,8 @@ public struct BlackboardMain {
         self.skipValidation = command.skipValidation || skips.contains(.validation)
         
         self.localizable = LocalizableConfiguration(
-            base: configuration?.localizable?.base ?? "en"
+            base: configuration?.localizable?.base ?? "en",
+            useMainBundle: configuration?.localizable?.useMainBundle ?? false
         )
     }
     
@@ -331,7 +333,9 @@ public struct BlackboardMain {
         guard !blackboardLocalizables.isEmpty else { return [] }
         
         SwiftSourceFile(Filename.Localizable, at: output)
-            .appendLocalizable(localizables: blackboardLocalizables)
+            .appendLocalizable(
+                localizables: blackboardLocalizables,
+                useMainBundle: localizable.useMainBundle)
             .write()
         
         return blackboardLocalizables

@@ -57,6 +57,12 @@ struct BlackboardConfiguration: Decodable {
     
     struct LocalizableConfiguration: Decodable {
         var base: String?
+        var useMainBundle: Bool?
+        
+        enum CodingKeys: String, CodingKey {
+            case base
+            case useMainBundle = "use-main-bundle"
+        }
     }
     var localizable: LocalizableConfiguration?
     
