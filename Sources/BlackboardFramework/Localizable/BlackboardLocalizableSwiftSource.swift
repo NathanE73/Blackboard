@@ -28,8 +28,8 @@ extension SwiftSource {
     
     // MARK: Localizable
     
-    func appendLocalizable(localizables: [BlackboardLocalizable]) -> Self {
-        appendHeading(filename: Filename.Localizable, modules: ["Foundation"], includeBundle: true)
+    func appendLocalizable(localizables: [BlackboardLocalizable], useMainBundle: Bool) -> Self {
+        appendHeading(filename: Filename.Localizable, modules: ["Foundation"], includeBundle: !useMainBundle)
         append("public enum Localizable: String") {
             append()
             localizables.forEach { string in
@@ -44,7 +44,8 @@ extension SwiftSource {
             }
             append()
             append("var localizedString: String") {
-                append("bundle.localizedString(forKey: rawValue, value: nil, table: nil)")
+                let bundle = useMainBundle ? "Main.bundle" : "bundle"
+                append("\(bundle).localizedString(forKey: rawValue, value: nil, table: nil)")
             }
             append()
             append("func localizedString(arguments: CVarArg...) -> String") {

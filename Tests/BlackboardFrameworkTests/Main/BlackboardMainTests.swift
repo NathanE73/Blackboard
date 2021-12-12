@@ -28,7 +28,7 @@ import XCTest
 
 class BlackboardMainTests: XCTestCase {
     
-    // MARK: - Platform Configuration
+    // MARK: - Platform Configuration Tests
     
     func testDefaultPlatformConfiguration() throws {
         var command = try BlackboardCommand.parse([])
@@ -59,7 +59,7 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertEqual(main.ios.sdk, Version(15, 0))
     }
     
-    // MARK: - Missing Input
+    // MARK: - Missing Input Tests
     
     func testMissingInput() throws {
         var command = try BlackboardCommand.parse([])
@@ -77,7 +77,7 @@ class BlackboardMainTests: XCTestCase {
         }
     }
     
-    // MARK: - Missing Output
+    // MARK: - Missing Output Tests
     
     func testMissingOutput() throws {
         var command = try BlackboardCommand.parse([])
@@ -984,6 +984,37 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
         XCTAssertTrue(main.skipValidation)
+    }
+    
+    // MARK: - Localizable Configuration Tests
+    
+    func testDefaultLocalizableConfiguration() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        let configuration = BlackboardConfiguration()
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertEqual(main.localizable.base, "en")
+        XCTAssertEqual(main.localizable.useMainBundle, false)
+    }
+    
+    func testConfigurationLocalizableConfiguration() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        var configuration = BlackboardConfiguration()
+        configuration.localizable = .init(
+            base: "en_CA",
+            useMainBundle: true)
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertEqual(main.localizable.base, "en_CA")
+        XCTAssertEqual(main.localizable.useMainBundle, true)
     }
     
 }

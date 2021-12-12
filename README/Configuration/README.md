@@ -37,6 +37,7 @@ Configure Blackboard by adding a .blackboard.yml file from the directory you'll 
 * `output`: Output directory; where generated code will be stored
 * `symbols`: List of symbol names
 * `skip`: Skip generating various source file
+* `localizable`: Localizable base language and bundle options
 
 Here is a sample configuration:
 
@@ -69,6 +70,10 @@ symbols:
 - return
 - repeat
 - repeat.circle
+
+localizable:
+  base: en
+  use-main-bundle: false
 ```
 
 Command line arguments override matching configuration option.
