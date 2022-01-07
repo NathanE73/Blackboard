@@ -619,6 +619,10 @@ extension Resource {
 		<string>2021</string>
 		<key>airplayvideo.circle.fill</key>
 		<string>2021</string>
+		<key>airpod.gen3.left</key>
+		<string>2021.2</string>
+		<key>airpod.gen3.right</key>
+		<string>2021.2</string>
 		<key>airpod.left</key>
 		<string>2020</string>
 		<key>airpod.right</key>
@@ -637,6 +641,12 @@ extension Resource {
 		<string>2021</string>
 		<key>airpods.chargingcase.wireless.fill</key>
 		<string>2021</string>
+		<key>airpods.gen3</key>
+		<string>2021.2</string>
+		<key>airpods.gen3.chargingcase.wireless</key>
+		<string>2021.2</string>
+		<key>airpods.gen3.chargingcase.wireless.fill</key>
+		<string>2021.2</string>
 		<key>airpodsmax</key>
 		<string>2020.2</string>
 		<key>airpodspro</key>
@@ -1567,6 +1577,16 @@ extension Resource {
 		<string>2021</string>
 		<key>beats.earphones</key>
 		<string>2021</string>
+		<key>beats.fit.pro</key>
+		<string>2021.2</string>
+		<key>beats.fit.pro.chargingcase</key>
+		<string>2021.2</string>
+		<key>beats.fit.pro.chargingcase.fill</key>
+		<string>2021.2</string>
+		<key>beats.fit.pro.left</key>
+		<string>2021.2</string>
+		<key>beats.fit.pro.right</key>
+		<string>2021.2</string>
 		<key>beats.headphones</key>
 		<string>2021</string>
 		<key>beats.powerbeats</key>
@@ -1705,6 +1725,8 @@ extension Resource {
 		<string>2019</string>
 		<key>bolt.horizontal.icloud.fill</key>
 		<string>2019</string>
+		<key>bolt.ring.closed</key>
+		<string>2021.1</string>
 		<key>bolt.shield</key>
 		<string>2021</string>
 		<key>bolt.shield.fill</key>
@@ -5271,10 +5293,18 @@ extension Resource {
 		<string>2021</string>
 		<key>platter.bottom.applewatch.case</key>
 		<string>2021</string>
+		<key>platter.filled.bottom.and.arrow.down.iphone</key>
+		<string>2021.1</string>
 		<key>platter.filled.bottom.applewatch.case</key>
 		<string>2021</string>
+		<key>platter.filled.bottom.iphone</key>
+		<string>2021.1</string>
+		<key>platter.filled.top.and.arrow.up.iphone</key>
+		<string>2021.1</string>
 		<key>platter.filled.top.applewatch.case</key>
 		<string>2021</string>
+		<key>platter.filled.top.iphone</key>
+		<string>2021.1</string>
 		<key>platter.top.applewatch.case</key>
 		<string>2021</string>
 		<key>play</key>
@@ -5757,6 +5787,8 @@ extension Resource {
 		<string>2021</string>
 		<key>rectangle.inset.toptrailing.filled</key>
 		<string>2021</string>
+		<key>rectangle.leadinghalf.filled</key>
+		<string>2021.2</string>
 		<key>rectangle.leadinghalf.inset.filled</key>
 		<string>2021</string>
 		<key>rectangle.leadinghalf.inset.filled.arrow.leading</key>
@@ -5971,6 +6003,8 @@ extension Resource {
 		<string>2020.2</string>
 		<key>rectangle.topthird.inset.filled</key>
 		<string>2021</string>
+		<key>rectangle.trailinghalf.filled</key>
+		<string>2021.2</string>
 		<key>rectangle.trailinghalf.inset.filled</key>
 		<string>2021</string>
 		<key>rectangle.trailinghalf.inset.filled.arrow.trailing</key>
@@ -6375,6 +6409,18 @@ extension Resource {
 		<string>2020</string>
 		<key>square.2.stack.3d.top.filled</key>
 		<string>2021</string>
+		<key>square.3.layers.3d.down.backward</key>
+		<string>2021.1</string>
+		<key>square.3.layers.3d.down.forward</key>
+		<string>2021.1</string>
+		<key>square.3.layers.3d.down.left</key>
+		<string>2021.1</string>
+		<key>square.3.layers.3d.down.left.slash</key>
+		<string>2021.2</string>
+		<key>square.3.layers.3d.down.right</key>
+		<string>2021.1</string>
+		<key>square.3.layers.3d.down.right.slash</key>
+		<string>2021.2</string>
 		<key>square.3.stack.3d</key>
 		<string>2020</string>
 		<key>square.3.stack.3d.bottom.fill</key>
@@ -6385,6 +6431,8 @@ extension Resource {
 		<string>2020</string>
 		<key>square.3.stack.3d.middle.filled</key>
 		<string>2021</string>
+		<key>square.3.stack.3d.slash</key>
+		<string>2021.2</string>
 		<key>square.3.stack.3d.top.fill</key>
 		<string>2020</string>
 		<key>square.3.stack.3d.top.filled</key>
@@ -6901,6 +6949,14 @@ extension Resource {
 		<string>2019</string>
 		<key>text.justify</key>
 		<string>2019</string>
+		<key>text.justify.leading</key>
+		<string>2021.1</string>
+		<key>text.justify.left</key>
+		<string>2021.1</string>
+		<key>text.justify.right</key>
+		<string>2021.1</string>
+		<key>text.justify.trailing</key>
+		<string>2021.1</string>
 		<key>text.justifyleft</key>
 		<string>2019</string>
 		<key>text.justifyright</key>
@@ -7556,6 +7612,28 @@ extension Resource {
 			<string>15.0</string>
 			<key>watchOS</key>
 			<string>8.0</string>
+		</dict>
+		<key>2021.1</key>
+		<dict>
+			<key>iOS</key>
+			<string>15.1</string>
+			<key>macOS</key>
+			<string>12.0</string>
+			<key>tvOS</key>
+			<string>15.1</string>
+			<key>watchOS</key>
+			<string>8.1</string>
+		</dict>
+		<key>2021.2</key>
+		<dict>
+			<key>iOS</key>
+			<string>15.2</string>
+			<key>macOS</key>
+			<string>12.1</string>
+			<key>tvOS</key>
+			<string>15.2</string>
+			<key>watchOS</key>
+			<string>8.3</string>
 		</dict>
 	</dict>
 </dict>
