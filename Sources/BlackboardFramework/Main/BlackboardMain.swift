@@ -330,9 +330,23 @@ public struct BlackboardMain {
             $0.localeDescription.localizedCaseInsensitiveCompare($1.localeDescription) == .orderedAscending
         }
         
-        let blackboardLocalizables = localizables.blackboardLocalizables.sorted {
-            $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending
-        }
+        let includeKeys = localizable.includeKeys
+        let excludeKeys = localizable.excludeKeys
+        
+        let blackboardLocalizables = localizables.blackboardLocalizables
+            .filter { element in
+                let key = element.key
+                if !includeKeys.isEmpty && !includeKeys.contains(key) {
+                    return false
+                }
+                if excludeKeys.contains(key) {
+                    return false
+                }
+                return true
+            }
+            .sorted {
+                $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending
+            }
         
         guard !blackboardLocalizables.isEmpty else { return [] }
         
