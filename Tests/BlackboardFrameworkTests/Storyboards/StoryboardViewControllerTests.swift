@@ -52,7 +52,7 @@ class StoryboardViewControllerTests: XCTestCase {
     </scene>
     """
     
-    // MARK: - Description -
+    // MARK: - Description
     
     func testDescription() {
         // Given
@@ -110,7 +110,7 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertEqual(description, "id: 007, type: tableViewController, storyboardIdentifier: CustomIdentifer, customClass: CustomClass, storyboardName: nil")
     }
     
-    // MARK: - Init With Node -
+    // MARK: - Init With Node
     
     func testInitWithNode() throws {
         // Given
@@ -253,7 +253,7 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNil(controller)
     }
     
-    // MARK: - Segue With -
+    // MARK: - Segue With
     
     func testSegueWithId() throws {
         // Given
@@ -295,7 +295,7 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNil(missingSegue)
     }
     
-    // MARK: - Table View Cell With -
+    // MARK: - Table View Cell With
     
     func testTableViewCellWithId() throws {
         // Given
@@ -319,7 +319,7 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNil(missingCell)
     }
     
-    // MARK: - Collection View Cell With -
+    // MARK: - Collection View Cell With
     
     func testCollectionViewCellWithId() throws {
         // Given
