@@ -28,28 +28,28 @@ import XCTest
 
 class StoryboardTests: XCTestCase {
     
-    func testAccount() {
-        let storyboard = Fixture.storyboard(project: .example, name: "Account")
+    func testAccount() throws {
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Account"))
         
-        XCTAssertEqual(storyboard?.name, "Account")
-        XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "LYS-UF-AgY")
+        XCTAssertEqual(storyboard.name, "Account")
+        XCTAssertEqual(storyboard.initialViewControllerIdentifier, "LYS-UF-AgY")
         
-        XCTAssertEqual(storyboard?.viewControllers.count, 5)
+        XCTAssertEqual(storyboard.viewControllers.count, 5)
         
-        XCTAssertEqual(storyboard?.namedColorResources, ["Absolute Zero", "Charcoal"])
-        XCTAssertEqual(storyboard?.namedImageResources, [])
+        XCTAssertEqual(storyboard.namedColorResources, ["Absolute Zero", "Charcoal"])
+        XCTAssertEqual(storyboard.namedImageResources, [])
     }
     
-    func testEmpty() {
-        let storyboard = Fixture.storyboard(project: .example, name: "Empty")
+    func testEmpty() throws {
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Empty"))
         
-        XCTAssertEqual(storyboard?.name, "Empty")
-        XCTAssertNil(storyboard?.initialViewControllerIdentifier)
+        XCTAssertEqual(storyboard.name, "Empty")
+        XCTAssertNil(storyboard.initialViewControllerIdentifier)
         
-        XCTAssertEqual(storyboard?.viewControllers.count, 0)
+        XCTAssertEqual(storyboard.viewControllers.count, 0)
         
-        XCTAssertEqual(storyboard?.namedColorResources, [])
-        XCTAssertEqual(storyboard?.namedImageResources, [])
+        XCTAssertEqual(storyboard.namedColorResources, [])
+        XCTAssertEqual(storyboard.namedImageResources, [])
     }
     
     func testLaunchScreen() {
@@ -58,28 +58,28 @@ class StoryboardTests: XCTestCase {
         XCTAssertNil(storyboard)
     }
     
-    func testMain() {
-        let storyboard = Fixture.storyboard(project: .example, name: "Main")
+    func testMain() throws {
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Main"))
         
-        XCTAssertEqual(storyboard?.name, "Main")
-        XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BYZ-38-t0r")
+        XCTAssertEqual(storyboard.name, "Main")
+        XCTAssertEqual(storyboard.initialViewControllerIdentifier, "BYZ-38-t0r")
         
-        XCTAssertEqual(storyboard?.viewControllers.count, 6)
+        XCTAssertEqual(storyboard.viewControllers.count, 6)
         
-        XCTAssertEqual(storyboard?.namedColorResources, ["Bisque", "maroon color"])
-        XCTAssertEqual(storyboard?.namedImageResources, [])
+        XCTAssertEqual(storyboard.namedColorResources, ["Bisque", "maroon color"])
+        XCTAssertEqual(storyboard.namedImageResources, [])
     }
     
-    func testPhoto() {
-        let storyboard = Fixture.storyboard(project: .example, name: "Photo")
+    func testPhoto() throws {
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Photo"))
         
-        XCTAssertEqual(storyboard?.name, "Photo")
-        XCTAssertEqual(storyboard?.initialViewControllerIdentifier, "BpT-OW-KyL")
+        XCTAssertEqual(storyboard.name, "Photo")
+        XCTAssertEqual(storyboard.initialViewControllerIdentifier, "BpT-OW-KyL")
         
-        XCTAssertEqual(storyboard?.viewControllers.count, 4)
+        XCTAssertEqual(storyboard.viewControllers.count, 4)
         
-        XCTAssertEqual(storyboard?.namedColorResources, ["Absolute Zero"])
-        XCTAssertEqual(storyboard?.namedImageResources, ["Red/stapler"])
+        XCTAssertEqual(storyboard.namedColorResources, ["Absolute Zero"])
+        XCTAssertEqual(storyboard.namedImageResources, ["Red/stapler"])
     }
     
 }
