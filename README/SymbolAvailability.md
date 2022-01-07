@@ -487,6 +487,12 @@ _____
 ### airplayvideo.badge.exclamationmark
  (iOS 15.0)
 
+### airpod.gen3.left
+ (iOS 15.2)
+
+### airpod.gen3.right
+ (iOS 15.2)
+
 ### airpod.left
  (iOS 14.0)
 
@@ -509,6 +515,13 @@ _____
 ### airpods.chargingcase.wireless
 - airpods.chargingcase.wireless (iOS 15.0)
 - airpods.chargingcase.wireless.fill (iOS 15.0)
+
+### airpods.gen3
+ (iOS 15.2)
+
+### airpods.gen3.chargingcase.wireless
+- airpods.gen3.chargingcase.wireless (iOS 15.2)
+- airpods.gen3.chargingcase.wireless.fill (iOS 15.2)
 
 ### airpodsmax
  (iOS 14.5)
@@ -1381,6 +1394,19 @@ _____
 ### beats.earphones
  (iOS 15.0)
 
+### beats.fit.pro
+ (iOS 15.2)
+
+### beats.fit.pro.chargingcase
+- beats.fit.pro.chargingcase (iOS 15.2)
+- beats.fit.pro.chargingcase.fill (iOS 15.2)
+
+### beats.fit.pro.left
+ (iOS 15.2)
+
+### beats.fit.pro.right
+ (iOS 15.2)
+
 ### beats.headphones
  (iOS 15.0)
 
@@ -1515,6 +1541,9 @@ _____
 ### bolt.horizontal.icloud
 - bolt.horizontal.icloud (iOS 13.0)
 - bolt.horizontal.icloud.fill (iOS 13.0)
+
+### bolt.ring.closed
+ (iOS 15.1)
 
 ### bolt.shield
 - bolt.shield (iOS 15.0)
@@ -5047,11 +5076,23 @@ _____
 ### platter.bottom.applewatch.case
  (iOS 15.0)
 
+### platter.filled.bottom.and.arrow.down.iphone
+ (iOS 15.1)
+
 ### platter.filled.bottom.applewatch.case
  (iOS 15.0)
 
+### platter.filled.bottom.iphone
+ (iOS 15.1)
+
+### platter.filled.top.and.arrow.up.iphone
+ (iOS 15.1)
+
 ### platter.filled.top.applewatch.case
  (iOS 15.0)
+
+### platter.filled.top.iphone
+ (iOS 15.1)
 
 ### platter.top.applewatch.case
  (iOS 15.0)
@@ -5574,6 +5615,9 @@ _____
 ### rectangle.inset.toptrailing.filled
  (iOS 15.0)
 
+### rectangle.leadinghalf.filled
+ (iOS 15.2)
+
 ### rectangle.leadinghalf.inset.filled
  (iOS 15.0)
 
@@ -5824,6 +5868,9 @@ _____
 
 ### rectangle.topthird.inset.filled
  (iOS 15.0)
+
+### rectangle.trailinghalf.filled
+ (iOS 15.2)
 
 ### rectangle.trailinghalf.inset.filled
  (iOS 15.0)
@@ -6238,8 +6285,23 @@ _____
 ### square.2.stack.3d.top.filled
  (iOS 15.0)
 
+### square.3.layers.3d.down.backward
+ (iOS 15.1)
+
+### square.3.layers.3d.down.forward
+ (iOS 15.1)
+
+### square.3.layers.3d.down.left
+- square.3.layers.3d.down.left (iOS 15.1)
+- square.3.layers.3d.down.left.slash (iOS 15.2)
+
+### square.3.layers.3d.down.right
+- square.3.layers.3d.down.right (iOS 15.1)
+- square.3.layers.3d.down.right.slash (iOS 15.2)
+
 ### square.3.stack.3d
- (iOS 14.0)
+- square.3.stack.3d (iOS 14.0)
+- square.3.stack.3d.slash (iOS 15.2)
 
 ### square.3.stack.3d.bottom.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.3.stack.3d.bottom.filled](#square3stack3dbottomfilled))
@@ -6790,11 +6852,23 @@ _____
 ### text.justify
  (iOS 13.0)
 
+### text.justify.leading
+ (iOS 15.1)
+
+### text.justify.left
+ (iOS 15.1)
+
+### text.justify.right
+ (iOS 15.1)
+
+### text.justify.trailing
+ (iOS 15.1)
+
 ### text.justifyleft
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 15.1, renamed: [text.justify.left](#textjustifyleft))
 
 ### text.justifyright
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 15.1, renamed: [text.justify.right](#textjustifyright))
 
 ### text.magnifyingglass
 - text.magnifyingglass (iOS 14.0)

@@ -261,6 +261,8 @@
 "text.cursor.th" = "character.cursor.ibeam.th";
 "text.cursor.zh" = "character.cursor.ibeam.zh";
 "text.cursor.zh.traditional" = "character.cursor.ibeam.zh.traditional";
+"text.justifyleft" = "text.justify.left";
+"text.justifyright" = "text.justify.right";
 "textbox" = "character.textbox";
 "textbox.ar" = "character.textbox.ar";
 "textbox.he" = "character.textbox.he";
