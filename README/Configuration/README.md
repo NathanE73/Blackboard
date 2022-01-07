@@ -95,3 +95,23 @@ skip:
 - uikit
 - validation
 ```
+
+#### Localizable Key Options
+
+You can include specific keys:
+
+```
+localizable:
+  include:
+  - account-type-checking
+  - account-type-roth
+  - account-type-savings
+```
+
+You can exclude one or more keys:
+
+```
+localizable:
+  exclude:
+  - photoRedCup
+```

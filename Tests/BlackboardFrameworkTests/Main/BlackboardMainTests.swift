@@ -999,6 +999,8 @@ class BlackboardMainTests: XCTestCase {
         
         XCTAssertEqual(main.localizable.base, "en")
         XCTAssertEqual(main.localizable.useMainBundle, false)
+        XCTAssertEqual(main.localizable.includeKeys, [])
+        XCTAssertEqual(main.localizable.excludeKeys, [])
     }
     
     func testConfigurationLocalizableConfiguration() throws {
@@ -1009,12 +1011,16 @@ class BlackboardMainTests: XCTestCase {
         var configuration = BlackboardConfiguration()
         configuration.localizable = .init(
             base: "en_CA",
-            useMainBundle: true)
+            useMainBundle: true,
+            includeKeys: ["greetings", "one_hundred_percent"],
+            excludeKeys: ["photoRedCup"])
         
         let main = try BlackboardMain(command, configuration)
         
         XCTAssertEqual(main.localizable.base, "en_CA")
         XCTAssertEqual(main.localizable.useMainBundle, true)
+        XCTAssertEqual(main.localizable.includeKeys, ["greetings", "one_hundred_percent"])
+        XCTAssertEqual(main.localizable.excludeKeys, ["photoRedCup"])
     }
     
 }

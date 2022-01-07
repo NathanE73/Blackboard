@@ -56,6 +56,8 @@ public struct BlackboardMain {
     struct LocalizableConfiguration {
         var base: String
         var useMainBundle: Bool
+        var includeKeys: [String]
+        var excludeKeys: [String]
     }
     var localizable: LocalizableConfiguration
     
@@ -97,7 +99,9 @@ public struct BlackboardMain {
         
         self.localizable = LocalizableConfiguration(
             base: configuration?.localizable?.base ?? "en",
-            useMainBundle: configuration?.localizable?.useMainBundle ?? false
+            useMainBundle: configuration?.localizable?.useMainBundle ?? false,
+            includeKeys: configuration?.localizable?.includeKeys ?? [],
+            excludeKeys: configuration?.localizable?.excludeKeys ?? []
         )
     }
     

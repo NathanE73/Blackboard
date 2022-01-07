@@ -175,11 +175,16 @@ class BlackboardConfigurationTests: XCTestCase {
         }
     }
     
-    func testDecodableLocalizableConfiguration() {
+    func testDecodableLocalizableConfiguration() throws {
         let yaml = """
         localizable:
           base: en_CA
           use-main-bundle: true
+          include:
+          - greetings
+          - one_hundred_percent
+          exclude:
+          - photoRedCup
         """
         
         let data = Data(yaml.utf8)
@@ -187,8 +192,11 @@ class BlackboardConfigurationTests: XCTestCase {
         do {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
-            XCTAssertEqual(configuration.localizable?.base, "en_CA")
-            XCTAssertEqual(configuration.localizable?.useMainBundle, true)
+            let localizable = try XCTUnwrap(configuration.localizable)
+            XCTAssertEqual(localizable.base, "en_CA")
+            XCTAssertEqual(localizable.useMainBundle, true)
+            XCTAssertEqual(localizable.includeKeys, ["greetings", "one_hundred_percent"])
+            XCTAssertEqual(localizable.excludeKeys, ["photoRedCup"])
         }
         catch {
             XCTFail(error.localizedDescription)
