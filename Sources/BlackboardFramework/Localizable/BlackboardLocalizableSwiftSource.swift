@@ -77,14 +77,24 @@ extension SwiftSource {
     }
     
     func appendLocalizableWithArguments(string: BlackboardLocalizable, arguments: [FormatSpecifier]) {
+        var argumentsNames = arguments.enumerated()
+            .map { index, _ in
+                "arg\(index + 1)"
+            }
+        
+        if let keyArguments = string.keyArguments,
+           keyArguments.count == argumentsNames.count {
+            argumentsNames = keyArguments
+        }
+        
         let funcArgs = arguments.enumerated()
             .map { index, argument in
-                "arg\(index + 1): \(argument.type)"
+                "\(argumentsNames[index]): \(argument.type)"
             }.joined(separator: ", ")
         
         let localizeArgs = arguments.enumerated()
             .map { index, _ in
-                "arg\(index + 1)"
+                argumentsNames[index]
             }.joined(separator: ", ")
         
         append("public static func \(string.functionName)(\(funcArgs)) -> String") {

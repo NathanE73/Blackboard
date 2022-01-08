@@ -26,6 +26,7 @@ import Foundation
 
 struct BlackboardLocalizable {
     var key: String
+    var keyArguments: [String]?
     var values: [BlackboardLocalizableString]
     var functionName: String
     var caseName: String

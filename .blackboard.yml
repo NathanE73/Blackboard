@@ -23,3 +23,7 @@ symbols:
 
 localizable:
   base: en
+  arguments:
+    "Days since last injury: %@": [numberOfDays]
+    COOKIE_COUNT: [cookies]
+    greetings: [firstName, lastName]

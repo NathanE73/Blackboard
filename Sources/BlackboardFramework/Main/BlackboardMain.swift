@@ -334,6 +334,7 @@ public struct BlackboardMain {
         
         let includeKeys = localizable.includeKeys
         let excludeKeys = localizable.excludeKeys
+        let keyArguments = localizable.keyArguments
         
         let blackboardLocalizables = localizables.blackboardLocalizables
             .filter { element in
@@ -345,6 +346,11 @@ public struct BlackboardMain {
                     return false
                 }
                 return true
+            }
+            .map { element -> BlackboardLocalizable in
+                var element = element
+                element.keyArguments = keyArguments[element.key]
+                return element
             }
             .sorted {
                 $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending

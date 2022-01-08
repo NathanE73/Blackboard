@@ -121,7 +121,8 @@ You can name the arguments:
 ```
 localizable:
   arguments:
-    "Days since last injury: %@": [days]
-    COOKIE_COUNT: [numberOfCookies]
+    "Days since last injury: %@": [numberOfDays]
+    COOKIE_COUNT: [cookies]
     greetings: [firstName, lastName]
+
 ```
