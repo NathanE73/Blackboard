@@ -115,3 +115,13 @@ localizable:
   exclude:
   - photoRedCup
 ```
+
+You can name the arguments:
+
+```
+localizable:
+  arguments:
+    "Days since last injury: %@": [days]
+    COOKIE_COUNT: [numberOfCookies]
+    greetings: [firstName, lastName]
+```

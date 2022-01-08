@@ -189,6 +189,10 @@ class BlackboardConfigurationTests: XCTestCase {
           - one_hundred_percent
           exclude:
           - photoRedCup
+          arguments:
+            "Days since last injury: %@": [days]
+            COOKIE_COUNT: [numberOfCookies]
+            greetings: [firstName, lastName]
         """
         
         let data = Data(yaml.utf8)
@@ -201,6 +205,11 @@ class BlackboardConfigurationTests: XCTestCase {
             XCTAssertEqual(localizable.useMainBundle, true)
             XCTAssertEqual(localizable.includeKeys, ["greetings", "one_hundred_percent"])
             XCTAssertEqual(localizable.excludeKeys, ["photoRedCup"])
+            XCTAssertEqual(localizable.keyArguments, [
+                "Days since last injury: %@": ["days"],
+                "COOKIE_COUNT": ["numberOfCookies"],
+                "greetings": ["firstName", "lastName"]
+            ])
         }
         catch {
             XCTFail(error.localizedDescription)

@@ -60,12 +60,14 @@ struct BlackboardConfiguration: Decodable {
         var useMainBundle: Bool?
         var includeKeys: [String]?
         var excludeKeys: [String]?
+        var keyArguments: [String: [String]]?
         
         enum CodingKeys: String, CodingKey {
             case base
             case useMainBundle = "use-main-bundle"
             case includeKeys = "include"
             case excludeKeys = "exclude"
+            case keyArguments = "arguments"
         }
     }
     var localizable: LocalizableConfiguration?

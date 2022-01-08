@@ -1001,6 +1001,7 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertEqual(main.localizable.useMainBundle, false)
         XCTAssertEqual(main.localizable.includeKeys, [])
         XCTAssertEqual(main.localizable.excludeKeys, [])
+        XCTAssertEqual(main.localizable.keyArguments, [:])
     }
     
     func testConfigurationLocalizableConfiguration() throws {
@@ -1013,7 +1014,13 @@ class BlackboardMainTests: XCTestCase {
             base: "en_CA",
             useMainBundle: true,
             includeKeys: ["greetings", "one_hundred_percent"],
-            excludeKeys: ["photoRedCup"])
+            excludeKeys: ["photoRedCup"],
+            keyArguments: [
+                    "Days since last injury: %@": ["days"],
+                    "COOKIE_COUNT": ["numberOfCookies"],
+                    "greetings": ["firstName", "lastName"]
+            ]
+        )
         
         let main = try BlackboardMain(command, configuration)
         
@@ -1021,6 +1028,11 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertEqual(main.localizable.useMainBundle, true)
         XCTAssertEqual(main.localizable.includeKeys, ["greetings", "one_hundred_percent"])
         XCTAssertEqual(main.localizable.excludeKeys, ["photoRedCup"])
+        XCTAssertEqual(main.localizable.keyArguments, [
+            "Days since last injury: %@": ["days"],
+            "COOKIE_COUNT": ["numberOfCookies"],
+            "greetings": ["firstName", "lastName"]
+        ])
     }
     
 }
