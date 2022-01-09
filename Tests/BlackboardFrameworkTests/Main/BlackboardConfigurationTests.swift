@@ -29,7 +29,7 @@ import Yams
 
 class BlackboardConfigurationTests: XCTestCase {
     
-    func testDecodablePlatform() {
+    func testDecodablePlatform() throws {
         let yaml = """
         ios:
           target: 13.0
@@ -41,15 +41,16 @@ class BlackboardConfigurationTests: XCTestCase {
         do {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
-            XCTAssertEqual(configuration.ios?.target, Version(13, 0))
-            XCTAssertEqual(configuration.ios?.sdk, Version(15, 0))
+            let ios = try XCTUnwrap(configuration.ios)
+            XCTAssertEqual(ios.target, Version(13, 0))
+            XCTAssertEqual(ios.sdk, Version(15, 0))
         }
         catch {
             XCTFail(error.localizedDescription)
         }
     }
     
-    func testDecodableInput() {
+    func testDecodableInput() throws {
         let yaml = """
         input:
         - Shared/Resources
@@ -61,8 +62,9 @@ class BlackboardConfigurationTests: XCTestCase {
         do {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
-            XCTAssertEqual(configuration.input?.count, 2)
-            XCTAssertEqual(configuration.input, [
+            let input = try XCTUnwrap(configuration.input)
+            XCTAssertEqual(input.count, 2)
+            XCTAssertEqual(input, [
                             "Shared/Resources",
                             "ExampleApp/Resources"])
         }
@@ -88,7 +90,7 @@ class BlackboardConfigurationTests: XCTestCase {
         }
     }
     
-    func testDecodableSymbols() {
+    func testDecodableSymbols() throws {
         let yaml = """
         symbols:
         - 14.square.fill
@@ -113,8 +115,9 @@ class BlackboardConfigurationTests: XCTestCase {
         do {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
-            XCTAssertEqual(configuration.symbols?.count, 15)
-            XCTAssertEqual(configuration.symbols, [
+            let symbols = try XCTUnwrap(configuration.symbols)
+            XCTAssertEqual(symbols.count, 15)
+            XCTAssertEqual(symbols, [
                             "14.square.fill",
                             "case",
                             "case.fill",
@@ -136,7 +139,7 @@ class BlackboardConfigurationTests: XCTestCase {
         }
     }
     
-    func testDecodableSkips() {
+    func testDecodableSkips() throws {
         let yaml = """
         skip:
         - colors
@@ -156,8 +159,9 @@ class BlackboardConfigurationTests: XCTestCase {
         do {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
-            XCTAssertEqual(configuration.skips?.count, 10)
-            XCTAssertEqual(configuration.skips, [
+            let skips = try XCTUnwrap(configuration.skips)
+            XCTAssertEqual(skips.count, 10)
+            XCTAssertEqual(skips, [
                 .colors,
                 .dataAssets,
                 .images,
@@ -175,11 +179,20 @@ class BlackboardConfigurationTests: XCTestCase {
         }
     }
     
-    func testDecodableLocalizableConfiguration() {
+    func testDecodableLocalizableConfiguration() throws {
         let yaml = """
         localizable:
           base: en_CA
           use-main-bundle: true
+          include:
+          - greetings
+          - one_hundred_percent
+          exclude:
+          - photoRedCup
+          arguments:
+            "Days since last injury: %@": [days]
+            COOKIE_COUNT: [numberOfCookies]
+            greetings: [firstName, lastName]
         """
         
         let data = Data(yaml.utf8)
@@ -187,8 +200,16 @@ class BlackboardConfigurationTests: XCTestCase {
         do {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
-            XCTAssertEqual(configuration.localizable?.base, "en_CA")
-            XCTAssertEqual(configuration.localizable?.useMainBundle, true)
+            let localizable = try XCTUnwrap(configuration.localizable)
+            XCTAssertEqual(localizable.base, "en_CA")
+            XCTAssertEqual(localizable.useMainBundle, true)
+            XCTAssertEqual(localizable.includeKeys, ["greetings", "one_hundred_percent"])
+            XCTAssertEqual(localizable.excludeKeys, ["photoRedCup"])
+            XCTAssertEqual(localizable.keyArguments, [
+                "Days since last injury: %@": ["days"],
+                "COOKIE_COUNT": ["numberOfCookies"],
+                "greetings": ["firstName", "lastName"]
+            ])
         }
         catch {
             XCTFail(error.localizedDescription)

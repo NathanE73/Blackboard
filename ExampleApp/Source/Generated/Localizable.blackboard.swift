@@ -89,18 +89,18 @@ public enum L {
     }
     
     /// English: Number of cookies: %d
-    public static func cookieCount(arg1: CVarArg) -> String {
-        Localizable.cookieCount.localizedString(arguments: arg1)
+    public static func cookieCount(cookies: CVarArg) -> String {
+        Localizable.cookieCount.localizedString(arguments: cookies)
     }
     
     /// English: Days since last injury: %@
-    public static func daysSinceLastInjury(arg1: String) -> String {
-        Localizable.daysSinceLastInjury.localizedString(arguments: arg1)
+    public static func daysSinceLastInjury(numberOfDays: String) -> String {
+        Localizable.daysSinceLastInjury.localizedString(arguments: numberOfDays)
     }
     
     /// English: Greetings, %@ %@!
-    public static func greetings(arg1: String, arg2: String) -> String {
-        Localizable.greetings.localizedString(arguments: arg1, arg2)
+    public static func greetings(firstName: String, lastName: String) -> String {
+        Localizable.greetings.localizedString(arguments: firstName, lastName)
     }
     
     /// English: Seven

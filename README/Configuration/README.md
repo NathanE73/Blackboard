@@ -95,3 +95,34 @@ skip:
 - uikit
 - validation
 ```
+
+#### Localizable Key Options
+
+You can include specific keys:
+
+```
+localizable:
+  include:
+  - account-type-checking
+  - account-type-roth
+  - account-type-savings
+```
+
+You can exclude one or more keys:
+
+```
+localizable:
+  exclude:
+  - photoRedCup
+```
+
+You can name the arguments:
+
+```
+localizable:
+  arguments:
+    "Days since last injury: %@": [numberOfDays]
+    COOKIE_COUNT: [cookies]
+    greetings: [firstName, lastName]
+
+```

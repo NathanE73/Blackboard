@@ -52,7 +52,7 @@ class StoryboardViewControllerTests: XCTestCase {
     </scene>
     """
     
-    // MARK: - Description -
+    // MARK: - Description
     
     func testDescription() {
         // Given
@@ -110,28 +110,27 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertEqual(description, "id: 007, type: tableViewController, storyboardIdentifier: CustomIdentifer, customClass: CustomClass, storyboardName: nil")
     }
     
-    // MARK: - Init With Node -
+    // MARK: - Init With Node
     
-    func testInitWithNode() {
+    func testInitWithNode() throws {
         // Given
         let element = rootElement(of: xml)
         
         // When
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // Then
-        XCTAssertNotNil(controller)
-        XCTAssertEqual(controller?.id, "NOn-MJ-fAW")
-        XCTAssertEqual(controller?.type, .viewController)
-        XCTAssertEqual(controller?.storyboardIdentifier, "CustomStoryboardIdentifier")
-        XCTAssertEqual(controller?.customClass, "CustomClass")
-        XCTAssertEqual(controller?.storyboardName, "OtherStoryboard")
-        XCTAssertEqual(controller?.segues.count, 4)
-        XCTAssertEqual(controller?.tableViewCells.count, 3)
-        XCTAssertEqual(controller?.collectionViewCells.count, 2)
+        XCTAssertEqual(controller.id, "NOn-MJ-fAW")
+        XCTAssertEqual(controller.type, .viewController)
+        XCTAssertEqual(controller.storyboardIdentifier, "CustomStoryboardIdentifier")
+        XCTAssertEqual(controller.customClass, "CustomClass")
+        XCTAssertEqual(controller.storyboardName, "OtherStoryboard")
+        XCTAssertEqual(controller.segues.count, 4)
+        XCTAssertEqual(controller.tableViewCells.count, 3)
+        XCTAssertEqual(controller.collectionViewCells.count, 2)
     }
     
-    func testInitWithNodeWithoutStoryboardIdentifier() {
+    func testInitWithNodeWithoutStoryboardIdentifier() throws {
         // Given
         let xml = """
         <scene>
@@ -142,21 +141,20 @@ class StoryboardViewControllerTests: XCTestCase {
         let element = rootElement(of: xml)
         
         // When
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // Then
-        XCTAssertNotNil(controller)
-        XCTAssertEqual(controller?.id, "NOn-MJ-fAW")
-        XCTAssertEqual(controller?.type, .viewController)
-        XCTAssertNil(controller?.storyboardIdentifier)
-        XCTAssertEqual(controller?.customClass, "CustomClass")
-        XCTAssertNil(controller?.storyboardName)
-        XCTAssertEqual(controller?.segues.count, 0)
-        XCTAssertEqual(controller?.tableViewCells.count, 0)
-        XCTAssertEqual(controller?.collectionViewCells.count, 0)
+        XCTAssertEqual(controller.id, "NOn-MJ-fAW")
+        XCTAssertEqual(controller.type, .viewController)
+        XCTAssertNil(controller.storyboardIdentifier)
+        XCTAssertEqual(controller.customClass, "CustomClass")
+        XCTAssertNil(controller.storyboardName)
+        XCTAssertEqual(controller.segues.count, 0)
+        XCTAssertEqual(controller.tableViewCells.count, 0)
+        XCTAssertEqual(controller.collectionViewCells.count, 0)
     }
     
-    func testInitWithNodeWithoutCustomClass() {
+    func testInitWithNodeWithoutCustomClass() throws {
         // Given
         let xml = """
         <scene>
@@ -167,21 +165,20 @@ class StoryboardViewControllerTests: XCTestCase {
         let element = rootElement(of: xml)
         
         // When
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // Then
-        XCTAssertNotNil(controller)
-        XCTAssertEqual(controller?.id, "NOn-MJ-fAW")
-        XCTAssertEqual(controller?.type, .viewController)
-        XCTAssertEqual(controller?.storyboardIdentifier, "CustomStoryboardIdentifier")
-        XCTAssertNil(controller?.customClass)
-        XCTAssertNil(controller?.storyboardName)
-        XCTAssertEqual(controller?.segues.count, 0)
-        XCTAssertEqual(controller?.tableViewCells.count, 0)
-        XCTAssertEqual(controller?.collectionViewCells.count, 0)
+        XCTAssertEqual(controller.id, "NOn-MJ-fAW")
+        XCTAssertEqual(controller.type, .viewController)
+        XCTAssertEqual(controller.storyboardIdentifier, "CustomStoryboardIdentifier")
+        XCTAssertNil(controller.customClass)
+        XCTAssertNil(controller.storyboardName)
+        XCTAssertEqual(controller.segues.count, 0)
+        XCTAssertEqual(controller.tableViewCells.count, 0)
+        XCTAssertEqual(controller.collectionViewCells.count, 0)
     }
     
-    func testInitWithNodeWithoutStoryboardName() {
+    func testInitWithNodeWithoutStoryboardName() throws {
         // Given
         let xml = """
         <scene>
@@ -192,18 +189,17 @@ class StoryboardViewControllerTests: XCTestCase {
         let element = rootElement(of: xml)
         
         // When
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // Then
-        XCTAssertNotNil(controller)
-        XCTAssertEqual(controller?.id, "NOn-MJ-fAW")
-        XCTAssertEqual(controller?.type, .viewController)
-        XCTAssertEqual(controller?.storyboardIdentifier, "CustomStoryboardIdentifier")
-        XCTAssertEqual(controller?.customClass, "CustomClass")
-        XCTAssertNil(controller?.storyboardName)
-        XCTAssertEqual(controller?.segues.count, 0)
-        XCTAssertEqual(controller?.tableViewCells.count, 0)
-        XCTAssertEqual(controller?.collectionViewCells.count, 0)
+        XCTAssertEqual(controller.id, "NOn-MJ-fAW")
+        XCTAssertEqual(controller.type, .viewController)
+        XCTAssertEqual(controller.storyboardIdentifier, "CustomStoryboardIdentifier")
+        XCTAssertEqual(controller.customClass, "CustomClass")
+        XCTAssertNil(controller.storyboardName)
+        XCTAssertEqual(controller.segues.count, 0)
+        XCTAssertEqual(controller.tableViewCells.count, 0)
+        XCTAssertEqual(controller.collectionViewCells.count, 0)
     }
     
     func testInitWithNodeHavingInvalidElementName() {
@@ -257,19 +253,19 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNil(controller)
     }
     
-    // MARK: - Segue With -
+    // MARK: - Segue With
     
-    func testSegueWithId() {
+    func testSegueWithId() throws {
         // Given
         let element = rootElement(of: xml)
         
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // When
-        let segue0 = controller?.segueWith(id: "id-0")
-        let segue1 = controller?.segueWith(id: "id-1")
+        let segue0 = controller.segueWith(id: "id-0")
+        let segue1 = controller.segueWith(id: "id-1")
         
-        let missingSegue = controller?.segueWith(id: "missing")
+        let missingSegue = controller.segueWith(id: "missing")
         
         // Then
         XCTAssertNotNil(segue0)
@@ -281,16 +277,16 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNil(missingSegue)
     }
     
-    func testSegueWithKind() {
+    func testSegueWithKind() throws {
         // Given
         let element = rootElement(of: xml)
         
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // When
-        let relationshipSegue = controller?.segueWith(kind: .relationship)
+        let relationshipSegue = controller.segueWith(kind: .relationship)
         
-        let missingSegue = controller?.segueWith(kind: .unwind)
+        let missingSegue = controller.segueWith(kind: .unwind)
         
         // Then
         XCTAssertNotNil(relationshipSegue)
@@ -299,19 +295,19 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNil(missingSegue)
     }
     
-    // MARK: - Table View Cell With -
+    // MARK: - Table View Cell With
     
-    func testTableViewCellWithId() {
+    func testTableViewCellWithId() throws {
         // Given
         let element = rootElement(of: xml)
         
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // When
-        let cell0 = controller?.tableViewCellWith(id: "id-0")
-        let cell1 = controller?.tableViewCellWith(id: "id-1")
+        let cell0 = controller.tableViewCellWith(id: "id-0")
+        let cell1 = controller.tableViewCellWith(id: "id-1")
         
-        let missingCell = controller?.tableViewCellWith(id: "missing")
+        let missingCell = controller.tableViewCellWith(id: "missing")
         
         // Then
         XCTAssertNotNil(cell0)
@@ -323,19 +319,19 @@ class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNil(missingCell)
     }
     
-    // MARK: - Collection View Cell With -
+    // MARK: - Collection View Cell With
     
-    func testCollectionViewCellWithId() {
+    func testCollectionViewCellWithId() throws {
         // Given
         let element = rootElement(of: xml)
         
-        let controller = StoryboardViewController(node: element)
+        let controller = try XCTUnwrap(StoryboardViewController(node: element))
         
         // When
-        let cell0 = controller?.collectionViewCellWith(id: "id-0")
-        let cell1 = controller?.collectionViewCellWith(id: "id-1")
+        let cell0 = controller.collectionViewCellWith(id: "id-0")
+        let cell1 = controller.collectionViewCellWith(id: "id-1")
         
-        let missingCell = controller?.collectionViewCellWith(id: "missing")
+        let missingCell = controller.collectionViewCellWith(id: "missing")
         
         // Then
         XCTAssertNotNil(cell0)

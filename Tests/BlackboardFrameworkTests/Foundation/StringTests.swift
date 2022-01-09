@@ -93,7 +93,7 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("\t apple \t".trimmingWhitespaceCharacters, "apple")
     }
     
-    // MARK: - NSString -
+    // MARK: - NSString
     
     func testLastPathComponent() {
         // Given

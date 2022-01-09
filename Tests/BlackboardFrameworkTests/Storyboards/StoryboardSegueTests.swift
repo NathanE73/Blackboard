@@ -28,7 +28,7 @@ import XCTest
 
 class StoryboardSegueTests: XCTestCase {
     
-    // MARK: - Description -
+    // MARK: - Description
     
     func testDescription() {
         // Given
@@ -52,7 +52,7 @@ class StoryboardSegueTests: XCTestCase {
         XCTAssertEqual(description, "id: 007, kind: embed, identifier: nil, destination: diamonds")
     }
     
-    // MARK: - Init With Node -
+    // MARK: - Init With Node
     
     func testInitWithNode() {
         // Given

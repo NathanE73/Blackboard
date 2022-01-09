@@ -28,7 +28,7 @@ import XCTest
 
 class StoryboardTableViewCellTests: XCTestCase {
     
-    // MARK: - Description -
+    // MARK: - Description
     
     func testDescription() {
         // Given
@@ -63,7 +63,7 @@ class StoryboardTableViewCellTests: XCTestCase {
         XCTAssertEqual(description, "id: 007, reuseIdentifier: ShowMovie, customClass: nil")
     }
     
-    // MARK: - Init With Node -
+    // MARK: - Init With Node
     
     func testInitWithNode() {
         // Given

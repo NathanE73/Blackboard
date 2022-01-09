@@ -28,6 +28,8 @@ import Foundation
 // swiftlint:disable:next type_body_length
 public struct BlackboardMain {
     
+    var configurationFile: String
+    
     struct PlatformConfiguration {
         var target: Version
         var sdk: Version
@@ -56,10 +58,18 @@ public struct BlackboardMain {
     struct LocalizableConfiguration {
         var base: String
         var useMainBundle: Bool
+        var includeKeys: [String]
+        var excludeKeys: [String]
+        var keyArguments: [String: [String]]
     }
     var localizable: LocalizableConfiguration
     
+    // swiftlint:disable:next function_body_length
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
+        var configuration = configuration
+        
+        configurationFile = configuration?.file ?? ""
+        
         ios = PlatformConfiguration(
             target: configuration?.ios?.target ?? Version(13, 0),
             sdk: configuration?.ios?.sdk ?? Version(14, 5)
@@ -95,9 +105,27 @@ public struct BlackboardMain {
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
         self.skipValidation = command.skipValidation || skips.contains(.validation)
         
+        if let localizable = configuration?.localizable {
+            if let base = localizable.base {
+                let locale = Locale(identifier: base)
+                guard Locale.availableIdentifiers.contains(locale.identifier) else {
+                    throw BlackboardError.invalidLocalizableBase(base: base)
+                }
+                configuration?.localizable?.base = locale.identifier
+            }
+            
+            if localizable.includeKeys?.isEmpty == false &&
+                localizable.excludeKeys?.isEmpty == false {
+                throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
+            }
+        }
+        
         self.localizable = LocalizableConfiguration(
             base: configuration?.localizable?.base ?? "en",
-            useMainBundle: configuration?.localizable?.useMainBundle ?? false
+            useMainBundle: configuration?.localizable?.useMainBundle ?? false,
+            includeKeys: configuration?.localizable?.includeKeys ?? [],
+            excludeKeys: configuration?.localizable?.excludeKeys ?? [],
+            keyArguments: configuration?.localizable?.keyArguments ?? [:]
         )
     }
     
@@ -326,9 +354,29 @@ public struct BlackboardMain {
             $0.localeDescription.localizedCaseInsensitiveCompare($1.localeDescription) == .orderedAscending
         }
         
-        let blackboardLocalizables = localizables.blackboardLocalizables.sorted {
-            $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending
-        }
+        let includeKeys = localizable.includeKeys
+        let excludeKeys = localizable.excludeKeys
+        let keyArguments = localizable.keyArguments
+        
+        let blackboardLocalizables = localizables.blackboardLocalizables
+            .filter { element in
+                let key = element.key
+                if !includeKeys.isEmpty && !includeKeys.contains(key) {
+                    return false
+                }
+                if excludeKeys.contains(key) {
+                    return false
+                }
+                return true
+            }
+            .map { element -> BlackboardLocalizable in
+                var element = element
+                element.keyArguments = keyArguments[element.key]
+                return element
+            }
+            .sorted {
+                $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending
+            }
         
         guard !blackboardLocalizables.isEmpty else { return [] }
         
@@ -394,6 +442,15 @@ public struct BlackboardMain {
     func validateLocalizables(_ localizables: [BlackboardLocalizable]) {
         guard !skipValidation && !skipLocalizableValidation else { return }
         
+        let keys = Set(localizables.map(\.key))
+        
+        Set(localizable.includeKeys).subtracting(keys).sorted().forEach { key in
+            print("\(configurationFile): warning: invalid localizable include key: '\(key)'")
+        }
+        
+        Set(localizable.keyArguments.keys).subtracting(keys).sorted().forEach { key in
+            print("\(configurationFile): warning: invalid localizable arguments key: '\(key)'")
+        }
     }
     
 }

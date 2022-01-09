@@ -27,6 +27,8 @@ import Yams
 
 struct BlackboardConfiguration: Decodable {
     
+    var file: String?
+    
     struct PlatformConfiguration: Decodable {
         var target: Version?
         var sdk: Version?
@@ -58,10 +60,16 @@ struct BlackboardConfiguration: Decodable {
     struct LocalizableConfiguration: Decodable {
         var base: String?
         var useMainBundle: Bool?
+        var includeKeys: [String]?
+        var excludeKeys: [String]?
+        var keyArguments: [String: [String]]?
         
         enum CodingKeys: String, CodingKey {
             case base
             case useMainBundle = "use-main-bundle"
+            case includeKeys = "include"
+            case excludeKeys = "exclude"
+            case keyArguments = "arguments"
         }
     }
     var localizable: LocalizableConfiguration?
@@ -108,6 +116,7 @@ extension BlackboardConfiguration {
             let data = try Data(contentsOf: url)
             
             self = try YAMLDecoder().decode(Self.self, from: data)
+            self.file = file
         } catch {
             throw BlackboardError.invalidConfiguration(file: file)
         }

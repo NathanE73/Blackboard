@@ -999,9 +999,12 @@ class BlackboardMainTests: XCTestCase {
         
         XCTAssertEqual(main.localizable.base, "en")
         XCTAssertEqual(main.localizable.useMainBundle, false)
+        XCTAssertEqual(main.localizable.includeKeys, [])
+        XCTAssertEqual(main.localizable.excludeKeys, [])
+        XCTAssertEqual(main.localizable.keyArguments, [:])
     }
     
-    func testConfigurationLocalizableConfiguration() throws {
+    func testCustomLocalizableConfiguration() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
         command.output = "DeclarativeApp/Source/Generated"
@@ -1009,12 +1012,87 @@ class BlackboardMainTests: XCTestCase {
         var configuration = BlackboardConfiguration()
         configuration.localizable = .init(
             base: "en_CA",
-            useMainBundle: true)
+            useMainBundle: true
+        )
         
         let main = try BlackboardMain(command, configuration)
         
         XCTAssertEqual(main.localizable.base, "en_CA")
         XCTAssertEqual(main.localizable.useMainBundle, true)
+        XCTAssertEqual(main.localizable.includeKeys, [])
+        XCTAssertEqual(main.localizable.excludeKeys, [])
+        XCTAssertEqual(main.localizable.keyArguments, [:])
+    }
+    
+    func testCustomLocalizableIncludeKeysConfiguration() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        var configuration = BlackboardConfiguration()
+        configuration.localizable = .init(
+            base: "en_CA",
+            useMainBundle: true,
+            includeKeys: ["greetings", "one_hundred_percent"]
+        )
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertEqual(main.localizable.base, "en_CA")
+        XCTAssertEqual(main.localizable.useMainBundle, true)
+        XCTAssertEqual(main.localizable.includeKeys, ["greetings", "one_hundred_percent"])
+        XCTAssertEqual(main.localizable.excludeKeys, [])
+        XCTAssertEqual(main.localizable.keyArguments, [:])
+    }
+    
+    func testCustomLocalizableExcludeKeysConfiguration() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        var configuration = BlackboardConfiguration()
+        configuration.localizable = .init(
+            base: "en_CA",
+            useMainBundle: true,
+            excludeKeys: ["photoRedCup"]
+        )
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertEqual(main.localizable.base, "en_CA")
+        XCTAssertEqual(main.localizable.useMainBundle, true)
+        XCTAssertEqual(main.localizable.includeKeys, [])
+        XCTAssertEqual(main.localizable.excludeKeys, ["photoRedCup"])
+        XCTAssertEqual(main.localizable.keyArguments, [:])
+    }
+    
+    func testCustomLocalizableKeyArgumentsConfiguration() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        var configuration = BlackboardConfiguration()
+        configuration.localizable = .init(
+            base: "en_CA",
+            useMainBundle: true,
+            keyArguments: [
+                    "Days since last injury: %@": ["days"],
+                    "COOKIE_COUNT": ["numberOfCookies"],
+                    "greetings": ["firstName", "lastName"]
+            ]
+        )
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertEqual(main.localizable.base, "en_CA")
+        XCTAssertEqual(main.localizable.useMainBundle, true)
+        XCTAssertEqual(main.localizable.includeKeys, [])
+        XCTAssertEqual(main.localizable.excludeKeys, [])
+        XCTAssertEqual(main.localizable.keyArguments, [
+            "Days since last injury: %@": ["days"],
+            "COOKIE_COUNT": ["numberOfCookies"],
+            "greetings": ["firstName", "lastName"]
+        ])
     }
     
 }

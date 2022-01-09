@@ -25,9 +25,9 @@
 import XCTest
 @testable import BlackboardFramework
 
-// MARK: - XMLDocument -
-
 extension XCTestCase {
+    
+    // MARK: - XMLDocument
     
     func document(of xmlString: String, file: StaticString = #file, line: UInt = #line) -> XMLDocument? {
         do {
