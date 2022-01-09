@@ -98,6 +98,13 @@ public struct BlackboardMain {
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
         self.skipValidation = command.skipValidation || skips.contains(.validation)
         
+        if let localizable = configuration?.localizable {
+            if localizable.includeKeys?.isEmpty == false &&
+                localizable.excludeKeys?.isEmpty == false {
+                throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
+            }
+        }
+        
         self.localizable = LocalizableConfiguration(
             base: configuration?.localizable?.base ?? "en",
             useMainBundle: configuration?.localizable?.useMainBundle ?? false,

@@ -30,6 +30,7 @@ enum BlackboardError: Error, CustomStringConvertible {
     case missingOutput
     case invalidInputDirectory(directory: String)
     case invalidOutputDirectory(directory: String)
+    case invalidLocalizableIncludeAndExcludeProvided
     
     var description: String {
         switch self {
@@ -43,6 +44,8 @@ enum BlackboardError: Error, CustomStringConvertible {
             return "Error: No such input directory: \(directory)"
         case .invalidOutputDirectory(let directory):
             return "Error: No such output directory: \(directory)"
+        case .invalidLocalizableIncludeAndExcludeProvided:
+            return "Error: Either include or exclude of localizable keys can be provided not both"
         }
     }
 }
