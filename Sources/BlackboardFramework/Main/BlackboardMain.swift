@@ -64,6 +64,7 @@ public struct BlackboardMain {
     }
     var localizable: LocalizableConfiguration
     
+    // swiftlint:disable:next function_body_length
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
         var configuration = configuration
         

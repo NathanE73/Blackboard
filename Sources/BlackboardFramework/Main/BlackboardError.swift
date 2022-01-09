@@ -30,6 +30,7 @@ enum BlackboardError: Error, CustomStringConvertible {
     case missingOutput
     case invalidInputDirectory(directory: String)
     case invalidOutputDirectory(directory: String)
+    // swiftlint:disable:next identifier_name
     case invalidLocalizableIncludeAndExcludeProvided
     case invalidLocalizableBase(base: String)
     
