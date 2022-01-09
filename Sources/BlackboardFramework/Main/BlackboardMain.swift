@@ -28,6 +28,8 @@ import Foundation
 // swiftlint:disable:next type_body_length
 public struct BlackboardMain {
     
+    var configurationFile: String
+    
     struct PlatformConfiguration {
         var target: Version
         var sdk: Version
@@ -64,6 +66,8 @@ public struct BlackboardMain {
     
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
         var configuration = configuration
+        
+        configurationFile = configuration?.file ?? ""
         
         ios = PlatformConfiguration(
             target: configuration?.ios?.target ?? Version(13, 0),
@@ -437,6 +441,11 @@ public struct BlackboardMain {
     func validateLocalizables(_ localizables: [BlackboardLocalizable]) {
         guard !skipValidation && !skipLocalizableValidation else { return }
         
+        let keys = Set(localizables.map(\.key))
+        
+        Set(localizable.includeKeys).subtracting(keys).sorted().forEach { key in
+            print("\(configurationFile): warning: invalid localizable include key: '\(key)'")
+        }
     }
     
 }

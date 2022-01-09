@@ -27,6 +27,8 @@ import Yams
 
 struct BlackboardConfiguration: Decodable {
     
+    var file: String?
+    
     struct PlatformConfiguration: Decodable {
         var target: Version?
         var sdk: Version?
@@ -114,6 +116,7 @@ extension BlackboardConfiguration {
             let data = try Data(contentsOf: url)
             
             self = try YAMLDecoder().decode(Self.self, from: data)
+            self.file = file
         } catch {
             throw BlackboardError.invalidConfiguration(file: file)
         }
