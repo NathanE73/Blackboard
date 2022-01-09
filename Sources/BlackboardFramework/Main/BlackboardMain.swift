@@ -63,6 +63,8 @@ public struct BlackboardMain {
     var localizable: LocalizableConfiguration
     
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
+        var configuration = configuration
+        
         ios = PlatformConfiguration(
             target: configuration?.ios?.target ?? Version(13, 0),
             sdk: configuration?.ios?.sdk ?? Version(14, 5)
@@ -102,6 +104,14 @@ public struct BlackboardMain {
             if localizable.includeKeys?.isEmpty == false &&
                 localizable.excludeKeys?.isEmpty == false {
                 throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
+            }
+            
+            if let base = localizable.base {
+                let locale = Locale(identifier: base)
+                guard Locale.availableIdentifiers.contains(locale.identifier) else {
+                    throw BlackboardError.invalidLocalizableBase(base: base)
+                }
+                configuration?.localizable?.base = locale.identifier
             }
         }
         
