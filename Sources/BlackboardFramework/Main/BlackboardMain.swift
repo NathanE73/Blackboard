@@ -447,6 +447,10 @@ public struct BlackboardMain {
         Set(localizable.includeKeys).subtracting(keys).sorted().forEach { key in
             print("\(configurationFile): warning: invalid localizable include key: '\(key)'")
         }
+        
+        Set(localizable.keyArguments.keys).subtracting(keys).sorted().forEach { key in
+            print("\(configurationFile): warning: invalid localizable arguments key: '\(key)'")
+        }
     }
     
 }
