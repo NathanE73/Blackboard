@@ -106,17 +106,17 @@ public struct BlackboardMain {
         self.skipValidation = command.skipValidation || skips.contains(.validation)
         
         if let localizable = configuration?.localizable {
-            if localizable.includeKeys?.isEmpty == false &&
-                localizable.excludeKeys?.isEmpty == false {
-                throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
-            }
-            
             if let base = localizable.base {
                 let locale = Locale(identifier: base)
                 guard Locale.availableIdentifiers.contains(locale.identifier) else {
                     throw BlackboardError.invalidLocalizableBase(base: base)
                 }
                 configuration?.localizable?.base = locale.identifier
+            }
+            
+            if localizable.includeKeys?.isEmpty == false &&
+                localizable.excludeKeys?.isEmpty == false {
+                throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
             }
         }
         
