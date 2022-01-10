@@ -25,15 +25,10 @@
 import ArgumentParser
 import Foundation
 
-// swiftlint:disable:next type_body_length
 public struct BlackboardMain {
     
     var configurationFile: String
     
-    struct PlatformConfiguration {
-        var target: Version
-        var sdk: Version
-    }
     var ios: PlatformConfiguration
     
     var input: [String]
@@ -55,25 +50,12 @@ public struct BlackboardMain {
     var skipUIKit: Bool
     var skipValidation: Bool
     
-    struct LocalizableConfiguration {
-        var base: String
-        var useMainBundle: Bool
-        var includeKeys: [String]
-        var excludeKeys: [String]
-        var keyArguments: [String: [String]]
-    }
     var localizable: LocalizableConfiguration
     
-    // swiftlint:disable:next function_body_length
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
-        var configuration = configuration
-        
         configurationFile = configuration?.file ?? ""
         
-        ios = PlatformConfiguration(
-            target: configuration?.ios?.target ?? Version(13, 0),
-            sdk: configuration?.ios?.sdk ?? Version(14, 5)
-        )
+        ios = PlatformConfiguration(using: configuration)
         
         if !command.input.isEmpty {
             self.input = command.input
@@ -105,28 +87,7 @@ public struct BlackboardMain {
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
         self.skipValidation = command.skipValidation || skips.contains(.validation)
         
-        if let localizable = configuration?.localizable {
-            if let base = localizable.base {
-                let locale = Locale(identifier: base)
-                guard Locale.availableIdentifiers.contains(locale.identifier) else {
-                    throw BlackboardError.invalidLocalizableBase(base: base)
-                }
-                configuration?.localizable?.base = locale.identifier
-            }
-            
-            if localizable.includeKeys?.isEmpty == false &&
-                localizable.excludeKeys?.isEmpty == false {
-                throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
-            }
-        }
-        
-        self.localizable = LocalizableConfiguration(
-            base: configuration?.localizable?.base ?? "en",
-            useMainBundle: configuration?.localizable?.useMainBundle ?? false,
-            includeKeys: configuration?.localizable?.includeKeys ?? [],
-            excludeKeys: configuration?.localizable?.excludeKeys ?? [],
-            keyArguments: configuration?.localizable?.keyArguments ?? [:]
-        )
+        self.localizable = try LocalizableConfiguration(using: configuration)
     }
     
     public static func main() {
@@ -196,261 +157,6 @@ public struct BlackboardMain {
         // Validate Localizable Resources
         
         validateLocalizables(localizables)
-    }
-    
-    private func processSymbols(_ symbols: Set<String>, _ output: String) {
-        guard !skipSymbols else { return }
-        
-        var blackboardSymbols = BlackboardSymbolFactory()
-            .symbols(for: symbols)
-        blackboardSymbols.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
-        
-        guard !blackboardSymbols.isEmpty else {
-            return
-        }
-        
-        if !skipSwiftUI || !skipUIKit {
-            SwiftSourceFile(Filename.SymbolAsset, at: output)
-                .appendSymbolAssets(symbols: blackboardSymbols, target: ios.target)
-                .write()
-        }
-        
-        if !skipSwiftUI {
-            SwiftSourceFile(Filename.SymbolImage, at: output)
-                .appendSymbolImages(symbols: blackboardSymbols, target: ios.target, sdk: ios.sdk)
-                .write()
-        }
-        
-        if !skipUIKit {
-            SwiftSourceFile(Filename.SymbolUIImage, at: output)
-                .appendSymbolUIImages(symbols: blackboardSymbols, target: ios.target)
-                .write()
-        }
-    }
-    
-    private func processStoryboards(_ input: [String], _ output: String) -> [Storyboard] {
-        guard !skipStoryboards else { return [] }
-        
-        let storyboards = Storyboard.storyboardsAt(paths: input)
-        
-        var storyboardExtensionsWereGenerated = false
-        
-        for storyboard in storyboards {
-            if let storyboard = BlackboardStoryboard(storyboard, storyboards: storyboards) {
-                storyboardExtensionsWereGenerated = true
-                SwiftSourceFile(storyboard.extensionFilename, at: output)
-                    .appendStoryboard(storyboard)
-                    .write()
-            }
-        }
-        
-        // UIKit
-        
-        if storyboardExtensionsWereGenerated {
-            SwiftSourceFile(Filename.UIKit, at: output)
-                .append(source: UIKitSwiftSource)
-                .write()
-        }
-        
-        return storyboards
-    }
-    
-    private func processColors(_ input: [String], _ output: String) -> [ColorSet] {
-        guard !skipColors else { return [] }
-        
-        let colorSets = ColorSetFactory().colorSetsAt(paths: input)
-        
-        var blackboardColors = colorSets.compactMap(BlackboardColor.init)
-        blackboardColors.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
-        
-        guard !blackboardColors.isEmpty else {
-            return []
-        }
-        
-        if !skipSwiftUI || !skipUIKit {
-            SwiftSourceFile(Filename.ColorAsset, at: output)
-                .appendColorAssets(colors: blackboardColors)
-                .write()
-            
-            SwiftSourceFile(Filename.CGColor, at: output)
-                .appendCGColors(colors: blackboardColors)
-                .write()
-        }
-        
-        if !skipSwiftUI {
-            SwiftSourceFile(Filename.Color, at: output)
-                .appendColors(colors: blackboardColors, target: ios.target)
-                .write()
-        }
-        
-        if !skipUIKit {
-            SwiftSourceFile(Filename.UIColor, at: output)
-                .appendUIColors(colors: blackboardColors)
-                .write()
-        }
-        
-        return colorSets
-    }
-    
-    private func processDataAssets(_ input: [String], _ output: String) {
-        guard !skipDataAssets else { return }
-        
-        let dataSets = DataSetFactory().dataSetsAt(paths: input)
-        
-        let blackboardData = dataSets.compactMap(BlackboardData.init)
-            .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
-        
-        guard !blackboardData.isEmpty else {
-            return
-        }
-        
-        SwiftSourceFile(Filename.DataAsset, at: output)
-            .appendDataAssets(data: blackboardData)
-            .write()
-        
-        SwiftSourceFile(Filename.NSDataAsset, at: output)
-            .appendNSDataAsset(data: blackboardData)
-            .write()
-    }
-    
-    private func processImages(_ input: [String], _ output: String) -> [ImageSet] {
-        guard !skipImages else { return [] }
-        
-        let imageSets = ImageSetFactory().imageSetsAt(paths: input)
-        
-        let blackboardImages = imageSets.compactMap(BlackboardImage.init)
-            .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
-        
-        guard !blackboardImages.isEmpty else {
-            return []
-        }
-        
-        if !skipSwiftUI || !skipUIKit {
-            SwiftSourceFile(Filename.ImageAsset, at: output)
-                .appendImageAssets(images: blackboardImages)
-                .write()
-        }
-        
-        if !skipSwiftUI {
-            SwiftSourceFile(Filename.Image, at: output)
-                .appendImages(images: blackboardImages, target: ios.target, sdk: ios.sdk)
-                .write()
-        }
-        
-        if !skipUIKit {
-            SwiftSourceFile(Filename.UIImage, at: output)
-                .appendUIImages(images: blackboardImages)
-                .write()
-        }
-        
-        return imageSets
-    }
-    
-    func processLocalizable(_ input: [String], _ output: String) -> [BlackboardLocalizable] {
-        guard !skipLocalizable else { return [] }
-        
-        let localizables = LocalizableFactory().localizablesAt(paths: input).sorted {
-            $0.localeCode == localizable.base ||
-            $0.localeDescription.localizedCaseInsensitiveCompare($1.localeDescription) == .orderedAscending
-        }
-        
-        let includeKeys = localizable.includeKeys
-        let excludeKeys = localizable.excludeKeys
-        let keyArguments = localizable.keyArguments
-        
-        let blackboardLocalizables = localizables.blackboardLocalizables
-            .filter { element in
-                let key = element.key
-                if !includeKeys.isEmpty && !includeKeys.contains(key) {
-                    return false
-                }
-                if excludeKeys.contains(key) {
-                    return false
-                }
-                return true
-            }
-            .map { element -> BlackboardLocalizable in
-                var element = element
-                element.keyArguments = keyArguments[element.key]
-                return element
-            }
-            .sorted {
-                $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending
-            }
-        
-        guard !blackboardLocalizables.isEmpty else { return [] }
-        
-        SwiftSourceFile(Filename.Localizable, at: output)
-            .appendLocalizable(
-                localizables: blackboardLocalizables,
-                useMainBundle: localizable.useMainBundle)
-            .write()
-        
-        return blackboardLocalizables
-    }
-    
-    func valiateStoryboards(_ storyboards: [Storyboard], _ colorSets: [ColorSet], _ imageSets: [ImageSet]) {
-        guard !skipValidation && !skipStoryboardValidation else { return }
-        
-        let knownNamedColors = Set(colorSets.map(\.name))
-        let knownNamedImages = Set(imageSets.map(\.name))
-        
-        storyboards.forEach { storyboard in
-            if !skipColors {
-                Set(storyboard.namedColorResources)
-                    .subtracting(knownNamedColors)
-                    .forEach { missing in
-                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing color named: '\(missing)'")
-                    }
-            }
-            if !skipImages {
-                Set(storyboard.namedImageResources)
-                    .subtracting(knownNamedImages)
-                    .forEach { missing in
-                        print("\(storyboard.file): warning: '\(storyboard.name).storyboard' references missing image named: '\(missing)'")
-                    }
-            }
-        }
-    }
-    
-    func valiateNibs(_ input: [String], _ colorSets: [ColorSet], _ imageSets: [ImageSet]) {
-        guard !skipValidation && !skipNibValidation else { return }
-        
-        let nibs = Nib.nibsAt(paths: input)
-        
-        let knownNamedColors = Set(colorSets.map(\.name))
-        let knownNamedImages = Set(imageSets.map(\.name))
-        
-        nibs.forEach { nib in
-            if !skipColors {
-                Set(nib.namedColorResources)
-                    .subtracting(knownNamedColors)
-                    .forEach { missing in
-                        print("\(nib.file): warning: '\(nib.name).xib' references missing color named: '\(missing)'")
-                    }
-            }
-            if !skipImages {
-                Set(nib.namedImageResources)
-                    .subtracting(knownNamedImages)
-                    .forEach { missing in
-                        print("\(nib.file): warning: '\(nib.name).xib' references missing image named: '\(missing)'")
-                    }
-            }
-        }
-    }
-    
-    func validateLocalizables(_ localizables: [BlackboardLocalizable]) {
-        guard !skipValidation && !skipLocalizableValidation else { return }
-        
-        let keys = Set(localizables.map(\.key))
-        
-        Set(localizable.includeKeys).subtracting(keys).sorted().forEach { key in
-            print("\(configurationFile): warning: invalid localizable include key: '\(key)'")
-        }
-        
-        Set(localizable.keyArguments.keys).subtracting(keys).sorted().forEach { key in
-            print("\(configurationFile): warning: invalid localizable arguments key: '\(key)'")
-        }
     }
     
 }
