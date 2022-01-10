@@ -29,10 +29,6 @@ public struct BlackboardMain {
     
     var configurationFile: String
     
-    struct PlatformConfiguration {
-        var target: Version
-        var sdk: Version
-    }
     var ios: PlatformConfiguration
     
     var input: [String]
@@ -69,10 +65,7 @@ public struct BlackboardMain {
         
         configurationFile = configuration?.file ?? ""
         
-        ios = PlatformConfiguration(
-            target: configuration?.ios?.target ?? Version(13, 0),
-            sdk: configuration?.ios?.sdk ?? Version(14, 5)
-        )
+        ios = PlatformConfiguration(using: configuration)
         
         if !command.input.isEmpty {
             self.input = command.input
