@@ -50,19 +50,10 @@ public struct BlackboardMain {
     var skipUIKit: Bool
     var skipValidation: Bool
     
-    struct LocalizableConfiguration {
-        var base: String
-        var useMainBundle: Bool
-        var includeKeys: [String]
-        var excludeKeys: [String]
-        var keyArguments: [String: [String]]
-    }
     var localizable: LocalizableConfiguration
     
     // swiftlint:disable:next function_body_length
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
-        var configuration = configuration
-        
         configurationFile = configuration?.file ?? ""
         
         ios = PlatformConfiguration(using: configuration)
@@ -97,28 +88,7 @@ public struct BlackboardMain {
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
         self.skipValidation = command.skipValidation || skips.contains(.validation)
         
-        if let localizable = configuration?.localizable {
-            if let base = localizable.base {
-                let locale = Locale(identifier: base)
-                guard Locale.availableIdentifiers.contains(locale.identifier) else {
-                    throw BlackboardError.invalidLocalizableBase(base: base)
-                }
-                configuration?.localizable?.base = locale.identifier
-            }
-            
-            if localizable.includeKeys?.isEmpty == false &&
-                localizable.excludeKeys?.isEmpty == false {
-                throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
-            }
-        }
-        
-        self.localizable = LocalizableConfiguration(
-            base: configuration?.localizable?.base ?? "en",
-            useMainBundle: configuration?.localizable?.useMainBundle ?? false,
-            includeKeys: configuration?.localizable?.includeKeys ?? [],
-            excludeKeys: configuration?.localizable?.excludeKeys ?? [],
-            keyArguments: configuration?.localizable?.keyArguments ?? [:]
-        )
+        self.localizable = try LocalizableConfiguration(using: configuration)
     }
     
     public static func main() {
