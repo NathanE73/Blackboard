@@ -23,13 +23,13 @@ public enum L {
     public static var accountTypeSavings: String
     
     /// English: Number of cookies: %d
-    public static func cookieCount(arg1: CVarArg) -> String
+    public static func cookieCount(cookies: CVarArg) -> String
     
     /// English: Days since last injury: %@
-    public static func daysSinceLastInjury(arg1: String) -> String
+    public static func daysSinceLastInjury(numberOfDays: String) -> String
     
     /// English: Greetings, %@ %@!
-    public static func greetings(arg1: String, arg2: String) -> String
+    public static func greetings(firstName: String, lastName: String) -> String
     
     /// English: Seven
     public static var number7: String

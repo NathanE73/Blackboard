@@ -57,5 +57,9 @@ public enum Localizable: String {
     /// English: Will it rain today?
     case willItRainToday = "Will it rain today?"
     
+    var localizedString: String
+    
+    func localizedString(arguments: CVarArg...) -> String
+    
 }
 ```
