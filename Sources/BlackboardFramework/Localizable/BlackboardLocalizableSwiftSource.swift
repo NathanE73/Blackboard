@@ -44,7 +44,7 @@ extension SwiftSource {
             }
             append()
             append("var localizedString: String") {
-                let bundle = useMainBundle ? "Main.bundle" : "bundle"
+                let bundle = useMainBundle ? "Bundle.main" : "bundle"
                 append("\(bundle).localizedString(forKey: rawValue, value: nil, table: nil)")
             }
             append()
