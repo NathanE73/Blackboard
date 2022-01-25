@@ -29,8 +29,8 @@ extension BlackboardMain {
     struct LocalizableConfiguration {
         var base: String
         var useMainBundle: Bool
-        var includeKeys: [String]
-        var excludeKeys: [String]
+        var includeKeys: Set<String>
+        var excludeKeys: Set<String>
         var keyArguments: [String: [String]]
     }
     
@@ -57,12 +57,22 @@ extension BlackboardMain.LocalizableConfiguration {
             }
         }
         
+        let base = configuration?.localizable?.base ?? "en"
+        let useMainBundle = configuration?.localizable?.useMainBundle ?? false
+        var includeKeys = Set(configuration?.localizable?.includeKeys ?? [])
+        let excludeKeys = Set(configuration?.localizable?.excludeKeys ?? [])
+        let keyArguments = configuration?.localizable?.keyArguments ?? [:]
+        
+        if !includeKeys.isEmpty {
+            includeKeys.formUnion(keyArguments.keys)
+        }
+        
         self.init(
-            base: configuration?.localizable?.base ?? "en",
-            useMainBundle: configuration?.localizable?.useMainBundle ?? false,
-            includeKeys: configuration?.localizable?.includeKeys ?? [],
-            excludeKeys: configuration?.localizable?.excludeKeys ?? [],
-            keyArguments: configuration?.localizable?.keyArguments ?? [:]
+            base: base,
+            useMainBundle: useMainBundle,
+            includeKeys: includeKeys,
+            excludeKeys: excludeKeys,
+            keyArguments: keyArguments
         )
     }
     
