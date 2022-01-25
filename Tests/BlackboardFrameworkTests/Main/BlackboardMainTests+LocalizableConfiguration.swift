@@ -135,4 +135,39 @@ extension BlackboardMainTests {
         ])
     }
     
+    func testConfigurationLocalizableWithIncludeKeysAndKeyArgumentsConfiguration() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        var configuration = BlackboardConfiguration()
+        configuration.localizable = .init(
+            base: "en_CA",
+            useMainBundle: true,
+            includeKeys: ["greetings", "one_hundred_percent"],
+            keyArguments: [
+                    "Days since last injury: %@": ["days"],
+                    "COOKIE_COUNT": ["numberOfCookies"],
+                    "greetings": ["firstName", "lastName"]
+            ]
+        )
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertEqual(main.localizable.base, "en_CA")
+        XCTAssertEqual(main.localizable.useMainBundle, true)
+        XCTAssertEqual(main.localizable.includeKeys, [
+            "COOKIE_COUNT",
+            "Days since last injury: %@",
+            "greetings",
+            "one_hundred_percent"
+        ])
+        XCTAssertEqual(main.localizable.excludeKeys, [])
+        XCTAssertEqual(main.localizable.keyArguments, [
+            "Days since last injury: %@": ["days"],
+            "COOKIE_COUNT": ["numberOfCookies"],
+            "greetings": ["firstName", "lastName"]
+        ])
+    }
+    
 }

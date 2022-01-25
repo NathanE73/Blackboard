@@ -74,7 +74,7 @@ extension BlackboardMain {
         
         let keys = Set(localizables.map(\.key))
         
-        Set(localizable.includeKeys).subtracting(keys).sorted().forEach { key in
+        localizable.includeKeys.subtracting(keys).sorted().forEach { key in
             print("\(configurationFile): warning: invalid localizable include key: '\(key)'")
         }
         
