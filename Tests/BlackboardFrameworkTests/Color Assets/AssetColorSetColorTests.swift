@@ -31,17 +31,7 @@ class AssetColorSetColorTests: XCTestCase {
     func testDecodable() {
         let json = """
           {
-            "idiom" : "ipad",
-            "color" : {
-              "color-space" : "srgb",
-              "components" : {
-                "red" : 0.3137254901960784,
-                "green" : 0.7843137254901961,
-                "blue" : 0.4705882352941176,
-                "alpha" : 1
-              }
-            },
-            "display-gamut": "display-P3"
+            "idiom" : "ipad"
           }
         """
         let data = Data(json.utf8)
@@ -49,37 +39,7 @@ class AssetColorSetColorTests: XCTestCase {
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
             
-            XCTAssertEqual(color.displayGamut, .displayP3)
             XCTAssertEqual(color.idiom, .ipad)
-            XCTAssertNotNil(color.color)
-        }
-        catch {
-            XCTFail(error.localizedDescription)
-        }
-    }
-    
-    func testDefaultDisplayGamut() {
-        let json = """
-          {
-            "color" : {
-              "color-space" : "srgb",
-              "components" : {
-                "red" : 0.3137254901960784,
-                "green" : 0.7843137254901961,
-                "blue" : 0.4705882352941176,
-                "alpha" : 1
-              }
-            }
-          }
-        """
-        let data = Data(json.utf8)
-        
-        do {
-            let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
-            
-            XCTAssertEqual(color.displayGamut, .srgb)
-            XCTAssertEqual(color.idiom, .universal)
-            XCTAssertNotNil(color.color)
         }
         catch {
             XCTFail(error.localizedDescription)
@@ -89,15 +49,6 @@ class AssetColorSetColorTests: XCTestCase {
     func testDefaultIdiom() {
         let json = """
           {
-            "color" : {
-              "color-space" : "srgb",
-              "components" : {
-                "red" : 0.3137254901960784,
-                "green" : 0.7843137254901961,
-                "blue" : 0.4705882352941176,
-                "alpha" : 1
-              }
-            }
           }
         """
         let data = Data(json.utf8)
@@ -106,18 +57,10 @@ class AssetColorSetColorTests: XCTestCase {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
             
             XCTAssertEqual(color.idiom, .universal)
-            XCTAssertNotNil(color.color)
         }
         catch {
             XCTFail(error.localizedDescription)
         }
-    }
-    
-    func testColorSpaceRawValues() {
-        let colorSpace = AssetColorSet.Color.DisplayGamut.self
-        
-        XCTAssertEqual(colorSpace.srgb.rawValue, "sRGB")
-        XCTAssertEqual(colorSpace.displayP3.rawValue, "display-P3")
     }
     
 }

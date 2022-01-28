@@ -64,7 +64,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
         let source = SwiftSource()
             .appendColorAssets(colors: blackboardColors)
             .source
-
+        
         XCTAssertEqual(source, expectedSource)
     }
     
@@ -84,7 +84,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
         let source = SwiftSource()
             .appendCGColors(colors: blackboardColors)
             .source
-
+        
         XCTAssertEqual(source, expectedSource)
     }
     
@@ -94,7 +94,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
         let source = SwiftSource()
             .appendUIColors(colors: blackboardColors)
             .source
-
+        
         XCTAssertEqual(source, expectedSource)
     }
     
