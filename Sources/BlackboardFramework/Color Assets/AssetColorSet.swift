@@ -32,105 +32,15 @@ struct AssetColorSet: Decodable {
 extension AssetColorSet {
     
     struct Color: Decodable {
-        var displayGamut: DisplayGamut
         var idiom: AssetIdiom
-        var color: Color
         
         enum CodingKeys: String, CodingKey {
-            case displayGamut = "display-gamut"
             case idiom
-            case color
         }
         
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            displayGamut = try container.decodeIfPresent(DisplayGamut.self, forKey: .displayGamut) ?? .srgb
             idiom = try container.decodeIfPresent(AssetIdiom.self, forKey: .idiom) ?? .universal
-            color = try container.decode(Color.self, forKey: .color)
-        }
-    }
-    
-}
-
-extension AssetColorSet.Color {
-    
-    enum DisplayGamut: String, Decodable {
-        case srgb = "sRGB"
-        case displayP3 = "display-P3"
-    }
-    
-}
-
-extension AssetColorSet.Color {
-    
-    struct Color: Decodable {
-        var colorSpace: ColorSpace
-        var components: Components
-        
-        enum CodingKeys: String, CodingKey {
-            case colorSpace = "color-space"
-            case components
-        }
-        
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            colorSpace = try container.decodeIfPresent(ColorSpace.self, forKey: .colorSpace) ?? .srgb
-            components = try container.decode(Components.self, forKey: .components)
-        }
-    }
-    
-}
-
-extension AssetColorSet.Color.Color {
-    
-    enum ColorSpace: String, Decodable {
-        case srgb
-        case displayP3 = "display-p3"
-        case extendedSrgb = "extended-srgb"
-        case extendedLinearSrgb = "extended-linear-srgb"
-        case grayGamma22 = "gray-gamma-22"
-        case extendedGray = "extended-gray"
-    }
-    
-}
-
-extension AssetColorSet.Color.Color {
-    
-    struct Components: Decodable {
-        var red: Double
-        var green: Double
-        var blue: Double
-        var alpha: Double
-        
-        enum CodingKeys: String, CodingKey {
-            case red
-            case green
-            case blue
-            case alpha
-        }
-        
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            
-            let decode: (CodingKeys) throws -> Double = { key in
-                if let string = try? container.decode(String.self, forKey: key) {
-                    if string.lowercased().starts(with: "0x") {
-                        if let color = Int(string.dropFirst(2), radix: 16) {
-                            return Double(color) / 255
-                        }
-                    } else if let color = Int(string) {
-                        return Double(color) / 255
-                    } else if let color = Double(string) {
-                        return color
-                    }
-                }
-                return try container.decode(Double.self, forKey: key)
-            }
-            
-            red = try decode(.red)
-            green = try decode(.green)
-            blue = try decode(.blue)
-            alpha = try decode(.alpha)
         }
     }
     
