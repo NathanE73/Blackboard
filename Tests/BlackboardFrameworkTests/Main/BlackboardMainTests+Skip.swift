@@ -51,6 +51,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -74,6 +77,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -98,6 +104,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -124,6 +133,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -147,6 +159,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -171,6 +186,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -197,6 +215,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -220,6 +241,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -244,6 +268,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -270,6 +297,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -293,6 +323,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -317,6 +350,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -343,6 +379,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -366,6 +405,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -390,6 +432,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -416,6 +461,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -439,6 +487,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -463,6 +514,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -489,6 +543,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -512,6 +569,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -536,6 +596,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -562,6 +625,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -585,6 +651,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -609,6 +678,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -635,6 +707,9 @@ extension BlackboardMainTests {
         XCTAssertTrue(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -658,6 +733,9 @@ extension BlackboardMainTests {
         XCTAssertTrue(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -682,6 +760,9 @@ extension BlackboardMainTests {
         XCTAssertTrue(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -708,6 +789,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertTrue(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -731,6 +815,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertTrue(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -755,6 +842,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertTrue(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -781,6 +871,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertTrue(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -804,6 +897,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertTrue(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -828,6 +924,93 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertTrue(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
+        XCTAssertFalse(main.skipValidation)
+    }
+    
+    // MARK: - Skip UIKit Colors Tests
+    
+    func testConfigurationSkipUIKitColors() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        let configuration = BlackboardConfiguration(skips: [.uikitColors])
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertFalse(main.skipColors)
+        XCTAssertFalse(main.skipDataAssets)
+        XCTAssertFalse(main.skipImages)
+        XCTAssertFalse(main.skipLocalizable)
+        XCTAssertFalse(main.skipLocalizableValidation)
+        XCTAssertFalse(main.skipNibValidation)
+        XCTAssertFalse(main.skipStoryboards)
+        XCTAssertFalse(main.skipStoryboardValidation)
+        XCTAssertFalse(main.skipSwiftUI)
+        XCTAssertFalse(main.skipSymbols)
+        XCTAssertFalse(main.skipUIKit)
+        XCTAssertTrue(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
+        XCTAssertFalse(main.skipValidation)
+    }
+        
+    // MARK: - Skip UIKit Images Tests
+    
+    func testConfigurationSkipUIKitImages() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        let configuration = BlackboardConfiguration(skips: [.uikitImages])
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertFalse(main.skipColors)
+        XCTAssertFalse(main.skipDataAssets)
+        XCTAssertFalse(main.skipImages)
+        XCTAssertFalse(main.skipLocalizable)
+        XCTAssertFalse(main.skipLocalizableValidation)
+        XCTAssertFalse(main.skipNibValidation)
+        XCTAssertFalse(main.skipStoryboards)
+        XCTAssertFalse(main.skipStoryboardValidation)
+        XCTAssertFalse(main.skipSwiftUI)
+        XCTAssertFalse(main.skipSymbols)
+        XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertTrue(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
+        XCTAssertFalse(main.skipValidation)
+    }
+    
+    // MARK: - Skip UIKit Symbols Tests
+    
+    func testConfigurationSkipUIKitSymbols() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        let configuration = BlackboardConfiguration(skips: [.uikitSymbols])
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertFalse(main.skipColors)
+        XCTAssertFalse(main.skipDataAssets)
+        XCTAssertFalse(main.skipImages)
+        XCTAssertFalse(main.skipLocalizable)
+        XCTAssertFalse(main.skipLocalizableValidation)
+        XCTAssertFalse(main.skipNibValidation)
+        XCTAssertFalse(main.skipStoryboards)
+        XCTAssertFalse(main.skipStoryboardValidation)
+        XCTAssertFalse(main.skipSwiftUI)
+        XCTAssertFalse(main.skipSymbols)
+        XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertTrue(main.skipUIKitSymbols)
         XCTAssertFalse(main.skipValidation)
     }
     
@@ -854,6 +1037,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertTrue(main.skipValidation)
     }
     
@@ -877,6 +1063,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertTrue(main.skipValidation)
     }
     
@@ -901,6 +1090,9 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipUIKitColors)
+        XCTAssertFalse(main.skipUIKitImages)
+        XCTAssertFalse(main.skipUIKitSymbols)
         XCTAssertTrue(main.skipValidation)
     }
     

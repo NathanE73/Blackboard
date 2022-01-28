@@ -38,19 +38,22 @@ extension BlackboardMain {
             return []
         }
         
-        if !skipSwiftUI || !skipUIKit {
+        let includeSwiftUI = !skipSwiftUI
+        let includeUIKit = !skipUIKit && !skipUIKitImages
+        
+        if includeSwiftUI || includeUIKit {
             SwiftSourceFile(Filename.ImageAsset, at: output)
                 .appendImageAssets(images: blackboardImages)
                 .write()
         }
         
-        if !skipSwiftUI {
+        if includeSwiftUI {
             SwiftSourceFile(Filename.Image, at: output)
                 .appendImages(images: blackboardImages, target: ios.target, sdk: ios.sdk)
                 .write()
         }
         
-        if !skipUIKit {
+        if includeUIKit {
             SwiftSourceFile(Filename.UIImage, at: output)
                 .appendUIImages(images: blackboardImages)
                 .write()

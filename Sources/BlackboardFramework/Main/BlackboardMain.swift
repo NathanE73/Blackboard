@@ -48,6 +48,9 @@ public struct BlackboardMain {
     var skipSwiftUI: Bool
     var skipSymbols: Bool
     var skipUIKit: Bool
+    var skipUIKitColors: Bool
+    var skipUIKitImages: Bool
+    var skipUIKitSymbols: Bool
     var skipValidation: Bool
     
     var localizable: LocalizableConfiguration
@@ -85,6 +88,9 @@ public struct BlackboardMain {
         self.skipSwiftUI = command.skipSwiftUI || skips.contains(.swiftui)
         self.skipSymbols = command.skipSymbols || skips.contains(.symbols)
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
+        self.skipUIKitColors = skips.contains(.uikitColors)
+        self.skipUIKitImages = skips.contains(.uikitImages)
+        self.skipUIKitSymbols = skips.contains(.uikitSymbols)
         self.skipValidation = command.skipValidation || skips.contains(.validation)
         
         self.localizable = try LocalizableConfiguration(using: configuration)

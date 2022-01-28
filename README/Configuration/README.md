@@ -93,6 +93,9 @@ skip:
 - swiftui
 - symbols
 - uikit
+- uikit-colors
+- uikit-images
+- uikit-symbols
 - validation
 ```
 
