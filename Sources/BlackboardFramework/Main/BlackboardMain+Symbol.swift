@@ -37,19 +37,22 @@ extension BlackboardMain {
             return
         }
         
-        if !skipSwiftUI || !skipUIKit {
+        let includeSwiftUI = !skipSwiftUI
+        let includeUIKit = !skipUIKit && !skipUIKitSymbols
+        
+        if includeSwiftUI || includeUIKit {
             SwiftSourceFile(Filename.SymbolAsset, at: output)
                 .appendSymbolAssets(symbols: blackboardSymbols, target: ios.target)
                 .write()
         }
         
-        if !skipSwiftUI {
+        if includeSwiftUI {
             SwiftSourceFile(Filename.SymbolImage, at: output)
                 .appendSymbolImages(symbols: blackboardSymbols, target: ios.target, sdk: ios.sdk)
                 .write()
         }
         
-        if !skipUIKit {
+        if includeUIKit {
             SwiftSourceFile(Filename.SymbolUIImage, at: output)
                 .appendSymbolUIImages(symbols: blackboardSymbols, target: ios.target)
                 .write()

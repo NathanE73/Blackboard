@@ -38,25 +38,28 @@ extension BlackboardMain {
             return []
         }
         
-        if !skipSwiftUI || !skipUIKit {
+        let includeSwiftUI = !skipSwiftUI
+        let includeUIKit = !skipUIKit && !skipUIKitColors
+        
+        if includeSwiftUI || includeUIKit {
             SwiftSourceFile(Filename.ColorAsset, at: output)
                 .appendColorAssets(colors: blackboardColors)
                 .write()
-            
-            SwiftSourceFile(Filename.CGColor, at: output)
-                .appendCGColors(colors: blackboardColors)
-                .write()
         }
         
-        if !skipSwiftUI {
+        if includeSwiftUI {
             SwiftSourceFile(Filename.Color, at: output)
                 .appendColors(colors: blackboardColors, target: ios.target)
                 .write()
         }
         
-        if !skipUIKit {
+        if includeUIKit {
             SwiftSourceFile(Filename.UIColor, at: output)
                 .appendUIColors(colors: blackboardColors)
+                .write()
+            
+            SwiftSourceFile(Filename.CGColor, at: output)
+                .appendCGColors(colors: blackboardColors)
                 .write()
         }
         
