@@ -43,12 +43,12 @@ extension SwiftSource {
                 append()
             }
             append()
-            append("var localizedString: String") {
+            append("public var localizedString: String") {
                 let bundle = useMainBundle ? "Bundle.main" : "bundle"
                 append("\(bundle).localizedString(forKey: rawValue, value: nil, table: nil)")
             }
             append()
-            append("func localizedString(arguments: CVarArg...) -> String") {
+            append("public func localizedString(arguments: CVarArg...) -> String") {
                 append("String(format: localizedString, arguments: arguments)")
             }
             append()
