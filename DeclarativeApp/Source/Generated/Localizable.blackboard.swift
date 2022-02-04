@@ -61,11 +61,11 @@ public enum Localizable: String {
     /// English: Will it rain today?
     case willItRainToday = "Will it rain today?"
     
-    var localizedString: String {
+    public var localizedString: String {
         bundle.localizedString(forKey: rawValue, value: nil, table: nil)
     }
     
-    func localizedString(arguments: CVarArg...) -> String {
+    public func localizedString(arguments: CVarArg...) -> String {
         String(format: localizedString, arguments: arguments)
     }
     
