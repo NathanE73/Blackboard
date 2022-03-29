@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
           "branch": null,
-          "revision": "6b2aa2748a7881eebb9f84fb10c01293e15b52ca",
-          "version": "0.5.0"
+          "revision": "82905286cc3f0fa8adc4674bf49437cab65a8373",
+          "version": "1.1.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/jpsim/Yams.git",
         "state": {
           "branch": null,
-          "revision": "9ff1cc9327586db4e0c8f46f064b6a82ec1566fa",
-          "version": "4.0.6"
+          "revision": "00c403debcd0a007b854bb35e598466207a2d58c",
+          "version": "5.0.0"
         }
       }
     ]
