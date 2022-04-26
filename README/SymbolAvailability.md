@@ -1142,7 +1142,7 @@ _____
 - arrow.uturn.left.square.fill (iOS 13.0)
 
 ### arrow.uturn.left.circle.badge.ellipsis
- (iOS 13.0)
+ (iOS 13.1)
 
 ### arrow.uturn.right
 - arrow.uturn.right (iOS 13.0)
@@ -1273,8 +1273,8 @@ _____
 - arrowtriangle.up.square.fill (iOS 13.0)
 
 ### aspectratio
-- aspectratio (iOS 13.0)
-- aspectratio.fill (iOS 13.0)
+- aspectratio (iOS 13.1)
+- aspectratio.fill (iOS 13.1)
 
 ### asterisk
 - asterisk (iOS 15.0)
@@ -1723,6 +1723,11 @@ _____
 ### camera.filters
  (iOS 14.0)
 
+### camera.macro
+- camera.macro (iOS 15.4)
+- camera.macro.circle (iOS 15.4)
+- camera.macro.circle.fill (iOS 15.4)
+
 ### camera.metering.center.weighted
  (iOS 14.0)
 
@@ -1813,7 +1818,7 @@ _____
 - captions.bubble.fill (iOS 13.0)
 
 ### car
-- car (iOS 13.0)
+- car (iOS 13.1)
 - car.fill (iOS 13.0)
 - car.circle (iOS 14.0)
 - car.circle.fill (iOS 14.0)
@@ -2126,8 +2131,8 @@ _____
  (iOS 15.0)
 
 ### circle.grid.2x2
-- circle.grid.2x2 (iOS 13.0)
-- circle.grid.2x2.fill (iOS 13.0)
+- circle.grid.2x2 (iOS 13.1)
+- circle.grid.2x2.fill (iOS 13.1)
 
 ### circle.grid.3x3
 - circle.grid.3x3 (iOS 13.0)
@@ -2733,6 +2738,9 @@ _____
 ### dot.viewfinder
  (iOS 15.0)
 
+### dots.and.line.vertical.and.cursorarrow.rectangle
+ (iOS 15.4)
+
 ### dpad
 - dpad (iOS 14.0)
 - dpad.fill (iOS 14.0)
@@ -3125,14 +3133,14 @@ _____
 - flame.circle.fill (iOS 15.0)
 
 ### flashlight.off.fill
- (iOS 13.0)
+ (iOS 13.1)
 
 ### flashlight.on.fill
- (iOS 13.0)
+ (iOS 13.1)
 
 ### flip.horizontal
-- flip.horizontal (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right](#arrowleftandrightrighttriangleleftrighttriangleright))
-- flip.horizontal.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right.fill](#arrowleftandrightrighttriangleleftrighttriangleright))
+- flip.horizontal (iOS, introduced: 13.1, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right](#arrowleftandrightrighttriangleleftrighttriangleright))
+- flip.horizontal.fill (iOS, introduced: 13.1, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right.fill](#arrowleftandrightrighttriangleleftrighttriangleright))
 
 ### flipphone
  (iOS 14.0)
@@ -3857,6 +3865,9 @@ _____
 - key.icloud (iOS 14.0)
 - key.icloud.fill (iOS 14.0)
 
+### key.viewfinder
+ (iOS 15.4)
+
 ### keyboard
 - keyboard (iOS 13.0)
 - keyboard.fill (iOS 15.0)
@@ -4337,8 +4348,8 @@ _____
 
 ### mappin
 - mappin (iOS 13.0)
-- mappin.circle (iOS 13.0)
-- mappin.circle.fill (iOS 13.0)
+- mappin.circle (iOS 13.1)
+- mappin.circle.fill (iOS 13.1)
 - mappin.square (iOS 15.0)
 - mappin.square.fill (iOS 15.0)
 - mappin.slash (iOS 13.0)
@@ -4662,8 +4673,8 @@ _____
 
 ### paperclip
 - paperclip (iOS 13.0)
-- paperclip.circle (iOS 13.0)
-- paperclip.circle.fill (iOS 13.0)
+- paperclip.circle (iOS 13.1)
+- paperclip.circle.fill (iOS 13.1)
 
 ### paperclip.badge.ellipsis
  (iOS 14.0)
@@ -4793,6 +4804,10 @@ _____
 ### person.badge.clock
 - person.badge.clock (iOS 15.0)
 - person.badge.clock.fill (iOS 15.0)
+
+### person.badge.key
+- person.badge.key (iOS 15.4)
+- person.badge.key.fill (iOS 15.4)
 
 ### person.badge.minus
 - person.badge.minus (iOS 13.0)
@@ -5035,8 +5050,8 @@ _____
 ### pin
 - pin (iOS 13.0)
 - pin.fill (iOS 13.0)
-- pin.circle (iOS 13.0)
-- pin.circle.fill (iOS 13.0)
+- pin.circle (iOS 13.1)
+- pin.circle.fill (iOS 13.1)
 - pin.square (iOS 15.0)
 - pin.square.fill (iOS 15.0)
 - pin.slash (iOS 13.0)
@@ -5976,7 +5991,7 @@ _____
 - scissors.circle.fill (iOS 15.0)
 
 ### scissors.badge.ellipsis
- (iOS 13.0)
+ (iOS 13.1)
 
 ### scooter
  (iOS 15.0)
@@ -6649,7 +6664,7 @@ _____
  (iOS 13.0)
 
 ### studentdesk
- (iOS 13.0)
+ (iOS 13.1)
 
 ### suit.club
 - suit.club (iOS 13.0)

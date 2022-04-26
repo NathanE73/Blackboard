@@ -1286,7 +1286,7 @@ extension Resource {
 		<key>arrow.uturn.left.circle</key>
 		<string>2019</string>
 		<key>arrow.uturn.left.circle.badge.ellipsis</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>arrow.uturn.left.circle.fill</key>
 		<string>2019</string>
 		<key>arrow.uturn.left.square</key>
@@ -1462,9 +1462,9 @@ extension Resource {
 		<key>arrowtriangle.up.square.fill</key>
 		<string>2019</string>
 		<key>aspectratio</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>aspectratio.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>asterisk</key>
 		<string>2021</string>
 		<key>asterisk.circle</key>
@@ -1927,6 +1927,12 @@ extension Resource {
 		<string>2020</string>
 		<key>camera.filters</key>
 		<string>2020</string>
+		<key>camera.macro</key>
+		<string>2021.3</string>
+		<key>camera.macro.circle</key>
+		<string>2021.3</string>
+		<key>camera.macro.circle.fill</key>
+		<string>2021.3</string>
 		<key>camera.metering.center.weighted</key>
 		<string>2020</string>
 		<key>camera.metering.center.weighted.average</key>
@@ -1998,7 +2004,7 @@ extension Resource {
 		<key>captions.bubble.fill</key>
 		<string>2019</string>
 		<key>car</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>car.2</key>
 		<string>2020</string>
 		<key>car.2.fill</key>
@@ -2364,9 +2370,9 @@ extension Resource {
 		<key>circle.grid.2x1.right.filled</key>
 		<string>2021</string>
 		<key>circle.grid.2x2</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>circle.grid.2x2.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>circle.grid.3x3</key>
 		<string>2019</string>
 		<key>circle.grid.3x3.circle</key>
@@ -2963,6 +2969,8 @@ extension Resource {
 		<string>2020</string>
 		<key>dot.viewfinder</key>
 		<string>2021</string>
+		<key>dots.and.line.vertical.and.cursorarrow.rectangle</key>
+		<string>2021.3</string>
 		<key>dpad</key>
 		<string>2020</string>
 		<key>dpad.down.fill</key>
@@ -3346,13 +3354,13 @@ extension Resource {
 		<key>flame.fill</key>
 		<string>2019</string>
 		<key>flashlight.off.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>flashlight.on.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>flip.horizontal</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>flip.horizontal.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>flipphone</key>
 		<string>2020</string>
 		<key>florinsign.circle</key>
@@ -4103,6 +4111,8 @@ extension Resource {
 		<string>2020</string>
 		<key>key.icloud.fill</key>
 		<string>2020</string>
+		<key>key.viewfinder</key>
+		<string>2021.3</string>
 		<key>keyboard</key>
 		<string>2019</string>
 		<key>keyboard.badge.ellipsis</key>
@@ -4580,9 +4590,9 @@ extension Resource {
 		<key>mappin.and.ellipse</key>
 		<string>2019</string>
 		<key>mappin.circle</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>mappin.circle.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>mappin.slash</key>
 		<string>2019</string>
 		<key>mappin.slash.circle</key>
@@ -4906,9 +4916,9 @@ extension Resource {
 		<key>paperclip.badge.ellipsis</key>
 		<string>2020</string>
 		<key>paperclip.circle</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>paperclip.circle.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>paperplane</key>
 		<string>2019</string>
 		<key>paperplane.circle</key>
@@ -5027,6 +5037,10 @@ extension Resource {
 		<string>2021</string>
 		<key>person.badge.clock.fill</key>
 		<string>2021</string>
+		<key>person.badge.key</key>
+		<string>2021.3</string>
+		<key>person.badge.key.fill</key>
+		<string>2021.3</string>
 		<key>person.badge.minus</key>
 		<string>2019</string>
 		<key>person.badge.minus.fill</key>
@@ -5256,9 +5270,9 @@ extension Resource {
 		<key>pin</key>
 		<string>2019</string>
 		<key>pin.circle</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>pin.circle.fill</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>pin.fill</key>
 		<string>2019</string>
 		<key>pin.slash</key>
@@ -6112,7 +6126,7 @@ extension Resource {
 		<key>scissors</key>
 		<string>2019</string>
 		<key>scissors.badge.ellipsis</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>scissors.circle</key>
 		<string>2021</string>
 		<key>scissors.circle.fill</key>
@@ -6734,7 +6748,7 @@ extension Resource {
 		<key>strikethrough</key>
 		<string>2019</string>
 		<key>studentdesk</key>
-		<string>2019</string>
+		<string>2019.1</string>
 		<key>suit.club</key>
 		<string>2019</string>
 		<key>suit.club.fill</key>
@@ -7569,6 +7583,17 @@ extension Resource {
 			<key>watchOS</key>
 			<string>6.0</string>
 		</dict>
+		<key>2019.1</key>
+		<dict>
+			<key>iOS</key>
+			<string>13.1</string>
+			<key>macOS</key>
+			<string>10.15</string>
+			<key>tvOS</key>
+			<string>13.0</string>
+			<key>watchOS</key>
+			<string>6.1</string>
+		</dict>
 		<key>2020</key>
 		<dict>
 			<key>iOS</key>
@@ -7634,6 +7659,17 @@ extension Resource {
 			<string>15.2</string>
 			<key>watchOS</key>
 			<string>8.3</string>
+		</dict>
+		<key>2021.3</key>
+		<dict>
+			<key>iOS</key>
+			<string>15.4</string>
+			<key>macOS</key>
+			<string>12.3</string>
+			<key>tvOS</key>
+			<string>15.4</string>
+			<key>watchOS</key>
+			<string>8.5</string>
 		</dict>
 	</dict>
 </dict>
