@@ -30,9 +30,13 @@ _____
 
 ### 0
 - 0.circle (iOS 13.0)
+- 0.circle.ar (iOS 16.1)
 - 0.circle.fill (iOS 13.0)
+- 0.circle.fill.ar (iOS 16.1)
 - 0.square (iOS 13.0)
+- 0.square.ar (iOS 16.1)
 - 0.square.fill (iOS 13.0)
+- 0.square.fill.ar (iOS 16.1)
 
 ### 00
 - 00.circle (iOS 13.0)
@@ -96,9 +100,19 @@ _____
 
 ### 1
 - 1.circle (iOS 13.0)
+- 1.circle.ar (iOS 16.1)
 - 1.circle.fill (iOS 13.0)
+- 1.circle.fill.ar (iOS 16.1)
 - 1.square (iOS 13.0)
+- 1.square.ar (iOS 16.1)
 - 1.square.fill (iOS 13.0)
+- 1.square.fill.ar (iOS 16.1)
+
+### 1.brakesignal
+ (iOS 16.1)
+
+### 1.lane
+ (iOS 16.1)
 
 ### 1.magnifyingglass
 - 1.magnifyingglass (iOS 13.0)
@@ -111,17 +125,26 @@ _____
 - 10.square (iOS 13.0)
 - 10.square.fill (iOS 13.0)
 
+### 10.lane
+ (iOS 16.1)
+
 ### 11
 - 11.circle (iOS 13.0)
 - 11.circle.fill (iOS 13.0)
 - 11.square (iOS 13.0)
 - 11.square.fill (iOS 13.0)
 
+### 11.lane
+ (iOS 16.1)
+
 ### 12
 - 12.circle (iOS 13.0)
 - 12.circle.fill (iOS 13.0)
 - 12.square (iOS 13.0)
 - 12.square.fill (iOS 13.0)
+
+### 12.lane
+ (iOS 16.1)
 
 ### 123.rectangle
 - 123.rectangle (iOS 15.0)
@@ -175,9 +198,19 @@ _____
 
 ### 2
 - 2.circle (iOS 13.0)
+- 2.circle.ar (iOS 16.1)
 - 2.circle.fill (iOS 13.0)
+- 2.circle.fill.ar (iOS 16.1)
 - 2.square (iOS 13.0)
+- 2.square.ar (iOS 16.1)
 - 2.square.fill (iOS 13.0)
+- 2.square.fill.ar (iOS 16.1)
+
+### 2.brakesignal
+ (iOS 16.1)
+
+### 2.lane
+ (iOS 16.1)
 
 ### 20
 - 20.circle (iOS 13.0)
@@ -241,9 +274,16 @@ _____
 
 ### 3
 - 3.circle (iOS 13.0)
+- 3.circle.ar (iOS 16.1)
 - 3.circle.fill (iOS 13.0)
+- 3.circle.fill.ar (iOS 16.1)
 - 3.square (iOS 13.0)
+- 3.square.ar (iOS 16.1)
 - 3.square.fill (iOS 13.0)
+- 3.square.fill.ar (iOS 16.1)
+
+### 3.lane
+ (iOS 16.1)
 
 ### 30
 - 30.circle (iOS 13.0)
@@ -307,15 +347,22 @@ _____
 
 ### 4
 - 4.circle (iOS 13.0)
+- 4.circle.ar (iOS 16.1)
 - 4.circle.fill (iOS 13.0)
+- 4.circle.fill.ar (iOS 16.1)
 - 4.square (iOS 13.0)
+- 4.square.ar (iOS 16.1)
 - 4.square.fill (iOS 13.0)
+- 4.square.fill.ar (iOS 16.1)
 
 ### 4.alt
 - 4.alt.circle (iOS 13.0)
 - 4.alt.circle.fill (iOS 13.0)
 - 4.alt.square (iOS 13.0)
 - 4.alt.square.fill (iOS 13.0)
+
+### 4.lane
+ (iOS 16.1)
 
 ### 40
 - 40.circle (iOS 13.0)
@@ -383,9 +430,16 @@ _____
 
 ### 5
 - 5.circle (iOS 13.0)
+- 5.circle.ar (iOS 16.1)
 - 5.circle.fill (iOS 13.0)
+- 5.circle.fill.ar (iOS 16.1)
 - 5.square (iOS 13.0)
+- 5.square.ar (iOS 16.1)
 - 5.square.fill (iOS 13.0)
+- 5.square.fill.ar (iOS 16.1)
+
+### 5.lane
+ (iOS 16.1)
 
 ### 50
 - 50.circle (iOS 13.0)
@@ -395,9 +449,13 @@ _____
 
 ### 6
 - 6.circle (iOS 13.0)
+- 6.circle.ar (iOS 16.1)
 - 6.circle.fill (iOS 13.0)
+- 6.circle.fill.ar (iOS 16.1)
 - 6.square (iOS 13.0)
+- 6.square.ar (iOS 16.1)
 - 6.square.fill (iOS 13.0)
+- 6.square.fill.ar (iOS 16.1)
 
 ### 6.alt
 - 6.alt.circle (iOS 13.0)
@@ -405,29 +463,53 @@ _____
 - 6.alt.square (iOS 13.0)
 - 6.alt.square.fill (iOS 13.0)
 
+### 6.lane
+ (iOS 16.1)
+
 ### 7
 - 7.circle (iOS 13.0)
+- 7.circle.ar (iOS 16.1)
 - 7.circle.fill (iOS 13.0)
+- 7.circle.fill.ar (iOS 16.1)
 - 7.square (iOS 13.0)
+- 7.square.ar (iOS 16.1)
 - 7.square.fill (iOS 13.0)
+- 7.square.fill.ar (iOS 16.1)
+
+### 7.lane
+ (iOS 16.1)
 
 ### 8
 - 8.circle (iOS 13.0)
+- 8.circle.ar (iOS 16.1)
 - 8.circle.fill (iOS 13.0)
+- 8.circle.fill.ar (iOS 16.1)
 - 8.square (iOS 13.0)
+- 8.square.ar (iOS 16.1)
 - 8.square.fill (iOS 13.0)
+- 8.square.fill.ar (iOS 16.1)
+
+### 8.lane
+ (iOS 16.1)
 
 ### 9
 - 9.circle (iOS 13.0)
+- 9.circle.ar (iOS 16.1)
 - 9.circle.fill (iOS 13.0)
+- 9.circle.fill.ar (iOS 16.1)
 - 9.square (iOS 13.0)
+- 9.square.ar (iOS 16.1)
 - 9.square.fill (iOS 13.0)
+- 9.square.fill.ar (iOS 16.1)
 
 ### 9.alt
 - 9.alt.circle (iOS 13.0)
 - 9.alt.circle.fill (iOS 13.0)
 - 9.alt.square (iOS 13.0)
 - 9.alt.square.fill (iOS 13.0)
+
+### 9.lane
+ (iOS 16.1)
 
 ### a
 - a (iOS, introduced: 13.0, deprecated: 14.2, renamed: [character](#character))
@@ -459,6 +541,27 @@ _____
 
 ### abc
  (iOS 14.0)
+
+### abs
+- abs (iOS 16.1)
+- abs.circle (iOS 16.1)
+- abs.circle.fill (iOS 16.1)
+
+### abs.brakesignal
+- abs.brakesignal (iOS 16.0)
+- abs.brakesignal.slash (iOS 16.1)
+
+### air.conditioner.horizontal
+- air.conditioner.horizontal (iOS 16.0)
+- air.conditioner.horizontal.fill (iOS 16.0)
+
+### air.conditioner.vertical
+- air.conditioner.vertical (iOS 16.0)
+- air.conditioner.vertical.fill (iOS 16.0)
+
+### air.purifier
+- air.purifier (iOS 16.0)
+- air.purifier.fill (iOS 16.0)
 
 ### airplane
 - airplane (iOS 13.0)
@@ -556,6 +659,10 @@ _____
 - alarm (iOS 13.0)
 - alarm.fill (iOS 13.0)
 
+### alarm.waves.left.and.right
+- alarm.waves.left.and.right (iOS 16.0)
+- alarm.waves.left.and.right.fill (iOS 16.0)
+
 ### align.horizontal.center
 - align.horizontal.center (iOS 15.0)
 - align.horizontal.center.fill (iOS 15.0)
@@ -581,7 +688,8 @@ _____
 - align.vertical.top.fill (iOS 15.0)
 
 ### allergens
- (iOS 15.0)
+- allergens (iOS 15.0)
+- allergens.fill (iOS 16.0)
 
 ### alt
  (iOS 13.0)
@@ -591,6 +699,9 @@ _____
 
 ### amplifier
  (iOS 14.0)
+
+### angle
+ (iOS 16.0)
 
 ### ant
 - ant (iOS 13.0)
@@ -629,8 +740,11 @@ _____
 ### appclip
  (iOS 14.0)
 
+### apple.logo
+ (iOS 16.0)
+
 ### applelogo
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [apple.logo](#applelogo))
 
 ### applepencil
  (iOS 15.0)
@@ -767,6 +881,9 @@ _____
 - arrow.down.square (iOS 13.0)
 - arrow.down.square.fill (iOS 13.0)
 
+### arrow.down.and.line.horizontal.and.arrow.up
+ (iOS 16.0)
+
 ### arrow.down.app
 - arrow.down.app (iOS 14.0)
 - arrow.down.app.fill (iOS 14.0)
@@ -808,6 +925,10 @@ _____
 ### arrow.down.left.video
 - arrow.down.left.video (iOS 13.0)
 - arrow.down.left.video.fill (iOS 13.0)
+
+### arrow.down.message
+- arrow.down.message (iOS 16.0)
+- arrow.down.message.fill (iOS 16.0)
 
 ### arrow.down.right
 - arrow.down.right (iOS 13.0)
@@ -851,6 +972,9 @@ _____
 - arrow.left.square (iOS 13.0)
 - arrow.left.square.fill (iOS 13.0)
 
+### arrow.left.and.line.vertical.and.arrow.right
+ (iOS 16.0)
+
 ### arrow.left.and.right
 - arrow.left.and.right (iOS 13.0)
 - arrow.left.and.right.circle (iOS 13.0)
@@ -861,6 +985,9 @@ _____
 ### arrow.left.and.right.righttriangle.left.righttriangle.right
 - arrow.left.and.right.righttriangle.left.righttriangle.right (iOS 14.0)
 - arrow.left.and.right.righttriangle.left.righttriangle.right.fill (iOS 14.0)
+
+### arrow.left.and.right.text.vertical
+ (iOS 16.0)
 
 ### arrow.left.arrow.right
 - arrow.left.arrow.right (iOS 14.0)
@@ -892,6 +1019,9 @@ _____
 - arrow.right.circle.fill (iOS 13.0)
 - arrow.right.square (iOS 13.0)
 - arrow.right.square.fill (iOS 13.0)
+
+### arrow.right.and.line.vertical.and.arrow.left
+ (iOS 16.0)
 
 ### arrow.right.arrow.left
 - arrow.right.arrow.left (iOS, introduced: 13.0, deprecated: 14.0, renamed: [arrow.left.arrow.right](#arrowleftarrowright))
@@ -997,12 +1127,21 @@ _____
 ### arrow.up.and.down.and.arrow.left.and.right
  (iOS 14.0)
 
+### arrow.up.and.down.and.sparkles
+ (iOS 16.0)
+
 ### arrow.up.and.down.righttriangle.up.fill.righttriangle.down.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [arrow.up.and.down.righttriangle.up.righttriangle.down.fill](#arrowupanddownrighttriangleuprighttriangledown))
 
 ### arrow.up.and.down.righttriangle.up.righttriangle.down
 - arrow.up.and.down.righttriangle.up.righttriangle.down (iOS 14.0)
 - arrow.up.and.down.righttriangle.up.righttriangle.down.fill (iOS 15.0)
+
+### arrow.up.and.down.text.horizontal
+ (iOS 16.0)
+
+### arrow.up.and.line.horizontal.and.arrow.down
+ (iOS 16.0)
 
 ### arrow.up.and.person.rectangle.portrait
  (iOS 14.0)
@@ -1035,6 +1174,9 @@ _____
 ### arrow.up.bin
 - arrow.up.bin (iOS 13.0)
 - arrow.up.bin.fill (iOS 13.0)
+
+### arrow.up.circle.badge.clock
+ (iOS 16.0)
 
 ### arrow.up.doc
 - arrow.up.doc (iOS 13.0)
@@ -1158,6 +1300,10 @@ _____
 - arrow.uturn.up.square (iOS 13.0)
 - arrow.uturn.up.square.fill (iOS 13.0)
 
+### arrowshape.backward
+- arrowshape.backward (iOS 16.0)
+- arrowshape.backward.fill (iOS 16.0)
+
 ### arrowshape.bounce.forward
 - arrowshape.bounce.forward (iOS 14.0)
 - arrowshape.bounce.forward.fill (iOS 14.0)
@@ -1165,6 +1311,18 @@ _____
 ### arrowshape.bounce.right
 - arrowshape.bounce.right (iOS 14.0)
 - arrowshape.bounce.right.fill (iOS 14.0)
+
+### arrowshape.forward
+- arrowshape.forward (iOS 16.0)
+- arrowshape.forward.fill (iOS 16.0)
+
+### arrowshape.left
+- arrowshape.left (iOS 16.0)
+- arrowshape.left.fill (iOS 16.0)
+
+### arrowshape.right
+- arrowshape.right (iOS 16.0)
+- arrowshape.right.fill (iOS 16.0)
 
 ### arrowshape.turn.up.backward
 - arrowshape.turn.up.backward (iOS 14.0)
@@ -1177,6 +1335,12 @@ _____
 - arrowshape.turn.up.backward.2.fill (iOS 14.0)
 - arrowshape.turn.up.backward.2.circle (iOS 14.0)
 - arrowshape.turn.up.backward.2.circle.fill (iOS 14.0)
+
+### arrowshape.turn.up.backward.badge.clock
+- arrowshape.turn.up.backward.badge.clock (iOS 16.0)
+- arrowshape.turn.up.backward.badge.clock.rtl (iOS 16.0)
+- arrowshape.turn.up.backward.badge.clock.fill (iOS 16.0)
+- arrowshape.turn.up.backward.badge.clock.fill.rtl (iOS 16.0)
 
 ### arrowshape.turn.up.forward
 - arrowshape.turn.up.forward (iOS 14.0)
@@ -1296,16 +1460,57 @@ _____
  (iOS 14.0)
 
 ### australsign
+- australsign (iOS 16.0)
 - australsign.circle (iOS 13.0)
 - australsign.circle.fill (iOS 13.0)
 - australsign.square (iOS 13.0)
 - australsign.square.fill (iOS 13.0)
+
+### auto.brakesignal
+ (iOS 16.1)
+
+### auto.headlight.high.beam
+- auto.headlight.high.beam (iOS 16.1)
+- auto.headlight.high.beam.fill (iOS 16.1)
+
+### auto.headlight.low.beam
+- auto.headlight.low.beam (iOS 16.1)
+- auto.headlight.low.beam.fill (iOS 16.1)
+
+### autostartstop
+- autostartstop (iOS 16.1)
+- autostartstop.slash (iOS 16.1)
+
+### autostartstop.trianglebadge.exclamationmark
+ (iOS 16.1)
+
+### av.remote
+- av.remote (iOS 16.0)
+- av.remote.fill (iOS 16.0)
+
+### axel.2
+ (iOS 16.1)
+
+### axel.2.front.and.rear.engaged
+ (iOS 16.1)
+
+### axel.2.front.engaged
+ (iOS 16.1)
+
+### axel.2.rear.engaged
+ (iOS 16.1)
 
 ### b
 - b.circle (iOS 13.0)
 - b.circle.fill (iOS 13.0)
 - b.square (iOS 13.0)
 - b.square.fill (iOS 13.0)
+
+### backpack
+- backpack (iOS 16.0)
+- backpack.fill (iOS 16.0)
+- backpack.circle (iOS 16.1)
+- backpack.circle.fill (iOS 16.1)
 
 ### backward
 - backward (iOS 13.0)
@@ -1316,6 +1521,8 @@ _____
 ### backward.end
 - backward.end (iOS 13.0)
 - backward.end.fill (iOS 13.0)
+- backward.end.circle (iOS 16.0)
+- backward.end.circle.fill (iOS 16.0)
 
 ### backward.end.alt
 - backward.end.alt (iOS 13.0)
@@ -1343,17 +1550,34 @@ _____
 ### bag.badge.plus
  (iOS 13.0)
 
+### bag.badge.questionmark
+- bag.badge.questionmark (iOS 16.0)
+- bag.badge.questionmark.ar (iOS 16.0)
+
 ### bag.fill.badge.minus
  (iOS 13.0)
 
 ### bag.fill.badge.plus
  (iOS 13.0)
 
+### bag.fill.badge.questionmark
+- bag.fill.badge.questionmark (iOS 16.0)
+- bag.fill.badge.questionmark.ar (iOS 16.0)
+
 ### bahtsign
+- bahtsign (iOS 16.0)
 - bahtsign.circle (iOS 13.0)
 - bahtsign.circle.fill (iOS 13.0)
 - bahtsign.square (iOS 13.0)
 - bahtsign.square.fill (iOS 13.0)
+
+### balloon
+- balloon (iOS 16.0)
+- balloon.fill (iOS 16.0)
+
+### balloon.2
+- balloon.2 (iOS 16.0)
+- balloon.2.fill (iOS 16.0)
 
 ### bandage
 - bandage (iOS 13.0)
@@ -1372,11 +1596,36 @@ _____
 ### barometer
  (iOS 14.0)
 
+### baseball
+- baseball (iOS 16.0)
+- baseball.fill (iOS 16.0)
+- baseball.circle (iOS 16.0)
+- baseball.circle.fill (iOS 16.0)
+
+### baseball.diamond.bases
+ (iOS 16.0)
+
+### basket
+- basket (iOS 16.0)
+- basket.fill (iOS 16.0)
+
+### basketball
+- basketball (iOS 16.0)
+- basketball.fill (iOS 16.0)
+- basketball.circle (iOS 16.0)
+- basketball.circle.fill (iOS 16.0)
+
+### bathtub
+- bathtub (iOS 16.0)
+- bathtub.fill (iOS 16.0)
+
 ### battery.0
  (iOS 13.0)
 
 ### battery.100
- (iOS 13.0)
+- battery.100 (iOS 13.0)
+- battery.100.circle (iOS 16.0)
+- battery.100.circle.fill (iOS 16.0)
 
 ### battery.100.bolt
 - battery.100.bolt (iOS 14.0)
@@ -1390,6 +1639,16 @@ _____
 
 ### battery.75
  (iOS 15.0)
+
+### batteryblock
+- batteryblock (iOS 16.1)
+- batteryblock.fill (iOS 16.1)
+- batteryblock.slash (iOS 16.1)
+- batteryblock.slash.fill (iOS 16.1)
+
+### beach.umbrella
+- beach.umbrella (iOS 16.0)
+- beach.umbrella.fill (iOS 16.0)
 
 ### beats.earphones
  (iOS 15.0)
@@ -1464,6 +1723,10 @@ _____
 - bell.and.waveform (iOS 15.0)
 - bell.and.waveform.fill (iOS 15.0)
 
+### bell.and.waves.left.and.right
+- bell.and.waves.left.and.right (iOS 16.0)
+- bell.and.waves.left.and.right.fill (iOS 16.0)
+
 ### bell.badge
 - bell.badge (iOS 14.0)
 - bell.badge.fill (iOS 14.0)
@@ -1483,11 +1746,32 @@ _____
 - binoculars (iOS 14.0)
 - binoculars.fill (iOS 14.0)
 
+### bird
+- bird (iOS 16.0)
+- bird.fill (iOS 16.0)
+
+### birthday.cake
+- birthday.cake (iOS 16.0)
+- birthday.cake.fill (iOS 16.0)
+
 ### bitcoinsign
+- bitcoinsign (iOS 16.0)
 - bitcoinsign.circle (iOS 13.0)
 - bitcoinsign.circle.fill (iOS 13.0)
 - bitcoinsign.square (iOS 13.0)
 - bitcoinsign.square.fill (iOS 13.0)
+
+### blinds.horizontal.closed
+ (iOS 16.0)
+
+### blinds.horizontal.open
+ (iOS 16.0)
+
+### blinds.vertical.closed
+ (iOS 16.0)
+
+### blinds.vertical.open
+ (iOS 16.0)
 
 ### bold
  (iOS 13.0)
@@ -1514,9 +1798,16 @@ _____
 - bolt.badge.a (iOS 13.0)
 - bolt.badge.a.fill (iOS 13.0)
 
+### bolt.badge.clock
+- bolt.badge.clock (iOS 16.0)
+- bolt.badge.clock.fill (iOS 16.0)
+
 ### bolt.batteryblock
 - bolt.batteryblock (iOS 15.0)
 - bolt.batteryblock.fill (iOS 15.0)
+
+### bolt.brakesignal
+ (iOS 16.0)
 
 ### bolt.car
 - bolt.car (iOS 14.0)
@@ -1549,6 +1840,10 @@ _____
 - bolt.shield (iOS 15.0)
 - bolt.shield.fill (iOS 15.0)
 
+### bolt.trianglebadge.exclamationmark
+- bolt.trianglebadge.exclamationmark (iOS 16.1)
+- bolt.trianglebadge.exclamationmark.fill (iOS 16.1)
+
 ### bonjour
  (iOS 14.0)
 
@@ -1580,13 +1875,30 @@ _____
 - books.vertical.circle (iOS 15.0)
 - books.vertical.circle.fill (iOS 15.0)
 
+### box.truck
+- box.truck (iOS 16.0)
+- box.truck.fill (iOS 16.0)
+
+### box.truck.badge.clock
+- box.truck.badge.clock (iOS 16.0)
+- box.truck.badge.clock.rtl (iOS 16.0)
+- box.truck.badge.clock.fill (iOS 16.0)
+- box.truck.badge.clock.fill.rtl (iOS 16.0)
+
 ### brain
  (iOS 15.0)
 
 ### brain.head.profile
  (iOS 15.0)
 
+### brakesignal
+ (iOS 16.0)
+
+### brakesignal.dashed
+ (iOS 16.0)
+
 ### brazilianrealsign
+- brazilianrealsign (iOS 16.0)
 - brazilianrealsign.circle (iOS 14.2)
 - brazilianrealsign.circle.fill (iOS 14.2)
 - brazilianrealsign.square (iOS 14.2)
@@ -1626,6 +1938,10 @@ _____
 - bubble.right.circle (iOS 15.0)
 - bubble.right.circle.fill (iOS 15.0)
 
+### bubbles.and.sparkles
+- bubbles.and.sparkles (iOS 16.0)
+- bubbles.and.sparkles.fill (iOS 16.0)
+
 ### building
 - building (iOS 14.0)
 - building.fill (iOS 14.0)
@@ -1659,11 +1975,20 @@ _____
 - bus.doubledecker (iOS 14.0)
 - bus.doubledecker.fill (iOS 14.0)
 
+### button.programmable
+- button.programmable (iOS 16.0)
+- button.programmable.square (iOS 16.0)
+- button.programmable.square.fill (iOS 16.0)
+
 ### c
 - c.circle (iOS 13.0)
 - c.circle.fill (iOS 13.0)
 - c.square (iOS 13.0)
 - c.square.fill (iOS 13.0)
+
+### cabinet
+- cabinet (iOS 16.0)
+- cabinet.fill (iOS 16.0)
 
 ### cable.connector
  (iOS 15.0)
@@ -1831,6 +2156,172 @@ _____
 - car.ferry (iOS 15.0)
 - car.ferry.fill (iOS 15.0)
 
+### car.front.waves.up
+- car.front.waves.up (iOS 16.1)
+- car.front.waves.up.fill (iOS 16.1)
+
+### car.rear
+- car.rear (iOS 16.1)
+- car.rear.fill (iOS 16.1)
+
+### car.rear.and.tire.marks
+- car.rear.and.tire.marks (iOS 16.1)
+- car.rear.and.tire.marks.slash (iOS 16.1)
+
+### car.rear.road.lane
+ (iOS 16.1)
+
+### car.rear.road.lane.dashed
+ (iOS 16.1)
+
+### car.rear.waves.up
+- car.rear.waves.up (iOS 16.1)
+- car.rear.waves.up.fill (iOS 16.1)
+
+### car.side
+- car.side (iOS 16.1)
+- car.side.fill (iOS 16.1)
+
+### car.side.air.circulate
+- car.side.air.circulate (iOS 16.1)
+- car.side.air.circulate.fill (iOS 16.1)
+
+### car.side.air.fresh
+- car.side.air.fresh (iOS 16.1)
+- car.side.air.fresh.fill (iOS 16.1)
+
+### car.side.and.exclamationmark
+- car.side.and.exclamationmark (iOS 16.1)
+- car.side.and.exclamationmark.fill (iOS 16.1)
+
+### car.side.arrowtriangle.down
+- car.side.arrowtriangle.down (iOS 16.1)
+- car.side.arrowtriangle.down.fill (iOS 16.1)
+
+### car.side.arrowtriangle.up
+- car.side.arrowtriangle.up (iOS 16.1)
+- car.side.arrowtriangle.up.fill (iOS 16.1)
+
+### car.side.arrowtriangle.up.arrowtriangle.down
+- car.side.arrowtriangle.up.arrowtriangle.down (iOS 16.1)
+- car.side.arrowtriangle.up.arrowtriangle.down.fill (iOS 16.1)
+
+### car.side.front.open
+- car.side.front.open (iOS 16.1)
+- car.side.front.open.fill (iOS 16.1)
+
+### car.side.rear.open
+- car.side.rear.open (iOS 16.1)
+- car.side.rear.open.fill (iOS 16.1)
+
+### car.top.door.front.left.and.front.right.and.rear.left.and.rear.right.open
+- car.top.door.front.left.and.front.right.and.rear.left.and.rear.right.open (iOS 16.1)
+- car.top.door.front.left.and.front.right.and.rear.left.and.rear.right.open.fill (iOS 16.1)
+
+### car.top.door.front.left.and.front.right.and.rear.left.open
+- car.top.door.front.left.and.front.right.and.rear.left.open (iOS 16.1)
+- car.top.door.front.left.and.front.right.and.rear.left.open.fill (iOS 16.1)
+
+### car.top.door.front.left.and.front.right.and.rear.right.open
+- car.top.door.front.left.and.front.right.and.rear.right.open (iOS 16.1)
+- car.top.door.front.left.and.front.right.and.rear.right.open.fill (iOS 16.1)
+
+### car.top.door.front.left.and.front.right.open
+- car.top.door.front.left.and.front.right.open (iOS 16.1)
+- car.top.door.front.left.and.front.right.open.fill (iOS 16.1)
+
+### car.top.door.front.left.and.rear.left.and.rear.right.open
+- car.top.door.front.left.and.rear.left.and.rear.right.open (iOS 16.1)
+- car.top.door.front.left.and.rear.left.and.rear.right.open.fill (iOS 16.1)
+
+### car.top.door.front.left.and.rear.left.open
+- car.top.door.front.left.and.rear.left.open (iOS 16.1)
+- car.top.door.front.left.and.rear.left.open.fill (iOS 16.1)
+
+### car.top.door.front.left.and.rear.right.open
+- car.top.door.front.left.and.rear.right.open (iOS 16.1)
+- car.top.door.front.left.and.rear.right.open.fill (iOS 16.1)
+
+### car.top.door.front.left.open
+- car.top.door.front.left.open (iOS 16.1)
+- car.top.door.front.left.open.fill (iOS 16.1)
+
+### car.top.door.front.right.and.rear.left.and.rear.right.open
+- car.top.door.front.right.and.rear.left.and.rear.right.open (iOS 16.1)
+- car.top.door.front.right.and.rear.left.and.rear.right.open.fill (iOS 16.1)
+
+### car.top.door.front.right.and.rear.left.open
+- car.top.door.front.right.and.rear.left.open (iOS 16.1)
+- car.top.door.front.right.and.rear.left.open.fill (iOS 16.1)
+
+### car.top.door.front.right.and.rear.right.open
+- car.top.door.front.right.and.rear.right.open (iOS 16.1)
+- car.top.door.front.right.and.rear.right.open.fill (iOS 16.1)
+
+### car.top.door.front.right.open
+- car.top.door.front.right.open (iOS 16.1)
+- car.top.door.front.right.open.fill (iOS 16.1)
+
+### car.top.door.rear.left.and.rear.right.open
+- car.top.door.rear.left.and.rear.right.open (iOS 16.1)
+- car.top.door.rear.left.and.rear.right.open.fill (iOS 16.1)
+
+### car.top.door.rear.left.open
+- car.top.door.rear.left.open (iOS 16.1)
+- car.top.door.rear.left.open.fill (iOS 16.1)
+
+### car.top.door.rear.right.open
+- car.top.door.rear.right.open (iOS 16.1)
+- car.top.door.rear.right.open.fill (iOS 16.1)
+
+### car.top.lane.dashed.arrowtriangle.inward
+- car.top.lane.dashed.arrowtriangle.inward (iOS 16.1)
+- car.top.lane.dashed.arrowtriangle.inward.fill (iOS 16.1)
+
+### car.top.lane.dashed.badge.steeringwheel
+- car.top.lane.dashed.badge.steeringwheel (iOS 16.1)
+- car.top.lane.dashed.badge.steeringwheel.fill (iOS 16.1)
+
+### car.top.lane.dashed.departure.left
+- car.top.lane.dashed.departure.left (iOS 16.1)
+- car.top.lane.dashed.departure.left.fill (iOS 16.1)
+
+### car.top.lane.dashed.departure.right
+- car.top.lane.dashed.departure.right (iOS 16.1)
+- car.top.lane.dashed.departure.right.fill (iOS 16.1)
+
+### car.top.radiowaves.front
+- car.top.radiowaves.front (iOS 16.1)
+- car.top.radiowaves.front.fill (iOS 16.1)
+
+### car.top.radiowaves.rear
+- car.top.radiowaves.rear (iOS 16.1)
+- car.top.radiowaves.rear.fill (iOS 16.1)
+
+### car.top.radiowaves.rear.left
+- car.top.radiowaves.rear.left (iOS 16.1)
+- car.top.radiowaves.rear.left.fill (iOS 16.1)
+
+### car.top.radiowaves.rear.left.and.rear.right
+- car.top.radiowaves.rear.left.and.rear.right (iOS 16.1)
+- car.top.radiowaves.rear.left.and.rear.right.fill (iOS 16.1)
+
+### car.top.radiowaves.rear.right
+- car.top.radiowaves.rear.right (iOS 16.1)
+- car.top.radiowaves.rear.right.fill (iOS 16.1)
+
+### carbon.dioxide.cloud
+- carbon.dioxide.cloud (iOS 16.0)
+- carbon.dioxide.cloud.fill (iOS 16.0)
+
+### carbon.monoxide.cloud
+- carbon.monoxide.cloud (iOS 16.0)
+- carbon.monoxide.cloud.fill (iOS 16.0)
+
+### carrot
+- carrot (iOS 16.0)
+- carrot.fill (iOS 16.0)
+
 ### cart
 - cart (iOS 13.0)
 - cart.fill (iOS 13.0)
@@ -1843,27 +2334,54 @@ _____
 ### cart.badge.plus
  (iOS 13.0)
 
+### cart.badge.questionmark
+- cart.badge.questionmark (iOS 16.0)
+- cart.badge.questionmark.ar (iOS 16.0)
+- cart.badge.questionmark.rtl (iOS 16.0)
+
 ### cart.fill.badge.minus
  (iOS 13.0)
 
 ### cart.fill.badge.plus
  (iOS 13.0)
 
+### cart.fill.badge.questionmark
+- cart.fill.badge.questionmark (iOS 16.0)
+- cart.fill.badge.questionmark.ar (iOS 16.0)
+- cart.fill.badge.questionmark.rtl (iOS 16.0)
+
 ### case
 - case (iOS 14.0)
 - case.fill (iOS 14.0)
 
 ### cedisign
+- cedisign (iOS 16.0)
 - cedisign.circle (iOS 13.0)
 - cedisign.circle.fill (iOS 13.0)
 - cedisign.square (iOS 13.0)
 - cedisign.square.fill (iOS 13.0)
 
+### cellularbars
+ (iOS 16.0)
+
 ### centsign
+- centsign (iOS 16.0)
 - centsign.circle (iOS 13.0)
 - centsign.circle.fill (iOS 13.0)
 - centsign.square (iOS 13.0)
 - centsign.square.fill (iOS 13.0)
+
+### chair
+- chair (iOS 16.0)
+- chair.fill (iOS 16.0)
+
+### chair.lounge
+- chair.lounge (iOS 16.0)
+- chair.lounge.fill (iOS 16.0)
+
+### chandelier
+- chandelier (iOS 16.0)
+- chandelier.fill (iOS 16.0)
 
 ### character
 - character (iOS 14.2)
@@ -1927,6 +2445,15 @@ _____
 - character.cursor.ibeam.zh (iOS 14.5)
 - character.cursor.ibeam.zh.traditional (iOS 14.5)
 
+### character.duployan
+ (iOS 16.0)
+
+### character.phonetic
+ (iOS 16.0)
+
+### character.sutton
+ (iOS 16.0)
+
 ### character.textbox
 - character.textbox (iOS 14.5)
 - character.textbox.ar (iOS 14.5)
@@ -1948,6 +2475,19 @@ _____
 
 ### chart.bar.xaxis
  (iOS 14.0)
+
+### chart.dots.scatter
+ (iOS 16.1)
+
+### chart.line.downtrend.xyaxis
+- chart.line.downtrend.xyaxis (iOS 16.0)
+- chart.line.downtrend.xyaxis.circle (iOS 16.0)
+- chart.line.downtrend.xyaxis.circle.fill (iOS 16.0)
+
+### chart.line.flattrend.xyaxis
+- chart.line.flattrend.xyaxis (iOS 16.0)
+- chart.line.flattrend.xyaxis.circle (iOS 16.0)
+- chart.line.flattrend.xyaxis.circle.fill (iOS 16.0)
 
 ### chart.line.uptrend.xyaxis
 - chart.line.uptrend.xyaxis (iOS 15.0)
@@ -1971,6 +2511,13 @@ _____
 - checklist (iOS 15.0)
 - checklist.rtl (iOS 15.0)
 
+### checklist.checked
+- checklist.checked (iOS 16.0)
+- checklist.checked.rtl (iOS 16.0)
+
+### checklist.unchecked
+ (iOS 16.0)
+
 ### checkmark
 - checkmark (iOS 13.0)
 - checkmark.circle (iOS 13.0)
@@ -1984,6 +2531,16 @@ _____
 - checkmark.bubble (iOS 15.0)
 - checkmark.bubble.fill (iOS 15.0)
 
+### checkmark.circle.badge.questionmark
+- checkmark.circle.badge.questionmark (iOS 16.0)
+- checkmark.circle.badge.questionmark.ar (iOS 16.0)
+- checkmark.circle.badge.questionmark.fill (iOS 16.0)
+- checkmark.circle.badge.questionmark.fill.ar (iOS 16.0)
+
+### checkmark.circle.badge.xmark
+- checkmark.circle.badge.xmark (iOS 16.0)
+- checkmark.circle.badge.xmark.fill (iOS 16.0)
+
 ### checkmark.circle.trianglebadge.exclamationmark
  (iOS 15.0)
 
@@ -1994,6 +2551,10 @@ _____
 ### checkmark.icloud
 - checkmark.icloud (iOS 14.0)
 - checkmark.icloud.fill (iOS 14.0)
+
+### checkmark.message
+- checkmark.message (iOS 16.0)
+- checkmark.message.fill (iOS 16.0)
 
 ### checkmark.rectangle.portrait
 - checkmark.rectangle.portrait (iOS 14.0)
@@ -2016,6 +2577,9 @@ _____
 
 ### chevron.backward.2
  (iOS 14.0)
+
+### chevron.backward.to.line
+ (iOS 16.0)
 
 ### chevron.compact.down
  (iOS 13.0)
@@ -2046,6 +2610,9 @@ _____
 ### chevron.forward.2
  (iOS 14.0)
 
+### chevron.forward.to.line
+ (iOS 16.0)
+
 ### chevron.left
 - chevron.left (iOS 13.0)
 - chevron.left.circle (iOS 13.0)
@@ -2062,6 +2629,9 @@ _____
 ### chevron.left.slash.chevron.right
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [chevron.left.forwardslash.chevron.right](#chevronleftforwardslashchevronright))
 
+### chevron.left.to.line
+ (iOS 16.0)
+
 ### chevron.right
 - chevron.right (iOS 13.0)
 - chevron.right.circle (iOS 13.0)
@@ -2071,6 +2641,9 @@ _____
 
 ### chevron.right.2
  (iOS 13.0)
+
+### chevron.right.to.line
+ (iOS 16.0)
 
 ### chevron.up
 - chevron.up (iOS 13.0)
@@ -2106,7 +2679,8 @@ _____
  (iOS, introduced: 13.0, deprecated: 14.0, renamed: [sleep](#sleep))
 
 ### circle.dashed
- (iOS 14.0)
+- circle.dashed (iOS 14.0)
+- circle.dashed.rectangle (iOS 16.0)
 
 ### circle.dashed.inset.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.dashed.inset.filled](#circledashedinsetfilled))
@@ -2119,6 +2693,9 @@ _____
 
 ### circle.fill.square.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [circle.square.fill](#circle))
+
+### circle.filled.pattern.diagonalline.rectangle
+ (iOS 16.0)
 
 ### circle.grid.2x1
 - circle.grid.2x1 (iOS 15.0)
@@ -2191,6 +2768,12 @@ _____
 ### circle.lefthalf.filled
  (iOS 15.0)
 
+### circle.rectangle.dashed
+ (iOS 16.0)
+
+### circle.rectangle.filled.pattern.diagonalline
+ (iOS 16.0)
+
 ### circle.righthalf.fill
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.righthalf.filled](#circlerighthalffilled))
 
@@ -2223,6 +2806,10 @@ _____
 - clear (iOS 13.0)
 - clear.fill (iOS 13.0)
 
+### clipboard
+- clipboard (iOS 16.0)
+- clipboard.fill (iOS 16.0)
+
 ### clock
 - clock (iOS 13.0)
 - clock.fill (iOS 13.0)
@@ -2235,6 +2822,10 @@ _____
 ### clock.arrow.circlepath
  (iOS 14.0)
 
+### clock.badge
+- clock.badge (iOS 16.0)
+- clock.badge.fill (iOS 16.0)
+
 ### clock.badge.checkmark
 - clock.badge.checkmark (iOS 15.0)
 - clock.badge.checkmark.fill (iOS 15.0)
@@ -2243,71 +2834,114 @@ _____
 - clock.badge.exclamationmark (iOS 15.0)
 - clock.badge.exclamationmark.fill (iOS 15.0)
 
+### clock.badge.questionmark
+- clock.badge.questionmark (iOS 16.0)
+- clock.badge.questionmark.ar (iOS 16.0)
+- clock.badge.questionmark.fill (iOS 16.0)
+- clock.badge.questionmark.fill.ar (iOS 16.0)
+
+### clock.badge.xmark
+- clock.badge.xmark (iOS 16.0)
+- clock.badge.xmark.fill (iOS 16.0)
+
 ### cloud
 - cloud (iOS 13.0)
 - cloud.fill (iOS 13.0)
+- cloud.circle (iOS 16.0)
+- cloud.circle.fill (iOS 16.0)
 
 ### cloud.bolt
 - cloud.bolt (iOS 13.0)
 - cloud.bolt.fill (iOS 13.0)
+- cloud.bolt.circle (iOS 16.0)
+- cloud.bolt.circle.fill (iOS 16.0)
 
 ### cloud.bolt.rain
 - cloud.bolt.rain (iOS 13.0)
 - cloud.bolt.rain.fill (iOS 13.0)
+- cloud.bolt.rain.circle (iOS 16.0)
+- cloud.bolt.rain.circle.fill (iOS 16.0)
 
 ### cloud.drizzle
 - cloud.drizzle (iOS 13.0)
 - cloud.drizzle.fill (iOS 13.0)
+- cloud.drizzle.circle (iOS 16.0)
+- cloud.drizzle.circle.fill (iOS 16.0)
 
 ### cloud.fog
 - cloud.fog (iOS 13.0)
 - cloud.fog.fill (iOS 13.0)
+- cloud.fog.circle (iOS 16.0)
+- cloud.fog.circle.fill (iOS 16.0)
 
 ### cloud.hail
 - cloud.hail (iOS 13.0)
 - cloud.hail.fill (iOS 13.0)
+- cloud.hail.circle (iOS 16.0)
+- cloud.hail.circle.fill (iOS 16.0)
 
 ### cloud.heavyrain
 - cloud.heavyrain (iOS 13.0)
 - cloud.heavyrain.fill (iOS 13.0)
+- cloud.heavyrain.circle (iOS 16.0)
+- cloud.heavyrain.circle.fill (iOS 16.0)
 
 ### cloud.moon
 - cloud.moon (iOS 13.0)
 - cloud.moon.fill (iOS 13.0)
+- cloud.moon.circle (iOS 16.0)
+- cloud.moon.circle.fill (iOS 16.0)
 
 ### cloud.moon.bolt
 - cloud.moon.bolt (iOS 13.0)
 - cloud.moon.bolt.fill (iOS 13.0)
+- cloud.moon.bolt.circle (iOS 16.0)
+- cloud.moon.bolt.circle.fill (iOS 16.0)
 
 ### cloud.moon.rain
 - cloud.moon.rain (iOS 13.0)
 - cloud.moon.rain.fill (iOS 13.0)
+- cloud.moon.rain.circle (iOS 16.0)
+- cloud.moon.rain.circle.fill (iOS 16.0)
 
 ### cloud.rain
 - cloud.rain (iOS 13.0)
 - cloud.rain.fill (iOS 13.0)
+- cloud.rain.circle (iOS 16.0)
+- cloud.rain.circle.fill (iOS 16.0)
 
 ### cloud.sleet
 - cloud.sleet (iOS 13.0)
 - cloud.sleet.fill (iOS 13.0)
+- cloud.sleet.circle (iOS 16.0)
+- cloud.sleet.circle.fill (iOS 16.0)
 
 ### cloud.snow
 - cloud.snow (iOS 13.0)
 - cloud.snow.fill (iOS 13.0)
+- cloud.snow.circle (iOS 16.0)
+- cloud.snow.circle.fill (iOS 16.0)
 
 ### cloud.sun
 - cloud.sun (iOS 13.0)
 - cloud.sun.fill (iOS 13.0)
+- cloud.sun.circle (iOS 16.0)
+- cloud.sun.circle.fill (iOS 16.0)
 
 ### cloud.sun.bolt
 - cloud.sun.bolt (iOS 13.0)
 - cloud.sun.bolt.fill (iOS 13.0)
+- cloud.sun.bolt.circle (iOS 16.0)
+- cloud.sun.bolt.circle.fill (iOS 16.0)
 
 ### cloud.sun.rain
 - cloud.sun.rain (iOS 13.0)
 - cloud.sun.rain.fill (iOS 13.0)
+- cloud.sun.rain.circle (iOS 16.0)
+- cloud.sun.rain.circle.fill (iOS 16.0)
 
 ### coloncurrencysign
+- coloncurrencysign (iOS 16.0)
 - coloncurrencysign.circle (iOS 13.0)
 - coloncurrencysign.circle.fill (iOS 13.0)
 - coloncurrencysign.square (iOS 13.0)
@@ -2324,6 +2958,9 @@ _____
 - command.square (iOS 14.0)
 - command.square.fill (iOS 14.0)
 
+### compass.drawing
+ (iOS 16.0)
+
 ### computermouse
 - computermouse (iOS 15.0)
 - computermouse.fill (iOS 15.0)
@@ -2332,11 +2969,19 @@ _____
 - cone (iOS 14.0)
 - cone.fill (iOS 14.0)
 
+### contact.sensor
+- contact.sensor (iOS 16.0)
+- contact.sensor.fill (iOS 16.0)
+
 ### contextualmenu.and.cursorarrow
  (iOS 14.0)
 
 ### control
  (iOS 13.0)
+
+### cooktop
+- cooktop (iOS 16.0)
+- cooktop.fill (iOS 16.0)
 
 ### cpu
 - cpu (iOS 14.0)
@@ -2354,6 +2999,15 @@ _____
 ### creditcard.trianglebadge.exclamationmark
  (iOS 15.0)
 
+### creditcard.viewfinder
+ (iOS 16.0)
+
+### cricket.ball
+- cricket.ball (iOS 16.0)
+- cricket.ball.fill (iOS 16.0)
+- cricket.ball.circle (iOS 16.0)
+- cricket.ball.circle.fill (iOS 16.0)
+
 ### crop
  (iOS 13.0)
 
@@ -2369,6 +3023,8 @@ _____
 ### cross.case
 - cross.case (iOS 14.0)
 - cross.case.fill (iOS 14.0)
+- cross.case.circle (iOS 16.1)
+- cross.case.circle.fill (iOS 16.1)
 
 ### cross.vial
 - cross.vial (iOS 15.0)
@@ -2379,6 +3035,7 @@ _____
 - crown.fill (iOS 14.0)
 
 ### cruzeirosign
+- cruzeirosign (iOS 16.0)
 - cruzeirosign.circle (iOS 13.0)
 - cruzeirosign.circle.fill (iOS 13.0)
 - cruzeirosign.square (iOS 13.0)
@@ -2411,6 +3068,7 @@ _____
 ### cursorarrow
 - cursorarrow (iOS 14.0)
 - cursorarrow.square (iOS 14.0)
+- cursorarrow.square.fill (iOS 16.0)
 
 ### cursorarrow.and.square.on.square.dashed
  (iOS 14.0)
@@ -2433,6 +3091,12 @@ _____
 ### cursorarrow.rays
  (iOS 14.0)
 
+### curtains.closed
+ (iOS 16.0)
+
+### curtains.open
+ (iOS 16.0)
+
 ### cylinder
 - cylinder (iOS 14.0)
 - cylinder.fill (iOS 14.0)
@@ -2452,6 +3116,10 @@ _____
 
 ### decrease.quotelevel
  (iOS 13.0)
+
+### dehumidifier
+- dehumidifier (iOS 16.0)
+- dehumidifier.fill (iOS 16.0)
 
 ### delete.backward
 - delete.backward (iOS 15.0)
@@ -2482,17 +3150,33 @@ _____
 ### desktopcomputer.trianglebadge.exclamationmark
  (iOS 15.0)
 
+### deskview
+- deskview (iOS 16.0)
+- deskview.fill (iOS 16.0)
+
 ### dial
-- dial (iOS, introduced: 13.0, deprecated: 14.0, renamed: [dial.min](#dialmin))
-- dial.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [dial.min.fill](#dialmin))
+- dial (iOS, introduced: 13.0, deprecated: 16.0, renamed: [dial.low](#diallow))
+- dial.fill (iOS, introduced: 13.0, deprecated: 16.0, renamed: [dial.low.fill](#diallow))
+
+### dial.high
+- dial.high (iOS 16.0)
+- dial.high.fill (iOS 16.0)
+
+### dial.low
+- dial.low (iOS 16.0)
+- dial.low.fill (iOS 16.0)
 
 ### dial.max
-- dial.max (iOS 14.0)
-- dial.max.fill (iOS 14.0)
+- dial.max (iOS, introduced: 14.0, deprecated: 16.0, renamed: [dial.high](#dialhigh))
+- dial.max.fill (iOS, introduced: 14.0, deprecated: 16.0, renamed: [dial.high.fill](#dialhigh))
+
+### dial.medium
+- dial.medium (iOS 16.0)
+- dial.medium.fill (iOS 16.0)
 
 ### dial.min
-- dial.min (iOS 14.0)
-- dial.min.fill (iOS 14.0)
+- dial.min (iOS, introduced: 14.0, deprecated: 16.0, renamed: [dial.low](#diallow))
+- dial.min.fill (iOS, introduced: 14.0, deprecated: 16.0, renamed: [dial.low.fill](#diallow))
 
 ### diamond
 - diamond (iOS 14.0)
@@ -2570,6 +3254,10 @@ _____
 ### directcurrent
  (iOS 14.2)
 
+### dishwasher
+- dishwasher (iOS 16.0)
+- dishwasher.fill (iOS 16.0)
+
 ### display
  (iOS 14.0)
 
@@ -2581,6 +3269,30 @@ _____
 
 ### display.trianglebadge.exclamationmark
  (iOS 14.0)
+
+### distribute.horizontal.center
+- distribute.horizontal.center (iOS 16.0)
+- distribute.horizontal.center.fill (iOS 16.0)
+
+### distribute.horizontal.left
+- distribute.horizontal.left (iOS 16.0)
+- distribute.horizontal.left.fill (iOS 16.0)
+
+### distribute.horizontal.right
+- distribute.horizontal.right (iOS 16.0)
+- distribute.horizontal.right.fill (iOS 16.0)
+
+### distribute.vertical.bottom
+- distribute.vertical.bottom (iOS 16.0)
+- distribute.vertical.bottom.fill (iOS 16.0)
+
+### distribute.vertical.center
+- distribute.vertical.center (iOS 16.0)
+- distribute.vertical.center.fill (iOS 16.0)
+
+### distribute.vertical.top
+- distribute.vertical.top (iOS 16.0)
+- distribute.vertical.top.fill (iOS 16.0)
 
 ### divide
 - divide (iOS 13.0)
@@ -2600,6 +3312,10 @@ _____
 - doc.append.rtl (iOS 14.0)
 - doc.append.fill (iOS 14.0)
 - doc.append.fill.rtl (iOS 14.0)
+
+### doc.badge.arrow.up
+- doc.badge.arrow.up (iOS 16.0)
+- doc.badge.arrow.up.fill (iOS 16.0)
 
 ### doc.badge.ellipsis
  (iOS 14.0)
@@ -2689,16 +3405,75 @@ _____
  (iOS 14.0)
 
 ### dollarsign
+- dollarsign (iOS 16.0)
 - dollarsign.circle (iOS 13.0)
 - dollarsign.circle.fill (iOS 13.0)
 - dollarsign.square (iOS 13.0)
 - dollarsign.square.fill (iOS 13.0)
 
+### dollarsign.arrow.circlepath
+ (iOS 16.0)
+
 ### dongsign
+- dongsign (iOS 16.0)
 - dongsign.circle (iOS 13.0)
 - dongsign.circle.fill (iOS 13.0)
 - dongsign.square (iOS 13.0)
 - dongsign.square.fill (iOS 13.0)
+
+### door.french.closed
+ (iOS 16.0)
+
+### door.french.open
+ (iOS 16.0)
+
+### door.garage.closed
+ (iOS 16.0)
+
+### door.garage.closed.trianglebadge.exclamationmark
+ (iOS 16.0)
+
+### door.garage.double.bay.closed
+ (iOS 16.0)
+
+### door.garage.double.bay.closed.trianglebadge.exclamationmark
+ (iOS 16.0)
+
+### door.garage.double.bay.open
+ (iOS 16.0)
+
+### door.garage.double.bay.open.trianglebadge.exclamationmark
+ (iOS 16.0)
+
+### door.garage.open
+ (iOS 16.0)
+
+### door.garage.open.trianglebadge.exclamationmark
+ (iOS 16.0)
+
+### door.left.hand.closed
+ (iOS 16.0)
+
+### door.left.hand.open
+ (iOS 16.0)
+
+### door.right.hand.closed
+ (iOS 16.0)
+
+### door.right.hand.open
+ (iOS 16.0)
+
+### door.sliding.left.hand.closed
+ (iOS 16.0)
+
+### door.sliding.left.hand.open
+ (iOS 16.0)
+
+### door.sliding.right.hand.closed
+ (iOS 16.0)
+
+### door.sliding.right.hand.open
+ (iOS 16.0)
 
 ### dot.arrowtriangles.up.right.down.left.circle
  (iOS 14.0)
@@ -2775,9 +3550,29 @@ _____
 - drop.circle (iOS 15.0)
 - drop.circle.fill (iOS 15.0)
 
+### drop.degreesign
+- drop.degreesign (iOS 16.0)
+- drop.degreesign.fill (iOS 16.0)
+- drop.degreesign.slash (iOS 16.0)
+- drop.degreesign.slash.rtl (iOS 16.0)
+- drop.degreesign.slash.fill (iOS 16.0)
+- drop.degreesign.slash.fill.rtl (iOS 16.0)
+
+### drop.keypad.rectangle
+- drop.keypad.rectangle (iOS 16.0)
+- drop.keypad.rectangle.fill (iOS 16.0)
+
 ### drop.triangle
 - drop.triangle (iOS 13.0)
 - drop.triangle.fill (iOS 13.0)
+
+### dryer
+- dryer (iOS 16.0)
+- dryer.fill (iOS 16.0)
+
+### dumbbell
+- dumbbell (iOS 16.0)
+- dumbbell.fill (iOS 16.0)
 
 ### e
 - e.circle (iOS 13.0)
@@ -2832,9 +3627,28 @@ _____
 ### ellipsis.curlybraces
  (iOS 15.0)
 
+### ellipsis.message
+- ellipsis.message (iOS 16.0)
+- ellipsis.message.fill (iOS 16.0)
+
 ### ellipsis.vertical.bubble
 - ellipsis.vertical.bubble (iOS 15.0)
 - ellipsis.vertical.bubble.fill (iOS 15.0)
+
+### ellipsis.viewfinder
+ (iOS 16.1)
+
+### engine.combustion
+- engine.combustion (iOS 16.1)
+- engine.combustion.fill (iOS 16.1)
+
+### entry.lever.keypad
+- entry.lever.keypad (iOS 16.0)
+- entry.lever.keypad.fill (iOS 16.0)
+
+### entry.lever.keypad.trianglebadge.exclamationmark
+- entry.lever.keypad.trianglebadge.exclamationmark (iOS 16.0)
+- entry.lever.keypad.trianglebadge.exclamationmark.fill (iOS 16.0)
 
 ### envelope
 - envelope (iOS 13.0)
@@ -2864,12 +3678,23 @@ _____
 - envelope.open (iOS 13.0)
 - envelope.open.fill (iOS 13.0)
 
+### envelope.open.badge.clock
+ (iOS 16.0)
+
 ### equal
 - equal (iOS 13.0)
 - equal.circle (iOS 13.0)
 - equal.circle.fill (iOS 13.0)
 - equal.square (iOS 13.0)
 - equal.square.fill (iOS 13.0)
+
+### eraser
+- eraser (iOS 16.0)
+- eraser.fill (iOS 16.0)
+
+### eraser.line.dashed
+- eraser.line.dashed (iOS 16.0)
+- eraser.line.dashed.fill (iOS 16.0)
 
 ### escape
  (iOS 13.0)
@@ -2879,6 +3704,7 @@ _____
 - esim.fill (iOS 14.0)
 
 ### eurosign
+- eurosign (iOS 16.0)
 - eurosign.circle (iOS 13.0)
 - eurosign.circle.fill (iOS 13.0)
 - eurosign.square (iOS 13.0)
@@ -2906,6 +3732,9 @@ _____
 ### exclamationmark.arrow.triangle.2.circlepath
  (iOS 14.0)
 
+### exclamationmark.brakesignal
+ (iOS 16.0)
+
 ### exclamationmark.bubble
 - exclamationmark.bubble (iOS 13.0)
 - exclamationmark.bubble.fill (iOS 13.0)
@@ -2916,13 +3745,24 @@ _____
 - exclamationmark.icloud (iOS 13.0)
 - exclamationmark.icloud.fill (iOS 13.0)
 
+### exclamationmark.lock
+- exclamationmark.lock (iOS 16.0)
+- exclamationmark.lock.fill (iOS 16.0)
+
 ### exclamationmark.octagon
 - exclamationmark.octagon (iOS 13.0)
 - exclamationmark.octagon.fill (iOS 13.0)
 
+### exclamationmark.questionmark
+- exclamationmark.questionmark (iOS 16.0)
+- exclamationmark.questionmark.ar (iOS 16.0)
+
 ### exclamationmark.shield
 - exclamationmark.shield (iOS 13.0)
 - exclamationmark.shield.fill (iOS 13.0)
+
+### exclamationmark.transmission
+ (iOS 16.1)
 
 ### exclamationmark.triangle
 - exclamationmark.triangle (iOS 13.0)
@@ -2935,6 +3775,9 @@ _____
 ### externaldrive.badge.checkmark
  (iOS 14.0)
 
+### externaldrive.badge.exclamationmark
+ (iOS 16.0)
+
 ### externaldrive.badge.icloud
  (iOS 14.0)
 
@@ -2946,6 +3789,10 @@ _____
 
 ### externaldrive.badge.plus
  (iOS 14.0)
+
+### externaldrive.badge.questionmark
+- externaldrive.badge.questionmark (iOS 16.0)
+- externaldrive.badge.questionmark.ar (iOS 16.0)
 
 ### externaldrive.badge.timemachine
  (iOS 14.0)
@@ -2963,6 +3810,9 @@ _____
 ### externaldrive.fill.badge.checkmark
  (iOS 14.0)
 
+### externaldrive.fill.badge.exclamationmark
+ (iOS 16.0)
+
 ### externaldrive.fill.badge.icloud
  (iOS 14.0)
 
@@ -2975,6 +3825,10 @@ _____
 ### externaldrive.fill.badge.plus
  (iOS 14.0)
 
+### externaldrive.fill.badge.questionmark
+- externaldrive.fill.badge.questionmark (iOS 16.0)
+- externaldrive.fill.badge.questionmark.ar (iOS 16.0)
+
 ### externaldrive.fill.badge.timemachine
  (iOS 14.0)
 
@@ -2983,6 +3837,12 @@ _____
 
 ### externaldrive.fill.badge.xmark
  (iOS 14.0)
+
+### externaldrive.fill.trianglebadge.exclamationmark
+ (iOS 16.0)
+
+### externaldrive.trianglebadge.exclamationmark
+ (iOS 16.0)
 
 ### eye
 - eye (iOS 13.0)
@@ -3038,7 +3898,10 @@ _____
 
 ### face.smiling
 - face.smiling (iOS 14.0)
-- face.smiling.fill (iOS 14.0)
+- face.smiling.fill (iOS, introduced: 14.0, deprecated: 16.0, renamed: [face.smiling.inverse](#facesmilinginverse))
+
+### face.smiling.inverse
+ (iOS 16.0)
 
 ### faceid
  (iOS 13.0)
@@ -3047,12 +3910,35 @@ _____
 - facemask (iOS 15.0)
 - facemask.fill (iOS 15.0)
 
+### fan.and.light.ceiling
+- fan.and.light.ceiling (iOS 16.0)
+- fan.and.light.ceiling.fill (iOS 16.0)
+
+### fan.ceiling
+- fan.ceiling (iOS 16.0)
+- fan.ceiling.fill (iOS 16.0)
+
+### fan.desk
+- fan.desk (iOS 16.0)
+- fan.desk.fill (iOS 16.0)
+
+### fan.floor
+- fan.floor (iOS 16.0)
+- fan.floor.fill (iOS 16.0)
+
+### fan.oscillation
+- fan.oscillation (iOS 16.0)
+- fan.oscillation.fill (iOS 16.0)
+
 ### fanblades
 - fanblades (iOS 15.0)
 - fanblades.fill (iOS 15.0)
+- fanblades.slash (iOS 16.0)
+- fanblades.slash.fill (iOS 16.0)
 
 ### faxmachine
- (iOS 14.0)
+- faxmachine (iOS 14.0)
+- faxmachine.fill (iOS 16.0)
 
 ### ferry
 - ferry (iOS 15.0)
@@ -3064,8 +3950,250 @@ _____
 ### fibrechannel
  (iOS 15.0)
 
+### figure.2.and.child.holdinghands
+ (iOS 16.0)
+
+### figure.2.arms.open
+ (iOS 16.0)
+
+### figure.american.football
+ (iOS 16.0)
+
+### figure.and.child.holdinghands
+ (iOS 16.0)
+
+### figure.archery
+ (iOS 16.0)
+
+### figure.arms.open
+ (iOS 16.0)
+
+### figure.australian.football
+ (iOS 16.0)
+
+### figure.badminton
+ (iOS 16.0)
+
+### figure.barre
+ (iOS 16.0)
+
+### figure.baseball
+ (iOS 16.0)
+
+### figure.basketball
+ (iOS 16.0)
+
+### figure.bowling
+ (iOS 16.0)
+
+### figure.boxing
+ (iOS 16.0)
+
+### figure.climbing
+ (iOS 16.0)
+
+### figure.cooldown
+ (iOS 16.0)
+
+### figure.core.training
+ (iOS 16.0)
+
+### figure.cricket
+ (iOS 16.0)
+
+### figure.cross.training
+ (iOS 16.0)
+
+### figure.curling
+ (iOS 16.0)
+
+### figure.dance
+ (iOS 16.0)
+
+### figure.disc.sports
+ (iOS 16.0)
+
+### figure.dress.line.vertical.figure
+ (iOS 16.0)
+
+### figure.elliptical
+ (iOS 16.0)
+
+### figure.equestrian.sports
+ (iOS 16.0)
+
+### figure.fall
+- figure.fall (iOS 16.0)
+- figure.fall.circle (iOS 16.0)
+- figure.fall.circle.fill (iOS 16.0)
+
+### figure.fencing
+ (iOS 16.0)
+
+### figure.fishing
+ (iOS 16.0)
+
+### figure.flexibility
+ (iOS 16.0)
+
+### figure.golf
+ (iOS 16.0)
+
+### figure.gymnastics
+ (iOS 16.0)
+
+### figure.hand.cycling
+ (iOS 16.0)
+
+### figure.handball
+ (iOS 16.0)
+
+### figure.highintensity.intervaltraining
+ (iOS 16.0)
+
+### figure.hiking
+ (iOS 16.0)
+
+### figure.hockey
+ (iOS 16.0)
+
+### figure.hunting
+ (iOS 16.0)
+
+### figure.indoor.cycle
+ (iOS 16.0)
+
+### figure.jumprope
+ (iOS 16.0)
+
+### figure.kickboxing
+ (iOS 16.0)
+
+### figure.lacrosse
+ (iOS 16.0)
+
+### figure.martial.arts
+ (iOS 16.0)
+
+### figure.mind.and.body
+ (iOS 16.0)
+
+### figure.mixed.cardio
+ (iOS 16.0)
+
+### figure.open.water.swim
+ (iOS 16.0)
+
+### figure.outdoor.cycle
+ (iOS 16.0)
+
+### figure.pickleball
+ (iOS 16.0)
+
+### figure.pilates
+ (iOS 16.0)
+
+### figure.play
+ (iOS 16.0)
+
+### figure.pool.swim
+ (iOS 16.0)
+
+### figure.racquetball
+ (iOS 16.0)
+
 ### figure.roll
  (iOS 15.0)
+
+### figure.roll.runningpace
+ (iOS 16.0)
+
+### figure.rolling
+ (iOS 16.0)
+
+### figure.rower
+ (iOS 16.0)
+
+### figure.rugby
+ (iOS 16.0)
+
+### figure.run
+- figure.run (iOS 16.0)
+- figure.run.circle (iOS 16.0)
+- figure.run.circle.fill (iOS 16.0)
+
+### figure.run.square.stack
+- figure.run.square.stack (iOS 16.1)
+- figure.run.square.stack.fill (iOS 16.1)
+
+### figure.sailing
+ (iOS 16.0)
+
+### figure.seated.seatbelt
+ (iOS 16.1)
+
+### figure.seated.seatbelt.and.airbag.off
+ (iOS 16.1)
+
+### figure.seated.seatbelt.and.airbag.on
+ (iOS 16.1)
+
+### figure.seated.side.air.lower
+ (iOS 16.1)
+
+### figure.seated.side.air.upper
+ (iOS 16.1)
+
+### figure.seated.side.air.upper.and.lower
+ (iOS 16.1)
+
+### figure.seated.side.air.windshield
+ (iOS 16.1)
+
+### figure.seated.side.airbag.off
+ (iOS 16.1)
+
+### figure.seated.side.airbag.off.2
+ (iOS 16.1)
+
+### figure.seated.side.airbag.on
+ (iOS 16.1)
+
+### figure.seated.side.airbag.on.2
+ (iOS 16.1)
+
+### figure.seated.side.windshield.front.and.heat.waves
+ (iOS 16.1)
+
+### figure.skating
+ (iOS 16.0)
+
+### figure.skiing.crosscountry
+ (iOS 16.0)
+
+### figure.skiing.downhill
+ (iOS 16.0)
+
+### figure.snowboarding
+ (iOS 16.0)
+
+### figure.soccer
+ (iOS 16.0)
+
+### figure.socialdance
+ (iOS 16.0)
+
+### figure.softball
+ (iOS 16.0)
+
+### figure.squash
+ (iOS 16.0)
+
+### figure.stair.stepper
+ (iOS 16.0)
+
+### figure.stairs
+ (iOS 16.0)
 
 ### figure.stand
  (iOS 14.0)
@@ -3073,19 +4201,67 @@ _____
 ### figure.stand.line.dotted.figure.stand
  (iOS 14.0)
 
+### figure.step.training
+ (iOS 16.0)
+
+### figure.strengthtraining.functional
+ (iOS 16.0)
+
+### figure.strengthtraining.traditional
+ (iOS 16.0)
+
+### figure.surfing
+ (iOS 16.0)
+
+### figure.table.tennis
+ (iOS 16.0)
+
+### figure.taichi
+ (iOS 16.0)
+
+### figure.tennis
+ (iOS 16.0)
+
+### figure.track.and.field
+ (iOS 16.0)
+
+### figure.volleyball
+ (iOS 16.0)
+
 ### figure.walk
 - figure.walk (iOS 14.0)
 - figure.walk.circle (iOS 14.0)
 - figure.walk.circle.fill (iOS 14.0)
 
+### figure.walk.arrival
+ (iOS 16.0)
+
+### figure.walk.departure
+ (iOS 16.0)
+
 ### figure.walk.diamond
 - figure.walk.diamond (iOS 14.0)
 - figure.walk.diamond.fill (iOS 14.0)
+
+### figure.walk.motion
+ (iOS 16.0)
+
+### figure.water.fitness
+ (iOS 16.0)
+
+### figure.waterpolo
+ (iOS 16.0)
 
 ### figure.wave
 - figure.wave (iOS 14.0)
 - figure.wave.circle (iOS 14.0)
 - figure.wave.circle.fill (iOS 14.0)
+
+### figure.wrestling
+ (iOS 16.0)
+
+### figure.yoga
+ (iOS 16.0)
 
 ### filemenu.and.cursorarrow
 - filemenu.and.cursorarrow (iOS 14.0)
@@ -3099,6 +4275,24 @@ _____
 - film.fill (iOS 13.0)
 - film.circle (iOS 15.0)
 - film.circle.fill (iOS 15.0)
+
+### film.stack
+- film.stack (iOS 16.0)
+- film.stack.fill (iOS 16.0)
+
+### fireplace
+- fireplace (iOS 16.0)
+- fireplace.fill (iOS 16.0)
+
+### firewall
+- firewall (iOS 16.0)
+- firewall.fill (iOS 16.0)
+
+### fish
+- fish (iOS 16.0)
+- fish.fill (iOS 16.0)
+- fish.circle (iOS 16.1)
+- fish.circle.fill (iOS 16.1)
 
 ### flag
 - flag (iOS 13.0)
@@ -3115,6 +4309,8 @@ _____
 ### flag.2.crossed
 - flag.2.crossed (iOS 15.0)
 - flag.2.crossed.fill (iOS 15.0)
+- flag.2.crossed.circle (iOS 16.0)
+- flag.2.crossed.circle.fill (iOS 16.0)
 
 ### flag.and.flag.filled.crossed
  (iOS 15.0)
@@ -3122,6 +4318,14 @@ _____
 ### flag.badge.ellipsis
 - flag.badge.ellipsis (iOS 14.0)
 - flag.badge.ellipsis.fill (iOS 14.0)
+
+### flag.checkered
+- flag.checkered (iOS 16.0)
+- flag.checkered.circle (iOS 16.1)
+- flag.checkered.circle.fill (iOS 16.1)
+
+### flag.checkered.2.crossed
+ (iOS 16.0)
 
 ### flag.filled.and.flag.crossed
  (iOS 15.0)
@@ -3138,6 +4342,10 @@ _____
 ### flashlight.on.fill
  (iOS 13.1)
 
+### fleuron
+- fleuron (iOS 16.0)
+- fleuron.fill (iOS 16.0)
+
 ### flip.horizontal
 - flip.horizontal (iOS, introduced: 13.1, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right](#arrowleftandrightrighttriangleleftrighttriangleright))
 - flip.horizontal.fill (iOS, introduced: 13.1, deprecated: 14.0, renamed: [arrow.left.and.right.righttriangle.left.righttriangle.right.fill](#arrowleftandrightrighttriangleleftrighttriangleright))
@@ -3146,6 +4354,7 @@ _____
  (iOS 14.0)
 
 ### florinsign
+- florinsign (iOS 16.0)
 - florinsign.circle (iOS 13.0)
 - florinsign.circle.fill (iOS 13.0)
 - florinsign.square (iOS 13.0)
@@ -3154,6 +4363,12 @@ _____
 ### flowchart
 - flowchart (iOS 13.0)
 - flowchart.fill (iOS 13.0)
+
+### fluid.brakesignal
+ (iOS 16.0)
+
+### fluid.transmission
+ (iOS 16.1)
 
 ### fn
  (iOS 14.0)
@@ -3202,6 +4417,12 @@ _____
 - folder.fill.badge.questionmark (iOS 14.0)
 - folder.fill.badge.questionmark.ar (iOS 14.0)
 
+### football
+- football (iOS 16.0)
+- football.fill (iOS 16.0)
+- football.circle (iOS 16.0)
+- football.circle.fill (iOS 16.0)
+
 ### fork.knife
 - fork.knife (iOS 15.0)
 - fork.knife.circle (iOS 15.0)
@@ -3216,6 +4437,8 @@ _____
 ### forward.end
 - forward.end (iOS 13.0)
 - forward.end.fill (iOS 13.0)
+- forward.end.circle (iOS 16.0)
+- forward.end.circle.fill (iOS 16.0)
 
 ### forward.end.alt
 - forward.end.alt (iOS 13.0)
@@ -3225,11 +4448,20 @@ _____
 - forward.frame (iOS 14.0)
 - forward.frame.fill (iOS 14.0)
 
+### fossil.shell
+- fossil.shell (iOS 16.0)
+- fossil.shell.fill (iOS 16.0)
+
 ### francsign
+- francsign (iOS 16.0)
 - francsign.circle (iOS 13.0)
 - francsign.circle.fill (iOS 13.0)
 - francsign.square (iOS 13.0)
 - francsign.square.fill (iOS 13.0)
+
+### frying.pan
+- frying.pan (iOS 16.0)
+- frying.pan.fill (iOS 16.0)
 
 ### fuelpump
 - fuelpump (iOS 15.0)
@@ -3254,18 +4486,37 @@ _____
 - gamecontroller.fill (iOS 13.0)
 
 ### gauge
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.0, renamed: [gauge.medium](#gaugemedium))
 
 ### gauge.badge.minus
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.0, renamed: [gauge.medium.badge.minus](#gaugemediumbadgeminus))
 
 ### gauge.badge.plus
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.0, renamed: [gauge.medium.badge.plus](#gaugemediumbadgeplus))
+
+### gauge.high
+ (iOS 16.0)
+
+### gauge.low
+ (iOS 16.0)
+
+### gauge.medium
+ (iOS 16.0)
+
+### gauge.medium.badge.minus
+ (iOS 16.0)
+
+### gauge.medium.badge.plus
+ (iOS 16.0)
 
 ### gear
 - gear (iOS 13.0)
 - gear.circle (iOS 15.0)
 - gear.circle.fill (iOS 15.0)
+
+### gear.badge
+- gear.badge (iOS 16.0)
+- gear.badge.rtl (iOS 16.0)
 
 ### gear.badge.checkmark
  (iOS 15.0)
@@ -3285,6 +4536,9 @@ _____
 ### gearshape.2
 - gearshape.2 (iOS 14.0)
 - gearshape.2.fill (iOS 14.0)
+
+### gearshape.arrow.triangle.2.circlepath
+ (iOS 16.0)
 
 ### gift
 - gift (iOS 13.0)
@@ -3310,9 +4564,20 @@ _____
 ### globe.badge.chevron.backward
  (iOS 15.0)
 
+### globe.central.south.asia
+- globe.central.south.asia (iOS 16.0)
+- globe.central.south.asia.fill (iOS 16.0)
+
+### globe.desk
+- globe.desk (iOS 16.0)
+- globe.desk.fill (iOS 16.0)
+
 ### globe.europe.africa
 - globe.europe.africa (iOS 15.0)
 - globe.europe.africa.fill (iOS 15.0)
+
+### glowplug
+ (iOS 16.1)
 
 ### gobackward
  (iOS 13.0)
@@ -3429,6 +4694,7 @@ _____
 - grid.circle.fill (iOS 13.0)
 
 ### guaranisign
+- guaranisign (iOS 16.0)
 - guaranisign.circle (iOS 13.0)
 - guaranisign.circle.fill (iOS 13.0)
 - guaranisign.square (iOS 13.0)
@@ -3459,6 +4725,10 @@ _____
 - hammer.fill (iOS 13.0)
 - hammer.circle (iOS 15.0)
 - hammer.circle.fill (iOS 15.0)
+
+### hand.app
+- hand.app (iOS, introduced: 16.0, deprecated: 16.1, renamed: [hand.raised.app](#handraisedapp))
+- hand.app.fill (iOS, introduced: 16.0, deprecated: 16.1, renamed: [hand.raised.app.fill](#handraisedapp))
 
 ### hand.draw
 - hand.draw (iOS 13.0)
@@ -3498,6 +4768,18 @@ _____
 - hand.raised.slash (iOS 13.0)
 - hand.raised.slash.fill (iOS 13.0)
 
+### hand.raised.app
+- hand.raised.app (iOS 16.1)
+- hand.raised.app.fill (iOS 16.1)
+
+### hand.raised.brakesignal
+- hand.raised.brakesignal (iOS 16.1)
+- hand.raised.brakesignal.slash (iOS 16.1)
+
+### hand.raised.fingers.spread
+- hand.raised.fingers.spread (iOS 16.0)
+- hand.raised.fingers.spread.fill (iOS 16.0)
+
 ### hand.raised.square.on.square
 - hand.raised.square.on.square (iOS 15.0)
 - hand.raised.square.on.square.fill (iOS 15.0)
@@ -3522,6 +4804,10 @@ _____
 - hand.wave (iOS 14.0)
 - hand.wave.fill (iOS 14.0)
 
+### handbag
+- handbag (iOS 16.1)
+- handbag.fill (iOS 16.1)
+
 ### hands.clap
 - hands.clap (iOS 14.0)
 - hands.clap.fill (iOS 14.0)
@@ -3534,6 +4820,26 @@ _____
 - hare (iOS 13.0)
 - hare.fill (iOS 13.0)
 
+### hazardsign
+- hazardsign (iOS 16.1)
+- hazardsign.fill (iOS 16.1)
+
+### headlight.daytime
+- headlight.daytime (iOS 16.1)
+- headlight.daytime.fill (iOS 16.1)
+
+### headlight.fog
+- headlight.fog (iOS 16.1)
+- headlight.fog.fill (iOS 16.1)
+
+### headlight.high.beam
+- headlight.high.beam (iOS 16.0)
+- headlight.high.beam.fill (iOS 16.0)
+
+### headlight.low.beam
+- headlight.low.beam (iOS 16.0)
+- headlight.low.beam.fill (iOS 16.0)
+
 ### headphones
 - headphones (iOS 13.0)
 - headphones.circle (iOS 14.0)
@@ -3542,8 +4848,13 @@ _____
 ### hearingaid.ear
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [hearingdevice.ear](#hearingdeviceear))
 
+### hearingdevice.and.signal.meter
+- hearingdevice.and.signal.meter (iOS 16.0)
+- hearingdevice.and.signal.meter.fill (iOS 16.0)
+
 ### hearingdevice.ear
- (iOS 15.0)
+- hearingdevice.ear (iOS 15.0)
+- hearingdevice.ear.fill (iOS 16.0)
 
 ### heart
 - heart (iOS 13.0)
@@ -3562,6 +4873,13 @@ _____
 ### heart.text.square
 - heart.text.square (iOS 14.0)
 - heart.text.square.fill (iOS 14.0)
+
+### heat.element.windshield
+ (iOS 16.1)
+
+### heater.vertical
+- heater.vertical (iOS 16.0)
+- heater.vertical.fill (iOS 16.0)
 
 ### helm
  (iOS 13.0)
@@ -3582,6 +4900,10 @@ _____
 ### hexagon.tophalf.filled
  (iOS 15.0)
 
+### hifireceiver
+- hifireceiver (iOS 16.0)
+- hifireceiver.fill (iOS 16.0)
+
 ### hifispeaker
 - hifispeaker (iOS 13.0)
 - hifispeaker.fill (iOS 13.0)
@@ -3592,7 +4914,9 @@ _____
 
 ### hifispeaker.and.appletv
 - hifispeaker.and.appletv (iOS 15.0)
+- hifispeaker.and.appletv.rtl (iOS 16.0)
 - hifispeaker.and.appletv.fill (iOS 15.0)
+- hifispeaker.and.appletv.fill.rtl (iOS 16.0)
 
 ### hifispeaker.and.homepod
 - hifispeaker.and.homepod (iOS 14.0)
@@ -3604,6 +4928,15 @@ _____
 
 ### highlighter
  (iOS 14.0)
+
+### hockey.puck
+- hockey.puck (iOS 16.0)
+- hockey.puck.fill (iOS 16.0)
+- hockey.puck.circle (iOS 16.0)
+- hockey.puck.circle.fill (iOS 16.0)
+
+### hold.brakesignal
+ (iOS 16.0)
 
 ### homekit
  (iOS 14.0)
@@ -3618,7 +4951,9 @@ _____
 
 ### homepod.and.appletv
 - homepod.and.appletv (iOS 15.0)
+- homepod.and.appletv.rtl (iOS 16.0)
 - homepod.and.appletv.fill (iOS 15.0)
+- homepod.and.appletv.fill.rtl (iOS 16.0)
 
 ### homepod.and.homepodmini
 - homepod.and.homepodmini (iOS 14.5)
@@ -3634,7 +4969,9 @@ _____
 
 ### homepodmini.and.appletv
 - homepodmini.and.appletv (iOS 15.0)
+- homepodmini.and.appletv.rtl (iOS 16.0)
 - homepodmini.and.appletv.fill (iOS 15.0)
+- homepodmini.and.appletv.fill.rtl (iOS 16.0)
 
 ### hourglass
 - hourglass (iOS 13.0)
@@ -3662,18 +4999,41 @@ _____
 - house.circle (iOS 14.0)
 - house.circle.fill (iOS 14.0)
 
+### house.and.flag
+- house.and.flag (iOS 16.1)
+- house.and.flag.fill (iOS 16.1)
+- house.and.flag.circle (iOS 16.1)
+- house.and.flag.circle.fill (iOS 16.1)
+
+### house.lodge
+- house.lodge (iOS 16.1)
+- house.lodge.fill (iOS 16.1)
+- house.lodge.circle (iOS 16.1)
+- house.lodge.circle.fill (iOS 16.1)
+
 ### hryvniasign
+- hryvniasign (iOS 16.0)
 - hryvniasign.circle (iOS 13.0)
 - hryvniasign.circle.fill (iOS 13.0)
 - hryvniasign.square (iOS 13.0)
 - hryvniasign.square.fill (iOS 13.0)
+
+### humidifier
+- humidifier (iOS 16.0)
+- humidifier.fill (iOS 16.0)
+
+### humidifier.and.droplets
+- humidifier.and.droplets (iOS 16.0)
+- humidifier.and.droplets.fill (iOS 16.0)
 
 ### humidity
 - humidity (iOS 15.0)
 - humidity.fill (iOS 15.0)
 
 ### hurricane
- (iOS 13.0)
+- hurricane (iOS 13.0)
+- hurricane.circle (iOS 16.0)
+- hurricane.circle.fill (iOS 16.0)
 
 ### i
 - i.circle (iOS 13.0)
@@ -3706,6 +5066,7 @@ _____
  (iOS 13.0)
 
 ### indianrupeesign
+- indianrupeesign (iOS 16.0)
 - indianrupeesign.circle (iOS 13.0)
 - indianrupeesign.circle.fill (iOS 13.0)
 - indianrupeesign.square (iOS 13.0)
@@ -3720,6 +5081,15 @@ _____
 - info (iOS 13.0)
 - info.circle (iOS 13.0)
 - info.circle.fill (iOS 13.0)
+- info.square (iOS 16.0)
+- info.square.fill (iOS 16.0)
+
+### info.bubble
+- info.bubble (iOS 16.0)
+- info.bubble.fill (iOS 16.0)
+
+### info.windshield
+ (iOS 16.1)
 
 ### internaldrive
 - internaldrive (iOS 14.0)
@@ -3732,22 +5102,47 @@ _____
  (iOS 15.0)
 
 ### ipad.and.iphone
- (iOS 15.0)
+- ipad.and.iphone (iOS 15.0)
+- ipad.and.iphone.slash (iOS 16.1)
 
 ### ipad.badge.play
  (iOS 14.2)
 
+### ipad.gen1
+ (iOS 16.1)
+
+### ipad.gen1.badge.play
+ (iOS 16.1)
+
+### ipad.gen1.landscape
+ (iOS 16.1)
+
+### ipad.gen1.landscape.badge.play
+ (iOS 16.1)
+
+### ipad.gen2
+ (iOS 16.1)
+
+### ipad.gen2.badge.play
+ (iOS 16.1)
+
+### ipad.gen2.landscape
+ (iOS 16.1)
+
+### ipad.gen2.landscape.badge.play
+ (iOS 16.1)
+
 ### ipad.homebutton
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 16.1, renamed: [ipad.gen1](#ipadgen1))
 
 ### ipad.homebutton.badge.play
- (iOS 14.2)
+ (iOS, introduced: 14.2, deprecated: 16.1, renamed: [ipad.gen1.badge.play](#ipadgen1badgeplay))
 
 ### ipad.homebutton.landscape
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 16.1, renamed: [ipad.gen1.landscape](#ipadgen1landscape))
 
 ### ipad.homebutton.landscape.badge.play
- (iOS 14.2)
+ (iOS, introduced: 14.2, deprecated: 16.1, renamed: [ipad.gen1.landscape.badge.play](#ipadgen1landscapebadgeplay))
 
 ### ipad.landscape
  (iOS 14.0)
@@ -3772,24 +5167,81 @@ _____
 ### iphone.badge.play
  (iOS 14.2)
 
+### iphone.gen1
+- iphone.gen1 (iOS 16.1)
+- iphone.gen1.circle (iOS 16.1)
+- iphone.gen1.circle.fill (iOS 16.1)
+- iphone.gen1.slash (iOS 16.1)
+- iphone.gen1.slash.circle (iOS 16.1)
+- iphone.gen1.slash.circle.fill (iOS 16.1)
+
+### iphone.gen1.badge.play
+ (iOS 16.1)
+
+### iphone.gen1.landscape
+ (iOS 16.1)
+
+### iphone.gen1.radiowaves.left.and.right
+- iphone.gen1.radiowaves.left.and.right (iOS 16.1)
+- iphone.gen1.radiowaves.left.and.right.circle (iOS 16.1)
+- iphone.gen1.radiowaves.left.and.right.circle.fill (iOS 16.1)
+
+### iphone.gen2
+- iphone.gen2 (iOS 16.1)
+- iphone.gen2.circle (iOS 16.1)
+- iphone.gen2.circle.fill (iOS 16.1)
+- iphone.gen2.slash (iOS 16.1)
+- iphone.gen2.slash.circle (iOS 16.1)
+- iphone.gen2.slash.circle.fill (iOS 16.1)
+
+### iphone.gen2.badge.play
+ (iOS 16.1)
+
+### iphone.gen2.landscape
+ (iOS 16.1)
+
+### iphone.gen2.radiowaves.left.and.right
+- iphone.gen2.radiowaves.left.and.right (iOS 16.1)
+- iphone.gen2.radiowaves.left.and.right.circle (iOS 16.1)
+- iphone.gen2.radiowaves.left.and.right.circle.fill (iOS 16.1)
+
+### iphone.gen3
+- iphone.gen3 (iOS 16.1)
+- iphone.gen3.circle (iOS 16.1)
+- iphone.gen3.circle.fill (iOS 16.1)
+- iphone.gen3.slash (iOS 16.1)
+- iphone.gen3.slash.circle (iOS 16.1)
+- iphone.gen3.slash.circle.fill (iOS 16.1)
+
+### iphone.gen3.badge.play
+ (iOS 16.1)
+
+### iphone.gen3.landscape
+ (iOS 16.1)
+
+### iphone.gen3.radiowaves.left.and.right
+- iphone.gen3.radiowaves.left.and.right (iOS 16.1)
+- iphone.gen3.radiowaves.left.and.right.circle (iOS 16.1)
+- iphone.gen3.radiowaves.left.and.right.circle.fill (iOS 16.1)
+
 ### iphone.homebutton
-- iphone.homebutton (iOS 14.0)
-- iphone.homebutton.circle (iOS 15.0)
-- iphone.homebutton.circle.fill (iOS 15.0)
-- iphone.homebutton.slash (iOS 14.0)
-- iphone.homebutton.slash.circle (iOS 15.0)
-- iphone.homebutton.slash.circle.fill (iOS 15.0)
+- iphone.homebutton (iOS, introduced: 14.0, deprecated: 16.1, renamed: [iphone.gen1](#iphonegen1))
+- iphone.homebutton.circle (iOS, introduced: 15.0, deprecated: 16.1, renamed: [iphone.gen1.circle](#iphonegen1))
+- iphone.homebutton.circle.fill (iOS, introduced: 15.0, deprecated: 16.1, renamed: [iphone.gen1.circle.fill](#iphonegen1))
+- iphone.homebutton.slash (iOS, introduced: 14.0, deprecated: 16.1, renamed: [iphone.gen1.slash](#iphonegen1))
+- iphone.homebutton.slash.circle (iOS, introduced: 15.0, deprecated: 16.1, renamed: [iphone.gen1.slash.circle](#iphonegen1))
+- iphone.homebutton.slash.circle.fill (iOS, introduced: 15.0, deprecated: 16.1, renamed: [iphone.gen1.slash.circle.fill](#iphonegen1))
 
 ### iphone.homebutton.badge.play
- (iOS 14.2)
+ (iOS, introduced: 14.2, deprecated: 16.1, renamed: [iphone.gen1.badge.play](#iphonegen1badgeplay))
 
 ### iphone.homebutton.landscape
- (iOS 14.2)
+ (iOS, introduced: 14.2, deprecated: 16.1, renamed: [iphone.gen1.landscape](#iphonegen1landscape))
 
 ### iphone.homebutton.radiowaves.left.and.right
-- iphone.homebutton.radiowaves.left.and.right (iOS 14.0)
-- iphone.homebutton.radiowaves.left.and.right.circle (iOS 15.0)
-- iphone.homebutton.radiowaves.left.and.right.circle.fill (iOS 15.0)
+- iphone.homebutton.radiowaves.left.and.right (iOS, introduced: 14.0, deprecated: 16.1, renamed: [iphone.gen1.radiowaves.left.and.right](#iphonegen1radiowavesleftandright))
+- iphone.homebutton.radiowaves.left.and.right.circle (iOS, introduced: 15.0, deprecated: 16.1, renamed: [iphone.gen1.radiowaves.left.and.right.circle](#iphonegen1radiowavesleftandright))
+- iphone.homebutton.radiowaves.left.and.right.circle.fill (iOS, introduced: 15.0, deprecated: 16.1, renamed: [iphone.gen1.radiowaves.left.and.right.circle.fill](#iphonegen1radiowavesleftandright))
 
 ### iphone.landscape
  (iOS 14.2)
@@ -3861,9 +5313,17 @@ _____
 - key (iOS 14.0)
 - key.fill (iOS 14.0)
 
+### key.horizontal
+- key.horizontal (iOS 16.1)
+- key.horizontal.fill (iOS 16.1)
+
 ### key.icloud
 - key.icloud (iOS 14.0)
 - key.icloud.fill (iOS 14.0)
+
+### key.radiowaves.forward
+- key.radiowaves.forward (iOS 16.1)
+- key.radiowaves.forward.fill (iOS 16.1)
 
 ### key.viewfinder
  (iOS 15.4)
@@ -3873,28 +5333,43 @@ _____
 - keyboard.fill (iOS 15.0)
 
 ### keyboard.badge.ellipsis
- (iOS 14.0)
+- keyboard.badge.ellipsis (iOS 14.0)
+- keyboard.badge.ellipsis.fill (iOS 16.0)
+
+### keyboard.badge.eye
+- keyboard.badge.eye (iOS 16.0)
+- keyboard.badge.eye.fill (iOS 16.0)
 
 ### keyboard.chevron.compact.down
- (iOS 13.0)
+- keyboard.chevron.compact.down (iOS 13.0)
+- keyboard.chevron.compact.down.fill (iOS 16.0)
 
 ### keyboard.chevron.compact.left
- (iOS 14.0)
+- keyboard.chevron.compact.left (iOS 14.0)
+- keyboard.chevron.compact.left.fill (iOS 16.0)
 
 ### keyboard.macwindow
  (iOS 14.0)
 
 ### keyboard.onehanded.left
- (iOS 14.0)
+- keyboard.onehanded.left (iOS 14.0)
+- keyboard.onehanded.left.fill (iOS 16.0)
 
 ### keyboard.onehanded.right
- (iOS 14.0)
+- keyboard.onehanded.right (iOS 14.0)
+- keyboard.onehanded.right.fill (iOS 16.0)
 
 ### kipsign
+- kipsign (iOS 16.0)
 - kipsign.circle (iOS 13.0)
 - kipsign.circle.fill (iOS 13.0)
 - kipsign.square (iOS 13.0)
 - kipsign.square.fill (iOS 13.0)
+
+### kph
+- kph (iOS 16.1)
+- kph.circle (iOS 16.1)
+- kph.circle.fill (iOS 16.1)
 
 ### l
 - l.circle (iOS 13.0)
@@ -3946,18 +5421,44 @@ _____
 - ladybug (iOS 14.0)
 - ladybug.fill (iOS 14.0)
 
+### lamp.ceiling
+- lamp.ceiling (iOS 16.0)
+- lamp.ceiling.fill (iOS 16.0)
+
+### lamp.ceiling.inverse
+ (iOS 16.0)
+
+### lamp.desk
+- lamp.desk (iOS 16.0)
+- lamp.desk.fill (iOS 16.0)
+
+### lamp.floor
+- lamp.floor (iOS 16.0)
+- lamp.floor.fill (iOS 16.0)
+
+### lamp.table
+- lamp.table (iOS 16.0)
+- lamp.table.fill (iOS 16.0)
+
+### lane
+ (iOS 16.1)
+
 ### lanyardcard
 - lanyardcard (iOS 15.0)
 - lanyardcard.fill (iOS 15.0)
 
 ### laptopcomputer
- (iOS 14.0)
+- laptopcomputer (iOS 14.0)
+- laptopcomputer.slash (iOS 16.1)
 
 ### laptopcomputer.and.arrow.down
  (iOS 15.0)
 
+### laptopcomputer.and.ipad
+ (iOS, introduced: 16.0, deprecated: 16.1, renamed: [macbook.and.ipad](#macbookandipad))
+
 ### laptopcomputer.and.iphone
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 16.1, renamed: [macbook.and.iphone](#macbookandiphone))
 
 ### laptopcomputer.trianglebadge.exclamationmark
  (iOS 15.0)
@@ -3966,6 +5467,7 @@ _____
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [circle.inset.filled](#circleinsetfilled))
 
 ### larisign
+- larisign (iOS 16.0)
 - larisign.circle (iOS 13.0)
 - larisign.circle.fill (iOS 13.0)
 - larisign.square (iOS 13.0)
@@ -3983,6 +5485,12 @@ _____
 ### latch.2.case
 - latch.2.case (iOS 14.0)
 - latch.2.case.fill (iOS 14.0)
+
+### laurel.leading
+ (iOS 16.0)
+
+### laurel.trailing
+ (iOS 16.0)
 
 ### lb.rectangle.roundedbottom
 - lb.rectangle.roundedbottom (iOS 14.0)
@@ -4015,11 +5523,60 @@ _____
 - lifepreserver (iOS 14.0)
 - lifepreserver.fill (iOS 14.0)
 
+### light.beacon.max
+- light.beacon.max (iOS 16.0)
+- light.beacon.max.fill (iOS 16.0)
+
+### light.beacon.min
+- light.beacon.min (iOS 16.0)
+- light.beacon.min.fill (iOS 16.0)
+
+### light.cylindrical.ceiling
+- light.cylindrical.ceiling (iOS 16.0)
+- light.cylindrical.ceiling.fill (iOS 16.0)
+
+### light.cylindrical.ceiling.inverse
+ (iOS 16.0)
+
 ### light.max
  (iOS 13.0)
 
 ### light.min
  (iOS 13.0)
+
+### light.overhead.left
+- light.overhead.left (iOS 16.1)
+- light.overhead.left.fill (iOS 16.1)
+
+### light.overhead.right
+- light.overhead.right (iOS 16.1)
+- light.overhead.right.fill (iOS 16.1)
+
+### light.panel
+- light.panel (iOS 16.0)
+- light.panel.fill (iOS 16.0)
+
+### light.recessed
+- light.recessed (iOS 16.0)
+- light.recessed.fill (iOS 16.0)
+
+### light.recessed.3
+- light.recessed.3 (iOS 16.0)
+- light.recessed.3.fill (iOS 16.0)
+
+### light.recessed.3.inverse
+ (iOS 16.0)
+
+### light.recessed.inverse
+ (iOS 16.0)
+
+### light.ribbon
+- light.ribbon (iOS 16.0)
+- light.ribbon.fill (iOS 16.0)
+
+### light.strip.2
+- light.strip.2 (iOS 16.0)
+- light.strip.2.fill (iOS 16.0)
 
 ### lightbulb
 - lightbulb (iOS 13.0)
@@ -4028,6 +5585,30 @@ _____
 - lightbulb.circle.fill (iOS 15.0)
 - lightbulb.slash (iOS 13.0)
 - lightbulb.slash.fill (iOS 13.0)
+
+### lightbulb.2
+- lightbulb.2 (iOS 16.0)
+- lightbulb.2.fill (iOS 16.0)
+
+### lightbulb.led
+- lightbulb.led (iOS 16.0)
+- lightbulb.led.fill (iOS 16.0)
+
+### lightbulb.led.wide
+- lightbulb.led.wide (iOS 16.0)
+- lightbulb.led.wide.fill (iOS 16.0)
+
+### lightswitch.off
+- lightswitch.off (iOS 16.0)
+- lightswitch.off.fill (iOS 16.0)
+- lightswitch.off.square (iOS 16.0)
+- lightswitch.off.square.fill (iOS 16.0)
+
+### lightswitch.on
+- lightswitch.on (iOS 16.0)
+- lightswitch.on.fill (iOS 16.0)
+- lightswitch.on.square (iOS 16.0)
+- lightswitch.on.square.fill (iOS 16.0)
 
 ### line.2.horizontal.decrease.circle
 - line.2.horizontal.decrease.circle (iOS 15.0)
@@ -4089,6 +5670,7 @@ _____
 - link.icloud.fill (iOS 13.0)
 
 ### lirasign
+- lirasign (iOS 16.0)
 - lirasign.circle (iOS 13.0)
 - lirasign.circle.fill (iOS 13.0)
 - lirasign.square (iOS 13.0)
@@ -4107,12 +5689,20 @@ _____
 ### list.bullet.below.rectangle
  (iOS 13.0)
 
+### list.bullet.clipboard
+- list.bullet.clipboard (iOS 16.0)
+- list.bullet.clipboard.fill (iOS 16.0)
+
 ### list.bullet.indent
  (iOS 13.0)
 
 ### list.bullet.rectangle.portrait
 - list.bullet.rectangle.portrait (iOS 15.0)
 - list.bullet.rectangle.portrait.fill (iOS 15.0)
+
+### list.clipboard
+- list.clipboard (iOS 16.0)
+- list.clipboard.fill (iOS 16.0)
 
 ### list.dash
  (iOS 13.0)
@@ -4142,6 +5732,10 @@ _____
 ### livephoto.play
  (iOS 13.0)
 
+### lizard
+- lizard (iOS 16.0)
+- lizard.fill (iOS 16.0)
+
 ### location
 - location (iOS 13.0)
 - location.fill (iOS 13.0)
@@ -4151,6 +5745,8 @@ _____
 - location.square.fill (iOS 15.0)
 - location.slash (iOS 13.0)
 - location.slash.fill (iOS 13.0)
+- location.slash.circle (iOS 16.0)
+- location.slash.circle.fill (iOS 16.0)
 
 ### location.fill.viewfinder
  (iOS 14.0)
@@ -4231,6 +5827,13 @@ _____
 ### lock.open.laptopcomputer
  (iOS 15.0)
 
+### lock.open.rotation
+ (iOS 16.1)
+
+### lock.open.trianglebadge.exclamationmark
+- lock.open.trianglebadge.exclamationmark (iOS 16.0)
+- lock.open.trianglebadge.exclamationmark.fill (iOS 16.0)
+
 ### lock.rectangle.on.rectangle
 - lock.rectangle.on.rectangle (iOS 14.0)
 - lock.rectangle.on.rectangle.fill (iOS 14.0)
@@ -4243,7 +5846,7 @@ _____
  (iOS 13.0)
 
 ### lock.rotation.open
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.1, renamed: [lock.open.rotation](#lockopenrotation))
 
 ### lock.shield
 - lock.shield (iOS 13.0)
@@ -4253,11 +5856,15 @@ _____
 - lock.square.stack (iOS 14.0)
 - lock.square.stack.fill (iOS 14.0)
 
+### lock.trianglebadge.exclamationmark
+- lock.trianglebadge.exclamationmark (iOS 16.0)
+- lock.trianglebadge.exclamationmark.fill (iOS 16.0)
+
 ### logo.playstation
- (iOS 15.0)
+ (iOS, introduced: 15.0, deprecated: 16.0, renamed: [playstation.logo](#playstationlogo))
 
 ### logo.xbox
- (iOS 15.0)
+ (iOS, introduced: 15.0, deprecated: 16.0, renamed: [xbox.logo](#xboxlogo))
 
 ### loupe
  (iOS 14.0)
@@ -4275,6 +5882,12 @@ _____
 - m.circle.fill (iOS 13.0)
 - m.square (iOS 13.0)
 - m.square.fill (iOS 13.0)
+
+### macbook.and.ipad
+ (iOS 16.1)
+
+### macbook.and.iphone
+ (iOS 16.1)
 
 ### macmini
 - macmini (iOS 14.0)
@@ -4294,6 +5907,10 @@ _____
 
 ### macpro.gen3.server
  (iOS 14.0)
+
+### macstudio
+- macstudio (iOS 16.0)
+- macstudio.fill (iOS 16.0)
 
 ### macwindow
  (iOS 13.0)
@@ -4335,6 +5952,7 @@ _____
 - mail.stack.fill (iOS 14.0)
 
 ### manatsign
+- manatsign (iOS 16.0)
 - manatsign.circle (iOS 13.0)
 - manatsign.circle.fill (iOS 13.0)
 - manatsign.square (iOS 13.0)
@@ -4359,8 +5977,16 @@ _____
 ### mappin.and.ellipse
  (iOS 13.0)
 
+### medal
+- medal (iOS 16.0)
+- medal.fill (iOS 16.0)
+
 ### mediastick
  (iOS 15.0)
+
+### medical.thermometer
+- medical.thermometer (iOS 16.0)
+- medical.thermometer.fill (iOS 16.0)
 
 ### megaphone
 - megaphone (iOS 14.0)
@@ -4408,6 +6034,20 @@ _____
 - message.and.waveform (iOS 15.0)
 - message.and.waveform.fill (iOS 15.0)
 
+### message.badge
+- message.badge (iOS 16.0)
+- message.badge.rtl (iOS 16.0)
+- message.badge.fill (iOS 16.0)
+- message.badge.fill.rtl (iOS 16.0)
+- message.badge.circle (iOS 16.0)
+- message.badge.circle.rtl (iOS 16.0)
+- message.badge.circle.fill (iOS 16.0)
+- message.badge.circle.fill.rtl (iOS 16.0)
+
+### message.badge.filled
+- message.badge.filled.fill (iOS 16.0)
+- message.badge.filled.fill.rtl (iOS 16.0)
+
 ### metronome
 - metronome (iOS 13.0)
 - metronome.fill (iOS 14.0)
@@ -4424,13 +6064,34 @@ _____
 - mic.slash.circle (iOS 15.0)
 - mic.slash.circle.fill (iOS 15.0)
 
+### mic.and.signal.meter
+- mic.and.signal.meter (iOS 16.0)
+- mic.and.signal.meter.fill (iOS 16.0)
+
 ### mic.badge.plus
  (iOS 15.0)
+
+### mic.badge.xmark
+ (iOS 16.0)
 
 ### mic.fill.badge.plus
  (iOS 15.0)
 
+### mic.fill.badge.xmark
+ (iOS 16.0)
+
+### microbe
+- microbe (iOS 16.0)
+- microbe.fill (iOS 16.0)
+- microbe.circle (iOS 16.0)
+- microbe.circle.fill (iOS 16.0)
+
+### microwave
+- microwave (iOS 16.0)
+- microwave.fill (iOS 16.0)
+
 ### millsign
+- millsign (iOS 16.0)
 - millsign.circle (iOS 13.0)
 - millsign.circle.fill (iOS 13.0)
 - millsign.square (iOS 13.0)
@@ -4455,9 +6116,26 @@ _____
 ### minus.magnifyingglass
  (iOS 13.0)
 
+### minus.plus.and.fluid.batteryblock
+ (iOS 16.1)
+
 ### minus.plus.batteryblock
 - minus.plus.batteryblock (iOS 14.0)
 - minus.plus.batteryblock.fill (iOS 14.0)
+- minus.plus.batteryblock.slash (iOS 16.1)
+- minus.plus.batteryblock.slash.fill (iOS 16.1)
+
+### minus.plus.batteryblock.exclamationmark
+- minus.plus.batteryblock.exclamationmark (iOS 16.1)
+- minus.plus.batteryblock.exclamationmark.fill (iOS 16.1)
+
+### minus.plus.batteryblock.stack
+- minus.plus.batteryblock.stack (iOS 16.1)
+- minus.plus.batteryblock.stack.fill (iOS 16.1)
+
+### minus.plus.batteryblock.stack.exclamationmark
+- minus.plus.batteryblock.stack.exclamationmark (iOS 16.1)
+- minus.plus.batteryblock.stack.exclamationmark.fill (iOS 16.1)
 
 ### minus.rectangle.portrait
 - minus.rectangle.portrait (iOS 14.0)
@@ -4466,19 +6144,93 @@ _____
 ### minus.slash.plus
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [minus.forwardslash.plus](#minusforwardslashplus))
 
+### mirror.side.left
+ (iOS 16.0)
+
+### mirror.side.left.and.arrow.turn.down.right
+ (iOS 16.1)
+
+### mirror.side.left.and.heat.waves
+ (iOS 16.1)
+
+### mirror.side.right
+ (iOS 16.0)
+
+### mirror.side.right.and.arrow.turn.down.left
+ (iOS 16.1)
+
+### mirror.side.right.and.heat.waves
+ (iOS 16.1)
+
 ### moon
 - moon (iOS 13.0)
 - moon.fill (iOS 13.0)
 - moon.circle (iOS 13.0)
 - moon.circle.fill (iOS 13.0)
 
+### moon.haze
+- moon.haze (iOS 16.0)
+- moon.haze.fill (iOS 16.0)
+- moon.haze.circle (iOS 16.0)
+- moon.haze.circle.fill (iOS 16.0)
+
 ### moon.stars
 - moon.stars (iOS 13.0)
 - moon.stars.fill (iOS 13.0)
+- moon.stars.circle (iOS 16.0)
+- moon.stars.circle.fill (iOS 16.0)
 
 ### moon.zzz
 - moon.zzz (iOS 13.0)
 - moon.zzz.fill (iOS 13.0)
+
+### moonphase.first.quarter
+ (iOS 16.0)
+
+### moonphase.first.quarter.inverse
+ (iOS 16.0)
+
+### moonphase.full.moon
+ (iOS 16.0)
+
+### moonphase.full.moon.inverse
+ (iOS 16.0)
+
+### moonphase.last.quarter
+ (iOS 16.0)
+
+### moonphase.last.quarter.inverse
+ (iOS 16.0)
+
+### moonphase.new.moon
+ (iOS 16.0)
+
+### moonphase.new.moon.inverse
+ (iOS 16.0)
+
+### moonphase.waning.crescent
+ (iOS 16.0)
+
+### moonphase.waning.crescent.inverse
+ (iOS 16.0)
+
+### moonphase.waning.gibbous
+ (iOS 16.0)
+
+### moonphase.waning.gibbous.inverse
+ (iOS 16.0)
+
+### moonphase.waxing.crescent
+ (iOS 16.0)
+
+### moonphase.waxing.crescent.inverse
+ (iOS 16.0)
+
+### moonphase.waxing.gibbous
+ (iOS 16.0)
+
+### moonphase.waxing.gibbous.inverse
+ (iOS 16.0)
 
 ### mosaic
 - mosaic (iOS 14.0)
@@ -4488,12 +6240,27 @@ _____
 - mount (iOS 14.0)
 - mount.fill (iOS 14.0)
 
+### mountain.2
+- mountain.2 (iOS 16.1)
+- mountain.2.fill (iOS 16.1)
+- mountain.2.circle (iOS 16.1)
+- mountain.2.circle.fill (iOS 16.1)
+
 ### mouth
 - mouth (iOS 14.0)
 - mouth.fill (iOS 14.0)
 
 ### move.3d
  (iOS 14.0)
+
+### mph
+- mph (iOS 16.1)
+- mph.circle (iOS 16.1)
+- mph.circle.fill (iOS 16.1)
+
+### mug
+- mug (iOS 16.1)
+- mug.fill (iOS 16.1)
 
 ### multiply
 - multiply (iOS 13.0)
@@ -4539,6 +6306,7 @@ _____
 - n.square.fill (iOS 13.0)
 
 ### nairasign
+- nairasign (iOS 16.0)
 - nairasign.circle (iOS 13.0)
 - nairasign.circle.fill (iOS 13.0)
 - nairasign.square (iOS 13.0)
@@ -4563,6 +6331,10 @@ _____
 ### nosign
  (iOS 13.0)
 
+### nosign.app
+- nosign.app (iOS 16.0)
+- nosign.app.fill (iOS 16.0)
+
 ### note
  (iOS 14.0)
 
@@ -4579,11 +6351,17 @@ _____
 - number.square (iOS 13.0)
 - number.square.fill (iOS 13.0)
 
+### numbersign
+ (iOS 16.0)
+
 ### o
 - o.circle (iOS 13.0)
 - o.circle.fill (iOS 13.0)
 - o.square (iOS 13.0)
 - o.square.fill (iOS 13.0)
+
+### oar.2.crossed
+ (iOS 16.0)
 
 ### octagon
 - octagon (iOS 14.0)
@@ -4601,8 +6379,13 @@ _____
 ### octagon.tophalf.filled
  (iOS 15.0)
 
+### oilcan
+- oilcan (iOS 16.1)
+- oilcan.fill (iOS 16.1)
+
 ### opticaldisc
- (iOS 14.0)
+- opticaldisc (iOS 14.0)
+- opticaldisc.fill (iOS 16.0)
 
 ### opticaldiscdrive
 - opticaldiscdrive (iOS 14.0)
@@ -4649,6 +6432,10 @@ _____
 ### oval.tophalf.filled
  (iOS 15.0)
 
+### oven
+- oven (iOS 16.0)
+- oven.fill (iOS 16.0)
+
 ### p
 - p.circle (iOS 13.0)
 - p.circle.fill (iOS 13.0)
@@ -4694,10 +6481,22 @@ _____
 ### parentheses
  (iOS 15.0)
 
+### parkinglight
+- parkinglight (iOS 16.0)
+- parkinglight.fill (iOS 16.0)
+
 ### parkingsign
 - parkingsign (iOS 15.0)
 - parkingsign.circle (iOS 15.0)
 - parkingsign.circle.fill (iOS 15.0)
+
+### parkingsign.brakesignal
+- parkingsign.brakesignal (iOS 16.0)
+- parkingsign.brakesignal.slash (iOS 16.0)
+
+### party.popper
+- party.popper (iOS 16.0)
+- party.popper.fill (iOS 16.0)
 
 ### pause
 - pause (iOS 13.0)
@@ -4719,6 +6518,12 @@ _____
 ### peacesign
  (iOS 15.0)
 
+### pedestrian.gate.closed
+ (iOS 16.0)
+
+### pedestrian.gate.open
+ (iOS 16.0)
+
 ### pencil
 - pencil (iOS 13.0)
 - pencil.circle (iOS 13.0)
@@ -4730,6 +6535,13 @@ _____
 
 ### pencil.and.outline
  (iOS 13.0)
+
+### pencil.and.ruler
+- pencil.and.ruler (iOS 16.0)
+- pencil.and.ruler.fill (iOS 16.0)
+
+### pencil.line
+ (iOS 16.0)
 
 ### pencil.tip
  (iOS 13.0)
@@ -4777,10 +6589,19 @@ _____
 - person.2.fill (iOS 13.0)
 - person.2.circle (iOS 14.0)
 - person.2.circle.fill (iOS 14.0)
+- person.2.slash (iOS 16.0)
+- person.2.slash.fill (iOS 16.0)
+
+### person.2.badge.gearshape
+- person.2.badge.gearshape (iOS 16.0)
+- person.2.badge.gearshape.fill (iOS 16.0)
 
 ### person.2.crop.square.stack
 - person.2.crop.square.stack (iOS 15.0)
 - person.2.crop.square.stack.fill (iOS 15.0)
+
+### person.2.gobackward
+ (iOS 16.0)
 
 ### person.2.square.stack
 - person.2.square.stack (iOS, introduced: 13.0, deprecated: 15.0, renamed: [person.2.crop.square.stack](#person2cropsquarestack))
@@ -4801,6 +6622,9 @@ _____
 ### person.and.arrow.left.and.arrow.right
  (iOS 14.0)
 
+### person.and.background.dotted
+ (iOS 16.0)
+
 ### person.badge.clock
 - person.badge.clock (iOS 15.0)
 - person.badge.clock.fill (iOS 15.0)
@@ -4816,6 +6640,14 @@ _____
 ### person.badge.plus
 - person.badge.plus (iOS 13.0)
 - person.badge.plus.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [person.fill.badge.plus](#personfillbadgeplus))
+
+### person.badge.shield.checkmark
+- person.badge.shield.checkmark (iOS 16.0)
+- person.badge.shield.checkmark.fill (iOS 16.0)
+
+### person.bust
+- person.bust (iOS 16.0)
+- person.bust.fill (iOS 16.0)
 
 ### person.crop
 - person.crop.circle (iOS 13.0)
@@ -4865,6 +6697,9 @@ _____
 ### person.crop.circle.badge.xmark
  (iOS 13.0)
 
+### person.crop.circle.dashed
+ (iOS 16.1)
+
 ### person.crop.circle.fill.badge.checkmark
  (iOS 13.0)
 
@@ -4886,6 +6721,10 @@ _____
 
 ### person.crop.circle.fill.badge.xmark
  (iOS 13.0)
+
+### person.crop.rectangle.badge.plus
+- person.crop.rectangle.badge.plus (iOS 16.0)
+- person.crop.rectangle.badge.plus.fill (iOS 16.0)
 
 ### person.crop.rectangle.stack
 - person.crop.rectangle.stack (iOS 15.0)
@@ -4936,6 +6775,10 @@ _____
 - person.icloud (iOS 13.0)
 - person.icloud.fill (iOS 13.0)
 
+### person.line.dotted.person
+- person.line.dotted.person (iOS 16.0)
+- person.line.dotted.person.fill (iOS 16.0)
+
 ### person.text.rectangle
 - person.text.rectangle (iOS 15.0)
 - person.text.rectangle.fill (iOS 15.0)
@@ -4953,12 +6796,14 @@ _____
  (iOS 13.0)
 
 ### pesetasign
+- pesetasign (iOS 16.0)
 - pesetasign.circle (iOS 13.0)
 - pesetasign.circle.fill (iOS 13.0)
 - pesetasign.square (iOS 13.0)
 - pesetasign.square.fill (iOS 13.0)
 
 ### pesosign
+- pesosign (iOS 16.0)
 - pesosign.circle (iOS 13.0)
 - pesosign.circle.fill (iOS 13.0)
 - pesosign.square (iOS 13.0)
@@ -4975,13 +6820,21 @@ _____
 - phone.and.waveform.fill (iOS 15.0)
 
 ### phone.arrow.down.left
- (iOS 13.0)
+- phone.arrow.down.left (iOS 13.0)
+- phone.arrow.down.left.fill (iOS 16.0)
 
 ### phone.arrow.right
- (iOS 13.0)
+- phone.arrow.right (iOS 13.0)
+- phone.arrow.right.fill (iOS 16.0)
 
 ### phone.arrow.up.right
- (iOS 13.0)
+- phone.arrow.up.right (iOS 13.0)
+- phone.arrow.up.right.fill (iOS 16.0)
+- phone.arrow.up.right.circle (iOS 16.0)
+- phone.arrow.up.right.circle.fill (iOS 16.0)
+
+### phone.badge.checkmark
+ (iOS 16.0)
 
 ### phone.badge.plus
  (iOS 13.0)
@@ -4991,7 +6844,8 @@ _____
 - phone.bubble.left.fill (iOS 14.0)
 
 ### phone.connection
- (iOS 14.0)
+- phone.connection (iOS 14.0)
+- phone.connection.fill (iOS 16.0)
 
 ### phone.down
 - phone.down (iOS 13.0)
@@ -4999,20 +6853,26 @@ _____
 - phone.down.circle (iOS 13.0)
 - phone.down.circle.fill (iOS 13.0)
 
+### phone.down.waves.left.and.right
+ (iOS 16.0)
+
 ### phone.fill.arrow.down.left
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.0, renamed: [phone.arrow.down.left.fill](#phonearrowdownleft))
 
 ### phone.fill.arrow.right
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.0, renamed: [phone.arrow.right.fill](#phonearrowright))
 
 ### phone.fill.arrow.up.right
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.0, renamed: [phone.arrow.up.right.fill](#phonearrowupright))
+
+### phone.fill.badge.checkmark
+ (iOS 16.0)
 
 ### phone.fill.badge.plus
  (iOS 13.0)
 
 ### phone.fill.connection
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [phone.connection.fill](#phoneconnection))
 
 ### photo
 - photo (iOS 13.0)
@@ -5032,6 +6892,10 @@ _____
 ### photo.on.rectangle.angled
  (iOS 14.0)
 
+### photo.stack
+- photo.stack (iOS 16.0)
+- photo.stack.fill (iOS 16.0)
+
 ### photo.tv
  (iOS 14.2)
 
@@ -5040,6 +6904,12 @@ _____
 
 ### pianokeys.inverse
  (iOS 14.0)
+
+### pill
+- pill (iOS 16.0)
+- pill.fill (iOS 16.0)
+- pill.circle (iOS 16.0)
+- pill.circle.fill (iOS 16.0)
 
 ### pills
 - pills (iOS 14.0)
@@ -5072,6 +6942,10 @@ _____
 
 ### pip.swap
  (iOS 14.0)
+
+### pipe.and.drop
+- pipe.and.drop (iOS 16.0)
+- pipe.and.drop.fill (iOS 16.0)
 
 ### placeholdertext.fill
  (iOS 14.0)
@@ -5124,11 +6998,24 @@ _____
 - play.slash (iOS 14.0)
 - play.slash.fill (iOS 14.0)
 
+### play.desktopcomputer
+ (iOS 16.0)
+
+### play.display
+ (iOS 16.0)
+
+### play.laptopcomputer
+ (iOS 16.0)
+
 ### play.rectangle.on.rectangle
 - play.rectangle.on.rectangle (iOS 15.0)
 - play.rectangle.on.rectangle.fill (iOS 15.0)
 - play.rectangle.on.rectangle.circle (iOS 15.0)
 - play.rectangle.on.rectangle.circle.fill (iOS 15.0)
+
+### play.square.stack
+- play.square.stack (iOS 16.1)
+- play.square.stack.fill (iOS 16.1)
 
 ### play.tv
 - play.tv (iOS 14.2)
@@ -5137,6 +7024,11 @@ _____
 ### playpause
 - playpause (iOS 13.0)
 - playpause.fill (iOS 13.0)
+- playpause.circle (iOS 16.0)
+- playpause.circle.fill (iOS 16.0)
+
+### playstation.logo
+ (iOS 16.0)
 
 ### plus
 - plus (iOS 13.0)
@@ -5225,6 +7117,12 @@ _____
 ### point.topleft.down.curvedto.point.filled.bottomright.up
  (iOS 15.0)
 
+### popcorn
+- popcorn (iOS 16.0)
+- popcorn.fill (iOS 16.0)
+- popcorn.circle (iOS 16.0)
+- popcorn.circle.fill (iOS 16.0)
+
 ### power
 - power (iOS 13.0)
 - power.circle (iOS 15.0)
@@ -5238,6 +7136,100 @@ _____
 
 ### poweron
  (iOS 14.0)
+
+### poweroutlet.strip
+- poweroutlet.strip (iOS 16.0)
+- poweroutlet.strip.fill (iOS 16.0)
+
+### poweroutlet.type.a
+- poweroutlet.type.a (iOS 16.0)
+- poweroutlet.type.a.fill (iOS 16.0)
+- poweroutlet.type.a.square (iOS 16.0)
+- poweroutlet.type.a.square.fill (iOS 16.0)
+
+### poweroutlet.type.b
+- poweroutlet.type.b (iOS 16.0)
+- poweroutlet.type.b.fill (iOS 16.0)
+- poweroutlet.type.b.square (iOS 16.0)
+- poweroutlet.type.b.square.fill (iOS 16.0)
+
+### poweroutlet.type.c
+- poweroutlet.type.c (iOS 16.0)
+- poweroutlet.type.c.fill (iOS 16.0)
+- poweroutlet.type.c.square (iOS 16.0)
+- poweroutlet.type.c.square.fill (iOS 16.0)
+
+### poweroutlet.type.d
+- poweroutlet.type.d (iOS 16.0)
+- poweroutlet.type.d.fill (iOS 16.0)
+- poweroutlet.type.d.square (iOS 16.0)
+- poweroutlet.type.d.square.fill (iOS 16.0)
+
+### poweroutlet.type.e
+- poweroutlet.type.e (iOS 16.0)
+- poweroutlet.type.e.fill (iOS 16.0)
+- poweroutlet.type.e.square (iOS 16.0)
+- poweroutlet.type.e.square.fill (iOS 16.0)
+
+### poweroutlet.type.f
+- poweroutlet.type.f (iOS 16.0)
+- poweroutlet.type.f.fill (iOS 16.0)
+- poweroutlet.type.f.square (iOS 16.0)
+- poweroutlet.type.f.square.fill (iOS 16.0)
+
+### poweroutlet.type.g
+- poweroutlet.type.g (iOS 16.0)
+- poweroutlet.type.g.fill (iOS 16.0)
+- poweroutlet.type.g.square (iOS 16.0)
+- poweroutlet.type.g.square.fill (iOS 16.0)
+
+### poweroutlet.type.h
+- poweroutlet.type.h (iOS 16.0)
+- poweroutlet.type.h.fill (iOS 16.0)
+- poweroutlet.type.h.square (iOS 16.0)
+- poweroutlet.type.h.square.fill (iOS 16.0)
+
+### poweroutlet.type.i
+- poweroutlet.type.i (iOS 16.0)
+- poweroutlet.type.i.fill (iOS 16.0)
+- poweroutlet.type.i.square (iOS 16.0)
+- poweroutlet.type.i.square.fill (iOS 16.0)
+
+### poweroutlet.type.j
+- poweroutlet.type.j (iOS 16.0)
+- poweroutlet.type.j.fill (iOS 16.0)
+- poweroutlet.type.j.square (iOS 16.0)
+- poweroutlet.type.j.square.fill (iOS 16.0)
+
+### poweroutlet.type.k
+- poweroutlet.type.k (iOS 16.0)
+- poweroutlet.type.k.fill (iOS 16.0)
+- poweroutlet.type.k.square (iOS 16.0)
+- poweroutlet.type.k.square.fill (iOS 16.0)
+
+### poweroutlet.type.l
+- poweroutlet.type.l (iOS 16.0)
+- poweroutlet.type.l.fill (iOS 16.0)
+- poweroutlet.type.l.square (iOS 16.0)
+- poweroutlet.type.l.square.fill (iOS 16.0)
+
+### poweroutlet.type.m
+- poweroutlet.type.m (iOS 16.0)
+- poweroutlet.type.m.fill (iOS 16.0)
+- poweroutlet.type.m.square (iOS 16.0)
+- poweroutlet.type.m.square.fill (iOS 16.0)
+
+### poweroutlet.type.n
+- poweroutlet.type.n (iOS 16.0)
+- poweroutlet.type.n.fill (iOS 16.0)
+- poweroutlet.type.n.square (iOS 16.0)
+- poweroutlet.type.n.square.fill (iOS 16.0)
+
+### poweroutlet.type.o
+- poweroutlet.type.o (iOS 16.0)
+- poweroutlet.type.o.fill (iOS 16.0)
+- poweroutlet.type.o.square (iOS 16.0)
+- poweroutlet.type.o.square.fill (iOS 16.0)
 
 ### powerplug
 - powerplug (iOS 15.0)
@@ -5320,6 +7312,12 @@ _____
 - questionmark.app.dashed (iOS 15.0)
 - questionmark.app.dashed.ar (iOS 15.0)
 
+### questionmark.bubble
+- questionmark.bubble (iOS 16.0)
+- questionmark.bubble.ar (iOS 16.0)
+- questionmark.bubble.fill (iOS 16.0)
+- questionmark.bubble.fill.ar (iOS 16.0)
+
 ### questionmark.diamond
 - questionmark.diamond (iOS 13.0)
 - questionmark.diamond.ar (iOS 14.0)
@@ -5331,6 +7329,9 @@ _____
 - questionmark.folder.ar (iOS 14.0)
 - questionmark.folder.fill (iOS 14.0)
 - questionmark.folder.fill.ar (iOS 14.0)
+
+### questionmark.key.filled
+ (iOS 16.1)
 
 ### questionmark.square.dashed
 - questionmark.square.dashed (iOS 14.0)
@@ -5355,6 +7356,9 @@ _____
 
 ### quote.opening
  (iOS 15.0)
+
+### quotelevel
+ (iOS 16.0)
 
 ### r
 - r.circle (iOS 13.0)
@@ -5431,7 +7435,9 @@ _____
 - record.circle.fill (iOS 14.0)
 
 ### recordingtape
- (iOS 13.0)
+- recordingtape (iOS 13.0)
+- recordingtape.circle (iOS 16.0)
+- recordingtape.circle.fill (iOS 16.0)
 
 ### rectangle
 - rectangle (iOS 13.0)
@@ -5686,6 +7692,10 @@ _____
 - rectangle.portrait.slash (iOS 15.0)
 - rectangle.portrait.slash.fill (iOS 15.0)
 
+### rectangle.portrait.and.arrow.forward
+- rectangle.portrait.and.arrow.forward (iOS 16.0)
+- rectangle.portrait.and.arrow.forward.fill (iOS 16.0)
+
 ### rectangle.portrait.and.arrow.right
 - rectangle.portrait.and.arrow.right (iOS 15.0)
 - rectangle.portrait.and.arrow.right.fill (iOS 15.0)
@@ -5743,6 +7753,10 @@ _____
 - rectangle.portrait.on.rectangle.portrait.fill (iOS 15.0)
 - rectangle.portrait.on.rectangle.portrait.slash (iOS 15.0)
 - rectangle.portrait.on.rectangle.portrait.slash.fill (iOS 15.0)
+
+### rectangle.portrait.on.rectangle.portrait.angled
+- rectangle.portrait.on.rectangle.portrait.angled (iOS 16.0)
+- rectangle.portrait.on.rectangle.portrait.angled.fill (iOS 16.0)
 
 ### rectangle.portrait.righthalf.filled
  (iOS 15.0)
@@ -5896,6 +7910,10 @@ _____
 ### rectangle.trailingthird.inset.filled
  (iOS 15.0)
 
+### refrigerator
+- refrigerator (iOS 16.0)
+- refrigerator.fill (iOS 16.0)
+
 ### repeat
 - repeat (iOS 13.0)
 - repeat.circle (iOS 14.2)
@@ -5917,6 +7935,9 @@ _____
 - restart.circle (iOS 14.0)
 - restart.circle.fill (iOS 15.0)
 
+### retarder.brakesignal
+ (iOS 16.1)
+
 ### return
  (iOS 13.0)
 
@@ -5929,6 +7950,30 @@ _____
 ### rhombus
 - rhombus (iOS 13.0)
 - rhombus.fill (iOS 13.0)
+
+### road.lane.arrowtriangle.2.inward
+ (iOS 16.1)
+
+### road.lanes
+ (iOS 16.0)
+
+### road.lanes.curved.left
+ (iOS 16.0)
+
+### road.lanes.curved.right
+ (iOS 16.0)
+
+### roller.shade.closed
+ (iOS 16.0)
+
+### roller.shade.open
+ (iOS 16.0)
+
+### roman.shade.closed
+ (iOS 16.0)
+
+### roman.shade.open
+ (iOS 16.0)
 
 ### rosette
  (iOS 13.0)
@@ -5949,6 +7994,7 @@ _____
 - rt.rectangle.roundedtop.fill (iOS 14.0)
 
 ### rublesign
+- rublesign (iOS 16.0)
 - rublesign.circle (iOS 13.0)
 - rublesign.circle.fill (iOS 13.0)
 - rublesign.square (iOS 13.0)
@@ -5959,6 +8005,7 @@ _____
 - ruler.fill (iOS 14.0)
 
 ### rupeesign
+- rupeesign (iOS 16.0)
 - rupeesign.circle (iOS 13.0)
 - rupeesign.circle.fill (iOS 13.0)
 - rupeesign.square (iOS 13.0)
@@ -5973,6 +8020,12 @@ _____
 ### safari
 - safari (iOS 13.0)
 - safari.fill (iOS 13.0)
+
+### sailboat
+- sailboat (iOS 16.0)
+- sailboat.fill (iOS 16.0)
+- sailboat.circle (iOS 16.1)
+- sailboat.circle.fill (iOS 16.1)
 
 ### scale.3d
  (iOS 14.0)
@@ -6024,6 +8077,10 @@ _____
 ### selection.pin.in.out
  (iOS 13.0)
 
+### sensor
+- sensor (iOS 16.0)
+- sensor.fill (iOS 16.0)
+
 ### sensor.tag.radiowaves.forward
 - sensor.tag.radiowaves.forward (iOS 15.0)
 - sensor.tag.radiowaves.forward.fill (iOS 15.0)
@@ -6034,11 +8091,20 @@ _____
 ### shadow
  (iOS 14.0)
 
+### shared.with.you
+- shared.with.you (iOS 16.0)
+- shared.with.you.slash (iOS 16.0)
+
 ### shareplay
 - shareplay (iOS 15.0)
 - shareplay.slash (iOS 15.0)
 
+### shazam.logo
+- shazam.logo (iOS 16.0)
+- shazam.logo.fill (iOS 16.0)
+
 ### shekelsign
+- shekelsign (iOS 16.0)
 - shekelsign.circle (iOS 14.0)
 - shekelsign.circle.fill (iOS 14.0)
 - shekelsign.square (iOS 14.0)
@@ -6082,6 +8148,25 @@ _____
 - shippingbox.circle (iOS 15.0)
 - shippingbox.circle.fill (iOS 15.0)
 
+### shippingbox.and.arrow.backward
+- shippingbox.and.arrow.backward (iOS 16.0)
+- shippingbox.and.arrow.backward.fill (iOS 16.0)
+
+### shoeprints.fill
+ (iOS 16.0)
+
+### shower
+- shower (iOS 16.0)
+- shower.fill (iOS 16.0)
+
+### shower.handheld
+- shower.handheld (iOS 16.0)
+- shower.handheld.fill (iOS 16.0)
+
+### shower.sidejet
+- shower.sidejet (iOS 16.0)
+- shower.sidejet.fill (iOS 16.0)
+
 ### shuffle
 - shuffle (iOS 13.0)
 - shuffle.circle (iOS 14.2)
@@ -6120,13 +8205,29 @@ _____
 - signature.zh (iOS 15.0)
 - signature.zh.traditional (iOS 15.0)
 
+### signpost.and.arrowtriangle.up
+- signpost.and.arrowtriangle.up (iOS 16.1)
+- signpost.and.arrowtriangle.up.fill (iOS 16.1)
+- signpost.and.arrowtriangle.up.circle (iOS 16.1)
+- signpost.and.arrowtriangle.up.circle.fill (iOS 16.1)
+
 ### signpost.left
 - signpost.left (iOS 14.0)
 - signpost.left.fill (iOS 14.0)
+- signpost.left.circle (iOS 16.1)
+- signpost.left.circle.fill (iOS 16.1)
 
 ### signpost.right
 - signpost.right (iOS 14.0)
 - signpost.right.fill (iOS 14.0)
+- signpost.right.circle (iOS 16.1)
+- signpost.right.circle.fill (iOS 16.1)
+
+### signpost.right.and.left
+- signpost.right.and.left (iOS 16.1)
+- signpost.right.and.left.fill (iOS 16.1)
+- signpost.right.and.left.circle (iOS 16.1)
+- signpost.right.and.left.circle.fill (iOS 16.1)
 
 ### simcard
 - simcard (iOS 14.0)
@@ -6135,6 +8236,10 @@ _____
 ### simcard.2
 - simcard.2 (iOS 14.0)
 - simcard.2.fill (iOS 14.0)
+
+### sink
+- sink (iOS 16.0)
+- sink.fill (iOS 16.0)
 
 ### skew
  (iOS 13.0)
@@ -6148,14 +8253,26 @@ _____
 - sleep.circle (iOS 15.0)
 - sleep.circle.fill (iOS 15.0)
 
+### slider.horizontal.2.gobackward
+ (iOS 16.0)
+
 ### slider.horizontal.2.rectangle.and.arrow.triangle.2.circlepath
  (iOS 15.0)
+
+### slider.horizontal.2.square.badge.arrow.down
+ (iOS 16.0)
+
+### slider.horizontal.2.square.on.square
+ (iOS 16.0)
 
 ### slider.horizontal.3
  (iOS 13.0)
 
 ### slider.horizontal.below.rectangle
  (iOS 13.0)
+
+### slider.horizontal.below.square.and.square.filled
+ (iOS 16.0)
 
 ### slider.horizontal.below.square.fill.and.square
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [slider.horizontal.below.square.filled.and.square](#sliderhorizontalbelowsquarefilledandsquare))
@@ -6183,11 +8300,13 @@ _____
 
 ### smiley
 - smiley (iOS, introduced: 13.0, deprecated: 14.0, renamed: [face.smiling](#facesmiling))
-- smiley.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [face.smiling.fill](#facesmiling))
+- smiley.fill (iOS, introduced: 13.0, deprecated: 16.0, renamed: [face.smiling.inverse](#facesmilinginverse))
 
 ### smoke
 - smoke (iOS 13.0)
 - smoke.fill (iOS 13.0)
+- smoke.circle (iOS 16.0)
+- smoke.circle.fill (iOS 16.0)
 
 ### snow
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [snowflake](#snowflake))
@@ -6196,6 +8315,39 @@ _____
 - snowflake (iOS 15.0)
 - snowflake.circle (iOS 15.0)
 - snowflake.circle.fill (iOS 15.0)
+- snowflake.slash (iOS 16.1)
+
+### snowflake.road.lane
+ (iOS 16.1)
+
+### snowflake.road.lane.dashed
+ (iOS 16.1)
+
+### soccerball
+- soccerball (iOS 16.0)
+- soccerball.circle (iOS 16.0)
+- soccerball.circle.fill (iOS 16.0)
+
+### soccerball.circle.fill.inverse
+ (iOS 16.0)
+
+### soccerball.circle.inverse
+ (iOS 16.0)
+
+### soccerball.inverse
+ (iOS 16.0)
+
+### sofa
+- sofa (iOS 16.0)
+- sofa.fill (iOS 16.0)
+
+### sos
+- sos (iOS 16.1)
+- sos.circle (iOS 16.1)
+- sos.circle.fill (iOS 16.1)
+
+### space
+ (iOS 16.0)
 
 ### sparkle
  (iOS 14.0)
@@ -6225,6 +8377,8 @@ _____
 - speaker.fill (iOS 13.0)
 - speaker.circle (iOS 15.0)
 - speaker.circle.fill (iOS 15.0)
+- speaker.square (iOS 16.0)
+- speaker.square.fill (iOS 16.0)
 - speaker.slash (iOS 13.0)
 - speaker.slash.rtl (iOS 13.0)
 - speaker.slash.fill (iOS 13.0)
@@ -6250,6 +8404,14 @@ _____
 - speaker.badge.exclamationmark (iOS 15.0)
 - speaker.badge.exclamationmark.fill (iOS 15.0)
 
+### speaker.minus
+- speaker.minus (iOS 16.0)
+- speaker.minus.fill (iOS 16.0)
+
+### speaker.plus
+- speaker.plus (iOS 16.0)
+- speaker.plus.fill (iOS 16.0)
+
 ### speaker.wave.1
 - speaker.wave.1 (iOS 14.0)
 - speaker.wave.1.fill (iOS 14.0)
@@ -6259,6 +8421,12 @@ _____
 - speaker.wave.2.fill (iOS 14.0)
 - speaker.wave.2.circle (iOS 14.0)
 - speaker.wave.2.circle.fill (iOS 14.0)
+
+### speaker.wave.2.bubble.left
+- speaker.wave.2.bubble.left (iOS 16.0)
+- speaker.wave.2.bubble.left.rtl (iOS 16.0)
+- speaker.wave.2.bubble.left.fill (iOS 16.0)
+- speaker.wave.2.bubble.left.fill.rtl (iOS 16.0)
 
 ### speaker.wave.3
 - speaker.wave.3 (iOS 14.0)
@@ -6273,9 +8441,23 @@ _____
 ### speedometer
  (iOS 13.0)
 
+### spigot
+- spigot (iOS 16.0)
+- spigot.fill (iOS 16.0)
+
 ### sportscourt
 - sportscourt (iOS 13.0)
 - sportscourt.fill (iOS 13.0)
+- sportscourt.circle (iOS 16.0)
+- sportscourt.circle.fill (iOS 16.0)
+
+### sprinkler
+- sprinkler (iOS 16.0)
+- sprinkler.fill (iOS 16.0)
+
+### sprinkler.and.droplets
+- sprinkler.and.droplets (iOS 16.0)
+- sprinkler.and.droplets.fill (iOS 16.0)
 
 ### square
 - square (iOS 13.0)
@@ -6285,26 +8467,44 @@ _____
 - square.slash (iOS 14.0)
 - square.slash.fill (iOS 14.0)
 
+### square.2.layers.3d
+ (iOS 16.0)
+
+### square.2.layers.3d.bottom.filled
+ (iOS 16.0)
+
+### square.2.layers.3d.top.filled
+ (iOS 16.0)
+
 ### square.2.stack.3d
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [square.2.layers.3d](#square2layers3d))
 
 ### square.2.stack.3d.bottom.fill
- (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.2.stack.3d.bottom.filled](#square2stack3dbottomfilled))
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [square.2.layers.3d.bottom.filled](#square2layers3dbottomfilled))
 
 ### square.2.stack.3d.bottom.filled
- (iOS 15.0)
+ (iOS, introduced: 15.0, deprecated: 16.0, renamed: [square.2.layers.3d.bottom.filled](#square2layers3dbottomfilled))
 
 ### square.2.stack.3d.top.fill
- (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.2.stack.3d.top.filled](#square2stack3dtopfilled))
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [square.2.layers.3d.top.filled](#square2layers3dtopfilled))
 
 ### square.2.stack.3d.top.filled
- (iOS 15.0)
+ (iOS, introduced: 15.0, deprecated: 16.0, renamed: [square.2.layers.3d.top.filled](#square2layers3dtopfilled))
+
+### square.3.layers.3d
+- square.3.layers.3d (iOS 16.0)
+- square.3.layers.3d.slash (iOS 16.0)
+
+### square.3.layers.3d.bottom.filled
+ (iOS 16.0)
 
 ### square.3.layers.3d.down.backward
- (iOS 15.1)
+- square.3.layers.3d.down.backward (iOS 15.1)
+- square.3.layers.3d.down.backward.slash.rtl (iOS 16.0)
 
 ### square.3.layers.3d.down.forward
- (iOS 15.1)
+- square.3.layers.3d.down.forward (iOS 15.1)
+- square.3.layers.3d.down.forward.slash.rtl (iOS 16.0)
 
 ### square.3.layers.3d.down.left
 - square.3.layers.3d.down.left (iOS 15.1)
@@ -6314,27 +8514,33 @@ _____
 - square.3.layers.3d.down.right (iOS 15.1)
 - square.3.layers.3d.down.right.slash (iOS 15.2)
 
+### square.3.layers.3d.middle.filled
+ (iOS 16.0)
+
+### square.3.layers.3d.top.filled
+ (iOS 16.0)
+
 ### square.3.stack.3d
-- square.3.stack.3d (iOS 14.0)
-- square.3.stack.3d.slash (iOS 15.2)
+- square.3.stack.3d (iOS, introduced: 14.0, deprecated: 16.0, renamed: [square.3.layers.3d](#square3layers3d))
+- square.3.stack.3d.slash (iOS, introduced: 15.2, deprecated: 16.0, renamed: [square.3.layers.3d.slash](#square3layers3d))
 
 ### square.3.stack.3d.bottom.fill
- (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.3.stack.3d.bottom.filled](#square3stack3dbottomfilled))
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [square.3.layers.3d.bottom.filled](#square3layers3dbottomfilled))
 
 ### square.3.stack.3d.bottom.filled
- (iOS 15.0)
+ (iOS, introduced: 15.0, deprecated: 16.0, renamed: [square.3.layers.3d.bottom.filled](#square3layers3dbottomfilled))
 
 ### square.3.stack.3d.middle.fill
- (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.3.stack.3d.middle.filled](#square3stack3dmiddlefilled))
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [square.3.layers.3d.middle.filled](#square3layers3dmiddlefilled))
 
 ### square.3.stack.3d.middle.filled
- (iOS 15.0)
+ (iOS, introduced: 15.0, deprecated: 16.0, renamed: [square.3.layers.3d.middle.filled](#square3layers3dmiddlefilled))
 
 ### square.3.stack.3d.top.fill
- (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.3.stack.3d.top.filled](#square3stack3dtopfilled))
+ (iOS, introduced: 14.0, deprecated: 16.0, renamed: [square.3.layers.3d.top.filled](#square3layers3dtopfilled))
 
 ### square.3.stack.3d.top.filled
- (iOS 15.0)
+ (iOS, introduced: 15.0, deprecated: 16.0, renamed: [square.3.layers.3d.top.filled](#square3layers3dtopfilled))
 
 ### square.and.arrow.down
 - square.and.arrow.down (iOS 13.0)
@@ -6369,13 +8575,18 @@ _____
  (iOS 15.0)
 
 ### square.and.pencil
- (iOS 13.0)
+- square.and.pencil (iOS 13.0)
+- square.and.pencil.circle (iOS 16.0)
+- square.and.pencil.circle.fill (iOS 16.0)
 
 ### square.bottomhalf.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [square.bottomhalf.filled](#squarebottomhalffilled))
 
 ### square.bottomhalf.filled
  (iOS 15.0)
+
+### square.bottomthird.inset.filled
+ (iOS 16.0)
 
 ### square.dashed
  (iOS 14.0)
@@ -6385,6 +8596,9 @@ _____
 
 ### square.dashed.inset.filled
  (iOS 15.0)
+
+### square.dotted
+ (iOS 16.0)
 
 ### square.fill.and.line.vertical.and.square
 - square.fill.and.line.vertical.and.square (iOS, introduced: 13.0, deprecated: 15.0, renamed: [square.filled.and.line.vertical.and.square](#squarefilledandlineverticalandsquare))
@@ -6498,11 +8712,17 @@ _____
 ### square.inset.filled
  (iOS 15.0)
 
+### square.leadingthird.inset.filled
+ (iOS 16.0)
+
 ### square.lefthalf.fill
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [square.lefthalf.filled](#squarelefthalffilled))
 
 ### square.lefthalf.filled
  (iOS 15.0)
+
+### square.leftthird.inset.filled
+ (iOS 16.0)
 
 ### square.on.circle
  (iOS 13.0)
@@ -6510,8 +8730,15 @@ _____
 ### square.on.square
  (iOS 13.0)
 
+### square.on.square.badge.person.crop
+- square.on.square.badge.person.crop (iOS 16.0)
+- square.on.square.badge.person.crop.fill (iOS 16.0)
+
 ### square.on.square.dashed
  (iOS 14.0)
+
+### square.on.square.intersection.dashed
+ (iOS 16.0)
 
 ### square.on.square.squareshape.controlhandles
  (iOS 14.0)
@@ -6521,6 +8748,9 @@ _____
 
 ### square.righthalf.filled
  (iOS 15.0)
+
+### square.rightthird.inset.filled
+ (iOS 16.0)
 
 ### square.split.1x2
 - square.split.1x2 (iOS 13.0)
@@ -6585,8 +8815,17 @@ _____
 ### square.tophalf.filled
  (iOS 15.0)
 
+### square.topthird.inset.filled
+ (iOS 16.0)
+
+### square.trailingthird.inset.filled
+ (iOS 16.0)
+
 ### squares.below.rectangle
  (iOS 13.0)
+
+### squares.leading.rectangle
+ (iOS 16.0)
 
 ### squareshape
 - squareshape (iOS 14.0)
@@ -6597,6 +8836,9 @@ _____
 
 ### squareshape.dashed.squareshape
  (iOS 14.0)
+
+### squareshape.dotted.split.2x2
+ (iOS 16.0)
 
 ### squareshape.split.2x2
  (iOS 14.0)
@@ -6609,6 +8851,9 @@ _____
 
 ### squareshape.squareshape.dashed
  (iOS 14.0)
+
+### stairs
+ (iOS 16.0)
 
 ### star
 - star (iOS 13.0)
@@ -6633,13 +8878,40 @@ _____
 ### star.lefthalf.fill
  (iOS, introduced: 13.0, deprecated: 15.0, renamed: [star.leadinghalf.filled](#starleadinghalffilled))
 
+### star.square.on.square
+- star.square.on.square (iOS 16.0)
+- star.square.on.square.fill (iOS 16.0)
+
 ### staroflife
 - staroflife (iOS 13.0)
 - staroflife.fill (iOS 13.0)
 - staroflife.circle (iOS 14.0)
 - staroflife.circle.fill (iOS 14.0)
 
+### steeringwheel
+- steeringwheel (iOS 16.1)
+- steeringwheel.slash (iOS 16.1)
+
+### steeringwheel.and.heat.waves
+ (iOS 16.1)
+
+### steeringwheel.and.key
+ (iOS 16.1)
+
+### steeringwheel.and.lock
+ (iOS 16.1)
+
+### steeringwheel.exclamationmark
+ (iOS 16.1)
+
+### steeringwheel.road.lane
+ (iOS 16.1)
+
+### steeringwheel.road.lane.dashed
+ (iOS 16.1)
+
 ### sterlingsign
+- sterlingsign (iOS 16.0)
 - sterlingsign.circle (iOS 13.0)
 - sterlingsign.circle.fill (iOS 13.0)
 - sterlingsign.square (iOS 13.0)
@@ -6660,8 +8932,16 @@ _____
 - stopwatch (iOS 13.0)
 - stopwatch.fill (iOS 13.0)
 
+### stove
+- stove (iOS 16.0)
+- stove.fill (iOS 16.0)
+
 ### strikethrough
  (iOS 13.0)
+
+### stroller
+- stroller (iOS 16.1)
+- stroller.fill (iOS 16.1)
 
 ### studentdesk
  (iOS 13.1)
@@ -6690,6 +8970,10 @@ _____
 - suitcase.cart (iOS 15.0)
 - suitcase.cart.fill (iOS 15.0)
 
+### suitcase.rolling
+- suitcase.rolling (iOS 16.1)
+- suitcase.rolling.fill (iOS 16.1)
+
 ### sum
 - sum (iOS 13.0)
 - sum.ar (iOS 14.0)
@@ -6697,20 +8981,30 @@ _____
 ### sun.and.horizon
 - sun.and.horizon (iOS 15.0)
 - sun.and.horizon.fill (iOS 15.0)
+- sun.and.horizon.circle (iOS 16.0)
+- sun.and.horizon.circle.fill (iOS 16.0)
 
 ### sun.dust
 - sun.dust (iOS 13.0)
 - sun.dust.fill (iOS 13.0)
+- sun.dust.circle (iOS 16.0)
+- sun.dust.circle.fill (iOS 16.0)
 
 ### sun.haze
 - sun.haze (iOS 13.0)
 - sun.haze.fill (iOS 13.0)
+- sun.haze.circle (iOS 16.0)
+- sun.haze.circle.fill (iOS 16.0)
 
 ### sun.max
 - sun.max (iOS 13.0)
 - sun.max.fill (iOS 13.0)
 - sun.max.circle (iOS 15.0)
 - sun.max.circle.fill (iOS 15.0)
+
+### sun.max.trianglebadge.exclamationmark
+- sun.max.trianglebadge.exclamationmark (iOS 16.0)
+- sun.max.trianglebadge.exclamationmark.fill (iOS 16.0)
 
 ### sun.min
 - sun.min (iOS 13.0)
@@ -6719,16 +9013,70 @@ _____
 ### sunrise
 - sunrise (iOS 13.0)
 - sunrise.fill (iOS 13.0)
+- sunrise.circle (iOS 16.0)
+- sunrise.circle.fill (iOS 16.0)
 
 ### sunset
 - sunset (iOS 13.0)
 - sunset.fill (iOS 13.0)
+- sunset.circle (iOS 16.0)
+- sunset.circle.fill (iOS 16.0)
+
+### suv.side
+- suv.side (iOS 16.1)
+- suv.side.fill (iOS 16.1)
+
+### suv.side.air.circulate
+- suv.side.air.circulate (iOS 16.1)
+- suv.side.air.circulate.fill (iOS 16.1)
+
+### suv.side.air.fresh
+- suv.side.air.fresh (iOS 16.1)
+- suv.side.air.fresh.fill (iOS 16.1)
+
+### suv.side.and.exclamationmark
+- suv.side.and.exclamationmark (iOS 16.1)
+- suv.side.and.exclamationmark.fill (iOS 16.1)
+
+### suv.side.arrowtriangle.down
+- suv.side.arrowtriangle.down (iOS 16.1)
+- suv.side.arrowtriangle.down.fill (iOS 16.1)
+
+### suv.side.arrowtriangle.up
+- suv.side.arrowtriangle.up (iOS 16.1)
+- suv.side.arrowtriangle.up.fill (iOS 16.1)
+
+### suv.side.arrowtriangle.up.arrowtriangle.down
+- suv.side.arrowtriangle.up.arrowtriangle.down (iOS 16.1)
+- suv.side.arrowtriangle.up.arrowtriangle.down.fill (iOS 16.1)
+
+### suv.side.front.open
+- suv.side.front.open (iOS 16.1)
+- suv.side.front.open.fill (iOS 16.1)
+
+### suv.side.rear.open
+- suv.side.rear.open (iOS 16.1)
+- suv.side.rear.open.fill (iOS 16.1)
+
+### swatchpalette
+- swatchpalette (iOS 16.0)
+- swatchpalette.fill (iOS 16.0)
 
 ### swift
  (iOS 14.0)
 
 ### switch.2
  (iOS 14.0)
+
+### switch.programmable
+- switch.programmable (iOS 16.0)
+- switch.programmable.fill (iOS 16.0)
+- switch.programmable.square (iOS 16.0)
+- switch.programmable.square.fill (iOS 16.0)
+
+### syringe
+- syringe (iOS 16.0)
+- syringe.fill (iOS 16.0)
 
 ### t
 - t.circle (iOS 13.0)
@@ -6752,6 +9100,10 @@ _____
 - table.badge.more (iOS, introduced: 13.0, deprecated: 14.0, renamed: [tablecells.badge.ellipsis](#tablecellsbadgeellipsis))
 - table.badge.more.fill (iOS, introduced: 13.0, deprecated: 15.0, renamed: [tablecells.fill.badge.ellipsis](#tablecellsfillbadgeellipsis))
 
+### table.furniture
+- table.furniture (iOS 16.0)
+- table.furniture.fill (iOS 16.0)
+
 ### tablecells
 - tablecells (iOS 14.0)
 - tablecells.fill (iOS 14.0)
@@ -6773,12 +9125,20 @@ _____
 - tag.slash (iOS 14.0)
 - tag.slash.fill (iOS 14.0)
 
+### taillight.fog
+- taillight.fog (iOS 16.1)
+- taillight.fog.fill (iOS 16.1)
+
 ### takeoutbag.and.cup.and.straw
 - takeoutbag.and.cup.and.straw (iOS 15.0)
 - takeoutbag.and.cup.and.straw.fill (iOS 15.0)
 
 ### target
  (iOS 14.0)
+
+### teddybear
+- teddybear (iOS 16.0)
+- teddybear.fill (iOS 16.0)
 
 ### teletype
 - teletype (iOS 13.0)
@@ -6791,10 +9151,34 @@ _____
 - teletype.answer.circle.fill (iOS 15.0)
 
 ### tengesign
+- tengesign (iOS 16.0)
 - tengesign.circle (iOS 13.0)
 - tengesign.circle.fill (iOS 13.0)
 - tengesign.square (iOS 13.0)
 - tengesign.square.fill (iOS 13.0)
+
+### tennis.racket
+- tennis.racket (iOS 16.0)
+- tennis.racket.circle (iOS 16.0)
+- tennis.racket.circle.fill (iOS 16.0)
+
+### tennisball
+- tennisball (iOS 16.0)
+- tennisball.fill (iOS 16.0)
+- tennisball.circle (iOS 16.0)
+- tennisball.circle.fill (iOS 16.0)
+
+### tent
+- tent (iOS 16.0)
+- tent.fill (iOS 16.0)
+- tent.circle (iOS 16.1)
+- tent.circle.fill (iOS 16.1)
+
+### tent.2
+- tent.2 (iOS 16.1)
+- tent.2.fill (iOS 16.1)
+- tent.2.circle (iOS 16.1)
+- tent.2.circle.fill (iOS 16.1)
 
 ### terminal
 - terminal (iOS 14.0)
@@ -6885,6 +9269,12 @@ _____
 ### text.justifyright
  (iOS, introduced: 13.0, deprecated: 15.1, renamed: [text.justify.right](#textjustifyright))
 
+### text.line.first.and.arrowtriangle.forward
+ (iOS 16.0)
+
+### text.line.last.and.arrowtriangle.forward
+ (iOS 16.0)
+
 ### text.magnifyingglass
 - text.magnifyingglass (iOS 14.0)
 - text.magnifyingglass.rtl (iOS 14.0)
@@ -6899,6 +9289,9 @@ _____
 ### text.viewfinder
  (iOS 15.0)
 
+### text.word.spacing
+ (iOS 16.0)
+
 ### textbox
 - textbox (iOS, introduced: 13.0, deprecated: 14.5, renamed: [character.textbox](#charactertextbox))
 - textbox.ar (iOS, introduced: 14.0, deprecated: 14.5, renamed: [character.textbox.ar](#charactertextbox))
@@ -6912,6 +9305,11 @@ _____
 
 ### textformat
  (iOS 13.0)
+
+### textformat.12
+- textformat.12 (iOS 16.0)
+- textformat.12.ar (iOS 16.0)
+- textformat.12.hi (iOS 16.0)
 
 ### textformat.123
 - textformat.123 (iOS 13.0)
@@ -6982,6 +9380,10 @@ _____
 - textformat.superscript.zh (iOS 14.2)
 - textformat.superscript.zh.traditional (iOS 14.2)
 
+### theatermask.and.paintbrush
+- theatermask.and.paintbrush (iOS 16.0)
+- theatermask.and.paintbrush.fill (iOS 16.0)
+
 ### theatermasks
 - theatermasks (iOS 15.0)
 - theatermasks.fill (iOS 15.0)
@@ -6989,14 +9391,37 @@ _____
 - theatermasks.circle.fill (iOS 15.0)
 
 ### thermometer
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 16.0, renamed: [thermometer.medium](#thermometermedium))
+
+### thermometer.and.liquid.waves
+ (iOS 16.1)
+
+### thermometer.brakesignal
+ (iOS 16.0)
+
+### thermometer.high
+ (iOS 16.0)
+
+### thermometer.low
+ (iOS 16.0)
+
+### thermometer.medium
+- thermometer.medium (iOS 16.0)
+- thermometer.medium.slash (iOS 16.0)
 
 ### thermometer.snowflake
- (iOS 13.0)
+- thermometer.snowflake (iOS 13.0)
+- thermometer.snowflake.circle (iOS 16.0)
+- thermometer.snowflake.circle.fill (iOS 16.0)
 
 ### thermometer.sun
 - thermometer.sun (iOS 13.0)
 - thermometer.sun.fill (iOS 14.0)
+- thermometer.sun.circle (iOS 16.0)
+- thermometer.sun.circle.fill (iOS 16.0)
+
+### thermometer.transmission
+ (iOS 16.1)
 
 ### ticket
 - ticket (iOS 14.0)
@@ -7010,13 +9435,23 @@ _____
 
 ### timer
 - timer (iOS 13.0)
+- timer.circle (iOS 16.0)
+- timer.circle.fill (iOS 16.0)
 - timer.square (iOS 14.0)
 
 ### togglepower
  (iOS 14.0)
 
+### toilet
+- toilet (iOS 16.0)
+- toilet.fill (iOS 16.0)
+- toilet.circle (iOS 16.1)
+- toilet.circle.fill (iOS 16.1)
+
 ### tornado
- (iOS 13.0)
+- tornado (iOS 13.0)
+- tornado.circle (iOS 16.0)
+- tornado.circle.fill (iOS 16.0)
 
 ### tortoise
 - tortoise (iOS 13.0)
@@ -7048,6 +9483,9 @@ _____
 
 ### tram.tunnel.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [tram.fill.tunnel](#tramfilltunnel))
+
+### transmission
+ (iOS 16.1)
 
 ### trapezoid.and.line.horizontal
 - trapezoid.and.line.horizontal (iOS 15.0)
@@ -7093,6 +9531,12 @@ _____
 - tray.full (iOS 13.0)
 - tray.full.fill (iOS 13.0)
 
+### tree
+- tree (iOS 16.1)
+- tree.fill (iOS 16.1)
+- tree.circle (iOS 16.1)
+- tree.circle.fill (iOS 16.1)
+
 ### triangle
 - triangle (iOS 13.0)
 - triangle.fill (iOS 13.0)
@@ -7120,14 +9564,23 @@ _____
 ### triangle.tophalf.filled
  (iOS 15.0)
 
+### trophy
+- trophy (iOS 16.0)
+- trophy.fill (iOS 16.0)
+- trophy.circle (iOS 16.0)
+- trophy.circle.fill (iOS 16.0)
+
 ### tropicalstorm
- (iOS 13.0)
+- tropicalstorm (iOS 13.0)
+- tropicalstorm.circle (iOS 16.0)
+- tropicalstorm.circle.fill (iOS 16.0)
 
 ### tshirt
 - tshirt (iOS 15.0)
 - tshirt.fill (iOS 15.0)
 
 ### tugriksign
+- tugriksign (iOS 16.0)
 - tugriksign.circle (iOS 13.0)
 - tugriksign.circle.fill (iOS 13.0)
 - tugriksign.square (iOS 13.0)
@@ -7137,6 +9590,7 @@ _____
  (iOS 13.0)
 
 ### turkishlirasign
+- turkishlirasign (iOS 16.0)
 - turkishlirasign.circle (iOS 13.0)
 - turkishlirasign.circle.fill (iOS 13.0)
 - turkishlirasign.square (iOS 13.0)
@@ -7152,7 +9606,8 @@ _____
  (iOS 14.0)
 
 ### tv.and.mediabox
- (iOS 14.2)
+- tv.and.mediabox (iOS 14.2)
+- tv.and.mediabox.fill (iOS 16.0)
 
 ### tv.inset.filled
  (iOS 15.0)
@@ -7174,6 +9629,12 @@ _____
 - umbrella (iOS 13.0)
 - umbrella.fill (iOS 13.0)
 
+### umbrella.percent
+- umbrella.percent (iOS 16.0)
+- umbrella.percent.ar (iOS 16.0)
+- umbrella.percent.fill (iOS 16.0)
+- umbrella.percent.fill.ar (iOS 16.0)
+
 ### underline
  (iOS 13.0)
 
@@ -7182,6 +9643,9 @@ _____
 - v.circle.fill (iOS 13.0)
 - v.square (iOS 13.0)
 - v.square.fill (iOS 13.0)
+
+### vial.viewfinder
+ (iOS 16.0)
 
 ### video
 - video (iOS 13.0)
@@ -7211,6 +9675,10 @@ _____
 - video.bubble.left (iOS 14.0)
 - video.bubble.left.fill (iOS 14.0)
 
+### video.doorbell
+- video.doorbell (iOS 16.0)
+- video.doorbell.fill (iOS 16.0)
+
 ### video.fill.badge.checkmark
  (iOS 14.0)
 
@@ -7219,6 +9687,10 @@ _____
 
 ### video.fill.badge.plus
  (iOS 14.0)
+
+### videoprojector
+- videoprojector (iOS 16.0)
+- videoprojector.fill (iOS 16.0)
 
 ### view.2d
  (iOS 13.0)
@@ -7230,6 +9702,12 @@ _____
 - viewfinder (iOS 13.0)
 - viewfinder.circle (iOS 13.0)
 - viewfinder.circle.fill (iOS 13.0)
+
+### volleyball
+- volleyball (iOS 16.0)
+- volleyball.fill (iOS 16.0)
+- volleyball.circle (iOS 16.0)
+- volleyball.circle.fill (iOS 16.0)
 
 ### w
 - w.circle (iOS 13.0)
@@ -7258,8 +9736,25 @@ _____
 ### wand.and.stars.inverse
  (iOS 13.0)
 
+### washer
+- washer (iOS 16.0)
+- washer.fill (iOS 16.0)
+
 ### watchface.applewatch.case
  (iOS 15.0)
+
+### water.waves
+- water.waves (iOS 16.0)
+- water.waves.slash (iOS 16.0)
+
+### water.waves.and.arrow.down
+ (iOS 16.0)
+
+### water.waves.and.arrow.down.trianglebadge.exclamationmark
+ (iOS 16.0)
+
+### water.waves.and.arrow.up
+ (iOS 16.0)
 
 ### wave.3.backward
 - wave.3.backward (iOS 14.0)
@@ -7285,6 +9780,7 @@ _____
 - waveform (iOS 13.0)
 - waveform.circle (iOS 13.0)
 - waveform.circle.fill (iOS 13.0)
+- waveform.slash (iOS 16.0)
 
 ### waveform.and.magnifyingglass
  (iOS 15.0)
@@ -7315,6 +9811,10 @@ _____
 - waveform.path.ecg.rectangle (iOS 14.0)
 - waveform.path.ecg.rectangle.fill (iOS 14.0)
 
+### web.camera
+- web.camera (iOS 16.0)
+- web.camera.fill (iOS 16.0)
+
 ### wifi
 - wifi (iOS 13.0)
 - wifi.circle (iOS 15.0)
@@ -7326,25 +9826,136 @@ _____
 ### wifi.exclamationmark
  (iOS 13.0)
 
+### wifi.router
+- wifi.router (iOS 16.0)
+- wifi.router.fill (iOS 16.0)
+
 ### wind
- (iOS 13.0)
+- wind (iOS 13.0)
+- wind.circle (iOS 16.0)
+- wind.circle.fill (iOS 16.0)
 
 ### wind.snow
- (iOS 13.0)
+- wind.snow (iOS 13.0)
+- wind.snow.circle (iOS 16.0)
+- wind.snow.circle.fill (iOS 16.0)
+
+### window.awning
+ (iOS 16.0)
+
+### window.awning.closed
+ (iOS 16.0)
+
+### window.casement
+ (iOS 16.0)
+
+### window.casement.closed
+ (iOS 16.0)
+
+### window.ceiling
+ (iOS 16.0)
+
+### window.ceiling.closed
+ (iOS 16.0)
+
+### window.horizontal
+ (iOS 16.0)
+
+### window.horizontal.closed
+ (iOS 16.0)
+
+### window.shade.closed
+ (iOS 16.0)
+
+### window.shade.open
+ (iOS 16.0)
+
+### window.vertical.closed
+ (iOS 16.0)
+
+### window.vertical.open
+ (iOS 16.0)
+
+### windshield.front.and.fluid
+ (iOS, introduced: 16.0, deprecated: 16.1, renamed: [windshield.front.and.spray](#windshieldfrontandspray))
+
+### windshield.front.and.fluid.and.spray
+ (iOS 16.1)
+
+### windshield.front.and.heat.waves
+ (iOS 16.1)
+
+### windshield.front.and.spray
+ (iOS 16.1)
+
+### windshield.front.and.wiper
+ (iOS 16.0)
+
+### windshield.front.and.wiper.and.drop
+ (iOS 16.0)
+
+### windshield.front.and.wiper.and.spray
+ (iOS 16.1)
+
+### windshield.front.and.wiper.exclamationmark
+ (iOS 16.1)
+
+### windshield.front.and.wiper.intermittent
+ (iOS 16.1)
+
+### windshield.rear.and.fluid
+ (iOS, introduced: 16.0, deprecated: 16.1, renamed: [windshield.rear.and.spray](#windshieldrearandspray))
+
+### windshield.rear.and.fluid.and.spray
+ (iOS 16.1)
+
+### windshield.rear.and.heat.waves
+ (iOS 16.1)
+
+### windshield.rear.and.spray
+ (iOS 16.1)
+
+### windshield.rear.and.wiper
+ (iOS 16.0)
+
+### windshield.rear.and.wiper.and.drop
+ (iOS 16.1)
+
+### windshield.rear.and.wiper.and.spray
+ (iOS 16.1)
+
+### windshield.rear.and.wiper.exclamationmark
+ (iOS 16.1)
+
+### windshield.rear.and.wiper.intermittent
+ (iOS 16.1)
+
+### wineglass
+- wineglass (iOS 16.0)
+- wineglass.fill (iOS 16.0)
 
 ### wonsign
+- wonsign (iOS 16.0)
 - wonsign.circle (iOS 13.0)
 - wonsign.circle.fill (iOS 13.0)
 - wonsign.square (iOS 13.0)
 - wonsign.square.fill (iOS 13.0)
 
 ### wrench
-- wrench (iOS 13.0)
-- wrench.fill (iOS 13.0)
+- wrench (iOS, introduced: 13.0, deprecated: 16.0, renamed: [wrench.adjustable](#wrenchadjustable))
+- wrench.fill (iOS, introduced: 13.0, deprecated: 16.0, renamed: [wrench.adjustable.fill](#wrenchadjustable))
+
+### wrench.adjustable
+- wrench.adjustable (iOS 16.0)
+- wrench.adjustable.fill (iOS 16.0)
 
 ### wrench.and.screwdriver
 - wrench.and.screwdriver (iOS 14.0)
 - wrench.and.screwdriver.fill (iOS 14.0)
+
+### wrongwaysign
+- wrongwaysign (iOS 16.1)
+- wrongwaysign.fill (iOS 16.1)
 
 ### x
 - x.circle (iOS 13.0)
@@ -7354,6 +9965,9 @@ _____
 
 ### x.squareroot
  (iOS 13.0)
+
+### xbox.logo
+ (iOS 16.0)
 
 ### xmark
 - xmark (iOS 13.0)
@@ -7408,6 +10022,7 @@ _____
 - y.square.fill (iOS 13.0)
 
 ### yensign
+- yensign (iOS 16.0)
 - yensign.circle (iOS 13.0)
 - yensign.circle.fill (iOS 13.0)
 - yensign.square (iOS 13.0)
