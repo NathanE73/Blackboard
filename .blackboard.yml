@@ -2,6 +2,9 @@ ios:
   target: 13.0
   sdk: 14.5
 
+symbols-collection:
+  name: Example App
+
 symbols:
 - a.book.closed
 - 14.square.fill

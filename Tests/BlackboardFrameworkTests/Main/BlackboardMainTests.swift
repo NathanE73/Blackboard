@@ -79,6 +79,7 @@ class BlackboardMainTests: XCTestCase {
         
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
         
+        XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, [])
         
         XCTAssertFalse(main.skipColors)
@@ -109,6 +110,7 @@ class BlackboardMainTests: XCTestCase {
         
         XCTAssertEqual(main.output, "ExampleApp/Source/Generated")
         
+        XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, [])
         
         XCTAssertFalse(main.skipColors)
@@ -139,6 +141,42 @@ class BlackboardMainTests: XCTestCase {
         
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
         
+        XCTAssertNil(main.symbolsCollectionName)
+        XCTAssertEqual(main.symbols, [])
+        
+        XCTAssertFalse(main.skipColors)
+        XCTAssertFalse(main.skipDataAssets)
+        XCTAssertFalse(main.skipImages)
+        XCTAssertFalse(main.skipLocalizable)
+        XCTAssertFalse(main.skipNibValidation)
+        XCTAssertFalse(main.skipStoryboards)
+        XCTAssertFalse(main.skipStoryboardValidation)
+        XCTAssertFalse(main.skipSwiftUI)
+        XCTAssertFalse(main.skipSymbols)
+        XCTAssertFalse(main.skipUIKit)
+        XCTAssertFalse(main.skipValidation)
+    }
+    
+    // MARK: - Symbols Collection Tests
+    
+    func testConfigurationSymbolsCollection() throws {
+        var command = try BlackboardCommand.parse([])
+        command.input = ["DeclarativeApp/Resources"]
+        command.output = "DeclarativeApp/Source/Generated"
+        
+        let symbolsCollection = BlackboardConfiguration.SymbolsCollection(
+            name: "Example App")
+        
+        let configuration = BlackboardConfiguration(
+            symbolsCollection: symbolsCollection)
+        
+        let main = try BlackboardMain(command, configuration)
+        
+        XCTAssertEqual(main.input, ["DeclarativeApp/Resources"])
+        
+        XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
+        
+        XCTAssertEqual(main.symbolsCollectionName, "Example App")
         XCTAssertEqual(main.symbols, [])
         
         XCTAssertFalse(main.skipColors)
@@ -170,6 +208,7 @@ class BlackboardMainTests: XCTestCase {
         
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
         
+        XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, ["chevron.down", "chevron.up"])
         
         XCTAssertFalse(main.skipColors)

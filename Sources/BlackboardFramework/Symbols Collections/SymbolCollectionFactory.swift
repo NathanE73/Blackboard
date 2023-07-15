@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2022 Nathan E. Walczak
+// Copyright (c) 2023 Nathan E. Walczak
 //
 // MIT License
 //
@@ -24,34 +24,40 @@
 
 import Foundation
 
-struct SymbolAliases {
-    var symbols: [String: String]
-}
-
-extension SymbolAliases {
+class SymbolCollectionFactory {
     
-    static var resource: SymbolAliases? {
-        let text = Resource.name_aliases_strings_txt
-        let data = Data(text.utf8)
+    func symbolCollectionsAt(path: String) -> [SymbolCollection] {
+        let fileManager = FileManager.default
         
-        guard let symbols = try? PropertyListSerialization
-                .propertyList(from: data, options: [], format: nil)
-                as? [String: String] else {
-                    print("error: Failed to decode symbol name aliases resource")
-                    return nil
+        guard let contents = try? fileManager.contentsOfDirectory(atPath: path) else {
+            return []
         }
         
-        return SymbolAliases(symbols: symbols)
-    }
-    
-    static func modernize(symbols: Set<String>) -> Set<String> {
-        guard let aliases = resource?.symbols else {
-            return symbols
+        return contents.compactMap { content -> SymbolCollection? in
+            let file = path.appendingPathComponent(content)
+            
+            guard !fileManager.isDirectory(file) else {
+                return nil
+            }
+            
+            guard file.pathExtension == "json" else {
+                return nil
+            }
+            
+            let url = URL(fileURLWithPath: file, isDirectory: false)
+            
+            guard let data = try? Data(contentsOf: url) else {
+                return nil
+            }
+            
+            guard var symbolCollection = try? JSONDecoder().decode(SymbolCollection.self, from: data) else {
+                return nil
+            }
+            
+            symbolCollection.file = file
+            
+            return symbolCollection
         }
-        
-        return Set(symbols.compactMap { symbol in
-            aliases[symbol] ?? symbol
-        })
     }
     
 }

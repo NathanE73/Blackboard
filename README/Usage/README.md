@@ -19,6 +19,8 @@ You compare these to see the difference between using and not using Blackboard.
     - [Image](/README/Usage/SymbolImage.md#symbol-image-usage)
   - UIKit
     - [UIImage](/README/Usage/SymbolUIImage.md#symbol-uiimage-usage)
+  - SF Symbols App
+    - [Collection](/README/Usage/SymbolCollection.md#symbol-collection-usage)
 - Storyboard Usage
   - Cells
     - [Dequeue Collection View Cell](/README/Usage/UICollectionViewCell.md#dequeue-collection-view-cell-usage)

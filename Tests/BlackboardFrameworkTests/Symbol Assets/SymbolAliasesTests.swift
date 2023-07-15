@@ -37,4 +37,26 @@ class SymbolAliasesTests: XCTestCase {
         XCTAssertEqual(aliases.symbols["dial.fill"], "dial.low.fill")
     }
     
+    func testModernize() throws {
+        // Given
+        let symbols: Set<String> = [
+            "a.book.closed",
+            "14.square.fill",
+            "character.book.closed",
+            "chevron.down",
+            "chevron.up"
+        ]
+        
+        // When
+        let modernSymbols = SymbolAliases.modernize(symbols: symbols)
+        
+        // Then
+        XCTAssertEqual(modernSymbols, [
+            "14.square.fill",
+            "character.book.closed", // "a.book.closed"
+            "chevron.down",
+            "chevron.up"
+        ])
+    }
+    
 }
