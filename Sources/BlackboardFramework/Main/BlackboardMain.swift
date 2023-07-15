@@ -35,6 +35,7 @@ public struct BlackboardMain {
     
     var output: String
     
+    var symbolsCollectionName: String?
     var symbols: Set<String>
     
     var skipColors: Bool
@@ -73,6 +74,8 @@ public struct BlackboardMain {
         } else {
             throw BlackboardError.missingOutput
         }
+        
+        self.symbolsCollectionName = configuration?.symbolsCollection?.name
         
         self.symbols = configuration?.symbols ?? []
         

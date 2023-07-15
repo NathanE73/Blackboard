@@ -39,6 +39,11 @@ struct BlackboardConfiguration: Decodable {
     
     var output: String?
     
+    struct SymbolsCollection: Decodable {
+        var name: String
+    }
+    var symbolsCollection: SymbolsCollection?
+    
     var symbols: Set<String>?
     
     enum Skip: String, Decodable {
@@ -81,6 +86,7 @@ struct BlackboardConfiguration: Decodable {
         case ios
         case input
         case output
+        case symbolsCollection = "symbols-collection"
         case symbols
         case skips = "skip"
         case localizable

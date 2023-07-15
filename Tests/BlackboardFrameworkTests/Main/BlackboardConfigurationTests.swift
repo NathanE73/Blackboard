@@ -90,6 +90,25 @@ class BlackboardConfigurationTests: XCTestCase {
         }
     }
     
+    func testDecodableSymbolsCollection() throws {
+        let yaml = """
+        symbols-collection:
+          name: Example App
+        """
+        
+        let data = Data(yaml.utf8)
+        
+        do {
+            let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
+            
+            let symbolsCollection = try XCTUnwrap(configuration.symbolsCollection)
+            XCTAssertEqual(symbolsCollection.name, "Example App")
+        }
+        catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
     func testDecodableSymbols() throws {
         let yaml = """
         symbols:
