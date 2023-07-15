@@ -147,6 +147,12 @@ public struct BlackboardMain {
         
         processSymbols(symbols, output)
         
+        // Process Symbols Collection
+        
+        if let symbolsCollectionName = symbolsCollectionName {
+            processSymbolsCollection(symbolsCollectionName)
+        }
+        
         // Process Resources
         
         let storyboards = processStoryboards(input, output)
