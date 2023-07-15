@@ -121,6 +121,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>1.lane</key>
 		<string>2022.1</string>
+		<key>1.lane.ar</key>
+		<string>2022.2</string>
+		<key>1.lane.hi</key>
+		<string>2022.2</string>
 		<key>1.magnifyingglass</key>
 		<string>2019</string>
 		<key>1.magnifyingglass.ar</key>
@@ -141,6 +145,10 @@ extension Resource {
 		<string>2019</string>
 		<key>10.lane</key>
 		<string>2022.1</string>
+		<key>10.lane.ar</key>
+		<string>2022.2</string>
+		<key>10.lane.hi</key>
+		<string>2022.2</string>
 		<key>10.square</key>
 		<string>2019</string>
 		<key>10.square.fill</key>
@@ -151,6 +159,10 @@ extension Resource {
 		<string>2019</string>
 		<key>11.lane</key>
 		<string>2022.1</string>
+		<key>11.lane.ar</key>
+		<string>2022.2</string>
+		<key>11.lane.hi</key>
+		<string>2022.2</string>
 		<key>11.square</key>
 		<string>2019</string>
 		<key>11.square.fill</key>
@@ -161,6 +173,10 @@ extension Resource {
 		<string>2019</string>
 		<key>12.lane</key>
 		<string>2022.1</string>
+		<key>12.lane.ar</key>
+		<string>2022.2</string>
+		<key>12.lane.hi</key>
+		<string>2022.2</string>
 		<key>12.square</key>
 		<string>2019</string>
 		<key>12.square.fill</key>
@@ -245,6 +261,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>2.lane</key>
 		<string>2022.1</string>
+		<key>2.lane.ar</key>
+		<string>2022.2</string>
+		<key>2.lane.hi</key>
+		<string>2022.2</string>
 		<key>2.square</key>
 		<string>2019</string>
 		<key>2.square.ar</key>
@@ -333,6 +353,12 @@ extension Resource {
 		<string>2019</string>
 		<key>29.square.fill</key>
 		<string>2019</string>
+		<key>2h</key>
+		<string>2023</string>
+		<key>2h.circle</key>
+		<string>2023</string>
+		<key>2h.circle.fill</key>
+		<string>2023</string>
 		<key>3.circle</key>
 		<string>2019</string>
 		<key>3.circle.ar</key>
@@ -343,6 +369,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>3.lane</key>
 		<string>2022.1</string>
+		<key>3.lane.ar</key>
+		<string>2022.2</string>
+		<key>3.lane.hi</key>
+		<string>2022.2</string>
 		<key>3.square</key>
 		<string>2019</string>
 		<key>3.square.ar</key>
@@ -449,6 +479,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>4.lane</key>
 		<string>2022.1</string>
+		<key>4.lane.ar</key>
+		<string>2022.2</string>
+		<key>4.lane.hi</key>
+		<string>2022.2</string>
 		<key>4.square</key>
 		<string>2019</string>
 		<key>4.square.ar</key>
@@ -537,10 +571,28 @@ extension Resource {
 		<string>2019</string>
 		<key>49.square.fill</key>
 		<string>2019</string>
+		<key>4a</key>
+		<string>2023</string>
+		<key>4a.circle</key>
+		<string>2023</string>
+		<key>4a.circle.fill</key>
+		<string>2023</string>
+		<key>4h</key>
+		<string>2023</string>
+		<key>4h.circle</key>
+		<string>2023</string>
+		<key>4h.circle.fill</key>
+		<string>2023</string>
 		<key>4k.tv</key>
 		<string>2020</string>
 		<key>4k.tv.fill</key>
 		<string>2020</string>
+		<key>4l</key>
+		<string>2023</string>
+		<key>4l.circle</key>
+		<string>2023</string>
+		<key>4l.circle.fill</key>
+		<string>2023</string>
 		<key>5.circle</key>
 		<string>2019</string>
 		<key>5.circle.ar</key>
@@ -551,6 +603,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>5.lane</key>
 		<string>2022.1</string>
+		<key>5.lane.ar</key>
+		<string>2022.2</string>
+		<key>5.lane.hi</key>
+		<string>2022.2</string>
 		<key>5.square</key>
 		<string>2019</string>
 		<key>5.square.ar</key>
@@ -585,6 +641,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>6.lane</key>
 		<string>2022.1</string>
+		<key>6.lane.ar</key>
+		<string>2022.2</string>
+		<key>6.lane.hi</key>
+		<string>2022.2</string>
 		<key>6.square</key>
 		<string>2019</string>
 		<key>6.square.ar</key>
@@ -603,6 +663,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>7.lane</key>
 		<string>2022.1</string>
+		<key>7.lane.ar</key>
+		<string>2022.2</string>
+		<key>7.lane.hi</key>
+		<string>2022.2</string>
 		<key>7.square</key>
 		<string>2019</string>
 		<key>7.square.ar</key>
@@ -621,6 +685,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>8.lane</key>
 		<string>2022.1</string>
+		<key>8.lane.ar</key>
+		<string>2022.2</string>
+		<key>8.lane.hi</key>
+		<string>2022.2</string>
 		<key>8.square</key>
 		<string>2019</string>
 		<key>8.square.ar</key>
@@ -647,6 +715,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>9.lane</key>
 		<string>2022.1</string>
+		<key>9.lane.ar</key>
+		<string>2022.2</string>
+		<key>9.lane.hi</key>
+		<string>2022.2</string>
 		<key>9.square</key>
 		<string>2019</string>
 		<key>9.square.ar</key>
@@ -711,6 +783,12 @@ extension Resource {
 		<string>2022.1</string>
 		<key>abs.circle.fill</key>
 		<string>2022.1</string>
+		<key>accessibility</key>
+		<string>2023</string>
+		<key>accessibility.badge.arrow.up.right</key>
+		<string>2023</string>
+		<key>accessibility.fill</key>
+		<string>2023</string>
 		<key>air.conditioner.horizontal</key>
 		<string>2022</string>
 		<key>air.conditioner.horizontal.fill</key>
@@ -785,6 +863,10 @@ extension Resource {
 		<string>2021</string>
 		<key>airpodspro.chargingcase.wireless.fill</key>
 		<string>2021</string>
+		<key>airpodspro.chargingcase.wireless.radiowaves.left.and.right</key>
+		<string>2023</string>
+		<key>airpodspro.chargingcase.wireless.radiowaves.left.and.right.fill</key>
+		<string>2023</string>
 		<key>airport.express</key>
 		<string>2020</string>
 		<key>airport.extreme</key>
@@ -887,10 +969,30 @@ extension Resource {
 		<string>2020</string>
 		<key>apple.logo</key>
 		<string>2022</string>
+		<key>apple.terminal</key>
+		<string>2023</string>
+		<key>apple.terminal.fill</key>
+		<string>2023</string>
+		<key>apple.terminal.on.rectangle</key>
+		<string>2023</string>
+		<key>apple.terminal.on.rectangle.fill</key>
+		<string>2023</string>
 		<key>applelogo</key>
 		<string>2020</string>
 		<key>applepencil</key>
 		<string>2021</string>
+		<key>applepencil.adapter.usb.c</key>
+		<string>2023</string>
+		<key>applepencil.adapter.usb.c.fill</key>
+		<string>2023</string>
+		<key>applepencil.and.scribble</key>
+		<string>2023</string>
+		<key>applepencil.gen1</key>
+		<string>2023</string>
+		<key>applepencil.gen2</key>
+		<string>2023</string>
+		<key>applepencil.tip</key>
+		<string>2023</string>
 		<key>applescript</key>
 		<string>2020</string>
 		<key>applescript.fill</key>
@@ -917,6 +1019,10 @@ extension Resource {
 		<string>2021</string>
 		<key>applewatch</key>
 		<string>2020</string>
+		<key>applewatch.and.arrow.forward</key>
+		<string>2023</string>
+		<key>applewatch.and.arrow.forward.rtl</key>
+		<string>2023</string>
 		<key>applewatch.case.inset.filled</key>
 		<string>2021</string>
 		<key>applewatch.radiowaves.left.and.right</key>
@@ -939,12 +1045,32 @@ extension Resource {
 		<string>2020</string>
 		<key>apps.iphone.landscape.rtl</key>
 		<string>2020</string>
+		<key>appwindow.swipe.rectangle</key>
+		<string>2023</string>
 		<key>aqi.high</key>
 		<string>2020.1</string>
 		<key>aqi.low</key>
 		<string>2020.1</string>
 		<key>aqi.medium</key>
 		<string>2020.1</string>
+		<key>arcade.stick</key>
+		<string>2023</string>
+		<key>arcade.stick.and.arrow.down</key>
+		<string>2023</string>
+		<key>arcade.stick.and.arrow.left</key>
+		<string>2023</string>
+		<key>arcade.stick.and.arrow.left.and.arrow.right</key>
+		<string>2023</string>
+		<key>arcade.stick.and.arrow.right</key>
+		<string>2023</string>
+		<key>arcade.stick.and.arrow.up</key>
+		<string>2023</string>
+		<key>arcade.stick.and.arrow.up.and.arrow.down</key>
+		<string>2023</string>
+		<key>arcade.stick.console</key>
+		<string>2023</string>
+		<key>arcade.stick.console.fill</key>
+		<string>2023</string>
 		<key>archivebox</key>
 		<string>2019</string>
 		<key>archivebox.circle</key>
@@ -983,8 +1109,14 @@ extension Resource {
 		<string>2021</string>
 		<key>arrow.backward.to.line.circle.fill</key>
 		<string>2021</string>
+		<key>arrow.backward.to.line.square</key>
+		<string>2023</string>
+		<key>arrow.backward.to.line.square.fill</key>
+		<string>2023</string>
 		<key>arrow.branch</key>
 		<string>2019</string>
+		<key>arrow.circlepath</key>
+		<string>2023</string>
 		<key>arrow.clockwise</key>
 		<string>2019</string>
 		<key>arrow.clockwise.circle</key>
@@ -999,6 +1131,10 @@ extension Resource {
 		<string>2019</string>
 		<key>arrow.clockwise.icloud.fill</key>
 		<string>2019</string>
+		<key>arrow.clockwise.square</key>
+		<string>2023</string>
+		<key>arrow.clockwise.square.fill</key>
+		<string>2023</string>
 		<key>arrow.counterclockwise</key>
 		<string>2019</string>
 		<key>arrow.counterclockwise.circle</key>
@@ -1009,6 +1145,10 @@ extension Resource {
 		<string>2019</string>
 		<key>arrow.counterclockwise.icloud.fill</key>
 		<string>2019</string>
+		<key>arrow.counterclockwise.square</key>
+		<string>2023</string>
+		<key>arrow.counterclockwise.square.fill</key>
+		<string>2023</string>
 		<key>arrow.down</key>
 		<string>2019</string>
 		<key>arrow.down.and.line.horizontal.and.arrow.up</key>
@@ -1017,8 +1157,20 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.down.app.fill</key>
 		<string>2020</string>
+		<key>arrow.down.applewatch</key>
+		<string>2023</string>
 		<key>arrow.down.backward</key>
 		<string>2020</string>
+		<key>arrow.down.backward.and.arrow.up.forward</key>
+		<string>2023</string>
+		<key>arrow.down.backward.and.arrow.up.forward.circle</key>
+		<string>2023</string>
+		<key>arrow.down.backward.and.arrow.up.forward.circle.fill</key>
+		<string>2023</string>
+		<key>arrow.down.backward.and.arrow.up.forward.square</key>
+		<string>2023</string>
+		<key>arrow.down.backward.and.arrow.up.forward.square.fill</key>
+		<string>2023</string>
 		<key>arrow.down.backward.circle</key>
 		<string>2020</string>
 		<key>arrow.down.backward.circle.fill</key>
@@ -1027,8 +1179,14 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.down.backward.square.fill</key>
 		<string>2020</string>
+		<key>arrow.down.backward.toptrailing.rectangle</key>
+		<string>2023</string>
+		<key>arrow.down.backward.toptrailing.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.down.circle</key>
 		<string>2019</string>
+		<key>arrow.down.circle.dotted</key>
+		<string>2023</string>
 		<key>arrow.down.circle.fill</key>
 		<string>2019</string>
 		<key>arrow.down.doc</key>
@@ -1043,6 +1201,10 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.down.forward.and.arrow.up.backward.circle.fill</key>
 		<string>2020</string>
+		<key>arrow.down.forward.and.arrow.up.backward.square</key>
+		<string>2023</string>
+		<key>arrow.down.forward.and.arrow.up.backward.square.fill</key>
+		<string>2023</string>
 		<key>arrow.down.forward.circle</key>
 		<string>2020</string>
 		<key>arrow.down.forward.circle.fill</key>
@@ -1051,12 +1213,36 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.down.forward.square.fill</key>
 		<string>2020</string>
+		<key>arrow.down.forward.topleading.rectangle</key>
+		<string>2023</string>
+		<key>arrow.down.forward.topleading.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.down.heart</key>
 		<string>2020</string>
 		<key>arrow.down.heart.fill</key>
 		<string>2020</string>
 		<key>arrow.down.left</key>
 		<string>2019</string>
+		<key>arrow.down.left.and.arrow.up.right</key>
+		<string>2023</string>
+		<key>arrow.down.left.and.arrow.up.right.circle</key>
+		<string>2023</string>
+		<key>arrow.down.left.and.arrow.up.right.circle.fill</key>
+		<string>2023</string>
+		<key>arrow.down.left.and.arrow.up.right.square</key>
+		<string>2023</string>
+		<key>arrow.down.left.and.arrow.up.right.square.fill</key>
+		<string>2023</string>
+		<key>arrow.down.left.arrow.up.right</key>
+		<string>2023</string>
+		<key>arrow.down.left.arrow.up.right.circle</key>
+		<string>2023</string>
+		<key>arrow.down.left.arrow.up.right.circle.fill</key>
+		<string>2023</string>
+		<key>arrow.down.left.arrow.up.right.square</key>
+		<string>2023</string>
+		<key>arrow.down.left.arrow.up.right.square.fill</key>
+		<string>2023</string>
 		<key>arrow.down.left.circle</key>
 		<string>2019</string>
 		<key>arrow.down.left.circle.fill</key>
@@ -1065,6 +1251,10 @@ extension Resource {
 		<string>2019</string>
 		<key>arrow.down.left.square.fill</key>
 		<string>2019</string>
+		<key>arrow.down.left.topright.rectangle</key>
+		<string>2023</string>
+		<key>arrow.down.left.topright.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.down.left.video</key>
 		<string>2019</string>
 		<key>arrow.down.left.video.fill</key>
@@ -1081,6 +1271,10 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.down.right.and.arrow.up.left.circle.fill</key>
 		<string>2020</string>
+		<key>arrow.down.right.and.arrow.up.left.square</key>
+		<string>2023</string>
+		<key>arrow.down.right.and.arrow.up.left.square.fill</key>
+		<string>2023</string>
 		<key>arrow.down.right.circle</key>
 		<string>2019</string>
 		<key>arrow.down.right.circle.fill</key>
@@ -1089,6 +1283,10 @@ extension Resource {
 		<string>2019</string>
 		<key>arrow.down.right.square.fill</key>
 		<string>2019</string>
+		<key>arrow.down.right.topleft.rectangle</key>
+		<string>2023</string>
+		<key>arrow.down.right.topleft.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.down.square</key>
 		<string>2019</string>
 		<key>arrow.down.square.fill</key>
@@ -1103,6 +1301,10 @@ extension Resource {
 		<string>2021</string>
 		<key>arrow.down.to.line.compact</key>
 		<string>2021</string>
+		<key>arrow.down.to.line.square</key>
+		<string>2023</string>
+		<key>arrow.down.to.line.square.fill</key>
+		<string>2023</string>
 		<key>arrow.forward</key>
 		<string>2020</string>
 		<key>arrow.forward.circle</key>
@@ -1119,6 +1321,10 @@ extension Resource {
 		<string>2021</string>
 		<key>arrow.forward.to.line.circle.fill</key>
 		<string>2021</string>
+		<key>arrow.forward.to.line.square</key>
+		<string>2023</string>
+		<key>arrow.forward.to.line.square.fill</key>
+		<string>2023</string>
 		<key>arrow.left</key>
 		<string>2019</string>
 		<key>arrow.left.and.line.vertical.and.arrow.right</key>
@@ -1167,6 +1373,10 @@ extension Resource {
 		<string>2021</string>
 		<key>arrow.left.to.line.compact</key>
 		<string>2021</string>
+		<key>arrow.left.to.line.square</key>
+		<string>2023</string>
+		<key>arrow.left.to.line.square.fill</key>
+		<string>2023</string>
 		<key>arrow.merge</key>
 		<string>2019</string>
 		<key>arrow.rectanglepath</key>
@@ -1205,6 +1415,10 @@ extension Resource {
 		<string>2021</string>
 		<key>arrow.right.to.line.compact</key>
 		<string>2021</string>
+		<key>arrow.right.to.line.square</key>
+		<string>2023</string>
+		<key>arrow.right.to.line.square.fill</key>
+		<string>2023</string>
 		<key>arrow.swap</key>
 		<string>2019</string>
 		<key>arrow.triangle.2.circlepath</key>
@@ -1219,6 +1433,10 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.triangle.2.circlepath.doc.on.clipboard</key>
 		<string>2020</string>
+		<key>arrow.triangle.2.circlepath.icloud</key>
+		<string>2023</string>
+		<key>arrow.triangle.2.circlepath.icloud.fill</key>
+		<string>2023</string>
 		<key>arrow.triangle.branch</key>
 		<string>2020</string>
 		<key>arrow.triangle.capsulepath</key>
@@ -1307,6 +1525,14 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.up.backward.and.arrow.down.forward.circle.fill</key>
 		<string>2020</string>
+		<key>arrow.up.backward.and.arrow.down.forward.square</key>
+		<string>2023</string>
+		<key>arrow.up.backward.and.arrow.down.forward.square.fill</key>
+		<string>2023</string>
+		<key>arrow.up.backward.bottomtrailing.rectangle</key>
+		<string>2023</string>
+		<key>arrow.up.backward.bottomtrailing.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.up.backward.circle</key>
 		<string>2020</string>
 		<key>arrow.up.backward.circle.fill</key>
@@ -1333,10 +1559,24 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.up.forward</key>
 		<string>2020</string>
+		<key>arrow.up.forward.and.arrow.down.backward</key>
+		<string>2023</string>
+		<key>arrow.up.forward.and.arrow.down.backward.circle</key>
+		<string>2023</string>
+		<key>arrow.up.forward.and.arrow.down.backward.circle.fill</key>
+		<string>2023</string>
+		<key>arrow.up.forward.and.arrow.down.backward.square</key>
+		<string>2023</string>
+		<key>arrow.up.forward.and.arrow.down.backward.square.fill</key>
+		<string>2023</string>
 		<key>arrow.up.forward.app</key>
 		<string>2020</string>
 		<key>arrow.up.forward.app.fill</key>
 		<string>2020</string>
+		<key>arrow.up.forward.bottomleading.rectangle</key>
+		<string>2023</string>
+		<key>arrow.up.forward.bottomleading.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.up.forward.circle</key>
 		<string>2020</string>
 		<key>arrow.up.forward.circle.fill</key>
@@ -1357,10 +1597,28 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.up.left.and.arrow.down.right.circle.fill</key>
 		<string>2020</string>
+		<key>arrow.up.left.and.arrow.down.right.square</key>
+		<string>2023</string>
+		<key>arrow.up.left.and.arrow.down.right.square.fill</key>
+		<string>2023</string>
 		<key>arrow.up.left.and.down.right.and.arrow.up.right.and.down.left</key>
 		<string>2020</string>
 		<key>arrow.up.left.and.down.right.magnifyingglass</key>
 		<string>2020</string>
+		<key>arrow.up.left.arrow.down.right</key>
+		<string>2023</string>
+		<key>arrow.up.left.arrow.down.right.circle</key>
+		<string>2023</string>
+		<key>arrow.up.left.arrow.down.right.circle.fill</key>
+		<string>2023</string>
+		<key>arrow.up.left.arrow.down.right.square</key>
+		<string>2023</string>
+		<key>arrow.up.left.arrow.down.right.square.fill</key>
+		<string>2023</string>
+		<key>arrow.up.left.bottomright.rectangle</key>
+		<string>2023</string>
+		<key>arrow.up.left.bottomright.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.up.left.circle</key>
 		<string>2019</string>
 		<key>arrow.up.left.circle.fill</key>
@@ -1375,10 +1633,24 @@ extension Resource {
 		<string>2020</string>
 		<key>arrow.up.right</key>
 		<string>2019</string>
+		<key>arrow.up.right.and.arrow.down.left</key>
+		<string>2023</string>
+		<key>arrow.up.right.and.arrow.down.left.circle</key>
+		<string>2023</string>
+		<key>arrow.up.right.and.arrow.down.left.circle.fill</key>
+		<string>2023</string>
 		<key>arrow.up.right.and.arrow.down.left.rectangle</key>
 		<string>2020</string>
 		<key>arrow.up.right.and.arrow.down.left.rectangle.fill</key>
 		<string>2020</string>
+		<key>arrow.up.right.and.arrow.down.left.square</key>
+		<string>2023</string>
+		<key>arrow.up.right.and.arrow.down.left.square.fill</key>
+		<string>2023</string>
+		<key>arrow.up.right.bottomleft.rectangle</key>
+		<string>2023</string>
+		<key>arrow.up.right.bottomleft.rectangle.fill</key>
+		<string>2023</string>
 		<key>arrow.up.right.circle</key>
 		<string>2019</string>
 		<key>arrow.up.right.circle.fill</key>
@@ -1409,6 +1681,14 @@ extension Resource {
 		<string>2021</string>
 		<key>arrow.up.to.line.compact</key>
 		<string>2021</string>
+		<key>arrow.up.to.line.square</key>
+		<string>2023</string>
+		<key>arrow.up.to.line.square.fill</key>
+		<string>2023</string>
+		<key>arrow.up.trash</key>
+		<string>2023</string>
+		<key>arrow.up.trash.fill</key>
+		<string>2023</string>
 		<key>arrow.uturn.backward</key>
 		<string>2020</string>
 		<key>arrow.uturn.backward.circle</key>
@@ -1473,8 +1753,24 @@ extension Resource {
 		<string>2019</string>
 		<key>arrow.uturn.up.square.fill</key>
 		<string>2019</string>
+		<key>arrowkeys</key>
+		<string>2023</string>
+		<key>arrowkeys.down.filled</key>
+		<string>2023</string>
+		<key>arrowkeys.fill</key>
+		<string>2023</string>
+		<key>arrowkeys.left.filled</key>
+		<string>2023</string>
+		<key>arrowkeys.right.filled</key>
+		<string>2023</string>
+		<key>arrowkeys.up.filled</key>
+		<string>2023</string>
 		<key>arrowshape.backward</key>
 		<string>2022</string>
+		<key>arrowshape.backward.circle</key>
+		<string>2023</string>
+		<key>arrowshape.backward.circle.fill</key>
+		<string>2023</string>
 		<key>arrowshape.backward.fill</key>
 		<string>2022</string>
 		<key>arrowshape.bounce.forward</key>
@@ -1485,16 +1781,40 @@ extension Resource {
 		<string>2020</string>
 		<key>arrowshape.bounce.right.fill</key>
 		<string>2020</string>
+		<key>arrowshape.down</key>
+		<string>2023</string>
+		<key>arrowshape.down.circle</key>
+		<string>2023</string>
+		<key>arrowshape.down.circle.fill</key>
+		<string>2023</string>
+		<key>arrowshape.down.fill</key>
+		<string>2023</string>
 		<key>arrowshape.forward</key>
 		<string>2022</string>
+		<key>arrowshape.forward.circle</key>
+		<string>2023</string>
+		<key>arrowshape.forward.circle.fill</key>
+		<string>2023</string>
 		<key>arrowshape.forward.fill</key>
 		<string>2022</string>
 		<key>arrowshape.left</key>
 		<string>2022</string>
+		<key>arrowshape.left.arrowshape.right</key>
+		<string>2023</string>
+		<key>arrowshape.left.arrowshape.right.fill</key>
+		<string>2023</string>
+		<key>arrowshape.left.circle</key>
+		<string>2023</string>
+		<key>arrowshape.left.circle.fill</key>
+		<string>2023</string>
 		<key>arrowshape.left.fill</key>
 		<string>2022</string>
 		<key>arrowshape.right</key>
 		<string>2022</string>
+		<key>arrowshape.right.circle</key>
+		<string>2023</string>
+		<key>arrowshape.right.circle.fill</key>
+		<string>2023</string>
 		<key>arrowshape.right.fill</key>
 		<string>2022</string>
 		<key>arrowshape.turn.up.backward</key>
@@ -1553,6 +1873,14 @@ extension Resource {
 		<string>2019</string>
 		<key>arrowshape.turn.up.right.fill</key>
 		<string>2019</string>
+		<key>arrowshape.up</key>
+		<string>2023</string>
+		<key>arrowshape.up.circle</key>
+		<string>2023</string>
+		<key>arrowshape.up.circle.fill</key>
+		<string>2023</string>
+		<key>arrowshape.up.fill</key>
+		<string>2023</string>
 		<key>arrowshape.zigzag.forward</key>
 		<string>2020</string>
 		<key>arrowshape.zigzag.forward.fill</key>
@@ -1635,6 +1963,10 @@ extension Resource {
 		<string>2019</string>
 		<key>arrowtriangle.up</key>
 		<string>2019</string>
+		<key>arrowtriangle.up.arrowtriangle.down.window.left</key>
+		<string>2023</string>
+		<key>arrowtriangle.up.arrowtriangle.down.window.right</key>
+		<string>2023</string>
 		<key>arrowtriangle.up.circle</key>
 		<string>2019</string>
 		<key>arrowtriangle.up.circle.fill</key>
@@ -1667,6 +1999,16 @@ extension Resource {
 		<string>2020</string>
 		<key>atom</key>
 		<string>2020</string>
+		<key>australiandollarsign</key>
+		<string>2023</string>
+		<key>australiandollarsign.circle</key>
+		<string>2023</string>
+		<key>australiandollarsign.circle.fill</key>
+		<string>2023</string>
+		<key>australiandollarsign.square</key>
+		<string>2023</string>
+		<key>australiandollarsign.square.fill</key>
+		<string>2023</string>
 		<key>australsign</key>
 		<string>2022</string>
 		<key>australsign.circle</key>
@@ -1687,6 +2029,16 @@ extension Resource {
 		<string>2022.1</string>
 		<key>auto.headlight.low.beam.fill</key>
 		<string>2022.1</string>
+		<key>automatic.brakesignal</key>
+		<string>2023</string>
+		<key>automatic.headlight.high.beam</key>
+		<string>2023</string>
+		<key>automatic.headlight.high.beam.fill</key>
+		<string>2023</string>
+		<key>automatic.headlight.low.beam</key>
+		<string>2023</string>
+		<key>automatic.headlight.low.beam.fill</key>
+		<string>2023</string>
 		<key>autostartstop</key>
 		<string>2022.1</string>
 		<key>autostartstop.slash</key>
@@ -1705,6 +2057,22 @@ extension Resource {
 		<string>2022.1</string>
 		<key>axel.2.rear.engaged</key>
 		<string>2022.1</string>
+		<key>axle.2</key>
+		<string>2022.2</string>
+		<key>axle.2.driveshaft.disengaged</key>
+		<string>2023</string>
+		<key>axle.2.front.and.rear.engaged</key>
+		<string>2022.2</string>
+		<key>axle.2.front.disengaged</key>
+		<string>2023</string>
+		<key>axle.2.front.engaged</key>
+		<string>2022.2</string>
+		<key>axle.2.rear.disengaged</key>
+		<string>2023</string>
+		<key>axle.2.rear.engaged</key>
+		<string>2022.2</string>
+		<key>axle.2.rear.lock</key>
+		<string>2023</string>
 		<key>b.circle</key>
 		<string>2019</string>
 		<key>b.circle.fill</key>
@@ -1833,6 +2201,8 @@ extension Resource {
 		<string>2022</string>
 		<key>battery.0</key>
 		<string>2019</string>
+		<key>battery.0percent</key>
+		<string>2023</string>
 		<key>battery.100</key>
 		<string>2019</string>
 		<key>battery.100.bolt</key>
@@ -1843,12 +2213,28 @@ extension Resource {
 		<string>2022</string>
 		<key>battery.100.circle.fill</key>
 		<string>2022</string>
+		<key>battery.100percent</key>
+		<string>2023</string>
+		<key>battery.100percent.bolt</key>
+		<string>2023</string>
+		<key>battery.100percent.bolt.rtl</key>
+		<string>2023</string>
+		<key>battery.100percent.circle</key>
+		<string>2023</string>
+		<key>battery.100percent.circle.fill</key>
+		<string>2023</string>
 		<key>battery.25</key>
 		<string>2019</string>
+		<key>battery.25percent</key>
+		<string>2023</string>
 		<key>battery.50</key>
 		<string>2021</string>
+		<key>battery.50percent</key>
+		<string>2023</string>
 		<key>battery.75</key>
 		<string>2021</string>
+		<key>battery.75percent</key>
+		<string>2023</string>
 		<key>batteryblock</key>
 		<string>2022.1</string>
 		<key>batteryblock.fill</key>
@@ -1877,8 +2263,16 @@ extension Resource {
 		<string>2021</string>
 		<key>beats.powerbeats</key>
 		<string>2021</string>
+		<key>beats.powerbeats.left</key>
+		<string>2022.2</string>
+		<key>beats.powerbeats.right</key>
+		<string>2022.2</string>
 		<key>beats.powerbeats3</key>
 		<string>2021</string>
+		<key>beats.powerbeats3.left</key>
+		<string>2022.2</string>
+		<key>beats.powerbeats3.right</key>
+		<string>2022.2</string>
 		<key>beats.powerbeatspro</key>
 		<string>2021</string>
 		<key>beats.powerbeatspro.chargingcase</key>
@@ -1899,6 +2293,16 @@ extension Resource {
 		<string>2021</string>
 		<key>beats.studiobuds.chargingcase.fill</key>
 		<string>2021</string>
+		<key>beats.studiobudsplus</key>
+		<string>2023</string>
+		<key>beats.studiobudsplus.chargingcase</key>
+		<string>2023</string>
+		<key>beats.studiobudsplus.chargingcase.fill</key>
+		<string>2023</string>
+		<key>beats.studiobudsplus.left</key>
+		<string>2023</string>
+		<key>beats.studiobudsplus.right</key>
+		<string>2023</string>
 		<key>bed.double</key>
 		<string>2019</string>
 		<key>bed.double.circle</key>
@@ -1925,6 +2329,18 @@ extension Resource {
 		<string>2021</string>
 		<key>bell.badge.fill</key>
 		<string>2020</string>
+		<key>bell.badge.slash</key>
+		<string>2023</string>
+		<key>bell.badge.slash.fill</key>
+		<string>2023</string>
+		<key>bell.badge.slash.fill.rtl</key>
+		<string>2023</string>
+		<key>bell.badge.slash.rtl</key>
+		<string>2023</string>
+		<key>bell.badge.waveform</key>
+		<string>2023</string>
+		<key>bell.badge.waveform.fill</key>
+		<string>2023</string>
 		<key>bell.circle</key>
 		<string>2019</string>
 		<key>bell.circle.fill</key>
@@ -1955,10 +2371,18 @@ extension Resource {
 		<string>2019</string>
 		<key>binoculars</key>
 		<string>2020</string>
+		<key>binoculars.circle</key>
+		<string>2023</string>
+		<key>binoculars.circle.fill</key>
+		<string>2023</string>
 		<key>binoculars.fill</key>
 		<string>2020</string>
 		<key>bird</key>
 		<string>2022</string>
+		<key>bird.circle</key>
+		<string>2023</string>
+		<key>bird.circle.fill</key>
+		<string>2023</string>
 		<key>bird.fill</key>
 		<string>2022</string>
 		<key>birthday.cake</key>
@@ -1995,10 +2419,22 @@ extension Resource {
 		<string>2019</string>
 		<key>bolt.badge.a.fill</key>
 		<string>2019</string>
+		<key>bolt.badge.automatic</key>
+		<string>2023</string>
+		<key>bolt.badge.automatic.fill</key>
+		<string>2023</string>
+		<key>bolt.badge.checkmark</key>
+		<string>2023</string>
+		<key>bolt.badge.checkmark.fill</key>
+		<string>2023</string>
 		<key>bolt.badge.clock</key>
 		<string>2022</string>
 		<key>bolt.badge.clock.fill</key>
 		<string>2022</string>
+		<key>bolt.badge.xmark</key>
+		<string>2023</string>
+		<key>bolt.badge.xmark.fill</key>
+		<string>2023</string>
 		<key>bolt.batteryblock</key>
 		<string>2021</string>
 		<key>bolt.batteryblock.fill</key>
@@ -2065,6 +2501,10 @@ extension Resource {
 		<string>2020</string>
 		<key>book</key>
 		<string>2019</string>
+		<key>book.and.wrench</key>
+		<string>2023</string>
+		<key>book.and.wrench.fill</key>
+		<string>2023</string>
 		<key>book.circle</key>
 		<string>2019</string>
 		<key>book.circle.fill</key>
@@ -2079,6 +2519,10 @@ extension Resource {
 		<string>2020</string>
 		<key>book.fill</key>
 		<string>2019</string>
+		<key>book.pages</key>
+		<string>2023</string>
+		<key>book.pages.fill</key>
+		<string>2023</string>
 		<key>bookmark</key>
 		<string>2019</string>
 		<key>bookmark.circle</key>
@@ -2117,8 +2561,14 @@ extension Resource {
 		<string>2022</string>
 		<key>brain</key>
 		<string>2021</string>
+		<key>brain.fill</key>
+		<string>2023</string>
+		<key>brain.filled.head.profile</key>
+		<string>2023</string>
 		<key>brain.head.profile</key>
 		<string>2021</string>
+		<key>brain.head.profile.fill</key>
+		<string>2023</string>
 		<key>brakesignal</key>
 		<string>2022</string>
 		<key>brakesignal.dashed</key>
@@ -2141,6 +2591,14 @@ extension Resource {
 		<string>2021</string>
 		<key>briefcase.fill</key>
 		<string>2019</string>
+		<key>bubble</key>
+		<string>2023</string>
+		<key>bubble.circle</key>
+		<string>2023</string>
+		<key>bubble.circle.fill</key>
+		<string>2023</string>
+		<key>bubble.fill</key>
+		<string>2023</string>
 		<key>bubble.left</key>
 		<string>2019</string>
 		<key>bubble.left.and.bubble.right</key>
@@ -2151,6 +2609,14 @@ extension Resource {
 		<string>2021</string>
 		<key>bubble.left.and.exclamationmark.bubble.right.fill</key>
 		<string>2021</string>
+		<key>bubble.left.and.text.bubble.right</key>
+		<string>2023</string>
+		<key>bubble.left.and.text.bubble.right.fill</key>
+		<string>2023</string>
+		<key>bubble.left.and.text.bubble.right.fill.rtl</key>
+		<string>2023</string>
+		<key>bubble.left.and.text.bubble.right.rtl</key>
+		<string>2023</string>
 		<key>bubble.left.circle</key>
 		<string>2021</string>
 		<key>bubble.left.circle.fill</key>
@@ -2211,12 +2677,52 @@ extension Resource {
 		<string>2020</string>
 		<key>bus.fill</key>
 		<string>2020</string>
+		<key>button.angledbottom.horizontal.left</key>
+		<string>2023</string>
+		<key>button.angledbottom.horizontal.left.fill</key>
+		<string>2023</string>
+		<key>button.angledbottom.horizontal.right</key>
+		<string>2023</string>
+		<key>button.angledbottom.horizontal.right.fill</key>
+		<string>2023</string>
+		<key>button.angledtop.vertical.left</key>
+		<string>2023</string>
+		<key>button.angledtop.vertical.left.fill</key>
+		<string>2023</string>
+		<key>button.angledtop.vertical.right</key>
+		<string>2023</string>
+		<key>button.angledtop.vertical.right.fill</key>
+		<string>2023</string>
+		<key>button.horizontal</key>
+		<string>2023</string>
+		<key>button.horizontal.fill</key>
+		<string>2023</string>
+		<key>button.horizontal.top.press</key>
+		<string>2023</string>
+		<key>button.horizontal.top.press.fill</key>
+		<string>2023</string>
 		<key>button.programmable</key>
 		<string>2022</string>
 		<key>button.programmable.square</key>
 		<string>2022</string>
 		<key>button.programmable.square.fill</key>
 		<string>2022</string>
+		<key>button.roundedbottom.horizontal</key>
+		<string>2023</string>
+		<key>button.roundedbottom.horizontal.fill</key>
+		<string>2023</string>
+		<key>button.roundedtop.horizontal</key>
+		<string>2023</string>
+		<key>button.roundedtop.horizontal.fill</key>
+		<string>2023</string>
+		<key>button.vertical.left.press</key>
+		<string>2023</string>
+		<key>button.vertical.left.press.fill</key>
+		<string>2023</string>
+		<key>button.vertical.right.press</key>
+		<string>2023</string>
+		<key>button.vertical.right.press.fill</key>
+		<string>2023</string>
 		<key>c.circle</key>
 		<string>2019</string>
 		<key>c.circle.fill</key>
@@ -2229,6 +2735,8 @@ extension Resource {
 		<string>2022</string>
 		<key>cabinet.fill</key>
 		<string>2022</string>
+		<key>cable.coaxial</key>
+		<string>2023</string>
 		<key>cable.connector</key>
 		<string>2021</string>
 		<key>cable.connector.horizontal</key>
@@ -2239,6 +2747,10 @@ extension Resource {
 		<string>2021</string>
 		<key>calendar</key>
 		<string>2019</string>
+		<key>calendar.badge.checkmark</key>
+		<string>2023</string>
+		<key>calendar.badge.checkmark.rtl</key>
+		<string>2023</string>
 		<key>calendar.badge.clock</key>
 		<string>2020</string>
 		<key>calendar.badge.clock.rtl</key>
@@ -2265,8 +2777,14 @@ extension Resource {
 		<string>2019</string>
 		<key>camera.aperture</key>
 		<string>2020</string>
+		<key>camera.badge.clock</key>
+		<string>2023</string>
+		<key>camera.badge.clock.fill</key>
+		<string>2023</string>
 		<key>camera.badge.ellipsis</key>
 		<string>2020</string>
+		<key>camera.badge.ellipsis.fill</key>
+		<string>2023</string>
 		<key>camera.circle</key>
 		<string>2019</string>
 		<key>camera.circle.fill</key>
@@ -2369,12 +2887,20 @@ extension Resource {
 		<string>2021</string>
 		<key>car.fill</key>
 		<string>2019</string>
+		<key>car.front.waves.down</key>
+		<string>2023</string>
+		<key>car.front.waves.down.fill</key>
+		<string>2023</string>
 		<key>car.front.waves.up</key>
 		<string>2022.1</string>
 		<key>car.front.waves.up.fill</key>
 		<string>2022.1</string>
 		<key>car.rear</key>
 		<string>2022.1</string>
+		<key>car.rear.and.collision.road.lane</key>
+		<string>2023</string>
+		<key>car.rear.and.collision.road.lane.slash</key>
+		<string>2023</string>
 		<key>car.rear.and.tire.marks</key>
 		<string>2022.1</string>
 		<key>car.rear.and.tire.marks.slash</key>
@@ -2421,6 +2947,30 @@ extension Resource {
 		<string>2022.1</string>
 		<key>car.side.front.open.fill</key>
 		<string>2022.1</string>
+		<key>car.side.hill.down</key>
+		<string>2023</string>
+		<key>car.side.hill.down.fill</key>
+		<string>2023</string>
+		<key>car.side.hill.up</key>
+		<string>2023</string>
+		<key>car.side.hill.up.fill</key>
+		<string>2023</string>
+		<key>car.side.lock</key>
+		<string>2023</string>
+		<key>car.side.lock.fill</key>
+		<string>2023</string>
+		<key>car.side.lock.open</key>
+		<string>2023</string>
+		<key>car.side.lock.open.fill</key>
+		<string>2023</string>
+		<key>car.side.rear.and.collision.and.car.side.front</key>
+		<string>2023</string>
+		<key>car.side.rear.and.collision.and.car.side.front.slash</key>
+		<string>2023</string>
+		<key>car.side.rear.and.exclamationmark.and.car.side.front</key>
+		<string>2023</string>
+		<key>car.side.rear.and.wave.3.and.car.side.front</key>
+		<string>2023</string>
 		<key>car.side.rear.open</key>
 		<string>2022.1</string>
 		<key>car.side.rear.open.fill</key>
@@ -2485,6 +3035,22 @@ extension Resource {
 		<string>2022.1</string>
 		<key>car.top.door.rear.right.open.fill</key>
 		<string>2022.1</string>
+		<key>car.top.door.sliding.left.open</key>
+		<string>2023</string>
+		<key>car.top.door.sliding.left.open.fill</key>
+		<string>2023</string>
+		<key>car.top.door.sliding.right.open</key>
+		<string>2023</string>
+		<key>car.top.door.sliding.right.open.fill</key>
+		<string>2023</string>
+		<key>car.top.frontleft.arrowtriangle</key>
+		<string>2023</string>
+		<key>car.top.frontleft.arrowtriangle.fill</key>
+		<string>2023</string>
+		<key>car.top.frontright.arrowtriangle</key>
+		<string>2023</string>
+		<key>car.top.frontright.arrowtriangle.fill</key>
+		<string>2023</string>
 		<key>car.top.lane.dashed.arrowtriangle.inward</key>
 		<string>2022.1</string>
 		<key>car.top.lane.dashed.arrowtriangle.inward.fill</key>
@@ -2519,8 +3085,44 @@ extension Resource {
 		<string>2022.1</string>
 		<key>car.top.radiowaves.rear.right</key>
 		<string>2022.1</string>
+		<key>car.top.radiowaves.rear.right.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>car.top.radiowaves.rear.right.badge.exclamationmark.fill</key>
+		<string>2023</string>
+		<key>car.top.radiowaves.rear.right.badge.xmark</key>
+		<string>2023</string>
+		<key>car.top.radiowaves.rear.right.badge.xmark.fill</key>
+		<string>2023</string>
 		<key>car.top.radiowaves.rear.right.fill</key>
 		<string>2022.1</string>
+		<key>car.top.rearleft.arrowtriangle</key>
+		<string>2023</string>
+		<key>car.top.rearleft.arrowtriangle.fill</key>
+		<string>2023</string>
+		<key>car.top.rearright.arrowtriangle</key>
+		<string>2023</string>
+		<key>car.top.rearright.arrowtriangle.fill</key>
+		<string>2023</string>
+		<key>car.window.left</key>
+		<string>2023</string>
+		<key>car.window.left.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>car.window.left.badge.xmark</key>
+		<string>2023</string>
+		<key>car.window.left.exclamationmark</key>
+		<string>2023</string>
+		<key>car.window.left.xmark</key>
+		<string>2023</string>
+		<key>car.window.right</key>
+		<string>2023</string>
+		<key>car.window.right.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>car.window.right.badge.xmark</key>
+		<string>2023</string>
+		<key>car.window.right.exclamationmark</key>
+		<string>2023</string>
+		<key>car.window.right.xmark</key>
+		<string>2023</string>
 		<key>carbon.dioxide.cloud</key>
 		<string>2022</string>
 		<key>carbon.dioxide.cloud.fill</key>
@@ -2533,6 +3135,86 @@ extension Resource {
 		<string>2022</string>
 		<key>carrot.fill</key>
 		<string>2022</string>
+		<key>carseat.left</key>
+		<string>2023</string>
+		<key>carseat.left.1</key>
+		<string>2023</string>
+		<key>carseat.left.1.fill</key>
+		<string>2023</string>
+		<key>carseat.left.2</key>
+		<string>2023</string>
+		<key>carseat.left.2.fill</key>
+		<string>2023</string>
+		<key>carseat.left.3</key>
+		<string>2023</string>
+		<key>carseat.left.3.fill</key>
+		<string>2023</string>
+		<key>carseat.left.and.heat.waves</key>
+		<string>2023</string>
+		<key>carseat.left.and.heat.waves.fill</key>
+		<string>2023</string>
+		<key>carseat.left.backrest.up.and.down</key>
+		<string>2023</string>
+		<key>carseat.left.backrest.up.and.down.fill</key>
+		<string>2023</string>
+		<key>carseat.left.fan</key>
+		<string>2023</string>
+		<key>carseat.left.fan.fill</key>
+		<string>2023</string>
+		<key>carseat.left.fill</key>
+		<string>2023</string>
+		<key>carseat.left.forward.and.backward</key>
+		<string>2023</string>
+		<key>carseat.left.forward.and.backward.fill</key>
+		<string>2023</string>
+		<key>carseat.left.massage</key>
+		<string>2023</string>
+		<key>carseat.left.massage.fill</key>
+		<string>2023</string>
+		<key>carseat.left.up.and.down</key>
+		<string>2023</string>
+		<key>carseat.left.up.and.down.fill</key>
+		<string>2023</string>
+		<key>carseat.right</key>
+		<string>2023</string>
+		<key>carseat.right.1</key>
+		<string>2023</string>
+		<key>carseat.right.1.fill</key>
+		<string>2023</string>
+		<key>carseat.right.2</key>
+		<string>2023</string>
+		<key>carseat.right.2.fill</key>
+		<string>2023</string>
+		<key>carseat.right.3</key>
+		<string>2023</string>
+		<key>carseat.right.3.fill</key>
+		<string>2023</string>
+		<key>carseat.right.and.heat.waves</key>
+		<string>2023</string>
+		<key>carseat.right.and.heat.waves.fill</key>
+		<string>2023</string>
+		<key>carseat.right.backrest.up.and.down</key>
+		<string>2023</string>
+		<key>carseat.right.backrest.up.and.down.fill</key>
+		<string>2023</string>
+		<key>carseat.right.fan</key>
+		<string>2023</string>
+		<key>carseat.right.fan.fill</key>
+		<string>2023</string>
+		<key>carseat.right.fill</key>
+		<string>2023</string>
+		<key>carseat.right.forward.and.backward</key>
+		<string>2023</string>
+		<key>carseat.right.forward.and.backward.fill</key>
+		<string>2023</string>
+		<key>carseat.right.massage</key>
+		<string>2023</string>
+		<key>carseat.right.massage.fill</key>
+		<string>2023</string>
+		<key>carseat.right.up.and.down</key>
+		<string>2023</string>
+		<key>carseat.right.up.and.down.fill</key>
+		<string>2023</string>
 		<key>cart</key>
 		<string>2019</string>
 		<key>cart.badge.minus</key>
@@ -2565,6 +3247,14 @@ extension Resource {
 		<string>2020</string>
 		<key>case.fill</key>
 		<string>2020</string>
+		<key>cat</key>
+		<string>2023</string>
+		<key>cat.circle</key>
+		<string>2023</string>
+		<key>cat.circle.fill</key>
+		<string>2023</string>
+		<key>cat.fill</key>
+		<string>2023</string>
 		<key>cedisign</key>
 		<string>2022</string>
 		<key>cedisign.circle</key>
@@ -2623,8 +3313,6 @@ extension Resource {
 		<string>2020.1</string>
 		<key>character.book.closed.fill.zh</key>
 		<string>2020.1</string>
-		<key>character.book.closed.fill.zh.traditional</key>
-		<string>2020.1</string>
 		<key>character.book.closed.he</key>
 		<string>2020.1</string>
 		<key>character.book.closed.hi</key>
@@ -2636,8 +3324,6 @@ extension Resource {
 		<key>character.book.closed.th</key>
 		<string>2020.1</string>
 		<key>character.book.closed.zh</key>
-		<string>2020.1</string>
-		<key>character.book.closed.zh.traditional</key>
 		<string>2020.1</string>
 		<key>character.bubble</key>
 		<string>2020.2</string>
@@ -2659,8 +3345,6 @@ extension Resource {
 		<string>2021</string>
 		<key>character.bubble.fill.zh</key>
 		<string>2021</string>
-		<key>character.bubble.fill.zh.traditional</key>
-		<string>2021</string>
 		<key>character.bubble.he</key>
 		<string>2020.2</string>
 		<key>character.bubble.hi</key>
@@ -2672,8 +3356,6 @@ extension Resource {
 		<key>character.bubble.th</key>
 		<string>2021</string>
 		<key>character.bubble.zh</key>
-		<string>2021</string>
-		<key>character.bubble.zh.traditional</key>
 		<string>2021</string>
 		<key>character.cursor.ibeam</key>
 		<string>2020.2</string>
@@ -2691,8 +3373,6 @@ extension Resource {
 		<string>2020.2</string>
 		<key>character.cursor.ibeam.zh</key>
 		<string>2020.2</string>
-		<key>character.cursor.ibeam.zh.traditional</key>
-		<string>2020.2</string>
 		<key>character.duployan</key>
 		<string>2022</string>
 		<key>character.he</key>
@@ -2703,6 +3383,22 @@ extension Resource {
 		<string>2020.1</string>
 		<key>character.ko</key>
 		<string>2020.1</string>
+		<key>character.magnify</key>
+		<string>2023</string>
+		<key>character.magnify.ar</key>
+		<string>2023</string>
+		<key>character.magnify.he</key>
+		<string>2023</string>
+		<key>character.magnify.hi</key>
+		<string>2023</string>
+		<key>character.magnify.ja</key>
+		<string>2023</string>
+		<key>character.magnify.ko</key>
+		<string>2023</string>
+		<key>character.magnify.th</key>
+		<string>2023</string>
+		<key>character.magnify.zh</key>
+		<string>2023</string>
 		<key>character.phonetic</key>
 		<string>2022</string>
 		<key>character.sutton</key>
@@ -2723,13 +3419,9 @@ extension Resource {
 		<string>2020.2</string>
 		<key>character.textbox.zh</key>
 		<string>2020.2</string>
-		<key>character.textbox.zh.traditional</key>
-		<string>2020.2</string>
 		<key>character.th</key>
 		<string>2020.1</string>
 		<key>character.zh</key>
-		<string>2020.1</string>
-		<key>character.zh.traditional</key>
 		<string>2020.1</string>
 		<key>chart.bar</key>
 		<string>2019</string>
@@ -2741,6 +3433,12 @@ extension Resource {
 		<string>2019</string>
 		<key>chart.bar.xaxis</key>
 		<string>2020</string>
+		<key>chart.bar.xaxis.ascending</key>
+		<string>2023</string>
+		<key>chart.bar.xaxis.ascending.badge.clock</key>
+		<string>2023</string>
+		<key>chart.bar.xaxis.ascending.badge.clock.rtl</key>
+		<string>2023</string>
 		<key>chart.dots.scatter</key>
 		<string>2022.1</string>
 		<key>chart.line.downtrend.xyaxis</key>
@@ -2783,10 +3481,16 @@ extension Resource {
 		<string>2022</string>
 		<key>checkmark</key>
 		<string>2019</string>
+		<key>checkmark.applewatch</key>
+		<string>2023</string>
 		<key>checkmark.bubble</key>
 		<string>2021</string>
 		<key>checkmark.bubble.fill</key>
 		<string>2021</string>
+		<key>checkmark.bubble.fill.rtl</key>
+		<string>2023</string>
+		<key>checkmark.bubble.rtl</key>
+		<string>2023</string>
 		<key>checkmark.circle</key>
 		<string>2019</string>
 		<key>checkmark.circle.badge.questionmark</key>
@@ -2809,6 +3513,8 @@ extension Resource {
 		<string>2021</string>
 		<key>checkmark.diamond.fill</key>
 		<string>2021</string>
+		<key>checkmark.gobackward</key>
+		<string>2023</string>
 		<key>checkmark.icloud</key>
 		<string>2020</string>
 		<key>checkmark.icloud.fill</key>
@@ -2825,6 +3531,10 @@ extension Resource {
 		<string>2020</string>
 		<key>checkmark.rectangle.portrait.fill</key>
 		<string>2020</string>
+		<key>checkmark.rectangle.stack</key>
+		<string>2023</string>
+		<key>checkmark.rectangle.stack.fill</key>
+		<string>2023</string>
 		<key>checkmark.seal</key>
 		<string>2019</string>
 		<key>checkmark.seal.fill</key>
@@ -2927,16 +3637,58 @@ extension Resource {
 		<string>2019</string>
 		<key>chevron.up.square.fill</key>
 		<string>2019</string>
+		<key>chineseyuanrenminbisign</key>
+		<string>2023</string>
+		<key>chineseyuanrenminbisign.circle</key>
+		<string>2023</string>
+		<key>chineseyuanrenminbisign.circle.fill</key>
+		<string>2023</string>
+		<key>chineseyuanrenminbisign.square</key>
+		<string>2023</string>
+		<key>chineseyuanrenminbisign.square.fill</key>
+		<string>2023</string>
 		<key>circle</key>
 		<string>2019</string>
 		<key>circle.and.line.horizontal</key>
 		<string>2021</string>
 		<key>circle.and.line.horizontal.fill</key>
 		<string>2021</string>
+		<key>circle.badge.checkmark</key>
+		<string>2023</string>
+		<key>circle.badge.checkmark.fill</key>
+		<string>2023</string>
+		<key>circle.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>circle.badge.exclamationmark.fill</key>
+		<string>2023</string>
+		<key>circle.badge.minus</key>
+		<string>2023</string>
+		<key>circle.badge.minus.fill</key>
+		<string>2023</string>
+		<key>circle.badge.plus</key>
+		<string>2023</string>
+		<key>circle.badge.plus.fill</key>
+		<string>2023</string>
+		<key>circle.badge.questionmark</key>
+		<string>2023</string>
+		<key>circle.badge.questionmark.ar</key>
+		<string>2023</string>
+		<key>circle.badge.questionmark.fill</key>
+		<string>2023</string>
+		<key>circle.badge.questionmark.fill.ar</key>
+		<string>2023</string>
+		<key>circle.badge.xmark</key>
+		<string>2023</string>
+		<key>circle.badge.xmark.fill</key>
+		<string>2023</string>
 		<key>circle.bottomhalf.fill</key>
 		<string>2020</string>
 		<key>circle.bottomhalf.filled</key>
 		<string>2021</string>
+		<key>circle.bottomhalf.filled.inverse</key>
+		<string>2023</string>
+		<key>circle.bottomrighthalf.checkered</key>
+		<string>2023</string>
 		<key>circle.bottomthird.split</key>
 		<string>2019</string>
 		<key>circle.circle</key>
@@ -2953,10 +3705,28 @@ extension Resource {
 		<string>2022</string>
 		<key>circle.dotted</key>
 		<string>2021</string>
+		<key>circle.dotted.and.circle</key>
+		<string>2023</string>
+		<key>circle.dotted.circle</key>
+		<string>2023</string>
+		<key>circle.dotted.circle.fill</key>
+		<string>2023</string>
 		<key>circle.fill</key>
 		<string>2019</string>
 		<key>circle.fill.square.fill</key>
 		<string>2020</string>
+		<key>circle.filled.ipad</key>
+		<string>2023</string>
+		<key>circle.filled.ipad.fill</key>
+		<string>2023</string>
+		<key>circle.filled.ipad.landscape</key>
+		<string>2023</string>
+		<key>circle.filled.ipad.landscape.fill</key>
+		<string>2023</string>
+		<key>circle.filled.iphone</key>
+		<string>2023</string>
+		<key>circle.filled.iphone.fill</key>
+		<string>2023</string>
 		<key>circle.filled.pattern.diagonalline.rectangle</key>
 		<string>2022</string>
 		<key>circle.grid.2x1</key>
@@ -3021,6 +3791,16 @@ extension Resource {
 		<string>2019</string>
 		<key>circle.lefthalf.filled</key>
 		<string>2021</string>
+		<key>circle.lefthalf.filled.inverse</key>
+		<string>2023</string>
+		<key>circle.lefthalf.filled.righthalf.striped.horizontal</key>
+		<string>2023</string>
+		<key>circle.lefthalf.filled.righthalf.striped.horizontal.inverse</key>
+		<string>2023</string>
+		<key>circle.lefthalf.striped.horizontal</key>
+		<string>2023</string>
+		<key>circle.lefthalf.striped.horizontal.inverse</key>
+		<string>2023</string>
 		<key>circle.rectangle.dashed</key>
 		<string>2022</string>
 		<key>circle.rectangle.filled.pattern.diagonalline</key>
@@ -3029,6 +3809,8 @@ extension Resource {
 		<string>2019</string>
 		<key>circle.righthalf.filled</key>
 		<string>2021</string>
+		<key>circle.righthalf.filled.inverse</key>
+		<string>2023</string>
 		<key>circle.slash</key>
 		<string>2021</string>
 		<key>circle.slash.fill</key>
@@ -3041,6 +3823,8 @@ extension Resource {
 		<string>2020</string>
 		<key>circle.tophalf.filled</key>
 		<string>2021</string>
+		<key>circle.tophalf.filled.inverse</key>
+		<string>2023</string>
 		<key>circlebadge</key>
 		<string>2020</string>
 		<key>circlebadge.2</key>
@@ -3189,6 +3973,10 @@ extension Resource {
 		<string>2022</string>
 		<key>cloud.rain.fill</key>
 		<string>2019</string>
+		<key>cloud.rainbow.half</key>
+		<string>2023</string>
+		<key>cloud.rainbow.half.fill</key>
+		<string>2023</string>
 		<key>cloud.sleet</key>
 		<string>2019</string>
 		<key>cloud.sleet.circle</key>
@@ -3291,6 +4079,8 @@ extension Resource {
 		<string>2019</string>
 		<key>creditcard.trianglebadge.exclamationmark</key>
 		<string>2021</string>
+		<key>creditcard.trianglebadge.exclamationmark.fill</key>
+		<string>2023</string>
 		<key>creditcard.viewfinder</key>
 		<string>2022</string>
 		<key>cricket.ball</key>
@@ -3379,6 +4169,12 @@ extension Resource {
 		<string>2020</string>
 		<key>cursorarrow.rays</key>
 		<string>2020</string>
+		<key>cursorarrow.slash</key>
+		<string>2023</string>
+		<key>cursorarrow.slash.square</key>
+		<string>2023</string>
+		<key>cursorarrow.slash.square.fill</key>
+		<string>2023</string>
 		<key>cursorarrow.square</key>
 		<string>2020</string>
 		<key>cursorarrow.square.fill</key>
@@ -3403,6 +4199,16 @@ extension Resource {
 		<string>2019</string>
 		<key>d.square.fill</key>
 		<string>2019</string>
+		<key>danishkronesign</key>
+		<string>2023</string>
+		<key>danishkronesign.circle</key>
+		<string>2023</string>
+		<key>danishkronesign.circle.fill</key>
+		<string>2023</string>
+		<key>danishkronesign.square</key>
+		<string>2023</string>
+		<key>danishkronesign.square.fill</key>
+		<string>2023</string>
 		<key>decrease.indent</key>
 		<string>2019</string>
 		<key>decrease.quotelevel</key>
@@ -3539,6 +4345,10 @@ extension Resource {
 		<string>2020.1</string>
 		<key>dishwasher</key>
 		<string>2022</string>
+		<key>dishwasher.circle</key>
+		<string>2023</string>
+		<key>dishwasher.circle.fill</key>
+		<string>2023</string>
 		<key>dishwasher.fill</key>
 		<string>2022</string>
 		<key>display</key>
@@ -3597,6 +4407,10 @@ extension Resource {
 		<string>2022</string>
 		<key>doc.badge.arrow.up.fill</key>
 		<string>2022</string>
+		<key>doc.badge.clock</key>
+		<string>2023</string>
+		<key>doc.badge.clock.fill</key>
+		<string>2023</string>
 		<key>doc.badge.ellipsis</key>
 		<string>2020</string>
 		<key>doc.badge.gearshape</key>
@@ -3647,8 +4461,6 @@ extension Resource {
 		<string>2021</string>
 		<key>doc.richtext.fill.zh</key>
 		<string>2021</string>
-		<key>doc.richtext.fill.zh.traditional</key>
-		<string>2021</string>
 		<key>doc.richtext.he</key>
 		<string>2020</string>
 		<key>doc.richtext.hi</key>
@@ -3660,8 +4472,6 @@ extension Resource {
 		<key>doc.richtext.th</key>
 		<string>2021</string>
 		<key>doc.richtext.zh</key>
-		<string>2021</string>
-		<key>doc.richtext.zh.traditional</key>
 		<string>2021</string>
 		<key>doc.text</key>
 		<string>2019</string>
@@ -3697,6 +4507,14 @@ extension Resource {
 		<string>2020</string>
 		<key>dock.rectangle</key>
 		<string>2020</string>
+		<key>dog</key>
+		<string>2023</string>
+		<key>dog.circle</key>
+		<string>2023</string>
+		<key>dog.circle.fill</key>
+		<string>2023</string>
+		<key>dog.fill</key>
+		<string>2023</string>
 		<key>dollarsign</key>
 		<string>2022</string>
 		<key>dollarsign.arrow.circlepath</key>
@@ -3825,16 +4643,24 @@ extension Resource {
 		<string>2022</string>
 		<key>drop.fill</key>
 		<string>2020</string>
+		<key>drop.halffull</key>
+		<string>2023</string>
 		<key>drop.keypad.rectangle</key>
 		<string>2022</string>
 		<key>drop.keypad.rectangle.fill</key>
 		<string>2022</string>
+		<key>drop.transmission</key>
+		<string>2023</string>
 		<key>drop.triangle</key>
 		<string>2019</string>
 		<key>drop.triangle.fill</key>
 		<string>2019</string>
 		<key>dryer</key>
 		<string>2022</string>
+		<key>dryer.circle</key>
+		<string>2023</string>
+		<key>dryer.circle.fill</key>
+		<string>2023</string>
 		<key>dryer.fill</key>
 		<string>2022</string>
 		<key>dumbbell</key>
@@ -3855,6 +4681,8 @@ extension Resource {
 		<string>2021</string>
 		<key>ear.badge.checkmark</key>
 		<string>2020</string>
+		<key>ear.badge.waveform</key>
+		<string>2023</string>
 		<key>ear.fill</key>
 		<string>2020</string>
 		<key>ear.trianglebadge.exclamationmark</key>
@@ -3907,6 +4735,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>engine.combustion</key>
 		<string>2022.1</string>
+		<key>engine.combustion.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>engine.combustion.badge.exclamationmark.fill</key>
+		<string>2023</string>
 		<key>engine.combustion.fill</key>
 		<string>2022.1</string>
 		<key>entry.lever.keypad</key>
@@ -3927,6 +4759,10 @@ extension Resource {
 		<string>2019</string>
 		<key>envelope.badge.fill</key>
 		<string>2019</string>
+		<key>envelope.badge.person.crop</key>
+		<string>2023</string>
+		<key>envelope.badge.person.crop.fill</key>
+		<string>2023</string>
 		<key>envelope.badge.shield.half.filled</key>
 		<string>2021</string>
 		<key>envelope.badge.shield.half.filled.fill</key>
@@ -3981,6 +4817,68 @@ extension Resource {
 		<string>2019</string>
 		<key>eurosign.square.fill</key>
 		<string>2019</string>
+		<key>eurozonesign</key>
+		<string>2023</string>
+		<key>eurozonesign.circle</key>
+		<string>2023</string>
+		<key>eurozonesign.circle.fill</key>
+		<string>2023</string>
+		<key>eurozonesign.square</key>
+		<string>2023</string>
+		<key>eurozonesign.square.fill</key>
+		<string>2023</string>
+		<key>ev.charger</key>
+		<string>2023</string>
+		<key>ev.charger.arrowtriangle.left</key>
+		<string>2023</string>
+		<key>ev.charger.arrowtriangle.left.fill</key>
+		<string>2023</string>
+		<key>ev.charger.arrowtriangle.right</key>
+		<string>2023</string>
+		<key>ev.charger.arrowtriangle.right.fill</key>
+		<string>2023</string>
+		<key>ev.charger.exclamationmark</key>
+		<string>2023</string>
+		<key>ev.charger.exclamationmark.fill</key>
+		<string>2023</string>
+		<key>ev.charger.fill</key>
+		<string>2023</string>
+		<key>ev.charger.slash</key>
+		<string>2023</string>
+		<key>ev.charger.slash.fill</key>
+		<string>2023</string>
+		<key>ev.plug.ac.gb.t</key>
+		<string>2023</string>
+		<key>ev.plug.ac.gb.t.fill</key>
+		<string>2023</string>
+		<key>ev.plug.ac.type.1</key>
+		<string>2023</string>
+		<key>ev.plug.ac.type.1.fill</key>
+		<string>2023</string>
+		<key>ev.plug.ac.type.2</key>
+		<string>2023</string>
+		<key>ev.plug.ac.type.2.fill</key>
+		<string>2023</string>
+		<key>ev.plug.dc.ccs1</key>
+		<string>2023</string>
+		<key>ev.plug.dc.ccs1.fill</key>
+		<string>2023</string>
+		<key>ev.plug.dc.ccs2</key>
+		<string>2023</string>
+		<key>ev.plug.dc.ccs2.fill</key>
+		<string>2023</string>
+		<key>ev.plug.dc.chademo</key>
+		<string>2023</string>
+		<key>ev.plug.dc.chademo.fill</key>
+		<string>2023</string>
+		<key>ev.plug.dc.gb.t</key>
+		<string>2023</string>
+		<key>ev.plug.dc.gb.t.fill</key>
+		<string>2023</string>
+		<key>ev.plug.dc.nacs</key>
+		<string>2023</string>
+		<key>ev.plug.dc.nacs.fill</key>
+		<string>2023</string>
 		<key>exclamationmark</key>
 		<string>2019</string>
 		<key>exclamationmark.2</key>
@@ -4031,12 +4929,18 @@ extension Resource {
 		<string>2019</string>
 		<key>exclamationmark.square.fill</key>
 		<string>2019</string>
+		<key>exclamationmark.tirepressure</key>
+		<string>2023</string>
 		<key>exclamationmark.transmission</key>
 		<string>2022.1</string>
 		<key>exclamationmark.triangle</key>
 		<string>2019</string>
 		<key>exclamationmark.triangle.fill</key>
 		<string>2019</string>
+		<key>exclamationmark.warninglight</key>
+		<string>2023</string>
+		<key>exclamationmark.warninglight.fill</key>
+		<string>2023</string>
 		<key>externaldrive</key>
 		<string>2020</string>
 		<key>externaldrive.badge.checkmark</key>
@@ -4127,6 +5031,8 @@ extension Resource {
 		<string>2019</string>
 		<key>eyeglasses</key>
 		<string>2019</string>
+		<key>eyeglasses.slash</key>
+		<string>2023</string>
 		<key>eyes</key>
 		<string>2020</string>
 		<key>eyes.inverse</key>
@@ -4161,10 +5067,16 @@ extension Resource {
 		<string>2021</string>
 		<key>facemask.fill</key>
 		<string>2021</string>
+		<key>fan</key>
+		<string>2023</string>
 		<key>fan.and.light.ceiling</key>
 		<string>2022</string>
 		<key>fan.and.light.ceiling.fill</key>
 		<string>2022</string>
+		<key>fan.badge.automatic</key>
+		<string>2023</string>
+		<key>fan.badge.automatic.fill</key>
+		<string>2023</string>
 		<key>fan.ceiling</key>
 		<string>2022</string>
 		<key>fan.ceiling.fill</key>
@@ -4173,6 +5085,8 @@ extension Resource {
 		<string>2022</string>
 		<key>fan.desk.fill</key>
 		<string>2022</string>
+		<key>fan.fill</key>
+		<string>2023</string>
 		<key>fan.floor</key>
 		<string>2022</string>
 		<key>fan.floor.fill</key>
@@ -4181,6 +5095,10 @@ extension Resource {
 		<string>2022</string>
 		<key>fan.oscillation.fill</key>
 		<string>2022</string>
+		<key>fan.slash</key>
+		<string>2023</string>
+		<key>fan.slash.fill</key>
+		<string>2023</string>
 		<key>fanblades</key>
 		<string>2021</string>
 		<key>fanblades.fill</key>
@@ -4201,10 +5119,26 @@ extension Resource {
 		<string>2020</string>
 		<key>fibrechannel</key>
 		<string>2021</string>
+		<key>field.of.view.ultrawide</key>
+		<string>2023</string>
+		<key>field.of.view.ultrawide.fill</key>
+		<string>2023</string>
+		<key>field.of.view.wide</key>
+		<string>2023</string>
+		<key>field.of.view.wide.fill</key>
+		<string>2023</string>
+		<key>figure</key>
+		<string>2023</string>
+		<key>figure.2</key>
+		<string>2023</string>
 		<key>figure.2.and.child.holdinghands</key>
 		<string>2022</string>
 		<key>figure.2.arms.open</key>
 		<string>2022</string>
+		<key>figure.2.circle</key>
+		<string>2023</string>
+		<key>figure.2.circle.fill</key>
+		<string>2023</string>
 		<key>figure.american.football</key>
 		<string>2022</string>
 		<key>figure.and.child.holdinghands</key>
@@ -4227,6 +5161,20 @@ extension Resource {
 		<string>2022</string>
 		<key>figure.boxing</key>
 		<string>2022</string>
+		<key>figure.child</key>
+		<string>2023</string>
+		<key>figure.child.and.lock</key>
+		<string>2023</string>
+		<key>figure.child.and.lock.fill</key>
+		<string>2023</string>
+		<key>figure.child.and.lock.open</key>
+		<string>2023</string>
+		<key>figure.child.and.lock.open.fill</key>
+		<string>2023</string>
+		<key>figure.child.circle</key>
+		<string>2023</string>
+		<key>figure.child.circle.fill</key>
+		<string>2023</string>
 		<key>figure.climbing</key>
 		<string>2022</string>
 		<key>figure.cooldown</key>
@@ -4333,6 +5281,24 @@ extension Resource {
 		<string>2022.1</string>
 		<key>figure.seated.seatbelt.and.airbag.on</key>
 		<string>2022.1</string>
+		<key>figure.seated.side</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.lower</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.middle</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.middle.and.lower</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.middle.and.lower.angled</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.upper</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.upper.angled.and.lower.angled</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.upper.angled.and.middle</key>
+		<string>2023</string>
+		<key>figure.seated.side.air.distribution.upper.angled.and.middle.and.lower.angled</key>
+		<string>2023</string>
 		<key>figure.seated.side.air.lower</key>
 		<string>2022.1</string>
 		<key>figure.seated.side.air.upper</key>
@@ -4349,8 +5315,24 @@ extension Resource {
 		<string>2022.1</string>
 		<key>figure.seated.side.airbag.on.2</key>
 		<string>2022.1</string>
+		<key>figure.seated.side.automatic</key>
+		<string>2023</string>
 		<key>figure.seated.side.windshield.front.and.heat.waves</key>
 		<string>2022.1</string>
+		<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.lower</key>
+		<string>2023</string>
+		<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.middle</key>
+		<string>2023</string>
+		<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.middle.and.lower</key>
+		<string>2023</string>
+		<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper</key>
+		<string>2023</string>
+		<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper.and.lower</key>
+		<string>2023</string>
+		<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper.and.middle</key>
+		<string>2023</string>
+		<key>figure.seated.side.windshield.front.and.heat.waves.air.distribution.upper.and.middle.and.lower</key>
+		<string>2023</string>
 		<key>figure.skating</key>
 		<string>2022</string>
 		<key>figure.skiing.crosscountry</key>
@@ -4409,6 +5391,8 @@ extension Resource {
 		<string>2020</string>
 		<key>figure.walk.motion</key>
 		<string>2022</string>
+		<key>figure.walk.motion.trianglebadge.exclamationmark</key>
+		<string>2023</string>
 		<key>figure.water.fitness</key>
 		<string>2022</string>
 		<key>figure.waterpolo</key>
@@ -4449,6 +5433,8 @@ extension Resource {
 		<string>2022</string>
 		<key>firewall.fill</key>
 		<string>2022</string>
+		<key>fireworks</key>
+		<string>2023</string>
 		<key>fish</key>
 		<string>2022</string>
 		<key>fish.circle</key>
@@ -4509,10 +5495,28 @@ extension Resource {
 		<string>2021</string>
 		<key>flame.fill</key>
 		<string>2019</string>
+		<key>flashlight.off.circle</key>
+		<string>2023</string>
+		<key>flashlight.off.circle.fill</key>
+		<string>2023</string>
 		<key>flashlight.off.fill</key>
 		<string>2019.1</string>
+		<key>flashlight.on.circle</key>
+		<string>2023</string>
+		<key>flashlight.on.circle.fill</key>
+		<string>2023</string>
 		<key>flashlight.on.fill</key>
 		<string>2019.1</string>
+		<key>flashlight.slash</key>
+		<string>2023</string>
+		<key>flashlight.slash.circle</key>
+		<string>2023</string>
+		<key>flashlight.slash.circle.fill</key>
+		<string>2023</string>
+		<key>flask</key>
+		<string>2023</string>
+		<key>flask.fill</key>
+		<string>2023</string>
 		<key>fleuron</key>
 		<string>2022</string>
 		<key>fleuron.fill</key>
@@ -4637,12 +5641,28 @@ extension Resource {
 		<string>2022</string>
 		<key>fuelpump</key>
 		<string>2021</string>
+		<key>fuelpump.arrowtriangle.left</key>
+		<string>2023</string>
+		<key>fuelpump.arrowtriangle.left.fill</key>
+		<string>2023</string>
+		<key>fuelpump.arrowtriangle.right</key>
+		<string>2023</string>
+		<key>fuelpump.arrowtriangle.right.fill</key>
+		<string>2023</string>
 		<key>fuelpump.circle</key>
 		<string>2021</string>
 		<key>fuelpump.circle.fill</key>
 		<string>2021</string>
+		<key>fuelpump.exclamationmark</key>
+		<string>2023</string>
+		<key>fuelpump.exclamationmark.fill</key>
+		<string>2023</string>
 		<key>fuelpump.fill</key>
 		<string>2021</string>
+		<key>fuelpump.slash</key>
+		<string>2023</string>
+		<key>fuelpump.slash.fill</key>
+		<string>2023</string>
 		<key>function</key>
 		<string>2019</string>
 		<key>fx</key>
@@ -4675,6 +5695,38 @@ extension Resource {
 		<string>2022</string>
 		<key>gauge.medium.badge.plus</key>
 		<string>2022</string>
+		<key>gauge.open.with.lines.needle.33percent</key>
+		<string>2023</string>
+		<key>gauge.open.with.lines.needle.33percent.and.arrowtriangle</key>
+		<string>2023</string>
+		<key>gauge.open.with.lines.needle.33percent.and.arrowtriangle.from.0percent.to.50percent</key>
+		<string>2023</string>
+		<key>gauge.open.with.lines.needle.67percent.and.arrowtriangle</key>
+		<string>2023</string>
+		<key>gauge.open.with.lines.needle.67percent.and.arrowtriangle.and.car</key>
+		<string>2023</string>
+		<key>gauge.open.with.lines.needle.84percent.exclamation</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.0percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.100percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.33percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.50percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.67percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.bottom.0percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.bottom.100percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.bottom.50percent</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.bottom.50percent.badge.minus</key>
+		<string>2023</string>
+		<key>gauge.with.dots.needle.bottom.50percent.badge.plus</key>
+		<string>2023</string>
 		<key>gear</key>
 		<string>2019</string>
 		<key>gear.badge</key>
@@ -4705,6 +5757,8 @@ extension Resource {
 		<string>2021</string>
 		<key>gearshape.fill</key>
 		<string>2020</string>
+		<key>gearshift.layout.sixspeed</key>
+		<string>2023</string>
 		<key>gift</key>
 		<string>2019</string>
 		<key>gift.circle</key>
@@ -4889,6 +5943,10 @@ extension Resource {
 		<string>2019</string>
 		<key>guitars.fill</key>
 		<string>2020</string>
+		<key>gym.bag</key>
+		<string>2023</string>
+		<key>gym.bag.fill</key>
+		<string>2023</string>
 		<key>gyroscope</key>
 		<string>2020</string>
 		<key>h.circle</key>
@@ -4943,6 +6001,10 @@ extension Resource {
 		<string>2020</string>
 		<key>hand.point.up.left</key>
 		<string>2020</string>
+		<key>hand.point.up.left.and.text</key>
+		<string>2023</string>
+		<key>hand.point.up.left.and.text.fill</key>
+		<string>2023</string>
 		<key>hand.point.up.left.fill</key>
 		<string>2020</string>
 		<key>hand.raised</key>
@@ -5003,8 +6065,16 @@ extension Resource {
 		<string>2020</string>
 		<key>handbag</key>
 		<string>2022.1</string>
+		<key>handbag.circle</key>
+		<string>2023</string>
+		<key>handbag.circle.fill</key>
+		<string>2023</string>
 		<key>handbag.fill</key>
 		<string>2022.1</string>
+		<key>hands.and.sparkles</key>
+		<string>2023</string>
+		<key>hands.and.sparkles.fill</key>
+		<string>2023</string>
 		<key>hands.clap</key>
 		<string>2020</string>
 		<key>hands.clap.fill</key>
@@ -5013,14 +6083,22 @@ extension Resource {
 		<string>2020</string>
 		<key>hands.sparkles.fill</key>
 		<string>2020</string>
+		<key>hanger</key>
+		<string>2023</string>
 		<key>hare</key>
 		<string>2019</string>
+		<key>hare.circle</key>
+		<string>2023</string>
+		<key>hare.circle.fill</key>
+		<string>2023</string>
 		<key>hare.fill</key>
 		<string>2019</string>
 		<key>hazardsign</key>
 		<string>2022.1</string>
 		<key>hazardsign.fill</key>
 		<string>2022.1</string>
+		<key>head.profile.arrow.forward.and.visionpro</key>
+		<string>2023</string>
 		<key>headlight.daytime</key>
 		<string>2022.1</string>
 		<key>headlight.daytime.fill</key>
@@ -5083,6 +6161,8 @@ extension Resource {
 		<string>2020</string>
 		<key>heat.element.windshield</key>
 		<string>2022.1</string>
+		<key>heat.waves</key>
+		<string>2023</string>
 		<key>heater.vertical</key>
 		<string>2022</string>
 		<key>heater.vertical.fill</key>
@@ -5179,6 +6259,14 @@ extension Resource {
 		<string>2022</string>
 		<key>homepodmini.fill</key>
 		<string>2020.2</string>
+		<key>horn</key>
+		<string>2023</string>
+		<key>horn.blast</key>
+		<string>2023</string>
+		<key>horn.blast.fill</key>
+		<string>2023</string>
+		<key>horn.fill</key>
+		<string>2023</string>
 		<key>hourglass</key>
 		<string>2019</string>
 		<key>hourglass.badge.plus</key>
@@ -5305,6 +6393,10 @@ extension Resource {
 		<string>2022</string>
 		<key>info.bubble.fill</key>
 		<string>2022</string>
+		<key>info.bubble.fill.rtl</key>
+		<string>2023</string>
+		<key>info.bubble.rtl</key>
+		<string>2023</string>
 		<key>info.circle</key>
 		<string>2019</string>
 		<key>info.circle.fill</key>
@@ -5329,6 +6421,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>ipad.badge.play</key>
 		<string>2020.1</string>
+		<key>ipad.case</key>
+		<string>2023</string>
+		<key>ipad.case.and.iphone.case</key>
+		<string>2023</string>
 		<key>ipad.gen1</key>
 		<string>2022.1</string>
 		<key>ipad.gen1.badge.play</key>
@@ -5359,12 +6455,18 @@ extension Resource {
 		<string>2020.1</string>
 		<key>ipad.rear.camera</key>
 		<string>2021</string>
+		<key>ipad.sizes</key>
+		<string>2023</string>
 		<key>iphone</key>
 		<string>2020</string>
 		<key>iphone.and.arrow.forward</key>
 		<string>2021</string>
+		<key>iphone.and.arrow.left.and.arrow.right</key>
+		<string>2023</string>
 		<key>iphone.badge.play</key>
 		<string>2020.1</string>
+		<key>iphone.case</key>
+		<string>2023</string>
 		<key>iphone.circle</key>
 		<string>2021</string>
 		<key>iphone.circle.fill</key>
@@ -5467,6 +6569,8 @@ extension Resource {
 		<string>2021</string>
 		<key>iphone.rear.camera</key>
 		<string>2021</string>
+		<key>iphone.sizes</key>
+		<string>2023</string>
 		<key>iphone.slash</key>
 		<string>2020</string>
 		<key>iphone.slash.circle</key>
@@ -5523,6 +6627,8 @@ extension Resource {
 		<string>2019</string>
 		<key>k.square.fill</key>
 		<string>2019</string>
+		<key>kashida.arabic</key>
+		<string>2023</string>
 		<key>key</key>
 		<string>2020</string>
 		<key>key.fill</key>
@@ -5539,6 +6645,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>key.radiowaves.forward.fill</key>
 		<string>2022.1</string>
+		<key>key.slash</key>
+		<string>2023</string>
+		<key>key.slash.fill</key>
+		<string>2023</string>
 		<key>key.viewfinder</key>
 		<string>2021.3</string>
 		<key>keyboard</key>
@@ -5587,6 +6697,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>kph.circle.fill</key>
 		<string>2022.1</string>
+		<key>l.button.roundedbottom.horizontal</key>
+		<string>2023</string>
+		<key>l.button.roundedbottom.horizontal.fill</key>
+		<string>2023</string>
 		<key>l.circle</key>
 		<string>2019</string>
 		<key>l.circle.fill</key>
@@ -5627,16 +6741,48 @@ extension Resource {
 		<string>2019</string>
 		<key>l.square.fill</key>
 		<string>2019</string>
+		<key>l1.button.roundedbottom.horizontal</key>
+		<string>2023</string>
+		<key>l1.button.roundedbottom.horizontal.fill</key>
+		<string>2023</string>
+		<key>l1.circle</key>
+		<string>2023</string>
+		<key>l1.circle.fill</key>
+		<string>2023</string>
 		<key>l1.rectangle.roundedbottom</key>
 		<string>2020</string>
 		<key>l1.rectangle.roundedbottom.fill</key>
 		<string>2020</string>
+		<key>l2.button.angledtop.vertical.left</key>
+		<string>2023</string>
+		<key>l2.button.angledtop.vertical.left.fill</key>
+		<string>2023</string>
+		<key>l2.button.roundedtop.horizontal</key>
+		<string>2023</string>
+		<key>l2.button.roundedtop.horizontal.fill</key>
+		<string>2023</string>
+		<key>l2.circle</key>
+		<string>2023</string>
+		<key>l2.circle.fill</key>
+		<string>2023</string>
 		<key>l2.rectangle.roundedtop</key>
 		<string>2020</string>
 		<key>l2.rectangle.roundedtop.fill</key>
 		<string>2020</string>
+		<key>l3.button.angledbottom.horizontal.left</key>
+		<string>2023</string>
+		<key>l3.button.angledbottom.horizontal.left.fill</key>
+		<string>2023</string>
+		<key>l4.button.horizontal</key>
+		<string>2023</string>
+		<key>l4.button.horizontal.fill</key>
+		<string>2023</string>
 		<key>ladybug</key>
 		<string>2020</string>
+		<key>ladybug.circle</key>
+		<string>2023</string>
+		<key>ladybug.circle.fill</key>
+		<string>2023</string>
 		<key>ladybug.fill</key>
 		<string>2020</string>
 		<key>lamp.ceiling</key>
@@ -5687,10 +6833,14 @@ extension Resource {
 		<string>2019</string>
 		<key>larisign.square.fill</key>
 		<string>2019</string>
+		<key>laser.burst</key>
+		<string>2023</string>
 		<key>lasso</key>
 		<string>2019</string>
 		<key>lasso.and.sparkles</key>
 		<string>2021</string>
+		<key>lasso.badge.sparkles</key>
+		<string>2023</string>
 		<key>lasso.sparkles</key>
 		<string>2020</string>
 		<key>latch.2.case</key>
@@ -5701,6 +6851,14 @@ extension Resource {
 		<string>2022</string>
 		<key>laurel.trailing</key>
 		<string>2022</string>
+		<key>lb.button.roundedbottom.horizontal</key>
+		<string>2023</string>
+		<key>lb.button.roundedbottom.horizontal.fill</key>
+		<string>2023</string>
+		<key>lb.circle</key>
+		<string>2023</string>
+		<key>lb.circle.fill</key>
+		<string>2023</string>
 		<key>lb.rectangle.roundedbottom</key>
 		<string>2020</string>
 		<key>lb.rectangle.roundedbottom.fill</key>
@@ -5717,6 +6875,12 @@ extension Resource {
 		<string>2021</string>
 		<key>leaf.fill</key>
 		<string>2020</string>
+		<key>left</key>
+		<string>2023</string>
+		<key>left.circle</key>
+		<string>2023</string>
+		<key>left.circle.fill</key>
+		<string>2023</string>
 		<key>lessthan</key>
 		<string>2019</string>
 		<key>lessthan.circle</key>
@@ -5731,6 +6895,10 @@ extension Resource {
 		<string>2020</string>
 		<key>level.fill</key>
 		<string>2020</string>
+		<key>licenseplate</key>
+		<string>2023</string>
+		<key>licenseplate.fill</key>
+		<string>2023</string>
 		<key>lifepreserver</key>
 		<string>2020</string>
 		<key>lifepreserver.fill</key>
@@ -5805,10 +6973,28 @@ extension Resource {
 		<string>2022</string>
 		<key>lightbulb.led.wide.fill</key>
 		<string>2022</string>
+		<key>lightbulb.max</key>
+		<string>2023</string>
+		<key>lightbulb.max.fill</key>
+		<string>2023</string>
+		<key>lightbulb.min</key>
+		<string>2023</string>
+		<key>lightbulb.min.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>lightbulb.min.badge.exclamationmark.fill</key>
+		<string>2023</string>
+		<key>lightbulb.min.fill</key>
+		<string>2023</string>
 		<key>lightbulb.slash</key>
 		<string>2019</string>
 		<key>lightbulb.slash.fill</key>
 		<string>2019</string>
+		<key>lightrail</key>
+		<string>2023</string>
+		<key>lightrail.fill</key>
+		<string>2023</string>
+		<key>lightspectrum.horizontal</key>
+		<string>2023</string>
 		<key>lightswitch.off</key>
 		<string>2022</string>
 		<key>lightswitch.off.fill</key>
@@ -5835,6 +7021,10 @@ extension Resource {
 		<string>2020</string>
 		<key>line.3.horizontal</key>
 		<string>2021</string>
+		<key>line.3.horizontal.button.angledtop.vertical.right</key>
+		<string>2023</string>
+		<key>line.3.horizontal.button.angledtop.vertical.right.fill</key>
+		<string>2023</string>
 		<key>line.3.horizontal.circle</key>
 		<string>2021</string>
 		<key>line.3.horizontal.circle.fill</key>
@@ -5869,6 +7059,8 @@ extension Resource {
 		<string>2020</string>
 		<key>lines.measurement.horizontal</key>
 		<string>2021</string>
+		<key>lines.measurement.vertical</key>
+		<string>2023</string>
 		<key>lineweight</key>
 		<string>2020</string>
 		<key>link</key>
@@ -5941,14 +7133,24 @@ extension Resource {
 		<string>2019</string>
 		<key>livephoto.badge.a</key>
 		<string>2020</string>
+		<key>livephoto.badge.automatic</key>
+		<string>2023</string>
 		<key>livephoto.play</key>
 		<string>2019</string>
 		<key>livephoto.slash</key>
 		<string>2019</string>
 		<key>lizard</key>
 		<string>2022</string>
+		<key>lizard.circle</key>
+		<string>2023</string>
+		<key>lizard.circle.fill</key>
+		<string>2023</string>
 		<key>lizard.fill</key>
 		<string>2022</string>
+		<key>lm.button.horizontal</key>
+		<string>2023</string>
+		<key>lm.button.horizontal.fill</key>
+		<string>2023</string>
 		<key>location</key>
 		<string>2019</string>
 		<key>location.circle</key>
@@ -5989,10 +7191,18 @@ extension Resource {
 		<string>2020</string>
 		<key>lock</key>
 		<string>2019</string>
+		<key>lock.app.dashed</key>
+		<string>2023</string>
 		<key>lock.applewatch</key>
 		<string>2020.1</string>
+		<key>lock.badge.clock</key>
+		<string>2023</string>
+		<key>lock.badge.clock.fill</key>
+		<string>2023</string>
 		<key>lock.circle</key>
 		<string>2019</string>
+		<key>lock.circle.dotted</key>
+		<string>2023</string>
 		<key>lock.circle.fill</key>
 		<string>2019</string>
 		<key>lock.desktopcomputer</key>
@@ -6079,6 +7289,18 @@ extension Resource {
 		<string>2021</string>
 		<key>loupe</key>
 		<string>2020</string>
+		<key>lsb.button.angledbottom.horizontal.left</key>
+		<string>2023</string>
+		<key>lsb.button.angledbottom.horizontal.left.fill</key>
+		<string>2023</string>
+		<key>lt.button.roundedtop.horizontal</key>
+		<string>2023</string>
+		<key>lt.button.roundedtop.horizontal.fill</key>
+		<string>2023</string>
+		<key>lt.circle</key>
+		<string>2023</string>
+		<key>lt.circle.fill</key>
+		<string>2023</string>
 		<key>lt.rectangle.roundedtop</key>
 		<string>2020</string>
 		<key>lt.rectangle.roundedtop.fill</key>
@@ -6095,10 +7317,34 @@ extension Resource {
 		<string>2019</string>
 		<key>m.square.fill</key>
 		<string>2019</string>
+		<key>m1.button.horizontal</key>
+		<string>2023</string>
+		<key>m1.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>m2.button.horizontal</key>
+		<string>2023</string>
+		<key>m2.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>m3.button.horizontal</key>
+		<string>2023</string>
+		<key>m3.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>m4.button.horizontal</key>
+		<string>2023</string>
+		<key>m4.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>macbook</key>
+		<string>2023</string>
 		<key>macbook.and.ipad</key>
 		<string>2022.1</string>
 		<key>macbook.and.iphone</key>
 		<string>2022.1</string>
+		<key>macbook.and.visionpro</key>
+		<string>2023</string>
+		<key>macbook.gen1</key>
+		<string>2023</string>
+		<key>macbook.gen2</key>
+		<string>2023</string>
 		<key>macmini</key>
 		<string>2020</string>
 		<key>macmini.fill</key>
@@ -6123,6 +7369,10 @@ extension Resource {
 		<string>2022</string>
 		<key>macwindow</key>
 		<string>2019</string>
+		<key>macwindow.and.cursorarrow</key>
+		<string>2023</string>
+		<key>macwindow.and.cursorarrow.rtl</key>
+		<string>2023</string>
 		<key>macwindow.badge.plus</key>
 		<string>2020</string>
 		<key>macwindow.on.rectangle</key>
@@ -6181,6 +7431,10 @@ extension Resource {
 		<string>2019</string>
 		<key>mappin.and.ellipse</key>
 		<string>2019</string>
+		<key>mappin.and.ellipse.circle</key>
+		<string>2023</string>
+		<key>mappin.and.ellipse.circle.fill</key>
+		<string>2023</string>
 		<key>mappin.circle</key>
 		<string>2019.1</string>
 		<key>mappin.circle.fill</key>
@@ -6259,6 +7513,10 @@ extension Resource {
 		<string>2022</string>
 		<key>message.badge.rtl</key>
 		<string>2022</string>
+		<key>message.badge.waveform</key>
+		<string>2023</string>
+		<key>message.badge.waveform.fill</key>
+		<string>2023</string>
 		<key>message.circle</key>
 		<string>2019</string>
 		<key>message.circle.fill</key>
@@ -6391,6 +7649,14 @@ extension Resource {
 		<string>2019</string>
 		<key>moon.circle.fill</key>
 		<string>2019</string>
+		<key>moon.dust</key>
+		<string>2023</string>
+		<key>moon.dust.circle</key>
+		<string>2023</string>
+		<key>moon.dust.circle.fill</key>
+		<string>2023</string>
+		<key>moon.dust.fill</key>
+		<string>2023</string>
 		<key>moon.fill</key>
 		<string>2019</string>
 		<key>moon.haze</key>
@@ -6445,6 +7711,22 @@ extension Resource {
 		<string>2022</string>
 		<key>moonphase.waxing.gibbous.inverse</key>
 		<string>2022</string>
+		<key>moonrise</key>
+		<string>2023</string>
+		<key>moonrise.circle</key>
+		<string>2023</string>
+		<key>moonrise.circle.fill</key>
+		<string>2023</string>
+		<key>moonrise.fill</key>
+		<string>2023</string>
+		<key>moonset</key>
+		<string>2023</string>
+		<key>moonset.circle</key>
+		<string>2023</string>
+		<key>moonset.circle.fill</key>
+		<string>2023</string>
+		<key>moonset.fill</key>
+		<string>2023</string>
 		<key>mosaic</key>
 		<string>2020</string>
 		<key>mosaic.fill</key>
@@ -6467,6 +7749,10 @@ extension Resource {
 		<string>2020</string>
 		<key>move.3d</key>
 		<string>2020</string>
+		<key>movieclapper</key>
+		<string>2023</string>
+		<key>movieclapper.fill</key>
+		<string>2023</string>
 		<key>mph</key>
 		<string>2022.1</string>
 		<key>mph.circle</key>
@@ -6537,6 +7823,8 @@ extension Resource {
 		<string>2020</string>
 		<key>network.badge.shield.half.filled</key>
 		<string>2021</string>
+		<key>network.slash</key>
+		<string>2023</string>
 		<key>newspaper</key>
 		<string>2020</string>
 		<key>newspaper.circle</key>
@@ -6545,6 +7833,16 @@ extension Resource {
 		<string>2021</string>
 		<key>newspaper.fill</key>
 		<string>2020</string>
+		<key>norwegiankronesign</key>
+		<string>2023</string>
+		<key>norwegiankronesign.circle</key>
+		<string>2023</string>
+		<key>norwegiankronesign.circle.fill</key>
+		<string>2023</string>
+		<key>norwegiankronesign.square</key>
+		<string>2023</string>
+		<key>norwegiankronesign.square.fill</key>
+		<string>2023</string>
 		<key>nose</key>
 		<string>2020</string>
 		<key>nose.fill</key>
@@ -6607,6 +7905,10 @@ extension Resource {
 		<string>2020</string>
 		<key>opticaldiscdrive.fill</key>
 		<string>2020</string>
+		<key>opticid</key>
+		<string>2023</string>
+		<key>opticid.fill</key>
+		<string>2023</string>
 		<key>option</key>
 		<string>2019</string>
 		<key>oval</key>
@@ -6649,6 +7951,30 @@ extension Resource {
 		<string>2019</string>
 		<key>p.square.fill</key>
 		<string>2019</string>
+		<key>p1.button.horizontal</key>
+		<string>2023</string>
+		<key>p1.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>p2.button.horizontal</key>
+		<string>2023</string>
+		<key>p2.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>p3.button.horizontal</key>
+		<string>2023</string>
+		<key>p3.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>p4.button.horizontal</key>
+		<string>2023</string>
+		<key>p4.button.horizontal.fill</key>
+		<string>2023</string>
+		<key>paddleshifter.left</key>
+		<string>2023</string>
+		<key>paddleshifter.left.fill</key>
+		<string>2023</string>
+		<key>paddleshifter.right</key>
+		<string>2023</string>
+		<key>paddleshifter.right.fill</key>
+		<string>2023</string>
 		<key>paintbrush</key>
 		<string>2019</string>
 		<key>paintbrush.fill</key>
@@ -6663,6 +7989,10 @@ extension Resource {
 		<string>2020</string>
 		<key>pano</key>
 		<string>2019</string>
+		<key>pano.badge.play</key>
+		<string>2023</string>
+		<key>pano.badge.play.fill</key>
+		<string>2023</string>
 		<key>pano.fill</key>
 		<string>2019</string>
 		<key>paperclip</key>
@@ -6701,6 +8031,12 @@ extension Resource {
 		<string>2021</string>
 		<key>parkingsign.circle.fill</key>
 		<string>2021</string>
+		<key>parkingsign.radiowaves.left.and.right</key>
+		<string>2023</string>
+		<key>parkingsign.radiowaves.right.and.safetycone</key>
+		<string>2023</string>
+		<key>parkingsign.steeringwheel</key>
+		<string>2023</string>
 		<key>party.popper</key>
 		<string>2022</string>
 		<key>party.popper.fill</key>
@@ -6729,6 +8065,18 @@ extension Resource {
 		<string>2020</string>
 		<key>peacesign</key>
 		<string>2021</string>
+		<key>pedal.accelerator</key>
+		<string>2023</string>
+		<key>pedal.accelerator.fill</key>
+		<string>2023</string>
+		<key>pedal.brake</key>
+		<string>2023</string>
+		<key>pedal.brake.fill</key>
+		<string>2023</string>
+		<key>pedal.clutch</key>
+		<string>2023</string>
+		<key>pedal.clutch.fill</key>
+		<string>2023</string>
 		<key>pedestrian.gate.closed</key>
 		<string>2022</string>
 		<key>pedestrian.gate.open</key>
@@ -6743,6 +8091,8 @@ extension Resource {
 		<string>2022</string>
 		<key>pencil.and.ruler.fill</key>
 		<string>2022</string>
+		<key>pencil.and.scribble</key>
+		<string>2023</string>
 		<key>pencil.circle</key>
 		<string>2019</string>
 		<key>pencil.circle.fill</key>
@@ -6757,10 +8107,18 @@ extension Resource {
 		<string>2019</string>
 		<key>pencil.tip.crop.circle.badge.arrow.forward</key>
 		<string>2020</string>
+		<key>pencil.tip.crop.circle.badge.arrow.forward.fill</key>
+		<string>2023</string>
 		<key>pencil.tip.crop.circle.badge.minus</key>
 		<string>2019</string>
+		<key>pencil.tip.crop.circle.badge.minus.fill</key>
+		<string>2023</string>
 		<key>pencil.tip.crop.circle.badge.plus</key>
 		<string>2019</string>
+		<key>pencil.tip.crop.circle.badge.plus.fill</key>
+		<string>2023</string>
+		<key>pencil.tip.crop.circle.fill</key>
+		<string>2023</string>
 		<key>pentagon</key>
 		<string>2021</string>
 		<key>pentagon.bottomhalf.filled</key>
@@ -6785,6 +8143,10 @@ extension Resource {
 		<string>2022</string>
 		<key>person.2.badge.gearshape.fill</key>
 		<string>2022</string>
+		<key>person.2.badge.key</key>
+		<string>2023</string>
+		<key>person.2.badge.key.fill</key>
+		<string>2023</string>
 		<key>person.2.circle</key>
 		<string>2020</string>
 		<key>person.2.circle.fill</key>
@@ -6821,6 +8183,8 @@ extension Resource {
 		<string>2020</string>
 		<key>person.and.background.dotted</key>
 		<string>2022</string>
+		<key>person.and.background.striped.horizontal</key>
+		<string>2023</string>
 		<key>person.badge.clock</key>
 		<string>2021</string>
 		<key>person.badge.clock.fill</key>
@@ -6841,8 +8205,16 @@ extension Resource {
 		<string>2022</string>
 		<key>person.badge.shield.checkmark.fill</key>
 		<string>2022</string>
+		<key>person.bubble</key>
+		<string>2023</string>
+		<key>person.bubble.fill</key>
+		<string>2023</string>
 		<key>person.bust</key>
 		<string>2022</string>
+		<key>person.bust.circle</key>
+		<string>2023</string>
+		<key>person.bust.circle.fill</key>
+		<string>2023</string>
 		<key>person.bust.fill</key>
 		<string>2022</string>
 		<key>person.circle</key>
@@ -6889,6 +8261,10 @@ extension Resource {
 		<string>2019</string>
 		<key>person.crop.circle.dashed</key>
 		<string>2022.1</string>
+		<key>person.crop.circle.dashed.circle</key>
+		<string>2023</string>
+		<key>person.crop.circle.dashed.circle.fill</key>
+		<string>2023</string>
 		<key>person.crop.circle.fill</key>
 		<string>2019</string>
 		<key>person.crop.circle.fill.badge.checkmark</key>
@@ -6967,6 +8343,10 @@ extension Resource {
 		<string>2022</string>
 		<key>person.line.dotted.person.fill</key>
 		<string>2022</string>
+		<key>person.slash</key>
+		<string>2023</string>
+		<key>person.slash.fill</key>
+		<string>2023</string>
 		<key>person.text.rectangle</key>
 		<string>2021</string>
 		<key>person.text.rectangle.fill</key>
@@ -7029,10 +8409,22 @@ extension Resource {
 		<string>2022</string>
 		<key>phone.badge.plus</key>
 		<string>2019</string>
+		<key>phone.badge.waveform</key>
+		<string>2023</string>
+		<key>phone.badge.waveform.fill</key>
+		<string>2023</string>
+		<key>phone.bubble</key>
+		<string>2023</string>
+		<key>phone.bubble.fill</key>
+		<string>2023</string>
+		<key>phone.bubble.fill.rtl</key>
+		<string>2023</string>
 		<key>phone.bubble.left</key>
 		<string>2020</string>
 		<key>phone.bubble.left.fill</key>
 		<string>2020</string>
+		<key>phone.bubble.rtl</key>
+		<string>2023</string>
 		<key>phone.circle</key>
 		<string>2019</string>
 		<key>phone.circle.fill</key>
@@ -7069,6 +8461,22 @@ extension Resource {
 		<string>2019</string>
 		<key>photo.artframe</key>
 		<string>2021</string>
+		<key>photo.artframe.circle</key>
+		<string>2023</string>
+		<key>photo.artframe.circle.fill</key>
+		<string>2023</string>
+		<key>photo.badge.arrow.down</key>
+		<string>2023</string>
+		<key>photo.badge.arrow.down.fill</key>
+		<string>2023</string>
+		<key>photo.badge.checkmark</key>
+		<string>2023</string>
+		<key>photo.badge.checkmark.fill</key>
+		<string>2023</string>
+		<key>photo.badge.plus</key>
+		<string>2023</string>
+		<key>photo.badge.plus.fill</key>
+		<string>2023</string>
 		<key>photo.circle</key>
 		<string>2021</string>
 		<key>photo.circle.fill</key>
@@ -7177,6 +8585,10 @@ extension Resource {
 		<string>2022</string>
 		<key>play.fill</key>
 		<string>2019</string>
+		<key>play.house</key>
+		<string>2023</string>
+		<key>play.house.fill</key>
+		<string>2023</string>
 		<key>play.laptopcomputer</key>
 		<string>2022</string>
 		<key>play.rectangle</key>
@@ -7285,16 +8697,50 @@ extension Resource {
 		<string>2021</string>
 		<key>point.3.filled.connected.trianglepath.dotted</key>
 		<string>2021</string>
+		<key>point.bottomleft.filled.forward.to.point.topright.scurvepath</key>
+		<string>2023</string>
+		<key>point.bottomleft.forward.to.arrowtriangle.uturn.scurvepath</key>
+		<string>2023</string>
+		<key>point.bottomleft.forward.to.arrowtriangle.uturn.scurvepath.fill</key>
+		<string>2023</string>
+		<key>point.bottomleft.forward.to.point.topright.filled.scurvepath</key>
+		<string>2023</string>
+		<key>point.bottomleft.forward.to.point.topright.scurvepath</key>
+		<string>2023</string>
+		<key>point.bottomleft.forward.to.point.topright.scurvepath.fill</key>
+		<string>2023</string>
 		<key>point.fill.topleft.down.curvedto.point.fill.bottomright.up</key>
 		<string>2020</string>
 		<key>point.filled.topleft.down.curvedto.point.bottomright.up</key>
 		<string>2021</string>
+		<key>point.forward.to.point.capsulepath</key>
+		<string>2023</string>
+		<key>point.forward.to.point.capsulepath.fill</key>
+		<string>2023</string>
 		<key>point.topleft.down.curvedto.point.bottomright.up</key>
 		<string>2020</string>
 		<key>point.topleft.down.curvedto.point.bottomright.up.fill</key>
 		<string>2021</string>
 		<key>point.topleft.down.curvedto.point.filled.bottomright.up</key>
 		<string>2021</string>
+		<key>point.topleft.down.to.point.bottomright.curvepath</key>
+		<string>2023</string>
+		<key>point.topleft.down.to.point.bottomright.curvepath.fill</key>
+		<string>2023</string>
+		<key>point.topleft.down.to.point.bottomright.filled.curvepath</key>
+		<string>2023</string>
+		<key>point.topleft.filled.down.to.point.bottomright.curvepath</key>
+		<string>2023</string>
+		<key>polishzlotysign</key>
+		<string>2023</string>
+		<key>polishzlotysign.circle</key>
+		<string>2023</string>
+		<key>polishzlotysign.circle.fill</key>
+		<string>2023</string>
+		<key>polishzlotysign.square</key>
+		<string>2023</string>
+		<key>polishzlotysign.square.fill</key>
+		<string>2023</string>
 		<key>popcorn</key>
 		<string>2022</string>
 		<key>popcorn.circle</key>
@@ -7311,6 +8757,10 @@ extension Resource {
 		<string>2021</string>
 		<key>power.dotted</key>
 		<string>2021</string>
+		<key>powercord</key>
+		<string>2023</string>
+		<key>powercord.fill</key>
+		<string>2023</string>
 		<key>poweroff</key>
 		<string>2020</string>
 		<key>poweron</key>
@@ -7581,6 +9031,10 @@ extension Resource {
 		<string>2021</string>
 		<key>quotelevel</key>
 		<string>2022</string>
+		<key>r.button.roundedbottom.horizontal</key>
+		<string>2023</string>
+		<key>r.button.roundedbottom.horizontal.fill</key>
+		<string>2023</string>
 		<key>r.circle</key>
 		<string>2019</string>
 		<key>r.circle.fill</key>
@@ -7627,14 +9081,42 @@ extension Resource {
 		<string>2020</string>
 		<key>r.square.on.square.fill</key>
 		<string>2021</string>
+		<key>r1.button.roundedbottom.horizontal</key>
+		<string>2023</string>
+		<key>r1.button.roundedbottom.horizontal.fill</key>
+		<string>2023</string>
+		<key>r1.circle</key>
+		<string>2023</string>
+		<key>r1.circle.fill</key>
+		<string>2023</string>
 		<key>r1.rectangle.roundedbottom</key>
 		<string>2020</string>
 		<key>r1.rectangle.roundedbottom.fill</key>
 		<string>2020</string>
+		<key>r2.button.angledtop.vertical.right</key>
+		<string>2023</string>
+		<key>r2.button.angledtop.vertical.right.fill</key>
+		<string>2023</string>
+		<key>r2.button.roundedtop.horizontal</key>
+		<string>2023</string>
+		<key>r2.button.roundedtop.horizontal.fill</key>
+		<string>2023</string>
+		<key>r2.circle</key>
+		<string>2023</string>
+		<key>r2.circle.fill</key>
+		<string>2023</string>
 		<key>r2.rectangle.roundedtop</key>
 		<string>2020</string>
 		<key>r2.rectangle.roundedtop.fill</key>
 		<string>2020</string>
+		<key>r3.button.angledbottom.horizontal.right</key>
+		<string>2023</string>
+		<key>r3.button.angledbottom.horizontal.right.fill</key>
+		<string>2023</string>
+		<key>r4.button.horizontal</key>
+		<string>2023</string>
+		<key>r4.button.horizontal.fill</key>
+		<string>2023</string>
 		<key>radio</key>
 		<string>2020</string>
 		<key>radio.fill</key>
@@ -7643,8 +9125,18 @@ extension Resource {
 		<string>2019</string>
 		<key>radiowaves.right</key>
 		<string>2019</string>
+		<key>rainbow</key>
+		<string>2023</string>
 		<key>rays</key>
 		<string>2019</string>
+		<key>rb.button.roundedbottom.horizontal</key>
+		<string>2023</string>
+		<key>rb.button.roundedbottom.horizontal.fill</key>
+		<string>2023</string>
+		<key>rb.circle</key>
+		<string>2023</string>
+		<key>rb.circle.fill</key>
+		<string>2023</string>
 		<key>rb.rectangle.roundedbottom</key>
 		<string>2020</string>
 		<key>rb.rectangle.roundedbottom.fill</key>
@@ -7665,6 +9157,10 @@ extension Resource {
 		<string>2021</string>
 		<key>rectangle.3.group</key>
 		<string>2021</string>
+		<key>rectangle.3.group.bubble</key>
+		<string>2023</string>
+		<key>rectangle.3.group.bubble.fill</key>
+		<string>2023</string>
 		<key>rectangle.3.group.bubble.left</key>
 		<string>2021</string>
 		<key>rectangle.3.group.bubble.left.fill</key>
@@ -7727,6 +9223,8 @@ extension Resource {
 		<string>2021</string>
 		<key>rectangle.center.inset.filled.badge.plus</key>
 		<string>2021</string>
+		<key>rectangle.checkered</key>
+		<string>2023</string>
 		<key>rectangle.compress.vertical</key>
 		<string>2019</string>
 		<key>rectangle.connected.to.line.below</key>
@@ -7777,6 +9275,8 @@ extension Resource {
 		<string>2019</string>
 		<key>rectangle.grid.3x2.fill</key>
 		<string>2019</string>
+		<key>rectangle.inset.badge.record</key>
+		<string>2023</string>
 		<key>rectangle.inset.bottomleading.filled</key>
 		<string>2021</string>
 		<key>rectangle.inset.bottomleft.fill</key>
@@ -7809,6 +9309,8 @@ extension Resource {
 		<string>2021</string>
 		<key>rectangle.inset.toptrailing.filled</key>
 		<string>2021</string>
+		<key>rectangle.landscape.rotate</key>
+		<string>2023</string>
 		<key>rectangle.leadinghalf.filled</key>
 		<string>2021.2</string>
 		<key>rectangle.leadinghalf.inset.filled</key>
@@ -7837,6 +9339,10 @@ extension Resource {
 		<string>2019</string>
 		<key>rectangle.on.rectangle.angled</key>
 		<string>2019</string>
+		<key>rectangle.on.rectangle.button.angledtop.vertical.left</key>
+		<string>2023</string>
+		<key>rectangle.on.rectangle.button.angledtop.vertical.left.fill</key>
+		<string>2023</string>
 		<key>rectangle.on.rectangle.circle</key>
 		<string>2021</string>
 		<key>rectangle.on.rectangle.circle.fill</key>
@@ -7867,6 +9373,10 @@ extension Resource {
 		<string>2020</string>
 		<key>rectangle.portrait.arrowtriangle.2.outward</key>
 		<string>2020</string>
+		<key>rectangle.portrait.badge.plus</key>
+		<string>2023</string>
+		<key>rectangle.portrait.badge.plus.fill</key>
+		<string>2023</string>
 		<key>rectangle.portrait.bottomhalf.filled</key>
 		<string>2021</string>
 		<key>rectangle.portrait.bottomhalf.inset.filled</key>
@@ -7915,6 +9425,8 @@ extension Resource {
 		<string>2021</string>
 		<key>rectangle.portrait.rightthird.inset.filled</key>
 		<string>2021</string>
+		<key>rectangle.portrait.rotate</key>
+		<string>2023</string>
 		<key>rectangle.portrait.slash</key>
 		<string>2021</string>
 		<key>rectangle.portrait.slash.fill</key>
@@ -7945,6 +9457,22 @@ extension Resource {
 		<string>2021</string>
 		<key>rectangle.portrait.trailingthird.inset.filled</key>
 		<string>2021</string>
+		<key>rectangle.ratio.16.to.9</key>
+		<string>2023</string>
+		<key>rectangle.ratio.16.to.9.fill</key>
+		<string>2023</string>
+		<key>rectangle.ratio.3.to.4</key>
+		<string>2023</string>
+		<key>rectangle.ratio.3.to.4.fill</key>
+		<string>2023</string>
+		<key>rectangle.ratio.4.to.3</key>
+		<string>2023</string>
+		<key>rectangle.ratio.4.to.3.fill</key>
+		<string>2023</string>
+		<key>rectangle.ratio.9.to.16</key>
+		<string>2023</string>
+		<key>rectangle.ratio.9.to.16.fill</key>
+		<string>2023</string>
 		<key>rectangle.righthalf.fill</key>
 		<string>2020</string>
 		<key>rectangle.righthalf.filled</key>
@@ -8077,6 +9605,10 @@ extension Resource {
 		<string>2021</string>
 		<key>retarder.brakesignal</key>
 		<string>2022.1</string>
+		<key>retarder.brakesignal.and.exclamationmark</key>
+		<string>2023</string>
+		<key>retarder.brakesignal.slash</key>
+		<string>2023</string>
 		<key>return</key>
 		<string>2019</string>
 		<key>return.left</key>
@@ -8087,6 +9619,24 @@ extension Resource {
 		<string>2019</string>
 		<key>rhombus.fill</key>
 		<string>2019</string>
+		<key>right</key>
+		<string>2023</string>
+		<key>right.circle</key>
+		<string>2023</string>
+		<key>right.circle.fill</key>
+		<string>2023</string>
+		<key>righttriangle</key>
+		<string>2023</string>
+		<key>righttriangle.fill</key>
+		<string>2023</string>
+		<key>righttriangle.split.diagonal</key>
+		<string>2023</string>
+		<key>righttriangle.split.diagonal.fill</key>
+		<string>2023</string>
+		<key>rm.button.horizontal</key>
+		<string>2023</string>
+		<key>rm.button.horizontal.fill</key>
+		<string>2023</string>
 		<key>road.lane.arrowtriangle.2.inward</key>
 		<string>2022.1</string>
 		<key>road.lanes</key>
@@ -8107,6 +9657,12 @@ extension Resource {
 		<string>2019</string>
 		<key>rotate.3d</key>
 		<string>2020</string>
+		<key>rotate.3d.circle</key>
+		<string>2023</string>
+		<key>rotate.3d.circle.fill</key>
+		<string>2023</string>
+		<key>rotate.3d.fill</key>
+		<string>2023</string>
 		<key>rotate.left</key>
 		<string>2019</string>
 		<key>rotate.left.fill</key>
@@ -8115,6 +9671,18 @@ extension Resource {
 		<string>2019</string>
 		<key>rotate.right.fill</key>
 		<string>2019</string>
+		<key>rsb.button.angledbottom.horizontal.right</key>
+		<string>2023</string>
+		<key>rsb.button.angledbottom.horizontal.right.fill</key>
+		<string>2023</string>
+		<key>rt.button.roundedtop.horizontal</key>
+		<string>2023</string>
+		<key>rt.button.roundedtop.horizontal.fill</key>
+		<string>2023</string>
+		<key>rt.circle</key>
+		<string>2023</string>
+		<key>rt.circle.fill</key>
+		<string>2023</string>
 		<key>rt.rectangle.roundedtop</key>
 		<string>2020</string>
 		<key>rt.rectangle.roundedtop.fill</key>
@@ -8221,6 +9789,10 @@ extension Resource {
 		<string>2020</string>
 		<key>shared.with.you</key>
 		<string>2022</string>
+		<key>shared.with.you.circle</key>
+		<string>2023</string>
+		<key>shared.with.you.circle.fill</key>
+		<string>2023</string>
 		<key>shared.with.you.slash</key>
 		<string>2022</string>
 		<key>shareplay</key>
@@ -8253,6 +9825,8 @@ extension Resource {
 		<string>2019</string>
 		<key>shield.checkerboard</key>
 		<string>2020.1</string>
+		<key>shield.checkered</key>
+		<string>2023</string>
 		<key>shield.fill</key>
 		<string>2019</string>
 		<key>shield.lefthalf.fill</key>
@@ -8261,8 +9835,12 @@ extension Resource {
 		<string>2020</string>
 		<key>shield.lefthalf.filled</key>
 		<string>2021</string>
+		<key>shield.lefthalf.filled.badge.checkmark</key>
+		<string>2023</string>
 		<key>shield.lefthalf.filled.slash</key>
 		<string>2021</string>
+		<key>shield.lefthalf.filled.trianglebadge.exclamationmark</key>
+		<string>2023</string>
 		<key>shield.righthalf.filled</key>
 		<string>2021</string>
 		<key>shield.slash</key>
@@ -8285,6 +9863,18 @@ extension Resource {
 		<string>2021</string>
 		<key>shippingbox.fill</key>
 		<string>2020</string>
+		<key>shoe</key>
+		<string>2023</string>
+		<key>shoe.2</key>
+		<string>2023</string>
+		<key>shoe.2.fill</key>
+		<string>2023</string>
+		<key>shoe.circle</key>
+		<string>2023</string>
+		<key>shoe.circle.fill</key>
+		<string>2023</string>
+		<key>shoe.fill</key>
+		<string>2023</string>
 		<key>shoeprints.fill</key>
 		<string>2022</string>
 		<key>shower</key>
@@ -8333,8 +9923,6 @@ extension Resource {
 		<string>2021</string>
 		<key>signature.zh</key>
 		<string>2021</string>
-		<key>signature.zh.traditional</key>
-		<string>2021</string>
 		<key>signpost.and.arrowtriangle.up</key>
 		<string>2022.1</string>
 		<key>signpost.and.arrowtriangle.up.circle</key>
@@ -8379,8 +9967,16 @@ extension Resource {
 		<string>2022</string>
 		<key>sink.fill</key>
 		<string>2022</string>
+		<key>skateboard</key>
+		<string>2023</string>
+		<key>skateboard.fill</key>
+		<string>2023</string>
 		<key>skew</key>
 		<string>2019</string>
+		<key>skis</key>
+		<string>2023</string>
+		<key>skis.fill</key>
+		<string>2023</string>
 		<key>slash.circle</key>
 		<string>2019</string>
 		<key>slash.circle.fill</key>
@@ -8395,6 +9991,8 @@ extension Resource {
 		<string>2022</string>
 		<key>slider.horizontal.2.rectangle.and.arrow.triangle.2.circlepath</key>
 		<string>2021</string>
+		<key>slider.horizontal.2.square</key>
+		<string>2023</string>
 		<key>slider.horizontal.2.square.badge.arrow.down</key>
 		<string>2022</string>
 		<key>slider.horizontal.2.square.on.square</key>
@@ -8409,6 +10007,8 @@ extension Resource {
 		<string>2020</string>
 		<key>slider.horizontal.below.square.filled.and.square</key>
 		<string>2021</string>
+		<key>slider.horizontal.below.sun.max</key>
+		<string>2023</string>
 		<key>slider.vertical.3</key>
 		<string>2020</string>
 		<key>slowmo</key>
@@ -8425,6 +10025,8 @@ extension Resource {
 		<string>2021</string>
 		<key>smallcircle.filled.circle.fill</key>
 		<string>2021</string>
+		<key>smartphone</key>
+		<string>2023</string>
 		<key>smiley</key>
 		<string>2019</string>
 		<key>smiley.fill</key>
@@ -8439,6 +10041,10 @@ extension Resource {
 		<string>2019</string>
 		<key>snow</key>
 		<string>2019</string>
+		<key>snowboard</key>
+		<string>2023</string>
+		<key>snowboard.fill</key>
+		<string>2023</string>
 		<key>snowflake</key>
 		<string>2021</string>
 		<key>snowflake.circle</key>
@@ -8551,6 +10157,12 @@ extension Resource {
 		<string>2020</string>
 		<key>speaker.wave.2</key>
 		<string>2020</string>
+		<key>speaker.wave.2.bubble</key>
+		<string>2023</string>
+		<key>speaker.wave.2.bubble.fill</key>
+		<string>2023</string>
+		<key>speaker.wave.2.bubble.fill.rtl</key>
+		<string>2023</string>
 		<key>speaker.wave.2.bubble.left</key>
 		<string>2022</string>
 		<key>speaker.wave.2.bubble.left.fill</key>
@@ -8559,6 +10171,8 @@ extension Resource {
 		<string>2022</string>
 		<key>speaker.wave.2.bubble.left.rtl</key>
 		<string>2022</string>
+		<key>speaker.wave.2.bubble.rtl</key>
+		<string>2023</string>
 		<key>speaker.wave.2.circle</key>
 		<string>2020</string>
 		<key>speaker.wave.2.circle.fill</key>
@@ -8605,6 +10219,8 @@ extension Resource {
 		<string>2022</string>
 		<key>square.2.layers.3d.bottom.filled</key>
 		<string>2022</string>
+		<key>square.2.layers.3d.fill</key>
+		<string>2023</string>
 		<key>square.2.layers.3d.top.filled</key>
 		<string>2022</string>
 		<key>square.2.stack.3d</key>
@@ -8697,6 +10313,12 @@ extension Resource {
 		<string>2022</string>
 		<key>square.and.pencil.circle.fill</key>
 		<string>2022</string>
+		<key>square.arrowtriangle.4.outward</key>
+		<string>2023</string>
+		<key>square.badge.plus</key>
+		<string>2023</string>
+		<key>square.badge.plus.fill</key>
+		<string>2023</string>
 		<key>square.bottomhalf.fill</key>
 		<string>2020</string>
 		<key>square.bottomhalf.filled</key>
@@ -8823,6 +10445,12 @@ extension Resource {
 		<string>2022</string>
 		<key>square.on.square.squareshape.controlhandles</key>
 		<string>2020</string>
+		<key>square.resize</key>
+		<string>2023</string>
+		<key>square.resize.down</key>
+		<string>2023</string>
+		<key>square.resize.up</key>
+		<string>2023</string>
 		<key>square.righthalf.fill</key>
 		<string>2019</string>
 		<key>square.righthalf.filled</key>
@@ -8879,12 +10507,20 @@ extension Resource {
 		<string>2020</string>
 		<key>square.stack.3d.up.badge.a.fill</key>
 		<string>2020</string>
+		<key>square.stack.3d.up.badge.automatic</key>
+		<string>2023</string>
+		<key>square.stack.3d.up.badge.automatic.fill</key>
+		<string>2023</string>
 		<key>square.stack.3d.up.fill</key>
 		<string>2019</string>
 		<key>square.stack.3d.up.slash</key>
 		<string>2019</string>
 		<key>square.stack.3d.up.slash.fill</key>
 		<string>2019</string>
+		<key>square.stack.3d.up.trianglebadge.exclamationmark</key>
+		<string>2023</string>
+		<key>square.stack.3d.up.trianglebadge.exclamationmark.fill</key>
+		<string>2023</string>
 		<key>square.stack.fill</key>
 		<string>2019</string>
 		<key>square.text.square</key>
@@ -8903,6 +10539,8 @@ extension Resource {
 		<string>2019</string>
 		<key>squares.leading.rectangle</key>
 		<string>2022</string>
+		<key>squares.leading.rectangle.fill</key>
+		<string>2023</string>
 		<key>squareshape</key>
 		<string>2020</string>
 		<key>squareshape.controlhandles.on.squareshape.controlhandles</key>
@@ -8911,6 +10549,8 @@ extension Resource {
 		<string>2020</string>
 		<key>squareshape.dotted.split.2x2</key>
 		<string>2022</string>
+		<key>squareshape.dotted.squareshape</key>
+		<string>2023</string>
 		<key>squareshape.fill</key>
 		<string>2020</string>
 		<key>squareshape.split.2x2</key>
@@ -8921,6 +10561,8 @@ extension Resource {
 		<string>2020</string>
 		<key>squareshape.squareshape.dashed</key>
 		<string>2020</string>
+		<key>squareshape.squareshape.dotted</key>
+		<string>2023</string>
 		<key>stairs</key>
 		<string>2022</string>
 		<key>star</key>
@@ -8961,14 +10603,30 @@ extension Resource {
 		<string>2020</string>
 		<key>staroflife.fill</key>
 		<string>2019</string>
+		<key>staroflife.shield</key>
+		<string>2023</string>
+		<key>staroflife.shield.fill</key>
+		<string>2023</string>
 		<key>steeringwheel</key>
 		<string>2022.1</string>
 		<key>steeringwheel.and.heat.waves</key>
 		<string>2022.1</string>
 		<key>steeringwheel.and.key</key>
 		<string>2022.1</string>
+		<key>steeringwheel.and.liquid.wave</key>
+		<string>2023</string>
 		<key>steeringwheel.and.lock</key>
 		<string>2022.1</string>
+		<key>steeringwheel.arrowtriangle.left</key>
+		<string>2023</string>
+		<key>steeringwheel.arrowtriangle.right</key>
+		<string>2023</string>
+		<key>steeringwheel.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>steeringwheel.circle</key>
+		<string>2023</string>
+		<key>steeringwheel.circle.fill</key>
+		<string>2023</string>
 		<key>steeringwheel.exclamationmark</key>
 		<string>2022.1</string>
 		<key>steeringwheel.road.lane</key>
@@ -9005,6 +10663,14 @@ extension Resource {
 		<string>2019</string>
 		<key>stopwatch.fill</key>
 		<string>2019</string>
+		<key>storefront</key>
+		<string>2023</string>
+		<key>storefront.circle</key>
+		<string>2023</string>
+		<key>storefront.circle.fill</key>
+		<string>2023</string>
+		<key>storefront.fill</key>
+		<string>2023</string>
 		<key>stove</key>
 		<string>2022</string>
 		<key>stove.fill</key>
@@ -9073,6 +10739,14 @@ extension Resource {
 		<string>2022</string>
 		<key>sun.haze.fill</key>
 		<string>2019</string>
+		<key>sun.horizon</key>
+		<string>2023</string>
+		<key>sun.horizon.circle</key>
+		<string>2023</string>
+		<key>sun.horizon.circle.fill</key>
+		<string>2023</string>
+		<key>sun.horizon.fill</key>
+		<string>2023</string>
 		<key>sun.max</key>
 		<string>2019</string>
 		<key>sun.max.circle</key>
@@ -9089,6 +10763,26 @@ extension Resource {
 		<string>2019</string>
 		<key>sun.min.fill</key>
 		<string>2019</string>
+		<key>sun.rain</key>
+		<string>2023</string>
+		<key>sun.rain.circle</key>
+		<string>2023</string>
+		<key>sun.rain.circle.fill</key>
+		<string>2023</string>
+		<key>sun.rain.fill</key>
+		<string>2023</string>
+		<key>sun.snow</key>
+		<string>2023</string>
+		<key>sun.snow.circle</key>
+		<string>2023</string>
+		<key>sun.snow.circle.fill</key>
+		<string>2023</string>
+		<key>sun.snow.fill</key>
+		<string>2023</string>
+		<key>sunglasses</key>
+		<string>2023</string>
+		<key>sunglasses.fill</key>
+		<string>2023</string>
 		<key>sunrise</key>
 		<string>2019</string>
 		<key>sunrise.circle</key>
@@ -9105,6 +10799,10 @@ extension Resource {
 		<string>2022</string>
 		<key>sunset.fill</key>
 		<string>2019</string>
+		<key>surfboard</key>
+		<string>2023</string>
+		<key>surfboard.fill</key>
+		<string>2023</string>
 		<key>suv.side</key>
 		<string>2022.1</string>
 		<key>suv.side.air.circulate</key>
@@ -9137,6 +10835,22 @@ extension Resource {
 		<string>2022.1</string>
 		<key>suv.side.front.open.fill</key>
 		<string>2022.1</string>
+		<key>suv.side.hill.down</key>
+		<string>2023</string>
+		<key>suv.side.hill.down.fill</key>
+		<string>2023</string>
+		<key>suv.side.hill.up</key>
+		<string>2023</string>
+		<key>suv.side.hill.up.fill</key>
+		<string>2023</string>
+		<key>suv.side.lock</key>
+		<string>2023</string>
+		<key>suv.side.lock.fill</key>
+		<string>2023</string>
+		<key>suv.side.lock.open</key>
+		<string>2023</string>
+		<key>suv.side.lock.open.fill</key>
+		<string>2023</string>
 		<key>suv.side.rear.open</key>
 		<string>2022.1</string>
 		<key>suv.side.rear.open.fill</key>
@@ -9145,8 +10859,22 @@ extension Resource {
 		<string>2022</string>
 		<key>swatchpalette.fill</key>
 		<string>2022</string>
+		<key>swedishkronasign</key>
+		<string>2023</string>
+		<key>swedishkronasign.circle</key>
+		<string>2023</string>
+		<key>swedishkronasign.circle.fill</key>
+		<string>2023</string>
+		<key>swedishkronasign.square</key>
+		<string>2023</string>
+		<key>swedishkronasign.square.fill</key>
+		<string>2023</string>
 		<key>swift</key>
 		<string>2020</string>
+		<key>swirl.circle.righthalf.filled</key>
+		<string>2023</string>
+		<key>swirl.circle.righthalf.filled.inverse</key>
+		<string>2023</string>
 		<key>switch.2</key>
 		<string>2020</string>
 		<key>switch.programmable</key>
@@ -9349,8 +11077,6 @@ extension Resource {
 		<string>2020</string>
 		<key>text.cursor.zh</key>
 		<string>2020</string>
-		<key>text.cursor.zh.traditional</key>
-		<string>2020.1</string>
 		<key>text.insert</key>
 		<string>2019</string>
 		<key>text.justify</key>
@@ -9401,8 +11127,6 @@ extension Resource {
 		<string>2020</string>
 		<key>textbox.zh</key>
 		<string>2020</string>
-		<key>textbox.zh.traditional</key>
-		<string>2020.1</string>
 		<key>textformat</key>
 		<string>2019</string>
 		<key>textformat.12</key>
@@ -9411,6 +11135,10 @@ extension Resource {
 		<string>2022</string>
 		<key>textformat.12.hi</key>
 		<string>2022</string>
+		<key>textformat.12.km</key>
+		<string>2023</string>
+		<key>textformat.12.my</key>
+		<string>2023</string>
 		<key>textformat.123</key>
 		<string>2019</string>
 		<key>textformat.123.ar</key>
@@ -9451,8 +11179,6 @@ extension Resource {
 		<string>2020.1</string>
 		<key>textformat.size.larger.zh</key>
 		<string>2020.1</string>
-		<key>textformat.size.larger.zh.traditional</key>
-		<string>2020.1</string>
 		<key>textformat.size.smaller</key>
 		<string>2020.1</string>
 		<key>textformat.size.smaller.ar</key>
@@ -9469,13 +11195,9 @@ extension Resource {
 		<string>2020.1</string>
 		<key>textformat.size.smaller.zh</key>
 		<string>2020.1</string>
-		<key>textformat.size.smaller.zh.traditional</key>
-		<string>2020.1</string>
 		<key>textformat.size.th</key>
 		<string>2020.1</string>
 		<key>textformat.size.zh</key>
-		<string>2020.1</string>
-		<key>textformat.size.zh.traditional</key>
 		<string>2020.1</string>
 		<key>textformat.subscript</key>
 		<string>2019</string>
@@ -9493,8 +11215,6 @@ extension Resource {
 		<string>2020.1</string>
 		<key>textformat.subscript.zh</key>
 		<string>2020.1</string>
-		<key>textformat.subscript.zh.traditional</key>
-		<string>2020.1</string>
 		<key>textformat.superscript</key>
 		<string>2019</string>
 		<key>textformat.superscript.ar</key>
@@ -9510,8 +11230,6 @@ extension Resource {
 		<key>textformat.superscript.th</key>
 		<string>2020.1</string>
 		<key>textformat.superscript.zh</key>
-		<string>2020.1</string>
-		<key>textformat.superscript.zh.traditional</key>
 		<string>2020.1</string>
 		<key>theatermask.and.paintbrush</key>
 		<string>2022</string>
@@ -9555,6 +11273,12 @@ extension Resource {
 		<string>2020</string>
 		<key>thermometer.transmission</key>
 		<string>2022.1</string>
+		<key>thermometer.variable.and.figure</key>
+		<string>2023</string>
+		<key>thermometer.variable.and.figure.circle</key>
+		<string>2023</string>
+		<key>thermometer.variable.and.figure.circle.fill</key>
+		<string>2023</string>
 		<key>ticket</key>
 		<string>2020</string>
 		<key>ticket.fill</key>
@@ -9571,6 +11295,8 @@ extension Resource {
 		<string>2022</string>
 		<key>timer.square</key>
 		<string>2020</string>
+		<key>tirepressure</key>
+		<string>2023</string>
 		<key>togglepower</key>
 		<string>2020</string>
 		<key>toilet</key>
@@ -9589,12 +11315,22 @@ extension Resource {
 		<string>2022</string>
 		<key>tortoise</key>
 		<string>2019</string>
+		<key>tortoise.circle</key>
+		<string>2023</string>
+		<key>tortoise.circle.fill</key>
+		<string>2023</string>
 		<key>tortoise.fill</key>
 		<string>2019</string>
 		<key>torus</key>
 		<string>2020.1</string>
 		<key>touchid</key>
 		<string>2020</string>
+		<key>traction.control.tirepressure</key>
+		<string>2023</string>
+		<key>traction.control.tirepressure.exclamationmark</key>
+		<string>2023</string>
+		<key>traction.control.tirepressure.slash</key>
+		<string>2023</string>
 		<key>train.side.front.car</key>
 		<string>2021</string>
 		<key>train.side.middle.car</key>
@@ -9701,6 +11437,10 @@ extension Resource {
 		<string>2021</string>
 		<key>triangle.tophalf.filled</key>
 		<string>2021</string>
+		<key>triangleshape</key>
+		<string>2023</string>
+		<key>triangleshape.fill</key>
+		<string>2023</string>
 		<key>trophy</key>
 		<string>2022</string>
 		<key>trophy.circle</key>
@@ -9715,8 +11455,72 @@ extension Resource {
 		<string>2022</string>
 		<key>tropicalstorm.circle.fill</key>
 		<string>2022</string>
+		<key>truck.box</key>
+		<string>2023</string>
+		<key>truck.box.badge.clock</key>
+		<string>2023</string>
+		<key>truck.box.badge.clock.fill</key>
+		<string>2023</string>
+		<key>truck.box.badge.clock.fill.rtl</key>
+		<string>2023</string>
+		<key>truck.box.badge.clock.rtl</key>
+		<string>2023</string>
+		<key>truck.box.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side</key>
+		<string>2023</string>
+		<key>truck.pickup.side.air.circulate</key>
+		<string>2023</string>
+		<key>truck.pickup.side.air.circulate.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.air.fresh</key>
+		<string>2023</string>
+		<key>truck.pickup.side.air.fresh.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.and.exclamationmark</key>
+		<string>2023</string>
+		<key>truck.pickup.side.and.exclamationmark.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.arrowtriangle.down</key>
+		<string>2023</string>
+		<key>truck.pickup.side.arrowtriangle.down.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.arrowtriangle.up</key>
+		<string>2023</string>
+		<key>truck.pickup.side.arrowtriangle.up.arrowtriangle.down</key>
+		<string>2023</string>
+		<key>truck.pickup.side.arrowtriangle.up.arrowtriangle.down.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.arrowtriangle.up.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.front.open</key>
+		<string>2023</string>
+		<key>truck.pickup.side.front.open.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.hill.down</key>
+		<string>2023</string>
+		<key>truck.pickup.side.hill.down.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.hill.up</key>
+		<string>2023</string>
+		<key>truck.pickup.side.hill.up.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.lock</key>
+		<string>2023</string>
+		<key>truck.pickup.side.lock.fill</key>
+		<string>2023</string>
+		<key>truck.pickup.side.lock.open</key>
+		<string>2023</string>
+		<key>truck.pickup.side.lock.open.fill</key>
+		<string>2023</string>
 		<key>tshirt</key>
 		<string>2021</string>
+		<key>tshirt.circle</key>
+		<string>2023</string>
+		<key>tshirt.circle.fill</key>
+		<string>2023</string>
 		<key>tshirt.fill</key>
 		<string>2021</string>
 		<key>tugriksign</key>
@@ -9749,6 +11553,10 @@ extension Resource {
 		<string>2020.1</string>
 		<key>tv.and.mediabox.fill</key>
 		<string>2022</string>
+		<key>tv.badge.wifi</key>
+		<string>2023</string>
+		<key>tv.badge.wifi.fill</key>
+		<string>2023</string>
 		<key>tv.circle</key>
 		<string>2019</string>
 		<key>tv.circle.fill</key>
@@ -9761,6 +11569,10 @@ extension Resource {
 		<string>2019</string>
 		<key>tv.music.note.fill</key>
 		<string>2019</string>
+		<key>tv.slash</key>
+		<string>2023</string>
+		<key>tv.slash.fill</key>
+		<string>2023</string>
 		<key>u.circle</key>
 		<string>2019</string>
 		<key>u.circle.fill</key>
@@ -9809,10 +11621,22 @@ extension Resource {
 		<string>2019</string>
 		<key>video.badge.plus.fill</key>
 		<string>2019</string>
+		<key>video.badge.waveform</key>
+		<string>2023</string>
+		<key>video.badge.waveform.fill</key>
+		<string>2023</string>
+		<key>video.bubble</key>
+		<string>2023</string>
+		<key>video.bubble.fill</key>
+		<string>2023</string>
+		<key>video.bubble.fill.rtl</key>
+		<string>2023</string>
 		<key>video.bubble.left</key>
 		<string>2020</string>
 		<key>video.bubble.left.fill</key>
 		<string>2020</string>
+		<key>video.bubble.rtl</key>
+		<string>2023</string>
 		<key>video.circle</key>
 		<string>2019</string>
 		<key>video.circle.fill</key>
@@ -9831,6 +11655,10 @@ extension Resource {
 		<string>2020</string>
 		<key>video.slash</key>
 		<string>2019</string>
+		<key>video.slash.circle</key>
+		<string>2023</string>
+		<key>video.slash.circle.fill</key>
+		<string>2023</string>
 		<key>video.slash.fill</key>
 		<string>2019</string>
 		<key>video.square</key>
@@ -9851,6 +11679,40 @@ extension Resource {
 		<string>2019</string>
 		<key>viewfinder.circle.fill</key>
 		<string>2019</string>
+		<key>viewfinder.rectangular</key>
+		<string>2023</string>
+		<key>viewfinder.trianglebadge.exclamationmark</key>
+		<string>2023</string>
+		<key>visionpro</key>
+		<string>2023</string>
+		<key>visionpro.and.arrow.forward</key>
+		<string>2023</string>
+		<key>visionpro.and.arrow.forward.fill</key>
+		<string>2023</string>
+		<key>visionpro.badge.exclamationmark</key>
+		<string>2023</string>
+		<key>visionpro.badge.exclamationmark.fill</key>
+		<string>2023</string>
+		<key>visionpro.badge.play</key>
+		<string>2023</string>
+		<key>visionpro.badge.play.fill</key>
+		<string>2023</string>
+		<key>visionpro.circle</key>
+		<string>2023</string>
+		<key>visionpro.circle.fill</key>
+		<string>2023</string>
+		<key>visionpro.fill</key>
+		<string>2023</string>
+		<key>visionpro.slash</key>
+		<string>2023</string>
+		<key>visionpro.slash.circle</key>
+		<string>2023</string>
+		<key>visionpro.slash.circle.fill</key>
+		<string>2023</string>
+		<key>visionpro.slash.fill</key>
+		<string>2023</string>
+		<key>voiceover</key>
+		<string>2023</string>
 		<key>volleyball</key>
 		<string>2022</string>
 		<key>volleyball.circle</key>
@@ -9885,10 +11747,20 @@ extension Resource {
 		<string>2019</string>
 		<key>wand.and.stars.inverse</key>
 		<string>2019</string>
+		<key>warninglight</key>
+		<string>2023</string>
+		<key>warninglight.fill</key>
+		<string>2023</string>
 		<key>washer</key>
 		<string>2022</string>
+		<key>washer.circle</key>
+		<string>2023</string>
+		<key>washer.circle.fill</key>
+		<string>2023</string>
 		<key>washer.fill</key>
 		<string>2022</string>
+		<key>watch.analog</key>
+		<string>2023</string>
 		<key>watchface.applewatch.case</key>
 		<string>2021</string>
 		<key>water.waves</key>
@@ -9901,6 +11773,10 @@ extension Resource {
 		<string>2022</string>
 		<key>water.waves.slash</key>
 		<string>2022</string>
+		<key>waterbottle</key>
+		<string>2023</string>
+		<key>waterbottle.fill</key>
+		<string>2023</string>
 		<key>wave.3.backward</key>
 		<string>2020</string>
 		<key>wave.3.backward.circle</key>
@@ -9931,8 +11807,14 @@ extension Resource {
 		<string>2021</string>
 		<key>waveform.and.mic</key>
 		<string>2021</string>
+		<key>waveform.and.person.filled</key>
+		<string>2023</string>
 		<key>waveform.badge.exclamationmark</key>
 		<string>2021</string>
+		<key>waveform.badge.magnifyingglass</key>
+		<string>2023</string>
+		<key>waveform.badge.mic</key>
+		<string>2023</string>
 		<key>waveform.badge.minus</key>
 		<string>2021</string>
 		<key>waveform.badge.plus</key>
@@ -9967,6 +11849,10 @@ extension Resource {
 		<string>2021</string>
 		<key>wifi.exclamationmark</key>
 		<string>2019</string>
+		<key>wifi.exclamationmark.circle</key>
+		<string>2023</string>
+		<key>wifi.exclamationmark.circle.fill</key>
+		<string>2023</string>
 		<key>wifi.router</key>
 		<string>2022</string>
 		<key>wifi.router.fill</key>
@@ -10143,6 +12029,8 @@ extension Resource {
 		<string>2019</string>
 		<key>xserve</key>
 		<string>2020</string>
+		<key>xserve.raid</key>
+		<string>2023</string>
 		<key>y.circle</key>
 		<string>2019</string>
 		<key>y.circle.fill</key>
@@ -10161,6 +12049,10 @@ extension Resource {
 		<string>2019</string>
 		<key>yensign.square.fill</key>
 		<string>2019</string>
+		<key>yieldsign</key>
+		<string>2023</string>
+		<key>yieldsign.fill</key>
+		<string>2023</string>
 		<key>z.circle</key>
 		<string>2019</string>
 		<key>z.circle.fill</key>
@@ -10169,10 +12061,18 @@ extension Resource {
 		<string>2019</string>
 		<key>z.square.fill</key>
 		<string>2019</string>
+		<key>zl.button.roundedtop.horizontal</key>
+		<string>2023</string>
+		<key>zl.button.roundedtop.horizontal.fill</key>
+		<string>2023</string>
 		<key>zl.rectangle.roundedtop</key>
 		<string>2020</string>
 		<key>zl.rectangle.roundedtop.fill</key>
 		<string>2020</string>
+		<key>zr.button.roundedtop.horizontal</key>
+		<string>2023</string>
+		<key>zr.button.roundedtop.horizontal.fill</key>
+		<string>2023</string>
 		<key>zr.rectangle.roundedtop</key>
 		<string>2020</string>
 		<key>zr.rectangle.roundedtop.fill</key>
@@ -10190,6 +12090,8 @@ extension Resource {
 			<string>10.15</string>
 			<key>tvOS</key>
 			<string>13.0</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>6.0</string>
 		</dict>
@@ -10201,6 +12103,8 @@ extension Resource {
 			<string>10.15</string>
 			<key>tvOS</key>
 			<string>13.0</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>6.1</string>
 		</dict>
@@ -10212,6 +12116,8 @@ extension Resource {
 			<string>11.0</string>
 			<key>tvOS</key>
 			<string>14.0</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>7.0</string>
 		</dict>
@@ -10223,6 +12129,8 @@ extension Resource {
 			<string>11.0</string>
 			<key>tvOS</key>
 			<string>14.2</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>7.1</string>
 		</dict>
@@ -10234,6 +12142,8 @@ extension Resource {
 			<string>11.3</string>
 			<key>tvOS</key>
 			<string>14.5</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>7.4</string>
 		</dict>
@@ -10245,6 +12155,8 @@ extension Resource {
 			<string>12.0</string>
 			<key>tvOS</key>
 			<string>15.0</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>8.0</string>
 		</dict>
@@ -10256,6 +12168,8 @@ extension Resource {
 			<string>12.0</string>
 			<key>tvOS</key>
 			<string>15.1</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>8.1</string>
 		</dict>
@@ -10267,6 +12181,8 @@ extension Resource {
 			<string>12.1</string>
 			<key>tvOS</key>
 			<string>15.2</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>8.3</string>
 		</dict>
@@ -10278,6 +12194,8 @@ extension Resource {
 			<string>12.3</string>
 			<key>tvOS</key>
 			<string>15.4</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>8.5</string>
 		</dict>
@@ -10289,6 +12207,8 @@ extension Resource {
 			<string>13.0</string>
 			<key>tvOS</key>
 			<string>16.0</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>9.0</string>
 		</dict>
@@ -10300,8 +12220,36 @@ extension Resource {
 			<string>13.0</string>
 			<key>tvOS</key>
 			<string>16.1</string>
+			<key>visionOS</key>
+			<string>1.0</string>
 			<key>watchOS</key>
 			<string>9.1</string>
+		</dict>
+		<key>2022.2</key>
+		<dict>
+			<key>iOS</key>
+			<string>16.4</string>
+			<key>macOS</key>
+			<string>13.3</string>
+			<key>tvOS</key>
+			<string>16.4</string>
+			<key>visionOS</key>
+			<string>1.0</string>
+			<key>watchOS</key>
+			<string>9.4</string>
+		</dict>
+		<key>2023</key>
+		<dict>
+			<key>iOS</key>
+			<string>17.0</string>
+			<key>macOS</key>
+			<string>14.0</string>
+			<key>tvOS</key>
+			<string>17.0</string>
+			<key>visionOS</key>
+			<string>1.0</string>
+			<key>watchOS</key>
+			<string>10.0</string>
 		</dict>
 	</dict>
 </dict>
