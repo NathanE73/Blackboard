@@ -65,7 +65,7 @@ generate:
 
 resources:
 	cat Templates/symbols/NameAliasesStringsResourceHeader.swift \
-		Resources/symbols/name_aliases_strings.txt \
+		Resources/symbols/name_aliases.strings \
 		Templates/symbols/NameAliasesStringsResourceFooter.swift \
 		> Sources/BlackboardFramework/Resources/NameAliasesStringsResource.swift
 	cat Templates/symbols/NameAvailabilityResourceHeader.swift \
