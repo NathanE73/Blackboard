@@ -63,9 +63,11 @@ extension SwiftSource {
                 append("self.init(decorative: imageAsset.rawValue, bundle: bundle)")
             }
             append()
+            directive("#if swift(<5.9.0)")
             images.forEach { image in
                 append("static var \(image.functionName): Image { Image(asset: .\(image.caseName)) }")
             }
+            directive("#endif")
             append()
         }
         append()
@@ -103,9 +105,11 @@ extension SwiftSource {
                 append("self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
             }
             append()
+            directive("#if swift(<5.9.0)")
             images.forEach { image in
                 append("static var \(image.functionName): UIImage { UIImage(asset: .\(image.caseName)) }")
             }
+            directive("#endif")
             append()
         }
         append()

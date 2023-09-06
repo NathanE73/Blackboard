@@ -7,8 +7,12 @@
 import SwiftUI
 
 private let bundle: Bundle = {
+#if SWIFT_PACKAGE
+    Bundle.module
+#else
     class Object: NSObject { }
     return Bundle(for: Object.self)
+#endif
 }()
 
 public extension Color {
@@ -17,6 +21,7 @@ public extension Color {
         self.init(colorAsset.rawValue, bundle: bundle)
     }
     
+#if swift(<5.9.0)
     static var absoluteZero: Color { Color(asset: .absoluteZero) }
     static var bisque: Color { Color(asset: .bisque) }
     static var charcoal: Color { Color(asset: .charcoal) }
@@ -30,9 +35,11 @@ public extension Color {
     static var fluorescentRadicalRed: Color { Color(asset: .fluorescentRadicalRed) }
     static var maroon: Color { Color(asset: .maroon) }
     static var night: Color { Color(asset: .night) }
+#endif
     
 }
 
+#if swift(<5.9.0)
 public extension ShapeStyle where Self == Color {
     
     static var absoluteZero: Color { Color(asset: .absoluteZero) }
@@ -50,3 +57,4 @@ public extension ShapeStyle where Self == Color {
     static var night: Color { Color(asset: .night) }
     
 }
+#endif

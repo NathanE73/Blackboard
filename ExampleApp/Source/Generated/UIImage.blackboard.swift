@@ -7,8 +7,12 @@
 import UIKit
 
 private let bundle: Bundle = {
+#if SWIFT_PACKAGE
+    Bundle.module
+#else
     class Object: NSObject { }
     return Bundle(for: Object.self)
+#endif
 }()
 
 public extension ImageAsset {
@@ -21,6 +25,7 @@ public extension UIImage {
         self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
+#if swift(<5.9.0)
     static var button: UIImage { UIImage(asset: .button) }
     static var greenPaperClip: UIImage { UIImage(asset: .greenPaperClip) }
     static var greenPencil: UIImage { UIImage(asset: .greenPencil) }
@@ -28,5 +33,6 @@ public extension UIImage {
     static var redStapler: UIImage { UIImage(asset: .redStapler) }
     static var silverPaperClip: UIImage { UIImage(asset: .silverPaperClip) }
     static var whiteDice: UIImage { UIImage(asset: .whiteDice) }
+#endif
     
 }

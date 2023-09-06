@@ -7,8 +7,12 @@
 import SwiftUI
 
 private let bundle: Bundle = {
+#if SWIFT_PACKAGE
+    Bundle.module
+#else
     class Object: NSObject { }
     return Bundle(for: Object.self)
+#endif
 }()
 
 public extension Image {
@@ -25,6 +29,7 @@ public extension Image {
         self.init(decorative: imageAsset.rawValue, bundle: bundle)
     }
     
+#if swift(<5.9.0)
     static var button: Image { Image(asset: .button) }
     static var greenPaperClip: Image { Image(asset: .greenPaperClip) }
     static var greenPencil: Image { Image(asset: .greenPencil) }
@@ -32,6 +37,7 @@ public extension Image {
     static var redStapler: Image { Image(asset: .redStapler) }
     static var silverPaperClip: Image { Image(asset: .silverPaperClip) }
     static var whiteDice: Image { Image(asset: .whiteDice) }
+#endif
     
 }
 
