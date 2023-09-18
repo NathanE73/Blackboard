@@ -29,8 +29,10 @@ public extension UIImage {
     static var button: UIImage { UIImage(asset: .button) }
     static var greenPaperClip: UIImage { UIImage(asset: .greenPaperClip) }
     static var greenPencil: UIImage { UIImage(asset: .greenPencil) }
-    static var redCup: UIImage { UIImage(asset: .redCup) }
-    static var redStapler: UIImage { UIImage(asset: .redStapler) }
+    enum Red {
+        static var cup: UIImage { UIImage(asset: .Red.cup) }
+        static var stapler: UIImage { UIImage(asset: .Red.stapler) }
+    }
     static var silverPaperClip: UIImage { UIImage(asset: .silverPaperClip) }
     static var whiteDice: UIImage { UIImage(asset: .whiteDice) }
 #endif

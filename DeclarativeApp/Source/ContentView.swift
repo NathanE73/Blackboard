@@ -27,10 +27,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(asset: .redCup, label: Text("Red Cup"))
+            Image(asset: .Red.cup, label: Text("Red Cup"))
             Text("Red Cup")
                 .font(.largeTitle)
-                .foregroundColor(.fluorescentBlizzardBlue)
+                .foregroundColor(.Fluorescent.blizzardBlue)
                 .padding()
                 .background(Color.bisque)
         }

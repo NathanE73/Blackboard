@@ -19,9 +19,11 @@ public extension CGColor {
     static var emerald: CGColor { ColorAsset.emerald.cgColor }
     static var empty: CGColor { ColorAsset.empty.cgColor }
     static var firebrick: CGColor { ColorAsset.firebrick.cgColor }
-    static var fluorescentBlizzardBlue: CGColor { ColorAsset.fluorescentBlizzardBlue.cgColor }
-    static var fluorescentMagicMint: CGColor { ColorAsset.fluorescentMagicMint.cgColor }
-    static var fluorescentRadicalRed: CGColor { ColorAsset.fluorescentRadicalRed.cgColor }
+    enum Fluorescent {
+        static var blizzardBlue: CGColor { ColorAsset.Fluorescent.blizzardBlue.cgColor }
+        static var magicMint: CGColor { ColorAsset.Fluorescent.magicMint.cgColor }
+        static var radicalRed: CGColor { ColorAsset.Fluorescent.radicalRed.cgColor }
+    }
     static var maroon: CGColor { ColorAsset.maroon.cgColor }
     static var night: CGColor { ColorAsset.night.cgColor }
 }

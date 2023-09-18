@@ -19,9 +19,11 @@ public extension ColorAsset {
     static let emerald = ColorAsset(name: "Emerald")
     static let empty = ColorAsset(name: "Empty")
     static let firebrick = ColorAsset(name: "firebrick-color")
-    static let fluorescentBlizzardBlue = ColorAsset(name: "Fluorescent/Blizzard Blue")
-    static let fluorescentMagicMint = ColorAsset(name: "Fluorescent/Magic Mint")
-    static let fluorescentRadicalRed = ColorAsset(name: "Fluorescent/Radical Red")
+    enum Fluorescent {
+        static let blizzardBlue = ColorAsset(name: "Fluorescent/Blizzard Blue")
+        static let magicMint = ColorAsset(name: "Fluorescent/Magic Mint")
+        static let radicalRed = ColorAsset(name: "Fluorescent/Radical Red")
+    }
     static let maroon = ColorAsset(name: "maroon color")
     static let night = ColorAsset(name: "Night")
 }

@@ -29,15 +29,15 @@ import XCTest
 class DataSetTests: XCTestCase {
     
     func testLevel001() {
-        let dataSet = Fixture.dataSet(project: .shared, name: "Level/001")
+        let dataSet = Fixture.dataSet(project: .shared, name: "Level/N001")
         
-        XCTAssertEqual(dataSet?.name, "Level/001")
+        XCTAssertEqual(dataSet?.name, "Level/N001")
     }
     
     func testLevel002() {
-        let dataSet = Fixture.dataSet(project: .shared, name: "Level/002")
+        let dataSet = Fixture.dataSet(project: .shared, name: "Level/N002")
         
-        XCTAssertEqual(dataSet?.name, "Level/002")
+        XCTAssertEqual(dataSet?.name, "Level/N002")
     }
     
     func testNames() {

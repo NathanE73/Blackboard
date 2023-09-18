@@ -30,9 +30,11 @@ public extension Color {
     static var emerald: Color { Color(asset: .emerald) }
     static var empty: Color { Color(asset: .empty) }
     static var firebrick: Color { Color(asset: .firebrick) }
-    static var fluorescentBlizzardBlue: Color { Color(asset: .fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: Color { Color(asset: .fluorescentMagicMint) }
-    static var fluorescentRadicalRed: Color { Color(asset: .fluorescentRadicalRed) }
+    enum Fluorescent {
+        static var blizzardBlue: Color { Color(asset: .Fluorescent.blizzardBlue) }
+        static var magicMint: Color { Color(asset: .Fluorescent.magicMint) }
+        static var radicalRed: Color { Color(asset: .Fluorescent.radicalRed) }
+    }
     static var maroon: Color { Color(asset: .maroon) }
     static var night: Color { Color(asset: .night) }
 #endif
@@ -50,9 +52,6 @@ public extension ShapeStyle where Self == Color {
     static var emerald: Color { Color(asset: .emerald) }
     static var empty: Color { Color(asset: .empty) }
     static var firebrick: Color { Color(asset: .firebrick) }
-    static var fluorescentBlizzardBlue: Color { Color(asset: .fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: Color { Color(asset: .fluorescentMagicMint) }
-    static var fluorescentRadicalRed: Color { Color(asset: .fluorescentRadicalRed) }
     static var maroon: Color { Color(asset: .maroon) }
     static var night: Color { Color(asset: .night) }
     

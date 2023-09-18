@@ -34,9 +34,11 @@ public extension UIColor {
     static var emerald: UIColor { UIColor(asset: .emerald) }
     static var empty: UIColor { UIColor(asset: .empty) }
     static var firebrick: UIColor { UIColor(asset: .firebrick) }
-    static var fluorescentBlizzardBlue: UIColor { UIColor(asset: .fluorescentBlizzardBlue) }
-    static var fluorescentMagicMint: UIColor { UIColor(asset: .fluorescentMagicMint) }
-    static var fluorescentRadicalRed: UIColor { UIColor(asset: .fluorescentRadicalRed) }
+    enum Fluorescent {
+        static var blizzardBlue: UIColor { UIColor(asset: .Fluorescent.blizzardBlue) }
+        static var magicMint: UIColor { UIColor(asset: .Fluorescent.magicMint) }
+        static var radicalRed: UIColor { UIColor(asset: .Fluorescent.radicalRed) }
+    }
     static var maroon: UIColor { UIColor(asset: .maroon) }
     static var night: UIColor { UIColor(asset: .night) }
 #endif

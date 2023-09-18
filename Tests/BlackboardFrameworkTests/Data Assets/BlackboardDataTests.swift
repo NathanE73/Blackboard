@@ -29,27 +29,27 @@ import XCTest
 class BlackboardDataTests: XCTestCase {
     
     func testLevel001() {
-        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/001") else {
+        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/N001") else {
             XCTFail("Unable to decode image set data")
             return
         }
 
         let blackboardData = BlackboardData(dataSet)
         
-        XCTAssertEqual(blackboardData.name, "Level/001")
-        XCTAssertEqual(blackboardData.propertyName, "level001")
+        XCTAssertEqual(blackboardData.name, "Level/N001")
+        XCTAssertEqual(blackboardData.propertyName, "levelN001")
     }
     
     func testLevel002() {
-        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/002") else {
+        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/N002") else {
             XCTFail("Unable to decode image set data")
             return
         }
         
         let blackboardData = BlackboardData(dataSet)
         
-        XCTAssertEqual(blackboardData.name, "Level/002")
-        XCTAssertEqual(blackboardData.propertyName, "level002")
+        XCTAssertEqual(blackboardData.name, "Level/N002")
+        XCTAssertEqual(blackboardData.propertyName, "levelN002")
     }
     
     func testNames() {
