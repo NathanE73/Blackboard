@@ -6,9 +6,13 @@
 
 import Foundation
 
-public enum DataAsset: String {
-    case level001 = "Level/001"
-    case level002 = "Level/002"
-    case names = "Names"
-    case welcomeMessage = "Welcome Message"
+public struct DataAsset: Hashable {
+    let name: String
+}
+
+public extension DataAsset {
+    static let level001 = DataAsset(name: "Level/001")
+    static let level002 = DataAsset(name: "Level/002")
+    static let names = DataAsset(name: "Names")
+    static let welcomeMessage = DataAsset(name: "Welcome Message")
 }

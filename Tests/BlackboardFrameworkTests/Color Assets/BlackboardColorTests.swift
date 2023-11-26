@@ -37,7 +37,7 @@ class BlackboardColorTests: XCTestCase {
         let blackboardColor = BlackboardColor(colorSet)
         
         XCTAssertEqual(blackboardColor.name, "Absolute Zero")
-        XCTAssertEqual(blackboardColor.functionName, "absoluteZero")
+        XCTAssertEqual(blackboardColor.propertyName, "absoluteZero")
     }
     
     func testBisque() {
@@ -49,7 +49,7 @@ class BlackboardColorTests: XCTestCase {
         let blackboardColor = BlackboardColor(colorSet)
         
         XCTAssertEqual(blackboardColor.name, "Bisque")
-        XCTAssertEqual(blackboardColor.functionName, "bisque")
+        XCTAssertEqual(blackboardColor.propertyName, "bisque")
     }
     
     func testCharcoal() {
@@ -61,7 +61,7 @@ class BlackboardColorTests: XCTestCase {
         let blackboardColor = BlackboardColor(colorSet)
         
         XCTAssertEqual(blackboardColor.name, "Charcoal")
-        XCTAssertEqual(blackboardColor.functionName, "charcoal")
+        XCTAssertEqual(blackboardColor.propertyName, "charcoal")
     }
     
     func testDarkOliveGreen() {
@@ -73,7 +73,7 @@ class BlackboardColorTests: XCTestCase {
         let blackboardColor = BlackboardColor(colorSet)
         
         XCTAssertEqual(blackboardColor.name, "dark-olive-green")
-        XCTAssertEqual(blackboardColor.functionName, "darkOliveGreen")
+        XCTAssertEqual(blackboardColor.propertyName, "darkOliveGreen")
     }
     
     func testDesire() {
@@ -85,7 +85,7 @@ class BlackboardColorTests: XCTestCase {
         let blackboardColor = BlackboardColor(colorSet)
         
         XCTAssertEqual(blackboardColor.name, "Desire")
-        XCTAssertEqual(blackboardColor.functionName, "desire")
+        XCTAssertEqual(blackboardColor.propertyName, "desire")
     }
     
     func testEmerald() {
@@ -97,7 +97,7 @@ class BlackboardColorTests: XCTestCase {
         let blackboardColor = BlackboardColor(colorSet)
         
         XCTAssertEqual(blackboardColor.name, "Emerald")
-        XCTAssertEqual(blackboardColor.functionName, "emerald")
+        XCTAssertEqual(blackboardColor.propertyName, "emerald")
     }
     
     func testEmpty() {
@@ -108,8 +108,8 @@ class BlackboardColorTests: XCTestCase {
         
         let blackboardColor = BlackboardColor(colorSet)
         
-        XCTAssertEqual(blackboardColor.functionName, "empty")
         XCTAssertEqual(blackboardColor.name, "Empty")
+        XCTAssertEqual(blackboardColor.propertyName, "empty")
     }
     
     func testFirebrick() {
@@ -120,8 +120,8 @@ class BlackboardColorTests: XCTestCase {
         
         let blackboardColor = BlackboardColor(colorSet)
         
-        XCTAssertEqual(blackboardColor.functionName, "firebrick")
         XCTAssertEqual(blackboardColor.name, "firebrick-color")
+        XCTAssertEqual(blackboardColor.propertyName, "firebrick")
     }
     
     func testMaroon() {
@@ -132,8 +132,8 @@ class BlackboardColorTests: XCTestCase {
         
         let blackboardColor = BlackboardColor(colorSet)
         
-        XCTAssertEqual(blackboardColor.functionName, "maroon")
         XCTAssertEqual(blackboardColor.name, "maroon color")
+        XCTAssertEqual(blackboardColor.propertyName, "maroon")
     }
     
     func testNight() {
@@ -144,8 +144,8 @@ class BlackboardColorTests: XCTestCase {
         
         let blackboardColor = BlackboardColor(colorSet)
         
-        XCTAssertEqual(blackboardColor.functionName, "night")
         XCTAssertEqual(blackboardColor.name, "Night")
+        XCTAssertEqual(blackboardColor.propertyName, "night")
     }
     
 }

@@ -29,11 +29,7 @@ class ColorSetFactory: AssetSetFactory {
     let pathExtension = "colorset"
     
     func colorSetsAt(paths: [String]) -> [ColorSet] {
-        paths.flatMap(colorSetsAt(path:))
-    }
-    
-    func colorSetsAt(path: String) -> [ColorSet] {
-        assetsAt(path: path, namespace: nil)
+        paths.flatMap(assetsAt(path:))
     }
     
     func asset(name: String, data: Data) -> ColorSet? {

@@ -18,15 +18,15 @@ private let bundle: Bundle = {
 public extension Image {
     
     init(asset imageAsset: ImageAsset) {
-        self.init(imageAsset.rawValue, bundle: bundle)
+        self.init(imageAsset.name, bundle: bundle)
     }
     
     init(asset imageAsset: ImageAsset, label: Text) {
-        self.init(imageAsset.rawValue, bundle: bundle, label: label)
+        self.init(imageAsset.name, bundle: bundle, label: label)
     }
     
     init(decorativeAsset imageAsset: ImageAsset) {
-        self.init(decorative: imageAsset.rawValue, bundle: bundle)
+        self.init(decorative: imageAsset.name, bundle: bundle)
     }
     
 #if swift(<5.9.0)
@@ -45,11 +45,11 @@ public extension Image {
 public extension Label where Title == Text, Icon == Image {
     
     init(_ titleKey: LocalizedStringKey, asset imageAsset: ImageAsset) {
-        self.init(titleKey, image: imageAsset.rawValue)
+        self.init(titleKey, image: imageAsset.name)
     }
     
     init<S>(_ title: S, asset imageAsset: ImageAsset) where S: StringProtocol {
-        self.init(title, image: imageAsset.rawValue)
+        self.init(title, image: imageAsset.name)
     }
     
 }

@@ -49,7 +49,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
             .compactMap { $0 }
             .compactMap(BlackboardColor.init)
         
-        blackboardColors.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
+        blackboardColors.sort { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
         
         return blackboardColors
     }

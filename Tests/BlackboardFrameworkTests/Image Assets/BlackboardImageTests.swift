@@ -37,8 +37,7 @@ class BlackboardImageTests: XCTestCase {
         let blackboardImage = BlackboardImage(imageSet)
         
         XCTAssertEqual(blackboardImage.name, "button")
-        XCTAssertEqual(blackboardImage.functionName, "button")
-        XCTAssertEqual(blackboardImage.caseName, "button")
+        XCTAssertEqual(blackboardImage.propertyName, "button")
     }
     
     func testGreenPaperClip() {
@@ -50,8 +49,7 @@ class BlackboardImageTests: XCTestCase {
         let blackboardImage = BlackboardImage(imageSet)
         
         XCTAssertEqual(blackboardImage.name, "green-paper-clip")
-        XCTAssertEqual(blackboardImage.functionName, "greenPaperClip")
-        XCTAssertEqual(blackboardImage.caseName, "greenPaperClip")
+        XCTAssertEqual(blackboardImage.propertyName, "greenPaperClip")
     }
     
     func testGreenPencil() {
@@ -63,8 +61,7 @@ class BlackboardImageTests: XCTestCase {
         let blackboardImage = BlackboardImage(imageSet)
         
         XCTAssertEqual(blackboardImage.name, "green-pencil")
-        XCTAssertEqual(blackboardImage.functionName, "greenPencil")
-        XCTAssertEqual(blackboardImage.caseName, "greenPencil")
+        XCTAssertEqual(blackboardImage.propertyName, "greenPencil")
     }
     
     func testRedCup() {
@@ -76,8 +73,7 @@ class BlackboardImageTests: XCTestCase {
         let blackboardImage = BlackboardImage(imageSet)
         
         XCTAssertEqual(blackboardImage.name, "Red/cup")
-        XCTAssertEqual(blackboardImage.functionName, "redCup")
-        XCTAssertEqual(blackboardImage.caseName, "redCup")
+        XCTAssertEqual(blackboardImage.propertyName, "redCup")
     }
     
     func testRedStapler() {
@@ -89,8 +85,7 @@ class BlackboardImageTests: XCTestCase {
         let blackboardImage = BlackboardImage(imageSet)
         
         XCTAssertEqual(blackboardImage.name, "Red/stapler")
-        XCTAssertEqual(blackboardImage.functionName, "redStapler")
-        XCTAssertEqual(blackboardImage.caseName, "redStapler")
+        XCTAssertEqual(blackboardImage.propertyName, "redStapler")
     }
     
     func testSilverPaperClip() {
@@ -102,8 +97,7 @@ class BlackboardImageTests: XCTestCase {
         let blackboardImage = BlackboardImage(imageSet)
         
         XCTAssertEqual(blackboardImage.name, "silver-paper-clip")
-        XCTAssertEqual(blackboardImage.functionName, "silverPaperClip")
-        XCTAssertEqual(blackboardImage.caseName, "silverPaperClip")
+        XCTAssertEqual(blackboardImage.propertyName, "silverPaperClip")
     }
     
     func testWhiteDice() {
@@ -115,8 +109,7 @@ class BlackboardImageTests: XCTestCase {
         let blackboardImage = BlackboardImage(imageSet)
         
         XCTAssertEqual(blackboardImage.name, "white-dice")
-        XCTAssertEqual(blackboardImage.functionName, "whiteDice")
-        XCTAssertEqual(blackboardImage.caseName, "whiteDice")
+        XCTAssertEqual(blackboardImage.propertyName, "whiteDice")
     }
     
 }

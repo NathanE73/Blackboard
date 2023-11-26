@@ -18,7 +18,7 @@ private let bundle: Bundle = {
 public extension Color {
     
     init(asset colorAsset: ColorAsset) {
-        self.init(colorAsset.rawValue, bundle: bundle)
+        self.init(colorAsset.name, bundle: bundle)
     }
     
 #if swift(<5.9.0)

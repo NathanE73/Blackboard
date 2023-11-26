@@ -22,7 +22,7 @@ public extension ColorAsset {
 public extension UIColor {
     
     convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
-        self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
+        self.init(named: colorAsset.name, in: bundle, compatibleWith: traitCollection)!
     }
     
 #if swift(<5.9.0)

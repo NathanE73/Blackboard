@@ -32,7 +32,7 @@ extension BlackboardMain {
         let colorSets = ColorSetFactory().colorSetsAt(paths: input)
         
         var blackboardColors = colorSets.compactMap(BlackboardColor.init)
-        blackboardColors.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
+        blackboardColors.sort { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
         
         guard !blackboardColors.isEmpty else {
             return []

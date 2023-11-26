@@ -23,7 +23,7 @@ public extension DataAsset {
 public extension NSDataAsset {
     
     convenience init(asset dataAsset: DataAsset) {
-        self.init(name: dataAsset.rawValue, bundle: bundle)!
+        self.init(name: dataAsset.name, bundle: bundle)!
     }
     
 }

@@ -27,8 +27,7 @@ import Foundation
 struct BlackboardColor {
     
     var name: String
-    var functionName: String
-    var caseName: String
+    var propertyName: String
     
 }
 
@@ -37,10 +36,8 @@ extension BlackboardColor {
     init(_ colorSet: ColorSet) {
         name = colorSet.name
         
-        functionName = Naming.methodName(from: colorSet.name)
+        propertyName = Naming.methodName(from: colorSet.name)
             .removingSuffix("Color")
-        
-        caseName = functionName
     }
     
 }

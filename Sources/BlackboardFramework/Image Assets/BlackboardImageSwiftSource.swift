@@ -30,13 +30,13 @@ extension SwiftSource {
     
     func appendImageAssets(images: [BlackboardImage]) -> Self {
         appendHeading(filename: Filename.ImageAsset, modules: ["Foundation"])
-        append("public enum ImageAsset: String") {
+        append("public struct ImageAsset: Hashable") {
+            append("let name: String")
+        }
+        append()
+        append("public extension ImageAsset") {
             images.forEach { image in
-                if image.caseName == image.name {
-                    append("case \(image.caseName)")
-                } else {
-                    append("case \(image.caseName) = \"\(image.name)\"")
-                }
+                append("static let \(image.propertyName) = ImageAsset(name: \"\(image.name)\")")
             }
         }
         append()
@@ -52,20 +52,20 @@ extension SwiftSource {
         append("public extension Image") {
             append()
             append("init(asset imageAsset: ImageAsset)") {
-                append("self.init(imageAsset.rawValue, bundle: bundle)")
+                append("self.init(imageAsset.name, bundle: bundle)")
             }
             append()
             append("init(asset imageAsset: ImageAsset, label: Text)") {
-                append("self.init(imageAsset.rawValue, bundle: bundle, label: label)")
+                append("self.init(imageAsset.name, bundle: bundle, label: label)")
             }
             append()
             append("init(decorativeAsset imageAsset: ImageAsset)") {
-                append("self.init(decorative: imageAsset.rawValue, bundle: bundle)")
+                append("self.init(decorative: imageAsset.name, bundle: bundle)")
             }
             append()
             directive("#if swift(<5.9.0)")
             images.forEach { image in
-                append("static var \(image.functionName): Image { Image(asset: .\(image.caseName)) }")
+                append("static var \(image.propertyName): Image { Image(asset: .\(image.propertyName)) }")
             }
             directive("#endif")
             append()
@@ -77,11 +77,11 @@ extension SwiftSource {
             append("public extension Label where Title == Text, Icon == Image") {
                 append()
                 append("init(_ titleKey: LocalizedStringKey, asset imageAsset: ImageAsset)") {
-                    append("self.init(titleKey, image: imageAsset.rawValue)")
+                    append("self.init(titleKey, image: imageAsset.name)")
                 }
                 append()
                 append("init<S>(_ title: S, asset imageAsset: ImageAsset) where S: StringProtocol") {
-                    append("self.init(title, image: imageAsset.rawValue)")
+                    append("self.init(title, image: imageAsset.name)")
                 }
                 append()
             }
@@ -102,12 +102,12 @@ extension SwiftSource {
         append("public extension UIImage") {
             append()
             append("convenience init(asset imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
-                append("self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
+                append("self.init(named: imageAsset.name, in: bundle, compatibleWith: traitCollection)!")
             }
             append()
             directive("#if swift(<5.9.0)")
             images.forEach { image in
-                append("static var \(image.functionName): UIImage { UIImage(asset: .\(image.caseName)) }")
+                append("static var \(image.propertyName): UIImage { UIImage(asset: .\(image.propertyName)) }")
             }
             directive("#endif")
             append()

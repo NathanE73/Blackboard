@@ -37,7 +37,7 @@ class BlackboardDataTests: XCTestCase {
         let blackboardData = BlackboardData(dataSet)
         
         XCTAssertEqual(blackboardData.name, "Level/001")
-        XCTAssertEqual(blackboardData.caseName, "level001")
+        XCTAssertEqual(blackboardData.propertyName, "level001")
     }
     
     func testLevel002() {
@@ -49,7 +49,7 @@ class BlackboardDataTests: XCTestCase {
         let blackboardData = BlackboardData(dataSet)
         
         XCTAssertEqual(blackboardData.name, "Level/002")
-        XCTAssertEqual(blackboardData.caseName, "level002")
+        XCTAssertEqual(blackboardData.propertyName, "level002")
     }
     
     func testNames() {
@@ -61,7 +61,7 @@ class BlackboardDataTests: XCTestCase {
         let blackboardData = BlackboardData(dataSet)
         
         XCTAssertEqual(blackboardData.name, "Names")
-        XCTAssertEqual(blackboardData.caseName, "names")
+        XCTAssertEqual(blackboardData.propertyName, "names")
     }
     
     func testWelcomeMessage() {
@@ -73,7 +73,7 @@ class BlackboardDataTests: XCTestCase {
         let blackboardData = BlackboardData(dataSet)
         
         XCTAssertEqual(blackboardData.name, "Welcome Message")
-        XCTAssertEqual(blackboardData.caseName, "welcomeMessage")
+        XCTAssertEqual(blackboardData.propertyName, "welcomeMessage")
     }
     
 }
