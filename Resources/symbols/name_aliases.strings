@@ -58,6 +58,11 @@
 "battery.25" = "battery.25percent";
 "battery.50" = "battery.50percent";
 "battery.75" = "battery.75percent";
+"beats.fit.pro" = "beats.fitpro";
+"beats.fit.pro.chargingcase" = "beats.fitpro.chargingcase";
+"beats.fit.pro.chargingcase.fill" = "beats.fitpro.chargingcase.fill";
+"beats.fit.pro.left" = "beats.fitpro.left";
+"beats.fit.pro.right" = "beats.fitpro.right";
 "bell.and.waveform" = "bell.badge.waveform";
 "bell.and.waveform.fill" = "bell.badge.waveform.fill";
 "bin.xmark" = "xmark.bin";

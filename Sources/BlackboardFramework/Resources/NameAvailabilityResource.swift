@@ -2001,6 +2001,8 @@ extension Resource {
 		<string>2020</string>
 		<key>australiandollarsign</key>
 		<string>2023</string>
+		<key>australiandollarsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>australiandollarsign.circle</key>
 		<string>2023</string>
 		<key>australiandollarsign.circle.fill</key>
@@ -2011,6 +2013,8 @@ extension Resource {
 		<string>2023</string>
 		<key>australsign</key>
 		<string>2022</string>
+		<key>australsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>australsign.circle</key>
 		<string>2019</string>
 		<key>australsign.circle.fill</key>
@@ -2143,6 +2147,8 @@ extension Resource {
 		<string>2022</string>
 		<key>bahtsign</key>
 		<string>2022</string>
+		<key>bahtsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>bahtsign.circle</key>
 		<string>2019</string>
 		<key>bahtsign.circle.fill</key>
@@ -2259,6 +2265,16 @@ extension Resource {
 		<string>2021.2</string>
 		<key>beats.fit.pro.right</key>
 		<string>2021.2</string>
+		<key>beats.fitpro</key>
+		<string>2023</string>
+		<key>beats.fitpro.chargingcase</key>
+		<string>2023</string>
+		<key>beats.fitpro.chargingcase.fill</key>
+		<string>2023</string>
+		<key>beats.fitpro.left</key>
+		<string>2023</string>
+		<key>beats.fitpro.right</key>
+		<string>2023</string>
 		<key>beats.headphones</key>
 		<string>2021</string>
 		<key>beats.powerbeats</key>
@@ -2391,6 +2407,8 @@ extension Resource {
 		<string>2022</string>
 		<key>bitcoinsign</key>
 		<string>2022</string>
+		<key>bitcoinsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>bitcoinsign.circle</key>
 		<string>2019</string>
 		<key>bitcoinsign.circle.fill</key>
@@ -2575,6 +2593,8 @@ extension Resource {
 		<string>2022</string>
 		<key>brazilianrealsign</key>
 		<string>2022</string>
+		<key>brazilianrealsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>brazilianrealsign.circle</key>
 		<string>2020.1</string>
 		<key>brazilianrealsign.circle.fill</key>
@@ -2741,6 +2761,8 @@ extension Resource {
 		<string>2021</string>
 		<key>cable.connector.horizontal</key>
 		<string>2021</string>
+		<key>cable.connector.slash</key>
+		<string>2023</string>
 		<key>cablecar</key>
 		<string>2021</string>
 		<key>cablecar.fill</key>
@@ -3257,6 +3279,8 @@ extension Resource {
 		<string>2023</string>
 		<key>cedisign</key>
 		<string>2022</string>
+		<key>cedisign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>cedisign.circle</key>
 		<string>2019</string>
 		<key>cedisign.circle.fill</key>
@@ -3269,6 +3293,8 @@ extension Resource {
 		<string>2022</string>
 		<key>centsign</key>
 		<string>2022</string>
+		<key>centsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>centsign.circle</key>
 		<string>2019</string>
 		<key>centsign.circle.fill</key>
@@ -3638,6 +3664,8 @@ extension Resource {
 		<key>chevron.up.square.fill</key>
 		<string>2019</string>
 		<key>chineseyuanrenminbisign</key>
+		<string>2023</string>
+		<key>chineseyuanrenminbisign.arrow.circlepath</key>
 		<string>2023</string>
 		<key>chineseyuanrenminbisign.circle</key>
 		<string>2023</string>
@@ -4019,6 +4047,8 @@ extension Resource {
 		<string>2019</string>
 		<key>coloncurrencysign</key>
 		<string>2022</string>
+		<key>coloncurrencysign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>coloncurrencysign.circle</key>
 		<string>2019</string>
 		<key>coloncurrencysign.circle.fill</key>
@@ -4121,6 +4151,8 @@ extension Resource {
 		<string>2020</string>
 		<key>cruzeirosign</key>
 		<string>2022</string>
+		<key>cruzeirosign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>cruzeirosign.circle</key>
 		<string>2019</string>
 		<key>cruzeirosign.circle.fill</key>
@@ -4200,6 +4232,8 @@ extension Resource {
 		<key>d.square.fill</key>
 		<string>2019</string>
 		<key>danishkronesign</key>
+		<string>2023</string>
+		<key>danishkronesign.arrow.circlepath</key>
 		<string>2023</string>
 		<key>danishkronesign.circle</key>
 		<string>2023</string>
@@ -4441,6 +4475,18 @@ extension Resource {
 		<string>2019</string>
 		<key>doc.plaintext.fill</key>
 		<string>2020</string>
+		<key>doc.questionmark</key>
+		<string>2023</string>
+		<key>doc.questionmark.ar</key>
+		<string>2023</string>
+		<key>doc.questionmark.fill</key>
+		<string>2023</string>
+		<key>doc.questionmark.fill.ar</key>
+		<string>2023</string>
+		<key>doc.questionmark.fill.rtl</key>
+		<string>2023</string>
+		<key>doc.questionmark.rtl</key>
+		<string>2023</string>
 		<key>doc.richtext</key>
 		<string>2019</string>
 		<key>doc.richtext.ar</key>
@@ -4529,6 +4575,8 @@ extension Resource {
 		<string>2019</string>
 		<key>dongsign</key>
 		<string>2022</string>
+		<key>dongsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>dongsign.circle</key>
 		<string>2019</string>
 		<key>dongsign.circle.fill</key>
@@ -4589,6 +4637,12 @@ extension Resource {
 		<string>2019</string>
 		<key>dot.radiowaves.up.forward</key>
 		<string>2021</string>
+		<key>dot.scope</key>
+		<string>2023</string>
+		<key>dot.scope.display</key>
+		<string>2023</string>
+		<key>dot.scope.laptopcomputer</key>
+		<string>2023</string>
 		<key>dot.square</key>
 		<string>2019</string>
 		<key>dot.square.fill</key>
@@ -4809,6 +4863,8 @@ extension Resource {
 		<string>2020</string>
 		<key>eurosign</key>
 		<string>2022</string>
+		<key>eurosign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>eurosign.circle</key>
 		<string>2019</string>
 		<key>eurosign.circle.fill</key>
@@ -4818,6 +4874,8 @@ extension Resource {
 		<key>eurosign.square.fill</key>
 		<string>2019</string>
 		<key>eurozonesign</key>
+		<string>2023</string>
+		<key>eurozonesign.arrow.circlepath</key>
 		<string>2023</string>
 		<key>eurozonesign.circle</key>
 		<string>2023</string>
@@ -4913,6 +4971,8 @@ extension Resource {
 		<string>2022</string>
 		<key>exclamationmark.lock.fill</key>
 		<string>2022</string>
+		<key>exclamationmark.magnifyingglass</key>
+		<string>2023</string>
 		<key>exclamationmark.octagon</key>
 		<string>2019</string>
 		<key>exclamationmark.octagon.fill</key>
@@ -5529,6 +5589,8 @@ extension Resource {
 		<string>2020</string>
 		<key>florinsign</key>
 		<string>2022</string>
+		<key>florinsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>florinsign.circle</key>
 		<string>2019</string>
 		<key>florinsign.circle.fill</key>
@@ -5627,6 +5689,8 @@ extension Resource {
 		<string>2022</string>
 		<key>francsign</key>
 		<string>2022</string>
+		<key>francsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>francsign.circle</key>
 		<string>2019</string>
 		<key>francsign.circle.fill</key>
@@ -5726,6 +5790,10 @@ extension Resource {
 		<key>gauge.with.dots.needle.bottom.50percent.badge.minus</key>
 		<string>2023</string>
 		<key>gauge.with.dots.needle.bottom.50percent.badge.plus</key>
+		<string>2023</string>
+		<key>gauge.with.needle</key>
+		<string>2023</string>
+		<key>gauge.with.needle.fill</key>
 		<string>2023</string>
 		<key>gear</key>
 		<string>2019</string>
@@ -5931,6 +5999,8 @@ extension Resource {
 		<string>2019</string>
 		<key>guaranisign</key>
 		<string>2022</string>
+		<key>guaranisign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>guaranisign.circle</key>
 		<string>2019</string>
 		<key>guaranisign.circle.fill</key>
@@ -6269,6 +6339,8 @@ extension Resource {
 		<string>2023</string>
 		<key>hourglass</key>
 		<string>2019</string>
+		<key>hourglass.and.lock</key>
+		<string>2023</string>
 		<key>hourglass.badge.plus</key>
 		<string>2020</string>
 		<key>hourglass.bottomhalf.fill</key>
@@ -6309,6 +6381,8 @@ extension Resource {
 		<string>2022.1</string>
 		<key>hryvniasign</key>
 		<string>2022</string>
+		<key>hryvniasign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>hryvniasign.circle</key>
 		<string>2019</string>
 		<key>hryvniasign.circle.fill</key>
@@ -6373,6 +6447,8 @@ extension Resource {
 		<string>2019</string>
 		<key>indianrupeesign</key>
 		<string>2022</string>
+		<key>indianrupeesign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>indianrupeesign.circle</key>
 		<string>2019</string>
 		<key>indianrupeesign.circle.fill</key>
@@ -6645,6 +6721,10 @@ extension Resource {
 		<string>2022.1</string>
 		<key>key.radiowaves.forward.fill</key>
 		<string>2022.1</string>
+		<key>key.radiowaves.forward.slash</key>
+		<string>2023</string>
+		<key>key.radiowaves.forward.slash.fill</key>
+		<string>2023</string>
 		<key>key.slash</key>
 		<string>2023</string>
 		<key>key.slash.fill</key>
@@ -6683,6 +6763,8 @@ extension Resource {
 		<string>2022</string>
 		<key>kipsign</key>
 		<string>2022</string>
+		<key>kipsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>kipsign.circle</key>
 		<string>2019</string>
 		<key>kipsign.circle.fill</key>
@@ -6825,6 +6907,8 @@ extension Resource {
 		<string>2019</string>
 		<key>larisign</key>
 		<string>2022</string>
+		<key>larisign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>larisign.circle</key>
 		<string>2019</string>
 		<key>larisign.circle.fill</key>
@@ -7077,6 +7161,8 @@ extension Resource {
 		<string>2019</string>
 		<key>lirasign</key>
 		<string>2022</string>
+		<key>lirasign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>lirasign.circle</key>
 		<string>2019</string>
 		<key>lirasign.circle.fill</key>
@@ -7411,6 +7497,8 @@ extension Resource {
 		<string>2020</string>
 		<key>manatsign</key>
 		<string>2022</string>
+		<key>manatsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>manatsign.circle</key>
 		<string>2019</string>
 		<key>manatsign.circle.fill</key>
@@ -7573,6 +7661,8 @@ extension Resource {
 		<string>2022</string>
 		<key>millsign</key>
 		<string>2022</string>
+		<key>millsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>millsign.circle</key>
 		<string>2019</string>
 		<key>millsign.circle.fill</key>
@@ -7811,6 +7901,8 @@ extension Resource {
 		<string>2019</string>
 		<key>nairasign</key>
 		<string>2022</string>
+		<key>nairasign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>nairasign.circle</key>
 		<string>2019</string>
 		<key>nairasign.circle.fill</key>
@@ -7834,6 +7926,8 @@ extension Resource {
 		<key>newspaper.fill</key>
 		<string>2020</string>
 		<key>norwegiankronesign</key>
+		<string>2023</string>
+		<key>norwegiankronesign.arrow.circlepath</key>
 		<string>2023</string>
 		<key>norwegiankronesign.circle</key>
 		<string>2023</string>
@@ -8085,6 +8179,10 @@ extension Resource {
 		<string>2019</string>
 		<key>pencil.and.ellipsis.rectangle</key>
 		<string>2019</string>
+		<key>pencil.and.list.clipboard</key>
+		<string>2023</string>
+		<key>pencil.and.list.clipboard.rtl</key>
+		<string>2023</string>
 		<key>pencil.and.outline</key>
 		<string>2019</string>
 		<key>pencil.and.ruler</key>
@@ -8365,6 +8463,8 @@ extension Resource {
 		<string>2019</string>
 		<key>pesetasign</key>
 		<string>2022</string>
+		<key>pesetasign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>pesetasign.circle</key>
 		<string>2019</string>
 		<key>pesetasign.circle.fill</key>
@@ -8375,6 +8475,8 @@ extension Resource {
 		<string>2019</string>
 		<key>pesosign</key>
 		<string>2022</string>
+		<key>pesosign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>pesosign.circle</key>
 		<string>2019</string>
 		<key>pesosign.circle.fill</key>
@@ -8732,6 +8834,8 @@ extension Resource {
 		<key>point.topleft.filled.down.to.point.bottomright.curvepath</key>
 		<string>2023</string>
 		<key>polishzlotysign</key>
+		<string>2023</string>
+		<key>polishzlotysign.arrow.circlepath</key>
 		<string>2023</string>
 		<key>polishzlotysign.circle</key>
 		<string>2023</string>
@@ -9275,8 +9379,6 @@ extension Resource {
 		<string>2019</string>
 		<key>rectangle.grid.3x2.fill</key>
 		<string>2019</string>
-		<key>rectangle.inset.badge.record</key>
-		<string>2023</string>
 		<key>rectangle.inset.bottomleading.filled</key>
 		<string>2021</string>
 		<key>rectangle.inset.bottomleft.fill</key>
@@ -9293,8 +9395,12 @@ extension Resource {
 		<string>2020</string>
 		<key>rectangle.inset.filled</key>
 		<string>2021</string>
+		<key>rectangle.inset.filled.and.cursorarrow</key>
+		<string>2023</string>
 		<key>rectangle.inset.filled.and.person.filled</key>
 		<string>2021</string>
+		<key>rectangle.inset.filled.badge.record</key>
+		<string>2023</string>
 		<key>rectangle.inset.filled.on.rectangle</key>
 		<string>2021</string>
 		<key>rectangle.inset.topleading.filled</key>
@@ -9339,6 +9445,8 @@ extension Resource {
 		<string>2019</string>
 		<key>rectangle.on.rectangle.angled</key>
 		<string>2019</string>
+		<key>rectangle.on.rectangle.badge.gearshape</key>
+		<string>2023</string>
 		<key>rectangle.on.rectangle.button.angledtop.vertical.left</key>
 		<string>2023</string>
 		<key>rectangle.on.rectangle.button.angledtop.vertical.left.fill</key>
@@ -9689,6 +9797,8 @@ extension Resource {
 		<string>2020</string>
 		<key>rublesign</key>
 		<string>2022</string>
+		<key>rublesign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>rublesign.circle</key>
 		<string>2019</string>
 		<key>rublesign.circle.fill</key>
@@ -9703,6 +9813,8 @@ extension Resource {
 		<string>2020</string>
 		<key>rupeesign</key>
 		<string>2022</string>
+		<key>rupeesign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>rupeesign.circle</key>
 		<string>2019</string>
 		<key>rupeesign.circle.fill</key>
@@ -9805,6 +9917,8 @@ extension Resource {
 		<string>2022</string>
 		<key>shekelsign</key>
 		<string>2022</string>
+		<key>shekelsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>shekelsign.circle</key>
 		<string>2020</string>
 		<key>shekelsign.circle.fill</key>
@@ -10637,6 +10751,8 @@ extension Resource {
 		<string>2022.1</string>
 		<key>sterlingsign</key>
 		<string>2022</string>
+		<key>sterlingsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>sterlingsign.circle</key>
 		<string>2019</string>
 		<key>sterlingsign.circle.fill</key>
@@ -10861,6 +10977,8 @@ extension Resource {
 		<string>2022</string>
 		<key>swedishkronasign</key>
 		<string>2023</string>
+		<key>swedishkronasign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>swedishkronasign.circle</key>
 		<string>2023</string>
 		<key>swedishkronasign.circle.fill</key>
@@ -10871,6 +10989,8 @@ extension Resource {
 		<string>2023</string>
 		<key>swift</key>
 		<string>2020</string>
+		<key>swiftdata</key>
+		<string>2023</string>
 		<key>swirl.circle.righthalf.filled</key>
 		<string>2023</string>
 		<key>swirl.circle.righthalf.filled.inverse</key>
@@ -10975,6 +11095,8 @@ extension Resource {
 		<string>2020</string>
 		<key>tengesign</key>
 		<string>2022</string>
+		<key>tengesign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>tengesign.circle</key>
 		<string>2019</string>
 		<key>tengesign.circle.fill</key>
@@ -11525,6 +11647,8 @@ extension Resource {
 		<string>2021</string>
 		<key>tugriksign</key>
 		<string>2022</string>
+		<key>tugriksign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>tugriksign.circle</key>
 		<string>2019</string>
 		<key>tugriksign.circle.fill</key>
@@ -11537,6 +11661,8 @@ extension Resource {
 		<string>2019</string>
 		<key>turkishlirasign</key>
 		<string>2022</string>
+		<key>turkishlirasign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>turkishlirasign.circle</key>
 		<string>2019</string>
 		<key>turkishlirasign.circle.fill</key>
@@ -11941,6 +12067,8 @@ extension Resource {
 		<string>2022</string>
 		<key>wonsign</key>
 		<string>2022</string>
+		<key>wonsign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>wonsign.circle</key>
 		<string>2019</string>
 		<key>wonsign.circle.fill</key>
@@ -12041,6 +12169,8 @@ extension Resource {
 		<string>2019</string>
 		<key>yensign</key>
 		<string>2022</string>
+		<key>yensign.arrow.circlepath</key>
+		<string>2023</string>
 		<key>yensign.circle</key>
 		<string>2019</string>
 		<key>yensign.circle.fill</key>

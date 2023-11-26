@@ -31,7 +31,7 @@ class SymbolAvailabilityTests: XCTestCase {
     func testResource() throws {
         let availability = try XCTUnwrap(SymbolAvailability.resource)
         
-        XCTAssertEqual(availability.symbols.count, 6_033)
+        XCTAssertEqual(availability.symbols.count, 6_098)
         
         XCTAssertEqual(availability.symbols["14.square.fill"], "2019")
         XCTAssertEqual(availability.symbols["case"], "2020")
