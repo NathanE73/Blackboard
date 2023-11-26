@@ -1736,12 +1736,18 @@ _____
 - australiandollarsign.square (iOS 17.0)
 - australiandollarsign.square.fill (iOS 17.0)
 
+### australiandollarsign.arrow.circlepath
+ (iOS 17.0)
+
 ### australsign
 - australsign (iOS 16.0)
 - australsign.circle (iOS 13.0)
 - australsign.circle.fill (iOS 13.0)
 - australsign.square (iOS 13.0)
 - australsign.square.fill (iOS 13.0)
+
+### australsign.arrow.circlepath
+ (iOS 17.0)
 
 ### auto.brakesignal
  (iOS, introduced: 16.1, deprecated: 17.0, renamed: [automatic.brakesignal](#automaticbrakesignal))
@@ -1883,6 +1889,9 @@ _____
 - bahtsign.square (iOS 13.0)
 - bahtsign.square.fill (iOS 13.0)
 
+### bahtsign.arrow.circlepath
+ (iOS 17.0)
+
 ### balloon
 - balloon (iOS 16.0)
 - balloon.fill (iOS 16.0)
@@ -1987,17 +1996,30 @@ _____
  (iOS 15.0)
 
 ### beats.fit.pro
- (iOS 15.2)
+ (iOS, introduced: 15.2, deprecated: 17.0, renamed: [beats.fitpro](#beatsfitpro))
 
 ### beats.fit.pro.chargingcase
-- beats.fit.pro.chargingcase (iOS 15.2)
-- beats.fit.pro.chargingcase.fill (iOS 15.2)
+- beats.fit.pro.chargingcase (iOS, introduced: 15.2, deprecated: 17.0, renamed: [beats.fitpro.chargingcase](#beatsfitprochargingcase))
+- beats.fit.pro.chargingcase.fill (iOS, introduced: 15.2, deprecated: 17.0, renamed: [beats.fitpro.chargingcase.fill](#beatsfitprochargingcase))
 
 ### beats.fit.pro.left
- (iOS 15.2)
+ (iOS, introduced: 15.2, deprecated: 17.0, renamed: [beats.fitpro.left](#beatsfitproleft))
 
 ### beats.fit.pro.right
- (iOS 15.2)
+ (iOS, introduced: 15.2, deprecated: 17.0, renamed: [beats.fitpro.right](#beatsfitproright))
+
+### beats.fitpro
+ (iOS 17.0)
+
+### beats.fitpro.chargingcase
+- beats.fitpro.chargingcase (iOS 17.0)
+- beats.fitpro.chargingcase.fill (iOS 17.0)
+
+### beats.fitpro.left
+ (iOS 17.0)
+
+### beats.fitpro.right
+ (iOS 17.0)
 
 ### beats.headphones
  (iOS 15.0)
@@ -2130,6 +2152,9 @@ _____
 - bitcoinsign.circle.fill (iOS 13.0)
 - bitcoinsign.square (iOS 13.0)
 - bitcoinsign.square.fill (iOS 13.0)
+
+### bitcoinsign.arrow.circlepath
+ (iOS 17.0)
 
 ### blinds.horizontal.closed
  (iOS 16.0)
@@ -2299,6 +2324,9 @@ _____
 - brazilianrealsign.square (iOS 14.2)
 - brazilianrealsign.square.fill (iOS 14.2)
 
+### brazilianrealsign.arrow.circlepath
+ (iOS 17.0)
+
 ### briefcase
 - briefcase (iOS 13.0)
 - briefcase.fill (iOS 13.0)
@@ -2441,7 +2469,8 @@ _____
  (iOS 17.0)
 
 ### cable.connector
- (iOS 15.0)
+- cable.connector (iOS 15.0)
+- cable.connector.slash (iOS 17.0)
 
 ### cable.connector.horizontal
  (iOS 15.0)
@@ -3002,6 +3031,9 @@ _____
 - cedisign.square (iOS 13.0)
 - cedisign.square.fill (iOS 13.0)
 
+### cedisign.arrow.circlepath
+ (iOS 17.0)
+
 ### cellularbars
  (iOS 16.0)
 
@@ -3011,6 +3043,9 @@ _____
 - centsign.circle.fill (iOS 13.0)
 - centsign.square (iOS 13.0)
 - centsign.square.fill (iOS 13.0)
+
+### centsign.arrow.circlepath
+ (iOS 17.0)
 
 ### chair
 - chair (iOS 16.0)
@@ -3324,6 +3359,9 @@ _____
 - chineseyuanrenminbisign.circle.fill (iOS 17.0)
 - chineseyuanrenminbisign.square (iOS 17.0)
 - chineseyuanrenminbisign.square.fill (iOS 17.0)
+
+### chineseyuanrenminbisign.arrow.circlepath
+ (iOS 17.0)
 
 ### circle
 - circle (iOS 13.0)
@@ -3691,6 +3729,9 @@ _____
 - coloncurrencysign.square (iOS 13.0)
 - coloncurrencysign.square.fill (iOS 13.0)
 
+### coloncurrencysign.arrow.circlepath
+ (iOS 17.0)
+
 ### comb
 - comb (iOS 14.0)
 - comb.fill (iOS 14.0)
@@ -3786,6 +3827,9 @@ _____
 - cruzeirosign.square (iOS 13.0)
 - cruzeirosign.square.fill (iOS 13.0)
 
+### cruzeirosign.arrow.circlepath
+ (iOS 17.0)
+
 ### cube
 - cube (iOS 13.0)
 - cube.fill (iOS 13.0)
@@ -3865,6 +3909,9 @@ _____
 - danishkronesign.circle.fill (iOS 17.0)
 - danishkronesign.square (iOS 17.0)
 - danishkronesign.square.fill (iOS 17.0)
+
+### danishkronesign.arrow.circlepath
+ (iOS 17.0)
 
 ### decrease.indent
  (iOS 13.0)
@@ -4106,6 +4153,14 @@ _____
 - doc.plaintext (iOS 13.0)
 - doc.plaintext.fill (iOS 14.0)
 
+### doc.questionmark
+- doc.questionmark (iOS 17.0)
+- doc.questionmark.ar (iOS 17.0)
+- doc.questionmark.rtl (iOS 17.0)
+- doc.questionmark.fill (iOS 17.0)
+- doc.questionmark.fill.ar (iOS 17.0)
+- doc.questionmark.fill.rtl (iOS 17.0)
+
 ### doc.richtext
 - doc.richtext (iOS 13.0)
 - doc.richtext.ar (iOS 14.0)
@@ -4186,6 +4241,9 @@ _____
 - dongsign.square (iOS 13.0)
 - dongsign.square.fill (iOS 13.0)
 
+### dongsign.arrow.circlepath
+ (iOS 17.0)
+
 ### door.french.closed
  (iOS 16.0)
 
@@ -4263,6 +4321,15 @@ _____
 
 ### dot.radiowaves.up.forward
  (iOS 15.0)
+
+### dot.scope
+ (iOS 17.0)
+
+### dot.scope.display
+ (iOS 17.0)
+
+### dot.scope.laptopcomputer
+ (iOS 17.0)
 
 ### dot.square
 - dot.square (iOS 13.0)
@@ -4494,12 +4561,18 @@ _____
 - eurosign.square (iOS 13.0)
 - eurosign.square.fill (iOS 13.0)
 
+### eurosign.arrow.circlepath
+ (iOS 17.0)
+
 ### eurozonesign
 - eurozonesign (iOS 17.0)
 - eurozonesign.circle (iOS 17.0)
 - eurozonesign.circle.fill (iOS 17.0)
 - eurozonesign.square (iOS 17.0)
 - eurozonesign.square.fill (iOS 17.0)
+
+### eurozonesign.arrow.circlepath
+ (iOS 17.0)
 
 ### ev.charger
 - ev.charger (iOS 17.0)
@@ -4589,6 +4662,9 @@ _____
 ### exclamationmark.lock
 - exclamationmark.lock (iOS 16.0)
 - exclamationmark.lock.fill (iOS 16.0)
+
+### exclamationmark.magnifyingglass
+ (iOS 17.0)
 
 ### exclamationmark.octagon
 - exclamationmark.octagon (iOS 13.0)
@@ -5318,6 +5394,9 @@ _____
 - florinsign.square (iOS 13.0)
 - florinsign.square.fill (iOS 13.0)
 
+### florinsign.arrow.circlepath
+ (iOS 17.0)
+
 ### flowchart
 - flowchart (iOS 13.0)
 - flowchart.fill (iOS 13.0)
@@ -5416,6 +5495,9 @@ _____
 - francsign.circle.fill (iOS 13.0)
 - francsign.square (iOS 13.0)
 - francsign.square.fill (iOS 13.0)
+
+### francsign.arrow.circlepath
+ (iOS 17.0)
 
 ### frying.pan
 - frying.pan (iOS 16.0)
@@ -5528,6 +5610,10 @@ _____
 
 ### gauge.with.dots.needle.bottom.50percent.badge.plus
  (iOS 17.0)
+
+### gauge.with.needle
+- gauge.with.needle (iOS 17.0)
+- gauge.with.needle.fill (iOS 17.0)
 
 ### gear
 - gear (iOS 13.0)
@@ -5722,6 +5808,9 @@ _____
 - guaranisign.circle.fill (iOS 13.0)
 - guaranisign.square (iOS 13.0)
 - guaranisign.square.fill (iOS 13.0)
+
+### guaranisign.arrow.circlepath
+ (iOS 17.0)
 
 ### guitars
 - guitars (iOS 13.0)
@@ -6034,6 +6123,9 @@ _____
 - hourglass.circle (iOS 15.0)
 - hourglass.circle.fill (iOS 15.0)
 
+### hourglass.and.lock
+ (iOS 17.0)
+
 ### hourglass.badge.plus
  (iOS 14.0)
 
@@ -6073,6 +6165,9 @@ _____
 - hryvniasign.circle.fill (iOS 13.0)
 - hryvniasign.square (iOS 13.0)
 - hryvniasign.square.fill (iOS 13.0)
+
+### hryvniasign.arrow.circlepath
+ (iOS 17.0)
 
 ### humidifier
 - humidifier (iOS 16.0)
@@ -6127,6 +6222,9 @@ _____
 - indianrupeesign.circle.fill (iOS 13.0)
 - indianrupeesign.square (iOS 13.0)
 - indianrupeesign.square.fill (iOS 13.0)
+
+### indianrupeesign.arrow.circlepath
+ (iOS 17.0)
 
 ### infinity
 - infinity (iOS 14.0)
@@ -6405,6 +6503,8 @@ _____
 ### key.radiowaves.forward
 - key.radiowaves.forward (iOS 16.1)
 - key.radiowaves.forward.fill (iOS 16.1)
+- key.radiowaves.forward.slash (iOS 17.0)
+- key.radiowaves.forward.slash.fill (iOS 17.0)
 
 ### key.viewfinder
  (iOS 15.4)
@@ -6446,6 +6546,9 @@ _____
 - kipsign.circle.fill (iOS 13.0)
 - kipsign.square (iOS 13.0)
 - kipsign.square.fill (iOS 13.0)
+
+### kipsign.arrow.circlepath
+ (iOS 17.0)
 
 ### kph
 - kph (iOS 16.1)
@@ -6587,6 +6690,9 @@ _____
 - larisign.circle.fill (iOS 13.0)
 - larisign.square (iOS 13.0)
 - larisign.square.fill (iOS 13.0)
+
+### larisign.arrow.circlepath
+ (iOS 17.0)
 
 ### laser.burst
  (iOS 17.0)
@@ -6839,6 +6945,9 @@ _____
 - lirasign.circle.fill (iOS 13.0)
 - lirasign.square (iOS 13.0)
 - lirasign.square.fill (iOS 13.0)
+
+### lirasign.arrow.circlepath
+ (iOS 17.0)
 
 ### list.and.film
  (iOS 14.0)
@@ -7185,6 +7294,9 @@ _____
 - manatsign.square (iOS 13.0)
 - manatsign.square.fill (iOS 13.0)
 
+### manatsign.arrow.circlepath
+ (iOS 17.0)
+
 ### map
 - map (iOS 13.0)
 - map.fill (iOS 13.0)
@@ -7329,6 +7441,9 @@ _____
 - millsign.circle.fill (iOS 13.0)
 - millsign.square (iOS 13.0)
 - millsign.square.fill (iOS 13.0)
+
+### millsign.arrow.circlepath
+ (iOS 17.0)
 
 ### minus
 - minus (iOS 13.0)
@@ -7567,6 +7682,9 @@ _____
 - nairasign.square (iOS 13.0)
 - nairasign.square.fill (iOS 13.0)
 
+### nairasign.arrow.circlepath
+ (iOS 17.0)
+
 ### network
 - network (iOS 14.0)
 - network.slash (iOS 17.0)
@@ -7586,6 +7704,9 @@ _____
 - norwegiankronesign.circle.fill (iOS 17.0)
 - norwegiankronesign.square (iOS 17.0)
 - norwegiankronesign.square.fill (iOS 17.0)
+
+### norwegiankronesign.arrow.circlepath
+ (iOS 17.0)
 
 ### nose
 - nose (iOS 14.0)
@@ -7848,6 +7969,10 @@ _____
 
 ### pencil.and.ellipsis.rectangle
  (iOS, introduced: 13.0, deprecated: 14.0, renamed: [rectangle.and.pencil.and.ellipsis](#rectangleandpencilandellipsis))
+
+### pencil.and.list.clipboard
+- pencil.and.list.clipboard (iOS 17.0)
+- pencil.and.list.clipboard.rtl (iOS 17.0)
 
 ### pencil.and.outline
  (iOS 13.0)
@@ -8142,12 +8267,18 @@ _____
 - pesetasign.square (iOS 13.0)
 - pesetasign.square.fill (iOS 13.0)
 
+### pesetasign.arrow.circlepath
+ (iOS 17.0)
+
 ### pesosign
 - pesosign (iOS 16.0)
 - pesosign.circle (iOS 13.0)
 - pesosign.circle.fill (iOS 13.0)
 - pesosign.square (iOS 13.0)
 - pesosign.square.fill (iOS 13.0)
+
+### pesosign.arrow.circlepath
+ (iOS 17.0)
 
 ### phone
 - phone (iOS 13.0)
@@ -8519,6 +8650,9 @@ _____
 - polishzlotysign.circle.fill (iOS 17.0)
 - polishzlotysign.square (iOS 17.0)
 - polishzlotysign.square.fill (iOS 17.0)
+
+### polishzlotysign.arrow.circlepath
+ (iOS 17.0)
 
 ### popcorn
 - popcorn (iOS 16.0)
@@ -9048,9 +9182,6 @@ _____
 ### rectangle.inset.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [rectangle.inset.filled](#rectangleinsetfilled))
 
-### rectangle.inset.badge.record
- (iOS 17.0)
-
 ### rectangle.inset.bottomleading.filled
  (iOS 15.0)
 
@@ -9072,8 +9203,14 @@ _____
 ### rectangle.inset.filled
  (iOS 15.0)
 
+### rectangle.inset.filled.and.cursorarrow
+ (iOS 17.0)
+
 ### rectangle.inset.filled.and.person.filled
  (iOS 15.0)
+
+### rectangle.inset.filled.badge.record
+ (iOS 17.0)
 
 ### rectangle.inset.filled.on.rectangle
  (iOS 15.0)
@@ -9148,6 +9285,9 @@ _____
 
 ### rectangle.on.rectangle.angled
  (iOS 13.0)
+
+### rectangle.on.rectangle.badge.gearshape
+ (iOS 17.0)
 
 ### rectangle.on.rectangle.button.angledtop.vertical.left
 - rectangle.on.rectangle.button.angledtop.vertical.left (iOS 17.0)
@@ -9526,6 +9666,9 @@ _____
 - rublesign.square (iOS 13.0)
 - rublesign.square.fill (iOS 13.0)
 
+### rublesign.arrow.circlepath
+ (iOS 17.0)
+
 ### ruler
 - ruler (iOS 14.0)
 - ruler.fill (iOS 14.0)
@@ -9536,6 +9679,9 @@ _____
 - rupeesign.circle.fill (iOS 13.0)
 - rupeesign.square (iOS 13.0)
 - rupeesign.square.fill (iOS 13.0)
+
+### rupeesign.arrow.circlepath
+ (iOS 17.0)
 
 ### s
 - s.circle (iOS 13.0)
@@ -9637,6 +9783,9 @@ _____
 - shekelsign.circle.fill (iOS 14.0)
 - shekelsign.square (iOS 14.0)
 - shekelsign.square.fill (iOS 14.0)
+
+### shekelsign.arrow.circlepath
+ (iOS 17.0)
 
 ### sheqelsign
 - sheqelsign.circle (iOS, introduced: 13.0, deprecated: 14.0, renamed: [shekelsign.circle](#shekelsign))
@@ -10540,6 +10689,9 @@ _____
 - sterlingsign.square (iOS 13.0)
 - sterlingsign.square.fill (iOS 13.0)
 
+### sterlingsign.arrow.circlepath
+ (iOS 17.0)
+
 ### stethoscope
 - stethoscope (iOS 14.0)
 - stethoscope.circle (iOS 15.0)
@@ -10740,8 +10892,14 @@ _____
 - swedishkronasign.square (iOS 17.0)
 - swedishkronasign.square.fill (iOS 17.0)
 
+### swedishkronasign.arrow.circlepath
+ (iOS 17.0)
+
 ### swift
  (iOS 14.0)
+
+### swiftdata
+ (iOS 17.0)
 
 ### swirl.circle.righthalf.filled
  (iOS 17.0)
@@ -10840,6 +10998,9 @@ _____
 - tengesign.circle.fill (iOS 13.0)
 - tengesign.square (iOS 13.0)
 - tengesign.square.fill (iOS 13.0)
+
+### tengesign.arrow.circlepath
+ (iOS 17.0)
 
 ### tennis.racket
 - tennis.racket (iOS 16.0)
@@ -11350,6 +11511,9 @@ _____
 - tugriksign.square (iOS 13.0)
 - tugriksign.square.fill (iOS 13.0)
 
+### tugriksign.arrow.circlepath
+ (iOS 17.0)
+
 ### tuningfork
  (iOS 13.0)
 
@@ -11359,6 +11523,9 @@ _____
 - turkishlirasign.circle.fill (iOS 13.0)
 - turkishlirasign.square (iOS 13.0)
 - turkishlirasign.square.fill (iOS 13.0)
+
+### turkishlirasign.arrow.circlepath
+ (iOS 17.0)
 
 ### tv
 - tv (iOS 13.0)
@@ -11778,6 +11945,9 @@ _____
 - wonsign.square (iOS 13.0)
 - wonsign.square.fill (iOS 13.0)
 
+### wonsign.arrow.circlepath
+ (iOS 17.0)
+
 ### wrench
 - wrench (iOS, introduced: 13.0, deprecated: 16.0, renamed: [wrench.adjustable](#wrenchadjustable))
 - wrench.fill (iOS, introduced: 13.0, deprecated: 16.0, renamed: [wrench.adjustable.fill](#wrenchadjustable))
@@ -11867,6 +12037,9 @@ _____
 - yensign.circle.fill (iOS 13.0)
 - yensign.square (iOS 13.0)
 - yensign.square.fill (iOS 13.0)
+
+### yensign.arrow.circlepath
+ (iOS 17.0)
 
 ### yieldsign
 - yieldsign (iOS 17.0)
