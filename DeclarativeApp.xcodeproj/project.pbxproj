@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -191,8 +191,9 @@
 		43B3024022F0CC3100D97542 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "Nathan E. Walczak";
 				TargetAttributes = {
 					43B3024722F0CC3100D97542 = {
@@ -237,6 +238,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		4377FF4F22F0D9E100E275E5 /* Blackboard */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -255,6 +257,7 @@
 		};
 		43A6FE4D250327F60064AFE0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

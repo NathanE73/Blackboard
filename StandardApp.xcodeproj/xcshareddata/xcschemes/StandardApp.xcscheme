@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1500"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43B3024722F0CC3100D97542"
-               BuildableName = "DeclarativeApp.app"
-               BlueprintName = "DeclarativeApp"
-               ReferencedContainer = "container:DeclarativeApp.xcodeproj">
+               BlueprintIdentifier = "43C249A222777EAA00EA6343"
+               BuildableName = "StandardApp.app"
+               BlueprintName = "StandardApp"
+               ReferencedContainer = "container:StandardApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,9 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -44,10 +43,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "43B3024722F0CC3100D97542"
-            BuildableName = "DeclarativeApp.app"
-            BlueprintName = "DeclarativeApp"
-            ReferencedContainer = "container:DeclarativeApp.xcodeproj">
+            BlueprintIdentifier = "43C249A222777EAA00EA6343"
+            BuildableName = "StandardApp.app"
+            BlueprintName = "StandardApp"
+            ReferencedContainer = "container:StandardApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +60,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "43B3024722F0CC3100D97542"
-            BuildableName = "DeclarativeApp.app"
-            BlueprintName = "DeclarativeApp"
-            ReferencedContainer = "container:DeclarativeApp.xcodeproj">
+            BlueprintIdentifier = "43C249A222777EAA00EA6343"
+            BuildableName = "StandardApp.app"
+            BlueprintName = "StandardApp"
+            ReferencedContainer = "container:StandardApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
