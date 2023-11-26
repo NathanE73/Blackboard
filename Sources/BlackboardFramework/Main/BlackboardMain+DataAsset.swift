@@ -32,7 +32,7 @@ extension BlackboardMain {
         let dataSets = DataSetFactory().dataSetsAt(paths: input)
         
         let blackboardData = dataSets.compactMap(BlackboardData.init)
-            .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
+            .sorted { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
         
         guard !blackboardData.isEmpty else {
             return

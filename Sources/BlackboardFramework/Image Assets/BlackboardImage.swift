@@ -27,8 +27,7 @@ import Foundation
 struct BlackboardImage {
     
     var name: String
-    var functionName: String
-    var caseName: String
+    var propertyName: String
     
 }
 
@@ -36,8 +35,9 @@ extension BlackboardImage {
     
     init(_ imageSet: ImageSet) {
         name = imageSet.name
-        functionName = Naming.methodName(from: imageSet.name)
-        caseName = functionName
+        
+        propertyName = Naming.methodName(from: imageSet.name)
+            .removingSuffix("Image")
     }
     
 }

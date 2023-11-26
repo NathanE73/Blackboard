@@ -6,18 +6,22 @@
 
 import Foundation
 
-public enum ColorAsset: String {
-    case absoluteZero = "Absolute Zero"
-    case bisque = "Bisque"
-    case charcoal = "Charcoal"
-    case darkOliveGreen = "dark-olive-green"
-    case desire = "Desire"
-    case emerald = "Emerald"
-    case empty = "Empty"
-    case firebrick = "firebrick-color"
-    case fluorescentBlizzardBlue = "Fluorescent/Blizzard Blue"
-    case fluorescentMagicMint = "Fluorescent/Magic Mint"
-    case fluorescentRadicalRed = "Fluorescent/Radical Red"
-    case maroon = "maroon color"
-    case night = "Night"
+public struct ColorAsset: Hashable {
+    let name: String
+}
+
+public extension ColorAsset {
+    static let absoluteZero = ColorAsset(name: "Absolute Zero")
+    static let bisque = ColorAsset(name: "Bisque")
+    static let charcoal = ColorAsset(name: "Charcoal")
+    static let darkOliveGreen = ColorAsset(name: "dark-olive-green")
+    static let desire = ColorAsset(name: "Desire")
+    static let emerald = ColorAsset(name: "Emerald")
+    static let empty = ColorAsset(name: "Empty")
+    static let firebrick = ColorAsset(name: "firebrick-color")
+    static let fluorescentBlizzardBlue = ColorAsset(name: "Fluorescent/Blizzard Blue")
+    static let fluorescentMagicMint = ColorAsset(name: "Fluorescent/Magic Mint")
+    static let fluorescentRadicalRed = ColorAsset(name: "Fluorescent/Radical Red")
+    static let maroon = ColorAsset(name: "maroon color")
+    static let night = ColorAsset(name: "Night")
 }

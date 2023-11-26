@@ -36,6 +36,10 @@ protocol AssetSetFactory {
 
 extension AssetSetFactory {
     
+    func assetsAt(path: String) -> [AssetSet] {
+        assetsAt(path: path, namespace: nil)
+    }
+    
     func assetsAt(path: String, namespace: String?) -> [AssetSet] {
         let fileManager = FileManager.default
         

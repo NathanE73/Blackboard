@@ -30,13 +30,13 @@ extension SwiftSource {
     
     func appendColorAssets(colors: [BlackboardColor]) -> Self {
         appendHeading(filename: Filename.ColorAsset, modules: ["Foundation"])
-        append("public enum ColorAsset: String") {
+        append("public struct ColorAsset: Hashable") {
+            append("let name: String")
+        }
+        append()
+        append("public extension ColorAsset") {
             colors.forEach { color in
-                if color.caseName == color.name {
-                    append("case \(color.caseName)")
-                } else {
-                    append("case \(color.caseName) = \"\(color.name)\"")
-                }
+                append("static let \(color.propertyName) = ColorAsset(name: \"\(color.name)\")")
             }
         }
         append()
@@ -52,12 +52,12 @@ extension SwiftSource {
         append("public extension Color") {
             append()
             append("init(asset colorAsset: ColorAsset)") {
-                append("self.init(colorAsset.rawValue, bundle: bundle)")
+                append("self.init(colorAsset.name, bundle: bundle)")
             }
             append()
             directive("#if swift(<5.9.0)")
             colors.forEach { color in
-                append("static var \(color.functionName): Color { Color(asset: .\(color.caseName)) }")
+                append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyName)) }")
             }
             directive("#endif")
             append()
@@ -68,7 +68,7 @@ extension SwiftSource {
         append("public extension ShapeStyle where Self == Color") {
             append()
             colors.forEach { color in
-                append("static var \(color.functionName): Color { Color(asset: .\(color.caseName)) }")
+                append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyName)) }")
             }
             append()
         }
@@ -88,7 +88,7 @@ extension SwiftSource {
         append()
         append("public extension CGColor") {
             colors.forEach { color in
-                append("static var \(color.functionName): CGColor { ColorAsset.\(color.functionName).cgColor }")
+                append("static var \(color.propertyName): CGColor { ColorAsset.\(color.propertyName).cgColor }")
             }
         }
         append()
@@ -107,12 +107,12 @@ extension SwiftSource {
         append("public extension UIColor") {
             append()
             append("convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
-                append("self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
+                append("self.init(named: colorAsset.name, in: bundle, compatibleWith: traitCollection)!")
             }
             append()
             directive("#if swift(<5.9.0)")
             colors.forEach { color in
-                append("static var \(color.functionName): UIColor { UIColor(asset: .\(color.caseName)) }")
+                append("static var \(color.propertyName): UIColor { UIColor(asset: .\(color.propertyName)) }")
             }
             directive("#endif")
             append()

@@ -9,7 +9,7 @@ import SwiftUI
 public extension Image {
     
     init(symbol symbolAsset: SymbolAsset) {
-        self.init(systemName: symbolAsset.rawValue)
+        self.init(systemName: symbolAsset.name)
     }
     
     @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "symbolCharacterBookClosed")
@@ -44,11 +44,11 @@ public extension Image {
 public extension Label where Title == Text, Icon == Image {
     
     init(_ titleKey: LocalizedStringKey, symbol symbolAsset: SymbolAsset) {
-        self.init(titleKey, systemImage: symbolAsset.rawValue)
+        self.init(titleKey, systemImage: symbolAsset.name)
     }
     
     init<S>(_ title: S, symbol symbolAsset: SymbolAsset) where S: StringProtocol {
-        self.init(title, systemImage: symbolAsset.rawValue)
+        self.init(title, systemImage: symbolAsset.name)
     }
     
 }

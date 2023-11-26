@@ -22,7 +22,7 @@ public extension ImageAsset {
 public extension UIImage {
     
     convenience init(asset imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
-        self.init(named: imageAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
+        self.init(named: imageAsset.name, in: bundle, compatibleWith: traitCollection)!
     }
     
 #if swift(<5.9.0)

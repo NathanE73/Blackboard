@@ -30,13 +30,13 @@ extension SwiftSource {
     
     func appendDataAssets(data: [BlackboardData]) -> Self {
         appendHeading(filename: Filename.DataAsset, modules: ["Foundation"])
-        append("public enum DataAsset: String") {
+        append("public struct DataAsset: Hashable") {
+            append("let name: String")
+        }
+        append()
+        append("public extension DataAsset") {
             data.forEach { data in
-                if data.caseName == data.name {
-                    append("case \(data.caseName)")
-                } else {
-                    append("case \(data.caseName) = \"\(data.name)\"")
-                }
+                append("static let \(data.propertyName) = DataAsset(name: \"\(data.name)\")")
             }
         }
         append()
@@ -56,7 +56,7 @@ extension SwiftSource {
         append("public extension NSDataAsset") {
             append()
             append("convenience init(asset dataAsset: DataAsset)") {
-                append("self.init(name: dataAsset.rawValue, bundle: bundle)!")
+                append("self.init(name: dataAsset.name, bundle: bundle)!")
             }
             append()
         }

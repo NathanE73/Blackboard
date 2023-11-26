@@ -13,15 +13,15 @@ public extension SymbolAsset {
 public extension UIImage {
     
     convenience init(symbol symbolAsset: SymbolAsset) {
-        self.init(systemName: symbolAsset.rawValue)!
+        self.init(systemName: symbolAsset.name)!
     }
     
     convenience init(symbol symbolAsset: SymbolAsset, withConfiguration configuration: UIImage.Configuration?) {
-        self.init(systemName: symbolAsset.rawValue, withConfiguration: configuration)!
+        self.init(systemName: symbolAsset.name, withConfiguration: configuration)!
     }
     
     convenience init(symbol symbolAsset: SymbolAsset, compatibleWith traitCollection: UITraitCollection?) {
-        self.init(systemName: symbolAsset.rawValue, compatibleWith: traitCollection)!
+        self.init(systemName: symbolAsset.name, compatibleWith: traitCollection)!
     }
     
     @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "symbolCharacterBookClosed")

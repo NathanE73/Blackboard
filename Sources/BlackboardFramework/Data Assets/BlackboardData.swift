@@ -27,7 +27,7 @@ import Foundation
 struct BlackboardData {
     
     var name: String
-    var caseName: String
+    var propertyName: String
     
 }
 
@@ -36,7 +36,7 @@ extension BlackboardData {
     init(_ dataSet: DataSet) {
         name = dataSet.name
         
-        caseName = Naming.methodName(from: dataSet.name)
+        propertyName = Naming.methodName(from: dataSet.name)
             .removingSuffix("Data")
     }
     

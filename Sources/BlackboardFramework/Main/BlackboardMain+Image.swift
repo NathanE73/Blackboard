@@ -32,7 +32,7 @@ extension BlackboardMain {
         let imageSets = ImageSetFactory().imageSetsAt(paths: input)
         
         let blackboardImages = imageSets.compactMap(BlackboardImage.init)
-            .sorted { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
+            .sorted { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
         
         guard !blackboardImages.isEmpty else {
             return []

@@ -6,30 +6,34 @@
 
 import Foundation
 
-public enum SymbolAsset: String {
+public struct SymbolAsset: Hashable {
+    let name: String
+}
+
+public extension SymbolAsset {
     @available(iOS, introduced: 14.0, deprecated: 14.2, renamed: "characterBookClosed")
-    case aBookClosed = "a.book.closed"
+    static let aBookClosed = SymbolAsset(name: "a.book.closed")
     @available(iOS 14.0, *)
-    case `case`
+    static let `case` = SymbolAsset(name: "case")
     @available(iOS 14.0, *)
-    case caseFill = "case.fill"
+    static let caseFill = SymbolAsset(name: "case.fill")
     @available(iOS 14.2, *)
-    case characterBookClosed = "character.book.closed"
-    case chevronDown = "chevron.down"
-    case chevronUp = "chevron.up"
+    static let characterBookClosed = SymbolAsset(name: "character.book.closed")
+    static let chevronDown = SymbolAsset(name: "chevron.down")
+    static let chevronUp = SymbolAsset(name: "chevron.up")
     @available(iOS 14.0, *)
-    case dieFace1 = "die.face.1"
+    static let dieFace1 = SymbolAsset(name: "die.face.1")
     @available(iOS 14.0, *)
-    case dieFace4 = "die.face.4"
+    static let dieFace4 = SymbolAsset(name: "die.face.4")
     @available(iOS 14.2, *)
-    case infinityCircleFill = "infinity.circle.fill"
-    case minusCircleFill = "minus.circle.fill"
-    case number14SquareFill = "14.square.fill"
-    case person
-    case person2 = "person.2"
-    case plusCircleFill = "plus.circle.fill"
-    case `repeat`
+    static let infinityCircleFill = SymbolAsset(name: "infinity.circle.fill")
+    static let minusCircleFill = SymbolAsset(name: "minus.circle.fill")
+    static let number14SquareFill = SymbolAsset(name: "14.square.fill")
+    static let person = SymbolAsset(name: "person")
+    static let person2 = SymbolAsset(name: "person.2")
+    static let plusCircleFill = SymbolAsset(name: "plus.circle.fill")
+    static let `repeat` = SymbolAsset(name: "repeat")
     @available(iOS 14.2, *)
-    case repeatCircle = "repeat.circle"
-    case `return`
+    static let repeatCircle = SymbolAsset(name: "repeat.circle")
+    static let `return` = SymbolAsset(name: "return")
 }

@@ -6,12 +6,16 @@
 
 import Foundation
 
-public enum ImageAsset: String {
-    case button
-    case greenPaperClip = "green-paper-clip"
-    case greenPencil = "green-pencil"
-    case redCup = "Red/cup"
-    case redStapler = "Red/stapler"
-    case silverPaperClip = "silver-paper-clip"
-    case whiteDice = "white-dice"
+public struct ImageAsset: Hashable {
+    let name: String
+}
+
+public extension ImageAsset {
+    static let button = ImageAsset(name: "button")
+    static let greenPaperClip = ImageAsset(name: "green-paper-clip")
+    static let greenPencil = ImageAsset(name: "green-pencil")
+    static let redCup = ImageAsset(name: "Red/cup")
+    static let redStapler = ImageAsset(name: "Red/stapler")
+    static let silverPaperClip = ImageAsset(name: "silver-paper-clip")
+    static let whiteDice = ImageAsset(name: "white-dice")
 }

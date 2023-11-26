@@ -45,14 +45,14 @@ extension SwiftSource {
     func appendSymbolAssets(symbols: [BlackboardSymbol], target: Version) -> Self {
         appendHeading(filename: Filename.SymbolAsset, modules: ["Foundation"])
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
-        append("public enum SymbolAsset: String") {
+        append("public struct SymbolAsset: Hashable") {
+            append("let name: String")
+        }
+        append()
+        append("public extension SymbolAsset") {
             symbols.sorted(by: \.caseName).forEach { symbol in
                 appendSymbolAvailability(symbol.iOSAvailability, target: target)
-                if symbol.caseName == symbol.name {
-                    append("case \(Naming.escapeKeyword(symbol.caseName))")
-                } else {
-                    append("case \(symbol.caseName) = \"\(symbol.name)\"")
-                }
+                append("static let \(Naming.escapeKeyword(symbol.caseName)) = SymbolAsset(name: \"\(symbol.name)\")")
             }
         }
         append()
@@ -68,7 +68,7 @@ extension SwiftSource {
         append("public extension Image") {
             append()
             append("init(symbol symbolAsset: SymbolAsset)") {
-                append("self.init(systemName: symbolAsset.rawValue)")
+                append("self.init(systemName: symbolAsset.name)")
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
@@ -84,11 +84,11 @@ extension SwiftSource {
             append("public extension Label where Title == Text, Icon == Image") {
                 append()
                 append("init(_ titleKey: LocalizedStringKey, symbol symbolAsset: SymbolAsset)") {
-                    append("self.init(titleKey, systemImage: symbolAsset.rawValue)")
+                    append("self.init(titleKey, systemImage: symbolAsset.name)")
                 }
                 append()
                 append("init<S>(_ title: S, symbol symbolAsset: SymbolAsset) where S: StringProtocol") {
-                    append("self.init(title, systemImage: symbolAsset.rawValue)")
+                    append("self.init(title, systemImage: symbolAsset.name)")
                 }
                 append()
             }
@@ -111,15 +111,15 @@ extension SwiftSource {
         append("public extension UIImage") {
             append()
             append("convenience init(symbol symbolAsset: SymbolAsset)") {
-                append("self.init(systemName: symbolAsset.rawValue)!")
+                append("self.init(systemName: symbolAsset.name)!")
             }
             append()
             append("convenience init(symbol symbolAsset: SymbolAsset, withConfiguration configuration: UIImage.Configuration?)") {
-                append("self.init(systemName: symbolAsset.rawValue, withConfiguration: configuration)!")
+                append("self.init(systemName: symbolAsset.name, withConfiguration: configuration)!")
             }
             append()
             append("convenience init(symbol symbolAsset: SymbolAsset, compatibleWith traitCollection: UITraitCollection?)") {
-                append("self.init(systemName: symbolAsset.rawValue, compatibleWith: traitCollection)!")
+                append("self.init(systemName: symbolAsset.name, compatibleWith: traitCollection)!")
             }
             append()
             symbols.sorted(by: \.functionName).forEach { symbol in
