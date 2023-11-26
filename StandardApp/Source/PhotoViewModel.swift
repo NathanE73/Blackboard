@@ -41,8 +41,7 @@ class PhotoViewModel {
     }
     
     var anotherImage: UIImage {
-        // swiftlint:disable:next blackboard_uiimage_named
-        UIImage(named: "Red/stapler")!
+        .Red.stapler
     }
     
 }
