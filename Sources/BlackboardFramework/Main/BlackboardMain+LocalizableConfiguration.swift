@@ -52,7 +52,7 @@ extension BlackboardMain.LocalizableConfiguration {
             
             if let includeKeys = localizable.includeKeys,
                let excludeKeys = localizable.excludeKeys,
-               (!includeKeys.isEmpty && !excludeKeys.isEmpty) {
+               !includeKeys.isEmpty && !excludeKeys.isEmpty {
                 throw BlackboardError.invalidLocalizableIncludeAndExcludeProvided
             }
         }

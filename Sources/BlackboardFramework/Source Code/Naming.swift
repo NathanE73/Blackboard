@@ -67,6 +67,7 @@ enum Naming {
     static func name(from identifier: String, prefix: String? = nil) -> String {
         identifier.split { character in
             for unicodeScalar in character.unicodeScalars {
+                // swiftlint:disable:next for_where
                 if !CharacterSet.alphanumerics.contains(unicodeScalar) {
                     return true
                 }
