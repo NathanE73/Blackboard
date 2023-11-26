@@ -73,6 +73,8 @@ extension SwiftSource {
             append()
         }
         
+        append()
+        
         return self
     }
     

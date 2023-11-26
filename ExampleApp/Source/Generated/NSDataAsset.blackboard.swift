@@ -7,8 +7,12 @@
 import UIKit
 
 private let bundle: Bundle = {
+#if SWIFT_PACKAGE
+    Bundle.module
+#else
     class Object: NSObject { }
     return Bundle(for: Object.self)
+#endif
 }()
 
 public extension DataAsset {

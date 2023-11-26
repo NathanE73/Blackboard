@@ -28,7 +28,9 @@ class SwiftSource {
     
     private var lines: [(indentLevel: Int, line: String)] = []
     
-    func append(_ line: String = "") {
+    func append(_ line: String = "", indentLevel: Int? = nil) {
+        let indentLevel = indentLevel ?? self.indentLevel
+        
         if line.isEmpty && line == lines.last?.line {
             return // don't allow multiple blank lines
         }
@@ -106,7 +108,7 @@ extension SwiftSource {
     
     func append(source: String) -> Self {
         source.components(separatedBy: CharacterSet.newlines)
-            .forEach(append)
+            .forEach { append($0) }
         return self
     }
     
@@ -116,6 +118,10 @@ extension SwiftSource {
         block()
         
         insideCommentBlock = false
+    }
+    
+    func directive(_ line: String = "") {
+        append(line, indentLevel: 0)
     }
     
     func appendHeading(filename: String, modules: [String], includeBundle: Bool = false) {
@@ -132,10 +138,16 @@ extension SwiftSource {
         
         if includeBundle {
             append("private let bundle: Bundle = {")
+            directive("#if SWIFT_PACKAGE")
+            indent {
+                append("Bundle.module")
+            }
+            directive("#else")
             indent {
                 append("class Object: NSObject { }")
                 append("return Bundle(for: Object.self)")
             }
+            directive("#endif")
             append("}()")
             append()
         }

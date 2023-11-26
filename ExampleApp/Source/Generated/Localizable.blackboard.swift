@@ -7,8 +7,12 @@
 import Foundation
 
 private let bundle: Bundle = {
+#if SWIFT_PACKAGE
+    Bundle.module
+#else
     class Object: NSObject { }
     return Bundle(for: Object.self)
+#endif
 }()
 
 public enum Localizable: String {

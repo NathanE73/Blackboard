@@ -55,12 +55,15 @@ extension SwiftSource {
                 append("self.init(colorAsset.rawValue, bundle: bundle)")
             }
             append()
+            directive("#if swift(<5.9.0)")
             colors.forEach { color in
                 append("static var \(color.functionName): Color { Color(asset: .\(color.caseName)) }")
             }
+            directive("#endif")
             append()
         }
         append()
+        directive("#if swift(<5.9.0)")
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension ShapeStyle where Self == Color") {
             append()
@@ -69,8 +72,9 @@ extension SwiftSource {
             }
             append()
         }
+        directive("#endif")
         append()
-        
+
         return self
     }
     
@@ -106,9 +110,11 @@ extension SwiftSource {
                 append("self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!")
             }
             append()
+            directive("#if swift(<5.9.0)")
             colors.forEach { color in
                 append("static var \(color.functionName): UIColor { UIColor(asset: .\(color.caseName)) }")
             }
+            directive("#endif")
             append()
         }
         append()

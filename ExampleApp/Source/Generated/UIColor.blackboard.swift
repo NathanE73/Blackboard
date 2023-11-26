@@ -7,8 +7,12 @@
 import UIKit
 
 private let bundle: Bundle = {
+#if SWIFT_PACKAGE
+    Bundle.module
+#else
     class Object: NSObject { }
     return Bundle(for: Object.self)
+#endif
 }()
 
 public extension ColorAsset {
@@ -21,6 +25,7 @@ public extension UIColor {
         self.init(named: colorAsset.rawValue, in: bundle, compatibleWith: traitCollection)!
     }
     
+#if swift(<5.9.0)
     static var absoluteZero: UIColor { UIColor(asset: .absoluteZero) }
     static var bisque: UIColor { UIColor(asset: .bisque) }
     static var charcoal: UIColor { UIColor(asset: .charcoal) }
@@ -34,5 +39,6 @@ public extension UIColor {
     static var fluorescentRadicalRed: UIColor { UIColor(asset: .fluorescentRadicalRed) }
     static var maroon: UIColor { UIColor(asset: .maroon) }
     static var night: UIColor { UIColor(asset: .night) }
+#endif
     
 }
