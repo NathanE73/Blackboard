@@ -25,12 +25,14 @@
 import Foundation
 
 struct ImageSet {
+    var namespace: String?
     var name: String
 }
 
 extension ImageSet {
     
-    init?(name: String, assetImageSet: AssetImageSet) {
+    init?(namespace: String?, name: String, assetImageSet: AssetImageSet) {
+        self.namespace = namespace
         self.name = name
     }
     

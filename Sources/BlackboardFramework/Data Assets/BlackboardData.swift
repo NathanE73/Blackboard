@@ -26,18 +26,23 @@ import Foundation
 
 struct BlackboardData {
     
+    var namespace: String?
     var name: String
     var propertyName: String
+    var resourceName: String
     
 }
 
 extension BlackboardData {
     
     init(_ dataSet: DataSet) {
+        namespace = dataSet.namespace
         name = dataSet.name
         
         propertyName = Naming.methodName(from: dataSet.name)
             .removingSuffix("Data")
+        
+        resourceName = Naming.namespace(from: dataSet.namespace, dataSet.name) ?? dataSet.name
     }
     
 }

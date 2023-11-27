@@ -58,7 +58,7 @@ class Fixture {
             return nil
         }
         
-        return ColorSetFactory().asset(name: name, data: data)
+        return ColorSetFactory().asset(namespace: nil, name: name, data: data)
     }
     
     static func dataSet(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> DataSet? {
@@ -68,7 +68,7 @@ class Fixture {
             return nil
         }
         
-        return DataSetFactory().asset(name: name, data: data)
+        return DataSetFactory().asset(namespace: nil, name: name, data: data)
     }
     
     static func imageSet(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> ImageSet? {
@@ -78,7 +78,7 @@ class Fixture {
             return nil
         }
         
-        return ImageSetFactory().asset(name: name, data: data)
+        return ImageSetFactory().asset(namespace: nil, name: name, data: data)
     }
     
     static func storyboard(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> Storyboard? {

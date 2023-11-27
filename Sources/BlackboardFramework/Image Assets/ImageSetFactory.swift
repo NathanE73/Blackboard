@@ -32,12 +32,12 @@ class ImageSetFactory: AssetSetFactory {
         paths.flatMap(assetsAt(path:))
     }
     
-    func asset(name: String, data: Data) -> ImageSet? {
+    func asset(namespace: String?, name: String, data: Data) -> ImageSet? {
         guard let assetImageSet = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
             return nil
         }
         
-        return ImageSet(name: name, assetImageSet: assetImageSet)
+        return ImageSet(namespace: namespace, name: name, assetImageSet: assetImageSet)
     }
     
 }

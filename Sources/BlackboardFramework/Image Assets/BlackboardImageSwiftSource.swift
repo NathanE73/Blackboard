@@ -36,7 +36,7 @@ extension SwiftSource {
         append()
         append("public extension ImageAsset") {
             images.forEach { image in
-                append("static let \(image.propertyName) = ImageAsset(name: \"\(image.name)\")")
+                append("static let \(image.propertyName) = ImageAsset(name: \"\(image.resourceName)\")")
             }
         }
         append()

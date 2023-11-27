@@ -25,12 +25,14 @@
 import Foundation
 
 struct ColorSet {
+    var namespace: String?
     var name: String
 }
 
 extension ColorSet {
     
-    init?(name: String, assetColorSet: AssetColorSet) {
+    init?(namespace: String?, name: String, assetColorSet: AssetColorSet) {
+        self.namespace = namespace
         self.name = name
     }
     

@@ -36,7 +36,7 @@ extension SwiftSource {
         append()
         append("public extension ColorAsset") {
             colors.forEach { color in
-                append("static let \(color.propertyName) = ColorAsset(name: \"\(color.name)\")")
+                append("static let \(color.propertyName) = ColorAsset(name: \"\(color.resourceName)\")")
             }
         }
         append()

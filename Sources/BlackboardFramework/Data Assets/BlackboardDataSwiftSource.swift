@@ -36,7 +36,7 @@ extension SwiftSource {
         append()
         append("public extension DataAsset") {
             data.forEach { data in
-                append("static let \(data.propertyName) = DataAsset(name: \"\(data.name)\")")
+                append("static let \(data.propertyName) = DataAsset(name: \"\(data.resourceName)\")")
             }
         }
         append()

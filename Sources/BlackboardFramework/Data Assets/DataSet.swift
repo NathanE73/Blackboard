@@ -25,12 +25,14 @@
 import Foundation
 
 struct DataSet {
+    var namespace: String?
     var name: String
 }
 
 extension DataSet {
     
-    init?(name: String, assetDataSet: AssetDataSet) {
+    init?(namespace: String?, name: String, assetDataSet: AssetDataSet) {
+        self.namespace = namespace
         self.name = name
     }
     

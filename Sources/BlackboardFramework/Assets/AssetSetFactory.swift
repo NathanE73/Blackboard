@@ -30,7 +30,7 @@ protocol AssetSetFactory {
     
     var pathExtension: String { get }
     
-    func asset(name: String, data: Data) -> AssetSet?
+    func asset(namespace: String?, name: String, data: Data) -> AssetSet?
     
 }
 
@@ -77,9 +77,9 @@ extension AssetSetFactory {
             return nil
         }
         
-        let name = Naming.namespace(from: namespace, url.lastPathComponent.deletingPathExtension)!
+        let name = url.lastPathComponent.deletingPathExtension
         
-        return asset(name: name, data: data)
+        return asset(namespace: namespace, name: name, data: data)
     }
     
     func providesNamespaceAt(path: String) -> Bool {

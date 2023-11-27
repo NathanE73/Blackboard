@@ -32,12 +32,12 @@ class ColorSetFactory: AssetSetFactory {
         paths.flatMap(assetsAt(path:))
     }
     
-    func asset(name: String, data: Data) -> ColorSet? {
+    func asset(namespace: String?, name: String, data: Data) -> ColorSet? {
         guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
             return nil
         }
         
-        return ColorSet(name: name, assetColorSet: assetColorSet)
+        return ColorSet(namespace: namespace, name: name, assetColorSet: assetColorSet)
     }
     
 }
