@@ -28,11 +28,8 @@ import XCTest
 
 class BlackboardColorTests: XCTestCase {
     
-    func testAbsoluteZero() {
-        guard let colorSet = Fixture.colorSet(project: .shared, path: "Dark", name: "Absolute Zero") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testAbsoluteZero() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "Absolute Zero")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -40,11 +37,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "absoluteZero")
     }
     
-    func testBisque() {
-        guard let colorSet = Fixture.colorSet(project: .shared, name: "Bisque") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testBisque() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, name: "Bisque")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -52,11 +46,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "bisque")
     }
     
-    func testCharcoal() {
-        guard let colorSet = Fixture.colorSet(project: .shared, path: "Dark", name: "Charcoal") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testCharcoal() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "Charcoal")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -64,11 +55,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "charcoal")
     }
     
-    func testDarkOliveGreen() {
-        guard let colorSet = Fixture.colorSet(project: .shared, path: "Dark", name: "dark-olive-green") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testDarkOliveGreen() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "dark-olive-green")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -76,11 +64,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "darkOliveGreen")
     }
     
-    func testDesire() {
-        guard let colorSet = Fixture.colorSet(project: .shared, name: "Desire") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testDesire() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, name: "Desire")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -88,11 +73,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "desire")
     }
     
-    func testEmerald() {
-        guard let colorSet = Fixture.colorSet(project: .shared, name: "Emerald") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testEmerald() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, name: "Emerald")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -100,11 +82,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "emerald")
     }
     
-    func testEmpty() {
-        guard let colorSet = Fixture.colorSet(project: .shared, name: "Empty") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testEmpty() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, name: "Empty")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -112,11 +91,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "empty")
     }
     
-    func testFirebrick() {
-        guard let colorSet = Fixture.colorSet(project: .shared, path: "Dark", name: "firebrick-color") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testFirebrick() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "firebrick-color")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -124,11 +100,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "firebrick")
     }
     
-    func testMaroon() {
-        guard let colorSet = Fixture.colorSet(project: .shared, path: "Dark", name: "maroon color") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testMaroon() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "maroon color")
         
         let blackboardColor = BlackboardColor(colorSet)
         
@@ -136,11 +109,8 @@ class BlackboardColorTests: XCTestCase {
         XCTAssertEqual(blackboardColor.propertyName, "maroon")
     }
     
-    func testNight() {
-        guard let colorSet = Fixture.colorSet(project: .shared, path: "Dark", name: "Night") else {
-            XCTFail("Unable to decode color set data")
-            return
-        }
+    func testNight() throws {
+        let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "Night")
         
         let blackboardColor = BlackboardColor(colorSet)
         

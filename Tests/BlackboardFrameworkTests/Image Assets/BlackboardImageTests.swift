@@ -28,11 +28,8 @@ import XCTest
 
 class BlackboardImageTests: XCTestCase {
     
-    func testButton() {
-        guard let imageSet = Fixture.imageSet(project: .shared, name: "button") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testButton() throws {
+        let imageSet = try Fixture.imageSet(project: .shared, name: "button")
         
         let blackboardImage = BlackboardImage(imageSet)
         
@@ -40,11 +37,8 @@ class BlackboardImageTests: XCTestCase {
         XCTAssertEqual(blackboardImage.propertyName, "button")
     }
     
-    func testGreenPaperClip() {
-        guard let imageSet = Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testGreenPaperClip() throws {
+        let imageSet = try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip")
         
         let blackboardImage = BlackboardImage(imageSet)
         
@@ -52,11 +46,8 @@ class BlackboardImageTests: XCTestCase {
         XCTAssertEqual(blackboardImage.propertyName, "greenPaperClip")
     }
     
-    func testGreenPencil() {
-        guard let imageSet = Fixture.imageSet(project: .shared, name: "green-pencil") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testGreenPencil() throws {
+        let imageSet = try Fixture.imageSet(project: .shared, name: "green-pencil")
         
         let blackboardImage = BlackboardImage(imageSet)
         
@@ -64,11 +55,8 @@ class BlackboardImageTests: XCTestCase {
         XCTAssertEqual(blackboardImage.propertyName, "greenPencil")
     }
     
-    func testRedCup() {
-        guard let imageSet = Fixture.imageSet(project: .shared, name: "Red/cup") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testRedCup() throws {
+        let imageSet = try Fixture.imageSet(project: .shared, name: "Red/cup")
         
         let blackboardImage = BlackboardImage(imageSet)
         
@@ -76,11 +64,8 @@ class BlackboardImageTests: XCTestCase {
         XCTAssertEqual(blackboardImage.propertyName, "redCup")
     }
     
-    func testRedStapler() {
-        guard let imageSet = Fixture.imageSet(project: .shared, name: "Red/stapler") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testRedStapler() throws {
+        let imageSet = try Fixture.imageSet(project: .shared, name: "Red/stapler")
         
         let blackboardImage = BlackboardImage(imageSet)
         
@@ -88,11 +73,8 @@ class BlackboardImageTests: XCTestCase {
         XCTAssertEqual(blackboardImage.propertyName, "redStapler")
     }
     
-    func testSilverPaperClip() {
-        guard let imageSet = Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testSilverPaperClip() throws {
+        let imageSet = try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip")
         
         let blackboardImage = BlackboardImage(imageSet)
         
@@ -100,11 +82,8 @@ class BlackboardImageTests: XCTestCase {
         XCTAssertEqual(blackboardImage.propertyName, "silverPaperClip")
     }
     
-    func testWhiteDice() {
-        guard let imageSet = Fixture.imageSet(project: .shared, name: "white-dice") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testWhiteDice() throws {
+        let imageSet = try Fixture.imageSet(project: .shared, name: "white-dice")
         
         let blackboardImage = BlackboardImage(imageSet)
         

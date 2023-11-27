@@ -24,9 +24,13 @@
 
 import Foundation
 
-struct ImageSet {
+struct ImageSet: Asset {
     var namespace: String?
     var name: String
+    
+    var resourceName: String {
+        Naming.namespace(from: namespace, name)
+    }
 }
 
 extension ImageSet {

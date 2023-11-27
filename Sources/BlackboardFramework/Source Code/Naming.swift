@@ -83,14 +83,25 @@ enum Naming {
         .joined()
     }
     
-    static func namespace(from namespaces: String?...) -> String? {
-        let namespaces = namespaces.compactMap { $0 }
-        
-        if namespaces.isEmpty {
-            return nil
-        }
-        
-        return namespaces.joined(separator: "/")
+    static func namespace(from namespaces: String?...) -> String {
+        namespaces
+            .compactMap { $0 }
+            .joined(separator: "/")
     }
     
+    static func lastNamespaceName(from namespace: String) -> String {
+        guard let lastNamespaceComponent = namespace.split(separator: "/").last else { return "" }
+        return Naming.name(from: String(lastNamespaceComponent))
+    }
+    
+    static func propertyPath(namespace: String?, propertyName: String) -> String {
+        if let namespace = namespace {
+            let namespace = namespace
+                .split(separator: "/")
+                .map { Naming.name(from: String($0)) }
+                .joined(separator: ".")
+            return namespace + "." + propertyName
+        }
+        return propertyName
+    }
 }

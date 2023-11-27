@@ -24,9 +24,13 @@
 
 import Foundation
 
-struct DataSet {
+struct DataSet: Asset {
     var namespace: String?
     var name: String
+    
+    var resourceName: String {
+        Naming.namespace(from: namespace, name)
+    }
 }
 
 extension DataSet {

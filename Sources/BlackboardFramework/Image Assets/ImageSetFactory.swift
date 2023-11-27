@@ -28,10 +28,6 @@ class ImageSetFactory: AssetSetFactory {
     
     let pathExtension = "imageset"
     
-    func imageSetsAt(paths: [String]) -> [ImageSet] {
-        paths.flatMap(assetsAt(path:))
-    }
-    
     func asset(namespace: String?, name: String, data: Data) -> ImageSet? {
         guard let assetImageSet = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
             return nil

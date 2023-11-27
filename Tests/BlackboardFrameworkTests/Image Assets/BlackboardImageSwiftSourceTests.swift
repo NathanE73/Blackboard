@@ -28,28 +28,28 @@ import XCTest
 
 class BlackboardImageSwiftSourceTests: XCTestCase {
     
-    var blackboardImages: [BlackboardImage] {
-        let imageSets: [ImageSet?] = [
-            Fixture.imageSet(project: .shared, name: "button"),
-            Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip"),
-            Fixture.imageSet(project: .shared, name: "green-pencil"),
-            Fixture.imageSet(project: .shared, name: "Red/cup"),
-            Fixture.imageSet(project: .shared, name: "Red/stapler"),
-            Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip"),
-            Fixture.imageSet(project: .shared, name: "white-dice")
-        ]
-        
-        var blackboardImages = imageSets
-            .compactMap { $0 }
-            .compactMap(BlackboardImage.init)
-        
-        blackboardImages.sort { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
-        
-        return blackboardImages
+    var blackboardImages: [AssetItem<BlackboardImage>] {
+        do {
+            let imageSets: [AssetItem<ImageSet>] = [
+                .asset(try Fixture.imageSet(project: .shared, name: "button")),
+                .asset(try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip")),
+                .asset(try Fixture.imageSet(project: .shared, name: "green-pencil")),
+                .namespace("Red", [
+                    .asset(try Fixture.imageSet(project: .shared, namespace: "Red", name: "stapler")),
+                    .asset(try Fixture.imageSet(project: .shared, namespace: "Red", name: "cup"))
+                ].sorted()),
+                .asset(try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip")),
+                .asset(try Fixture.imageSet(project: .shared, name: "white-dice"))
+            ].sorted()
+            
+            return imageSets.mapAssets(BlackboardImage.init)
+        } catch {
+            return []
+        }
     }
     
     func testNumberOfImages() {
-        XCTAssertEqual(blackboardImages.count, 7)
+        XCTAssertEqual(blackboardImages.flatMapAssets().count, 7)
     }
     
     func testImageAssetSource() {

@@ -24,12 +24,14 @@
 
 import Foundation
 
-struct BlackboardColor {
+struct BlackboardColor: Asset {
     
     var namespace: String?
     var name: String
-    var propertyName: String
+    
     var resourceName: String
+    var propertyName: String
+    var propertyPath: String
     
 }
 
@@ -39,10 +41,12 @@ extension BlackboardColor {
         namespace = colorSet.namespace
         name = colorSet.name
         
+        resourceName = colorSet.resourceName
+        
         propertyName = Naming.methodName(from: colorSet.name)
             .removingSuffix("Color")
         
-        resourceName = Naming.namespace(from: colorSet.namespace, colorSet.name) ?? colorSet.name
+        propertyPath = Naming.propertyPath(namespace: namespace, propertyName: propertyName)
     }
     
 }

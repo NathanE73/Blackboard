@@ -24,13 +24,15 @@
 
 import Foundation
 
-struct BlackboardData {
+struct BlackboardData: Asset {
     
     var namespace: String?
     var name: String
-    var propertyName: String
-    var resourceName: String
     
+    var resourceName: String
+    var propertyName: String
+    var propertyPath: String
+
 }
 
 extension BlackboardData {
@@ -39,10 +41,12 @@ extension BlackboardData {
         namespace = dataSet.namespace
         name = dataSet.name
         
+        resourceName = dataSet.resourceName
+        
         propertyName = Naming.methodName(from: dataSet.name)
             .removingSuffix("Data")
         
-        resourceName = Naming.namespace(from: dataSet.namespace, dataSet.name) ?? dataSet.name
+        propertyPath = Naming.propertyPath(namespace: namespace, propertyName: propertyName)
     }
     
 }

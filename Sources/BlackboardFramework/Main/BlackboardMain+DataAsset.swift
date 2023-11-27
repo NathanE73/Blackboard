@@ -29,10 +29,9 @@ extension BlackboardMain {
     func processDataAssets(_ input: [String], _ output: String) {
         guard !skipDataAssets else { return }
         
-        let dataSets = DataSetFactory().dataSetsAt(paths: input)
+        let dataSets = DataSetFactory().assetItemsAt(paths: input)
         
-        let blackboardData = dataSets.compactMap(BlackboardData.init)
-            .sorted { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
+        let blackboardData = dataSets.mapAssets(BlackboardData.init)
         
         guard !blackboardData.isEmpty else {
             return

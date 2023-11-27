@@ -70,6 +70,17 @@ class NamingTests: XCTestCase {
         XCTAssertEqual(Naming.namespace(from: "Fluorescent", "Radical Red"), "Fluorescent/Radical Red")
     }
     
+    func testLastNamespaceName() {
+        XCTAssertEqual(Naming.lastNamespaceName(from: "Fluorescent/Radical Red"), "RadicalRed")
+        XCTAssertEqual(Naming.lastNamespaceName(from: "One/Two/Three/Blue"), "Blue")
+    }
+    
+    func testPropertyPath() {
+        XCTAssertEqual(Naming.propertyPath(namespace: nil, propertyName: "absoluteZero"), "absoluteZero")
+        XCTAssertEqual(Naming.propertyPath(namespace: "Fluorescent", propertyName: "radicalRed"), "Fluorescent.radicalRed")
+        XCTAssertEqual(Naming.propertyPath(namespace: "Alpha/beta", propertyName: "darkRed"), "Alpha.Beta.darkRed")
+    }
+    
     func testSymbolCaseName() {
         XCTAssertEqual(Naming.methodName(from: "14.square.fill"), "number14SquareFill")
         XCTAssertEqual(Naming.methodName(from: "case"), "case")

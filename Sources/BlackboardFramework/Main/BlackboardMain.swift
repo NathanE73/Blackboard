@@ -161,13 +161,18 @@ public struct BlackboardMain {
         let imageSets = processImages(input, output)
         let localizables = processLocalizable(input, output)
         
+        // Validate
+        
+        let knownNamedColors = Set(colorSets.flatMapAssets().map(\.resourceName))
+        let knownNamedImages = Set(imageSets.flatMapAssets().map(\.resourceName))
+        
         // Validate Storyboard Resources
         
-        valiateStoryboards(storyboards, colorSets, imageSets)
+        valiateStoryboards(storyboards, knownNamedColors, knownNamedImages)
         
         // Valiate Nib Resources
         
-        valiateNibs(input, colorSets, imageSets)
+        valiateNibs(input, knownNamedColors, knownNamedImages)
         
         // Validate Localizable Resources
         
