@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name           = 'Blackboard'
-  s.version        = '11.0.0-rc.1'
+  s.version        = '11.0.0'
   s.summary        = 'An iOS Storyboard and Asset Manager'
   s.homepage       = 'https://github.com/NathanE73/Blackboard'
   s.license        = { :type => 'MIT', :file => 'LICENSE' }
