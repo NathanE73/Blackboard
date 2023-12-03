@@ -42,10 +42,7 @@ extension BlackboardColor {
         name = colorSet.name
         
         resourceName = colorSet.resourceName
-        
-        propertyName = Naming.methodName(from: colorSet.name)
-            .removingSuffix("Color")
-        
+        propertyName = colorSet.propertyName
         propertyPath = Naming.propertyPath(namespace: namespace, propertyName: propertyName)
     }
     

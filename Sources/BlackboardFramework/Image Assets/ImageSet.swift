@@ -31,6 +31,11 @@ struct ImageSet: Asset {
     var resourceName: String {
         Naming.namespace(from: namespace, name)
     }
+    
+    var propertyName: String {
+        Naming.methodName(from: name)
+            .removingSuffix("Image")
+    }
 }
 
 extension ImageSet {

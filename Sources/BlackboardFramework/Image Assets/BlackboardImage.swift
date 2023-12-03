@@ -42,10 +42,7 @@ extension BlackboardImage {
         name = imageSet.name
         
         resourceName = imageSet.resourceName
-        
-        propertyName = Naming.methodName(from: imageSet.name)
-            .removingSuffix("Image")
-        
+        propertyName = imageSet.propertyName
         propertyPath = Naming.propertyPath(namespace: namespace, propertyName: propertyName)
     }
     

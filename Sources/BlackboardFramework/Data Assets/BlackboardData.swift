@@ -42,10 +42,7 @@ extension BlackboardData {
         name = dataSet.name
         
         resourceName = dataSet.resourceName
-        
-        propertyName = Naming.methodName(from: dataSet.name)
-            .removingSuffix("Data")
-        
+        propertyName = dataSet.propertyName
         propertyPath = Naming.propertyPath(namespace: namespace, propertyName: propertyName)
     }
     

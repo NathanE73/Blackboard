@@ -27,6 +27,7 @@ import Foundation
 protocol Asset {
     var namespace: String? { get }
     var name: String { get }
+    var propertyName: String { get }
 }
 
 indirect enum AssetItem<A: Asset> {
@@ -39,11 +40,11 @@ extension AssetItem: Comparable {
     static func < (lhs: AssetItem<A>, rhs: AssetItem<A>) -> Bool {
         switch (lhs, rhs) {
         case let (.asset(lhs), .asset(rhs)):
-            return lhs.name.localizedCaseInsensitiveCompare(rhs.name) == .orderedAscending
+            return lhs.propertyName.localizedCaseInsensitiveCompare(rhs.propertyName) == .orderedAscending
         case let (.asset(lhs), .namespace(rhs, _)):
-            return lhs.name.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
+            return lhs.propertyName.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
         case let (.namespace(lhs, _), .asset(rhs)):
-            return lhs.localizedCaseInsensitiveCompare(rhs.name) == .orderedAscending
+            return lhs.localizedCaseInsensitiveCompare(rhs.propertyName) == .orderedAscending
         case let (.namespace(lhs, _), .namespace(rhs, _)):
             return lhs.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
         }
