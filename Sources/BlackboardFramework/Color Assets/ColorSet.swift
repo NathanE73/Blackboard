@@ -24,13 +24,24 @@
 
 import Foundation
 
-struct ColorSet {
+struct ColorSet: Asset {
+    var namespace: String?
     var name: String
+    
+    var resourceName: String {
+        Naming.namespace(from: namespace, name)
+    }
+    
+    var propertyName: String {
+        Naming.methodName(from: name)
+            .removingSuffix("Color")
+    }
 }
 
 extension ColorSet {
     
-    init?(name: String, assetColorSet: AssetColorSet) {
+    init?(namespace: String?, name: String, assetColorSet: AssetColorSet) {
+        self.namespace = namespace
         self.name = name
     }
     

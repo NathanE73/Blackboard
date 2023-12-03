@@ -26,13 +26,12 @@ import Foundation
 
 extension BlackboardMain {
     
-    func processColors(_ input: [String], _ output: String) -> [ColorSet] {
+    func processColors(_ input: [String], _ output: String) -> [AssetItem<ColorSet>] {
         guard !skipColors else { return [] }
         
-        let colorSets = ColorSetFactory().colorSetsAt(paths: input)
+        let colorSets = ColorSetFactory().assetItemsAt(paths: input)
         
-        var blackboardColors = colorSets.compactMap(BlackboardColor.init)
-        blackboardColors.sort { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
+        let blackboardColors = colorSets.mapAssets(BlackboardColor.init)
         
         guard !blackboardColors.isEmpty else {
             return []

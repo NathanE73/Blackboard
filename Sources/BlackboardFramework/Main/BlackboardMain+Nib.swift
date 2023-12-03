@@ -26,13 +26,10 @@ import Foundation
 
 extension BlackboardMain {
     
-    func valiateNibs(_ input: [String], _ colorSets: [ColorSet], _ imageSets: [ImageSet]) {
+    func valiateNibs(_ input: [String], _ knownNamedColors: Set<String>, _ knownNamedImages: Set<String>) {
         guard !skipValidation && !skipNibValidation else { return }
         
         let nibs = Nib.nibsAt(paths: input)
-        
-        let knownNamedColors = Set(colorSets.map(\.name))
-        let knownNamedImages = Set(imageSets.map(\.name))
         
         nibs.forEach { nib in
             if !skipColors {

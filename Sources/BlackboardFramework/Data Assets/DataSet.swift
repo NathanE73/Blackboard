@@ -24,13 +24,24 @@
 
 import Foundation
 
-struct DataSet {
+struct DataSet: Asset {
+    var namespace: String?
     var name: String
+    
+    var resourceName: String {
+        Naming.namespace(from: namespace, name)
+    }
+    
+    var propertyName: String {
+        Naming.methodName(from: name)
+            .removingSuffix("Data")
+    }
 }
 
 extension DataSet {
     
-    init?(name: String, assetDataSet: AssetDataSet) {
+    init?(namespace: String?, name: String, assetDataSet: AssetDataSet) {
+        self.namespace = namespace
         self.name = name
     }
     

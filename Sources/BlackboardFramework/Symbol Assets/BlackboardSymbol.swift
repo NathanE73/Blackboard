@@ -36,9 +36,9 @@ extension BlackboardSymbol {
     init(name: String, iOSAvailability: Availability) {
         self.name = name
         
-        functionName = Naming.methodName(from: name, prefix: "symbol")
+        functionName = Naming.methodName(from: name, numberPrefix: true, prefix: "symbol")
         
-        caseName = Naming.methodName(from: name)
+        caseName = Naming.methodName(from: name, numberPrefix: true)
         
         self.iOSAvailability = iOSAvailability
     }

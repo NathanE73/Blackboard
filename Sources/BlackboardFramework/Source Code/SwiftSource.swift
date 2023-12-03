@@ -153,4 +153,18 @@ extension SwiftSource {
         }
     }
     
+    func appendAssetItems<Asset>(_ assetItems: [AssetItem<Asset>], block: (_ asset: Asset) -> Void) {
+        assetItems.forEach { asset in
+            switch asset {
+            case let .asset(asset):
+                block(asset)
+            case let .namespace(namespace, assets):
+                let namespace = Naming.lastNamespaceName(from: namespace)
+                append("enum \(namespace)") {
+                    appendAssetItems(assets, block: block)
+                }
+            }
+        }
+    }
+    
 }

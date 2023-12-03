@@ -26,13 +26,12 @@ import Foundation
 
 extension BlackboardMain {
     
-    func processImages(_ input: [String], _ output: String) -> [ImageSet] {
+    func processImages(_ input: [String], _ output: String) -> [AssetItem<ImageSet>] {
         guard !skipImages else { return [] }
         
-        let imageSets = ImageSetFactory().imageSetsAt(paths: input)
+        let imageSets = ImageSetFactory().assetItemsAt(paths: input)
         
-        let blackboardImages = imageSets.compactMap(BlackboardImage.init)
-            .sorted { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
+        let blackboardImages = imageSets.mapAssets(BlackboardImage.init)
         
         guard !blackboardImages.isEmpty else {
             return []

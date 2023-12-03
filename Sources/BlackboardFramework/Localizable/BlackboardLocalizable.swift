@@ -38,7 +38,7 @@ extension BlackboardLocalizable {
         self.key = key
         self.values = values
         
-        functionName = Naming.methodName(from: key)
+        functionName = Naming.methodName(from: key, numberPrefix: true)
         
         caseName = functionName
     }

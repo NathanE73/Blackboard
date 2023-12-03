@@ -28,35 +28,26 @@ import XCTest
 
 class BlackboardDataTests: XCTestCase {
     
-    func testLevel001() {
-        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/001") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testLevel001() throws {
+        let dataSet = try Fixture.dataSet(project: .shared, name: "Level/N001")
 
         let blackboardData = BlackboardData(dataSet)
         
-        XCTAssertEqual(blackboardData.name, "Level/001")
-        XCTAssertEqual(blackboardData.propertyName, "level001")
+        XCTAssertEqual(blackboardData.name, "Level/N001")
+        XCTAssertEqual(blackboardData.propertyName, "levelN001")
     }
     
-    func testLevel002() {
-        guard let dataSet = Fixture.dataSet(project: .shared, name: "Level/002") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testLevel002() throws {
+        let dataSet = try Fixture.dataSet(project: .shared, name: "Level/N002")
         
         let blackboardData = BlackboardData(dataSet)
         
-        XCTAssertEqual(blackboardData.name, "Level/002")
-        XCTAssertEqual(blackboardData.propertyName, "level002")
+        XCTAssertEqual(blackboardData.name, "Level/N002")
+        XCTAssertEqual(blackboardData.propertyName, "levelN002")
     }
     
-    func testNames() {
-        guard let dataSet = Fixture.dataSet(project: .shared, name: "Names") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testNames() throws {
+        let dataSet = try Fixture.dataSet(project: .shared, name: "Names")
         
         let blackboardData = BlackboardData(dataSet)
         
@@ -64,11 +55,8 @@ class BlackboardDataTests: XCTestCase {
         XCTAssertEqual(blackboardData.propertyName, "names")
     }
     
-    func testWelcomeMessage() {
-        guard let dataSet = Fixture.dataSet(project: .shared, name: "Welcome Message") else {
-            XCTFail("Unable to decode image set data")
-            return
-        }
+    func testWelcomeMessage() throws {
+        let dataSet = try Fixture.dataSet(project: .shared, name: "Welcome Message")
         
         let blackboardData = BlackboardData(dataSet)
         

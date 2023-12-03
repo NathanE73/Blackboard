@@ -49,10 +49,10 @@ enum Naming {
         keywords.contains(identifier) ? "`\(identifier)`" : identifier
     }
     
-    static func methodName(from identifier: String, prefix: String? = nil) -> String {
+    static func methodName(from identifier: String, numberPrefix: Bool = false, prefix: String? = nil) -> String {
         var name = identifier
         
-        if name.startsWithDecimalDigit {
+        if numberPrefix, name.startsWithDecimalDigit {
             name = "number\(name)"
         }
         
@@ -60,8 +60,14 @@ enum Naming {
             name = "\(prefix).\(name)"
         }
         
-        return self.name(from: name, prefix: prefix)
+        name = self.name(from: name, prefix: prefix)
             .firstCharacterLowercased
+        
+        if !numberPrefix, name.startsWithDecimalDigit {
+            name = "_\(name)"
+        }
+        
+        return name
     }
     
     static func name(from identifier: String, prefix: String? = nil) -> String {
@@ -83,14 +89,30 @@ enum Naming {
         .joined()
     }
     
-    static func namespace(from namespaces: String?...) -> String? {
-        let namespaces = namespaces.compactMap { $0 }
-        
-        if namespaces.isEmpty {
-            return nil
-        }
-        
-        return namespaces.joined(separator: "/")
+    static func namespace(from namespaces: String?...) -> String {
+        namespaces
+            .compactMap { $0 }
+            .joined(separator: "/")
     }
     
+    static func namespaceName(from namespace: String) -> String {
+        let name = Naming.name(from: namespace)
+        return name.startsWithDecimalDigit ? "_\(name)" : name
+    }
+    
+    static func lastNamespaceName(from namespace: String) -> String {
+        guard let lastNamespaceComponent = namespace.split(separator: "/").last else { return "" }
+        return namespaceName(from: String(lastNamespaceComponent))
+    }
+    
+    static func propertyPath(namespace: String?, propertyName: String) -> String {
+        if let namespace = namespace {
+            let namespace = namespace
+                .split(separator: "/")
+                .map { Naming.namespaceName(from: String($0)) }
+                .joined(separator: ".")
+            return namespace + "." + propertyName
+        }
+        return propertyName
+    }
 }

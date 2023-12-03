@@ -28,15 +28,15 @@ extension SwiftSource {
     
     // MARK: Data Assets
     
-    func appendDataAssets(data: [BlackboardData]) -> Self {
+    func appendDataAssets(data: [AssetItem<BlackboardData>]) -> Self {
         appendHeading(filename: Filename.DataAsset, modules: ["Foundation"])
         append("public struct DataAsset: Hashable") {
             append("let name: String")
         }
         append()
         append("public extension DataAsset") {
-            data.forEach { data in
-                append("static let \(data.propertyName) = DataAsset(name: \"\(data.name)\")")
+            appendAssetItems(data) { data in
+                append("static let \(data.propertyName) = DataAsset(name: \"\(data.resourceName)\")")
             }
         }
         append()
@@ -46,7 +46,7 @@ extension SwiftSource {
     
     // MARK: NSDataAsset
     
-    func appendNSDataAsset(data: [BlackboardData]) -> Self {
+    func appendNSDataAsset(data: [AssetItem<BlackboardData>]) -> Self {
         appendHeading(filename: Filename.NSDataAsset, modules: ["UIKit"], includeBundle: true)
         append("public extension DataAsset") {
             append("var dataAsset: NSDataAsset { NSDataAsset(asset: self) }")

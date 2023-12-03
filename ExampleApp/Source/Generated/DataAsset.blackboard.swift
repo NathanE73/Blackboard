@@ -11,8 +11,10 @@ public struct DataAsset: Hashable {
 }
 
 public extension DataAsset {
-    static let level001 = DataAsset(name: "Level/001")
-    static let level002 = DataAsset(name: "Level/002")
+    enum Level {
+        static let n001 = DataAsset(name: "Level/N001")
+        static let n002 = DataAsset(name: "Level/N002")
+    }
     static let names = DataAsset(name: "Names")
     static let welcomeMessage = DataAsset(name: "Welcome Message")
 }

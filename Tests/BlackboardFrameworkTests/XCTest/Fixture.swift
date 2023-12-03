@@ -25,6 +25,10 @@
 import XCTest
 @testable import BlackboardFramework
 
+enum FixtureError: Error {
+    case missingResource
+}
+
 class Fixture {
     
     enum Project {
@@ -51,34 +55,37 @@ class Fixture {
         return String(data: data, encoding: .utf8)
     }
     
-    static func colorSet(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> ColorSet? {
-        let path = "\(project.path)/Resources/Colors.xcassets/\(path ?? ".")/\(name).colorset/Contents.json"
+    static func colorSet(project: Project, path: String? = nil, namespace: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) throws -> ColorSet {
+        let path = "\(project.path)/Resources/Colors.xcassets/\(path ?? ".")/\(namespace ?? "")/\(name).colorset/Contents.json"
         
-        guard let data = fixture(path, file: file, line: line) else {
-            return nil
+        if let data = fixture(path, file: file, line: line),
+           let colorSet = ColorSetFactory().asset(namespace: namespace, name: name, data: data) {
+            return colorSet
         }
         
-        return ColorSetFactory().asset(name: name, data: data)
+        throw FixtureError.missingResource
     }
     
-    static func dataSet(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> DataSet? {
-        let path = "\(project.path)/Resources/Data.xcassets/\(path ?? ".")/\(name).dataset/Contents.json"
+    static func dataSet(project: Project, path: String? = nil, namespace: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) throws-> DataSet {
+        let path = "\(project.path)/Resources/Data.xcassets/\(path ?? ".")/\(namespace ?? "")/\(name).dataset/Contents.json"
         
-        guard let data = fixture(path, file: file, line: line) else {
-            return nil
+        if let data = fixture(path, file: file, line: line),
+           let dataSet = DataSetFactory().asset(namespace: namespace, name: name, data: data){
+            return dataSet
         }
         
-        return DataSetFactory().asset(name: name, data: data)
+        throw FixtureError.missingResource
     }
     
-    static func imageSet(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> ImageSet? {
-        let path = "\(project.path)/Resources/Images.xcassets/\(path ?? ".")/\(name).imageset/Contents.json"
+    static func imageSet(project: Project, path: String? = nil, namespace: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) throws-> ImageSet {
+        let path = "\(project.path)/Resources/Images.xcassets/\(path ?? ".")/\(namespace ?? "")/\(name).imageset/Contents.json"
         
-        guard let data = fixture(path, file: file, line: line) else {
-            return nil
+        if let data = fixture(path, file: file, line: line),
+           let imageSet = ImageSetFactory().asset(namespace: namespace, name: name, data: data) {
+            return imageSet
         }
         
-        return ImageSetFactory().asset(name: name, data: data)
+        throw FixtureError.missingResource
     }
     
     static func storyboard(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> Storyboard? {

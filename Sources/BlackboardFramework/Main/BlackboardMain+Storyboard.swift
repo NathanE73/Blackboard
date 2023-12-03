@@ -53,11 +53,8 @@ extension BlackboardMain {
         return storyboards
     }
     
-    func valiateStoryboards(_ storyboards: [Storyboard], _ colorSets: [ColorSet], _ imageSets: [ImageSet]) {
+    func valiateStoryboards(_ storyboards: [Storyboard], _ knownNamedColors: Set<String>, _ knownNamedImages: Set<String>) {
         guard !skipValidation && !skipStoryboardValidation else { return }
-        
-        let knownNamedColors = Set(colorSets.map(\.name))
-        let knownNamedImages = Set(imageSets.map(\.name))
         
         storyboards.forEach { storyboard in
             if !skipColors {

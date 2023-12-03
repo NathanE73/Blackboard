@@ -28,25 +28,25 @@ import XCTest
 
 class BlackboardDataSwiftSourceTests: XCTestCase {
     
-    var blackboardData: [BlackboardData] {
-        let dataSets: [DataSet?] = [
-            Fixture.dataSet(project: .shared, name: "Level/001"),
-            Fixture.dataSet(project: .shared, name: "Level/002"),
-            Fixture.dataSet(project: .shared, name: "Names"),
-            Fixture.dataSet(project: .shared, name: "Welcome Message")
-        ]
-        
-        var blackboardData = dataSets
-            .compactMap { $0 }
-            .compactMap(BlackboardData.init)
-        
-        blackboardData.sort { $0.propertyName.localizedCaseInsensitiveCompare($1.propertyName) == .orderedAscending }
-        
-        return blackboardData
+    var blackboardData: [AssetItem<BlackboardData>] {
+        do {
+            let dataSets: [AssetItem<DataSet>] = [
+                .namespace("Level", [
+                    .asset(try Fixture.dataSet(project: .shared, namespace: "Level", name: "N002")),
+                    .asset(try Fixture.dataSet(project: .shared, namespace: "Level", name: "N001"))
+                ].sorted()),
+                .asset(try Fixture.dataSet(project: .shared, name: "Welcome Message")),
+                .asset(try Fixture.dataSet(project: .shared, name: "Names"))
+            ].sorted()
+
+            return dataSets.mapAssets(BlackboardData.init)
+        } catch {
+            return []
+        }
     }
     
     func testNumberOfData() {
-        XCTAssertEqual(blackboardData.count, 4)
+        XCTAssertEqual(blackboardData.flatMapAssets().count, 4)
     }
     
     func testDataAssetSource() {

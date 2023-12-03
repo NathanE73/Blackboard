@@ -28,15 +28,15 @@ extension SwiftSource {
     
     // MARK: Image Assets
     
-    func appendImageAssets(images: [BlackboardImage]) -> Self {
+    func appendImageAssets(images: [AssetItem<BlackboardImage>]) -> Self {
         appendHeading(filename: Filename.ImageAsset, modules: ["Foundation"])
         append("public struct ImageAsset: Hashable") {
             append("let name: String")
         }
         append()
         append("public extension ImageAsset") {
-            images.forEach { image in
-                append("static let \(image.propertyName) = ImageAsset(name: \"\(image.name)\")")
+            appendAssetItems(images) { image in
+                append("static let \(image.propertyName) = ImageAsset(name: \"\(image.resourceName)\")")
             }
         }
         append()
@@ -46,7 +46,7 @@ extension SwiftSource {
     
     // MARK: Image
     
-    func appendImages(images: [BlackboardImage], target: Version, sdk: Version) -> Self {
+    func appendImages(images: [AssetItem<BlackboardImage>], target: Version, sdk: Version) -> Self {
         appendHeading(filename: Filename.Image, modules: ["SwiftUI"], includeBundle: true)
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Image") {
@@ -63,11 +63,9 @@ extension SwiftSource {
                 append("self.init(decorative: imageAsset.name, bundle: bundle)")
             }
             append()
-            directive("#if swift(<5.9.0)")
-            images.forEach { image in
-                append("static var \(image.propertyName): Image { Image(asset: .\(image.propertyName)) }")
+            appendAssetItems(images) { image in
+                append("static var \(image.propertyName): Image { Image(asset: .\(image.propertyPath)) }")
             }
-            directive("#endif")
             append()
         }
         append()
@@ -93,7 +91,7 @@ extension SwiftSource {
     
     // MARK: UIImage
     
-    func appendUIImages(images: [BlackboardImage]) -> Self {
+    func appendUIImages(images: [AssetItem<BlackboardImage>]) -> Self {
         appendHeading(filename: Filename.UIImage, modules: ["UIKit"], includeBundle: true)
         append("public extension ImageAsset") {
             append("var image: UIImage { UIImage(asset: self) }")
@@ -106,8 +104,8 @@ extension SwiftSource {
             }
             append()
             directive("#if swift(<5.9.0)")
-            images.forEach { image in
-                append("static var \(image.propertyName): UIImage { UIImage(asset: .\(image.propertyName)) }")
+            appendAssetItems(images) { image in
+                append("static var \(image.propertyName): UIImage { UIImage(asset: .\(image.propertyPath)) }")
             }
             directive("#endif")
             append()

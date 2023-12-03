@@ -26,28 +26,32 @@ import Foundation
 
 protocol AssetSetFactory {
     
-    associatedtype AssetSet
+    associatedtype AssetSet: Asset
     
     var pathExtension: String { get }
     
-    func asset(name: String, data: Data) -> AssetSet?
+    func asset(namespace: String?, name: String, data: Data) -> AssetSet?
     
 }
 
 extension AssetSetFactory {
     
-    func assetsAt(path: String) -> [AssetSet] {
+    func assetItemsAt(paths: [String]) -> [AssetItem<AssetSet>] {
+        paths.flatMap { assetsAt(path: $0) }
+    }
+    
+    func assetsAt(path: String) -> [AssetItem<AssetSet>] {
         assetsAt(path: path, namespace: nil)
     }
     
-    func assetsAt(path: String, namespace: String?) -> [AssetSet] {
+    func assetsAt(path: String, namespace: String?) -> [AssetItem<AssetSet>] {
         let fileManager = FileManager.default
         
         guard let contents = try? fileManager.contentsOfDirectory(atPath: path) else {
             return []
         }
         
-        return contents.flatMap { content -> [AssetSet] in
+        return contents.flatMap { content -> [AssetItem<AssetSet>] in
             let file = path.appendingPathComponent(content)
             
             guard fileManager.isDirectory(file) else {
@@ -56,17 +60,19 @@ extension AssetSetFactory {
             
             if file.pathExtension == pathExtension {
                 if let asset = assetAt(path: file, namespace: namespace) {
-                    return [asset]
+                    return [.asset(asset)]
                 }
                 return []
             }
             
             if providesNamespaceAt(path: file) {
                 let namespace = Naming.namespace(from: namespace, content)
-                return assetsAt(path: file, namespace: namespace)
+                let assets = assetsAt(path: file, namespace: namespace)
+                return assets.isEmpty ? [] : [.namespace(namespace, assets)]
             }
             return assetsAt(path: file, namespace: namespace)
         }
+        .sorted()
     }
     
     func assetAt(path: String, namespace: String?) -> AssetSet? {
@@ -77,9 +83,9 @@ extension AssetSetFactory {
             return nil
         }
         
-        let name = Naming.namespace(from: namespace, url.lastPathComponent.deletingPathExtension)!
+        let name = url.lastPathComponent.deletingPathExtension
         
-        return asset(name: name, data: data)
+        return asset(namespace: namespace, name: name, data: data)
     }
     
     func providesNamespaceAt(path: String) -> Bool {

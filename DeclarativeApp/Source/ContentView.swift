@@ -27,10 +27,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(asset: .redCup, label: Text("Red Cup"))
+            Image(asset: .Red.cup, label: Text("Red Cup"))
             Text("Red Cup")
                 .font(.largeTitle)
-                .foregroundColor(.fluorescentBlizzardBlue)
+                .foregroundColor(.Fluorescent.blizzardBlue)
                 .padding()
                 .background(Color.bisque)
         }
@@ -49,6 +49,18 @@ struct ContentView: View {
     var colorName: Color {
         // swiftlint:disable:next blackboard_color_name
         Color("Absolute Zero")
+    }
+    
+    @ViewBuilder var colors: some View {
+        Color(.bisque)
+        Color(asset: .bisque)
+        Color.bisque
+    }
+    
+    @ViewBuilder var images: some View {
+        Image(.Red.stapler)
+        Image(asset: .Red.stapler)
+        Image.Red.stapler
     }
     
 }

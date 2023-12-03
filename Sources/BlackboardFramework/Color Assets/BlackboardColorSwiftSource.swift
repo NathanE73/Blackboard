@@ -28,15 +28,15 @@ extension SwiftSource {
     
     // MARK: Color Assets
     
-    func appendColorAssets(colors: [BlackboardColor]) -> Self {
+    func appendColorAssets(colors: [AssetItem<BlackboardColor>]) -> Self {
         appendHeading(filename: Filename.ColorAsset, modules: ["Foundation"])
         append("public struct ColorAsset: Hashable") {
             append("let name: String")
         }
         append()
         append("public extension ColorAsset") {
-            colors.forEach { color in
-                append("static let \(color.propertyName) = ColorAsset(name: \"\(color.name)\")")
+            appendAssetItems(colors) { color in
+                append("static let \(color.propertyName) = ColorAsset(name: \"\(color.resourceName)\")")
             }
         }
         append()
@@ -46,7 +46,7 @@ extension SwiftSource {
 
     // MARK: Color
     
-    func appendColors(colors: [BlackboardColor], target: Version) -> Self {
+    func appendColors(colors: [AssetItem<BlackboardColor>], target: Version) -> Self {
         appendHeading(filename: Filename.Color, modules: ["SwiftUI"], includeBundle: true)
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Color") {
@@ -56,8 +56,8 @@ extension SwiftSource {
             }
             append()
             directive("#if swift(<5.9.0)")
-            colors.forEach { color in
-                append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyName)) }")
+            appendAssetItems(colors) { color in
+                append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyPath)) }")
             }
             directive("#endif")
             append()
@@ -67,8 +67,10 @@ extension SwiftSource {
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension ShapeStyle where Self == Color") {
             append()
-            colors.forEach { color in
-                append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyName)) }")
+            colors.forEach { asset in
+                if case let .asset(color) = asset, color.namespace == nil {
+                    append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyPath)) }")
+                }
             }
             append()
         }
@@ -80,17 +82,19 @@ extension SwiftSource {
     
     // MARK: CGColor
     
-    func appendCGColors(colors: [BlackboardColor]) -> Self {
+    func appendCGColors(colors: [AssetItem<BlackboardColor>]) -> Self {
         appendHeading(filename: Filename.CGColor, modules: ["CoreGraphics"])
         append("public extension ColorAsset") {
             append("var cgColor: CGColor { color.cgColor }")
         }
         append()
+        directive("#if swift(<5.9.0)")
         append("public extension CGColor") {
-            colors.forEach { color in
-                append("static var \(color.propertyName): CGColor { ColorAsset.\(color.propertyName).cgColor }")
+            appendAssetItems(colors) { color in
+                append("static var \(color.propertyName): CGColor { ColorAsset.\(color.propertyPath).cgColor }")
             }
         }
+        directive("#endif")
         append()
         
         return self
@@ -98,7 +102,7 @@ extension SwiftSource {
     
     // MARK: UIColor
     
-    func appendUIColors(colors: [BlackboardColor]) -> Self {
+    func appendUIColors(colors: [AssetItem<BlackboardColor>]) -> Self {
         appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: true)
         append("public extension ColorAsset") {
             append("var color: UIColor { UIColor(asset: self) }")
@@ -111,8 +115,8 @@ extension SwiftSource {
             }
             append()
             directive("#if swift(<5.9.0)")
-            colors.forEach { color in
-                append("static var \(color.propertyName): UIColor { UIColor(asset: .\(color.propertyName)) }")
+            appendAssetItems(colors) { color in
+                append("static var \(color.propertyName): UIColor { UIColor(asset: .\(color.propertyPath)) }")
             }
             directive("#endif")
             append()

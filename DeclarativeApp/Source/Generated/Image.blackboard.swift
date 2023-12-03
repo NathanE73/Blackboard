@@ -29,15 +29,15 @@ public extension Image {
         self.init(decorative: imageAsset.name, bundle: bundle)
     }
     
-#if swift(<5.9.0)
     static var button: Image { Image(asset: .button) }
     static var greenPaperClip: Image { Image(asset: .greenPaperClip) }
     static var greenPencil: Image { Image(asset: .greenPencil) }
-    static var redCup: Image { Image(asset: .redCup) }
-    static var redStapler: Image { Image(asset: .redStapler) }
+    enum Red {
+        static var cup: Image { Image(asset: .Red.cup) }
+        static var stapler: Image { Image(asset: .Red.stapler) }
+    }
     static var silverPaperClip: Image { Image(asset: .silverPaperClip) }
     static var whiteDice: Image { Image(asset: .whiteDice) }
-#endif
     
 }
 

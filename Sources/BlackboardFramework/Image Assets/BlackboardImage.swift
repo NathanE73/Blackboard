@@ -24,20 +24,26 @@
 
 import Foundation
 
-struct BlackboardImage {
+struct BlackboardImage: Asset {
     
+    var namespace: String?
     var name: String
-    var propertyName: String
     
+    var resourceName: String
+    var propertyName: String
+    var propertyPath: String
+
 }
 
 extension BlackboardImage {
     
     init(_ imageSet: ImageSet) {
+        namespace = imageSet.namespace
         name = imageSet.name
         
-        propertyName = Naming.methodName(from: imageSet.name)
-            .removingSuffix("Image")
+        resourceName = imageSet.resourceName
+        propertyName = imageSet.propertyName
+        propertyPath = Naming.propertyPath(namespace: namespace, propertyName: propertyName)
     }
     
 }

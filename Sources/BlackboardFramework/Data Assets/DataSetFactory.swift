@@ -28,16 +28,12 @@ class DataSetFactory: AssetSetFactory {
     
     let pathExtension = "dataset"
     
-    func dataSetsAt(paths: [String]) -> [DataSet] {
-        paths.flatMap(assetsAt(path:))
-    }
-    
-    func asset(name: String, data: Data) -> DataSet? {
+    func asset(namespace: String?, name: String, data: Data) -> DataSet? {
         guard let assetDataSet = try? JSONDecoder().decode(AssetDataSet.self, from: data) else {
             return nil
         }
         
-        return DataSet(name: name, assetDataSet: assetDataSet)
+        return DataSet(namespace: namespace, name: name, assetDataSet: assetDataSet)
     }
     
 }

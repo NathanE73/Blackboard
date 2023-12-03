@@ -14,8 +14,10 @@ public extension ImageAsset {
     static let button = ImageAsset(name: "button")
     static let greenPaperClip = ImageAsset(name: "green-paper-clip")
     static let greenPencil = ImageAsset(name: "green-pencil")
-    static let redCup = ImageAsset(name: "Red/cup")
-    static let redStapler = ImageAsset(name: "Red/stapler")
+    enum Red {
+        static let cup = ImageAsset(name: "Red/cup")
+        static let stapler = ImageAsset(name: "Red/stapler")
+    }
     static let silverPaperClip = ImageAsset(name: "silver-paper-clip")
     static let whiteDice = ImageAsset(name: "white-dice")
 }
