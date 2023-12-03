@@ -51,6 +51,18 @@ struct ContentView: View {
         Color("Absolute Zero")
     }
     
+    @ViewBuilder var colors: some View {
+        Color(.bisque)
+        Color(asset: .bisque)
+        Color.bisque
+    }
+    
+    @ViewBuilder var images: some View {
+        Image(.Red.stapler)
+        Image(asset: .Red.stapler)
+        Image.Red.stapler
+    }
+    
 }
 
 #if DEBUG

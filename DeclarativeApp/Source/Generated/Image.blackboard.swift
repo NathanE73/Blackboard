@@ -29,7 +29,6 @@ public extension Image {
         self.init(decorative: imageAsset.name, bundle: bundle)
     }
     
-#if swift(<5.9.0)
     static var button: Image { Image(asset: .button) }
     static var greenPaperClip: Image { Image(asset: .greenPaperClip) }
     static var greenPencil: Image { Image(asset: .greenPencil) }
@@ -39,7 +38,6 @@ public extension Image {
     }
     static var silverPaperClip: Image { Image(asset: .silverPaperClip) }
     static var whiteDice: Image { Image(asset: .whiteDice) }
-#endif
     
 }
 

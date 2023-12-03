@@ -63,11 +63,9 @@ extension SwiftSource {
                 append("self.init(decorative: imageAsset.name, bundle: bundle)")
             }
             append()
-            directive("#if swift(<5.9.0)")
             appendAssetItems(images) { image in
                 append("static var \(image.propertyName): Image { Image(asset: .\(image.propertyPath)) }")
             }
-            directive("#endif")
             append()
         }
         append()
