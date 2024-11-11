@@ -30,7 +30,7 @@ extension SwiftSource {
     
     func appendDataAssets(data: [AssetItem<BlackboardData>]) -> Self {
         appendHeading(filename: Filename.DataAsset, modules: ["Foundation"])
-        append("public struct DataAsset: Hashable") {
+        append("public struct DataAsset: Hashable, Sendable") {
             append("let name: String")
         }
         append()

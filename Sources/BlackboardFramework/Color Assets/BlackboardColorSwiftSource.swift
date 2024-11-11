@@ -30,7 +30,7 @@ extension SwiftSource {
     
     func appendColorAssets(colors: [AssetItem<BlackboardColor>]) -> Self {
         appendHeading(filename: Filename.ColorAsset, modules: ["Foundation"])
-        append("public struct ColorAsset: Hashable") {
+        append("public struct ColorAsset: Hashable, Sendable") {
             append("let name: String")
         }
         append()

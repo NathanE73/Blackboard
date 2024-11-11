@@ -45,7 +45,7 @@ extension SwiftSource {
     func appendSymbolAssets(symbols: [BlackboardSymbol], target: Version) -> Self {
         appendHeading(filename: Filename.SymbolAsset, modules: ["Foundation"])
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
-        append("public struct SymbolAsset: Hashable") {
+        append("public struct SymbolAsset: Hashable, Sendable") {
             append("let name: String")
         }
         append()
