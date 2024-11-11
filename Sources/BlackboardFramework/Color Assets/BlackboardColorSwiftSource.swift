@@ -88,13 +88,11 @@ extension SwiftSource {
             append("var cgColor: CGColor { color.cgColor }")
         }
         append()
-        directive("#if swift(<5.9.0)")
         append("public extension CGColor") {
             appendAssetItems(colors) { color in
                 append("static var \(color.propertyName): CGColor { ColorAsset.\(color.propertyPath).cgColor }")
             }
         }
-        directive("#endif")
         append()
         
         return self

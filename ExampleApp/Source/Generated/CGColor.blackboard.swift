@@ -10,7 +10,6 @@ public extension ColorAsset {
     var cgColor: CGColor { color.cgColor }
 }
 
-#if swift(<5.9.0)
 public extension CGColor {
     static var absoluteZero: CGColor { ColorAsset.absoluteZero.cgColor }
     static var bisque: CGColor { ColorAsset.bisque.cgColor }
@@ -28,4 +27,3 @@ public extension CGColor {
     static var maroon: CGColor { ColorAsset.maroon.cgColor }
     static var night: CGColor { ColorAsset.night.cgColor }
 }
-#endif
