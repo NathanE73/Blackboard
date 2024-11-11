@@ -6,6 +6,7 @@
 
 import UIKit
 
+@MainActor
 private let sharedStoryboardInstance = UIStoryboard(name: "Supported", bundle: nil)
 
 extension EmptyCollectionViewController {
