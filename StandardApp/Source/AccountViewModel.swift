@@ -42,14 +42,11 @@ class AccountViewModel {
     
 }
 
-let formatBalance: ((Double) -> String) = {
+func formatBalance(_ balance: Double) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
-    
-    return { (balance: Double) in
-        formatter.string(from: NSNumber(value: balance)) ?? "\(balance)"
-    }
-}()
+    return formatter.string(from: NSNumber(value: balance)) ?? "\(balance)"
+}
 
 extension AccountViewModel {
     

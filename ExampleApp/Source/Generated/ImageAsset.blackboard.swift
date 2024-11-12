@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ImageAsset: Hashable {
+public struct ImageAsset: Hashable, Sendable {
     let name: String
 }
 

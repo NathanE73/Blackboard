@@ -6,6 +6,7 @@
 
 import UIKit
 
+@MainActor
 private let sharedStoryboardInstance = UIStoryboard(name: "Account", bundle: nil)
 
 extension AccountViewController {

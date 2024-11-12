@@ -28,6 +28,7 @@ extension SwiftSource {
     
     func appendStoryboard(_ storyboard: BlackboardStoryboard) -> Self {
         appendHeading(filename: storyboard.extensionFilename, modules: ["UIKit"])
+        append("@MainActor")
         append("private let sharedStoryboardInstance = UIStoryboard(name: \"\(storyboard.name)\", bundle: nil)")
         append()
         appendViewControllers(storyboard.viewControllers)

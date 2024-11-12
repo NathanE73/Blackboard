@@ -6,6 +6,7 @@
 
 import UIKit
 
+@MainActor
 private let sharedStoryboardInstance = UIStoryboard(name: "Photo", bundle: nil)
 
 extension PhotoViewController {
