@@ -12,7 +12,12 @@ PORTABLE_ZIP=portable-blackboard.zip
 VERSION_FILE=.version
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
-.PHONY: clean build test install portable-zip release get-version set-version git-tag pod-publish publish lint generate resources
+.PHONY: default bootstrap clean build test install portable-zip release get-version set-version git-tag pod-publish publish lint generate resources
+
+default:
+
+bootstrap:
+	mint bootstrap
 
 clean:
 	swift package clean
