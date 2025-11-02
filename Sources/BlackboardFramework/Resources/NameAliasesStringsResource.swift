@@ -216,6 +216,7 @@ extension Resource {
 "cube.box" = "shippingbox";
 "cube.box.fill" = "shippingbox.fill";
 "cursor.rays" = "cursorarrow.rays";
+"cursorarrow" = "cursorarrow.resize.north.east.south.east";
 "danishkronesign.arrow.circlepath" = "danishkronesign.arrow.trianglehead.counterclockwise.rotate.90";
 "dial" = "dial.low";
 "dial.fill" = "dial.low.fill";
@@ -271,10 +272,10 @@ extension Resource {
 "doc.richtext.th" = "richtext.page.th";
 "doc.richtext.zh" = "richtext.page.zh";
 "doc.text" = "text.document";
-"doc.text.below.ecg" = "ecg.text.page";
-"doc.text.below.ecg.fill" = "ecg.text.page.fill";
-"doc.text.below.ecg.fill.rtl" = "ecg.text.page.fill.rtl";
-"doc.text.below.ecg.rtl" = "ecg.text.page.rtl";
+"doc.text.below.ecg" = "waveform.path.ecg.text.page";
+"doc.text.below.ecg.fill" = "waveform.path.ecg.text.page.fill";
+"doc.text.below.ecg.fill.rtl" = "waveform.path.ecg.text.page.fill.rtl";
+"doc.text.below.ecg.rtl" = "waveform.path.ecg.text.page.rtl";
 "doc.text.fill" = "text.document.fill";
 "doc.text.fill.viewfinder" = "document.viewfinder.fill";
 "doc.text.image" = "text.rectangle.page";
@@ -293,6 +294,10 @@ extension Resource {
 "dpad.right.fill" = "dpad.right.filled";
 "dpad.up.fill" = "dpad.up.filled";
 "ear.and.waveform" = "ear.badge.waveform";
+"ecg.text.page" = "waveform.path.ecg.text.page";
+"ecg.text.page.fill" = "waveform.path.ecg.text.page.fill";
+"ecg.text.page.fill.rtl" = "waveform.path.ecg.text.page.fill.rtl";
+"ecg.text.page.rtl" = "waveform.path.ecg.text.page.rtl";
 "ellipses.bubble" = "ellipsis.bubble";
 "ellipses.bubble.fill" = "ellipsis.bubble.fill";
 "envelope.arrow.triangle.branch" = "envelope.and.arrow.trianglehead.branch";
@@ -781,6 +786,8 @@ extension Resource {
 "square.topthird.inset.filled" = "inset.filled.topthird.square";
 "square.trailingthird.inset.filled" = "inset.filled.trailingthird.square";
 "squareshape.dashed.squareshape" = "squareshape.dotted.squareshape";
+"squareshape.dotted.split.2x2" = "squareshape.split.2x2.dotted.inside.and.outside";
+"squareshape.split.2x2.dotted" = "squareshape.split.2x2.dotted.inside";
 "squareshape.squareshape.dashed" = "squareshape.squareshape.dotted";
 "star.fill.left" = "star.leadinghalf.filled";
 "star.leadinghalf.fill" = "star.leadinghalf.filled";
