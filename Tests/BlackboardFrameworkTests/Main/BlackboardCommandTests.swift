@@ -36,9 +36,6 @@ class BlackboardCommandTests: XCTestCase {
         XCTAssertFalse(arguments.skipColors)
         XCTAssertFalse(arguments.skipDataAssets)
         XCTAssertFalse(arguments.skipImages)
-        XCTAssertFalse(arguments.skipNibValidation)
-        XCTAssertFalse(arguments.skipStoryboards)
-        XCTAssertFalse(arguments.skipStoryboardValidation)
         XCTAssertFalse(arguments.skipSwiftUI)
         XCTAssertFalse(arguments.skipSymbols)
         XCTAssertFalse(arguments.skipUIKit)
@@ -68,15 +65,6 @@ class BlackboardCommandTests: XCTestCase {
         
         arguments = BlackboardCommand.parseOrExit(["--skip-images"])
         XCTAssertTrue(arguments.skipImages)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-nib-validation"])
-        XCTAssertTrue(arguments.skipNibValidation)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-storyboards"])
-        XCTAssertTrue(arguments.skipStoryboards)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-storyboard-validation"])
-        XCTAssertTrue(arguments.skipStoryboardValidation)
         
         arguments = BlackboardCommand.parseOrExit(["--skip-swiftui"])
         XCTAssertTrue(arguments.skipSwiftUI)

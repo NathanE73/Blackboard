@@ -43,15 +43,6 @@ struct BlackboardCommand: ParsableCommand {
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
     var skipImages = false
     
-    @Flag(help: "Skip validation of nib resource references")
-    var skipNibValidation = false
-    
-    @Flag(help: "Skip generating storyboard extensions (UIStoryboard)")
-    var skipStoryboards = false
-    
-    @Flag(help: "Skip validation of storyboard resource references")
-    var skipStoryboardValidation = false
-    
     @Flag(name: .customLong("skip-swiftui"),
           help: "Skip generating SwiftUI extensions (Color, Image)")
     var skipSwiftUI = false

@@ -88,16 +88,6 @@ class Fixture {
         throw FixtureError.missingResource
     }
     
-    static func storyboard(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> Storyboard? {
-        let path = "\(project.path)/Resources/Storyboards/Base.lproj/\(name).storyboard"
-        
-        guard let data = fixture(path, file: file, line: line) else {
-            return nil
-        }
-        
-        return Storyboard(file: path, name: name, data: data)
-    }
-    
 }
 
 private func fixture(_ path: String, file: StaticString = #file, line: UInt = #line) -> Data? {

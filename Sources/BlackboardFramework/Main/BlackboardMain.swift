@@ -41,9 +41,6 @@ public struct BlackboardMain {
     var skipColors: Bool
     var skipDataAssets: Bool
     var skipImages: Bool
-    var skipNibValidation: Bool
-    var skipStoryboards: Bool
-    var skipStoryboardValidation: Bool
     var skipSwiftUI: Bool
     var skipSymbols: Bool
     var skipUIKit: Bool
@@ -79,9 +76,6 @@ public struct BlackboardMain {
         self.skipColors = command.skipColors || skips.contains(.colors)
         self.skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
         self.skipImages = command.skipImages || skips.contains(.images)
-        self.skipNibValidation = command.skipNibValidation || skips.contains(.nibValidation)
-        self.skipStoryboards = command.skipStoryboards || skips.contains(.storyboards)
-        self.skipStoryboardValidation = command.skipStoryboardValidation || skips.contains(.storyboardValidation)
         self.skipSwiftUI = command.skipSwiftUI || skips.contains(.swiftui)
         self.skipSymbols = command.skipSymbols || skips.contains(.symbols)
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
@@ -147,7 +141,6 @@ public struct BlackboardMain {
         
         // Process Resources
         
-        let storyboards = processStoryboards(input, output)
         let colorSets = processColors(input, output)
         processDataAssets(input, output)
         let imageSets = processImages(input, output)
@@ -156,14 +149,6 @@ public struct BlackboardMain {
         
         let knownNamedColors = Set(colorSets.flatMapAssets().map(\.resourceName))
         let knownNamedImages = Set(imageSets.flatMapAssets().map(\.resourceName))
-        
-        // Validate Storyboard Resources
-        
-        valiateStoryboards(storyboards, knownNamedColors, knownNamedImages)
-        
-        // Valiate Nib Resources
-        
-        valiateNibs(input, knownNamedColors, knownNamedImages)
     }
     
 }

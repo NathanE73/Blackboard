@@ -164,9 +164,6 @@ class BlackboardConfigurationTests: XCTestCase {
         - colors
         - data-assets
         - images
-        - nib-validation
-        - storyboards
-        - storyboard-validation
         - swiftui
         - symbols
         - uikit
@@ -182,14 +179,11 @@ class BlackboardConfigurationTests: XCTestCase {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
             let skips = try XCTUnwrap(configuration.skips)
-            XCTAssertEqual(skips.count, 13)
+            XCTAssertEqual(skips.count, 10)
             XCTAssertEqual(skips, [
                 .colors,
                 .dataAssets,
                 .images,
-                .nibValidation,
-                .storyboards,
-                .storyboardValidation,
                 .swiftui,
                 .symbols,
                 .uikit,
