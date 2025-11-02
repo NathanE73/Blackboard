@@ -33,7 +33,6 @@ override func collectionView(_ collectionView: UICollectionView, cellForItemAt i
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/PhotosCollectionViewController.swift#L46)
 ```swift
 override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let photoViewModel = photoViewModels[indexPath.item]

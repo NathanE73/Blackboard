@@ -32,7 +32,6 @@ final class func instantiateNavigationControllerFromStoryboard(_ initialize: ((_
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/AccountsTableViewController.swift#L110)
 ```swift
 @IBAction func presentOpenAccount() {
     let storyboard = UIStoryboard(name: "Account", bundle: nil)

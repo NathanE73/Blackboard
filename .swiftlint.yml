@@ -4,7 +4,6 @@ included:
   - DeclarativeApp
   - ExampleApp
   - Sources
-  - StandardApp
 
 excluded:
   - DeclarativeApp/Source/Generated

@@ -25,7 +25,6 @@ func prepareForFooterSegue(_ footerViewController: FooterViewController) {
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/MainViewController.swift#L37)
 ```swift
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let footerViewController = segue.destination as? FooterViewController {

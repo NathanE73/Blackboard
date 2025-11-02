@@ -65,7 +65,6 @@ view.layer.borderColor = .fluorescentBlizzardBlue
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/FooterViewController.swift#L47)
 ```swift
 view.layer.borderColor = UIColor(named: "Fluorescent/Blizzard Blue")?.cgColor
 ```

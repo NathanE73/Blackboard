@@ -1,8 +1,7 @@
 ## Usage
 
-The `ExampleApp` project uses Blackboard.
-The `StandardApp` project is the same as the `ExampleApp` project, except that it does not use Blackboard.
-You compare these to see the difference between using and not using Blackboard.
+The `DeclarativeApp` project uses Blackboard using `SwiftUI`.
+The `ExampleApp` project uses Blackboard using `UIKit`.
 
 - Asset Usage
   - CoreGraphics

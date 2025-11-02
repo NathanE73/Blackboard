@@ -33,7 +33,6 @@ final class func instantiateFromStoryboard(_ initialize: ((_ openAccountViewCont
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/AccountsTableViewController.swift#L118)
 ```swift
 @IBAction func alternativePresentOpenAccount() {
     let storyboard = UIStoryboard(name: "Account", bundle: nil)

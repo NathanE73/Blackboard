@@ -70,7 +70,6 @@ view.backgroundColor = UIColor(asset: .fluorescentMagicMint, compatibleWith: tra
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/FooterViewController.swift#L44)
 ```swift
 view.backgroundColor = UIColor(named: "Fluorescent/Magic Mint")
 view.backgroundColor = UIColor(named: "Fluorescent/Magic Mint", compatibleWith: traitCollection)

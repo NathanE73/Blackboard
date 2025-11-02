@@ -50,7 +50,6 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/AccountsTableViewController.swift#L82)
 ```swift
 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     switch Section(rawValue: indexPath.section)! {

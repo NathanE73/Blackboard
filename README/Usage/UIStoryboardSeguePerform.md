@@ -43,7 +43,6 @@ override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: Inde
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/AccountsTableViewController.swift#L103)
 ```swift
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "Show Account" {

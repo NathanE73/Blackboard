@@ -25,7 +25,6 @@ func shouldPerformPresentPhotoSegue() -> Bool {
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/MainViewController.swift#L69)
 ```swift
 override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
     if identifier == "Present Photo" {
