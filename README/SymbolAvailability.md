@@ -1237,6 +1237,19 @@ _____
 - airpods.gen3.chargingcase.wireless (iOS 15.2)
 - airpods.gen3.chargingcase.wireless.fill (iOS 15.2)
 
+### airpods.gen4
+ (iOS 18.2)
+
+### airpods.gen4.chargingcase.wireless
+- airpods.gen4.chargingcase.wireless (iOS 18.2)
+- airpods.gen4.chargingcase.wireless.fill (iOS 18.2)
+
+### airpods.gen4.left
+ (iOS 18.2)
+
+### airpods.gen4.right
+ (iOS 18.2)
+
 ### airpods.max
  (iOS 18.0)
 
@@ -1413,6 +1426,9 @@ _____
 ### apple.intelligence
  (iOS 18.0)
 
+### apple.intelligence.badge.xmark
+ (iOS 18.5)
+
 ### apple.logo
  (iOS 16.0)
 
@@ -1434,6 +1450,9 @@ _____
 ### apple.terminal.on.rectangle
 - apple.terminal.on.rectangle (iOS 17.0)
 - apple.terminal.on.rectangle.fill (iOS 17.0)
+
+### apple.writing.tools
+ (iOS 18.2)
 
 ### applelogo
  (iOS, introduced: 14.0, deprecated: 16.0, renamed: [apple.logo](#applelogo))
@@ -1608,6 +1627,9 @@ _____
 - arrow.backward.to.line.circle.fill (iOS 15.0)
 - arrow.backward.to.line.square (iOS 17.0)
 - arrow.backward.to.line.square.fill (iOS 17.0)
+
+### arrow.backward.to.line.compact
+ (iOS 18.4)
 
 ### arrow.branch
  (iOS, introduced: 13.0, deprecated: 18.0, renamed: [arrow.trianglehead.branch](#arrowtriangleheadbranch))
@@ -1815,6 +1837,9 @@ _____
 - arrow.forward.to.line.circle.fill (iOS 15.0)
 - arrow.forward.to.line.square (iOS 17.0)
 - arrow.forward.to.line.square.fill (iOS 17.0)
+
+### arrow.forward.to.line.compact
+ (iOS 18.4)
 
 ### arrow.left
 - arrow.left (iOS 13.0)
@@ -2930,6 +2955,19 @@ _____
 ### beats.powerbeats.pro
  (iOS 18.0)
 
+### beats.powerbeats.pro.2
+ (iOS 18.5)
+
+### beats.powerbeats.pro.2.chargingcase
+- beats.powerbeats.pro.2.chargingcase (iOS 18.5)
+- beats.powerbeats.pro.2.chargingcase.fill (iOS 18.5)
+
+### beats.powerbeats.pro.2.left
+ (iOS 18.5)
+
+### beats.powerbeats.pro.2.right
+ (iOS 18.5)
+
 ### beats.powerbeats.pro.chargingcase
 - beats.powerbeats.pro.chargingcase (iOS 18.0)
 - beats.powerbeats.pro.chargingcase.fill (iOS 18.0)
@@ -3204,6 +3242,10 @@ _____
 - bolt.horizontal.icloud (iOS 13.0)
 - bolt.horizontal.icloud.fill (iOS 13.0)
 
+### bolt.house
+- bolt.house (iOS 18.1)
+- bolt.house.fill (iOS 18.1)
+
 ### bolt.ring.closed
  (iOS 15.1)
 
@@ -3461,6 +3503,9 @@ _____
 
 ### cable.connector.horizontal
  (iOS 15.0)
+
+### cable.connector.video
+ (iOS 18.1)
 
 ### cablecar
 - cablecar (iOS 15.0)
@@ -3745,6 +3790,10 @@ _____
 - car.side.and.exclamationmark (iOS 16.1)
 - car.side.and.exclamationmark.fill (iOS 16.1)
 
+### car.side.arrow.left.and.right
+- car.side.arrow.left.and.right (iOS 18.4)
+- car.side.arrow.left.and.right.fill (iOS 18.4)
+
 ### car.side.arrowtriangle.down
 - car.side.arrowtriangle.down (iOS 16.1)
 - car.side.arrowtriangle.down.fill (iOS 16.1)
@@ -3773,6 +3822,10 @@ _____
 - car.side.hill.down (iOS 17.0)
 - car.side.hill.down.fill (iOS 17.0)
 
+### car.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle
+- car.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle (iOS 18.4)
+- car.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill (iOS 18.4)
+
 ### car.side.hill.up
 - car.side.hill.up (iOS 17.0)
 - car.side.hill.up.fill (iOS 17.0)
@@ -3788,6 +3841,12 @@ _____
 ### car.side.rear.and.collision.and.car.side.front
 - car.side.rear.and.collision.and.car.side.front (iOS 17.0)
 - car.side.rear.and.collision.and.car.side.front.slash (iOS 17.0)
+
+### car.side.rear.and.collision.and.car.side.front.and.arrow.forward
+ (iOS 18.4)
+
+### car.side.rear.and.collision.and.car.side.front.and.steeringwheel
+ (iOS 18.4)
 
 ### car.side.rear.and.exclamationmark.and.car.side.front
  (iOS 17.0)
@@ -3927,10 +3986,22 @@ _____
 ### car.top.lane.dashed.departure.left
 - car.top.lane.dashed.departure.left (iOS 16.1)
 - car.top.lane.dashed.departure.left.fill (iOS 16.1)
+- car.top.lane.dashed.departure.left.slash (iOS 18.4)
+- car.top.lane.dashed.departure.left.slash.fill (iOS 18.4)
 
 ### car.top.lane.dashed.departure.right
 - car.top.lane.dashed.departure.right (iOS 16.1)
 - car.top.lane.dashed.departure.right.fill (iOS 16.1)
+- car.top.lane.dashed.departure.right.slash (iOS 18.4)
+- car.top.lane.dashed.departure.right.slash.fill (iOS 18.4)
+
+### car.top.radiowaves.2.front.left.front.front.right
+- car.top.radiowaves.2.front.left.front.front.right (iOS 18.1)
+- car.top.radiowaves.2.front.left.front.front.right.fill (iOS 18.1)
+
+### car.top.radiowaves.2.rear.left.rear.rear.right
+- car.top.radiowaves.2.rear.left.rear.rear.right (iOS 18.1)
+- car.top.radiowaves.2.rear.left.rear.rear.right.fill (iOS 18.1)
 
 ### car.top.radiowaves.front
 - car.top.radiowaves.front (iOS 16.1)
@@ -4308,6 +4379,78 @@ _____
 - character.bubble.fill.th (iOS 15.0)
 - character.bubble.fill.zh (iOS 15.0)
 
+### character.circle.bn
+ (iOS 18.1)
+
+### character.circle.fill.bn
+ (iOS 18.1)
+
+### character.circle.fill.gu
+ (iOS 18.1)
+
+### character.circle.fill.kn
+ (iOS 18.1)
+
+### character.circle.fill.ml
+ (iOS 18.1)
+
+### character.circle.fill.mni
+ (iOS 18.1)
+
+### character.circle.fill.mr
+ (iOS 18.1)
+
+### character.circle.fill.or
+ (iOS 18.1)
+
+### character.circle.fill.pa
+ (iOS 18.1)
+
+### character.circle.fill.sat
+ (iOS 18.1)
+
+### character.circle.fill.si
+ (iOS 18.1)
+
+### character.circle.fill.ta
+ (iOS 18.1)
+
+### character.circle.fill.te
+ (iOS 18.1)
+
+### character.circle.gu
+ (iOS 18.1)
+
+### character.circle.kn
+ (iOS 18.1)
+
+### character.circle.ml
+ (iOS 18.1)
+
+### character.circle.mni
+ (iOS 18.1)
+
+### character.circle.mr
+ (iOS 18.1)
+
+### character.circle.or
+ (iOS 18.1)
+
+### character.circle.pa
+ (iOS 18.1)
+
+### character.circle.sat
+ (iOS 18.1)
+
+### character.circle.si
+ (iOS 18.1)
+
+### character.circle.ta
+ (iOS 18.1)
+
+### character.circle.te
+ (iOS 18.1)
+
 ### character.cursor.ibeam
 - character.cursor.ibeam (iOS 14.5)
 - character.cursor.ibeam.ar (iOS 14.5)
@@ -4317,6 +4460,42 @@ _____
 - character.cursor.ibeam.ko (iOS 14.5)
 - character.cursor.ibeam.th (iOS 14.5)
 - character.cursor.ibeam.zh (iOS 14.5)
+
+### character.cursor.ibeam.bn
+ (iOS 18.4)
+
+### character.cursor.ibeam.gu
+ (iOS 18.4)
+
+### character.cursor.ibeam.kn
+ (iOS 18.4)
+
+### character.cursor.ibeam.ml
+ (iOS 18.4)
+
+### character.cursor.ibeam.mni
+ (iOS 18.4)
+
+### character.cursor.ibeam.mr
+ (iOS 18.4)
+
+### character.cursor.ibeam.or
+ (iOS 18.4)
+
+### character.cursor.ibeam.pa
+ (iOS 18.4)
+
+### character.cursor.ibeam.sat
+ (iOS 18.4)
+
+### character.cursor.ibeam.si
+ (iOS 18.4)
+
+### character.cursor.ibeam.ta
+ (iOS 18.4)
+
+### character.cursor.ibeam.te
+ (iOS 18.4)
 
 ### character.duployan
  (iOS 16.0)
@@ -4336,6 +4515,42 @@ _____
 - character.magnify.ko (iOS 17.0)
 - character.magnify.th (iOS 17.0)
 - character.magnify.zh (iOS 17.0)
+
+### character.magnify.bn
+ (iOS 18.4)
+
+### character.magnify.gu
+ (iOS 18.4)
+
+### character.magnify.kn
+ (iOS 18.4)
+
+### character.magnify.ml
+ (iOS 18.4)
+
+### character.magnify.mni
+ (iOS 18.4)
+
+### character.magnify.mr
+ (iOS 18.4)
+
+### character.magnify.or
+ (iOS 18.4)
+
+### character.magnify.pa
+ (iOS 18.4)
+
+### character.magnify.sat
+ (iOS 18.4)
+
+### character.magnify.si
+ (iOS 18.4)
+
+### character.magnify.ta
+ (iOS 18.4)
+
+### character.magnify.te
+ (iOS 18.4)
 
 ### character.ml
  (iOS 18.0)
@@ -4361,6 +4576,78 @@ _____
 ### character.si
  (iOS 18.0)
 
+### character.square.bn
+ (iOS 18.1)
+
+### character.square.fill.bn
+ (iOS 18.1)
+
+### character.square.fill.gu
+ (iOS 18.1)
+
+### character.square.fill.kn
+ (iOS 18.1)
+
+### character.square.fill.ml
+ (iOS 18.1)
+
+### character.square.fill.mni
+ (iOS 18.1)
+
+### character.square.fill.mr
+ (iOS 18.1)
+
+### character.square.fill.or
+ (iOS 18.1)
+
+### character.square.fill.pa
+ (iOS 18.1)
+
+### character.square.fill.sat
+ (iOS 18.1)
+
+### character.square.fill.si
+ (iOS 18.1)
+
+### character.square.fill.ta
+ (iOS 18.1)
+
+### character.square.fill.te
+ (iOS 18.1)
+
+### character.square.gu
+ (iOS 18.1)
+
+### character.square.kn
+ (iOS 18.1)
+
+### character.square.ml
+ (iOS 18.1)
+
+### character.square.mni
+ (iOS 18.1)
+
+### character.square.mr
+ (iOS 18.1)
+
+### character.square.or
+ (iOS 18.1)
+
+### character.square.pa
+ (iOS 18.1)
+
+### character.square.sat
+ (iOS 18.1)
+
+### character.square.si
+ (iOS 18.1)
+
+### character.square.ta
+ (iOS 18.1)
+
+### character.square.te
+ (iOS 18.1)
+
 ### character.sutton
  (iOS 16.0)
 
@@ -4379,6 +4666,88 @@ _____
 - character.textbox.ko (iOS 14.5)
 - character.textbox.th (iOS 14.5)
 - character.textbox.zh (iOS 14.5)
+
+### character.textbox.badge.sparkles
+- character.textbox.badge.sparkles (iOS 18.4)
+- character.textbox.badge.sparkles.ar (iOS 18.4)
+- character.textbox.badge.sparkles.he (iOS 18.4)
+- character.textbox.badge.sparkles.hi (iOS 18.4)
+- character.textbox.badge.sparkles.ja (iOS 18.4)
+- character.textbox.badge.sparkles.ko (iOS 18.4)
+- character.textbox.badge.sparkles.th (iOS 18.4)
+- character.textbox.badge.sparkles.zh (iOS 18.4)
+
+### character.textbox.badge.sparkles.bn
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.gu
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.kn
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.ml
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.mni
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.mr
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.or
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.pa
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.sat
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.si
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.ta
+ (iOS 18.4)
+
+### character.textbox.badge.sparkles.te
+ (iOS 18.4)
+
+### character.textbox.bn
+ (iOS 18.4)
+
+### character.textbox.gu
+ (iOS 18.4)
+
+### character.textbox.kn
+ (iOS 18.4)
+
+### character.textbox.ml
+ (iOS 18.4)
+
+### character.textbox.mni
+ (iOS 18.4)
+
+### character.textbox.mr
+ (iOS 18.4)
+
+### character.textbox.or
+ (iOS 18.4)
+
+### character.textbox.pa
+ (iOS 18.4)
+
+### character.textbox.sat
+ (iOS 18.4)
+
+### character.textbox.si
+ (iOS 18.4)
+
+### character.textbox.ta
+ (iOS 18.4)
+
+### character.textbox.te
+ (iOS 18.4)
 
 ### characters.lowercase
  (iOS 18.0)
@@ -5180,6 +5549,10 @@ _____
 - convertible.side.and.exclamationmark (iOS 18.0)
 - convertible.side.and.exclamationmark.fill (iOS 18.0)
 
+### convertible.side.arrow.left.and.right
+- convertible.side.arrow.left.and.right (iOS 18.4)
+- convertible.side.arrow.left.and.right.fill (iOS 18.4)
+
 ### convertible.side.arrow.trianglehead.backward
 - convertible.side.arrow.trianglehead.backward (iOS 18.0)
 - convertible.side.arrow.trianglehead.backward.fill (iOS 18.0)
@@ -5219,6 +5592,10 @@ _____
 ### convertible.side.hill.down
 - convertible.side.hill.down (iOS 18.0)
 - convertible.side.hill.down.fill (iOS 18.0)
+
+### convertible.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle
+- convertible.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle (iOS 18.4)
+- convertible.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill (iOS 18.4)
 
 ### convertible.side.hill.up
 - convertible.side.hill.up (iOS 18.0)
@@ -5346,7 +5723,7 @@ _____
  (iOS, introduced: 13.0, deprecated: 14.0, renamed: [cursorarrow.rays](#cursorarrowrays))
 
 ### cursorarrow
-- cursorarrow (iOS 14.0)
+- cursorarrow (iOS, introduced: 14.0, deprecated: 18.4, renamed: [cursorarrow.resize.north.east.south.east](#cursorarrowresizenortheastsoutheast))
 - cursorarrow.square (iOS 14.0)
 - cursorarrow.square.fill (iOS 16.0)
 - cursorarrow.slash (iOS 17.0)
@@ -5373,6 +5750,9 @@ _____
 
 ### cursorarrow.rays
  (iOS 14.0)
+
+### cursorarrow.resize.north.east.south.east
+ (iOS 18.4)
 
 ### curtains.closed
  (iOS 16.0)
@@ -5711,10 +6091,10 @@ _____
 - doc.text.fill (iOS, introduced: 13.0, deprecated: 18.0, renamed: [text.document.fill](#textdocument))
 
 ### doc.text.below.ecg
-- doc.text.below.ecg (iOS, introduced: 14.0, deprecated: 18.0, renamed: [ecg.text.page](#ecgtextpage))
-- doc.text.below.ecg.rtl (iOS, introduced: 14.2, deprecated: 18.0, renamed: [ecg.text.page.rtl](#ecgtextpage))
-- doc.text.below.ecg.fill (iOS, introduced: 14.0, deprecated: 18.0, renamed: [ecg.text.page.fill](#ecgtextpage))
-- doc.text.below.ecg.fill.rtl (iOS, introduced: 14.2, deprecated: 18.0, renamed: [ecg.text.page.fill.rtl](#ecgtextpage))
+- doc.text.below.ecg (iOS, introduced: 14.0, deprecated: 18.1, renamed: [waveform.path.ecg.text.page](#waveformpathecgtextpage))
+- doc.text.below.ecg.rtl (iOS, introduced: 14.2, deprecated: 18.1, renamed: [waveform.path.ecg.text.page.rtl](#waveformpathecgtextpage))
+- doc.text.below.ecg.fill (iOS, introduced: 14.0, deprecated: 18.1, renamed: [waveform.path.ecg.text.page.fill](#waveformpathecgtextpage))
+- doc.text.below.ecg.fill.rtl (iOS, introduced: 14.2, deprecated: 18.1, renamed: [waveform.path.ecg.text.page.fill.rtl](#waveformpathecgtextpage))
 
 ### doc.text.fill.viewfinder
  (iOS, introduced: 14.0, deprecated: 18.0, renamed: [document.viewfinder.fill](#documentviewfinder))
@@ -5904,6 +6284,10 @@ _____
 ### dot.arrowtriangles.up.right.down.left.circle
  (iOS 14.0)
 
+### dot.car.top.radiowaves.2.rear.left.rear.rear.right
+- dot.car.top.radiowaves.2.rear.left.rear.rear.right (iOS 18.1)
+- dot.car.top.radiowaves.2.rear.left.rear.rear.right.fill (iOS 18.1)
+
 ### dot.circle.and.cursorarrow
  (iOS 14.0)
 
@@ -6058,16 +6442,29 @@ _____
  (iOS 14.0)
 
 ### ecg.text.page
-- ecg.text.page (iOS 18.0)
-- ecg.text.page.rtl (iOS 18.0)
-- ecg.text.page.fill (iOS 18.0)
-- ecg.text.page.fill.rtl (iOS 18.0)
+- ecg.text.page (iOS, introduced: 18.0, deprecated: 18.1, renamed: [waveform.path.ecg.text.page](#waveformpathecgtextpage))
+- ecg.text.page.rtl (iOS, introduced: 18.0, deprecated: 18.1, renamed: [waveform.path.ecg.text.page.rtl](#waveformpathecgtextpage))
+- ecg.text.page.fill (iOS, introduced: 18.0, deprecated: 18.1, renamed: [waveform.path.ecg.text.page.fill](#waveformpathecgtextpage))
+- ecg.text.page.fill.rtl (iOS, introduced: 18.0, deprecated: 18.1, renamed: [waveform.path.ecg.text.page.fill.rtl](#waveformpathecgtextpage))
 
 ### eject
 - eject (iOS 13.0)
 - eject.fill (iOS 13.0)
 - eject.circle (iOS 14.0)
 - eject.circle.fill (iOS 14.0)
+
+### electronic.toll.collection
+- electronic.toll.collection (iOS 18.4)
+- electronic.toll.collection.rectangle (iOS 18.4)
+- electronic.toll.collection.rectangle.fill (iOS 18.4)
+
+### electronic.toll.collection.rectangle
+- electronic.toll.collection.rectangle.slash (iOS 18.4)
+- electronic.toll.collection.rectangle.slash.fill (iOS 18.4)
+
+### electronic.toll.collection.rectangle.trianglebadge.exclamationmark
+- electronic.toll.collection.rectangle.trianglebadge.exclamationmark (iOS 18.4)
+- electronic.toll.collection.rectangle.trianglebadge.exclamationmark.fill (iOS 18.4)
 
 ### ellipses.bubble
 - ellipses.bubble (iOS, introduced: 13.0, deprecated: 14.0, renamed: [ellipsis.bubble](#ellipsisbubble))
@@ -6106,6 +6503,9 @@ _____
 - engine.combustion.badge.exclamationmark (iOS 17.0)
 - engine.combustion.badge.exclamationmark.fill (iOS 17.0)
 
+### engine.emission.and.drop.2.water.wave.below
+ (iOS 18.4)
+
 ### engine.emission.and.exclamationmark
  (iOS 18.0)
 
@@ -6125,6 +6525,10 @@ _____
 - envelope.fill (iOS 13.0)
 - envelope.circle (iOS 13.0)
 - envelope.circle.fill (iOS 13.0)
+
+### envelope.and.arrow.3.down
+- envelope.and.arrow.3.down (iOS 18.4)
+- envelope.and.arrow.3.down.fill (iOS 18.4)
 
 ### envelope.and.arrow.trianglehead.branch
 - envelope.and.arrow.trianglehead.branch (iOS 18.0)
@@ -6164,6 +6568,10 @@ _____
 
 ### envelope.open.badge.clock
  (iOS 16.0)
+
+### envelope.stack
+- envelope.stack (iOS 18.1)
+- envelope.stack.fill (iOS 18.1)
 
 ### equal
 - equal (iOS 13.0)
@@ -6343,6 +6751,10 @@ _____
 ### exclamationmark.magnifyingglass
  (iOS 17.0)
 
+### exclamationmark.message
+- exclamationmark.message (iOS 18.1)
+- exclamationmark.message.fill (iOS 18.1)
+
 ### exclamationmark.octagon
 - exclamationmark.octagon (iOS 13.0)
 - exclamationmark.octagon.fill (iOS 13.0)
@@ -6364,6 +6776,12 @@ _____
 ### exclamationmark.triangle
 - exclamationmark.triangle (iOS 13.0)
 - exclamationmark.triangle.fill (iOS 13.0)
+
+### exclamationmark.triangle.text.page
+- exclamationmark.triangle.text.page (iOS 18.2)
+- exclamationmark.triangle.text.page.rtl (iOS 18.2)
+- exclamationmark.triangle.text.page.fill (iOS 18.2)
+- exclamationmark.triangle.text.page.fill.rtl (iOS 18.2)
 
 ### exclamationmark.warninglight
 - exclamationmark.warninglight (iOS 17.0)
@@ -7047,6 +7465,9 @@ _____
 ### figure.seated.side.left.air.distribution.upper
  (iOS 18.0)
 
+### figure.seated.side.left.air.distribution.upper.and.middle.and.lower
+ (iOS 18.2)
+
 ### figure.seated.side.left.air.distribution.upper.angled.and.lower.angled
  (iOS 18.0)
 
@@ -7118,6 +7539,9 @@ _____
 
 ### figure.seated.side.right.air.distribution.upper
  (iOS 18.0)
+
+### figure.seated.side.right.air.distribution.upper.and.middle.and.lower
+ (iOS 18.2)
 
 ### figure.seated.side.right.air.distribution.upper.angled.and.lower.angled
  (iOS 18.0)
@@ -7442,6 +7866,9 @@ _____
 ### flag.pattern.checkered.2.crossed
  (iOS 18.0)
 
+### flag.pattern.checkered.lc
+ (iOS 18.4)
+
 ### flame
 - flame (iOS 13.0)
 - flame.fill (iOS 13.0)
@@ -7642,6 +8069,9 @@ _____
 - frying.pan (iOS 16.0)
 - frying.pan.fill (iOS 16.0)
 
+### fuel.filter.water
+ (iOS 18.4)
+
 ### fuelpump
 - fuelpump (iOS 15.0)
 - fuelpump.fill (iOS 15.0)
@@ -7666,7 +8096,8 @@ _____
 - fuelpump.exclamationmark.fill (iOS 17.0)
 
 ### function
- (iOS 13.0)
+- function (iOS 13.0)
+- function.ar (iOS 18.4)
 
 ### fx
  (iOS 13.0)
@@ -8113,12 +8544,16 @@ _____
 - hand.thumbsdown.fill (iOS 13.0)
 - hand.thumbsdown.circle (iOS 15.0)
 - hand.thumbsdown.circle.fill (iOS 15.0)
+- hand.thumbsdown.slash (iOS 18.1)
+- hand.thumbsdown.slash.fill (iOS 18.1)
 
 ### hand.thumbsup
 - hand.thumbsup (iOS 13.0)
 - hand.thumbsup.fill (iOS 13.0)
 - hand.thumbsup.circle (iOS 15.0)
 - hand.thumbsup.circle.fill (iOS 15.0)
+- hand.thumbsup.slash (iOS 18.1)
+- hand.thumbsup.slash.fill (iOS 18.1)
 
 ### hand.wave
 - hand.wave (iOS 14.0)
@@ -8190,6 +8625,9 @@ _____
 - headphones.circle (iOS 14.0)
 - headphones.circle.fill (iOS 14.0)
 - headphones.slash (iOS 18.0)
+
+### headphones.dots
+ (iOS 18.2)
 
 ### headset
 - headset (iOS 18.0)
@@ -8546,6 +8984,13 @@ _____
 - hurricane.circle (iOS 16.0)
 - hurricane.circle.fill (iOS 16.0)
 
+### hydrogen
+- hydrogen (iOS 18.4)
+- hydrogen.circle (iOS 18.4)
+- hydrogen.circle.fill (iOS 18.4)
+- hydrogen.square (iOS 18.4)
+- hydrogen.square.fill (iOS 18.4)
+
 ### i
 - i.circle (iOS 13.0)
 - i.circle.fill (iOS 13.0)
@@ -8622,6 +9067,16 @@ _____
 - info.bubble.rtl (iOS 17.0)
 - info.bubble.fill (iOS 16.0)
 - info.bubble.fill.rtl (iOS 17.0)
+
+### info.circle.text.page
+- info.circle.text.page (iOS 18.4)
+- info.circle.text.page.rtl (iOS 18.4)
+- info.circle.text.page.fill (iOS 18.4)
+- info.circle.text.page.fill.rtl (iOS 18.4)
+
+### info.triangle
+- info.triangle (iOS 18.2)
+- info.triangle.fill (iOS 18.2)
 
 ### info.windshield
  (iOS 16.1)
@@ -8753,7 +9208,9 @@ _____
  (iOS 18.0)
 
 ### inset.filled.rectangle.and.person.filled
- (iOS 18.0)
+- inset.filled.rectangle.and.person.filled (iOS 18.0)
+- inset.filled.rectangle.and.person.filled.circle (iOS 18.2)
+- inset.filled.rectangle.and.person.filled.circle.fill (iOS 18.2)
 
 ### inset.filled.rectangle.badge.record
  (iOS 18.0)
@@ -9269,9 +9726,17 @@ _____
 - key.car.radiowaves.forward.fill (iOS 18.0)
 - key.car.radiowaves.forward.fill.rtl (iOS 18.0)
 
+### key.car.side
+- key.car.side (iOS 18.4)
+- key.car.side.fill (iOS 18.4)
+
 ### key.card
 - key.card (iOS 18.0)
 - key.card.fill (iOS 18.0)
+
+### key.convertible.side
+- key.convertible.side (iOS 18.4)
+- key.convertible.side.fill (iOS 18.4)
 
 ### key.horizontal
 - key.horizontal (iOS 16.1)
@@ -9286,6 +9751,14 @@ _____
 - key.radiowaves.forward.fill (iOS 16.1)
 - key.radiowaves.forward.slash (iOS 17.0)
 - key.radiowaves.forward.slash.fill (iOS 17.0)
+
+### key.suv.side
+- key.suv.side (iOS 18.4)
+- key.suv.side.fill (iOS 18.4)
+
+### key.truck.pickup.side
+- key.truck.pickup.side (iOS 18.4)
+- key.truck.pickup.side.fill (iOS 18.4)
 
 ### key.viewfinder
  (iOS 15.4)
@@ -9538,6 +10011,9 @@ _____
 
 ### laurel.leading
  (iOS 16.0)
+
+### laurel.leading.laurel.trailing
+ (iOS 18.1)
 
 ### laurel.trailing
  (iOS 16.0)
@@ -10021,6 +10497,10 @@ _____
 ### logo.xbox
  (iOS, introduced: 15.0, deprecated: 16.0, renamed: [xbox.logo](#xboxlogo))
 
+### long.text.page.and.pencil
+- long.text.page.and.pencil (iOS 18.4)
+- long.text.page.and.pencil.fill (iOS 18.4)
+
 ### loupe
  (iOS 14.0)
 
@@ -10094,6 +10574,14 @@ _____
 ### macmini
 - macmini (iOS 14.0)
 - macmini.fill (iOS 14.0)
+
+### macmini.gen2
+- macmini.gen2 (iOS 18.4)
+- macmini.gen2.fill (iOS 18.4)
+
+### macmini.gen3
+- macmini.gen3 (iOS 18.4)
+- macmini.gen3.fill (iOS 18.4)
 
 ### macpro.gen1
 - macpro.gen1 (iOS 14.0)
@@ -10259,13 +10747,20 @@ _____
 - megaphone.fill (iOS 14.0)
 
 ### memories
- (iOS 13.0)
+- memories (iOS 13.0)
+- memories.slash (iOS 18.4)
+
+### memories.badge.checkmark
+ (iOS 18.1)
 
 ### memories.badge.minus
  (iOS 13.0)
 
 ### memories.badge.plus
  (iOS 13.0)
+
+### memories.badge.xmark
+ (iOS 18.1)
 
 ### memorychip
 - memorychip (iOS 14.0)
@@ -10455,6 +10950,18 @@ _____
 ### minus.plus.batteryblock.stack
 - minus.plus.batteryblock.stack (iOS 16.1)
 - minus.plus.batteryblock.stack.fill (iOS 16.1)
+
+### minus.plus.batteryblock.stack.arrowtriangle.left
+- minus.plus.batteryblock.stack.arrowtriangle.left (iOS 18.4)
+- minus.plus.batteryblock.stack.arrowtriangle.left.fill (iOS 18.4)
+
+### minus.plus.batteryblock.stack.arrowtriangle.right
+- minus.plus.batteryblock.stack.arrowtriangle.right (iOS 18.4)
+- minus.plus.batteryblock.stack.arrowtriangle.right.fill (iOS 18.4)
+
+### minus.plus.batteryblock.stack.arrowtriangle.right.and.arrowtriangle.left
+- minus.plus.batteryblock.stack.arrowtriangle.right.and.arrowtriangle.left (iOS 18.4)
+- minus.plus.batteryblock.stack.arrowtriangle.right.and.arrowtriangle.left.fill (iOS 18.4)
 
 ### minus.plus.batteryblock.stack.exclamationmark
 - minus.plus.batteryblock.stack.exclamationmark (iOS 16.1)
@@ -10747,6 +11254,9 @@ _____
 ### nosign.app
 - nosign.app (iOS 16.0)
 - nosign.app.fill (iOS 16.0)
+
+### nosign.badge.clock
+ (iOS 18.4)
 
 ### note
  (iOS 14.0)
@@ -11189,6 +11699,10 @@ _____
 - person.bust.circle (iOS 17.0)
 - person.bust.circle.fill (iOS 17.0)
 
+### person.checkmark.and.xmark
+- person.checkmark.and.xmark (iOS 18.4)
+- person.checkmark.and.xmark.rtl (iOS 18.4)
+
 ### person.crop
 - person.crop.circle (iOS 13.0)
 - person.crop.circle.fill (iOS 13.0)
@@ -11310,6 +11824,10 @@ _____
 ### person.fill.checkmark
 - person.fill.checkmark (iOS 14.0)
 - person.fill.checkmark.rtl (iOS 14.0)
+
+### person.fill.checkmark.and.xmark
+- person.fill.checkmark.and.xmark (iOS 18.4)
+- person.fill.checkmark.and.xmark.rtl (iOS 18.4)
 
 ### person.fill.questionmark
 - person.fill.questionmark (iOS 14.0)
@@ -11543,9 +12061,17 @@ _____
 - photo.badge.exclamationmark (iOS 18.0)
 - photo.badge.exclamationmark.fill (iOS 18.0)
 
+### photo.badge.magnifyingglass
+- photo.badge.magnifyingglass (iOS 18.1)
+- photo.badge.magnifyingglass.fill (iOS 18.1)
+
 ### photo.badge.plus
 - photo.badge.plus (iOS 17.0)
 - photo.badge.plus.fill (iOS 17.0)
+
+### photo.badge.shield.exclamationmark
+- photo.badge.shield.exclamationmark (iOS 18.4)
+- photo.badge.shield.exclamationmark.fill (iOS 18.4)
 
 ### photo.fill.on.rectangle.fill
  (iOS 13.0)
@@ -11561,8 +12087,19 @@ _____
 - photo.stack (iOS 16.0)
 - photo.stack.fill (iOS 16.0)
 
+### photo.trianglebadge.exclamationmark
+- photo.trianglebadge.exclamationmark (iOS 18.4)
+- photo.trianglebadge.exclamationmark.fill (iOS 18.4)
+
 ### photo.tv
  (iOS 14.2)
+
+### pi
+- pi (iOS 18.4)
+- pi.circle (iOS 18.4)
+- pi.circle.fill (iOS 18.4)
+- pi.square (iOS 18.4)
+- pi.square.fill (iOS 18.4)
 
 ### pianokeys
  (iOS 14.0)
@@ -11735,6 +12272,10 @@ _____
 ### plus.message
 - plus.message (iOS 14.0)
 - plus.message.fill (iOS 14.0)
+
+### plus.minus.capsule
+- plus.minus.capsule (iOS 18.4)
+- plus.minus.capsule.fill (iOS 18.4)
 
 ### plus.rectangle.fill.on.folder.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [plus.rectangle.on.folder.fill](#plusrectangleonfolder))
@@ -12113,6 +12654,12 @@ _____
 ### questionmark.key.filled
  (iOS 16.1)
 
+### questionmark.message
+- questionmark.message (iOS 18.1)
+- questionmark.message.ar (iOS 18.2)
+- questionmark.message.fill (iOS 18.1)
+- questionmark.message.fill.ar (iOS 18.2)
+
 ### questionmark.square.dashed
 - questionmark.square.dashed (iOS 14.0)
 - questionmark.square.dashed.ar (iOS 14.0)
@@ -12260,6 +12807,10 @@ _____
 ### rb.rectangle.roundedbottom
 - rb.rectangle.roundedbottom (iOS, introduced: 14.0, deprecated: 17.0, renamed: [rb.button.roundedbottom.horizontal](#rbbuttonroundedbottomhorizontal))
 - rb.rectangle.roundedbottom.fill (iOS, introduced: 14.0, deprecated: 17.0, renamed: [rb.button.roundedbottom.horizontal.fill](#rbbuttonroundedbottomhorizontal))
+
+### receipt
+- receipt (iOS 18.2)
+- receipt.fill (iOS 18.2)
 
 ### record.circle
 - record.circle (iOS 14.0)
@@ -12424,6 +12975,10 @@ _____
 ### rectangle.grid.2x2
 - rectangle.grid.2x2 (iOS 13.0)
 - rectangle.grid.2x2.fill (iOS 13.0)
+
+### rectangle.grid.3x1
+- rectangle.grid.3x1 (iOS 18.1)
+- rectangle.grid.3x1.fill (iOS 18.1)
 
 ### rectangle.grid.3x2
 - rectangle.grid.3x2 (iOS 13.0)
@@ -12820,6 +13375,9 @@ _____
 - repeat.1.circle.fill.ar (iOS 15.0)
 - repeat.1.circle.fill.hi (iOS 15.0)
 
+### repeat.badge.xmark.circle.fill
+ (iOS 18.4)
+
 ### restart
 - restart (iOS 14.0)
 - restart.circle (iOS 14.0)
@@ -12883,6 +13441,9 @@ _____
 ### road.lane.arrowtriangle.2.inward
  (iOS 16.1)
 
+### road.lane.arrowtriangle.2.outward
+ (iOS 18.4)
+
 ### road.lanes
  (iOS 16.0)
 
@@ -12895,6 +13456,14 @@ _____
 ### robotic.vacuum
 - robotic.vacuum (iOS 18.0)
 - robotic.vacuum.fill (iOS 18.0)
+
+### robotic.vacuum.and.arrowtriangle.up
+- robotic.vacuum.and.arrowtriangle.up (iOS 18.4)
+- robotic.vacuum.and.arrowtriangle.up.fill (iOS 18.4)
+
+### robotic.vacuum.and.ellipsis
+- robotic.vacuum.and.ellipsis (iOS 18.4)
+- robotic.vacuum.and.ellipsis.fill (iOS 18.4)
 
 ### roller.shade.closed
  (iOS 16.0)
@@ -13556,6 +14125,9 @@ _____
 - spigot (iOS 16.0)
 - spigot.fill (iOS 16.0)
 
+### spoon.serving
+ (iOS 18.4)
+
 ### sportscourt
 - sportscourt (iOS 13.0)
 - sportscourt.fill (iOS 13.0)
@@ -13658,9 +14230,17 @@ _____
 - square.and.arrow.down (iOS 13.0)
 - square.and.arrow.down.fill (iOS 13.0)
 
+### square.and.arrow.down.badge.checkmark
+- square.and.arrow.down.badge.checkmark (iOS 18.1)
+- square.and.arrow.down.badge.checkmark.fill (iOS 18.1)
+
 ### square.and.arrow.down.badge.clock
 - square.and.arrow.down.badge.clock (iOS 18.0)
 - square.and.arrow.down.badge.clock.fill (iOS 18.0)
+
+### square.and.arrow.down.badge.xmark
+- square.and.arrow.down.badge.xmark (iOS 18.1)
+- square.and.arrow.down.badge.xmark.fill (iOS 18.1)
 
 ### square.and.arrow.down.on.square
 - square.and.arrow.down.on.square (iOS 13.0)
@@ -13671,6 +14251,10 @@ _____
 - square.and.arrow.up.fill (iOS 13.0)
 - square.and.arrow.up.circle (iOS 15.0)
 - square.and.arrow.up.circle.fill (iOS 15.0)
+
+### square.and.arrow.up.badge.checkmark
+- square.and.arrow.up.badge.checkmark (iOS 18.4)
+- square.and.arrow.up.badge.checkmark.fill (iOS 18.4)
 
 ### square.and.arrow.up.badge.clock
 - square.and.arrow.up.badge.clock (iOS 17.2)
@@ -13990,7 +14574,7 @@ _____
  (iOS, introduced: 14.0, deprecated: 17.0, renamed: [squareshape.dotted.squareshape](#squareshapedottedsquareshape))
 
 ### squareshape.dotted.split.2x2
- (iOS 16.0)
+ (iOS, introduced: 16.0, deprecated: 18.4, renamed: [squareshape.split.2x2.dotted.inside.and.outside](#squareshapesplit2x2dottedinsideandoutside))
 
 ### squareshape.dotted.squareshape
  (iOS 17.0)
@@ -13999,7 +14583,16 @@ _____
  (iOS 14.0)
 
 ### squareshape.split.2x2.dotted
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 18.4, renamed: [squareshape.split.2x2.dotted.inside](#squareshapesplit2x2dottedinside))
+
+### squareshape.split.2x2.dotted.inside
+ (iOS 18.4)
+
+### squareshape.split.2x2.dotted.inside.and.outside
+ (iOS 18.4)
+
+### squareshape.split.2x2.dotted.outside
+ (iOS 18.4)
 
 ### squareshape.split.3x3
  (iOS 14.0)
@@ -14026,6 +14619,10 @@ _____
 ### star.bubble
 - star.bubble (iOS 15.0)
 - star.bubble.fill (iOS 15.0)
+
+### star.hexagon
+- star.hexagon (iOS 18.4)
+- star.hexagon.fill (iOS 18.4)
 
 ### star.leadinghalf.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [star.leadinghalf.filled](#starleadinghalffilled))
@@ -14283,6 +14880,10 @@ _____
 - suv.side.and.exclamationmark (iOS 16.1)
 - suv.side.and.exclamationmark.fill (iOS 16.1)
 
+### suv.side.arrow.left.and.right
+- suv.side.arrow.left.and.right (iOS 18.4)
+- suv.side.arrow.left.and.right.fill (iOS 18.4)
+
 ### suv.side.arrowtriangle.down
 - suv.side.arrowtriangle.down (iOS 16.1)
 - suv.side.arrowtriangle.down.fill (iOS 16.1)
@@ -14310,6 +14911,10 @@ _____
 ### suv.side.hill.down
 - suv.side.hill.down (iOS 17.0)
 - suv.side.hill.down.fill (iOS 17.0)
+
+### suv.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle
+- suv.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle (iOS 18.4)
+- suv.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill (iOS 18.4)
 
 ### suv.side.hill.up
 - suv.side.hill.up (iOS 17.0)
@@ -14713,8 +15318,47 @@ _____
 - textformat.alt.th (iOS 18.0)
 - textformat.alt.zh (iOS 18.0)
 
+### textformat.alt.bn
+ (iOS 18.4)
+
 ### textformat.alt.el
  (iOS 18.0)
+
+### textformat.alt.gu
+ (iOS 18.4)
+
+### textformat.alt.kn
+ (iOS 18.4)
+
+### textformat.alt.ml
+ (iOS 18.4)
+
+### textformat.alt.mni
+ (iOS 18.4)
+
+### textformat.alt.mr
+ (iOS 18.4)
+
+### textformat.alt.or
+ (iOS 18.4)
+
+### textformat.alt.pa
+ (iOS 18.4)
+
+### textformat.alt.sat
+ (iOS 18.4)
+
+### textformat.alt.si
+ (iOS 18.4)
+
+### textformat.alt.ta
+ (iOS 18.4)
+
+### textformat.alt.te
+ (iOS 18.4)
+
+### textformat.bn
+ (iOS 18.4)
 
 ### textformat.characters
 - textformat.characters (iOS 18.0)
@@ -14736,11 +15380,50 @@ _____
 - textformat.characters.arrow.left.and.right.th (iOS 18.0)
 - textformat.characters.arrow.left.and.right.zh (iOS 18.0)
 
+### textformat.characters.arrow.left.and.right.bn
+ (iOS 18.4)
+
 ### textformat.characters.arrow.left.and.right.el
  (iOS 18.0)
 
+### textformat.characters.arrow.left.and.right.gu
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.kn
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.ml
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.mni
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.mr
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.or
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.pa
+ (iOS 18.4)
+
 ### textformat.characters.arrow.left.and.right.ru
  (iOS 18.0)
+
+### textformat.characters.arrow.left.and.right.sat
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.si
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.ta
+ (iOS 18.4)
+
+### textformat.characters.arrow.left.and.right.te
+ (iOS 18.4)
+
+### textformat.characters.bn
+ (iOS 18.4)
 
 ### textformat.characters.dottedunderline
 - textformat.characters.dottedunderline (iOS 18.0)
@@ -14752,20 +15435,104 @@ _____
 - textformat.characters.dottedunderline.th (iOS 18.0)
 - textformat.characters.dottedunderline.zh (iOS 18.0)
 
+### textformat.characters.dottedunderline.bn
+ (iOS 18.4)
+
 ### textformat.characters.dottedunderline.el
  (iOS 18.0)
+
+### textformat.characters.dottedunderline.gu
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.kn
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.ml
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.mni
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.mr
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.or
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.pa
+ (iOS 18.4)
 
 ### textformat.characters.dottedunderline.ru
  (iOS 18.0)
 
+### textformat.characters.dottedunderline.sat
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.si
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.ta
+ (iOS 18.4)
+
+### textformat.characters.dottedunderline.te
+ (iOS 18.4)
+
 ### textformat.characters.el
  (iOS 18.0)
+
+### textformat.characters.gu
+ (iOS 18.4)
+
+### textformat.characters.kn
+ (iOS 18.4)
+
+### textformat.characters.ml
+ (iOS 18.4)
+
+### textformat.characters.mni
+ (iOS 18.4)
+
+### textformat.characters.mr
+ (iOS 18.4)
+
+### textformat.characters.or
+ (iOS 18.4)
+
+### textformat.characters.pa
+ (iOS 18.4)
 
 ### textformat.characters.ru
  (iOS 18.0)
 
+### textformat.characters.sat
+ (iOS 18.4)
+
+### textformat.characters.si
+ (iOS 18.4)
+
+### textformat.characters.ta
+ (iOS 18.4)
+
+### textformat.characters.te
+ (iOS 18.4)
+
 ### textformat.el
  (iOS 18.0)
+
+### textformat.gu
+ (iOS 18.4)
+
+### textformat.kn
+ (iOS 18.4)
+
+### textformat.ml
+ (iOS 18.4)
+
+### textformat.mni
+ (iOS 18.4)
+
+### textformat.mr
+ (iOS 18.4)
 
 ### textformat.numbers
 - textformat.numbers (iOS 18.0)
@@ -14804,6 +15571,18 @@ _____
 
 ### textformat.numbers.te
  (iOS 18.0)
+
+### textformat.or
+ (iOS 18.4)
+
+### textformat.pa
+ (iOS 18.4)
+
+### textformat.sat
+ (iOS 18.4)
+
+### textformat.si
+ (iOS 18.4)
 
 ### textformat.size
 - textformat.size (iOS 13.0)
@@ -14953,6 +15732,42 @@ _____
 - textformat.subscript.th (iOS 14.2)
 - textformat.subscript.zh (iOS 14.2)
 
+### textformat.subscript.bn
+ (iOS 18.4)
+
+### textformat.subscript.gu
+ (iOS 18.4)
+
+### textformat.subscript.kn
+ (iOS 18.4)
+
+### textformat.subscript.ml
+ (iOS 18.4)
+
+### textformat.subscript.mni
+ (iOS 18.4)
+
+### textformat.subscript.mr
+ (iOS 18.4)
+
+### textformat.subscript.or
+ (iOS 18.4)
+
+### textformat.subscript.pa
+ (iOS 18.4)
+
+### textformat.subscript.sat
+ (iOS 18.4)
+
+### textformat.subscript.si
+ (iOS 18.4)
+
+### textformat.subscript.ta
+ (iOS 18.4)
+
+### textformat.subscript.te
+ (iOS 18.4)
+
 ### textformat.superscript
 - textformat.superscript (iOS 13.0)
 - textformat.superscript.ar (iOS 14.2)
@@ -14962,6 +15777,48 @@ _____
 - textformat.superscript.ko (iOS 14.2)
 - textformat.superscript.th (iOS 14.2)
 - textformat.superscript.zh (iOS 14.2)
+
+### textformat.superscript.bn
+ (iOS 18.4)
+
+### textformat.superscript.gu
+ (iOS 18.4)
+
+### textformat.superscript.kn
+ (iOS 18.4)
+
+### textformat.superscript.ml
+ (iOS 18.4)
+
+### textformat.superscript.mni
+ (iOS 18.4)
+
+### textformat.superscript.mr
+ (iOS 18.4)
+
+### textformat.superscript.or
+ (iOS 18.4)
+
+### textformat.superscript.pa
+ (iOS 18.4)
+
+### textformat.superscript.sat
+ (iOS 18.4)
+
+### textformat.superscript.si
+ (iOS 18.4)
+
+### textformat.superscript.ta
+ (iOS 18.4)
+
+### textformat.superscript.te
+ (iOS 18.4)
+
+### textformat.ta
+ (iOS 18.4)
+
+### textformat.te
+ (iOS 18.4)
 
 ### theatermask.and.paintbrush
 - theatermask.and.paintbrush (iOS 16.0)
@@ -15231,6 +16088,10 @@ _____
 - truck.pickup.side.and.exclamationmark (iOS 17.0)
 - truck.pickup.side.and.exclamationmark.fill (iOS 17.0)
 
+### truck.pickup.side.arrow.left.and.right
+- truck.pickup.side.arrow.left.and.right (iOS 18.4)
+- truck.pickup.side.arrow.left.and.right.fill (iOS 18.4)
+
 ### truck.pickup.side.arrowtriangle.down
 - truck.pickup.side.arrowtriangle.down (iOS 17.0)
 - truck.pickup.side.arrowtriangle.down.fill (iOS 17.0)
@@ -15254,6 +16115,10 @@ _____
 ### truck.pickup.side.hill.down
 - truck.pickup.side.hill.down (iOS 17.0)
 - truck.pickup.side.hill.down.fill (iOS 17.0)
+
+### truck.pickup.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle
+- truck.pickup.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle (iOS 18.4)
+- truck.pickup.side.hill.down.and.gauge.open.with.lines.needle.25percent.and.arrowtriangle.fill (iOS 18.4)
 
 ### truck.pickup.side.hill.up
 - truck.pickup.side.hill.up (iOS 17.0)
@@ -15557,6 +16422,12 @@ _____
 - wallet.pass (iOS 14.0)
 - wallet.pass.fill (iOS 14.0)
 
+### wand.and.outline
+ (iOS 18.2)
+
+### wand.and.outline.inverse
+ (iOS 18.2)
+
 ### wand.and.rays
  (iOS 13.0)
 
@@ -15678,6 +16549,9 @@ _____
 ### waveform.and.person.filled
  (iOS 17.0)
 
+### waveform.badge.checkmark
+ (iOS 18.1)
+
 ### waveform.badge.exclamationmark
  (iOS 15.0)
 
@@ -15696,6 +16570,9 @@ _____
 ### waveform.badge.plus
  (iOS 15.0)
 
+### waveform.badge.xmark
+ (iOS 18.1)
+
 ### waveform.path
  (iOS 13.0)
 
@@ -15709,6 +16586,25 @@ _____
 - waveform.path.ecg (iOS 13.0)
 - waveform.path.ecg.rectangle (iOS 14.0)
 - waveform.path.ecg.rectangle.fill (iOS 14.0)
+
+### waveform.path.ecg.magnifyingglass
+ (iOS 18.1)
+
+### waveform.path.ecg.text
+- waveform.path.ecg.text (iOS 18.1)
+- waveform.path.ecg.text.rtl (iOS 18.1)
+
+### waveform.path.ecg.text.clipboard
+- waveform.path.ecg.text.clipboard (iOS 18.1)
+- waveform.path.ecg.text.clipboard.rtl (iOS 18.1)
+- waveform.path.ecg.text.clipboard.fill (iOS 18.1)
+- waveform.path.ecg.text.clipboard.fill.rtl (iOS 18.1)
+
+### waveform.path.ecg.text.page
+- waveform.path.ecg.text.page (iOS 18.1)
+- waveform.path.ecg.text.page.rtl (iOS 18.1)
+- waveform.path.ecg.text.page.fill (iOS 18.1)
+- waveform.path.ecg.text.page.fill.rtl (iOS 18.1)
 
 ### web.camera
 - web.camera (iOS 16.0)
