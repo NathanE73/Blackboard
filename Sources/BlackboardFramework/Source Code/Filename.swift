@@ -40,8 +40,6 @@ enum Filename {
     static let Image = "Image.blackboard.swift"
     static let UIImage = "UIImage.blackboard.swift"
     
-    static let Localizable = "Localizable.blackboard.swift"
-    
     static let SymbolAsset = "SymbolAsset.blackboard.swift"
     static let SymbolImage = "SymbolImage.blackboard.swift"
     static let SymbolUIImage = "SymbolUIImage.blackboard.swift"

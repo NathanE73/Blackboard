@@ -75,8 +75,7 @@ class MainViewController: UIViewController {
         
         let firstName = "Steve"
         let lastName = "Dave"
-        let greetingsFormat = NSLocalizedString("greetings", comment: "")
-        footerViewController.footerText = .localizedStringWithFormat(greetingsFormat, firstName, lastName)
+        footerViewController.footerText = "Greetings, \(firstName) \(lastName)!"
     }
     
     override func viewDidAppear(_ animated: Bool) {

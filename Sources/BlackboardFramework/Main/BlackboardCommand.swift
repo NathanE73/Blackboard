@@ -43,12 +43,6 @@ struct BlackboardCommand: ParsableCommand {
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
     var skipImages = false
     
-    @Flag(help: "Skip generating localizable string support (Localizable)")
-    var skipLocalizable = false
-    
-    @Flag(help: "Skip validation of localizable strings")
-    var skipLocalizableValidation = false
-    
     @Flag(help: "Skip validation of nib resource references")
     var skipNibValidation = false
     
@@ -69,7 +63,7 @@ struct BlackboardCommand: ParsableCommand {
           help: "Skip generating UIKit extensions (UIColor, UIImage)")
     var skipUIKit = false
     
-    @Flag(help: "Skip validation of storyboard and nib resource references, and localizable strings")
+    @Flag(help: "Skip validation of storyboard and nib resource references")
     var skipValidation = false
     
     @Option(parsing: .upToNextOption,

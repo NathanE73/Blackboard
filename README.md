@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Blackboard is an iOS Storyboard, Localization and Asset Manager written in Swift.
+Blackboard is an iOS Storyboard and Asset Manager written in Swift.
 
 ## Requirements
 
@@ -64,9 +64,6 @@ You compare these to see the difference between using and not using Blackboard.
     - [Perform Segue](/README/Usage/UIStoryboardSeguePerform.md#perform-segue-usage)
     - [Prepare Segue](/README/Usage/UIStoryboardSeguePrepare.md#prepare-segue-usage)
     - [Should Perform Segue](/README/Usage/UIStoryboardSegueShouldPerform.md#should-perform-segue-usage)
-- Localization
-  - [Localizable](/README/Usage/Localizable.md#localizable-usage)
-  - [L Convenience](/README/Usage/L.md#l-convenience)
 
 ## Storyboard Resources Validation
 

@@ -36,7 +36,6 @@ class BlackboardCommandTests: XCTestCase {
         XCTAssertFalse(arguments.skipColors)
         XCTAssertFalse(arguments.skipDataAssets)
         XCTAssertFalse(arguments.skipImages)
-        XCTAssertFalse(arguments.skipLocalizable)
         XCTAssertFalse(arguments.skipNibValidation)
         XCTAssertFalse(arguments.skipStoryboards)
         XCTAssertFalse(arguments.skipStoryboardValidation)
@@ -69,9 +68,6 @@ class BlackboardCommandTests: XCTestCase {
         
         arguments = BlackboardCommand.parseOrExit(["--skip-images"])
         XCTAssertTrue(arguments.skipImages)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-localizable"])
-        XCTAssertTrue(arguments.skipLocalizable)
         
         arguments = BlackboardCommand.parseOrExit(["--skip-nib-validation"])
         XCTAssertTrue(arguments.skipNibValidation)
