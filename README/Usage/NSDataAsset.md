@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[DataAsset.blackboard.swift](/ExampleApp/Source/Generated/DataAsset.blackboard.swift#L9)
+[DataAsset.blackboard.swift](/DeclarativeApp/Source/Generated/DataAsset.blackboard.swift#L9)
 
 ```swift
 public enum DataAsset: String {
@@ -23,7 +23,7 @@ public enum DataAsset: String {
 }
 ```
 
-[NSDataAsset.blackboard.swift](/ExampleApp/Source/Generated/NSDataAsset.blackboard.swift#L14)
+[NSDataAsset.blackboard.swift](/DeclarativeApp/Source/Generated/NSDataAsset.blackboard.swift#L14)
 
 ```swift
 public extension DataAsset {

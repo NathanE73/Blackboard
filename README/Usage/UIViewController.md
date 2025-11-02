@@ -12,7 +12,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[AccountStoryboard.blackboard.swift](/ExampleApp/Source/Generated/AccountStoryboard.blackboard.swift)
+[AccountStoryboard.blackboard.swift](/DeclarativeApp/Source/Generated/AccountStoryboard.blackboard.swift)
 
 ```swift
 final class func instantiateFromStoryboard(_ initialize: ((_ openAccountViewController: OpenAccountViewController) -> Void)? = nil) -> OpenAccountViewController
@@ -20,7 +20,6 @@ final class func instantiateFromStoryboard(_ initialize: ((_ openAccountViewCont
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/AccountsTableViewController.swift#L106)
 ```swift
 @IBAction func presentOpenAccount() {
     let openAccountViewController = OpenAccountViewController.instantiateFromStoryboard()

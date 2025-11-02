@@ -98,16 +98,16 @@ class BlackboardMainTests: XCTestCase {
         let command = try BlackboardCommand.parse([])
         
         let configuration = BlackboardConfiguration(
-            input: ["Shared/Resources", "ExampleApp/Resources"],
-            output: "ExampleApp/Source/Generated")
+            input: ["Shared/Resources", "DeclarativeApp/Resources"],
+            output: "DeclarativeApp/Source/Generated")
         
         let main = try BlackboardMain(command, configuration)
         
         XCTAssertEqual(main.input, [
                         "Shared/Resources",
-                        "ExampleApp/Resources"])
+                        "DeclarativeApp/Resources"])
         
-        XCTAssertEqual(main.output, "ExampleApp/Source/Generated")
+        XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
         
         XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, [])
@@ -130,8 +130,8 @@ class BlackboardMainTests: XCTestCase {
         command.output = "DeclarativeApp/Source/Generated"
 
         let configuration = BlackboardConfiguration(
-            input: ["Shared/Resources", "ExampleApp/Resources"],
-            output: "ExampleApp/Source/Generated")
+            input: ["Shared/Resources", "DeclarativeApp/Resources"],
+            output: "DeclarativeApp/Source/Generated")
         
         let main = try BlackboardMain(command, configuration)
         

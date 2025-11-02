@@ -35,9 +35,9 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     var storyboards: [Storyboard] = []
     
     override func setUp() {
-        accountStoryboard = Fixture.storyboard(project: .example, name: "Account")
-        mainStoryboard = Fixture.storyboard(project: .example, name: "Main")
-        photoStoryboard = Fixture.storyboard(project: .example, name: "Photo")
+        accountStoryboard = Fixture.storyboard(project: .declarative, name: "Account")
+        mainStoryboard = Fixture.storyboard(project: .declarative, name: "Main")
+        photoStoryboard = Fixture.storyboard(project: .declarative, name: "Photo")
         
         storyboards = [
             accountStoryboard,
@@ -47,7 +47,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testAccountStoryboard() {
-        let expectedSource = Fixture.generated(project: .example, name: "AccountStoryboard")
+        let expectedSource = Fixture.generated(project: .declarative, name: "AccountStoryboard")
         
         guard let accountStoryboard = accountStoryboard,
             let storyboard = BlackboardStoryboard(accountStoryboard, storyboards: storyboards) else {
@@ -63,7 +63,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testMainStoryboard() {
-        let expectedSource = Fixture.generated(project: .example, name: "MainStoryboard")
+        let expectedSource = Fixture.generated(project: .declarative, name: "MainStoryboard")
         
         guard let mainStoryboard = mainStoryboard,
             let storyboard = BlackboardStoryboard(mainStoryboard, storyboards: storyboards) else {
@@ -79,7 +79,7 @@ class BlackboardStoryboardSwiftSource: XCTestCase {
     }
     
     func testPhotoStoryboard() {
-        let expectedSource = Fixture.generated(project: .example, name: "PhotoStoryboard")
+        let expectedSource = Fixture.generated(project: .declarative, name: "PhotoStoryboard")
         
         guard let photoStoryboard = photoStoryboard,
             let storyboard = BlackboardStoryboard(photoStoryboard, storyboards: storyboards) else {

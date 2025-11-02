@@ -31,7 +31,7 @@ symbols:
 
 ### Backboard Generated Code
 
-[SymbolAsset.blackboard.swift](/ExampleApp/Source/Generated/SymbolAsset.blackboard.swift#L9)
+[SymbolAsset.blackboard.swift](/DeclarativeApp/Source/Generated/SymbolAsset.blackboard.swift#L9)
 
 ```swift
 public enum SymbolAsset: String {
@@ -63,7 +63,7 @@ public enum SymbolAsset: String {
 }
 ```
 
-[SymbolImage.blackboard.swift](/ExampleApp/Source/Generated/SymbolImage.blackboard.swift#L9)
+[SymbolImage.blackboard.swift](/DeclarativeApp/Source/Generated/SymbolImage.blackboard.swift#L9)
 
 ```swift
 public extension Image {

@@ -8,7 +8,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[MainStoryboard.blackboard.swift](/ExampleApp/Source/Generated/MainStoryboard.blackboard.swift)
+[MainStoryboard.blackboard.swift](/DeclarativeApp/Source/Generated/MainStoryboard.blackboard.swift)
 
 ```swift
 func shouldPerformPresentPhotoSegue() -> Bool
@@ -16,7 +16,6 @@ func shouldPerformPresentPhotoSegue() -> Bool
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/MainViewController.swift#L93)
 ```swift
 func shouldPerformPresentPhotoSegue() -> Bool {
     return PhotoViewModel.examples.first != nil

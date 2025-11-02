@@ -12,7 +12,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[PhotoStoryboard.blackboard.swift](/ExampleApp/Source/Generated/PhotoStoryboard.blackboard.swift)
+[PhotoStoryboard.blackboard.swift](/DeclarativeApp/Source/Generated/PhotoStoryboard.blackboard.swift)
 
 ```swift
 final func dequeuePhotoCell(from collectionView: UICollectionView, for indexPath: IndexPath,
@@ -21,7 +21,6 @@ final func dequeuePhotoCell(from collectionView: UICollectionView, for indexPath
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/PhotosCollectionViewController.swift#L37)
 ```swift
 override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let photoViewModel = photoViewModels[indexPath.item]

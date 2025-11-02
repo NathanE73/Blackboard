@@ -54,7 +54,7 @@ class BlackboardConfigurationTests: XCTestCase {
         let yaml = """
         input:
         - Shared/Resources
-        - ExampleApp/Resources
+        - DeclarativeApp/Resources
         """
         
         let data = Data(yaml.utf8)
@@ -66,7 +66,7 @@ class BlackboardConfigurationTests: XCTestCase {
             XCTAssertEqual(input.count, 2)
             XCTAssertEqual(input, [
                             "Shared/Resources",
-                            "ExampleApp/Resources"])
+                            "DeclarativeApp/Resources"])
         }
         catch {
             XCTFail(error.localizedDescription)

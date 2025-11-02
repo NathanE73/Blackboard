@@ -44,9 +44,9 @@ ios:
 
 input:
 - Shared/Resources
-- ExampleApp/Resources
+- DeclarativeApp/Resources
 
-output: ExampleApp/Source/Generated
+output: DeclarativeApp/Source/Generated
 
 symbols:
 - a.book.closed

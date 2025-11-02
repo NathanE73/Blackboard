@@ -13,7 +13,7 @@ in the IDE. Just add a new "Run Script Phase" with:
 
 ```bash
 if which "bin/blackboard" >/dev/null; then
-  "bin/blackboard" --input "ExampleApp/Resources/" --output "ExampleApp/Source/Generated/"
+  "bin/blackboard" --input "DeclarativeApp/Resources/" --output "DeclarativeApp/Source/Generated/"
 else
   echo "warning: blackboard not installed, download from https://github.com/NathanE73/Blackboard"
 fi

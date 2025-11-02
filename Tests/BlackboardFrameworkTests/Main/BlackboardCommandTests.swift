@@ -95,22 +95,22 @@ class BlackboardCommandTests: XCTestCase {
         let arguments = BlackboardCommand.parseOrExit([
             "--input",
             "Shared/Resources",
-            "ExampleApp/Resources"
+            "DeclarativeApp/Resources"
         ])
         
         XCTAssertEqual(arguments.input, [
             "Shared/Resources",
-            "ExampleApp/Resources"
+            "DeclarativeApp/Resources"
         ])
     }
     
     func testOutput() {
         let arguments = BlackboardCommand.parseOrExit([
             "--output",
-            "ExampleApp/Source/Generated"
+            "DeclarativeApp/Source/Generated"
         ])
         
-        XCTAssertEqual(arguments.output, "ExampleApp/Source/Generated")
+        XCTAssertEqual(arguments.output, "DeclarativeApp/Source/Generated")
     }
     
 }

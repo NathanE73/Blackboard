@@ -12,7 +12,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[AccountStoryboard.blackboard.swift](/ExampleApp/Source/Generated/AccountStoryboard.blackboard.swift)
+[AccountStoryboard.blackboard.swift](/DeclarativeApp/Source/Generated/AccountStoryboard.blackboard.swift)
 
 ```swift
 final func dequeueAccountCell(from tableView: UITableView, for indexPath: IndexPath,
@@ -27,7 +27,6 @@ final func dequeueOpenNewAccountCell(from tableView: UITableView, for indexPath:
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/AccountsTableViewController.swift#L67)
 ```swift
 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     switch Section(rawValue: indexPath.section)! {

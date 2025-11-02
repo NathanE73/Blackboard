@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ImageAsset.blackboard.swift](/ExampleApp/Source/Generated/ImageAsset.blackboard.swift#L9)
+[ImageAsset.blackboard.swift](/DeclarativeApp/Source/Generated/ImageAsset.blackboard.swift#L9)
 
 ```swift
 public enum ImageAsset: String {
@@ -26,7 +26,7 @@ public enum ImageAsset: String {
 }
 ```
 
-[UIImage.blackboard.swift](/ExampleApp/Source/Generated/UIImage.blackboard.swift#L14)
+[UIImage.blackboard.swift](/DeclarativeApp/Source/Generated/UIImage.blackboard.swift#L14)
 
 ```swift
 public extension ImageAsset {

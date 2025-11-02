@@ -29,7 +29,7 @@ import XCTest
 class StoryboardTests: XCTestCase {
     
     func testAccount() throws {
-        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Account"))
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .declarative, name: "Account"))
         
         XCTAssertEqual(storyboard.name, "Account")
         XCTAssertEqual(storyboard.initialViewControllerIdentifier, "LYS-UF-AgY")
@@ -41,7 +41,7 @@ class StoryboardTests: XCTestCase {
     }
     
     func testEmpty() throws {
-        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Empty"))
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .declarative, name: "Empty"))
         
         XCTAssertEqual(storyboard.name, "Empty")
         XCTAssertNil(storyboard.initialViewControllerIdentifier)
@@ -53,13 +53,13 @@ class StoryboardTests: XCTestCase {
     }
     
     func testLaunchScreen() {
-        let storyboard = Fixture.storyboard(project: .example, name: "LaunchScreen")
+        let storyboard = Fixture.storyboard(project: .declarative, name: "LaunchScreen")
         
         XCTAssertNil(storyboard)
     }
     
     func testMain() throws {
-        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Main"))
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .declarative, name: "Main"))
         
         XCTAssertEqual(storyboard.name, "Main")
         XCTAssertEqual(storyboard.initialViewControllerIdentifier, "BYZ-38-t0r")
@@ -71,7 +71,7 @@ class StoryboardTests: XCTestCase {
     }
     
     func testPhoto() throws {
-        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .example, name: "Photo"))
+        let storyboard = try XCTUnwrap(Fixture.storyboard(project: .declarative, name: "Photo"))
         
         XCTAssertEqual(storyboard.name, "Photo")
         XCTAssertEqual(storyboard.initialViewControllerIdentifier, "BpT-OW-KyL")

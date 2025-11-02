@@ -1,7 +1,6 @@
 ## Usage
 
 The `DeclarativeApp` project uses Blackboard using `SwiftUI`.
-The `ExampleApp` project uses Blackboard using `UIKit`.
 
 - Asset Usage
   - CoreGraphics

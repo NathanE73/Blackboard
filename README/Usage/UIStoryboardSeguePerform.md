@@ -12,7 +12,7 @@ Scans through storyboards.
 
 ### Backboard Generated Code
 
-[AccountStoryboard.blackboard.swift](/ExampleApp/Source/Generated/AccountStoryboard.blackboard.swift)
+[AccountStoryboard.blackboard.swift](/DeclarativeApp/Source/Generated/AccountStoryboard.blackboard.swift)
 
 ```swift
 final func performPresentOpenAccountSegue(_ initialize: ((OpenAccountViewController) -> Void)? = nil)
@@ -22,7 +22,6 @@ final func performShowAccountSegue(_ initialize: ((AccountViewController) -> Voi
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/AccountsTableViewController.swift#L88)
 ```swift
 override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     switch Section(rawValue: indexPath.section)! {

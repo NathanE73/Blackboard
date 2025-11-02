@@ -32,13 +32,13 @@ enum FixtureError: Error {
 class Fixture {
     
     enum Project {
-        case example
+        case declarative
         case shared
         
         var path: String {
             switch self {
-            case .example:
-                return "ExampleApp"
+            case .declarative:
+                return "DeclarativeApp"
             case .shared:
                 return "Shared"
             }

@@ -16,7 +16,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ImageAsset.blackboard.swift](/ExampleApp/Source/Generated/ImageAsset.blackboard.swift#L9)
+[ImageAsset.blackboard.swift](/DeclarativeApp/Source/Generated/ImageAsset.blackboard.swift#L9)
 
 ```swift
 public enum ImageAsset: String {
@@ -30,7 +30,7 @@ public enum ImageAsset: String {
 }
 ```
 
-[Image.blackboard.swift](/ExampleApp/Source/Generated/Image.blackboard.swift#L14)
+[Image.blackboard.swift](/DeclarativeApp/Source/Generated/Image.blackboard.swift#L14)
 
 ```swift
 @available(iOS 13.0, *)

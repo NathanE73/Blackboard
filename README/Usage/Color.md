@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift#L9)
+[ColorAsset.blackboard.swift](/DeclarativeApp/Source/Generated/ColorAsset.blackboard.swift#L9)
 
 ```swift
 public enum ColorAsset: String {
@@ -32,7 +32,7 @@ public enum ColorAsset: String {
 }
 ```
 
-[Color.blackboard.swift](/ExampleApp/Source/Generated/Color.blackboard.swift#L14)
+[Color.blackboard.swift](/DeclarativeApp/Source/Generated/Color.blackboard.swift#L14)
 
 ```swift
 @available(iOS 13.0, *)
