@@ -50,8 +50,6 @@ struct BlackboardConfiguration: Decodable {
         case colors
         case dataAssets = "data-assets"
         case images
-        case localizable
-        case localizableValidation = "localizable-validation"
         case nibValidation = "nib-validation"
         case storyboards
         case storyboardValidation = "storyboard-validation"
@@ -65,23 +63,6 @@ struct BlackboardConfiguration: Decodable {
     }
     var skips: Set<Skip>?
     
-    struct LocalizableConfiguration: Decodable {
-        var base: String?
-        var useMainBundle: Bool?
-        var includeKeys: [String]?
-        var excludeKeys: [String]?
-        var keyArguments: [String: [String]]?
-        
-        enum CodingKeys: String, CodingKey {
-            case base
-            case useMainBundle = "use-main-bundle"
-            case includeKeys = "include"
-            case excludeKeys = "exclude"
-            case keyArguments = "arguments"
-        }
-    }
-    var localizable: LocalizableConfiguration?
-    
     enum CodingKeys: String, CodingKey {
         case ios
         case input
@@ -89,7 +70,6 @@ struct BlackboardConfiguration: Decodable {
         case symbolsCollection = "symbols-collection"
         case symbols
         case skips = "skip"
-        case localizable
     }
     
 }

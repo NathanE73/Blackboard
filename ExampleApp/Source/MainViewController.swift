@@ -44,7 +44,7 @@ class MainViewController: UIViewController {
         
         let firstName = "Steve"
         let lastName = "Dave"
-        footerViewController.footerText = L.greetings(firstName: firstName, lastName: lastName)
+        footerViewController.footerText = "Greetings, \(firstName) \(lastName)!"
     }
     
     override func viewDidAppear(_ animated: Bool) {

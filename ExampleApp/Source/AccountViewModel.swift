@@ -52,9 +52,9 @@ extension AccountViewModel {
     
     static var examples: [AccountViewModel] {
         let accounts = [
-            Account(name: L.accountTypeSavings, balance: 1_456.87),
-            Account(name: L.accountTypeChecking, balance: 0.23),
-            Account(name: L.accountTypeRoth, balance: 1_234_567_890.92)
+            Account(name: "Savings", balance: 1_456.87),
+            Account(name: "Checking", balance: 0.23),
+            Account(name: "Roth IRA", balance: 1_234_567_890.92)
         ]
         return accounts.map(AccountViewModel.init)
     }

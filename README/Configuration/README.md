@@ -11,9 +11,6 @@ OPTIONS:
   --skip-colors           Skip generating color extensions (Color, CGColor, and UIColor)
   --skip-data-assets      Skip generating data asset extensions (NSDataAsset)
   --skip-images           Skip generating image extensions (Image, UIImage)
-  --skip-localizable      Skip generating localizable string support (Localizable)
-  --skip-localizable-validation
-                          Skip validation of localizable strings
   --skip-nib-validation   Skip validation of nib resource references
   --skip-storyboards      Skip generating storyboard extensions (UIStoryboard)
   --skip-storyboard-validation
@@ -21,7 +18,7 @@ OPTIONS:
   --skip-swiftui          Skip generating SwiftUI extensions (Color, Image)
   --skip-symbols          Skip generating symbol extensions (Image, UIImage)
   --skip-uikit            Skip generating UIKit extensions (UIColor, UIImage)
-  --skip-validation       Skip validation of storyboard and nib resource references, and localizable strings
+  --skip-validation       Skip validation of storyboard and nib resource references
   --input <input>         Input directory or directories
   --output <output>       Output directory; where generated code will be stored
   --version               Show the version.
@@ -37,7 +34,6 @@ Configure Blackboard by adding a .blackboard.yml file from the directory you'll 
 * `output`: Output directory; where generated code will be stored
 * `symbols`: List of symbol names
 * `skip`: Skip generating various source file
-* `localizable`: Localizable base language and bundle options
 
 Here is a sample configuration:
 
@@ -70,10 +66,6 @@ symbols:
 - return
 - repeat
 - repeat.circle
-
-localizable:
-  base: en
-  use-main-bundle: false
 ```
 
 Command line arguments override matching configuration option.
@@ -85,8 +77,6 @@ skip:
 - colors
 - data-assets
 - images
-- localizable
-- localizable-validation
 - nib-validation
 - storyboards
 - storyboard-validation
@@ -97,35 +87,4 @@ skip:
 - uikit-images
 - uikit-symbols
 - validation
-```
-
-#### Localizable Key Options
-
-You can include specific keys:
-
-```
-localizable:
-  include:
-  - account-type-checking
-  - account-type-roth
-  - account-type-savings
-```
-
-You can exclude one or more keys:
-
-```
-localizable:
-  exclude:
-  - photoRedCup
-```
-
-You can name the arguments:
-
-```
-localizable:
-  arguments:
-    "Days since last injury: %@": [numberOfDays]
-    COOKIE_COUNT: [cookies]
-    greetings: [firstName, lastName]
-
 ```

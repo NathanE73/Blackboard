@@ -41,8 +41,6 @@ public struct BlackboardMain {
     var skipColors: Bool
     var skipDataAssets: Bool
     var skipImages: Bool
-    var skipLocalizable: Bool
-    var skipLocalizableValidation: Bool
     var skipNibValidation: Bool
     var skipStoryboards: Bool
     var skipStoryboardValidation: Bool
@@ -53,8 +51,6 @@ public struct BlackboardMain {
     var skipUIKitImages: Bool
     var skipUIKitSymbols: Bool
     var skipValidation: Bool
-    
-    var localizable: LocalizableConfiguration
     
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
         configurationFile = configuration?.file ?? ""
@@ -83,8 +79,6 @@ public struct BlackboardMain {
         self.skipColors = command.skipColors || skips.contains(.colors)
         self.skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
         self.skipImages = command.skipImages || skips.contains(.images)
-        self.skipLocalizable = command.skipLocalizable || skips.contains(.localizable)
-        self.skipLocalizableValidation = command.skipLocalizableValidation || skips.contains(.localizableValidation)
         self.skipNibValidation = command.skipNibValidation || skips.contains(.nibValidation)
         self.skipStoryboards = command.skipStoryboards || skips.contains(.storyboards)
         self.skipStoryboardValidation = command.skipStoryboardValidation || skips.contains(.storyboardValidation)
@@ -95,8 +89,6 @@ public struct BlackboardMain {
         self.skipUIKitImages = skips.contains(.uikitImages)
         self.skipUIKitSymbols = skips.contains(.uikitSymbols)
         self.skipValidation = command.skipValidation || skips.contains(.validation)
-        
-        self.localizable = try LocalizableConfiguration(using: configuration)
     }
     
     public static func main() {
@@ -159,7 +151,6 @@ public struct BlackboardMain {
         let colorSets = processColors(input, output)
         processDataAssets(input, output)
         let imageSets = processImages(input, output)
-        let localizables = processLocalizable(input, output)
         
         // Validate
         
@@ -173,10 +164,6 @@ public struct BlackboardMain {
         // Valiate Nib Resources
         
         valiateNibs(input, knownNamedColors, knownNamedImages)
-        
-        // Validate Localizable Resources
-        
-        validateLocalizables(localizables)
     }
     
 }

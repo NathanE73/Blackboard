@@ -164,8 +164,6 @@ class BlackboardConfigurationTests: XCTestCase {
         - colors
         - data-assets
         - images
-        - localizable
-        - localizable-validation
         - nib-validation
         - storyboards
         - storyboard-validation
@@ -184,13 +182,11 @@ class BlackboardConfigurationTests: XCTestCase {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
             let skips = try XCTUnwrap(configuration.skips)
-            XCTAssertEqual(skips.count, 15)
+            XCTAssertEqual(skips.count, 13)
             XCTAssertEqual(skips, [
                 .colors,
                 .dataAssets,
                 .images,
-                .localizable,
-                .localizableValidation,
                 .nibValidation,
                 .storyboards,
                 .storyboardValidation,
@@ -201,43 +197,6 @@ class BlackboardConfigurationTests: XCTestCase {
                 .uikitImages,
                 .uikitSymbols,
                 .validation
-            ])
-        }
-        catch {
-            XCTFail(error.localizedDescription)
-        }
-    }
-    
-    func testDecodableLocalizableConfiguration() throws {
-        let yaml = """
-        localizable:
-          base: en_CA
-          use-main-bundle: true
-          include:
-          - greetings
-          - one_hundred_percent
-          exclude:
-          - photoRedCup
-          arguments:
-            "Days since last injury: %@": [days]
-            COOKIE_COUNT: [numberOfCookies]
-            greetings: [firstName, lastName]
-        """
-        
-        let data = Data(yaml.utf8)
-        
-        do {
-            let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
-            
-            let localizable = try XCTUnwrap(configuration.localizable)
-            XCTAssertEqual(localizable.base, "en_CA")
-            XCTAssertEqual(localizable.useMainBundle, true)
-            XCTAssertEqual(localizable.includeKeys, ["greetings", "one_hundred_percent"])
-            XCTAssertEqual(localizable.excludeKeys, ["photoRedCup"])
-            XCTAssertEqual(localizable.keyArguments, [
-                "Days since last injury: %@": ["days"],
-                "COOKIE_COUNT": ["numberOfCookies"],
-                "greetings": ["firstName", "lastName"]
             ])
         }
         catch {

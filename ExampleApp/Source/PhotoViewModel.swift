@@ -46,13 +46,13 @@ extension PhotoViewModel {
     
     static var examples: [PhotoViewModel] {
         let photos = [
-            Photo(name: L.photoButton, image: .button),
-            Photo(name: L.photoGreenPaperClip, image: .greenPaperClip),
-            Photo(name: L.photoGreenPencil, image: .greenPencil),
-            Photo(name: L.photoRedCup, image: .Red.cup),
-            Photo(name: L.photoStapler, image: .Red.stapler),
-            Photo(name: L.photoSilverPaperClip, image: .silverPaperClip),
-            Photo(name: L.photoWhiteDice, image: .whiteDice)
+            Photo(name: "Button", image: .button),
+            Photo(name: "Green Paper Clip", image: .greenPaperClip),
+            Photo(name: "Green Pencil", image: .greenPencil),
+            Photo(name: "Red Cup", image: .Red.cup),
+            Photo(name: "Stapler", image: .Red.stapler),
+            Photo(name: "Silver Paper Clip", image: .silverPaperClip),
+            Photo(name: "White Dice", image: .whiteDice)
         ]
         return photos.map(PhotoViewModel.init)
     }
