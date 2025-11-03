@@ -66,7 +66,6 @@ lint:
 
 generate:
 	bin/blackboard --input Shared/Resources/ DeclarativeApp/Resources/ --output DeclarativeApp/Source/Generated/
-	bin/blackboard --input Shared/Resources/ ExampleApp/Resources/ --output ExampleApp/Source/Generated/
 
 resources:
 	cat Templates/symbols/NameAliasesStringsResourceHeader.swift \

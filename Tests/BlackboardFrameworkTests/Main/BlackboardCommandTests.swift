@@ -36,13 +36,9 @@ class BlackboardCommandTests: XCTestCase {
         XCTAssertFalse(arguments.skipColors)
         XCTAssertFalse(arguments.skipDataAssets)
         XCTAssertFalse(arguments.skipImages)
-        XCTAssertFalse(arguments.skipNibValidation)
-        XCTAssertFalse(arguments.skipStoryboards)
-        XCTAssertFalse(arguments.skipStoryboardValidation)
         XCTAssertFalse(arguments.skipSwiftUI)
         XCTAssertFalse(arguments.skipSymbols)
         XCTAssertFalse(arguments.skipUIKit)
-        XCTAssertFalse(arguments.skipValidation)
         
         XCTAssertEqual(arguments.input, [])
         XCTAssertNil(arguments.output)
@@ -69,15 +65,6 @@ class BlackboardCommandTests: XCTestCase {
         arguments = BlackboardCommand.parseOrExit(["--skip-images"])
         XCTAssertTrue(arguments.skipImages)
         
-        arguments = BlackboardCommand.parseOrExit(["--skip-nib-validation"])
-        XCTAssertTrue(arguments.skipNibValidation)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-storyboards"])
-        XCTAssertTrue(arguments.skipStoryboards)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-storyboard-validation"])
-        XCTAssertTrue(arguments.skipStoryboardValidation)
-        
         arguments = BlackboardCommand.parseOrExit(["--skip-swiftui"])
         XCTAssertTrue(arguments.skipSwiftUI)
         
@@ -86,31 +73,28 @@ class BlackboardCommandTests: XCTestCase {
         
         arguments = BlackboardCommand.parseOrExit(["--skip-uikit"])
         XCTAssertTrue(arguments.skipUIKit)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-validation"])
-        XCTAssertTrue(arguments.skipValidation)
     }
     
     func testInput() {
         let arguments = BlackboardCommand.parseOrExit([
             "--input",
             "Shared/Resources",
-            "ExampleApp/Resources"
+            "DeclarativeApp/Resources"
         ])
         
         XCTAssertEqual(arguments.input, [
             "Shared/Resources",
-            "ExampleApp/Resources"
+            "DeclarativeApp/Resources"
         ])
     }
     
     func testOutput() {
         let arguments = BlackboardCommand.parseOrExit([
             "--output",
-            "ExampleApp/Source/Generated"
+            "DeclarativeApp/Source/Generated"
         ])
         
-        XCTAssertEqual(arguments.output, "ExampleApp/Source/Generated")
+        XCTAssertEqual(arguments.output, "DeclarativeApp/Source/Generated")
     }
     
 }

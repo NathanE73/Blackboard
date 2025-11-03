@@ -53,7 +53,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
     }
     
     func testImageAssetSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "ImageAsset")
+        let expectedSource = Fixture.generated(project: .declarative, name: "ImageAsset")
         
         let source = SwiftSource()
             .appendImageAssets(images: blackboardImages)
@@ -63,7 +63,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
     }
     
     func testImageSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "Image")
+        let expectedSource = Fixture.generated(project: .declarative, name: "Image")
         
         let source = SwiftSource()
             .appendImages(images: blackboardImages,
@@ -75,7 +75,7 @@ class BlackboardImageSwiftSourceTests: XCTestCase {
     }
     
     func testUIImageSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "UIImage")
+        let expectedSource = Fixture.generated(project: .declarative, name: "UIImage")
         
         let source = SwiftSource()
             .appendUIImages(images: blackboardImages)

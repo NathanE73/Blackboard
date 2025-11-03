@@ -50,7 +50,7 @@ class BlackboardDataSwiftSourceTests: XCTestCase {
     }
     
     func testDataAssetSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "DataAsset")
+        let expectedSource = Fixture.generated(project: .declarative, name: "DataAsset")
         
         let source = SwiftSource()
             .appendDataAssets(data: blackboardData)
@@ -60,7 +60,7 @@ class BlackboardDataSwiftSourceTests: XCTestCase {
     }
     
     func testNSDataAssetSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "NSDataAsset")
+        let expectedSource = Fixture.generated(project: .declarative, name: "NSDataAsset")
         
         let source = SwiftSource()
             .appendNSDataAsset(data: blackboardData)

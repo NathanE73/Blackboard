@@ -32,13 +32,13 @@ enum FixtureError: Error {
 class Fixture {
     
     enum Project {
-        case example
+        case declarative
         case shared
         
         var path: String {
             switch self {
-            case .example:
-                return "ExampleApp"
+            case .declarative:
+                return "DeclarativeApp"
             case .shared:
                 return "Shared"
             }
@@ -86,16 +86,6 @@ class Fixture {
         }
         
         throw FixtureError.missingResource
-    }
-    
-    static func storyboard(project: Project, path: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> Storyboard? {
-        let path = "\(project.path)/Resources/Storyboards/Base.lproj/\(name).storyboard"
-        
-        guard let data = fixture(path, file: file, line: line) else {
-            return nil
-        }
-        
-        return Storyboard(file: path, name: name, data: data)
     }
     
 }

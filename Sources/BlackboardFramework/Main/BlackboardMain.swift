@@ -41,16 +41,12 @@ public struct BlackboardMain {
     var skipColors: Bool
     var skipDataAssets: Bool
     var skipImages: Bool
-    var skipNibValidation: Bool
-    var skipStoryboards: Bool
-    var skipStoryboardValidation: Bool
     var skipSwiftUI: Bool
     var skipSymbols: Bool
     var skipUIKit: Bool
     var skipUIKitColors: Bool
     var skipUIKitImages: Bool
     var skipUIKitSymbols: Bool
-    var skipValidation: Bool
     
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
         configurationFile = configuration?.file ?? ""
@@ -79,16 +75,12 @@ public struct BlackboardMain {
         self.skipColors = command.skipColors || skips.contains(.colors)
         self.skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
         self.skipImages = command.skipImages || skips.contains(.images)
-        self.skipNibValidation = command.skipNibValidation || skips.contains(.nibValidation)
-        self.skipStoryboards = command.skipStoryboards || skips.contains(.storyboards)
-        self.skipStoryboardValidation = command.skipStoryboardValidation || skips.contains(.storyboardValidation)
         self.skipSwiftUI = command.skipSwiftUI || skips.contains(.swiftui)
         self.skipSymbols = command.skipSymbols || skips.contains(.symbols)
         self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
         self.skipUIKitColors = skips.contains(.uikitColors)
         self.skipUIKitImages = skips.contains(.uikitImages)
         self.skipUIKitSymbols = skips.contains(.uikitSymbols)
-        self.skipValidation = command.skipValidation || skips.contains(.validation)
     }
     
     public static func main() {
@@ -147,23 +139,9 @@ public struct BlackboardMain {
         
         // Process Resources
         
-        let storyboards = processStoryboards(input, output)
-        let colorSets = processColors(input, output)
+        processColors(input, output)
         processDataAssets(input, output)
-        let imageSets = processImages(input, output)
-        
-        // Validate
-        
-        let knownNamedColors = Set(colorSets.flatMapAssets().map(\.resourceName))
-        let knownNamedImages = Set(imageSets.flatMapAssets().map(\.resourceName))
-        
-        // Validate Storyboard Resources
-        
-        valiateStoryboards(storyboards, knownNamedColors, knownNamedImages)
-        
-        // Valiate Nib Resources
-        
-        valiateNibs(input, knownNamedColors, knownNamedImages)
+        processImages(input, output)
     }
     
 }

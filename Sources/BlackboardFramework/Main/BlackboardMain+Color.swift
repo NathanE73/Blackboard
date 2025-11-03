@@ -26,15 +26,15 @@ import Foundation
 
 extension BlackboardMain {
     
-    func processColors(_ input: [String], _ output: String) -> [AssetItem<ColorSet>] {
-        guard !skipColors else { return [] }
+    func processColors(_ input: [String], _ output: String) {
+        guard !skipColors else { return }
         
         let colorSets = ColorSetFactory().assetItemsAt(paths: input)
         
         let blackboardColors = colorSets.mapAssets(BlackboardColor.init)
         
         guard !blackboardColors.isEmpty else {
-            return []
+            return
         }
         
         let includeSwiftUI = !skipSwiftUI
@@ -61,8 +61,6 @@ extension BlackboardMain {
                 .appendCGColors(colors: blackboardColors)
                 .write()
         }
-        
-        return colorSets
     }
     
 }

@@ -12,7 +12,7 @@ in the IDE. Just add a new "Run Script Phase" with:
 
 ```bash
 if which mint >/dev/null; then
-  mint run NathanE73/Blackboard --input "ExampleApp/Resources/" --output "ExampleApp/Source/Generated/"
+  mint run NathanE73/Blackboard --input "DeclarativeApp/Resources/" --output "DeclarativeApp/Source/Generated/"
 else
   echo "warning: mint not installed, download from https://github.com/yonaskolb/Mint"
 fi

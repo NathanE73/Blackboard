@@ -50,16 +50,12 @@ struct BlackboardConfiguration: Decodable {
         case colors
         case dataAssets = "data-assets"
         case images
-        case nibValidation = "nib-validation"
-        case storyboards
-        case storyboardValidation = "storyboard-validation"
         case swiftui
         case symbols
         case uikit
         case uikitColors = "uikit-colors"
         case uikitImages = "uikit-images"
         case uikitSymbols = "uikit-symbols"
-        case validation
     }
     var skips: Set<Skip>?
     

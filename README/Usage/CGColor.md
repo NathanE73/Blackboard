@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift#L9)
+[ColorAsset.blackboard.swift](/DeclarativeApp/Source/Generated/ColorAsset.blackboard.swift#L9)
 
 ```swift
 public enum ColorAsset: String {
@@ -32,7 +32,7 @@ public enum ColorAsset: String {
 }
 ```
 
-[CGColor.blackboard.swift](/ExampleApp/Source/Generated/CGColor.blackboard.swift#L9)
+[CGColor.blackboard.swift](/DeclarativeApp/Source/Generated/CGColor.blackboard.swift#L9)
 
 ```swift
 public extension ColorAsset {
@@ -58,14 +58,12 @@ public extension CGColor {
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/FooterViewController.swift#L45)
 ```swift
 view.layer.borderColor = .fluorescentBlizzardBlue
 ```
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/FooterViewController.swift#L47)
 ```swift
 view.layer.borderColor = UIColor(named: "Fluorescent/Blizzard Blue")?.cgColor
 ```

@@ -37,20 +37,11 @@ struct BlackboardCommand: ParsableCommand {
     @Flag(help: "Skip generating color extensions (Color, CGColor, and UIColor)")
     var skipColors = false
     
-    @Flag(help: "Skip generating data asset extensions (NSDataAsset)")
+    @Flag(help: "Skip generating data asset extensions (Data, NSDataAsset)")
     var skipDataAssets = false
     
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
     var skipImages = false
-    
-    @Flag(help: "Skip validation of nib resource references")
-    var skipNibValidation = false
-    
-    @Flag(help: "Skip generating storyboard extensions (UIStoryboard)")
-    var skipStoryboards = false
-    
-    @Flag(help: "Skip validation of storyboard resource references")
-    var skipStoryboardValidation = false
     
     @Flag(name: .customLong("skip-swiftui"),
           help: "Skip generating SwiftUI extensions (Color, Image)")
@@ -62,9 +53,6 @@ struct BlackboardCommand: ParsableCommand {
     @Flag(name: .customLong("skip-uikit"),
           help: "Skip generating UIKit extensions (UIColor, UIImage)")
     var skipUIKit = false
-    
-    @Flag(help: "Skip validation of storyboard and nib resource references")
-    var skipValidation = false
     
     @Option(parsing: .upToNextOption,
             help: "Input directory or directories")

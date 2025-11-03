@@ -85,29 +85,25 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipNibValidation)
-        XCTAssertFalse(main.skipStoryboards)
-        XCTAssertFalse(main.skipStoryboardValidation)
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationInputOutput() throws {
         let command = try BlackboardCommand.parse([])
         
         let configuration = BlackboardConfiguration(
-            input: ["Shared/Resources", "ExampleApp/Resources"],
-            output: "ExampleApp/Source/Generated")
+            input: ["Shared/Resources", "DeclarativeApp/Resources"],
+            output: "DeclarativeApp/Source/Generated")
         
         let main = try BlackboardMain(command, configuration)
         
         XCTAssertEqual(main.input, [
                         "Shared/Resources",
-                        "ExampleApp/Resources"])
+                        "DeclarativeApp/Resources"])
         
-        XCTAssertEqual(main.output, "ExampleApp/Source/Generated")
+        XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
         
         XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, [])
@@ -115,13 +111,9 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipNibValidation)
-        XCTAssertFalse(main.skipStoryboards)
-        XCTAssertFalse(main.skipStoryboardValidation)
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testInputOutput() throws {
@@ -130,8 +122,8 @@ class BlackboardMainTests: XCTestCase {
         command.output = "DeclarativeApp/Source/Generated"
 
         let configuration = BlackboardConfiguration(
-            input: ["Shared/Resources", "ExampleApp/Resources"],
-            output: "ExampleApp/Source/Generated")
+            input: ["Shared/Resources", "DeclarativeApp/Resources"],
+            output: "DeclarativeApp/Source/Generated")
         
         let main = try BlackboardMain(command, configuration)
         
@@ -145,13 +137,9 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipNibValidation)
-        XCTAssertFalse(main.skipStoryboards)
-        XCTAssertFalse(main.skipStoryboardValidation)
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Symbols Collection Tests
@@ -179,13 +167,9 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipNibValidation)
-        XCTAssertFalse(main.skipStoryboards)
-        XCTAssertFalse(main.skipStoryboardValidation)
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Symbols Tests
@@ -210,13 +194,9 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipNibValidation)
-        XCTAssertFalse(main.skipStoryboards)
-        XCTAssertFalse(main.skipStoryboardValidation)
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
 }

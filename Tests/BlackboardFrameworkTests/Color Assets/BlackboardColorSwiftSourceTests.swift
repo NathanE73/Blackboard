@@ -59,7 +59,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testColorAssetSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "ColorAsset")
+        let expectedSource = Fixture.generated(project: .declarative, name: "ColorAsset")
         
         let source = SwiftSource()
             .appendColorAssets(colors: blackboardColors)
@@ -69,7 +69,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testColorSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "Color")
+        let expectedSource = Fixture.generated(project: .declarative, name: "Color")
         
         let source = SwiftSource()
             .appendColors(colors: blackboardColors, target: Version(13, 0))
@@ -79,7 +79,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testCGColorSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "CGColor")
+        let expectedSource = Fixture.generated(project: .declarative, name: "CGColor")
         
         let source = SwiftSource()
             .appendCGColors(colors: blackboardColors)
@@ -89,7 +89,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
     }
     
     func testUIColorSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "UIColor")
+        let expectedSource = Fixture.generated(project: .declarative, name: "UIColor")
         
         let source = SwiftSource()
             .appendUIColors(colors: blackboardColors)

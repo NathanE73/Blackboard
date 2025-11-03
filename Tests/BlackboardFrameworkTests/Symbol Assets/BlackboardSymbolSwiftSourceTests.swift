@@ -62,7 +62,7 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
     }
     
     func testImageAssetSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "SymbolAsset")
+        let expectedSource = Fixture.generated(project: .declarative, name: "SymbolAsset")
         
         let source = SwiftSource()
             .appendSymbolAssets(symbols: blackboardSymbols, target: Version(13, 0))
@@ -72,7 +72,7 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
     }
     
     func testSymbolImageSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "SymbolImage")
+        let expectedSource = Fixture.generated(project: .declarative, name: "SymbolImage")
         
         let source = SwiftSource()
             .appendSymbolImages(symbols: blackboardSymbols,
@@ -84,7 +84,7 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
     }
     
     func testSymbolUIImageSource() {
-        let expectedSource = Fixture.generated(project: .example, name: "SymbolUIImage")
+        let expectedSource = Fixture.generated(project: .declarative, name: "SymbolUIImage")
         
         let source = SwiftSource()
             .appendSymbolUIImages(symbols: blackboardSymbols, target: Version(13, 0))

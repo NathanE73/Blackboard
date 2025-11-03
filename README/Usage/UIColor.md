@@ -12,7 +12,7 @@ Scans through asset catalogs.
 
 ### Backboard Generated Code
 
-[ColorAsset.blackboard.swift](/ExampleApp/Source/Generated/ColorAsset.blackboard.swift#L9)
+[ColorAsset.blackboard.swift](/DeclarativeApp/Source/Generated/ColorAsset.blackboard.swift#L9)
 
 ```swift
 public enum ColorAsset: String {
@@ -32,7 +32,7 @@ public enum ColorAsset: String {
 }
 ```
 
-[UIColor.blackboard.swift](/ExampleApp/Source/Generated/UIColor.blackboard.swift#L14)
+[UIColor.blackboard.swift](/DeclarativeApp/Source/Generated/UIColor.blackboard.swift#L14)
 
 ```swift
 public extension ColorAsset {
@@ -60,7 +60,6 @@ public extension UIColor {
 
 ### The Blackboard Way
 
-[ExampleApp](/ExampleApp/Source/FooterViewController.swift#L43)
 ```swift
 view.backgroundColor = .fluorescentMagicMint
 
@@ -70,7 +69,6 @@ view.backgroundColor = UIColor(asset: .fluorescentMagicMint, compatibleWith: tra
 
 ### The Standard UIKit Way
 
-[StandardApp](/StandardApp/Source/FooterViewController.swift#L44)
 ```swift
 view.backgroundColor = UIColor(named: "Fluorescent/Magic Mint")
 view.backgroundColor = UIColor(named: "Fluorescent/Magic Mint", compatibleWith: traitCollection)

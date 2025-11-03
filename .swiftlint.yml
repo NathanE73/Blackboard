@@ -2,13 +2,10 @@ reporter: "xcode"
 
 included:
   - DeclarativeApp
-  - ExampleApp
   - Sources
-  - StandardApp
 
 excluded:
   - DeclarativeApp/Source/Generated
-  - ExampleApp/Source/Generated
 
 disabled_rules:
   - file_length

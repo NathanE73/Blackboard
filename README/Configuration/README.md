@@ -9,16 +9,11 @@ USAGE: blackboard <options>
 OPTIONS:
   --config <config>       Configuration file
   --skip-colors           Skip generating color extensions (Color, CGColor, and UIColor)
-  --skip-data-assets      Skip generating data asset extensions (NSDataAsset)
+  --skip-data-assets      Skip generating data asset extensions (Data, NSDataAsset)
   --skip-images           Skip generating image extensions (Image, UIImage)
-  --skip-nib-validation   Skip validation of nib resource references
-  --skip-storyboards      Skip generating storyboard extensions (UIStoryboard)
-  --skip-storyboard-validation
-                          Skip validation of storyboard resource references
   --skip-swiftui          Skip generating SwiftUI extensions (Color, Image)
   --skip-symbols          Skip generating symbol extensions (Image, UIImage)
   --skip-uikit            Skip generating UIKit extensions (UIColor, UIImage)
-  --skip-validation       Skip validation of storyboard and nib resource references
   --input <input>         Input directory or directories
   --output <output>       Output directory; where generated code will be stored
   --version               Show the version.
@@ -44,9 +39,9 @@ ios:
 
 input:
 - Shared/Resources
-- ExampleApp/Resources
+- DeclarativeApp/Resources
 
-output: ExampleApp/Source/Generated
+output: DeclarativeApp/Source/Generated
 
 symbols:
 - a.book.closed
@@ -77,14 +72,10 @@ skip:
 - colors
 - data-assets
 - images
-- nib-validation
-- storyboards
-- storyboard-validation
 - swiftui
 - symbols
 - uikit
 - uikit-colors
 - uikit-images
 - uikit-symbols
-- validation
 ```

@@ -44,6 +44,4 @@ enum Filename {
     static let SymbolImage = "SymbolImage.blackboard.swift"
     static let SymbolUIImage = "SymbolUIImage.blackboard.swift"
     
-    static let UIKit = "UIKit.blackboard.swift"
-    
 }

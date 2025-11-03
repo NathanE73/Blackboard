@@ -54,7 +54,7 @@ class BlackboardConfigurationTests: XCTestCase {
         let yaml = """
         input:
         - Shared/Resources
-        - ExampleApp/Resources
+        - DeclarativeApp/Resources
         """
         
         let data = Data(yaml.utf8)
@@ -66,7 +66,7 @@ class BlackboardConfigurationTests: XCTestCase {
             XCTAssertEqual(input.count, 2)
             XCTAssertEqual(input, [
                             "Shared/Resources",
-                            "ExampleApp/Resources"])
+                            "DeclarativeApp/Resources"])
         }
         catch {
             XCTFail(error.localizedDescription)
@@ -164,16 +164,12 @@ class BlackboardConfigurationTests: XCTestCase {
         - colors
         - data-assets
         - images
-        - nib-validation
-        - storyboards
-        - storyboard-validation
         - swiftui
         - symbols
         - uikit
         - uikit-colors
         - uikit-images
         - uikit-symbols
-        - validation
         """
         
         let data = Data(yaml.utf8)
@@ -182,21 +178,17 @@ class BlackboardConfigurationTests: XCTestCase {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
             let skips = try XCTUnwrap(configuration.skips)
-            XCTAssertEqual(skips.count, 13)
+            XCTAssertEqual(skips.count, 9)
             XCTAssertEqual(skips, [
                 .colors,
                 .dataAssets,
                 .images,
-                .nibValidation,
-                .storyboards,
-                .storyboardValidation,
                 .swiftui,
                 .symbols,
                 .uikit,
                 .uikitColors,
                 .uikitImages,
-                .uikitSymbols,
-                .validation
+                .uikitSymbols
             ])
         }
         catch {

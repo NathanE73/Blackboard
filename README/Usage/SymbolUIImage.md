@@ -31,7 +31,7 @@ symbols:
 
 ### Backboard Generated Code
 
-[SymbolAsset.blackboard.swift](/ExampleApp/Source/Generated/SymbolAsset.blackboard.swift#L9)
+[SymbolAsset.blackboard.swift](/DeclarativeApp/Source/Generated/SymbolAsset.blackboard.swift#L9)
 
 ```swift
 public enum SymbolAsset: String {
@@ -62,7 +62,7 @@ public enum SymbolAsset: String {
     case `return`
 ```
 
-[SymbolUIImage.blackboard.swift](/ExampleApp/Source/Generated/SymbolUIImage.blackboard.swift#L9)
+[SymbolUIImage.blackboard.swift](/DeclarativeApp/Source/Generated/SymbolUIImage.blackboard.swift#L9)
 
 ```swift
 @available(iOS 13.0, *)
