@@ -54,9 +54,6 @@ struct BlackboardCommand: ParsableCommand {
           help: "Skip generating UIKit extensions (UIColor, UIImage)")
     var skipUIKit = false
     
-    @Flag(help: "Skip validation of storyboard and nib resource references")
-    var skipValidation = false
-    
     @Option(parsing: .upToNextOption,
             help: "Input directory or directories")
     var input: [String] = []

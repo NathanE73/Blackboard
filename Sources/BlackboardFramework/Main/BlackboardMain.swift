@@ -47,7 +47,6 @@ public struct BlackboardMain {
     var skipUIKitColors: Bool
     var skipUIKitImages: Bool
     var skipUIKitSymbols: Bool
-    var skipValidation: Bool
     
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
         configurationFile = configuration?.file ?? ""
@@ -82,7 +81,6 @@ public struct BlackboardMain {
         self.skipUIKitColors = skips.contains(.uikitColors)
         self.skipUIKitImages = skips.contains(.uikitImages)
         self.skipUIKitSymbols = skips.contains(.uikitSymbols)
-        self.skipValidation = command.skipValidation || skips.contains(.validation)
     }
     
     public static func main() {

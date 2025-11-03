@@ -88,7 +88,6 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationInputOutput() throws {
@@ -115,7 +114,6 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testInputOutput() throws {
@@ -142,7 +140,6 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Symbols Collection Tests
@@ -173,7 +170,6 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Symbols Tests
@@ -201,7 +197,6 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSwiftUI)
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipValidation)
     }
     
 }

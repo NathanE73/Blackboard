@@ -14,7 +14,6 @@ OPTIONS:
   --skip-swiftui          Skip generating SwiftUI extensions (Color, Image)
   --skip-symbols          Skip generating symbol extensions (Image, UIImage)
   --skip-uikit            Skip generating UIKit extensions (UIColor, UIImage)
-  --skip-validation       Skip validation of storyboard and nib resource references
   --input <input>         Input directory or directories
   --output <output>       Output directory; where generated code will be stored
   --version               Show the version.
@@ -79,5 +78,4 @@ skip:
 - uikit-colors
 - uikit-images
 - uikit-symbols
-- validation
 ```

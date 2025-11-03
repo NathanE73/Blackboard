@@ -49,7 +49,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationSkipColors() throws {
@@ -70,7 +69,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testBothSkipColors() throws {
@@ -92,7 +90,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Skip Data Assets Tests
@@ -116,7 +113,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationSkipDataAssets() throws {
@@ -137,7 +133,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testBothSkipDataAssets() throws {
@@ -159,7 +154,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Skip Images Tests
@@ -183,7 +177,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationSkipImages() throws {
@@ -204,7 +197,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testBothSkipImages() throws {
@@ -226,7 +218,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Skip SwiftUI Tests
@@ -250,7 +241,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationSkipSwiftUI() throws {
@@ -271,7 +261,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testBothSkipSwiftUI() throws {
@@ -293,7 +282,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Skip Symbols Tests
@@ -317,7 +305,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationSkipSymbols() throws {
@@ -338,7 +325,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testBothSkipSymbols() throws {
@@ -360,7 +346,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Skip UIKit Tests
@@ -384,7 +369,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testConfigurationSkipUIKit() throws {
@@ -405,7 +389,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     func testBothSkipUIKit() throws {
@@ -427,7 +410,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Skip UIKit Colors Tests
@@ -450,7 +432,6 @@ extension BlackboardMainTests {
         XCTAssertTrue(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
         
     // MARK: - Skip UIKit Images Tests
@@ -473,7 +454,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertTrue(main.skipUIKitImages)
         XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
     }
     
     // MARK: - Skip UIKit Symbols Tests
@@ -496,74 +476,6 @@ extension BlackboardMainTests {
         XCTAssertFalse(main.skipUIKitColors)
         XCTAssertFalse(main.skipUIKitImages)
         XCTAssertTrue(main.skipUIKitSymbols)
-        XCTAssertFalse(main.skipValidation)
-    }
-    
-    // MARK: - Skip Validation Tests
-    
-    func testCommandSkipValidation() throws {
-        var command = try BlackboardCommand.parse([])
-        command.input = ["DeclarativeApp/Resources"]
-        command.output = "DeclarativeApp/Source/Generated"
-        command.skipValidation = true
-        
-        let configuration = BlackboardConfiguration()
-        
-        let main = try BlackboardMain(command, configuration)
-        
-        XCTAssertFalse(main.skipColors)
-        XCTAssertFalse(main.skipDataAssets)
-        XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipSwiftUI)
-        XCTAssertFalse(main.skipSymbols)
-        XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipUIKitColors)
-        XCTAssertFalse(main.skipUIKitImages)
-        XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertTrue(main.skipValidation)
-    }
-    
-    func testConfigurationSkipValidation() throws {
-        var command = try BlackboardCommand.parse([])
-        command.input = ["DeclarativeApp/Resources"]
-        command.output = "DeclarativeApp/Source/Generated"
-        
-        let configuration = BlackboardConfiguration(skips: [.validation])
-        
-        let main = try BlackboardMain(command, configuration)
-        
-        XCTAssertFalse(main.skipColors)
-        XCTAssertFalse(main.skipDataAssets)
-        XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipSwiftUI)
-        XCTAssertFalse(main.skipSymbols)
-        XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipUIKitColors)
-        XCTAssertFalse(main.skipUIKitImages)
-        XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertTrue(main.skipValidation)
-    }
-    
-    func testBothSkipValidation() throws {
-        var command = try BlackboardCommand.parse([])
-        command.input = ["DeclarativeApp/Resources"]
-        command.output = "DeclarativeApp/Source/Generated"
-        command.skipValidation = true
-        
-        let configuration = BlackboardConfiguration(skips: [.validation])
-        
-        let main = try BlackboardMain(command, configuration)
-        
-        XCTAssertFalse(main.skipColors)
-        XCTAssertFalse(main.skipDataAssets)
-        XCTAssertFalse(main.skipImages)
-        XCTAssertFalse(main.skipSwiftUI)
-        XCTAssertFalse(main.skipSymbols)
-        XCTAssertFalse(main.skipUIKit)
-        XCTAssertFalse(main.skipUIKitColors)
-        XCTAssertFalse(main.skipUIKitImages)
-        XCTAssertFalse(main.skipUIKitSymbols)
-        XCTAssertTrue(main.skipValidation)
     }
     
 }

@@ -39,7 +39,6 @@ class BlackboardCommandTests: XCTestCase {
         XCTAssertFalse(arguments.skipSwiftUI)
         XCTAssertFalse(arguments.skipSymbols)
         XCTAssertFalse(arguments.skipUIKit)
-        XCTAssertFalse(arguments.skipValidation)
         
         XCTAssertEqual(arguments.input, [])
         XCTAssertNil(arguments.output)
@@ -74,9 +73,6 @@ class BlackboardCommandTests: XCTestCase {
         
         arguments = BlackboardCommand.parseOrExit(["--skip-uikit"])
         XCTAssertTrue(arguments.skipUIKit)
-        
-        arguments = BlackboardCommand.parseOrExit(["--skip-validation"])
-        XCTAssertTrue(arguments.skipValidation)
     }
     
     func testInput() {

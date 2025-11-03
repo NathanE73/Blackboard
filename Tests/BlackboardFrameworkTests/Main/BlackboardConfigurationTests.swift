@@ -170,7 +170,6 @@ class BlackboardConfigurationTests: XCTestCase {
         - uikit-colors
         - uikit-images
         - uikit-symbols
-        - validation
         """
         
         let data = Data(yaml.utf8)
@@ -179,7 +178,7 @@ class BlackboardConfigurationTests: XCTestCase {
             let configuration = try YAMLDecoder().decode(BlackboardConfiguration.self, from: data)
             
             let skips = try XCTUnwrap(configuration.skips)
-            XCTAssertEqual(skips.count, 10)
+            XCTAssertEqual(skips.count, 9)
             XCTAssertEqual(skips, [
                 .colors,
                 .dataAssets,
@@ -189,8 +188,7 @@ class BlackboardConfigurationTests: XCTestCase {
                 .uikit,
                 .uikitColors,
                 .uikitImages,
-                .uikitSymbols,
-                .validation
+                .uikitSymbols
             ])
         }
         catch {
