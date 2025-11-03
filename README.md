@@ -1,4 +1,4 @@
-# Blackboard: An iOS Storyboard and Asset Manager
+# Blackboard: An iOS Color, Image, and SF Symbol Asset Manager
 
 [![Version](https://img.shields.io/badge/version-11.1.1-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Blackboard is an iOS Storyboard and Asset Manager written in Swift.
+Blackboard is an iOS Color, Image, and SF Symbol Asset Manager written in Swift.
 
 ## Requirements
 

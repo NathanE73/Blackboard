@@ -9,7 +9,7 @@ USAGE: blackboard <options>
 OPTIONS:
   --config <config>       Configuration file
   --skip-colors           Skip generating color extensions (Color, CGColor, and UIColor)
-  --skip-data-assets      Skip generating data asset extensions (NSDataAsset)
+  --skip-data-assets      Skip generating data asset extensions (Data, NSDataAsset)
   --skip-images           Skip generating image extensions (Image, UIImage)
   --skip-swiftui          Skip generating SwiftUI extensions (Color, Image)
   --skip-symbols          Skip generating symbol extensions (Image, UIImage)

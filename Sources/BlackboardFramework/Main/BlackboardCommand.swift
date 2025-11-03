@@ -37,7 +37,7 @@ struct BlackboardCommand: ParsableCommand {
     @Flag(help: "Skip generating color extensions (Color, CGColor, and UIColor)")
     var skipColors = false
     
-    @Flag(help: "Skip generating data asset extensions (NSDataAsset)")
+    @Flag(help: "Skip generating data asset extensions (Data, NSDataAsset)")
     var skipDataAssets = false
     
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
