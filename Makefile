@@ -1,7 +1,7 @@
 BINARIES_FOLDER=bin
 TEMPORARY_FOLDER=tmp
 
-SWIFT_BUILD_FLAGS=--arch x86_64 --configuration release
+SWIFT_BUILD_FLAGS=--arch arm64 --arch x86_64 --enable-dead-strip --configuration release 
 
 BUILD_PATH=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)
 
