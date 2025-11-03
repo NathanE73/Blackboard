@@ -139,14 +139,9 @@ public struct BlackboardMain {
         
         // Process Resources
         
-        let colorSets = processColors(input, output)
+        processColors(input, output)
         processDataAssets(input, output)
-        let imageSets = processImages(input, output)
-        
-        // Validate
-        
-        let knownNamedColors = Set(colorSets.flatMapAssets().map(\.resourceName))
-        let knownNamedImages = Set(imageSets.flatMapAssets().map(\.resourceName))
+        processImages(input, output)
     }
     
 }

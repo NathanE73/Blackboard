@@ -26,15 +26,15 @@ import Foundation
 
 extension BlackboardMain {
     
-    func processImages(_ input: [String], _ output: String) -> [AssetItem<ImageSet>] {
-        guard !skipImages else { return [] }
+    func processImages(_ input: [String], _ output: String) {
+        guard !skipImages else { return }
         
         let imageSets = ImageSetFactory().assetItemsAt(paths: input)
         
         let blackboardImages = imageSets.mapAssets(BlackboardImage.init)
         
         guard !blackboardImages.isEmpty else {
-            return []
+            return
         }
         
         let includeSwiftUI = !skipSwiftUI
@@ -57,8 +57,6 @@ extension BlackboardMain {
                 .appendUIImages(images: blackboardImages)
                 .write()
         }
-        
-        return imageSets
     }
     
 }
