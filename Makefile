@@ -7,12 +7,10 @@ BUILD_PATH=$(shell swift build $(SWIFT_BUILD_FLAGS) --show-bin-path)
 
 BLACKBOARD_EXECUTABLE=blackboard
 
-PORTABLE_ZIP=portable-blackboard.zip
-
 VERSION_FILE=.version
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
-.PHONY: default bootstrap clean build test install portable-zip release get-version set-version git-tag pod-publish publish lint generate resources
+.PHONY: default bootstrap clean build test install release get-version set-version git-tag lint generate resources
 
 default:
 
@@ -32,11 +30,7 @@ install: build
 	install -d "$(BINARIES_FOLDER)"
 	install "$(BUILD_PATH)/$(BLACKBOARD_EXECUTABLE)" "$(BINARIES_FOLDER)"
 
-portable-zip: install
-	mkdir -p "$(TEMPORARY_FOLDER)"
-	zip -j - "$(BINARIES_FOLDER)/$(BLACKBOARD_EXECUTABLE)" "LICENSE" > "$(TEMPORARY_FOLDER)/$(PORTABLE_ZIP)"
-
-release: clean portable-zip
+release: clean install
 
 get-version:
 	@echo $(VERSION_STRING)
@@ -46,20 +40,14 @@ set-version:
 	$(eval BADGE_VERSION := $(shell echo $(NEW_VERSION) | cut -d '-' -f 1))
 	@echo "$(NEW_VERSION)" > "$(VERSION_FILE)"
 	@sed -i '' '/var version/ s/"[^"][^"]*"/"$(NEW_VERSION)"/' Sources/BlackboardFramework/Main/BlackboardVersion.swift
-	@sed -i '' '/^[[:blank:]]*s.version/ s/'\''[^'\''][^'\'']*'\''/'\''$(NEW_VERSION)'\''/' Blackboard.podspec
 	@sed -i '' '/badge\/version/ s/version-.*-bright/version-$(BADGE_VERSION)-bright/' README.md
 
 git-tag:
-ifneq ($(strip $(shell git status --untracked-files=no --porcelain 2>/dev/null)),)
-	$(error git state is not clean)
-endif
+    ifneq ($(strip $(shell git status --untracked-files=no --porcelain 2>/dev/null)),)
+	    $(error git state is not clean)
+    endif
 	git tag -a "$(VERSION_STRING)" -m "$(VERSION_STRING)"
 	git push origin "$(VERSION_STRING)"
-
-pod-publish:
-	pod trunk push Blackboard.podspec --skip-import-validation --swift-version=4.2
-
-publish: pod-publish
 
 lint:
 	mint run swiftlint
