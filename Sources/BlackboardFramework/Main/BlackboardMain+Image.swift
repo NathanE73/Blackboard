@@ -53,7 +53,7 @@ extension BlackboardMain {
 
         if includeUIKit {
             SwiftSourceFile(Filename.UIImage, at: output)
-                .appendUIImages(images: blackboardImages)
+                .appendUIImages()
                 .write()
         }
     }

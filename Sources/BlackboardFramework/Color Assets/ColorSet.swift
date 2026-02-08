@@ -37,10 +37,3 @@ struct ColorSet: Asset {
             .removingSuffix("Color")
     }
 }
-
-extension ColorSet {
-    init?(namespace: String?, name: String, assetColorSet _: AssetColorSet) {
-        self.namespace = namespace
-        self.name = name
-    }
-}

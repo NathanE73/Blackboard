@@ -37,10 +37,3 @@ struct ImageSet: Asset {
             .removingSuffix("Image")
     }
 }
-
-extension ImageSet {
-    init?(namespace: String?, name: String, assetImageSet _: AssetImageSet) {
-        self.namespace = namespace
-        self.name = name
-    }
-}

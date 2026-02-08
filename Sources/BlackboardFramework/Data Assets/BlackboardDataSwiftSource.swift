@@ -48,7 +48,7 @@ extension SwiftSource {
 
     // MARK: NSDataAsset
 
-    func appendNSDataAsset(data _: [AssetItem<BlackboardData>]) -> Self {
+    func appendNSDataAsset() -> Self {
         appendHeading(
             filename: Filename.NSDataAsset,
             publicModules: ["Foundation", "UIKit"],

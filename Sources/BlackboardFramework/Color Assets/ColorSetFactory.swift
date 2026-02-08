@@ -28,10 +28,10 @@ class ColorSetFactory: AssetSetFactory {
     let pathExtension = "colorset"
 
     func asset(namespace: String?, name: String, data: Data) -> ColorSet? {
-        guard let assetColorSet = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
+        guard let _ = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
             return nil
         }
 
-        return ColorSet(namespace: namespace, name: name, assetColorSet: assetColorSet)
+        return ColorSet(namespace: namespace, name: name)
     }
 }

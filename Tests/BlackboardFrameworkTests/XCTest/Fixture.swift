@@ -44,7 +44,7 @@ class Fixture {
         }
     }
 
-    static func generated(project: Project, path _: String? = nil, name: String, file: StaticString = #file, line: UInt = #line) -> String? {
+    static func generated(project: Project, name: String, file: StaticString = #file, line: UInt = #line) -> String? {
         let path = "\(project.path)/Source/Generated/\(name).blackboard.swift"
 
         guard let data = fixture(path, file: file, line: line) else {

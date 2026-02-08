@@ -97,7 +97,7 @@ extension SwiftSource {
 
     // MARK: UIImage
 
-    func appendUIImages(images _: [AssetItem<BlackboardImage>]) -> Self {
+    func appendUIImages() -> Self {
         appendHeading(
             filename: Filename.UIImage,
             publicModules: ["UIKit"],

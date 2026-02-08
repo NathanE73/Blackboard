@@ -48,7 +48,7 @@ extension SwiftSource {
 
     // MARK: Color
 
-    func appendColors(colors _: [AssetItem<BlackboardColor>], target: Version) -> Self {
+    func appendColors(target: Version) -> Self {
         appendHeading(
             filename: Filename.Color,
             publicModules: ["SwiftUI"],
@@ -69,7 +69,7 @@ extension SwiftSource {
 
     // MARK: CGColor
 
-    func appendCGColors(colors _: [AssetItem<BlackboardColor>]) -> Self {
+    func appendCGColors() -> Self {
         appendHeading(
             filename: Filename.CGColor,
             modules: ["CoreGraphics"]
@@ -84,7 +84,7 @@ extension SwiftSource {
 
     // MARK: UIColor
 
-    func appendUIColors(colors _: [AssetItem<BlackboardColor>]) -> Self {
+    func appendUIColors() -> Self {
         appendHeading(
             filename: Filename.UIColor,
             publicModules: ["UIKit"],

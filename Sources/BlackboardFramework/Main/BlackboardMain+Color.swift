@@ -47,17 +47,17 @@ extension BlackboardMain {
 
         if includeSwiftUI {
             SwiftSourceFile(Filename.Color, at: output)
-                .appendColors(colors: blackboardColors, target: ios.target)
+                .appendColors(target: ios.target)
                 .write()
         }
 
         if includeUIKit {
             SwiftSourceFile(Filename.UIColor, at: output)
-                .appendUIColors(colors: blackboardColors)
+                .appendUIColors()
                 .write()
 
             SwiftSourceFile(Filename.CGColor, at: output)
-                .appendCGColors(colors: blackboardColors)
+                .appendCGColors()
                 .write()
         }
     }

@@ -41,7 +41,7 @@ extension BlackboardMain {
             .write()
 
         SwiftSourceFile(Filename.NSDataAsset, at: output)
-            .appendNSDataAsset(data: blackboardData)
+            .appendNSDataAsset()
             .write()
     }
 }

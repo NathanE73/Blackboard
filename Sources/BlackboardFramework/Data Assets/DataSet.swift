@@ -37,10 +37,3 @@ struct DataSet: Asset {
             .removingSuffix("Data")
     }
 }
-
-extension DataSet {
-    init?(namespace: String?, name: String, assetDataSet _: AssetDataSet) {
-        self.namespace = namespace
-        self.name = name
-    }
-}
