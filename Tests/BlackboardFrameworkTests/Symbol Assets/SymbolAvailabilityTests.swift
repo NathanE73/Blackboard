@@ -31,7 +31,7 @@ class SymbolAvailabilityTests: XCTestCase {
     func testResource() throws {
         let availability = try XCTUnwrap(SymbolAvailability.resource)
         
-        XCTAssertEqual(availability.symbols.count, 8_539)
+        XCTAssertEqual(availability.symbols.count, 9_184)
         
         XCTAssertEqual(availability.symbols["14.square.fill"], "2019")
         XCTAssertEqual(availability.symbols["case"], "2020")
@@ -49,7 +49,7 @@ class SymbolAvailabilityTests: XCTestCase {
         XCTAssertEqual(availability.symbols["repeat"], "2019")
         XCTAssertEqual(availability.symbols["repeat.circle"], "2020.1")
         
-        XCTAssertEqual(availability.yearToRelease.count, 22)
+        XCTAssertEqual(availability.yearToRelease.count, 24)
         XCTAssertEqual(availability.yearToRelease["2019"]?.iOS, Version(13, 0))
         XCTAssertEqual(availability.yearToRelease["2019.1"]?.iOS, Version(13, 1))
         XCTAssertEqual(availability.yearToRelease["2020"]?.iOS, Version(14, 0))
@@ -72,6 +72,8 @@ class SymbolAvailabilityTests: XCTestCase {
         XCTAssertEqual(availability.yearToRelease["2024.2"]?.iOS, Version(18, 2))
         XCTAssertEqual(availability.yearToRelease["2024.3"]?.iOS, Version(18, 4))
         XCTAssertEqual(availability.yearToRelease["2024.4"]?.iOS, Version(18, 5))
+        XCTAssertEqual(availability.yearToRelease["2025"]?.iOS, Version(26, 0))
+        XCTAssertEqual(availability.yearToRelease["2025.1"]?.iOS, Version(26, 1))
     }
     
 }

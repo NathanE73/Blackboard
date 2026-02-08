@@ -10,7 +10,7 @@ BLACKBOARD_EXECUTABLE=blackboard
 VERSION_FILE=.version
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
-.PHONY: default bootstrap clean build test install release get-version set-version git-tag lint generate resources
+.PHONY: default bootstrap clean build test install release get-version set-version git-tag lint generate import-resources resources
 
 default:
 
@@ -54,6 +54,12 @@ lint:
 
 generate:
 	bin/blackboard --input Shared/Resources/ DeclarativeApp/Resources/ --output DeclarativeApp/Source/Generated/
+
+import-resources:
+	cp "/Applications/SF Symbols.app/Contents/Resources/Metadata/name_aliases.strings" \
+		Resources/symbols
+	cp "/Applications/SF Symbols.app/Contents/Resources/Metadata/name_availability.plist" \
+		Resources/symbols
 
 resources:
 	cat Templates/symbols/NameAliasesStringsResourceHeader.swift \
