@@ -25,15 +25,13 @@
 import Foundation
 
 class ImageSetFactory: AssetSetFactory {
-    
     let pathExtension = "imageset"
-    
+
     func asset(namespace: String?, name: String, data: Data) -> ImageSet? {
         guard let assetImageSet = try? JSONDecoder().decode(AssetImageSet.self, from: data) else {
             return nil
         }
-        
+
         return ImageSet(namespace: namespace, name: name, assetImageSet: assetImageSet)
     }
-    
 }

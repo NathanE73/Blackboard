@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class AssetDataSetTests: XCTestCase {
-    
     func testDecodable() {
         let json = """
             {
@@ -45,16 +43,14 @@ class AssetDataSetTests: XCTestCase {
             }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let assetDataSet = try JSONDecoder().decode(AssetDataSet.self, from: data)
-            
+
             XCTAssertNotNil(assetDataSet.info)
             XCTAssertEqual(assetDataSet.data.count, 1)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
 }

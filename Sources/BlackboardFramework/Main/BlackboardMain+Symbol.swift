@@ -25,38 +25,36 @@
 import Foundation
 
 extension BlackboardMain {
-    
     func processSymbols(_ symbols: Set<String>, _ output: String) {
         guard !skipSymbols else { return }
-        
+
         var blackboardSymbols = BlackboardSymbolFactory()
             .symbols(for: symbols)
         blackboardSymbols.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
-        
+
         guard !blackboardSymbols.isEmpty else {
             return
         }
-        
+
         let includeSwiftUI = !skipSwiftUI
         let includeUIKit = !skipUIKit && !skipUIKitSymbols
-        
+
         if includeSwiftUI || includeUIKit {
             SwiftSourceFile(Filename.SymbolAsset, at: output)
                 .appendSymbolAssets(symbols: blackboardSymbols, target: ios.target)
                 .write()
         }
-        
+
         if includeSwiftUI {
             SwiftSourceFile(Filename.SymbolImage, at: output)
                 .appendSymbolImages(symbols: blackboardSymbols, target: ios.target, sdk: ios.sdk)
                 .write()
         }
-        
+
         if includeUIKit {
             SwiftSourceFile(Filename.SymbolUIImage, at: output)
                 .appendSymbolUIImages(symbols: blackboardSymbols, target: ios.target)
                 .write()
         }
     }
-    
 }

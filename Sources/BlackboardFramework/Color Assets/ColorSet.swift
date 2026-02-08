@@ -27,11 +27,11 @@ import Foundation
 struct ColorSet: Asset {
     var namespace: String?
     var name: String
-    
+
     var resourceName: String {
         Naming.namespace(from: namespace, name)
     }
-    
+
     var propertyName: String {
         Naming.methodName(from: name)
             .removingSuffix("Color")
@@ -39,10 +39,8 @@ struct ColorSet: Asset {
 }
 
 extension ColorSet {
-    
-    init?(namespace: String?, name: String, assetColorSet: AssetColorSet) {
+    init?(namespace: String?, name: String, assetColorSet _: AssetColorSet) {
         self.namespace = namespace
         self.name = name
     }
-    
 }

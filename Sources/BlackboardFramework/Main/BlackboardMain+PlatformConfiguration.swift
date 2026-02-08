@@ -25,16 +25,13 @@
 import Foundation
 
 extension BlackboardMain {
-    
     struct PlatformConfiguration {
         var target: Version
         var sdk: Version
     }
-    
 }
 
 extension BlackboardMain.PlatformConfiguration {
-    
     init(using configuration: BlackboardConfiguration?) {
         self.init(
             target: configuration?.ios?.target ?? Version(13, 0),

@@ -26,10 +26,10 @@ import Foundation
 
 struct SymbolCollection: Codable {
     var file: String?
-    
+
     var displayName: String
     var symbols: [String]
-    
+
     enum CodingKeys: String, CodingKey {
         case displayName
         case symbols

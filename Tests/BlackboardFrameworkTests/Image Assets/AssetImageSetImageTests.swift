@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class AssetImageSetImageTests: XCTestCase {
-    
     func testDecodable() {
         let json = """
           {
@@ -36,18 +34,17 @@ class AssetImageSetImageTests: XCTestCase {
           }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
-            
+
             XCTAssertEqual(image.idiom, .iphone)
             XCTAssertEqual(image.scale, .one)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testDefaultIdiom() {
         let json = """
           {
@@ -55,18 +52,17 @@ class AssetImageSetImageTests: XCTestCase {
           }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
-            
+
             XCTAssertEqual(image.idiom, .universal)
             XCTAssertEqual(image.scale, .one)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testOptionalScale() {
         let json = """
           {
@@ -74,24 +70,22 @@ class AssetImageSetImageTests: XCTestCase {
           }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let image = try JSONDecoder().decode(AssetImageSet.Image.self, from: data)
-            
+
             XCTAssertEqual(image.idiom, .ipad)
             XCTAssertNil(image.scale)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testScaleRawValues() {
         let scale = AssetImageSet.Image.Scale.self
-        
+
         XCTAssertEqual(scale.one.rawValue, "1x")
         XCTAssertEqual(scale.two.rawValue, "2x")
         XCTAssertEqual(scale.three.rawValue, "3x")
     }
-    
 }

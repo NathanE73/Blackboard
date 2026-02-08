@@ -25,46 +25,43 @@
 import Foundation
 
 protocol AssetSetFactory {
-    
     associatedtype AssetSet: Asset
-    
+
     var pathExtension: String { get }
-    
+
     func asset(namespace: String?, name: String, data: Data) -> AssetSet?
-    
 }
 
 extension AssetSetFactory {
-    
     func assetItemsAt(paths: [String]) -> [AssetItem<AssetSet>] {
         paths.flatMap { assetsAt(path: $0) }
     }
-    
+
     func assetsAt(path: String) -> [AssetItem<AssetSet>] {
         assetsAt(path: path, namespace: nil)
     }
-    
+
     func assetsAt(path: String, namespace: String?) -> [AssetItem<AssetSet>] {
         let fileManager = FileManager.default
-        
+
         guard let contents = try? fileManager.contentsOfDirectory(atPath: path) else {
             return []
         }
-        
+
         return contents.flatMap { content -> [AssetItem<AssetSet>] in
             let file = path.appendingPathComponent(content)
-            
+
             guard fileManager.isDirectory(file) else {
                 return []
             }
-            
+
             if file.pathExtension == pathExtension {
                 if let asset = assetAt(path: file, namespace: namespace) {
                     return [.asset(asset)]
                 }
                 return []
             }
-            
+
             if providesNamespaceAt(path: file) {
                 let namespace = Naming.namespace(from: namespace, content)
                 let assets = assetsAt(path: file, namespace: namespace)
@@ -74,35 +71,34 @@ extension AssetSetFactory {
         }
         .sorted()
     }
-    
+
     func assetAt(path: String, namespace: String?) -> AssetSet? {
         let url = URL(fileURLWithPath: path, isDirectory: false)
-        
+
         let contentsURL = url.appendingPathComponent("Contents.json")
         guard let data = try? Data(contentsOf: contentsURL) else {
             return nil
         }
-        
+
         let name = url.lastPathComponent.deletingPathExtension
-        
+
         return asset(namespace: namespace, name: name, data: data)
     }
-    
+
     func providesNamespaceAt(path: String) -> Bool {
         let assetGroup = assetGroupAt(path: path)
-        
+
         return assetGroup?.properties?.providesNamespace == true
     }
-    
+
     func assetGroupAt(path: String) -> AssetGroup? {
         let url = URL(fileURLWithPath: path, isDirectory: false)
-        
+
         let contentsURL = url.appendingPathComponent("Contents.json")
         guard let data = try? Data(contentsOf: contentsURL) else {
             return nil
         }
-        
+
         return try? JSONDecoder().decode(AssetGroup.self, from: data)
     }
-    
 }

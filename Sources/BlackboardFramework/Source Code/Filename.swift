@@ -25,23 +25,21 @@
 import Foundation
 
 enum Filename {
-    
     static let blackboardExtension = ".blackboard.swift"
-    
+
     static let ColorAsset = "ColorAsset.blackboard.swift"
     static let Color = "Color.blackboard.swift"
     static let CGColor = "CGColor.blackboard.swift"
     static let UIColor = "UIColor.blackboard.swift"
-    
+
     static let DataAsset = "DataAsset.blackboard.swift"
     static let NSDataAsset = "NSDataAsset.blackboard.swift"
-    
+
     static let ImageAsset = "ImageAsset.blackboard.swift"
     static let Image = "Image.blackboard.swift"
     static let UIImage = "UIImage.blackboard.swift"
-    
+
     static let SymbolAsset = "SymbolAsset.blackboard.swift"
     static let SymbolImage = "SymbolImage.blackboard.swift"
     static let SymbolUIImage = "SymbolUIImage.blackboard.swift"
-    
 }

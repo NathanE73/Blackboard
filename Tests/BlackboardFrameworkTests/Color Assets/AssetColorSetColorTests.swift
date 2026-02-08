@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class AssetColorSetColorTests: XCTestCase {
-    
     func testDecodable() {
         let json = """
           {
@@ -35,32 +33,29 @@ class AssetColorSetColorTests: XCTestCase {
           }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
-            
+
             XCTAssertEqual(color.idiom, .ipad)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testDefaultIdiom() {
         let json = """
           {
           }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let color = try JSONDecoder().decode(AssetColorSet.Color.self, from: data)
-            
+
             XCTAssertEqual(color.idiom, .universal)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
 }

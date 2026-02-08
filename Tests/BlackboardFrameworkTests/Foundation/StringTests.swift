@@ -22,46 +22,44 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class StringExtensionsTests: XCTestCase {
-    
     func testFirstCharacterLowercased() {
         XCTAssertEqual("".firstCharacterLowercased, "")
-        
+
         XCTAssertEqual("Apple".firstCharacterLowercased, "apple")
         XCTAssertEqual("AppleApple".firstCharacterLowercased, "appleApple")
         XCTAssertEqual("ABC".firstCharacterLowercased, "aBC")
-        
+
         XCTAssertEqual(" Apple".firstCharacterLowercased, " Apple")
         XCTAssertEqual(" ABC".firstCharacterLowercased, " ABC")
     }
-    
+
     func testFirstCharacterUppercased() {
         XCTAssertEqual("".firstCharacterUppercased, "")
-        
+
         XCTAssertEqual("apple".firstCharacterUppercased, "Apple")
         XCTAssertEqual("appleApple".firstCharacterUppercased, "AppleApple")
         XCTAssertEqual("abc".firstCharacterUppercased, "Abc")
-        
+
         XCTAssertEqual(" Apple".firstCharacterUppercased, " Apple")
         XCTAssertEqual(" ABC".firstCharacterUppercased, " ABC")
     }
-    
+
     func testRemovingSuffix() {
         XCTAssertEqual("".removingSuffix("Cell"), "")
-        
+
         XCTAssertEqual("AppleTableViewCell".removingSuffix("Cell"), "AppleTableView")
         XCTAssertEqual("AppleTableViewCell".removingSuffix("TableViewCell"), "Apple")
-        
+
         XCTAssertEqual("AppleApple".removingSuffix("APPLE"), "AppleApple")
     }
-    
+
     func testStartsWithDecimalDigit() {
         XCTAssertFalse("apple".startsWithDecimalDigit)
-        
+
         XCTAssertTrue("1.infinite.loop".startsWithDecimalDigit)
         XCTAssertTrue("2.infinite.loop".startsWithDecimalDigit)
         XCTAssertTrue("3.infinite.loop".startsWithDecimalDigit)
@@ -72,104 +70,103 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertTrue("8.infinite.loop".startsWithDecimalDigit)
         XCTAssertTrue("9.infinite.loop".startsWithDecimalDigit)
     }
-    
+
     func testTrimmingWhitespaceCharacters() {
         XCTAssertEqual("".trimmingWhitespaceCharacters, "")
-        
+
         XCTAssertEqual("apple".trimmingWhitespaceCharacters, "apple")
-        
+
         XCTAssertEqual(" apple".trimmingWhitespaceCharacters, "apple")
         XCTAssertEqual("  apple".trimmingWhitespaceCharacters, "apple")
         XCTAssertEqual("   apple".trimmingWhitespaceCharacters, "apple")
-        
+
         XCTAssertEqual("apple ".trimmingWhitespaceCharacters, "apple")
         XCTAssertEqual("apple  ".trimmingWhitespaceCharacters, "apple")
         XCTAssertEqual("apple   ".trimmingWhitespaceCharacters, "apple")
-        
+
         XCTAssertEqual(" apple ".trimmingWhitespaceCharacters, "apple")
         XCTAssertEqual("  apple  ".trimmingWhitespaceCharacters, "apple")
         XCTAssertEqual("   apple   ".trimmingWhitespaceCharacters, "apple")
-        
+
         XCTAssertEqual("\t apple \t".trimmingWhitespaceCharacters, "apple")
     }
-    
+
     // MARK: - NSString
-    
+
     func testLastPathComponent() {
         // Given
         let text = "./Documents/Images/Profile.png"
-        
+
         // When
         let result = text.lastPathComponent
-        
+
         // Then
         XCTAssertEqual(result, "Profile.png")
     }
-    
+
     func testDeletingLastPathComponent() {
         // Given
         let text = "./Documents/Images/Profile.png"
-        
+
         // When
         let result = text.deletingLastPathComponent
-        
+
         // Then
         XCTAssertEqual(result, "./Documents/Images")
     }
-    
+
     func testAppendingPathComponent() {
         // Given
         let text = "./Documents/Images"
-        
+
         // When
         let result = text.appendingPathComponent("friends")
-        
+
         // Then
         XCTAssertEqual(result, "./Documents/Images/friends")
     }
-    
+
     func testPathExtension() {
         // Given
         let text = "./Documents/Images/Profile.png"
-        
+
         // When
         let result = text.pathExtension
-        
+
         // Then
         XCTAssertEqual(result, "png")
     }
-    
+
     func testDeletingPathExtension() {
         // Given
         let text = "./Documents/Images/Profile.png"
-        
+
         // When
         let result = text.deletingPathExtension
-        
+
         // Then
         XCTAssertEqual(result, "./Documents/Images/Profile")
     }
-    
+
     func testAppendingPathExtension() {
         // Given
         let text = "./Documents/Images/Profile"
-        
+
         // When
         let result = text.appendingPathExtension("jpg")
-        
+
         // Then
         XCTAssertEqual(result, "./Documents/Images/Profile.jpg")
     }
-    
+
     func testExpandingTildeInPath() {
         // Given
         let text = "~/.."
-        
+
         // When
         let result = (text.expandingTildeInPath as NSString).standardizingPath
-        
+
         // Then
         XCTAssertEqual(result, "/Users")
     }
-    
 }

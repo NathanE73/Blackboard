@@ -22,73 +22,70 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class BlackboardImageTests: XCTestCase {
-    
     func testButton() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "button")
-        
+
         let blackboardImage = BlackboardImage(imageSet)
-        
+
         XCTAssertEqual(blackboardImage.name, "button")
         XCTAssertEqual(blackboardImage.propertyName, "button")
     }
-    
+
     func testGreenPaperClip() throws {
         let imageSet = try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip")
-        
+
         let blackboardImage = BlackboardImage(imageSet)
-        
+
         XCTAssertEqual(blackboardImage.name, "green-paper-clip")
         XCTAssertEqual(blackboardImage.propertyName, "greenPaperClip")
     }
-    
+
     func testGreenPencil() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "green-pencil")
-        
+
         let blackboardImage = BlackboardImage(imageSet)
-        
+
         XCTAssertEqual(blackboardImage.name, "green-pencil")
         XCTAssertEqual(blackboardImage.propertyName, "greenPencil")
     }
-    
+
     func testRedCup() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "Red/cup")
-        
+
         let blackboardImage = BlackboardImage(imageSet)
-        
+
         XCTAssertEqual(blackboardImage.name, "Red/cup")
         XCTAssertEqual(blackboardImage.propertyName, "redCup")
     }
-    
+
     func testRedStapler() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "Red/stapler")
-        
+
         let blackboardImage = BlackboardImage(imageSet)
-        
+
         XCTAssertEqual(blackboardImage.name, "Red/stapler")
         XCTAssertEqual(blackboardImage.propertyName, "redStapler")
     }
-    
+
     func testSilverPaperClip() throws {
         let imageSet = try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip")
-        
+
         let blackboardImage = BlackboardImage(imageSet)
-        
+
         XCTAssertEqual(blackboardImage.name, "silver-paper-clip")
         XCTAssertEqual(blackboardImage.propertyName, "silverPaperClip")
     }
-    
+
     func testWhiteDice() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "white-dice")
-        
+
         let blackboardImage = BlackboardImage(imageSet)
-        
+
         XCTAssertEqual(blackboardImage.name, "white-dice")
         XCTAssertEqual(blackboardImage.propertyName, "whiteDice")
     }
-    
 }

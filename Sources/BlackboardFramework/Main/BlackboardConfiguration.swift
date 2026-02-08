@@ -26,26 +26,27 @@ import Foundation
 import Yams
 
 struct BlackboardConfiguration: Decodable {
-    
     var file: String?
-    
+
     struct PlatformConfiguration: Decodable {
         var target: Version?
         var sdk: Version?
     }
+
     var ios: PlatformConfiguration?
-    
+
     var input: [String]?
-    
+
     var output: String?
-    
+
     struct SymbolsCollection: Decodable {
         var name: String
     }
+
     var symbolsCollection: SymbolsCollection?
-    
+
     var symbols: Set<String>?
-    
+
     enum Skip: String, Decodable {
         case colors
         case dataAssets = "data-assets"
@@ -57,8 +58,9 @@ struct BlackboardConfiguration: Decodable {
         case uikitImages = "uikit-images"
         case uikitSymbols = "uikit-symbols"
     }
+
     var skips: Set<Skip>?
-    
+
     enum CodingKeys: String, CodingKey {
         case ios
         case input
@@ -67,16 +69,14 @@ struct BlackboardConfiguration: Decodable {
         case symbols
         case skips = "skip"
     }
-    
 }
 
 extension BlackboardConfiguration {
-    
     static var filename = ".blackboard.yml"
-    
+
     init?(path startingPath: String) throws {
         let fileManager = FileManager.default
-        
+
         var currentPath = startingPath
         while fileManager.isDirectory(currentPath) {
             let configurationFile = currentPath.appendingPathComponent(BlackboardConfiguration.filename)
@@ -84,27 +84,26 @@ extension BlackboardConfiguration {
                 self = try BlackboardConfiguration(file: configurationFile)
                 return
             }
-            
+
             let parentPath = currentPath.deletingLastPathComponent
             if parentPath == currentPath {
                 break
             }
             currentPath = parentPath
         }
-        
+
         return nil
     }
-    
+
     init(file: String) throws {
         do {
             let url = URL(fileURLWithPath: file)
             let data = try Data(contentsOf: url)
-            
+
             self = try YAMLDecoder().decode(Self.self, from: data)
             self.file = file
         } catch {
             throw BlackboardError.invalidConfiguration(file: file)
         }
     }
-    
 }

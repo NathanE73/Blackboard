@@ -10,7 +10,7 @@ BLACKBOARD_EXECUTABLE=blackboard
 VERSION_FILE=.version
 VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 
-.PHONY: default bootstrap clean build test install release get-version set-version git-tag lint generate import-resources resources
+.PHONY: default bootstrap clean build test install release get-version set-version git-tag format lint generate import-resources resources
 
 default:
 
@@ -48,6 +48,9 @@ git-tag:
     endif
 	git tag -a "$(VERSION_STRING)" -m "$(VERSION_STRING)"
 	git push origin "$(VERSION_STRING)"
+
+format:
+	mint run swiftformat .
 
 lint:
 	mint run swiftlint

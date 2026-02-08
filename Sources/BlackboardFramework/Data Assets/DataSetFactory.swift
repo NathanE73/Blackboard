@@ -25,15 +25,13 @@
 import Foundation
 
 class DataSetFactory: AssetSetFactory {
-    
     let pathExtension = "dataset"
-    
+
     func asset(namespace: String?, name: String, data: Data) -> DataSet? {
         guard let assetDataSet = try? JSONDecoder().decode(AssetDataSet.self, from: data) else {
             return nil
         }
-        
+
         return DataSet(namespace: namespace, name: name, assetDataSet: assetDataSet)
     }
-    
 }

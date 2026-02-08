@@ -27,11 +27,11 @@ import Foundation
 struct DataSet: Asset {
     var namespace: String?
     var name: String
-    
+
     var resourceName: String {
         Naming.namespace(from: namespace, name)
     }
-    
+
     var propertyName: String {
         Naming.methodName(from: name)
             .removingSuffix("Data")
@@ -39,10 +39,8 @@ struct DataSet: Asset {
 }
 
 extension DataSet {
-    
-    init?(namespace: String?, name: String, assetDataSet: AssetDataSet) {
+    init?(namespace: String?, name: String, assetDataSet _: AssetDataSet) {
         self.namespace = namespace
         self.name = name
     }
-    
 }

@@ -25,21 +25,19 @@
 import Foundation
 
 extension FileManager {
-    
     func isDirectory(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExists(atPath: path, isDirectory: &isDirectory) && isDirectory.boolValue {
+        if fileExists(atPath: path, isDirectory: &isDirectory), isDirectory.boolValue {
             return true
         }
         return false
     }
-    
+
     func isFile(_ path: String) -> Bool {
         var isDirectory: ObjCBool = false
-        if fileExists(atPath: path, isDirectory: &isDirectory) && !isDirectory.boolValue {
+        if fileExists(atPath: path, isDirectory: &isDirectory), !isDirectory.boolValue {
             return true
         }
         return false
     }
-    
 }

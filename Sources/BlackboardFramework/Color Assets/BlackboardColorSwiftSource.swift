@@ -25,9 +25,8 @@
 import Foundation
 
 extension SwiftSource {
-    
     // MARK: Color Assets
-    
+
     func appendColorAssets(colors: [AssetItem<BlackboardColor>]) -> Self {
         appendHeading(
             filename: Filename.ColorAsset,
@@ -43,13 +42,13 @@ extension SwiftSource {
             }
         }
         append()
-        
+
         return self
     }
 
     // MARK: Color
-    
-    func appendColors(colors: [AssetItem<BlackboardColor>], target: Version) -> Self {
+
+    func appendColors(colors _: [AssetItem<BlackboardColor>], target: Version) -> Self {
         appendHeading(
             filename: Filename.Color,
             publicModules: ["SwiftUI"],
@@ -67,10 +66,10 @@ extension SwiftSource {
 
         return self
     }
-    
+
     // MARK: CGColor
-    
-    func appendCGColors(colors: [AssetItem<BlackboardColor>]) -> Self {
+
+    func appendCGColors(colors _: [AssetItem<BlackboardColor>]) -> Self {
         appendHeading(
             filename: Filename.CGColor,
             modules: ["CoreGraphics"]
@@ -79,13 +78,13 @@ extension SwiftSource {
             append("var cgColor: CGColor { color.cgColor }")
         }
         append()
-        
+
         return self
     }
-    
+
     // MARK: UIColor
-    
-    func appendUIColors(colors: [AssetItem<BlackboardColor>]) -> Self {
+
+    func appendUIColors(colors _: [AssetItem<BlackboardColor>]) -> Self {
         appendHeading(
             filename: Filename.UIColor,
             publicModules: ["UIKit"],
@@ -103,8 +102,7 @@ extension SwiftSource {
             append()
         }
         append()
-        
+
         return self
     }
-    
 }

@@ -26,39 +26,38 @@ import ArgumentParser
 import Foundation
 
 struct BlackboardCommand: ParsableCommand {
-    
     static var configuration = CommandConfiguration(
         commandName: "blackboard",
-        version: BlackboardVersion.version)
-    
+        version: BlackboardVersion.version
+    )
+
     @Option(help: "Configuration file")
     var config: String?
-    
+
     @Flag(help: "Skip generating color extensions (Color, CGColor, and UIColor)")
     var skipColors = false
-    
+
     @Flag(help: "Skip generating data asset extensions (Data, NSDataAsset)")
     var skipDataAssets = false
-    
+
     @Flag(help: "Skip generating image extensions (Image, UIImage)")
     var skipImages = false
-    
+
     @Flag(name: .customLong("skip-swiftui"),
           help: "Skip generating SwiftUI extensions (Color, Image)")
     var skipSwiftUI = false
-    
+
     @Flag(help: "Skip generating symbol extensions (Image, UIImage)")
     var skipSymbols = false
-    
+
     @Flag(name: .customLong("skip-uikit"),
           help: "Skip generating UIKit extensions (UIColor, UIImage)")
     var skipUIKit = false
-    
+
     @Option(parsing: .upToNextOption,
             help: "Input directory or directories")
     var input: [String] = []
-    
+
     @Option(help: "Output directory; where generated code will be stored")
     var output: String?
-    
 }

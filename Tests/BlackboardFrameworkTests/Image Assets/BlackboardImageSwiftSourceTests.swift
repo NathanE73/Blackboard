@@ -22,66 +22,63 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class BlackboardImageSwiftSourceTests: XCTestCase {
-    
     var blackboardImages: [AssetItem<BlackboardImage>] {
         do {
-            let imageSets: [AssetItem<ImageSet>] = [
-                .asset(try Fixture.imageSet(project: .shared, name: "button")),
-                .asset(try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip")),
-                .asset(try Fixture.imageSet(project: .shared, name: "green-pencil")),
+            let imageSets: [AssetItem<ImageSet>] = try [
+                .asset(Fixture.imageSet(project: .shared, name: "button")),
+                .asset(Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip")),
+                .asset(Fixture.imageSet(project: .shared, name: "green-pencil")),
                 .namespace("Red", [
-                    .asset(try Fixture.imageSet(project: .shared, namespace: "Red", name: "stapler")),
-                    .asset(try Fixture.imageSet(project: .shared, namespace: "Red", name: "cup"))
+                    .asset(Fixture.imageSet(project: .shared, namespace: "Red", name: "stapler")),
+                    .asset(Fixture.imageSet(project: .shared, namespace: "Red", name: "cup")),
                 ].sorted()),
-                .asset(try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip")),
-                .asset(try Fixture.imageSet(project: .shared, name: "white-dice"))
+                .asset(Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip")),
+                .asset(Fixture.imageSet(project: .shared, name: "white-dice")),
             ].sorted()
-            
+
             return imageSets.mapAssets(BlackboardImage.init)
         } catch {
             return []
         }
     }
-    
+
     func testNumberOfImages() {
         XCTAssertEqual(blackboardImages.flatMapAssets().count, 7)
     }
-    
+
     func testImageAssetSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "ImageAsset")
-        
+
         let source = SwiftSource()
             .appendImageAssets(images: blackboardImages)
             .source
 
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testImageSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "Image")
-        
+
         let source = SwiftSource()
             .appendImages(images: blackboardImages,
                           target: Version(13, 0),
                           sdk: Version(14, 0))
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testUIImageSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "UIImage")
-        
+
         let source = SwiftSource()
             .appendUIImages(images: blackboardImages)
             .source
 
         XCTAssertEqual(source, expectedSource)
     }
-    
 }

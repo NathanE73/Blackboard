@@ -25,39 +25,38 @@
 import Foundation
 
 extension BlackboardMain {
-    
     func processSymbolsCollection(_ symbolCollectionName: String) {
         let input = "~/Library/Application Support/com.apple.SFSymbols/SF Symbols Library.sfsymbolslibrary/Collections"
             .expandingTildeInPath
-        
+
         let symbolCollections = SymbolCollectionFactory().symbolCollectionsAt(path: input)
-        
-        symbolCollections.forEach { collection in
+
+        for collection in symbolCollections {
             guard collection.displayName == symbolCollectionName else {
-                return
+                continue
             }
-            
+
             let symbols = SymbolAliases.modernize(symbols: symbols).sorted()
-            
+
             if collection.symbols == symbols {
                 print("Skipping: \(symbolCollectionName) (Symbol Collection)")
-                return
+                continue
             } else {
                 print("Updating: \(symbolCollectionName) (Symbol Collection)")
             }
-            
+
             var collection = collection
             collection.symbols = symbols
-            
+
             guard let file = collection.file else {
-                return
+                continue
             }
-            
+
             let url = URL(fileURLWithPath: file)
-            
+
             let encoder = JSONEncoder()
             encoder.outputFormatting = [.sortedKeys]
-            
+
             do {
                 let data = try encoder.encode(collection)
                 try data.write(to: url)
@@ -67,5 +66,4 @@ extension BlackboardMain {
             }
         }
     }
-    
 }

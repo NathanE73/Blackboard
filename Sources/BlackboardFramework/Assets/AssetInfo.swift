@@ -27,22 +27,22 @@ import Foundation
 struct AssetInfo: Decodable {
     var version: Int
     var author: String
-    
+
     enum CodingKeys: String, CodingKey {
         case version
         case author
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
+
         let versionString = try? container.decode(String.self, forKey: .version)
-        if let versionString = versionString, let version = Int(versionString) {
+        if let versionString, let version = Int(versionString) {
             self.version = version
         } else {
             version = try container.decode(Int.self, forKey: .version)
         }
-        
+
         author = try container.decode(String.self, forKey: .author)
     }
 }

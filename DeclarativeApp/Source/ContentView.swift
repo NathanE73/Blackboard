@@ -35,7 +35,7 @@ struct ContentView: View {
                 .background(Color.bisque)
         }
     }
-    
+
     var imageDecorative: Image {
         // swiftlint:disable:next blackboard_image_decorative
         Image(decorative: "Red/cup")
@@ -50,25 +50,24 @@ struct ContentView: View {
         // swiftlint:disable:next blackboard_color_name
         Color("Absolute Zero")
     }
-    
+
     @ViewBuilder var colors: some View {
         Color(.bisque)
         Color(asset: .bisque)
         Color.bisque
     }
-    
+
     @ViewBuilder var images: some View {
         Image(.Red.stapler)
         Image(asset: .Red.stapler)
         Image.Red.stapler
     }
-    
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
 #endif

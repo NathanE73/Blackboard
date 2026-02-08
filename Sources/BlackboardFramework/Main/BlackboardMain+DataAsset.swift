@@ -25,25 +25,23 @@
 import Foundation
 
 extension BlackboardMain {
-    
     func processDataAssets(_ input: [String], _ output: String) {
         guard !skipDataAssets else { return }
-        
+
         let dataSets = DataSetFactory().assetItemsAt(paths: input)
-        
+
         let blackboardData = dataSets.mapAssets(BlackboardData.init)
-        
+
         guard !blackboardData.isEmpty else {
             return
         }
-        
+
         SwiftSourceFile(Filename.DataAsset, at: output)
             .appendDataAssets(data: blackboardData)
             .write()
-        
+
         SwiftSourceFile(Filename.NSDataAsset, at: output)
             .appendNSDataAsset(data: blackboardData)
             .write()
     }
-    
 }

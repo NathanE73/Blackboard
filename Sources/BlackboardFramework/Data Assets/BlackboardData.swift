@@ -25,25 +25,21 @@
 import Foundation
 
 struct BlackboardData: Asset {
-    
     var namespace: String?
     var name: String
-    
+
     var resourceName: String
     var propertyName: String
     var propertyPath: String
-
 }
 
 extension BlackboardData {
-    
     init(_ dataSet: DataSet) {
         namespace = dataSet.namespace
         name = dataSet.name
-        
+
         resourceName = dataSet.resourceName
         propertyName = dataSet.propertyName
         propertyPath = Naming.propertyPath(namespace: namespace, propertyName: propertyName)
     }
-    
 }

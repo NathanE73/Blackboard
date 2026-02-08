@@ -22,52 +22,49 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class ImageSetTests: XCTestCase {
-    
     func testButton() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "button")
-        
+
         XCTAssertEqual(imageSet.name, "button")
     }
-    
+
     func testGreenPaperClip() throws {
         let imageSet = try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "green-paper-clip")
-        
+
         XCTAssertEqual(imageSet.name, "green-paper-clip")
     }
-    
+
     func testGreenPencil() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "green-pencil")
-        
+
         XCTAssertEqual(imageSet.name, "green-pencil")
     }
-    
+
     func testRedCup() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "Red/cup")
-        
+
         XCTAssertEqual(imageSet.name, "Red/cup")
     }
-    
+
     func testRedStapler() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "Red/stapler")
-        
+
         XCTAssertEqual(imageSet.name, "Red/stapler")
     }
-    
+
     func testSilverPaperClip() throws {
         let imageSet = try Fixture.imageSet(project: .shared, path: "Paper Clips", name: "silver-paper-clip")
-        
+
         XCTAssertEqual(imageSet.name, "silver-paper-clip")
     }
-    
+
     func testWhiteDice() throws {
         let imageSet = try Fixture.imageSet(project: .shared, name: "white-dice")
-        
+
         XCTAssertEqual(imageSet.name, "white-dice")
     }
-    
 }

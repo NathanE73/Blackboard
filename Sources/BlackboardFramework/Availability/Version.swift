@@ -34,31 +34,32 @@ extension Version {
     init(_ major: Int, _ minor: Int? = nil, _ patch: Int? = nil) {
         self.init(major: major, minor: minor, patch: patch)
     }
-    
+
     init?(_ text: String) {
         let elements = text.split(separator: ".",
                                   omittingEmptySubsequences: false)
-        
+
         guard elements.count <= 3,
               let first = elements.first,
-              let major = Int(first) else {
+              let major = Int(first)
+        else {
             return nil
         }
-        
+
         guard let second = elements.second else {
             self.init(major)
             return
         }
-        
+
         guard let minor = Int(second) else { return nil }
-        
+
         guard let third = elements.third else {
             self.init(major, minor)
             return
         }
-        
+
         guard let patch = Int(third) else { return nil }
-        
+
         self.init(major, minor, patch)
     }
 }
@@ -85,8 +86,9 @@ extension Version: Decodable {
         let text = try container.decode(String.self)
         guard let version = Version(text) else {
             throw DecodingError.dataCorruptedError(
-                            in: container,
-                            debugDescription: "Cannot initialize Version")
+                in: container,
+                debugDescription: "Cannot initialize Version"
+            )
         }
         self = version
     }

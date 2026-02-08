@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class AssetGroupTests: XCTestCase {
-    
     func testDecodable() {
         let json = """
           {
@@ -45,21 +43,20 @@ class AssetGroupTests: XCTestCase {
         }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
-            
+
             XCTAssertEqual(group.info.version, 1)
             XCTAssertEqual(group.info.author, "xcode")
-            
+
             XCTAssertEqual(group.properties?.onDemandResourceTags, ["one", "two"])
             XCTAssertEqual(group.properties?.providesNamespace, true)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testOnlyInfoDecodable() {
         let json = """
           {
@@ -70,20 +67,19 @@ class AssetGroupTests: XCTestCase {
         }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
-            
+
             XCTAssertEqual(group.info.version, 1)
             XCTAssertEqual(group.info.author, "xcode")
-            
+
             XCTAssertNil(group.properties)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testEmptyPropertiesDecodable() {
         let json = """
           {
@@ -96,22 +92,21 @@ class AssetGroupTests: XCTestCase {
         }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
-            
+
             XCTAssertEqual(group.info.version, 1)
             XCTAssertEqual(group.info.author, "xcode")
-            
+
             XCTAssertNotNil(group.properties)
             XCTAssertNil(group.properties?.onDemandResourceTags)
             XCTAssertNil(group.properties?.providesNamespace)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testOnlyOnDemandResourceTagsDecodable() {
         let json = """
           {
@@ -128,21 +123,20 @@ class AssetGroupTests: XCTestCase {
         }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
-            
+
             XCTAssertEqual(group.info.version, 1)
             XCTAssertEqual(group.info.author, "xcode")
-            
+
             XCTAssertEqual(group.properties?.onDemandResourceTags, ["one", "two"])
             XCTAssertNil(group.properties?.providesNamespace)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testOnlyProvidesNamespaceDecodable() {
         let json = """
           {
@@ -156,19 +150,17 @@ class AssetGroupTests: XCTestCase {
         }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let group = try JSONDecoder().decode(AssetGroup.self, from: data)
-            
+
             XCTAssertEqual(group.info.version, 1)
             XCTAssertEqual(group.info.author, "xcode")
-            
+
             XCTAssertNil(group.properties?.onDemandResourceTags)
             XCTAssertEqual(group.properties?.providesNamespace, false)
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
 }

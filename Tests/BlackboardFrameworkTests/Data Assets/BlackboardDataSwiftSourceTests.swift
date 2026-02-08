@@ -22,21 +22,19 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class BlackboardDataSwiftSourceTests: XCTestCase {
-    
     var blackboardData: [AssetItem<BlackboardData>] {
         do {
-            let dataSets: [AssetItem<DataSet>] = [
+            let dataSets: [AssetItem<DataSet>] = try [
                 .namespace("Level", [
-                    .asset(try Fixture.dataSet(project: .shared, namespace: "Level", name: "N002")),
-                    .asset(try Fixture.dataSet(project: .shared, namespace: "Level", name: "N001"))
+                    .asset(Fixture.dataSet(project: .shared, namespace: "Level", name: "N002")),
+                    .asset(Fixture.dataSet(project: .shared, namespace: "Level", name: "N001")),
                 ].sorted()),
-                .asset(try Fixture.dataSet(project: .shared, name: "Welcome Message")),
-                .asset(try Fixture.dataSet(project: .shared, name: "Names"))
+                .asset(Fixture.dataSet(project: .shared, name: "Welcome Message")),
+                .asset(Fixture.dataSet(project: .shared, name: "Names")),
             ].sorted()
 
             return dataSets.mapAssets(BlackboardData.init)
@@ -44,29 +42,28 @@ class BlackboardDataSwiftSourceTests: XCTestCase {
             return []
         }
     }
-    
+
     func testNumberOfData() {
         XCTAssertEqual(blackboardData.flatMapAssets().count, 4)
     }
-    
+
     func testDataAssetSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "DataAsset")
-        
+
         let source = SwiftSource()
             .appendDataAssets(data: blackboardData)
             .source
 
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testNSDataAssetSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "NSDataAsset")
-        
+
         let source = SwiftSource()
             .appendNSDataAsset(data: blackboardData)
             .source
 
         XCTAssertEqual(source, expectedSource)
     }
-    
 }

@@ -22,39 +22,37 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 extension BlackboardMainTests {
-    
     func testDefaultPlatformConfiguration() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
         command.output = "DeclarativeApp/Source/Generated"
-        
+
         let configuration = BlackboardConfiguration()
-        
+
         let main = try BlackboardMain(command, configuration)
-        
+
         XCTAssertEqual(main.ios.target, Version(13, 0))
         XCTAssertEqual(main.ios.sdk, Version(14, 5))
     }
-    
+
     func testConfigurationPlatformConfiguration() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
         command.output = "DeclarativeApp/Source/Generated"
-        
+
         var configuration = BlackboardConfiguration()
         configuration.ios = .init(
             target: Version(14, 5),
-            sdk: Version(15, 0))
-        
+            sdk: Version(15, 0)
+        )
+
         let main = try BlackboardMain(command, configuration)
-        
+
         XCTAssertEqual(main.ios.target, Version(14, 5))
         XCTAssertEqual(main.ios.sdk, Version(15, 0))
     }
-    
 }

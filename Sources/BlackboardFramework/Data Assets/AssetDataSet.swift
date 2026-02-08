@@ -30,19 +30,16 @@ struct AssetDataSet: Decodable {
 }
 
 extension AssetDataSet {
-    
     struct Data: Decodable {
-        
         var idiom: AssetIdiom
-        
+
         enum CodingKeys: String, CodingKey {
             case idiom
         }
-        
+
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             idiom = try container.decodeIfPresent(AssetIdiom.self, forKey: .idiom) ?? .universal
         }
     }
-    
 }

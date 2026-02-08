@@ -27,19 +27,18 @@ import Foundation
 struct SymbolAvailability: Decodable {
     var symbols: [String: String]
     var yearToRelease: [String: YearToRelease]
-    
+
     enum CodingKeys: String, CodingKey {
         case symbols
         case yearToRelease = "year_to_release"
     }
-    
+
     struct YearToRelease: Decodable {
         var iOS: Version
     }
 }
 
 extension SymbolAvailability {
-    
     static var resource: SymbolAvailability? {
         do {
             let plist = Resource.name_availability_plist
@@ -50,5 +49,4 @@ extension SymbolAvailability {
             return nil
         }
     }
-    
 }

@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class BlackboardSymbolSwiftSourceTests: XCTestCase {
-    
     var blackboardSymbols: [BlackboardSymbol] {
         let symbols: Set<String> = [
             "a.book.closed",
@@ -46,51 +44,50 @@ class BlackboardSymbolSwiftSourceTests: XCTestCase {
             "plus.circle.fill",
             "return",
             "repeat",
-            "repeat.circle"
+            "repeat.circle",
         ]
-        
+
         var blackboardSymbols = BlackboardSymbolFactory()
             .symbols(for: symbols)
-        
+
         blackboardSymbols.sort { $0.caseName.localizedCaseInsensitiveCompare($1.caseName) == .orderedAscending }
-        
+
         return blackboardSymbols
     }
-    
+
     func testNumberOfSymbols() {
         XCTAssertEqual(blackboardSymbols.count, 17)
     }
-    
+
     func testImageAssetSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "SymbolAsset")
-        
+
         let source = SwiftSource()
             .appendSymbolAssets(symbols: blackboardSymbols, target: Version(13, 0))
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testSymbolImageSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "SymbolImage")
-        
+
         let source = SwiftSource()
             .appendSymbolImages(symbols: blackboardSymbols,
                                 target: Version(13, 0),
                                 sdk: Version(14, 0))
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testSymbolUIImageSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "SymbolUIImage")
-        
+
         let source = SwiftSource()
             .appendSymbolUIImages(symbols: blackboardSymbols, target: Version(13, 0))
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
 }

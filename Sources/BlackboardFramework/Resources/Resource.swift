@@ -24,5 +24,4 @@
 
 import Foundation
 
-struct Resource {
-}
+struct Resource {}

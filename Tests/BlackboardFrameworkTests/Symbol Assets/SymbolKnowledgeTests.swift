@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class SymbolKnowledgeTests: XCTestCase {
-    
     func testSymbolAvailability() throws {
         let file = #filePath
             .deletingLastPathComponent // SymbolAvailabilityTests.swift
@@ -36,11 +34,11 @@ class SymbolKnowledgeTests: XCTestCase {
             .deletingLastPathComponent // Tests
             .appendingPathComponent("README")
             .appendingPathComponent("SymbolAvailability.md")
-        
+
         let symbolKnowledge = try XCTUnwrap(SymbolKnowledge())
-        
+
         let variantSymbols = symbolKnowledge.variantSymbols
-        
+
         let parentSymbols = variantSymbols.values
             .reduce(into: [String: String]()) { result, variantSymbols in
                 let symbols = variantSymbols.symbols.names
@@ -48,12 +46,12 @@ class SymbolKnowledgeTests: XCTestCase {
                     result[symbolName] = symbolName
                 } else {
                     let baseName = variantSymbols.baseName
-                    symbols.forEach { symbol in
+                    for symbol in symbols {
                         result[symbol] = baseName
                     }
                 }
             }
-        
+
         func availability(for symbol: String) -> String {
             guard let availability = symbolKnowledge.iOSAvailability(for: symbol) else { return "" }
             switch availability {
@@ -64,31 +62,29 @@ class SymbolKnowledgeTests: XCTestCase {
                 return " (iOS, introduced: \(introduced), deprecated: \(deprecated), renamed: [\(renamed)](#\(anchor)))"
             }
         }
-        
+
         var text = "# Symbol Availability\n\n"
-        
+
         let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        Array(alphabet).forEach { letter in
+        for letter in Array(alphabet) {
             text += "[\(letter)](#\(letter.lowercased()))\n"
         }
-        
+
         text += "_____\n\n"
-        
-        variantSymbols.values.sorted(by: \.baseName)
-            .forEach { variantSymbols in
-                let symbols = variantSymbols.symbols.sorted().names
-                if symbols.count == 1, let symbolName = symbols.first {
-                    text.append("### \(symbolName)\n\(availability(for: symbolName))\n")
-                } else {
-                    text.append("### \(variantSymbols.baseName)\n")
-                    symbols.forEach { symbol in
-                        text.append("- \(symbol)\(availability(for: symbol))\n")
-                    }
+
+        for variantSymbols in variantSymbols.values.sorted(by: \.baseName) {
+            let symbols = variantSymbols.symbols.sorted().names
+            if symbols.count == 1, let symbolName = symbols.first {
+                text.append("### \(symbolName)\n\(availability(for: symbolName))\n")
+            } else {
+                text.append("### \(variantSymbols.baseName)\n")
+                for symbol in symbols {
+                    text.append("- \(symbol)\(availability(for: symbol))\n")
                 }
-                text.append("\n")
             }
-        
+            text.append("\n")
+        }
+
         try text.write(toFile: file, atomically: true, encoding: .utf8)
     }
-    
 }

@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class SymbolVariantsTests: XCTestCase {
-    
     func testBell() {
         // Given
         let symbols = [
@@ -40,36 +38,35 @@ class SymbolVariantsTests: XCTestCase {
             "bell.slash",
             "bell.slash.fill",
             "bell.slash.circle",
-            "bell.slash.circle.fill"
+            "bell.slash.circle.fill",
         ]
-        
+
         var variants = SymbolVariants()
-        
+
         // When
         variants.symbols = symbols.map(SymbolComponents.init)
-        
+
         // Then
         XCTAssertEqual(variants.baseName, "bell")
         XCTAssertEqual(variants.symbols.names, symbols)
     }
-    
+
     func testZero() {
         // Given
         let symbols = [
             "0.circle",
             "0.circle.fill",
             "0.square",
-            "0.square.fill"
+            "0.square.fill",
         ]
-        
+
         var variants = SymbolVariants()
-        
+
         // When
         variants.symbols = symbols.map(SymbolComponents.init)
-        
+
         // Then
         XCTAssertEqual(variants.baseName, "0")
         XCTAssertEqual(variants.symbols.names, symbols)
     }
-    
 }

@@ -9,7 +9,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.6.2"),
-        .package(url: "https://github.com/jpsim/Yams", from: "6.2.0")
+        .package(url: "https://github.com/jpsim/Yams", from: "6.2.0"),
     ],
     targets: [
         .target(
@@ -20,7 +20,7 @@ let package = Package(
             name: "BlackboardFramework",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
-                "Yams"
+                "Yams",
             ]
         ),
         .testTarget(

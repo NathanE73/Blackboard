@@ -25,33 +25,29 @@
 import Foundation
 
 extension Collection {
-    
     // MARK: - Safe Subscript
-    
+
     @inlinable
     subscript(safe index: Index) -> Element? {
         indices.contains(index) ? self[index] : nil
     }
-    
 }
 
 extension Collection where Index == Int {
-    
     // MARK: - Second, Third, Fourth
-    
+
     /// The second element of the collection.
     @inlinable var second: Element? {
         self[safe: 1]
     }
-    
+
     /// The third element of the collection.
     @inlinable var third: Element? {
         self[safe: 2]
     }
-    
+
     /// The fourth element of the collection.
     @inlinable var fourth: Element? {
         self[safe: 3]
     }
-    
 }

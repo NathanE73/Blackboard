@@ -25,15 +25,14 @@
 import Foundation
 
 class SwiftSourceFile: SwiftSource {
-    
     let filename: String
     let path: String
-    
+
     init(_ filename: String, at path: String) {
         self.filename = filename
         self.path = path
     }
-    
+
     private func read(from url: URL) -> String? {
         do {
             let data = try Data(contentsOf: url)
@@ -43,7 +42,7 @@ class SwiftSourceFile: SwiftSource {
             exit(1)
         }
     }
-    
+
     private func write(_ source: String, to url: URL) {
         do {
             try source.write(to: url, atomically: true, encoding: .utf8)
@@ -52,15 +51,15 @@ class SwiftSourceFile: SwiftSource {
             exit(1)
         }
     }
-    
+
     func write() {
         let fileManager = FileManager.default
-        
-        let source = self.source
-        
+
+        let source = source
+
         let targetPath = "\(path)/\(filename)"
         let targetUrl = URL(fileURLWithPath: targetPath)
-        
+
         if fileManager.isFile(targetPath) {
             let existingSource = read(from: targetUrl)
             if source == existingSource {
@@ -74,5 +73,4 @@ class SwiftSourceFile: SwiftSource {
             write(source, to: targetUrl)
         }
     }
-    
 }

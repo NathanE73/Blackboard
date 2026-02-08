@@ -25,38 +25,36 @@
 import Foundation
 
 extension BlackboardMain {
-    
     func processImages(_ input: [String], _ output: String) {
         guard !skipImages else { return }
-        
+
         let imageSets = ImageSetFactory().assetItemsAt(paths: input)
-        
+
         let blackboardImages = imageSets.mapAssets(BlackboardImage.init)
-        
+
         guard !blackboardImages.isEmpty else {
             return
         }
-        
+
         let includeSwiftUI = !skipSwiftUI
         let includeUIKit = !skipUIKit && !skipUIKitImages
-        
+
         if includeSwiftUI || includeUIKit {
             SwiftSourceFile(Filename.ImageAsset, at: output)
                 .appendImageAssets(images: blackboardImages)
                 .write()
         }
-        
+
         if includeSwiftUI {
             SwiftSourceFile(Filename.Image, at: output)
                 .appendImages(images: blackboardImages, target: ios.target, sdk: ios.sdk)
                 .write()
         }
-        
+
         if includeUIKit {
             SwiftSourceFile(Filename.UIImage, at: output)
                 .appendUIImages(images: blackboardImages)
                 .write()
         }
     }
-    
 }

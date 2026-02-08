@@ -22,28 +22,26 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class SwiftSourceTests: XCTestCase {
-    
     func testSource() {
         let expectedSource =
-        """
-        //
-        //  Example
-        //
-        
-        class Example {
-            
-            func add(a: Int, b: Int) -> Int {
-                return a + b
+            """
+            //
+            //  Example
+            //
+
+            class Example {
+                
+                func add(a: Int, b: Int) -> Int {
+                    return a + b
+                }
+                
             }
-            
-        }
-        """
-        
+            """
+
         let swiftSource = SwiftSource()
         swiftSource.append("//")
         swiftSource.append("//  Example")
@@ -57,25 +55,24 @@ class SwiftSourceTests: XCTestCase {
             }
             swiftSource.append()
         }
-        
+
         XCTAssertEqual(swiftSource.source, expectedSource)
     }
-    
+
     func testAppendEmptyBlock() {
         let expectedSource =
-        """
-        class Empty {
-        }
-        """
-        
+            """
+            class Empty {
+            }
+            """
+
         let swiftSource = SwiftSource()
         swiftSource.append("class Empty") {
             swiftSource.append()
             swiftSource.append()
             swiftSource.append()
         }
-        
+
         XCTAssertEqual(swiftSource.source, expectedSource)
     }
-    
 }

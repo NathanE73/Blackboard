@@ -36,33 +36,31 @@ indirect enum AssetItem<A: Asset> {
 }
 
 extension AssetItem: Comparable {
-    
     static func < (lhs: AssetItem<A>, rhs: AssetItem<A>) -> Bool {
         switch (lhs, rhs) {
         case let (.asset(lhs), .asset(rhs)):
-            return lhs.propertyName.localizedCaseInsensitiveCompare(rhs.propertyName) == .orderedAscending
+            lhs.propertyName.localizedCaseInsensitiveCompare(rhs.propertyName) == .orderedAscending
         case let (.asset(lhs), .namespace(rhs, _)):
-            return lhs.propertyName.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
+            lhs.propertyName.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
         case let (.namespace(lhs, _), .asset(rhs)):
-            return lhs.localizedCaseInsensitiveCompare(rhs.propertyName) == .orderedAscending
+            lhs.localizedCaseInsensitiveCompare(rhs.propertyName) == .orderedAscending
         case let (.namespace(lhs, _), .namespace(rhs, _)):
-            return lhs.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
+            lhs.localizedCaseInsensitiveCompare(rhs) == .orderedAscending
         }
     }
-    
+
     static func == (lhs: AssetItem<A>, rhs: AssetItem<A>) -> Bool {
         switch (lhs, rhs) {
         case let (.asset(lhs), .asset(rhs)):
-            return lhs.name == rhs.name
+            lhs.name == rhs.name
         case let (.asset(lhs), .namespace(rhs, _)):
-            return lhs.name == rhs
+            lhs.name == rhs
         case let (.namespace(lhs, _), .asset(rhs)):
-            return lhs == rhs.name
+            lhs == rhs.name
         case let (.namespace(lhs, _), .namespace(rhs, _)):
-            return lhs == rhs
+            lhs == rhs
         }
     }
-    
 }
 
 extension Collection {
@@ -70,22 +68,21 @@ extension Collection {
         map { something in
             switch something {
             case let .asset(asset):
-                return .asset(transform(asset))
+                .asset(transform(asset))
             case let .namespace(namespace, assets):
-                return .namespace(namespace, assets.mapAssets(transform))
+                .namespace(namespace, assets.mapAssets(transform))
             }
         }
     }
-    
+
     func flatMapAssets<E: Any>() -> [E] where Element == AssetItem<E> {
         flatMap { something in
             switch something {
             case let .asset(asset):
-                return [asset]
+                [asset]
             case let .namespace(_, assets):
-                return assets.flatMapAssets()
+                assets.flatMapAssets()
             }
         }
-
     }
 }

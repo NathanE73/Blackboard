@@ -25,9 +25,8 @@
 import Foundation
 
 extension SwiftSource {
-    
     // MARK: Data Assets
-    
+
     func appendDataAssets(data: [AssetItem<BlackboardData>]) -> Self {
         appendHeading(
             filename: Filename.DataAsset,
@@ -43,13 +42,13 @@ extension SwiftSource {
             }
         }
         append()
-        
+
         return self
     }
-    
+
     // MARK: NSDataAsset
-    
-    func appendNSDataAsset(data: [AssetItem<BlackboardData>]) -> Self {
+
+    func appendNSDataAsset(data _: [AssetItem<BlackboardData>]) -> Self {
         appendHeading(
             filename: Filename.NSDataAsset,
             publicModules: ["Foundation", "UIKit"],
@@ -76,8 +75,7 @@ extension SwiftSource {
             append()
         }
         append()
-        
+
         return self
     }
-    
 }

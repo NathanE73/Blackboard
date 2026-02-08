@@ -25,7 +25,6 @@
 import Foundation
 
 extension SwiftSource {
-    
     func appendSymbolAvailability(_ availability: Availability, target: Version, prefix: String? = nil) {
         switch availability {
         case let .renamed(platform, introduced, deprecated, renamed):
@@ -39,9 +38,9 @@ extension SwiftSource {
             appendAvailability(availability, target: target)
         }
     }
-    
+
     // MARK: Symbol Asset
-    
+
     func appendSymbolAssets(symbols: [BlackboardSymbol], target: Version) -> Self {
         appendHeading(
             filename: Filename.SymbolAsset,
@@ -53,18 +52,18 @@ extension SwiftSource {
         }
         append()
         append("public extension SymbolAsset") {
-            symbols.sorted(by: \.caseName).forEach { symbol in
+            for symbol in symbols.sorted(by: \.caseName) {
                 appendSymbolAvailability(symbol.iOSAvailability, target: target)
                 append("static let \(Naming.escapeKeyword(symbol.caseName)) = SymbolAsset(name: \"\(symbol.name)\")")
             }
         }
         append()
-        
+
         return self
     }
-    
+
     // MARK: Symbol Image
-    
+
     func appendSymbolImages(symbols: [BlackboardSymbol], target: Version, sdk: Version) -> Self {
         appendHeading(
             filename: Filename.SymbolImage,
@@ -77,14 +76,14 @@ extension SwiftSource {
                 append("self.init(systemName: symbolAsset.name)")
             }
             append()
-            symbols.sorted(by: \.functionName).forEach { symbol in
+            for symbol in symbols.sorted(by: \.functionName) {
                 appendSymbolAvailability(symbol.iOSAvailability, target: target, prefix: "symbol")
                 append("static var \(symbol.functionName): Image { Image(symbol: .\(symbol.caseName)) }")
             }
             append()
         }
         append()
-        
+
         if Version(14, 0) <= sdk {
             appendAvailability(.available(platform: .iOS, version: Version(14, 0)), target: target)
             append("public extension Label where Title == Text, Icon == Image") {
@@ -100,12 +99,12 @@ extension SwiftSource {
             }
             append()
         }
-        
+
         return self
     }
-    
+
     // MARK: Symbol UIImage
-    
+
     func appendSymbolUIImages(symbols: [BlackboardSymbol], target: Version) -> Self {
         appendHeading(
             filename: Filename.SymbolUIImage,
@@ -131,15 +130,14 @@ extension SwiftSource {
                 append("self.init(systemName: symbolAsset.name, compatibleWith: traitCollection)!")
             }
             append()
-            symbols.sorted(by: \.functionName).forEach { symbol in
+            for symbol in symbols.sorted(by: \.functionName) {
                 appendSymbolAvailability(symbol.iOSAvailability, target: target, prefix: "symbol")
                 append("static var \(symbol.functionName): UIImage { UIImage(symbol: .\(symbol.caseName)) }")
             }
             append()
         }
         append()
-        
+
         return self
     }
-    
 }

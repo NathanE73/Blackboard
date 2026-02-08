@@ -22,12 +22,10 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class AssetInfoTests: XCTestCase {
-    
     func testDecodable() {
         let json = """
           {
@@ -36,18 +34,17 @@ class AssetInfoTests: XCTestCase {
           }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let info = try JSONDecoder().decode(AssetInfo.self, from: data)
-            
+
             XCTAssertEqual(info.version, 2)
             XCTAssertEqual(info.author, "Steve Dave")
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
+
     func testZeplinDecodable() {
         let json = """
           {
@@ -56,16 +53,14 @@ class AssetInfoTests: XCTestCase {
           }
         """
         let data = Data(json.utf8)
-        
+
         do {
             let info = try JSONDecoder().decode(AssetInfo.self, from: data)
-            
+
             XCTAssertEqual(info.version, 3)
             XCTAssertEqual(info.author, "zeplin")
-        }
-        catch {
+        } catch {
             XCTFail(error.localizedDescription)
         }
     }
-    
 }

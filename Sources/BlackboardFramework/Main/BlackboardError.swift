@@ -30,19 +30,19 @@ enum BlackboardError: Error, CustomStringConvertible {
     case missingOutput
     case invalidInputDirectory(directory: String)
     case invalidOutputDirectory(directory: String)
-    
+
     var description: String {
         switch self {
-        case .invalidConfiguration(let file):
-            return "Error: Unable to process configuration file: \(file)"
+        case let .invalidConfiguration(file):
+            "Error: Unable to process configuration file: \(file)"
         case .missingInput:
-            return "Error: Missing expected argument '--input <input> ...'"
+            "Error: Missing expected argument '--input <input> ...'"
         case .missingOutput:
-            return "Error: Missing expected argument '--output <output>'"
-        case .invalidInputDirectory(let directory):
-            return "Error: No such input directory: \(directory)"
-        case .invalidOutputDirectory(let directory):
-            return "Error: No such output directory: \(directory)"
+            "Error: Missing expected argument '--output <output>'"
+        case let .invalidInputDirectory(directory):
+            "Error: No such input directory: \(directory)"
+        case let .invalidOutputDirectory(directory):
+            "Error: No such output directory: \(directory)"
         }
     }
 }

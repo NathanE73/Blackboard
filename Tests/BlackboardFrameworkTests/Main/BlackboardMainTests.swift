@@ -22,20 +22,18 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class BlackboardMainTests: XCTestCase {
-    
     // MARK: - Missing Input Tests
-    
+
     func testMissingInput() throws {
         var command = try BlackboardCommand.parse([])
         command.output = "DeclarativeApp/Source/Generated"
-        
+
         let configuration = BlackboardConfiguration()
-        
+
         do {
             _ = try BlackboardMain(command, configuration)
             XCTFail()
@@ -45,15 +43,15 @@ class BlackboardMainTests: XCTestCase {
             XCTFail()
         }
     }
-    
+
     // MARK: - Missing Output Tests
-    
+
     func testMissingOutput() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
-        
+
         let configuration = BlackboardConfiguration()
-        
+
         do {
             _ = try BlackboardMain(command, configuration)
             XCTFail()
@@ -63,25 +61,25 @@ class BlackboardMainTests: XCTestCase {
             XCTFail()
         }
     }
-    
+
     // MARK: - Input and Output Tests
-    
+
     func testCommandInputOutput() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
         command.output = "DeclarativeApp/Source/Generated"
-        
+
         let configuration = BlackboardConfiguration()
-        
+
         let main = try BlackboardMain(command, configuration)
-        
+
         XCTAssertEqual(main.input, ["DeclarativeApp/Resources"])
-        
+
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
-        
+
         XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, [])
-        
+
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
@@ -89,25 +87,27 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
     }
-    
+
     func testConfigurationInputOutput() throws {
         let command = try BlackboardCommand.parse([])
-        
+
         let configuration = BlackboardConfiguration(
             input: ["Shared/Resources", "DeclarativeApp/Resources"],
-            output: "DeclarativeApp/Source/Generated")
-        
+            output: "DeclarativeApp/Source/Generated"
+        )
+
         let main = try BlackboardMain(command, configuration)
-        
+
         XCTAssertEqual(main.input, [
-                        "Shared/Resources",
-                        "DeclarativeApp/Resources"])
-        
+            "Shared/Resources",
+            "DeclarativeApp/Resources",
+        ])
+
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
-        
+
         XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, [])
-        
+
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
@@ -115,7 +115,7 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
     }
-    
+
     func testInputOutput() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
@@ -123,17 +123,18 @@ class BlackboardMainTests: XCTestCase {
 
         let configuration = BlackboardConfiguration(
             input: ["Shared/Resources", "DeclarativeApp/Resources"],
-            output: "DeclarativeApp/Source/Generated")
-        
+            output: "DeclarativeApp/Source/Generated"
+        )
+
         let main = try BlackboardMain(command, configuration)
-        
+
         XCTAssertEqual(main.input, ["DeclarativeApp/Resources"])
-        
+
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
-        
+
         XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, [])
-        
+
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
@@ -141,29 +142,31 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
     }
-    
+
     // MARK: - Symbols Collection Tests
-    
+
     func testConfigurationSymbolsCollection() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
         command.output = "DeclarativeApp/Source/Generated"
-        
+
         let symbolsCollection = BlackboardConfiguration.SymbolsCollection(
-            name: "Example App")
-        
+            name: "Example App"
+        )
+
         let configuration = BlackboardConfiguration(
-            symbolsCollection: symbolsCollection)
-        
+            symbolsCollection: symbolsCollection
+        )
+
         let main = try BlackboardMain(command, configuration)
-        
+
         XCTAssertEqual(main.input, ["DeclarativeApp/Resources"])
-        
+
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
-        
+
         XCTAssertEqual(main.symbolsCollectionName, "Example App")
         XCTAssertEqual(main.symbols, [])
-        
+
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
@@ -171,26 +174,27 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
     }
-    
+
     // MARK: - Symbols Tests
-    
+
     func testConfigurationSymbols() throws {
         var command = try BlackboardCommand.parse([])
         command.input = ["DeclarativeApp/Resources"]
         command.output = "DeclarativeApp/Source/Generated"
-        
+
         let configuration = BlackboardConfiguration(
-            symbols: ["chevron.down", "chevron.up"])
-        
+            symbols: ["chevron.down", "chevron.up"]
+        )
+
         let main = try BlackboardMain(command, configuration)
-        
+
         XCTAssertEqual(main.input, ["DeclarativeApp/Resources"])
-        
+
         XCTAssertEqual(main.output, "DeclarativeApp/Source/Generated")
-        
+
         XCTAssertNil(main.symbolsCollectionName)
         XCTAssertEqual(main.symbols, ["chevron.down", "chevron.up"])
-        
+
         XCTAssertFalse(main.skipColors)
         XCTAssertFalse(main.skipDataAssets)
         XCTAssertFalse(main.skipImages)
@@ -198,5 +202,4 @@ class BlackboardMainTests: XCTestCase {
         XCTAssertFalse(main.skipSymbols)
         XCTAssertFalse(main.skipUIKit)
     }
-    
 }

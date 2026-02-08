@@ -25,11 +25,9 @@
 import Foundation
 
 extension Sequence {
-    
-    func sorted<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
+    func sorted(by keyPath: KeyPath<Element, some Comparable>) -> [Element] {
         sorted { lhs, rhs in
             lhs[keyPath: keyPath] < rhs[keyPath: keyPath]
         }
     }
-    
 }

@@ -26,14 +26,14 @@ import Foundation
 
 struct SymbolVariants {
     var symbols: [SymbolComponents] = []
-    
+
     var baseName: String {
         var baseName = symbols.first?.baseName ?? ""
-        
+
         if let onlyShape = symbols.onlyShape {
             baseName += ".\(onlyShape)"
         }
-        
+
         return baseName
     }
 }

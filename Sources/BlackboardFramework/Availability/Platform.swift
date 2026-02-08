@@ -29,5 +29,7 @@ enum Platform: String {
 }
 
 extension Platform: CustomStringConvertible {
-    var description: String { rawValue }
+    var description: String {
+        rawValue
+    }
 }

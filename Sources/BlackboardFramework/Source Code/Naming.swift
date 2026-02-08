@@ -25,7 +25,6 @@
 import Foundation
 
 enum Naming {
-    
     static var keywords = [
         // used in declarations
         "associatedtype", "class", "deinit", "enum", "extension", "fileprivate",
@@ -42,35 +41,35 @@ enum Naming {
         "associativity", "convenience", "dynamic", "didSet", "final", "get", "infix",
         "indirect", "lazy", "left", "mutating", "none", "nonmutating", "optional",
         "override", "postfix", "precedence", "prefix", "Protocol", "required", "right",
-        "set", "Type", "unowned", "weak", "and willSet"
+        "set", "Type", "unowned", "weak", "and willSet",
     ]
-    
+
     static func escapeKeyword(_ identifier: String) -> String {
         keywords.contains(identifier) ? "`\(identifier)`" : identifier
     }
-    
+
     static func methodName(from identifier: String, numberPrefix: Bool = false, prefix: String? = nil) -> String {
         var name = identifier
-        
+
         if numberPrefix, name.startsWithDecimalDigit {
             name = "number\(name)"
         }
-        
-        if let prefix = prefix {
+
+        if let prefix {
             name = "\(prefix).\(name)"
         }
-        
+
         name = self.name(from: name, prefix: prefix)
             .firstCharacterLowercased
-        
+
         if !numberPrefix, name.startsWithDecimalDigit {
             name = "_\(name)"
         }
-        
+
         return name
     }
-    
-    static func name(from identifier: String, prefix: String? = nil) -> String {
+
+    static func name(from identifier: String, prefix _: String? = nil) -> String {
         identifier.split { character in
             for unicodeScalar in character.unicodeScalars {
                 // swiftlint:disable:next for_where
@@ -88,25 +87,25 @@ enum Naming {
         }
         .joined()
     }
-    
+
     static func namespace(from namespaces: String?...) -> String {
         namespaces
             .compactMap { $0 }
             .joined(separator: "/")
     }
-    
+
     static func namespaceName(from namespace: String) -> String {
         let name = Naming.name(from: namespace)
         return name.startsWithDecimalDigit ? "_\(name)" : name
     }
-    
+
     static func lastNamespaceName(from namespace: String) -> String {
         guard let lastNamespaceComponent = namespace.split(separator: "/").last else { return "" }
         return namespaceName(from: String(lastNamespaceComponent))
     }
-    
+
     static func propertyPath(namespace: String?, propertyName: String) -> String {
-        if let namespace = namespace {
+        if let namespace {
             let namespace = namespace
                 .split(separator: "/")
                 .map { Naming.namespaceName(from: String($0)) }

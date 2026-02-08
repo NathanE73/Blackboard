@@ -27,11 +27,11 @@ import Foundation
 struct ImageSet: Asset {
     var namespace: String?
     var name: String
-    
+
     var resourceName: String {
         Naming.namespace(from: namespace, name)
     }
-    
+
     var propertyName: String {
         Naming.methodName(from: name)
             .removingSuffix("Image")
@@ -39,10 +39,8 @@ struct ImageSet: Asset {
 }
 
 extension ImageSet {
-    
-    init?(namespace: String?, name: String, assetImageSet: AssetImageSet) {
+    init?(namespace: String?, name: String, assetImageSet _: AssetImageSet) {
         self.namespace = namespace
         self.name = name
     }
-    
 }

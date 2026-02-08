@@ -25,39 +25,37 @@
 import Foundation
 
 class SymbolCollectionFactory {
-    
     func symbolCollectionsAt(path: String) -> [SymbolCollection] {
         let fileManager = FileManager.default
-        
+
         guard let contents = try? fileManager.contentsOfDirectory(atPath: path) else {
             return []
         }
-        
+
         return contents.compactMap { content -> SymbolCollection? in
             let file = path.appendingPathComponent(content)
-            
+
             guard !fileManager.isDirectory(file) else {
                 return nil
             }
-            
+
             guard file.pathExtension == "json" else {
                 return nil
             }
-            
+
             let url = URL(fileURLWithPath: file, isDirectory: false)
-            
+
             guard let data = try? Data(contentsOf: url) else {
                 return nil
             }
-            
+
             guard var symbolCollection = try? JSONDecoder().decode(SymbolCollection.self, from: data) else {
                 return nil
             }
-            
+
             symbolCollection.file = file
-            
+
             return symbolCollection
         }
     }
-    
 }

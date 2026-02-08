@@ -26,18 +26,17 @@ import ArgumentParser
 import Foundation
 
 public struct BlackboardMain {
-    
     var configurationFile: String
-    
+
     var ios: PlatformConfiguration
-    
+
     var input: [String]
-    
+
     var output: String
-    
+
     var symbolsCollectionName: String?
     var symbols: Set<String>
-    
+
     var skipColors: Bool
     var skipDataAssets: Bool
     var skipImages: Bool
@@ -47,53 +46,52 @@ public struct BlackboardMain {
     var skipUIKitColors: Bool
     var skipUIKitImages: Bool
     var skipUIKitSymbols: Bool
-    
+
     init(_ command: BlackboardCommand, _ configuration: BlackboardConfiguration?) throws {
         configurationFile = configuration?.file ?? ""
-        
+
         ios = PlatformConfiguration(using: configuration)
-        
+
         if !command.input.isEmpty {
-            self.input = command.input
+            input = command.input
         } else if let input = configuration?.input, !input.isEmpty {
             self.input = input
         } else {
             throw BlackboardError.missingInput
         }
-        
+
         if let output = command.output ?? configuration?.output {
             self.output = output
         } else {
             throw BlackboardError.missingOutput
         }
-        
-        self.symbolsCollectionName = configuration?.symbolsCollection?.name
-        
-        self.symbols = configuration?.symbols ?? []
-        
+
+        symbolsCollectionName = configuration?.symbolsCollection?.name
+
+        symbols = configuration?.symbols ?? []
+
         let skips = configuration?.skips ?? []
-        self.skipColors = command.skipColors || skips.contains(.colors)
-        self.skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
-        self.skipImages = command.skipImages || skips.contains(.images)
-        self.skipSwiftUI = command.skipSwiftUI || skips.contains(.swiftui)
-        self.skipSymbols = command.skipSymbols || skips.contains(.symbols)
-        self.skipUIKit = command.skipUIKit || skips.contains(.uikit)
-        self.skipUIKitColors = skips.contains(.uikitColors)
-        self.skipUIKitImages = skips.contains(.uikitImages)
-        self.skipUIKitSymbols = skips.contains(.uikitSymbols)
+        skipColors = command.skipColors || skips.contains(.colors)
+        skipDataAssets = command.skipDataAssets || skips.contains(.dataAssets)
+        skipImages = command.skipImages || skips.contains(.images)
+        skipSwiftUI = command.skipSwiftUI || skips.contains(.swiftui)
+        skipSymbols = command.skipSymbols || skips.contains(.symbols)
+        skipUIKit = command.skipUIKit || skips.contains(.uikit)
+        skipUIKitColors = skips.contains(.uikitColors)
+        skipUIKitImages = skips.contains(.uikitImages)
+        skipUIKitSymbols = skips.contains(.uikitSymbols)
     }
-    
+
     public static func main() {
         do {
             let command = BlackboardCommand.parseOrExit()
-            
-            let configuration: BlackboardConfiguration?
-            if let config = command.config {
-                configuration = try BlackboardConfiguration(file: config)
+
+            let configuration: BlackboardConfiguration? = if let config = command.config {
+                try BlackboardConfiguration(file: config)
             } else {
-                configuration = try BlackboardConfiguration(path: FileManager.default.currentDirectoryPath)
+                try BlackboardConfiguration(path: FileManager.default.currentDirectoryPath)
             }
-            
+
             let main = try BlackboardMain(command, configuration)
             try main.run()
         } catch {
@@ -101,47 +99,46 @@ public struct BlackboardMain {
             exit(64)
         }
     }
-    
+
     func run() throws {
         let fileManager = FileManager.default
-        
+
         // Verify Input Directories
-        
+
         try input.forEach { input in
             guard fileManager.isDirectory(input) else {
                 throw BlackboardError.invalidInputDirectory(directory: input)
             }
             print("Input: \(input)")
         }
-        
+
         // Verify Output Directory
-        
+
         guard fileManager.isDirectory(output) else {
             throw BlackboardError.invalidOutputDirectory(directory: output)
         }
-        
+
         print("Output: \(output)")
-        
+
         // Platform Configuration
-        
+
         print("iOS Deployment Target: \(ios.target)")
         print("iOS SDK: \(ios.sdk)")
-        
+
         // Process Symbols
-        
+
         processSymbols(symbols, output)
-        
+
         // Process Symbols Collection
-        
-        if let symbolsCollectionName = symbolsCollectionName {
+
+        if let symbolsCollectionName {
             processSymbolsCollection(symbolsCollectionName)
         }
-        
+
         // Process Resources
-        
+
         processColors(input, output)
         processDataAssets(input, output)
         processImages(input, output)
     }
-    
 }

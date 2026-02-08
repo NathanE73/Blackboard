@@ -22,70 +22,67 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class ColorSetTests: XCTestCase {
-    
     func testAbsoluteZero() throws {
         let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "Absolute Zero")
-        
+
         XCTAssertEqual(colorSet.name, "Absolute Zero")
     }
-    
+
     func testBisque() throws {
         let colorSet = try Fixture.colorSet(project: .shared, name: "Bisque")
-        
+
         XCTAssertEqual(colorSet.name, "Bisque")
     }
-    
+
     func testCharcoal() throws {
         let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "Charcoal")
-        
+
         XCTAssertEqual(colorSet.name, "Charcoal")
     }
-    
+
     func testDarkOliveGreen() throws {
         let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "dark-olive-green")
-        
+
         XCTAssertEqual(colorSet.name, "dark-olive-green")
     }
-    
+
     func testDesire() throws {
         let colorSet = try Fixture.colorSet(project: .shared, name: "Desire")
-        
+
         XCTAssertEqual(colorSet.name, "Desire")
     }
-    
+
     func testEmerald() throws {
         let colorSet = try Fixture.colorSet(project: .shared, name: "Emerald")
-        
+
         XCTAssertEqual(colorSet.name, "Emerald")
     }
-    
+
     func testEmpty() throws {
         let colorSet = try Fixture.colorSet(project: .shared, name: "Empty")
-        
+
         XCTAssertEqual(colorSet.name, "Empty")
     }
-    
+
     func testFirebrick() throws {
         let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "firebrick-color")
-        
+
         XCTAssertEqual(colorSet.name, "firebrick-color")
     }
-    
+
     func testMaroon() throws {
         let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "maroon color")
-        
+
         XCTAssertEqual(colorSet.name, "maroon color")
     }
-    
+
     func testNight() throws {
         let colorSet = try Fixture.colorSet(project: .shared, path: "Dark", name: "Night")
-        
+
         XCTAssertEqual(colorSet.name, "Night")
     }
-    
 }

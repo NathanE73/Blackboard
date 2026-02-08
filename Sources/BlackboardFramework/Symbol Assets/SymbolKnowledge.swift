@@ -25,49 +25,51 @@
 class SymbolKnowledge {
     let symbolAvailability: SymbolAvailability
     let symbolAliases: SymbolAliases
-    
+
     init?() {
         guard let symbolAvailability = SymbolAvailability.resource,
-              let symbolAliases = SymbolAliases.resource else {
-                  return nil
-              }
+              let symbolAliases = SymbolAliases.resource
+        else {
+            return nil
+        }
         self.symbolAvailability = symbolAvailability
         self.symbolAliases = symbolAliases
     }
 }
 
 extension SymbolKnowledge {
-    
     var knownSymbols: Set<String> {
         Set(symbolAvailability.symbols.keys)
     }
-    
+
     func yearToRelease(for symbol: String) -> SymbolAvailability.YearToRelease? {
         guard let year = symbolAvailability.symbols[symbol],
-              let yearToRelease = symbolAvailability.yearToRelease[year] else {
+              let yearToRelease = symbolAvailability.yearToRelease[year]
+        else {
             return nil
         }
         return yearToRelease
     }
-    
+
     func iOSAvailability(for symbol: String) -> Availability? {
         guard let released = yearToRelease(for: symbol) else {
             return nil
         }
-        
+
         if let aliase = symbolAliases.symbols[symbol],
-           let aliaseReleased = self.yearToRelease(for: aliase) {
-               return .renamed(platform: .iOS, introduced: released.iOS, deprecated: aliaseReleased.iOS, renamed: aliase)
+           let aliaseReleased = yearToRelease(for: aliase)
+        {
+            return .renamed(platform: .iOS, introduced: released.iOS, deprecated: aliaseReleased.iOS, renamed: aliase)
         }
-        
+
         return .available(platform: .iOS, version: released.iOS)
     }
-    
+
     var variantSymbols: [String: SymbolVariants] {
         knownSymbols.reduce([String: SymbolVariants]()) { dict, symbol in
             let symbolComponents = SymbolComponents(name: symbol)
             let baseName = symbolComponents.baseName
-            
+
             var dict = dict
             var symbolVariants = dict[baseName] ?? SymbolVariants()
             symbolVariants.symbols.append(symbolComponents)
@@ -79,5 +81,4 @@ extension SymbolKnowledge {
             return dict
         }
     }
-    
 }

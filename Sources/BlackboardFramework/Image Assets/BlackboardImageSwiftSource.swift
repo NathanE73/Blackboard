@@ -25,9 +25,8 @@
 import Foundation
 
 extension SwiftSource {
-    
     // MARK: Image Assets
-    
+
     func appendImageAssets(images: [AssetItem<BlackboardImage>]) -> Self {
         appendHeading(
             filename: Filename.ImageAsset,
@@ -43,12 +42,12 @@ extension SwiftSource {
             }
         }
         append()
-        
+
         return self
     }
-    
+
     // MARK: Image
-    
+
     func appendImages(images: [AssetItem<BlackboardImage>], target: Version, sdk: Version) -> Self {
         appendHeading(
             filename: Filename.Image,
@@ -76,7 +75,7 @@ extension SwiftSource {
             append()
         }
         append()
-        
+
         if Version(14, 0) <= sdk {
             appendAvailability(.available(platform: .iOS, version: Version(14, 0)), target: target)
             append("public extension Label where Title == Text, Icon == Image") {
@@ -92,13 +91,13 @@ extension SwiftSource {
             }
             append()
         }
-        
+
         return self
     }
-    
+
     // MARK: UIImage
-    
-    func appendUIImages(images: [AssetItem<BlackboardImage>]) -> Self {
+
+    func appendUIImages(images _: [AssetItem<BlackboardImage>]) -> Self {
         appendHeading(
             filename: Filename.UIImage,
             publicModules: ["UIKit"],
@@ -116,8 +115,7 @@ extension SwiftSource {
             append()
         }
         append()
-        
+
         return self
     }
-    
 }

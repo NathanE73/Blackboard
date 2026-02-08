@@ -22,80 +22,77 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class BlackboardColorSwiftSourceTests: XCTestCase {
-    
     var blackboardColors: [AssetItem<BlackboardColor>] {
         do {
-            let colorSets: [AssetItem<ColorSet>] = [
-                .asset(try Fixture.colorSet(project: .shared, path: "Dark", name: "Absolute Zero")),
-                .asset(try Fixture.colorSet(project: .shared, name: "Bisque")),
-                .asset(try Fixture.colorSet(project: .shared, path: "Dark", name: "Charcoal")),
-                .asset(try Fixture.colorSet(project: .shared, path: "Dark", name: "dark-olive-green")),
-                .asset(try Fixture.colorSet(project: .shared, name: "Desire")),
-                .asset(try Fixture.colorSet(project: .shared, name: "Emerald")),
-                .asset(try Fixture.colorSet(project: .shared, name: "Empty")),
-                .asset(try Fixture.colorSet(project: .shared, path: "Dark", name: "firebrick-color")),
+            let colorSets: [AssetItem<ColorSet>] = try [
+                .asset(Fixture.colorSet(project: .shared, path: "Dark", name: "Absolute Zero")),
+                .asset(Fixture.colorSet(project: .shared, name: "Bisque")),
+                .asset(Fixture.colorSet(project: .shared, path: "Dark", name: "Charcoal")),
+                .asset(Fixture.colorSet(project: .shared, path: "Dark", name: "dark-olive-green")),
+                .asset(Fixture.colorSet(project: .shared, name: "Desire")),
+                .asset(Fixture.colorSet(project: .shared, name: "Emerald")),
+                .asset(Fixture.colorSet(project: .shared, name: "Empty")),
+                .asset(Fixture.colorSet(project: .shared, path: "Dark", name: "firebrick-color")),
                 .namespace("Fluorescent", [
-                    .asset(try Fixture.colorSet(project: .shared, namespace: "Fluorescent", name: "Radical Red")),
-                    .asset(try Fixture.colorSet(project: .shared, namespace: "Fluorescent", name: "Blizzard Blue")),
-                    .asset(try Fixture.colorSet(project: .shared, namespace: "Fluorescent", name: "Magic Mint"))
+                    .asset(Fixture.colorSet(project: .shared, namespace: "Fluorescent", name: "Radical Red")),
+                    .asset(Fixture.colorSet(project: .shared, namespace: "Fluorescent", name: "Blizzard Blue")),
+                    .asset(Fixture.colorSet(project: .shared, namespace: "Fluorescent", name: "Magic Mint")),
                 ].sorted()),
-                .asset(try Fixture.colorSet(project: .shared, path: "Dark", name: "maroon color")),
-                .asset(try Fixture.colorSet(project: .shared, path: "Dark", name: "Night"))
+                .asset(Fixture.colorSet(project: .shared, path: "Dark", name: "maroon color")),
+                .asset(Fixture.colorSet(project: .shared, path: "Dark", name: "Night")),
             ].sorted()
-            
+
             return colorSets.mapAssets(BlackboardColor.init)
         } catch {
             return []
         }
     }
-    
+
     func testNumberOfColors() {
         XCTAssertEqual(blackboardColors.flatMapAssets().count, 13)
     }
-    
+
     func testColorAssetSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "ColorAsset")
-        
+
         let source = SwiftSource()
             .appendColorAssets(colors: blackboardColors)
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testColorSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "Color")
-        
+
         let source = SwiftSource()
             .appendColors(colors: blackboardColors, target: Version(13, 0))
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testCGColorSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "CGColor")
-        
+
         let source = SwiftSource()
             .appendCGColors(colors: blackboardColors)
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
+
     func testUIColorSource() {
         let expectedSource = Fixture.generated(project: .declarative, name: "UIColor")
-        
+
         let source = SwiftSource()
             .appendUIColors(colors: blackboardColors)
             .source
-        
+
         XCTAssertEqual(source, expectedSource)
     }
-    
 }

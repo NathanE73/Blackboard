@@ -22,16 +22,14 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class SymbolComponentsTests: XCTestCase {
-    
-    func testEverything() throws {
+    func testEverything() {
         // Given
         let components = SymbolComponents(name: "speaker.slash.circle.fill.rtl")
-        
+
         // Then
         XCTAssertEqual(components.baseName, "speaker")
         XCTAssertEqual(components.isSlashed, true)
@@ -39,11 +37,11 @@ class SymbolComponentsTests: XCTestCase {
         XCTAssertEqual(components.isFilled, true)
         XCTAssertEqual(components.locale, .rtl)
     }
-    
-    func testWithoutSlash() throws {
+
+    func testWithoutSlash() {
         // Given
         let components = SymbolComponents(name: "speaker.circle.fill.rtl")
-        
+
         // Then
         XCTAssertEqual(components.baseName, "speaker")
         XCTAssertEqual(components.isSlashed, false)
@@ -51,11 +49,11 @@ class SymbolComponentsTests: XCTestCase {
         XCTAssertEqual(components.isFilled, true)
         XCTAssertEqual(components.locale, .rtl)
     }
-    
-    func testWithoutShape() throws {
+
+    func testWithoutShape() {
         // Given
         let components = SymbolComponents(name: "speaker.slash.fill.rtl")
-        
+
         // Then
         XCTAssertEqual(components.baseName, "speaker")
         XCTAssertEqual(components.isSlashed, true)
@@ -63,11 +61,11 @@ class SymbolComponentsTests: XCTestCase {
         XCTAssertEqual(components.isFilled, true)
         XCTAssertEqual(components.locale, .rtl)
     }
-    
-    func testWithoutFill() throws {
+
+    func testWithoutFill() {
         // Given
         let components = SymbolComponents(name: "speaker.slash.circle.rtl")
-        
+
         // Then
         XCTAssertEqual(components.baseName, "speaker")
         XCTAssertEqual(components.isSlashed, true)
@@ -75,11 +73,11 @@ class SymbolComponentsTests: XCTestCase {
         XCTAssertEqual(components.isFilled, false)
         XCTAssertEqual(components.locale, .rtl)
     }
-    
-    func testWithoutLocale() throws {
+
+    func testWithoutLocale() {
         // Given
         let components = SymbolComponents(name: "speaker.slash.circle")
-        
+
         // Then
         XCTAssertEqual(components.baseName, "speaker")
         XCTAssertEqual(components.isSlashed, true)
@@ -87,7 +85,7 @@ class SymbolComponentsTests: XCTestCase {
         XCTAssertEqual(components.isFilled, false)
         XCTAssertEqual(components.locale, nil)
     }
-    
+
     func testSorted() {
         // Given
         let symbols = [
@@ -101,7 +99,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.th",
             "something.zh",
             "something.zh.traditional",
-            
+
             "something.fill",
             "something.fill.ar",
             "something.fill.he",
@@ -112,7 +110,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.fill.th",
             "something.fill.zh",
             "something.fill.zh.traditional",
-            
+
             "something.circle",
             "something.circle.ar",
             "something.circle.he",
@@ -123,7 +121,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.circle.th",
             "something.circle.zh",
             "something.circle.zh.traditional",
-            
+
             "something.circle.fill",
             "something.circle.fill.ar",
             "something.circle.fill.he",
@@ -134,7 +132,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.circle.fill.th",
             "something.circle.fill.zh",
             "something.circle.fill.zh.traditional",
-            
+
             "something.rectangle",
             "something.rectangle.ar",
             "something.rectangle.he",
@@ -145,7 +143,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.rectangle.th",
             "something.rectangle.zh",
             "something.rectangle.zh.traditional",
-            
+
             "something.rectangle.fill",
             "something.rectangle.fill.ar",
             "something.rectangle.fill.he",
@@ -156,7 +154,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.rectangle.fill.th",
             "something.rectangle.fill.zh",
             "something.rectangle.fill.zh.traditional",
-            
+
             "something.square",
             "something.square.ar",
             "something.square.he",
@@ -167,7 +165,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.square.th",
             "something.square.zh",
             "something.square.zh.traditional",
-            
+
             "something.square.fill",
             "something.square.fill.ar",
             "something.square.fill.he",
@@ -178,7 +176,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.square.fill.th",
             "something.square.fill.zh",
             "something.square.fill.zh.traditional",
-            
+
             "something.slash",
             "something.slash.ar",
             "something.slash.he",
@@ -189,7 +187,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.th",
             "something.slash.zh",
             "something.slash.zh.traditional",
-            
+
             "something.slash.fill",
             "something.slash.fill.ar",
             "something.slash.fill.he",
@@ -200,7 +198,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.fill.th",
             "something.slash.fill.zh",
             "something.slash.fill.zh.traditional",
-            
+
             "something.slash.circle",
             "something.slash.circle.ar",
             "something.slash.circle.he",
@@ -211,7 +209,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.circle.th",
             "something.slash.circle.zh",
             "something.slash.circle.zh.traditional",
-            
+
             "something.slash.circle.fill",
             "something.slash.circle.fill.ar",
             "something.slash.circle.fill.he",
@@ -222,7 +220,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.circle.fill.th",
             "something.slash.circle.fill.zh",
             "something.slash.circle.fill.zh.traditional",
-            
+
             "something.slash.rectangle",
             "something.slash.rectangle.ar",
             "something.slash.rectangle.he",
@@ -233,7 +231,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.rectangle.th",
             "something.slash.rectangle.zh",
             "something.slash.rectangle.zh.traditional",
-            
+
             "something.slash.rectangle.fill",
             "something.slash.rectangle.fill.ar",
             "something.slash.rectangle.fill.he",
@@ -244,7 +242,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.rectangle.fill.th",
             "something.slash.rectangle.fill.zh",
             "something.slash.rectangle.fill.zh.traditional",
-            
+
             "something.slash.square",
             "something.slash.square.ar",
             "something.slash.square.he",
@@ -255,7 +253,7 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.square.th",
             "something.slash.square.zh",
             "something.slash.square.zh.traditional",
-            
+
             "something.slash.square.fill",
             "something.slash.square.fill.ar",
             "something.slash.square.fill.he",
@@ -265,14 +263,13 @@ class SymbolComponentsTests: XCTestCase {
             "something.slash.square.fill.rtl",
             "something.slash.square.fill.th",
             "something.slash.square.fill.zh",
-            "something.slash.square.fill.zh.traditional"
+            "something.slash.square.fill.zh.traditional",
         ]
-        
+
         // When
         let variants = Set(symbols).map(SymbolComponents.init)
-        
+
         // Then
         XCTAssertEqual(variants.sorted().names, symbols)
     }
-    
 }

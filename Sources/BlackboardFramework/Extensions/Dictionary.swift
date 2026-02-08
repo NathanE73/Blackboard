@@ -24,20 +24,19 @@
 
 import Foundation
 
-extension Dictionary where Key == String, Value == String {
-    
+extension [String: String] {
     @inlinable
     init(_ dictionary: NSDictionary) {
         var results: [String: String] = [:]
-        
-        dictionary.forEach { key, value in
+
+        for (key, value) in dictionary {
             if let key = key as? String,
-               let value = value as? String {
+               let value = value as? String
+            {
                 results[key] = value
             }
         }
-        
+
         self = results
     }
-    
 }

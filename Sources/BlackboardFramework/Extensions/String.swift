@@ -25,65 +25,61 @@
 import Foundation
 
 extension String {
-    
     var firstCharacterLowercased: String {
         prefix(1).lowercased() + dropFirst()
     }
-    
+
     var firstCharacterUppercased: String {
         prefix(1).uppercased() + dropFirst()
     }
-    
+
     func removingSuffix(_ suffix: String) -> String {
         if hasSuffix(suffix) {
             return String(dropLast(suffix.count))
         }
         return self
     }
-    
+
     var startsWithDecimalDigit: Bool {
-        guard let firstScalar = self.unicodeScalars.first else {
+        guard let firstScalar = unicodeScalars.first else {
             return false
         }
         return CharacterSet.decimalDigits.contains(firstScalar)
     }
-    
+
     var trimmingWhitespaceCharacters: String {
         trimmingCharacters(in: .whitespaces)
     }
-    
 }
 
 // MARK: - NSString -
 
 extension String {
-    
     var lastPathComponent: String {
         (self as NSString).lastPathComponent
     }
-    
+
     var deletingLastPathComponent: String {
         (self as NSString).deletingLastPathComponent
     }
-    
+
     func appendingPathComponent(_ str: String) -> String {
         (self as NSString).appendingPathComponent(str)
     }
-    
+
     var pathExtension: String {
         (self as NSString).pathExtension
     }
-    
+
     var deletingPathExtension: String {
         (self as NSString).deletingPathExtension
     }
-    
+
     func appendingPathExtension(_ str: String) -> String? {
         (self as NSString).appendingPathExtension(str)
     }
-    
+
     var expandingTildeInPath: String {
         (self as NSString).expandingTildeInPath
     }
-    
 }

@@ -22,17 +22,15 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class SymbolAvailabilityTests: XCTestCase {
-    
     func testResource() throws {
         let availability = try XCTUnwrap(SymbolAvailability.resource)
-        
-        XCTAssertEqual(availability.symbols.count, 9_184)
-        
+
+        XCTAssertEqual(availability.symbols.count, 9184)
+
         XCTAssertEqual(availability.symbols["14.square.fill"], "2019")
         XCTAssertEqual(availability.symbols["case"], "2020")
         XCTAssertEqual(availability.symbols["case.fill"], "2020")
@@ -48,7 +46,7 @@ class SymbolAvailabilityTests: XCTestCase {
         XCTAssertEqual(availability.symbols["return"], "2019")
         XCTAssertEqual(availability.symbols["repeat"], "2019")
         XCTAssertEqual(availability.symbols["repeat.circle"], "2020.1")
-        
+
         XCTAssertEqual(availability.yearToRelease.count, 24)
         XCTAssertEqual(availability.yearToRelease["2019"]?.iOS, Version(13, 0))
         XCTAssertEqual(availability.yearToRelease["2019.1"]?.iOS, Version(13, 1))
@@ -75,5 +73,4 @@ class SymbolAvailabilityTests: XCTestCase {
         XCTAssertEqual(availability.yearToRelease["2025"]?.iOS, Version(26, 0))
         XCTAssertEqual(availability.yearToRelease["2025.1"]?.iOS, Version(26, 1))
     }
-    
 }

@@ -22,34 +22,31 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class DataSetTests: XCTestCase {
-    
     func testLevel001() throws {
         let dataSet = try Fixture.dataSet(project: .shared, name: "Level/N001")
-        
+
         XCTAssertEqual(dataSet.name, "Level/N001")
     }
-    
+
     func testLevel002() throws {
         let dataSet = try Fixture.dataSet(project: .shared, name: "Level/N002")
-        
+
         XCTAssertEqual(dataSet.name, "Level/N002")
     }
-    
+
     func testNames() throws {
         let dataSet = try Fixture.dataSet(project: .shared, name: "Names")
-        
+
         XCTAssertEqual(dataSet.name, "Names")
     }
-    
+
     func testWelcomeMessage() throws {
         let dataSet = try Fixture.dataSet(project: .shared, name: "Welcome Message")
-        
+
         XCTAssertEqual(dataSet.name, "Welcome Message")
     }
-    
 }

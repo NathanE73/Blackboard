@@ -25,14 +25,13 @@
 import Foundation
 
 class BlackboardSymbolFactory {
-    
     func symbols(for symbols: Set<String>) -> [BlackboardSymbol] {
         guard let symbolKnowledge = SymbolKnowledge() else {
             return []
         }
-        
+
         let symbols = (symbols == ["*"] ? symbolKnowledge.knownSymbols : symbols)
-        
+
         return symbols.compactMap { symbol -> BlackboardSymbol? in
             guard let iOSAvailability = symbolKnowledge.iOSAvailability(for: symbol) else {
                 print("warning: Unknown symbol: \(symbol)")
@@ -41,5 +40,4 @@ class BlackboardSymbolFactory {
             return BlackboardSymbol(name: symbol, iOSAvailability: iOSAvailability)
         }
     }
-    
 }

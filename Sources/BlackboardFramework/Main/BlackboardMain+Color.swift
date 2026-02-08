@@ -25,42 +25,40 @@
 import Foundation
 
 extension BlackboardMain {
-    
     func processColors(_ input: [String], _ output: String) {
         guard !skipColors else { return }
-        
+
         let colorSets = ColorSetFactory().assetItemsAt(paths: input)
-        
+
         let blackboardColors = colorSets.mapAssets(BlackboardColor.init)
-        
+
         guard !blackboardColors.isEmpty else {
             return
         }
-        
+
         let includeSwiftUI = !skipSwiftUI
         let includeUIKit = !skipUIKit && !skipUIKitColors
-        
+
         if includeSwiftUI || includeUIKit {
             SwiftSourceFile(Filename.ColorAsset, at: output)
                 .appendColorAssets(colors: blackboardColors)
                 .write()
         }
-        
+
         if includeSwiftUI {
             SwiftSourceFile(Filename.Color, at: output)
                 .appendColors(colors: blackboardColors, target: ios.target)
                 .write()
         }
-        
+
         if includeUIKit {
             SwiftSourceFile(Filename.UIColor, at: output)
                 .appendUIColors(colors: blackboardColors)
                 .write()
-            
+
             SwiftSourceFile(Filename.CGColor, at: output)
                 .appendCGColors(colors: blackboardColors)
                 .write()
         }
     }
-    
 }

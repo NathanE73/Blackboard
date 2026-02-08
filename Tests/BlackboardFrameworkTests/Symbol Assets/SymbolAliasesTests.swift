@@ -22,41 +22,38 @@
 // THE SOFTWARE.
 //
 
+@testable import BlackboardFramework
 import XCTest
 
-@testable import BlackboardFramework
-
 class SymbolAliasesTests: XCTestCase {
-    
     func testResource() throws {
         let aliases = try XCTUnwrap(SymbolAliases.resource)
-        
+
         XCTAssertEqual(aliases.symbols.count, 935)
-        
+
         XCTAssertEqual(aliases.symbols["a.book.closed"], "character.book.closed")
         XCTAssertEqual(aliases.symbols["dial.fill"], "dial.low.fill")
     }
-    
-    func testModernize() throws {
+
+    func testModernize() {
         // Given
         let symbols: Set<String> = [
             "a.book.closed",
             "14.square.fill",
             "character.book.closed",
             "chevron.down",
-            "chevron.up"
+            "chevron.up",
         ]
-        
+
         // When
         let modernSymbols = SymbolAliases.modernize(symbols: symbols)
-        
+
         // Then
         XCTAssertEqual(modernSymbols, [
             "14.square.fill",
             "character.book.closed", // "a.book.closed"
             "chevron.down",
-            "chevron.up"
+            "chevron.up",
         ])
     }
-    
 }

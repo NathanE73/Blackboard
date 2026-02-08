@@ -30,15 +30,13 @@ struct AssetGroup: Decodable {
 }
 
 extension AssetGroup {
-    
     struct Properties: Decodable {
         var onDemandResourceTags: [String]?
         var providesNamespace: Bool?
-        
+
         enum CodingKeys: String, CodingKey {
             case onDemandResourceTags = "on-demand-resource-tags"
             case providesNamespace = "provides-namespace"
         }
     }
-    
 }

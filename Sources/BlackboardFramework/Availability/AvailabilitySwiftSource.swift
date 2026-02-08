@@ -25,7 +25,6 @@
 import Foundation
 
 extension SwiftSource {
-    
     func appendAvailability(_ availability: Availability, target: Version) {
         switch availability {
         case let .available(platform, version):
@@ -39,5 +38,4 @@ extension SwiftSource {
             }
         }
     }
-    
 }
