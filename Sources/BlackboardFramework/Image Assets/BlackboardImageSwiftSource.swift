@@ -29,7 +29,10 @@ extension SwiftSource {
     // MARK: Image Assets
     
     func appendImageAssets(images: [AssetItem<BlackboardImage>]) -> Self {
-        appendHeading(filename: Filename.ImageAsset, modules: ["Foundation"])
+        appendHeading(
+            filename: Filename.ImageAsset,
+            modules: ["Foundation"]
+        )
         append("public struct ImageAsset: Hashable, Sendable") {
             append("let name: String")
         }
@@ -47,7 +50,11 @@ extension SwiftSource {
     // MARK: Image
     
     func appendImages(images: [AssetItem<BlackboardImage>], target: Version, sdk: Version) -> Self {
-        appendHeading(filename: Filename.Image, modules: ["SwiftUI"], includeBundle: true)
+        appendHeading(
+            filename: Filename.Image,
+            publicModules: ["SwiftUI"],
+            includeBundle: true
+        )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Image") {
             append()
@@ -92,7 +99,11 @@ extension SwiftSource {
     // MARK: UIImage
     
     func appendUIImages(images: [AssetItem<BlackboardImage>]) -> Self {
-        appendHeading(filename: Filename.UIImage, modules: ["UIKit"], includeBundle: true)
+        appendHeading(
+            filename: Filename.UIImage,
+            publicModules: ["UIKit"],
+            includeBundle: true
+        )
         append("public extension ImageAsset") {
             append("var image: UIImage { UIImage(asset: self) }")
         }
@@ -102,12 +113,6 @@ extension SwiftSource {
             append("convenience init(asset imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
                 append("self.init(named: imageAsset.name, in: bundle, compatibleWith: traitCollection)!")
             }
-            append()
-            directive("#if swift(<5.9.0)")
-            appendAssetItems(images) { image in
-                append("static var \(image.propertyName): UIImage { UIImage(asset: .\(image.propertyPath)) }")
-            }
-            directive("#endif")
             append()
         }
         append()

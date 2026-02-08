@@ -43,7 +43,10 @@ extension SwiftSource {
     // MARK: Symbol Asset
     
     func appendSymbolAssets(symbols: [BlackboardSymbol], target: Version) -> Self {
-        appendHeading(filename: Filename.SymbolAsset, modules: ["Foundation"])
+        appendHeading(
+            filename: Filename.SymbolAsset,
+            modules: ["Foundation"]
+        )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public struct SymbolAsset: Hashable, Sendable") {
             append("let name: String")
@@ -63,7 +66,10 @@ extension SwiftSource {
     // MARK: Symbol Image
     
     func appendSymbolImages(symbols: [BlackboardSymbol], target: Version, sdk: Version) -> Self {
-        appendHeading(filename: Filename.SymbolImage, modules: ["SwiftUI"])
+        appendHeading(
+            filename: Filename.SymbolImage,
+            publicModules: ["SwiftUI"]
+        )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Image") {
             append()
@@ -101,7 +107,10 @@ extension SwiftSource {
     // MARK: Symbol UIImage
     
     func appendSymbolUIImages(symbols: [BlackboardSymbol], target: Version) -> Self {
-        appendHeading(filename: Filename.SymbolUIImage, modules: ["UIKit"])
+        appendHeading(
+            filename: Filename.SymbolUIImage,
+            publicModules: ["UIKit"]
+        )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension SymbolAsset") {
             append("var image: UIImage? { UIImage(symbol: self) }")

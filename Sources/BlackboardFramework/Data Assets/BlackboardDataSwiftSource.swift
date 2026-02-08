@@ -29,7 +29,10 @@ extension SwiftSource {
     // MARK: Data Assets
     
     func appendDataAssets(data: [AssetItem<BlackboardData>]) -> Self {
-        appendHeading(filename: Filename.DataAsset, modules: ["Foundation"])
+        appendHeading(
+            filename: Filename.DataAsset,
+            modules: ["Foundation"]
+        )
         append("public struct DataAsset: Hashable, Sendable") {
             append("let name: String")
         }
@@ -47,7 +50,11 @@ extension SwiftSource {
     // MARK: NSDataAsset
     
     func appendNSDataAsset(data: [AssetItem<BlackboardData>]) -> Self {
-        appendHeading(filename: Filename.NSDataAsset, modules: ["UIKit"], includeBundle: true)
+        appendHeading(
+            filename: Filename.NSDataAsset,
+            publicModules: ["Foundation", "UIKit"],
+            includeBundle: true
+        )
         append("public extension DataAsset") {
             append("var dataAsset: NSDataAsset { NSDataAsset(asset: self) }")
             append("var data: Data { dataAsset.data }")

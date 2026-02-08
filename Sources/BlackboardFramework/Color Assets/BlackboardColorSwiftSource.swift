@@ -29,7 +29,10 @@ extension SwiftSource {
     // MARK: Color Assets
     
     func appendColorAssets(colors: [AssetItem<BlackboardColor>]) -> Self {
-        appendHeading(filename: Filename.ColorAsset, modules: ["Foundation"])
+        appendHeading(
+            filename: Filename.ColorAsset,
+            modules: ["Foundation"]
+        )
         append("public struct ColorAsset: Hashable, Sendable") {
             append("let name: String")
         }
@@ -47,7 +50,11 @@ extension SwiftSource {
     // MARK: Color
     
     func appendColors(colors: [AssetItem<BlackboardColor>], target: Version) -> Self {
-        appendHeading(filename: Filename.Color, modules: ["SwiftUI"], includeBundle: true)
+        appendHeading(
+            filename: Filename.Color,
+            publicModules: ["SwiftUI"],
+            includeBundle: true
+        )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Color") {
             append()
@@ -55,26 +62,7 @@ extension SwiftSource {
                 append("self.init(colorAsset.name, bundle: bundle)")
             }
             append()
-            directive("#if swift(<5.9.0)")
-            appendAssetItems(colors) { color in
-                append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyPath)) }")
-            }
-            directive("#endif")
-            append()
         }
-        append()
-        directive("#if swift(<5.9.0)")
-        appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
-        append("public extension ShapeStyle where Self == Color") {
-            append()
-            colors.forEach { asset in
-                if case let .asset(color) = asset, color.namespace == nil {
-                    append("static var \(color.propertyName): Color { Color(asset: .\(color.propertyPath)) }")
-                }
-            }
-            append()
-        }
-        directive("#endif")
         append()
 
         return self
@@ -83,18 +71,13 @@ extension SwiftSource {
     // MARK: CGColor
     
     func appendCGColors(colors: [AssetItem<BlackboardColor>]) -> Self {
-        appendHeading(filename: Filename.CGColor, modules: ["CoreGraphics"])
+        appendHeading(
+            filename: Filename.CGColor,
+            modules: ["CoreGraphics"]
+        )
         append("public extension ColorAsset") {
             append("var cgColor: CGColor { color.cgColor }")
         }
-        append()
-        directive("#if swift(<5.9.0)")
-        append("public extension CGColor") {
-            appendAssetItems(colors) { color in
-                append("static var \(color.propertyName): CGColor { ColorAsset.\(color.propertyPath).cgColor }")
-            }
-        }
-        directive("#endif")
         append()
         
         return self
@@ -103,7 +86,11 @@ extension SwiftSource {
     // MARK: UIColor
     
     func appendUIColors(colors: [AssetItem<BlackboardColor>]) -> Self {
-        appendHeading(filename: Filename.UIColor, modules: ["UIKit"], includeBundle: true)
+        appendHeading(
+            filename: Filename.UIColor,
+            publicModules: ["UIKit"],
+            includeBundle: true
+        )
         append("public extension ColorAsset") {
             append("var color: UIColor { UIColor(asset: self) }")
         }
@@ -113,12 +100,6 @@ extension SwiftSource {
             append("convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
                 append("self.init(named: colorAsset.name, in: bundle, compatibleWith: traitCollection)!")
             }
-            append()
-            directive("#if swift(<5.9.0)")
-            appendAssetItems(colors) { color in
-                append("static var \(color.propertyName): UIColor { UIColor(asset: .\(color.propertyPath)) }")
-            }
-            directive("#endif")
             append()
         }
         append()
