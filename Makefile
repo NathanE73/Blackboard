@@ -39,7 +39,7 @@ set-version:
 	$(eval NEW_VERSION := $(filter-out $@,$(MAKECMDGOALS)))
 	$(eval BADGE_VERSION := $(shell echo $(NEW_VERSION) | cut -d '-' -f 1))
 	@echo "$(NEW_VERSION)" > "$(VERSION_FILE)"
-	@sed -i '' '/var version/ s/"[^"][^"]*"/"$(NEW_VERSION)"/' Sources/BlackboardFramework/Main/BlackboardVersion.swift
+	@sed -i '' '/        / s/"[^"][^"]*"/"$(NEW_VERSION)"/' Sources/BlackboardFramework/Main/BlackboardVersion.swift
 	@sed -i '' '/badge\/version/ s/version-.*-bright/version-$(BADGE_VERSION)-bright/' README.md
 
 git-tag:

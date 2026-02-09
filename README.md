@@ -1,9 +1,9 @@
 # Blackboard: An iOS Color, Image, and SF Symbol Asset Manager
 
-[![Version](https://img.shields.io/badge/version-11.1.1-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-12.0.0-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-222222.svg)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](https://developer.apple.com/ios/)
-[![Swift](https://img.shields.io/badge/swift-5.1-yellow.svg)](https://swift.org)
+[![Swift](https://img.shields.io/badge/swift-5.9-yellow.svg)](https://swift.org)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Detroit%20Labs-000000.svg)](http://www.detroitlabs.com/)
 
 ## Purpose
@@ -12,9 +12,9 @@ Blackboard is an iOS Color, Image, and SF Symbol Asset Manager written in Swift.
 
 ## Requirements
 
-- iOS 13.0+
-- Xcode 11.0+
-- Swift 5.1+
+- iOS 17.0+
+- Xcode 16.4+
+- Swift 5.9+
 
 ## Installation
 
