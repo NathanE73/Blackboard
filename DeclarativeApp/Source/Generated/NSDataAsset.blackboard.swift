@@ -13,31 +13,32 @@
 #endif
 
 private let bundle: Bundle = {
-#if SWIFT_PACKAGE
-    Bundle.module
-#else
-    class Object: NSObject { }
-    return Bundle(for: Object.self)
-#endif
+    #if SWIFT_PACKAGE
+        Bundle.module
+    #else
+        class Object: NSObject {}
+        return Bundle(for: Object.self)
+    #endif
 }()
 
 public extension DataAsset {
-    var dataAsset: NSDataAsset { NSDataAsset(asset: self) }
-    var data: Data { dataAsset.data }
+    var dataAsset: NSDataAsset {
+        NSDataAsset(asset: self)
+    }
+
+    var data: Data {
+        dataAsset.data
+    }
 }
 
 public extension NSDataAsset {
-    
     convenience init(asset dataAsset: DataAsset) {
         self.init(name: dataAsset.name, bundle: bundle)!
     }
-    
 }
 
 public extension Data {
-    
     init(asset dataAsset: DataAsset) {
         self = dataAsset.data
     }
-    
 }

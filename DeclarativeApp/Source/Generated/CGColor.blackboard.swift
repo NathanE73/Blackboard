@@ -7,5 +7,7 @@
 import CoreGraphics
 
 public extension ColorAsset {
-    var cgColor: CGColor { color.cgColor }
+    var cgColor: CGColor {
+        color.cgColor
+    }
 }

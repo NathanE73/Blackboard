@@ -11,22 +11,22 @@
 #endif
 
 private let bundle: Bundle = {
-#if SWIFT_PACKAGE
-    Bundle.module
-#else
-    class Object: NSObject { }
-    return Bundle(for: Object.self)
-#endif
+    #if SWIFT_PACKAGE
+        Bundle.module
+    #else
+        class Object: NSObject {}
+        return Bundle(for: Object.self)
+    #endif
 }()
 
 public extension ImageAsset {
-    var image: UIImage { UIImage(asset: self) }
+    var image: UIImage {
+        UIImage(asset: self)
+    }
 }
 
 public extension UIImage {
-    
     convenience init(asset imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
         self.init(named: imageAsset.name, in: bundle, compatibleWith: traitCollection)!
     }
-    
 }

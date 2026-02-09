@@ -18,6 +18,7 @@ public extension ImageAsset {
         static let cup = ImageAsset(name: "Red/cup")
         static let stapler = ImageAsset(name: "Red/stapler")
     }
+
     static let silverPaperClip = ImageAsset(name: "silver-paper-clip")
     static let whiteDice = ImageAsset(name: "white-dice")
 }

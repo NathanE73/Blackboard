@@ -11,18 +11,16 @@
 #endif
 
 private let bundle: Bundle = {
-#if SWIFT_PACKAGE
-    Bundle.module
-#else
-    class Object: NSObject { }
-    return Bundle(for: Object.self)
-#endif
+    #if SWIFT_PACKAGE
+        Bundle.module
+    #else
+        class Object: NSObject {}
+        return Bundle(for: Object.self)
+    #endif
 }()
 
 public extension Color {
-    
     init(asset colorAsset: ColorAsset) {
         self.init(colorAsset.name, bundle: bundle)
     }
-    
 }

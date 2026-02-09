@@ -56,7 +56,6 @@ extension SwiftSource {
         )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Image") {
-            append()
             append("init(asset imageAsset: ImageAsset)") {
                 append("self.init(imageAsset.name, bundle: bundle)")
             }
@@ -70,24 +69,24 @@ extension SwiftSource {
             }
             append()
             appendAssetItems(images) { image in
-                append("static var \(image.propertyName): Image { Image(asset: .\(image.propertyPath)) }")
+                append("static var \(image.propertyName): Image") {
+                    append("Image(asset: .\(image.propertyPath))")
+                }
+                append()
             }
-            append()
         }
         append()
 
         if Version(14, 0) <= sdk {
             appendAvailability(.available(platform: .iOS, version: Version(14, 0)), target: target)
             append("public extension Label where Title == Text, Icon == Image") {
-                append()
                 append("init(_ titleKey: LocalizedStringKey, asset imageAsset: ImageAsset)") {
                     append("self.init(titleKey, image: imageAsset.name)")
                 }
                 append()
-                append("init<S>(_ title: S, asset imageAsset: ImageAsset) where S: StringProtocol") {
+                append("init(_ title: some StringProtocol, asset imageAsset: ImageAsset)") {
                     append("self.init(title, image: imageAsset.name)")
                 }
-                append()
             }
             append()
         }
@@ -104,15 +103,15 @@ extension SwiftSource {
             includeBundle: true
         )
         append("public extension ImageAsset") {
-            append("var image: UIImage { UIImage(asset: self) }")
+            append("var image: UIImage") {
+                append("UIImage(asset: self)")
+            }
         }
         append()
         append("public extension UIImage") {
-            append()
             append("convenience init(asset imageAsset: ImageAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
                 append("self.init(named: imageAsset.name, in: bundle, compatibleWith: traitCollection)!")
             }
-            append()
         }
         append()
 

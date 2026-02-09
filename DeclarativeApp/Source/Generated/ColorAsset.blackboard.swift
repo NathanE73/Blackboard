@@ -24,6 +24,7 @@ public extension ColorAsset {
         static let magicMint = ColorAsset(name: "Fluorescent/Magic Mint")
         static let radicalRed = ColorAsset(name: "Fluorescent/Radical Red")
     }
+
     static let maroon = ColorAsset(name: "maroon color")
     static let night = ColorAsset(name: "Night")
 }

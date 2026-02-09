@@ -34,11 +34,9 @@ class SwiftSourceTests: XCTestCase {
             //
 
             class Example {
-                
                 func add(a: Int, b: Int) -> Int {
                     return a + b
                 }
-                
             }
             """
 
@@ -49,7 +47,6 @@ class SwiftSourceTests: XCTestCase {
         swiftSource.append()
         swiftSource.append()
         swiftSource.append("class Example") {
-            swiftSource.append()
             swiftSource.append("func add(a: Int, b: Int) -> Int") {
                 swiftSource.append("return a + b")
             }
@@ -62,8 +59,7 @@ class SwiftSourceTests: XCTestCase {
     func testAppendEmptyBlock() {
         let expectedSource =
             """
-            class Empty {
-            }
+            class Empty {}
             """
 
         let swiftSource = SwiftSource()

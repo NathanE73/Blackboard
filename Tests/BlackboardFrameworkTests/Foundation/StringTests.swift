@@ -91,6 +91,26 @@ class StringExtensionsTests: XCTestCase {
         XCTAssertEqual("\t apple \t".trimmingWhitespaceCharacters, "apple")
     }
 
+    func testTrimmingTrailingWhitespaceCharacters() {
+        XCTAssertEqual("".trimmingTrailingWhitespaceCharacters, "")
+
+        XCTAssertEqual("apple".trimmingTrailingWhitespaceCharacters, "apple")
+
+        XCTAssertEqual(" apple".trimmingTrailingWhitespaceCharacters, " apple")
+        XCTAssertEqual("  apple".trimmingTrailingWhitespaceCharacters, "  apple")
+        XCTAssertEqual("   apple".trimmingTrailingWhitespaceCharacters, "   apple")
+
+        XCTAssertEqual("apple ".trimmingTrailingWhitespaceCharacters, "apple")
+        XCTAssertEqual("apple  ".trimmingTrailingWhitespaceCharacters, "apple")
+        XCTAssertEqual("apple   ".trimmingTrailingWhitespaceCharacters, "apple")
+
+        XCTAssertEqual(" apple ".trimmingTrailingWhitespaceCharacters, " apple")
+        XCTAssertEqual("  apple  ".trimmingTrailingWhitespaceCharacters, "  apple")
+        XCTAssertEqual("   apple   ".trimmingTrailingWhitespaceCharacters, "   apple")
+
+        XCTAssertEqual("\t apple \t".trimmingTrailingWhitespaceCharacters, "\t apple")
+    }
+
     // MARK: - NSString
 
     func testLastPathComponent() {

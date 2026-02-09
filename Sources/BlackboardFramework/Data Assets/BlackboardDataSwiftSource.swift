@@ -55,24 +55,25 @@ extension SwiftSource {
             includeBundle: true
         )
         append("public extension DataAsset") {
-            append("var dataAsset: NSDataAsset { NSDataAsset(asset: self) }")
-            append("var data: Data { dataAsset.data }")
+            append("var dataAsset: NSDataAsset") {
+                append("NSDataAsset(asset: self)")
+            }
+            append()
+            append("var data: Data") {
+                append("dataAsset.data")
+            }
         }
         append()
         append("public extension NSDataAsset") {
-            append()
             append("convenience init(asset dataAsset: DataAsset)") {
                 append("self.init(name: dataAsset.name, bundle: bundle)!")
             }
-            append()
         }
         append()
         append("public extension Data") {
-            append()
             append("init(asset dataAsset: DataAsset)") {
                 append("self = dataAsset.data")
             }
-            append()
         }
         append()
 

@@ -27,11 +27,12 @@ import Foundation
 class SwiftSource {
     private var lines: [(indentLevel: Int, line: String)] = []
 
-    func append(_ line: String = "", indentLevel: Int? = nil) {
+    @discardableResult
+    func append(_ line: String = "", indentLevel: Int? = nil) -> Self {
         let indentLevel = indentLevel ?? self.indentLevel
 
         if line.isEmpty, line == lines.last?.line {
-            return // don't allow multiple blank lines
+            return self // don't allow multiple blank lines
         }
 
         if insideCommentBlock {
@@ -41,9 +42,12 @@ class SwiftSource {
         } else {
             lines.append((indentLevel, line))
         }
+
+        return self
     }
 
-    func append(_ line: String, block: () -> Void) {
+    @discardableResult
+    func append(_ line: String, block: () -> Void) -> Self {
         append("\(line) {")
 
         let initialCount = lines.count
@@ -54,7 +58,17 @@ class SwiftSource {
             lines.removeLast()
         }
 
+        removeLastBlankLine()
+
         append("}")
+
+        return self
+    }
+
+    func removeLastBlankLine() {
+        if lines.last?.line.trimmingWhitespaceCharacters.isEmpty == true {
+            lines.removeLast()
+        }
     }
 
     var source: String {
@@ -72,7 +86,15 @@ class SwiftSource {
                 }
             }
 
-            source.append("\(indent)\(entry.line)")
+            let line = "\(indent)\(entry.line)"
+                .trimmingTrailingWhitespaceCharacters
+
+            if line.trimmingWhitespaceCharacters == "}", let last = source.last, last.suffix(1) == "{" {
+                source.removeLast()
+                source.append("\(last)}")
+            } else {
+                source.append(line)
+            }
         }
 
         return source.joined(separator: "\n")
@@ -116,10 +138,6 @@ extension SwiftSource {
         insideCommentBlock = false
     }
 
-    func directive(_ line: String = "") {
-        append(line, indentLevel: 0)
-    }
-
     func appendHeading(
         filename: String,
         modules: [String] = [],
@@ -159,16 +177,18 @@ extension SwiftSource {
 
         if includeBundle {
             append("private let bundle: Bundle = {")
-            directive("#if SWIFT_PACKAGE")
             indent {
-                append("Bundle.module")
+                append("#if SWIFT_PACKAGE")
+                indent {
+                    append("Bundle.module")
+                }
+                append("#else")
+                indent {
+                    append("class Object: NSObject {}")
+                    append("return Bundle(for: Object.self)")
+                }
+                append("#endif")
             }
-            directive("#else")
-            indent {
-                append("class Object: NSObject { }")
-                append("return Bundle(for: Object.self)")
-            }
-            directive("#endif")
             append("}()")
             append()
         }
@@ -184,6 +204,7 @@ extension SwiftSource {
                 append("enum \(namespace)") {
                     appendAssetItems(assets, block: block)
                 }
+                append()
             }
         }
     }

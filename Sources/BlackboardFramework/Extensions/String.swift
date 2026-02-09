@@ -50,6 +50,10 @@ extension String {
     var trimmingWhitespaceCharacters: String {
         trimmingCharacters(in: .whitespaces)
     }
+
+    var trimmingTrailingWhitespaceCharacters: String {
+        replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
+    }
 }
 
 // MARK: - NSString -

@@ -15,6 +15,7 @@ public extension DataAsset {
         static let n001 = DataAsset(name: "Level/N001")
         static let n002 = DataAsset(name: "Level/N002")
     }
+
     static let names = DataAsset(name: "Names")
     static let welcomeMessage = DataAsset(name: "Welcome Message")
 }

@@ -71,31 +71,30 @@ extension SwiftSource {
         )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Image") {
-            append()
             append("init(symbol symbolAsset: SymbolAsset)") {
                 append("self.init(systemName: symbolAsset.name)")
             }
             append()
             for symbol in symbols.sorted(by: \.functionName) {
                 appendSymbolAvailability(symbol.iOSAvailability, target: target, prefix: "symbol")
-                append("static var \(symbol.functionName): Image { Image(symbol: .\(symbol.caseName)) }")
+                append("static var \(symbol.functionName): Image") {
+                    append("Image(symbol: .\(symbol.caseName))")
+                }
+                append()
             }
-            append()
         }
         append()
 
         if Version(14, 0) <= sdk {
             appendAvailability(.available(platform: .iOS, version: Version(14, 0)), target: target)
             append("public extension Label where Title == Text, Icon == Image") {
-                append()
                 append("init(_ titleKey: LocalizedStringKey, symbol symbolAsset: SymbolAsset)") {
                     append("self.init(titleKey, systemImage: symbolAsset.name)")
                 }
                 append()
-                append("init<S>(_ title: S, symbol symbolAsset: SymbolAsset) where S: StringProtocol") {
+                append("init(_ title: some StringProtocol, symbol symbolAsset: SymbolAsset)") {
                     append("self.init(title, systemImage: symbolAsset.name)")
                 }
-                append()
             }
             append()
         }
@@ -112,12 +111,14 @@ extension SwiftSource {
         )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension SymbolAsset") {
-            append("var image: UIImage? { UIImage(symbol: self) }")
+            append("var image: UIImage?") {
+                append("UIImage(symbol: self)")
+            }
+            append()
         }
         append()
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension UIImage") {
-            append()
             append("convenience init(symbol symbolAsset: SymbolAsset)") {
                 append("self.init(systemName: symbolAsset.name)!")
             }
@@ -132,9 +133,11 @@ extension SwiftSource {
             append()
             for symbol in symbols.sorted(by: \.functionName) {
                 appendSymbolAvailability(symbol.iOSAvailability, target: target, prefix: "symbol")
-                append("static var \(symbol.functionName): UIImage { UIImage(symbol: .\(symbol.caseName)) }")
+                append("static var \(symbol.functionName): UIImage") {
+                    append("UIImage(symbol: .\(symbol.caseName))")
+                }
+                append()
             }
-            append()
         }
         append()
 

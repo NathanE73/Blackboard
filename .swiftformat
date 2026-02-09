@@ -1,1 +1,1 @@
---exclude DeclarativeApp/Source/Generated,Sources/BlackboardFramework/Resources,Templates
+--exclude Sources/BlackboardFramework/Resources,Templates

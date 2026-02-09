@@ -11,22 +11,22 @@
 #endif
 
 private let bundle: Bundle = {
-#if SWIFT_PACKAGE
-    Bundle.module
-#else
-    class Object: NSObject { }
-    return Bundle(for: Object.self)
-#endif
+    #if SWIFT_PACKAGE
+        Bundle.module
+    #else
+        class Object: NSObject {}
+        return Bundle(for: Object.self)
+    #endif
 }()
 
 public extension ColorAsset {
-    var color: UIColor { UIColor(asset: self) }
+    var color: UIColor {
+        UIColor(asset: self)
+    }
 }
 
 public extension UIColor {
-    
     convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil) {
         self.init(named: colorAsset.name, in: bundle, compatibleWith: traitCollection)!
     }
-    
 }

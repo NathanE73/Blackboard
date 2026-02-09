@@ -56,11 +56,9 @@ extension SwiftSource {
         )
         appendAvailability(.available(platform: .iOS, version: Version(13, 0)), target: target)
         append("public extension Color") {
-            append()
             append("init(asset colorAsset: ColorAsset)") {
                 append("self.init(colorAsset.name, bundle: bundle)")
             }
-            append()
         }
         append()
 
@@ -75,7 +73,9 @@ extension SwiftSource {
             modules: ["CoreGraphics"]
         )
         append("public extension ColorAsset") {
-            append("var cgColor: CGColor { color.cgColor }")
+            append("var cgColor: CGColor") {
+                append("color.cgColor")
+            }
         }
         append()
 
@@ -91,15 +91,15 @@ extension SwiftSource {
             includeBundle: true
         )
         append("public extension ColorAsset") {
-            append("var color: UIColor { UIColor(asset: self) }")
+            append("var color: UIColor") {
+                append("UIColor(asset: self)")
+            }
         }
         append()
         append("public extension UIColor") {
-            append()
             append("convenience init(asset colorAsset: ColorAsset, compatibleWith traitCollection: UITraitCollection? = nil)") {
                 append("self.init(named: colorAsset.name, in: bundle, compatibleWith: traitCollection)!")
             }
-            append()
         }
         append()
 
