@@ -61,7 +61,7 @@ class BlackboardDataSwiftSourceTests: XCTestCase {
         let expectedSource = Fixture.generated(project: .declarative, name: "NSDataAsset")
 
         let source = SwiftSource()
-            .appendNSDataAsset(data: blackboardData)
+            .appendNSDataAsset()
             .source
 
         XCTAssertEqual(source, expectedSource)

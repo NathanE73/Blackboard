@@ -70,7 +70,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
         let expectedSource = Fixture.generated(project: .declarative, name: "Color")
 
         let source = SwiftSource()
-            .appendColors(colors: blackboardColors, target: Version(13, 0))
+            .appendColors(target: Version(13, 0))
             .source
 
         XCTAssertEqual(source, expectedSource)
@@ -80,7 +80,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
         let expectedSource = Fixture.generated(project: .declarative, name: "CGColor")
 
         let source = SwiftSource()
-            .appendCGColors(colors: blackboardColors)
+            .appendCGColors()
             .source
 
         XCTAssertEqual(source, expectedSource)
@@ -90,7 +90,7 @@ class BlackboardColorSwiftSourceTests: XCTestCase {
         let expectedSource = Fixture.generated(project: .declarative, name: "UIColor")
 
         let source = SwiftSource()
-            .appendUIColors(colors: blackboardColors)
+            .appendUIColors()
             .source
 
         XCTAssertEqual(source, expectedSource)
