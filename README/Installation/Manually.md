@@ -2,9 +2,9 @@
 
 ### Manually
 
-Download [portable-blackboard.zip](https://github.com/NathanE73/Blackboard/releases) from the latest release's assets.
+Download [blackboard](https://github.com/NathanE73/Blackboard/releases) from the latest release's `bin` folder.
 
-Extract `blackboard` and place it in the projects root `bin` folder.
+Place it in the projects root `bin` folder.
 
 ### Xcode
 
