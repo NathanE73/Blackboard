@@ -59,10 +59,7 @@ generate:
 	bin/blackboard --input Shared/Resources/ DeclarativeApp/Resources/ --output DeclarativeApp/Source/Generated/
 
 import-resources:
-	cp "/Applications/SF Symbols.app/Contents/Resources/Metadata/name_aliases.strings" \
-		Resources/symbols
-	cp "/Applications/SF Symbols.app/Contents/Resources/Metadata/name_availability.plist" \
-		Resources/symbols
+	bin/import-resources.sh
 
 resources:
 	cat Templates/symbols/NameAliasesStringsResourceHeader.swift \
