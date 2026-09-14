@@ -27,7 +27,7 @@ import XCTest
 
 class BlackboardSymbolSwiftSourceTests: XCTestCase {
     var blackboardSymbols: [BlackboardSymbol] {
-        let symbols: Set<String> = [
+        let symbols: Set = [
             "a.book.closed",
             "14.square.fill",
             "case",

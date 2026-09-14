@@ -37,7 +37,7 @@ class SymbolAliasesTests: XCTestCase {
 
     func testModernize() {
         // Given
-        let symbols: Set<String> = [
+        let symbols: Set = [
             "a.book.closed",
             "14.square.fill",
             "character.book.closed",
