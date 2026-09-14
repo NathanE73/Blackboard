@@ -1457,6 +1457,40 @@ _____
 - airpods.pro.chargingcase.wireless.radiowaves.left.and.right (iOS 18.0)
 - airpods.pro.chargingcase.wireless.radiowaves.left.and.right.fill (iOS 18.0)
 
+### airpods.pro.gen1
+ (iOS 27.0)
+
+### airpods.pro.gen1.chargingcase.wireless
+- airpods.pro.gen1.chargingcase.wireless (iOS 27.0)
+- airpods.pro.gen1.chargingcase.wireless.fill (iOS 27.0)
+
+### airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right
+- airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right (iOS 27.0)
+- airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right.fill (iOS 27.0)
+
+### airpods.pro.gen1.left
+ (iOS 27.0)
+
+### airpods.pro.gen1.right
+ (iOS 27.0)
+
+### airpods.pro.gen3
+ (iOS 27.0)
+
+### airpods.pro.gen3.chargingcase.wireless
+- airpods.pro.gen3.chargingcase.wireless (iOS 27.0)
+- airpods.pro.gen3.chargingcase.wireless.fill (iOS 27.0)
+
+### airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right
+- airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right (iOS 27.0)
+- airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right.fill (iOS 27.0)
+
+### airpods.pro.gen3.left
+ (iOS 27.0)
+
+### airpods.pro.gen3.right
+ (iOS 27.0)
+
 ### airpods.pro.left
  (iOS 18.0)
 
@@ -1499,6 +1533,20 @@ _____
 ### alarm
 - alarm (iOS 13.0)
 - alarm.fill (iOS 13.0)
+- alarm.slash (iOS 27.0)
+- alarm.slash.fill (iOS 27.0)
+
+### alarm.badge.exclamationmark
+- alarm.badge.exclamationmark (iOS 27.0)
+- alarm.badge.exclamationmark.fill (iOS 27.0)
+
+### alarm.badge.minus
+- alarm.badge.minus (iOS 27.0)
+- alarm.badge.minus.fill (iOS 27.0)
+
+### alarm.badge.xmark
+- alarm.badge.xmark (iOS 27.0)
+- alarm.badge.xmark.fill (iOS 27.0)
 
 ### alarm.waves.left.and.right
 - alarm.waves.left.and.right (iOS 16.0)
@@ -1573,6 +1621,8 @@ _____
 ### app
 - app (iOS 13.0)
 - app.fill (iOS 13.0)
+- app.slash (iOS 27.0)
+- app.slash.fill (iOS 27.0)
 
 ### app.background.dotted
  (iOS 26.0)
@@ -1776,6 +1826,9 @@ _____
 - apps.ipad.badge.checkmark (iOS 26.0)
 - apps.ipad.badge.checkmark.rtl (iOS 26.0)
 
+### apps.ipad.badge.exclamationmark
+ (iOS 27.0)
+
 ### apps.ipad.badge.plus
  (iOS 26.0)
 
@@ -1792,6 +1845,9 @@ _____
 ### apps.iphone.badge.checkmark
 - apps.iphone.badge.checkmark (iOS 26.0)
 - apps.iphone.badge.checkmark.rtl (iOS 26.0)
+
+### apps.iphone.badge.exclamationmark
+ (iOS 27.0)
 
 ### apps.iphone.badge.plus
  (iOS 14.0)
@@ -2751,8 +2807,14 @@ _____
 - arrowtriangle.backward.square (iOS 14.0)
 - arrowtriangle.backward.square.fill (iOS 14.0)
 
+### arrowtriangle.backward.inset.filled.leadingthird.rectangle
+ (iOS 27.0)
+
 ### arrowtriangle.backward.inset.filled.trailingthird.rectangle
- (iOS 26.1)
+ (iOS, introduced: 26.1, deprecated: 27.0, renamed: [arrowtriangle.backward.inset.filled.leadingthird.rectangle](#arrowtrianglebackwardinsetfilledleadingthirdrectangle))
+
+### arrowtriangle.backward.leadingside.rectangle
+ (iOS 27.0)
 
 ### arrowtriangle.down
 - arrowtriangle.down (iOS 13.0)
@@ -2777,6 +2839,9 @@ _____
 ### arrowtriangle.forward.inset.filled.trailingthird.rectangle
  (iOS 26.1)
 
+### arrowtriangle.forward.trailingside.rectangle
+ (iOS 27.0)
+
 ### arrowtriangle.left
 - arrowtriangle.left (iOS 13.0)
 - arrowtriangle.left.fill (iOS 13.0)
@@ -2792,6 +2857,12 @@ _____
 ### arrowtriangle.left.fill.and.line.vertical.and.arrowtriangle.right.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [arrowtriangle.left.and.line.vertical.and.arrowtriangle.right.fill](#arrowtriangleleftandlineverticalandarrowtriangleright))
 
+### arrowtriangle.left.inset.filled.leftthird.rectangle
+ (iOS 27.0)
+
+### arrowtriangle.left.leftside.rectangle
+ (iOS 27.0)
+
 ### arrowtriangle.right
 - arrowtriangle.right (iOS 13.0)
 - arrowtriangle.right.fill (iOS 13.0)
@@ -2806,6 +2877,12 @@ _____
 
 ### arrowtriangle.right.fill.and.line.vertical.and.arrowtriangle.left.fill
  (iOS, introduced: 14.0, deprecated: 15.0, renamed: [arrowtriangle.right.and.line.vertical.and.arrowtriangle.left.fill](#arrowtrianglerightandlineverticalandarrowtriangleleft))
+
+### arrowtriangle.right.inset.filled.rightthird.rectangle
+ (iOS 27.0)
+
+### arrowtriangle.right.rightside.rectangle
+ (iOS 27.0)
 
 ### arrowtriangle.up
 - arrowtriangle.up (iOS 13.0)
@@ -2874,8 +2951,12 @@ _____
  (iOS 18.0)
 
 ### australiandollarsign.bank.building
-- australiandollarsign.bank.building (iOS 18.0)
-- australiandollarsign.bank.building.fill (iOS 18.0)
+- australiandollarsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [australiandollarsign.building.classical](#australiandollarsignbuildingclassical))
+- australiandollarsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [australiandollarsign.building.classical.fill](#australiandollarsignbuildingclassical))
+
+### australiandollarsign.building.classical
+- australiandollarsign.building.classical (iOS 27.0)
+- australiandollarsign.building.classical.fill (iOS 27.0)
 
 ### australiandollarsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -2903,8 +2984,12 @@ _____
  (iOS 18.0)
 
 ### australsign.bank.building
-- australsign.bank.building (iOS 18.0)
-- australsign.bank.building.fill (iOS 18.0)
+- australsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [australsign.building.classical](#australsignbuildingclassical))
+- australsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [australsign.building.classical.fill](#australsignbuildingclassical))
+
+### australsign.building.classical
+- australsign.building.classical (iOS 27.0)
+- australsign.building.classical.fill (iOS 27.0)
 
 ### australsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -3009,6 +3094,12 @@ _____
 - backward.circle (iOS 15.0)
 - backward.circle.fill (iOS 15.0)
 
+### backward.bubble
+- backward.bubble (iOS 27.0)
+- backward.bubble.rtl (iOS 27.0)
+- backward.bubble.fill (iOS 27.0)
+- backward.bubble.fill.rtl (iOS 27.0)
+
 ### backward.end
 - backward.end (iOS 13.0)
 - backward.end.fill (iOS 13.0)
@@ -3069,8 +3160,12 @@ _____
  (iOS 18.0)
 
 ### bahtsign.bank.building
-- bahtsign.bank.building (iOS 18.0)
-- bahtsign.bank.building.fill (iOS 18.0)
+- bahtsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [bahtsign.building.classical](#bahtsignbuildingclassical))
+- bahtsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [bahtsign.building.classical.fill](#bahtsignbuildingclassical))
+
+### bahtsign.building.classical
+- bahtsign.building.classical (iOS 27.0)
+- bahtsign.building.classical.fill (iOS 27.0)
 
 ### bahtsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -3445,8 +3540,12 @@ _____
  (iOS 18.0)
 
 ### bitcoinsign.bank.building
-- bitcoinsign.bank.building (iOS 18.0)
-- bitcoinsign.bank.building.fill (iOS 18.0)
+- bitcoinsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [bitcoinsign.building.classical](#bitcoinsignbuildingclassical))
+- bitcoinsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [bitcoinsign.building.classical.fill](#bitcoinsignbuildingclassical))
+
+### bitcoinsign.building.classical
+- bitcoinsign.building.classical (iOS 27.0)
+- bitcoinsign.building.classical.fill (iOS 27.0)
 
 ### bitcoinsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -3651,8 +3750,12 @@ _____
  (iOS 18.0)
 
 ### brazilianrealsign.bank.building
-- brazilianrealsign.bank.building (iOS 18.0)
-- brazilianrealsign.bank.building.fill (iOS 18.0)
+- brazilianrealsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [brazilianrealsign.building.classical](#brazilianrealsignbuildingclassical))
+- brazilianrealsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [brazilianrealsign.building.classical.fill](#brazilianrealsignbuildingclassical))
+
+### brazilianrealsign.building.classical
+- brazilianrealsign.building.classical (iOS 27.0)
+- brazilianrealsign.building.classical.fill (iOS 27.0)
 
 ### brazilianrealsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -3700,6 +3803,10 @@ _____
 - bubble.left.and.exclamationmark.bubble.right (iOS 15.0)
 - bubble.left.and.exclamationmark.bubble.right.fill (iOS 15.0)
 
+### bubble.left.and.heart.bubble.right
+- bubble.left.and.heart.bubble.right (iOS 27.0)
+- bubble.left.and.heart.bubble.right.fill (iOS 27.0)
+
 ### bubble.left.and.text.bubble.right
 - bubble.left.and.text.bubble.right (iOS 17.0)
 - bubble.left.and.text.bubble.right.rtl (iOS 17.0)
@@ -3736,10 +3843,15 @@ _____
 - building.2.crop.circle (iOS 14.0)
 - building.2.crop.circle.fill (iOS 14.0)
 
+### building.classical.columns
+- building.classical.columns (iOS 27.0)
+- building.classical.columns.fill (iOS 27.0)
+- building.classical.columns.circle (iOS 27.0)
+
 ### building.columns
-- building.columns (iOS 14.0)
-- building.columns.fill (iOS 14.0)
-- building.columns.circle (iOS 15.0)
+- building.columns (iOS, introduced: 14.0, deprecated: 27.0, renamed: [building.classical.columns](#buildingclassicalcolumns))
+- building.columns.fill (iOS, introduced: 14.0, deprecated: 27.0, renamed: [building.classical.columns.fill](#buildingclassicalcolumns))
+- building.columns.circle (iOS, introduced: 15.0, deprecated: 27.0, renamed: [building.classical.columns.circle](#buildingclassicalcolumns))
 - building.columns.circle.fill (iOS 15.0)
 
 ### burn
@@ -3871,6 +3983,9 @@ _____
 
 ### calendar.badge.plus
  (iOS 13.0)
+
+### calendar.day
+ (iOS 27.0)
 
 ### calendar.day.timeline.leading
 - calendar.day.timeline.leading (iOS 15.0)
@@ -4040,6 +4155,10 @@ _____
 ### car.badge.gearshape
 - car.badge.gearshape (iOS 18.0)
 - car.badge.gearshape.fill (iOS 18.0)
+
+### car.card
+- car.card (iOS 27.0)
+- car.card.fill (iOS 27.0)
 
 ### car.ferry
 - car.ferry (iOS 15.0)
@@ -4599,8 +4718,12 @@ _____
  (iOS 18.0)
 
 ### cedisign.bank.building
-- cedisign.bank.building (iOS 18.0)
-- cedisign.bank.building.fill (iOS 18.0)
+- cedisign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [cedisign.building.classical](#cedisignbuildingclassical))
+- cedisign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [cedisign.building.classical.fill](#cedisignbuildingclassical))
+
+### cedisign.building.classical
+- cedisign.building.classical (iOS 27.0)
+- cedisign.building.classical.fill (iOS 27.0)
 
 ### cedisign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -4619,6 +4742,9 @@ _____
 - cellularbars.circle (iOS 26.0)
 - cellularbars.circle.fill (iOS 26.0)
 
+### cellularbars.short.cellularbars
+ (iOS 27.0)
+
 ### centsign
 - centsign (iOS 16.0)
 - centsign.circle (iOS 13.0)
@@ -4633,8 +4759,12 @@ _____
  (iOS 18.0)
 
 ### centsign.bank.building
-- centsign.bank.building (iOS 18.0)
-- centsign.bank.building.fill (iOS 18.0)
+- centsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [centsign.building.classical](#centsignbuildingclassical))
+- centsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [centsign.building.classical.fill](#centsignbuildingclassical))
+
+### centsign.building.classical
+- centsign.building.classical (iOS 27.0)
+- centsign.building.classical.fill (iOS 27.0)
 
 ### centsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -5655,8 +5785,12 @@ _____
  (iOS 18.0)
 
 ### chineseyuanrenminbisign.bank.building
-- chineseyuanrenminbisign.bank.building (iOS 18.0)
-- chineseyuanrenminbisign.bank.building.fill (iOS 18.0)
+- chineseyuanrenminbisign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [chineseyuanrenminbisign.building.classical](#chineseyuanrenminbisignbuildingclassical))
+- chineseyuanrenminbisign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [chineseyuanrenminbisign.building.classical.fill](#chineseyuanrenminbisignbuildingclassical))
+
+### chineseyuanrenminbisign.building.classical
+- chineseyuanrenminbisign.building.classical (iOS 27.0)
+- chineseyuanrenminbisign.building.classical.fill (iOS 27.0)
 
 ### chineseyuanrenminbisign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -6081,8 +6215,12 @@ _____
  (iOS 18.0)
 
 ### coloncurrencysign.bank.building
-- coloncurrencysign.bank.building (iOS 18.0)
-- coloncurrencysign.bank.building.fill (iOS 18.0)
+- coloncurrencysign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [coloncurrencysign.building.classical](#coloncurrencysignbuildingclassical))
+- coloncurrencysign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [coloncurrencysign.building.classical.fill](#coloncurrencysignbuildingclassical))
+
+### coloncurrencysign.building.classical
+- coloncurrencysign.building.classical (iOS 27.0)
+- coloncurrencysign.building.classical.fill (iOS 27.0)
 
 ### coloncurrencysign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -6287,8 +6425,12 @@ _____
  (iOS 18.0)
 
 ### cruzeirosign.bank.building
-- cruzeirosign.bank.building (iOS 18.0)
-- cruzeirosign.bank.building.fill (iOS 18.0)
+- cruzeirosign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [cruzeirosign.building.classical](#cruzeirosignbuildingclassical))
+- cruzeirosign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [cruzeirosign.building.classical.fill](#cruzeirosignbuildingclassical))
+
+### cruzeirosign.building.classical
+- cruzeirosign.building.classical (iOS 27.0)
+- cruzeirosign.building.classical.fill (iOS 27.0)
 
 ### cruzeirosign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -6398,8 +6540,12 @@ _____
  (iOS 18.0)
 
 ### danishkronesign.bank.building
-- danishkronesign.bank.building (iOS 18.0)
-- danishkronesign.bank.building.fill (iOS 18.0)
+- danishkronesign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [danishkronesign.building.classical](#danishkronesignbuildingclassical))
+- danishkronesign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [danishkronesign.building.classical.fill](#danishkronesignbuildingclassical))
+
+### danishkronesign.building.classical
+- danishkronesign.building.classical (iOS 27.0)
+- danishkronesign.building.classical.fill (iOS 27.0)
 
 ### danishkronesign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -6814,8 +6960,12 @@ _____
  (iOS 18.0)
 
 ### dollarsign.bank.building
-- dollarsign.bank.building (iOS 18.0)
-- dollarsign.bank.building.fill (iOS 18.0)
+- dollarsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [dollarsign.building.classical](#dollarsignbuildingclassical))
+- dollarsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [dollarsign.building.classical.fill](#dollarsignbuildingclassical))
+
+### dollarsign.building.classical
+- dollarsign.building.classical (iOS 27.0)
+- dollarsign.building.classical.fill (iOS 27.0)
 
 ### dollarsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -6843,8 +6993,12 @@ _____
  (iOS 18.0)
 
 ### dongsign.bank.building
-- dongsign.bank.building (iOS 18.0)
-- dongsign.bank.building.fill (iOS 18.0)
+- dongsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [dongsign.building.classical](#dongsignbuildingclassical))
+- dongsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [dongsign.building.classical.fill](#dongsignbuildingclassical))
+
+### dongsign.building.classical
+- dongsign.building.classical (iOS 27.0)
+- dongsign.building.classical.fill (iOS 27.0)
 
 ### dongsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -7322,8 +7476,12 @@ _____
  (iOS 18.0)
 
 ### eurosign.bank.building
-- eurosign.bank.building (iOS 18.0)
-- eurosign.bank.building.fill (iOS 18.0)
+- eurosign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [eurosign.building.classical](#eurosignbuildingclassical))
+- eurosign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [eurosign.building.classical.fill](#eurosignbuildingclassical))
+
+### eurosign.building.classical
+- eurosign.building.classical (iOS 27.0)
+- eurosign.building.classical.fill (iOS 27.0)
 
 ### eurosign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -7351,8 +7509,12 @@ _____
  (iOS 18.0)
 
 ### eurozonesign.bank.building
-- eurozonesign.bank.building (iOS 18.0)
-- eurozonesign.bank.building.fill (iOS 18.0)
+- eurozonesign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [eurozonesign.building.classical](#eurozonesignbuildingclassical))
+- eurozonesign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [eurozonesign.building.classical.fill](#eurozonesignbuildingclassical))
+
+### eurozonesign.building.classical
+- eurozonesign.building.classical (iOS 27.0)
+- eurozonesign.building.classical.fill (iOS 27.0)
 
 ### eurozonesign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -7495,6 +7657,9 @@ _____
 - exclamationmark.triangle.text.page.rtl (iOS 18.2)
 - exclamationmark.triangle.text.page.fill (iOS 18.2)
 - exclamationmark.triangle.text.page.fill.rtl (iOS 18.2)
+
+### exclamationmark.viewfinder
+ (iOS 27.0)
 
 ### exclamationmark.warninglight
 - exclamationmark.warninglight (iOS 17.0)
@@ -7728,6 +7893,12 @@ _____
 
 ### figure.2.arms.open
  (iOS 16.0)
+
+### figure.2.ascending
+ (iOS 27.0)
+
+### figure.2.descending
+ (iOS 27.0)
 
 ### figure.2.left.holdinghands
  (iOS 18.0)
@@ -8423,6 +8594,9 @@ _____
 ### figure.stand
  (iOS 14.0)
 
+### figure.stand.and.figure.teen
+ (iOS 27.0)
+
 ### figure.stand.dress
  (iOS 18.0)
 
@@ -8461,6 +8635,17 @@ _____
 - figure.taichi (iOS 16.0)
 - figure.taichi.circle (iOS 18.0)
 - figure.taichi.circle.fill (iOS 18.0)
+
+### figure.teen
+ (iOS 27.0)
+
+### figure.teen.and.lock
+- figure.teen.and.lock (iOS 27.0)
+- figure.teen.and.lock.fill (iOS 27.0)
+
+### figure.teen.and.lock.open
+- figure.teen.and.lock.open (iOS 27.0)
+- figure.teen.and.lock.open.fill (iOS 27.0)
 
 ### figure.tennis
 - figure.tennis (iOS 16.0)
@@ -8682,8 +8867,12 @@ _____
  (iOS 18.0)
 
 ### florinsign.bank.building
-- florinsign.bank.building (iOS 18.0)
-- florinsign.bank.building.fill (iOS 18.0)
+- florinsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [florinsign.building.classical](#florinsignbuildingclassical))
+- florinsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [florinsign.building.classical.fill](#florinsignbuildingclassical))
+
+### florinsign.building.classical
+- florinsign.building.classical (iOS 27.0)
+- florinsign.building.classical.fill (iOS 27.0)
 
 ### florinsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -8813,8 +9002,12 @@ _____
  (iOS 18.0)
 
 ### francsign.bank.building
-- francsign.bank.building (iOS 18.0)
-- francsign.bank.building.fill (iOS 18.0)
+- francsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [francsign.building.classical](#francsignbuildingclassical))
+- francsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [francsign.building.classical.fill](#francsignbuildingclassical))
+
+### francsign.building.classical
+- francsign.building.classical (iOS 27.0)
+- francsign.building.classical.fill (iOS 27.0)
 
 ### francsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -9027,6 +9220,9 @@ _____
 - globe.americas (iOS 15.0)
 - globe.americas.fill (iOS 15.0)
 
+### globe.and.person
+ (iOS 27.0)
+
 ### globe.asia.australia
 - globe.asia.australia (iOS 15.0)
 - globe.asia.australia.fill (iOS 15.0)
@@ -9194,8 +9390,12 @@ _____
  (iOS 18.0)
 
 ### guaranisign.bank.building
-- guaranisign.bank.building (iOS 18.0)
-- guaranisign.bank.building.fill (iOS 18.0)
+- guaranisign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [guaranisign.building.classical](#guaranisignbuildingclassical))
+- guaranisign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [guaranisign.building.classical.fill](#guaranisignbuildingclassical))
+
+### guaranisign.building.classical
+- guaranisign.building.classical (iOS 27.0)
+- guaranisign.building.classical.fill (iOS 27.0)
 
 ### guaranisign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -9250,6 +9450,8 @@ _____
 - hammer.fill (iOS 13.0)
 - hammer.circle (iOS 15.0)
 - hammer.circle.fill (iOS 15.0)
+- hammer.slash (iOS 27.0)
+- hammer.slash.fill (iOS 27.0)
 
 ### hand.app
 - hand.app (iOS, introduced: 16.0, deprecated: 16.1, renamed: [hand.raised.app](#handraisedapp))
@@ -9555,6 +9757,16 @@ _____
 - hifispeaker.2 (iOS 14.0)
 - hifispeaker.2.fill (iOS 14.0)
 
+### hifispeaker.2.badge.checkmark
+- hifispeaker.2.badge.checkmark (iOS 27.0)
+- hifispeaker.2.badge.checkmark.rtl (iOS 27.0)
+- hifispeaker.2.badge.checkmark.fill (iOS 27.0)
+- hifispeaker.2.badge.checkmark.fill.rtl (iOS 27.0)
+
+### hifispeaker.2.badge.exclamationmark
+- hifispeaker.2.badge.exclamationmark (iOS 27.0)
+- hifispeaker.2.badge.exclamationmark.fill (iOS 27.0)
+
 ### hifispeaker.2.badge.minus
 - hifispeaker.2.badge.minus (iOS 18.0)
 - hifispeaker.2.badge.minus.fill (iOS 18.0)
@@ -9573,6 +9785,16 @@ _____
 - hifispeaker.and.homepod (iOS 14.0)
 - hifispeaker.and.homepod.fill (iOS 14.0)
 
+### hifispeaker.and.homepod.badge.checkmark
+- hifispeaker.and.homepod.badge.checkmark (iOS 27.0)
+- hifispeaker.and.homepod.badge.checkmark.rtl (iOS 27.0)
+- hifispeaker.and.homepod.badge.checkmark.fill (iOS 27.0)
+- hifispeaker.and.homepod.badge.checkmark.fill.rtl (iOS 27.0)
+
+### hifispeaker.and.homepod.badge.exclamationmark
+- hifispeaker.and.homepod.badge.exclamationmark (iOS 27.0)
+- hifispeaker.and.homepod.badge.exclamationmark.fill (iOS 27.0)
+
 ### hifispeaker.and.homepod.badge.minus
 - hifispeaker.and.homepod.badge.minus (iOS 18.0)
 - hifispeaker.and.homepod.badge.minus.fill (iOS 18.0)
@@ -9584,6 +9806,16 @@ _____
 ### hifispeaker.and.homepod.mini
 - hifispeaker.and.homepod.mini (iOS 18.0)
 - hifispeaker.and.homepod.mini.fill (iOS 18.0)
+
+### hifispeaker.and.homepod.mini.badge.checkmark
+- hifispeaker.and.homepod.mini.badge.checkmark (iOS 27.0)
+- hifispeaker.and.homepod.mini.badge.checkmark.rtl (iOS 27.0)
+- hifispeaker.and.homepod.mini.badge.checkmark.fill (iOS 27.0)
+- hifispeaker.and.homepod.mini.badge.checkmark.fill.rtl (iOS 27.0)
+
+### hifispeaker.and.homepod.mini.badge.exclamationmark
+- hifispeaker.and.homepod.mini.badge.exclamationmark (iOS 27.0)
+- hifispeaker.and.homepod.mini.badge.exclamationmark.fill (iOS 27.0)
 
 ### hifispeaker.and.homepod.mini.badge.minus
 - hifispeaker.and.homepod.mini.badge.minus (iOS 18.0)
@@ -9600,6 +9832,16 @@ _____
 ### hifispeaker.arrow.forward
 - hifispeaker.arrow.forward (iOS 18.0)
 - hifispeaker.arrow.forward.fill (iOS 18.0)
+
+### hifispeaker.badge.checkmark
+- hifispeaker.badge.checkmark (iOS 27.0)
+- hifispeaker.badge.checkmark.rtl (iOS 27.0)
+- hifispeaker.badge.checkmark.fill (iOS 27.0)
+- hifispeaker.badge.checkmark.fill.rtl (iOS 27.0)
+
+### hifispeaker.badge.exclamationmark
+- hifispeaker.badge.exclamationmark (iOS 27.0)
+- hifispeaker.badge.exclamationmark.fill (iOS 27.0)
 
 ### hifispeaker.badge.minus
 - hifispeaker.badge.minus (iOS 18.0)
@@ -9635,6 +9877,16 @@ _____
 - homepod.2 (iOS 14.0)
 - homepod.2.fill (iOS 14.0)
 
+### homepod.2.badge.checkmark
+- homepod.2.badge.checkmark (iOS 27.0)
+- homepod.2.badge.checkmark.rtl (iOS 27.0)
+- homepod.2.badge.checkmark.fill (iOS 27.0)
+- homepod.2.badge.checkmark.fill.rtl (iOS 27.0)
+
+### homepod.2.badge.exclamationmark
+- homepod.2.badge.exclamationmark (iOS 27.0)
+- homepod.2.badge.exclamationmark.fill (iOS 27.0)
+
 ### homepod.2.badge.minus
 - homepod.2.badge.minus (iOS 18.0)
 - homepod.2.badge.minus.fill (iOS 18.0)
@@ -9652,6 +9904,16 @@ _____
 ### homepod.and.homepod.mini
 - homepod.and.homepod.mini (iOS 18.0)
 - homepod.and.homepod.mini.fill (iOS 18.0)
+
+### homepod.and.homepod.mini.badge.checkmark
+- homepod.and.homepod.mini.badge.checkmark (iOS 27.0)
+- homepod.and.homepod.mini.badge.checkmark.rtl (iOS 27.0)
+- homepod.and.homepod.mini.badge.checkmark.fill (iOS 27.0)
+- homepod.and.homepod.mini.badge.checkmark.fill.rtl (iOS 27.0)
+
+### homepod.and.homepod.mini.badge.exclamationmark
+- homepod.and.homepod.mini.badge.exclamationmark (iOS 27.0)
+- homepod.and.homepod.mini.badge.exclamationmark.fill (iOS 27.0)
 
 ### homepod.and.homepod.mini.badge.minus
 - homepod.and.homepod.mini.badge.minus (iOS 18.0)
@@ -9675,6 +9937,10 @@ _____
 - homepod.badge.checkmark.fill (iOS 26.0)
 - homepod.badge.checkmark.fill.rtl (iOS 26.0)
 
+### homepod.badge.exclamationmark
+- homepod.badge.exclamationmark (iOS 27.0)
+- homepod.badge.exclamationmark.fill (iOS 27.0)
+
 ### homepod.badge.minus
 - homepod.badge.minus (iOS 18.0)
 - homepod.badge.minus.fill (iOS 18.0)
@@ -9690,6 +9956,16 @@ _____
 ### homepod.mini.2
 - homepod.mini.2 (iOS 18.0)
 - homepod.mini.2.fill (iOS 18.0)
+
+### homepod.mini.2.badge.checkmark
+- homepod.mini.2.badge.checkmark (iOS 27.0)
+- homepod.mini.2.badge.checkmark.rtl (iOS 27.0)
+- homepod.mini.2.badge.checkmark.fill (iOS 27.0)
+- homepod.mini.2.badge.checkmark.fill.rtl (iOS 27.0)
+
+### homepod.mini.2.badge.exclamationmark
+- homepod.mini.2.badge.exclamationmark (iOS 27.0)
+- homepod.mini.2.badge.exclamationmark.fill (iOS 27.0)
 
 ### homepod.mini.2.badge.minus
 - homepod.mini.2.badge.minus (iOS 18.0)
@@ -9714,6 +9990,10 @@ _____
 - homepod.mini.badge.checkmark.rtl (iOS 26.0)
 - homepod.mini.badge.checkmark.fill (iOS 26.0)
 - homepod.mini.badge.checkmark.fill.rtl (iOS 26.0)
+
+### homepod.mini.badge.exclamationmark
+- homepod.mini.badge.exclamationmark (iOS 27.0)
+- homepod.mini.badge.exclamationmark.fill (iOS 27.0)
 
 ### homepod.mini.badge.minus
 - homepod.mini.badge.minus (iOS 18.0)
@@ -9816,8 +10096,12 @@ _____
  (iOS 18.0)
 
 ### hryvniasign.bank.building
-- hryvniasign.bank.building (iOS 18.0)
-- hryvniasign.bank.building.fill (iOS 18.0)
+- hryvniasign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [hryvniasign.building.classical](#hryvniasignbuildingclassical))
+- hryvniasign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [hryvniasign.building.classical.fill](#hryvniasignbuildingclassical))
+
+### hryvniasign.building.classical
+- hryvniasign.building.classical (iOS 27.0)
+- hryvniasign.building.classical.fill (iOS 27.0)
 
 ### hryvniasign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -9906,8 +10190,12 @@ _____
  (iOS 18.0)
 
 ### indianrupeesign.bank.building
-- indianrupeesign.bank.building (iOS 18.0)
-- indianrupeesign.bank.building.fill (iOS 18.0)
+- indianrupeesign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [indianrupeesign.building.classical](#indianrupeesignbuildingclassical))
+- indianrupeesign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [indianrupeesign.building.classical.fill](#indianrupeesignbuildingclassical))
+
+### indianrupeesign.building.classical
+- indianrupeesign.building.classical (iOS 27.0)
+- indianrupeesign.building.classical.fill (iOS 27.0)
 
 ### indianrupeesign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -9932,6 +10220,10 @@ _____
 - info.circle.fill (iOS 13.0)
 - info.square (iOS 16.0)
 - info.square.fill (iOS 16.0)
+
+### info.app
+- info.app (iOS 27.0)
+- info.app.fill (iOS 27.0)
 
 ### info.bubble
 - info.bubble (iOS 16.0)
@@ -10010,6 +10302,9 @@ _____
 ### inset.filled.bottomtrailing.rectangle.portrait
  (iOS 18.0)
 
+### inset.filled.bubble
+ (iOS 27.0)
+
 ### inset.filled.capsule
  (iOS 18.0)
 
@@ -10037,6 +10332,9 @@ _____
 ### inset.filled.leadinghalf.arrow.leading.rectangle
  (iOS 18.0)
 
+### inset.filled.leadinghalf.arrowtriangle.backward.rectangle
+ (iOS 27.0)
+
 ### inset.filled.leadinghalf.rectangle
  (iOS 18.0)
 
@@ -10053,11 +10351,17 @@ _____
 - inset.filled.leadingthird.rectangle (iOS 18.0)
 - inset.filled.leadingthird.square (iOS 18.0)
 
+### inset.filled.leadingthird.rectangle.badge.xmark
+ (iOS 27.0)
+
 ### inset.filled.leadingthird.rectangle.portrait
  (iOS 18.0)
 
 ### inset.filled.lefthalf.arrow.left.rectangle
  (iOS 18.0)
+
+### inset.filled.lefthalf.arrowtriangle.left.rectangle
+ (iOS 27.0)
 
 ### inset.filled.lefthalf.rectangle
  (iOS 18.0)
@@ -10078,6 +10382,9 @@ _____
 ### inset.filled.leftthird.middlethird.rightthird.rectangle
  (iOS 26.0)
 
+### inset.filled.leftthird.rectangle.badge.xmark
+ (iOS 27.0)
+
 ### inset.filled.leftthird.rectangle.portrait
  (iOS 18.0)
 
@@ -10093,12 +10400,17 @@ _____
 ### inset.filled.rectangle.and.cursorarrow
  (iOS, introduced: 18.0, deprecated: 26.0, renamed: [inset.filled.rectangle.and.pointer.arrow](#insetfilledrectangleandpointerarrow))
 
+### inset.filled.rectangle.and.person
+- inset.filled.rectangle.and.person (iOS 27.0)
+- inset.filled.rectangle.and.person.slash (iOS 27.0)
+- inset.filled.rectangle.and.person.slash.rtl (iOS 27.0)
+
 ### inset.filled.rectangle.and.person.filled
-- inset.filled.rectangle.and.person.filled (iOS 18.0)
+- inset.filled.rectangle.and.person.filled (iOS, introduced: 18.0, deprecated: 27.0, renamed: [inset.filled.rectangle.and.person](#insetfilledrectangleandperson))
 - inset.filled.rectangle.and.person.filled.circle (iOS 18.2)
 - inset.filled.rectangle.and.person.filled.circle.fill (iOS 18.2)
-- inset.filled.rectangle.and.person.filled.slash (iOS 26.1)
-- inset.filled.rectangle.and.person.filled.slash.rtl (iOS 26.1)
+- inset.filled.rectangle.and.person.filled.slash (iOS, introduced: 26.1, deprecated: 27.0, renamed: [inset.filled.rectangle.and.person.slash](#insetfilledrectangleandperson))
+- inset.filled.rectangle.and.person.filled.slash.rtl (iOS, introduced: 26.1, deprecated: 27.0, renamed: [inset.filled.rectangle.and.person.slash.rtl](#insetfilledrectangleandperson))
 
 ### inset.filled.rectangle.and.pointer.arrow
  (iOS 26.0)
@@ -10115,6 +10427,9 @@ _____
 ### inset.filled.righthalf.arrow.right.rectangle
  (iOS 18.0)
 
+### inset.filled.righthalf.arrowtriangle.right.rectangle
+ (iOS 27.0)
+
 ### inset.filled.righthalf.lefthalf.rectangle
  (iOS 18.0)
 
@@ -10128,11 +10443,17 @@ _____
 - inset.filled.rightthird.rectangle (iOS 18.0)
 - inset.filled.rightthird.square (iOS 18.0)
 
+### inset.filled.rightthird.rectangle.badge.xmark
+ (iOS 27.0)
+
 ### inset.filled.rightthird.rectangle.portrait
  (iOS 18.0)
 
 ### inset.filled.square.dashed
  (iOS 18.0)
+
+### inset.filled.square.dashed.micro
+ (iOS 27.0)
 
 ### inset.filled.tophalf.bottomhalf.rectangle
  (iOS 18.0)
@@ -10195,6 +10516,9 @@ _____
 ### inset.filled.trailinghalf.arrow.trailing.rectangle
  (iOS 18.0)
 
+### inset.filled.trailinghalf.arrowtriangle.forward.rectangle
+ (iOS 27.0)
+
 ### inset.filled.trailinghalf.leadinghalf.rectangle
  (iOS 18.0)
 
@@ -10208,6 +10532,9 @@ _____
 - inset.filled.trailingthird.rectangle (iOS 18.0)
 - inset.filled.trailingthird.square (iOS 18.0)
 
+### inset.filled.trailingthird.rectangle.badge.xmark
+ (iOS 27.0)
+
 ### inset.filled.trailingthird.rectangle.portrait
  (iOS 18.0)
 
@@ -10216,6 +10543,39 @@ _____
 
 ### inset.filled.tv
  (iOS 18.0)
+
+### inset.left.half.filled.square.dashed.micro
+ (iOS 27.0)
+
+### inset.left.half.square.dashed.micro
+ (iOS 27.0)
+
+### inset.square.dashed.micro
+ (iOS 27.0)
+
+### interface.window
+ (iOS 27.0)
+
+### interface.window.and.pointer.arrow
+- interface.window.and.pointer.arrow (iOS 27.0)
+- interface.window.and.pointer.arrow.rtl (iOS 27.0)
+
+### interface.window.badge.plus
+ (iOS 27.0)
+
+### interface.window.dashed
+ (iOS 27.0)
+
+### interface.window.on.rectangle
+- interface.window.on.rectangle (iOS 27.0)
+- interface.window.on.rectangle.rtl (iOS 27.0)
+
+### interface.window.on.rectangle.dashed
+- interface.window.on.rectangle.dashed (iOS 27.0)
+- interface.window.on.rectangle.dashed.rtl (iOS 27.0)
+
+### interface.window.stack
+ (iOS 27.0)
 
 ### internaldrive
 - internaldrive (iOS 14.0)
@@ -10744,8 +11104,11 @@ _____
 - keyboard.chevron.compact.left (iOS 14.0)
 - keyboard.chevron.compact.left.fill (iOS 16.0)
 
+### keyboard.interface.window
+ (iOS 27.0)
+
 ### keyboard.macwindow
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 27.0, renamed: [keyboard.interface.window](#keyboardinterfacewindow))
 
 ### keyboard.onehanded.left
 - keyboard.onehanded.left (iOS 14.0)
@@ -10769,8 +11132,12 @@ _____
  (iOS 18.0)
 
 ### kipsign.bank.building
-- kipsign.bank.building (iOS 18.0)
-- kipsign.bank.building.fill (iOS 18.0)
+- kipsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [kipsign.building.classical](#kipsignbuildingclassical))
+- kipsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [kipsign.building.classical.fill](#kipsignbuildingclassical))
+
+### kipsign.building.classical
+- kipsign.building.classical (iOS 27.0)
+- kipsign.building.classical.fill (iOS 27.0)
 
 ### kipsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -10919,6 +11286,9 @@ _____
 ### laptopcomputer.badge.checkmark
  (iOS 26.0)
 
+### laptopcomputer.display.clean
+ (iOS 27.0)
+
 ### laptopcomputer.trianglebadge.exclamationmark
  (iOS 15.0)
 
@@ -10939,8 +11309,12 @@ _____
  (iOS 18.0)
 
 ### larisign.bank.building
-- larisign.bank.building (iOS 18.0)
-- larisign.bank.building.fill (iOS 18.0)
+- larisign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [larisign.building.classical](#larisignbuildingclassical))
+- larisign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [larisign.building.classical.fill](#larisignbuildingclassical))
+
+### larisign.building.classical
+- larisign.building.classical (iOS 27.0)
+- larisign.building.classical.fill (iOS 27.0)
 
 ### larisign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -11235,8 +11609,12 @@ _____
  (iOS 18.0)
 
 ### lirasign.bank.building
-- lirasign.bank.building (iOS 18.0)
-- lirasign.bank.building.fill (iOS 18.0)
+- lirasign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [lirasign.building.classical](#lirasignbuildingclassical))
+- lirasign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [lirasign.building.classical.fill](#lirasignbuildingclassical))
+
+### lirasign.building.classical
+- lirasign.building.classical (iOS 27.0)
+- lirasign.building.classical.fill (iOS 27.0)
 
 ### lirasign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -11626,9 +12004,13 @@ _____
 - macpro.gen3 (iOS 14.0)
 - macpro.gen3.fill (iOS 15.0)
 
+### macpro.gen3.badge.checkmark
+- macpro.gen3.badge.checkmark (iOS 27.0)
+- macpro.gen3.badge.checkmark.fill (iOS 27.0)
+
 ### macpro.gen3.badge.ckeckmark
-- macpro.gen3.badge.ckeckmark (iOS 26.0)
-- macpro.gen3.badge.ckeckmark.fill (iOS 26.0)
+- macpro.gen3.badge.ckeckmark (iOS, introduced: 26.0, deprecated: 27.0, renamed: [macpro.gen3.badge.checkmark](#macprogen3badgecheckmark))
+- macpro.gen3.badge.ckeckmark.fill (iOS, introduced: 26.0, deprecated: 27.0, renamed: [macpro.gen3.badge.checkmark.fill](#macprogen3badgecheckmark))
 
 ### macpro.gen3.server
  (iOS 14.0)
@@ -11642,25 +12024,25 @@ _____
 - macstudio.badge.checkmark.fill (iOS 26.0)
 
 ### macwindow
- (iOS 13.0)
+ (iOS, introduced: 13.0, deprecated: 27.0, renamed: [interface.window](#interfacewindow))
 
 ### macwindow.and.cursorarrow
-- macwindow.and.cursorarrow (iOS, introduced: 17.0, deprecated: 26.0, renamed: [macwindow.and.pointer.arrow](#macwindowandpointerarrow))
-- macwindow.and.cursorarrow.rtl (iOS, introduced: 17.0, deprecated: 26.0, renamed: [macwindow.and.pointer.arrow.rtl](#macwindowandpointerarrow))
+- macwindow.and.cursorarrow (iOS, introduced: 17.0, deprecated: 27.0, renamed: [interface.window.and.pointer.arrow](#interfacewindowandpointerarrow))
+- macwindow.and.cursorarrow.rtl (iOS, introduced: 17.0, deprecated: 27.0, renamed: [interface.window.and.pointer.arrow.rtl](#interfacewindowandpointerarrow))
 
 ### macwindow.and.pointer.arrow
-- macwindow.and.pointer.arrow (iOS 26.0)
-- macwindow.and.pointer.arrow.rtl (iOS 26.0)
+- macwindow.and.pointer.arrow (iOS, introduced: 26.0, deprecated: 27.0, renamed: [interface.window.and.pointer.arrow](#interfacewindowandpointerarrow))
+- macwindow.and.pointer.arrow.rtl (iOS, introduced: 26.0, deprecated: 27.0, renamed: [interface.window.and.pointer.arrow.rtl](#interfacewindowandpointerarrow))
 
 ### macwindow.badge.plus
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 27.0, renamed: [interface.window.badge.plus](#interfacewindowbadgeplus))
 
 ### macwindow.on.rectangle
-- macwindow.on.rectangle (iOS 14.0)
-- macwindow.on.rectangle.rtl (iOS 14.0)
+- macwindow.on.rectangle (iOS, introduced: 14.0, deprecated: 27.0, renamed: [interface.window.on.rectangle](#interfacewindowonrectangle))
+- macwindow.on.rectangle.rtl (iOS, introduced: 14.0, deprecated: 27.0, renamed: [interface.window.on.rectangle.rtl](#interfacewindowonrectangle))
 
 ### macwindow.stack
- (iOS 26.0)
+ (iOS, introduced: 26.0, deprecated: 27.0, renamed: [interface.window.stack](#interfacewindowstack))
 
 ### magazine
 - magazine (iOS 15.0)
@@ -11702,8 +12084,12 @@ _____
  (iOS 18.0)
 
 ### malaysianringgitsign.bank.building
-- malaysianringgitsign.bank.building (iOS 18.0)
-- malaysianringgitsign.bank.building.fill (iOS 18.0)
+- malaysianringgitsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [malaysianringgitsign.building.classical](#malaysianringgitsignbuildingclassical))
+- malaysianringgitsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [malaysianringgitsign.building.classical.fill](#malaysianringgitsignbuildingclassical))
+
+### malaysianringgitsign.building.classical
+- malaysianringgitsign.building.classical (iOS 27.0)
+- malaysianringgitsign.building.classical.fill (iOS 27.0)
 
 ### malaysianringgitsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -11731,8 +12117,12 @@ _____
  (iOS 18.0)
 
 ### manatsign.bank.building
-- manatsign.bank.building (iOS 18.0)
-- manatsign.bank.building.fill (iOS 18.0)
+- manatsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [manatsign.building.classical](#manatsignbuildingclassical))
+- manatsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [manatsign.building.classical.fill](#manatsignbuildingclassical))
+
+### manatsign.building.classical
+- manatsign.building.classical (iOS 27.0)
+- manatsign.building.classical.fill (iOS 27.0)
 
 ### manatsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -11925,6 +12315,11 @@ _____
 - microphone.badge.xmark (iOS 18.0)
 - microphone.badge.xmark.fill (iOS 18.0)
 
+### microphone.dynamic.on.stand
+- microphone.dynamic.on.stand (iOS 27.0)
+- microphone.dynamic.on.stand.circle (iOS 27.0)
+- microphone.dynamic.on.stand.circle.fill (iOS 27.0)
+
 ### microwave
 - microwave (iOS 16.0)
 - microwave.fill (iOS 16.0)
@@ -11943,8 +12338,12 @@ _____
  (iOS 18.0)
 
 ### millsign.bank.building
-- millsign.bank.building (iOS 18.0)
-- millsign.bank.building.fill (iOS 18.0)
+- millsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [millsign.building.classical](#millsignbuildingclassical))
+- millsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [millsign.building.classical.fill](#millsignbuildingclassical))
+
+### millsign.building.classical
+- millsign.building.classical (iOS 27.0)
+- millsign.building.classical.fill (iOS 27.0)
 
 ### millsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -12189,14 +12588,14 @@ _____
 - music.house.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [music.note.house.fill](#musicnotehouse))
 
 ### music.mic
-- music.mic (iOS, introduced: 13.0, deprecated: 18.0, renamed: [music.microphone](#musicmicrophone))
-- music.mic.circle (iOS, introduced: 15.0, deprecated: 18.0, renamed: [music.microphone.circle](#musicmicrophone))
-- music.mic.circle.fill (iOS, introduced: 15.0, deprecated: 18.0, renamed: [music.microphone.circle.fill](#musicmicrophone))
+- music.mic (iOS, introduced: 13.0, deprecated: 27.0, renamed: [microphone.dynamic.on.stand](#microphonedynamiconstand))
+- music.mic.circle (iOS, introduced: 15.0, deprecated: 27.0, renamed: [microphone.dynamic.on.stand.circle](#microphonedynamiconstand))
+- music.mic.circle.fill (iOS, introduced: 15.0, deprecated: 27.0, renamed: [microphone.dynamic.on.stand.circle.fill](#microphonedynamiconstand))
 
 ### music.microphone
-- music.microphone (iOS 18.0)
-- music.microphone.circle (iOS 18.0)
-- music.microphone.circle.fill (iOS 18.0)
+- music.microphone (iOS, introduced: 18.0, deprecated: 27.0, renamed: [microphone.dynamic.on.stand](#microphonedynamiconstand))
+- music.microphone.circle (iOS, introduced: 18.0, deprecated: 27.0, renamed: [microphone.dynamic.on.stand.circle](#microphonedynamiconstand))
+- music.microphone.circle.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [microphone.dynamic.on.stand.circle.fill](#microphonedynamiconstand))
 
 ### music.note
 - music.note (iOS 13.0)
@@ -12251,8 +12650,12 @@ _____
  (iOS 18.0)
 
 ### nairasign.bank.building
-- nairasign.bank.building (iOS 18.0)
-- nairasign.bank.building.fill (iOS 18.0)
+- nairasign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [nairasign.building.classical](#nairasignbuildingclassical))
+- nairasign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [nairasign.building.classical.fill](#nairasignbuildingclassical))
+
+### nairasign.building.classical
+- nairasign.building.classical (iOS 27.0)
+- nairasign.building.classical.fill (iOS 27.0)
 
 ### nairasign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -12293,8 +12696,12 @@ _____
  (iOS 18.0)
 
 ### norwegiankronesign.bank.building
-- norwegiankronesign.bank.building (iOS 18.0)
-- norwegiankronesign.bank.building.fill (iOS 18.0)
+- norwegiankronesign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [norwegiankronesign.building.classical](#norwegiankronesignbuildingclassical))
+- norwegiankronesign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [norwegiankronesign.building.classical.fill](#norwegiankronesignbuildingclassical))
+
+### norwegiankronesign.building.classical
+- norwegiankronesign.building.classical (iOS 27.0)
+- norwegiankronesign.building.classical.fill (iOS 27.0)
 
 ### norwegiankronesign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -12339,11 +12746,18 @@ _____
 - notequal.square.fill (iOS 18.0)
 
 ### number
-- number (iOS 13.0)
-- number.circle (iOS 13.0)
-- number.circle.fill (iOS 13.0)
-- number.square (iOS 13.0)
-- number.square.fill (iOS 13.0)
+- number (iOS, introduced: 13.0, deprecated: 27.0, renamed: [number.sign](#numbersign))
+- number.circle (iOS, introduced: 13.0, deprecated: 27.0, renamed: [number.sign.circle](#numbersign))
+- number.circle.fill (iOS, introduced: 13.0, deprecated: 27.0, renamed: [number.sign.circle.fill](#numbersign))
+- number.square (iOS, introduced: 13.0, deprecated: 27.0, renamed: [number.sign.square](#numbersign))
+- number.square.fill (iOS, introduced: 13.0, deprecated: 27.0, renamed: [number.sign.square.fill](#numbersign))
+
+### number.sign
+- number.sign (iOS 27.0)
+- number.sign.circle (iOS 27.0)
+- number.sign.circle.fill (iOS 27.0)
+- number.sign.square (iOS 27.0)
+- number.sign.square.fill (iOS 27.0)
 
 ### numbers
 - numbers (iOS 18.0)
@@ -12393,7 +12807,10 @@ _____
  (iOS 26.0)
 
 ### numbersign
- (iOS 16.0)
+ (iOS, introduced: 16.0, deprecated: 27.0, renamed: [numero.sign](#numerosign))
+
+### numero.sign
+ (iOS 27.0)
 
 ### o
 - o.circle (iOS 13.0)
@@ -12526,6 +12943,8 @@ _____
 ### paintbrush
 - paintbrush (iOS 13.0)
 - paintbrush.fill (iOS 13.0)
+- paintbrush.slash (iOS 27.0)
+- paintbrush.slash.fill (iOS 27.0)
 
 ### paintbrush.pointed
 - paintbrush.pointed (iOS 14.0)
@@ -12785,13 +13204,33 @@ _____
 ### person.and.background.striped.horizontal
  (iOS 17.0)
 
+### person.badge.checkmark
+- person.badge.checkmark (iOS 27.0)
+- person.badge.checkmark.fill (iOS 27.0)
+
+### person.badge.checkmark.seal
+- person.badge.checkmark.seal (iOS 27.0)
+- person.badge.checkmark.seal.fill (iOS 27.0)
+
 ### person.badge.clock
 - person.badge.clock (iOS 15.0)
 - person.badge.clock.fill (iOS 15.0)
 
+### person.badge.creditcard
+- person.badge.creditcard (iOS 27.0)
+- person.badge.creditcard.fill (iOS 27.0)
+
+### person.badge.gearshape
+- person.badge.gearshape (iOS 27.0)
+- person.badge.gearshape.fill (iOS 27.0)
+
 ### person.badge.key
 - person.badge.key (iOS 15.4)
 - person.badge.key.fill (iOS 15.4)
+
+### person.badge.location
+- person.badge.location (iOS 27.0)
+- person.badge.location.fill (iOS 27.0)
 
 ### person.badge.minus
 - person.badge.minus (iOS 13.0)
@@ -12812,6 +13251,10 @@ _____
 ### person.bubble
 - person.bubble (iOS 17.0)
 - person.bubble.fill (iOS 17.0)
+
+### person.building.classical
+- person.building.classical (iOS 27.0)
+- person.building.classical.fill (iOS 27.0)
 
 ### person.bust
 - person.bust (iOS 16.0)
@@ -12835,8 +13278,8 @@ _____
  (iOS 15.0)
 
 ### person.crop.badge.magnifyingglass
-- person.crop.badge.magnifyingglass (iOS 18.0)
-- person.crop.badge.magnifyingglass.fill (iOS 18.0)
+- person.crop.badge.magnifyingglass (iOS, introduced: 18.0, deprecated: 27.0, renamed: [person.crop.circle.badge.magnifyingglass](#personcropcirclebadgemagnifyingglass))
+- person.crop.badge.magnifyingglass.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [person.crop.circle.badge.magnifyingglass.fill](#personcropcirclebadgemagnifyingglass))
 
 ### person.crop.circle.badge
 - person.crop.circle.badge (iOS 15.0)
@@ -12859,6 +13302,10 @@ _____
 ### person.crop.circle.badge.exclamationmark
 - person.crop.circle.badge.exclamationmark (iOS 14.0)
 - person.crop.circle.badge.exclamationmark.fill (iOS 15.0)
+
+### person.crop.circle.badge.magnifyingglass
+- person.crop.circle.badge.magnifyingglass (iOS 27.0)
+- person.crop.circle.badge.magnifyingglass.fill (iOS 27.0)
 
 ### person.crop.circle.badge.minus
  (iOS 13.0)
@@ -12982,6 +13429,10 @@ _____
 - person.line.dotted.person (iOS 16.0)
 - person.line.dotted.person.fill (iOS 16.0)
 
+### person.number.sign.rectangle
+- person.number.sign.rectangle (iOS 27.0)
+- person.number.sign.rectangle.fill (iOS 27.0)
+
 ### person.spatialaudio.fill
  (iOS 26.0)
 
@@ -12997,6 +13448,10 @@ _____
 ### person.text.rectangle
 - person.text.rectangle (iOS 15.0)
 - person.text.rectangle.fill (iOS 15.0)
+
+### person.text.rectangle.badge.clock
+- person.text.rectangle.badge.clock (iOS 27.0)
+- person.text.rectangle.badge.clock.fill (iOS 27.0)
 
 ### person.text.rectangle.trianglebadge.exclamationmark
 - person.text.rectangle.trianglebadge.exclamationmark (iOS 26.0)
@@ -13026,8 +13481,12 @@ _____
  (iOS 18.0)
 
 ### peruviansolessign.bank.building
-- peruviansolessign.bank.building (iOS 18.0)
-- peruviansolessign.bank.building.fill (iOS 18.0)
+- peruviansolessign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [peruviansolessign.building.classical](#peruviansolessignbuildingclassical))
+- peruviansolessign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [peruviansolessign.building.classical.fill](#peruviansolessignbuildingclassical))
+
+### peruviansolessign.building.classical
+- peruviansolessign.building.classical (iOS 27.0)
+- peruviansolessign.building.classical.fill (iOS 27.0)
 
 ### peruviansolessign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -13055,8 +13514,12 @@ _____
  (iOS 18.0)
 
 ### pesetasign.bank.building
-- pesetasign.bank.building (iOS 18.0)
-- pesetasign.bank.building.fill (iOS 18.0)
+- pesetasign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [pesetasign.building.classical](#pesetasignbuildingclassical))
+- pesetasign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [pesetasign.building.classical.fill](#pesetasignbuildingclassical))
+
+### pesetasign.building.classical
+- pesetasign.building.classical (iOS 27.0)
+- pesetasign.building.classical.fill (iOS 27.0)
 
 ### pesetasign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -13084,8 +13547,12 @@ _____
  (iOS 18.0)
 
 ### pesosign.bank.building
-- pesosign.bank.building (iOS 18.0)
-- pesosign.bank.building.fill (iOS 18.0)
+- pesosign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [pesosign.building.classical](#pesosignbuildingclassical))
+- pesosign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [pesosign.building.classical.fill](#pesosignbuildingclassical))
+
+### pesosign.building.classical
+- pesosign.building.classical (iOS 27.0)
+- pesosign.building.classical.fill (iOS 27.0)
 
 ### pesosign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -13195,6 +13662,8 @@ _____
 - photo.fill (iOS 13.0)
 - photo.circle (iOS 15.0)
 - photo.circle.fill (iOS 15.0)
+- photo.slash (iOS 27.0)
+- photo.slash.fill (iOS 27.0)
 
 ### photo.artframe
 - photo.artframe (iOS 15.0)
@@ -13220,6 +13689,10 @@ _____
 ### photo.badge.plus
 - photo.badge.plus (iOS 17.0)
 - photo.badge.plus.fill (iOS 17.0)
+
+### photo.badge.questionmark
+- photo.badge.questionmark (iOS 27.0)
+- photo.badge.questionmark.fill (iOS 27.0)
 
 ### photo.badge.shield.exclamationmark
 - photo.badge.shield.exclamationmark (iOS 18.4)
@@ -13301,6 +13774,14 @@ _____
 - pipe.and.drop (iOS 16.0)
 - pipe.and.drop.fill (iOS 16.0)
 
+### pizza.slice
+- pizza.slice (iOS 27.0)
+- pizza.slice.fill (iOS 27.0)
+
+### pl.button.horizontal
+- pl.button.horizontal (iOS 27.0)
+- pl.button.horizontal.fill (iOS 27.0)
+
 ### placeholdertext.fill
  (iOS 14.0)
 
@@ -13351,6 +13832,12 @@ _____
 - play.square.fill (iOS 15.0)
 - play.slash (iOS 14.0)
 - play.slash.fill (iOS 14.0)
+
+### play.bubble
+- play.bubble (iOS 27.0)
+- play.bubble.rtl (iOS 27.0)
+- play.bubble.fill (iOS 27.0)
+- play.bubble.fill.rtl (iOS 27.0)
 
 ### play.desktopcomputer
  (iOS 16.0)
@@ -13599,8 +14086,12 @@ _____
  (iOS 18.0)
 
 ### polishzlotysign.bank.building
-- polishzlotysign.bank.building (iOS 18.0)
-- polishzlotysign.bank.building.fill (iOS 18.0)
+- polishzlotysign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [polishzlotysign.building.classical](#polishzlotysignbuildingclassical))
+- polishzlotysign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [polishzlotysign.building.classical.fill](#polishzlotysignbuildingclassical))
+
+### polishzlotysign.building.classical
+- polishzlotysign.building.classical (iOS 27.0)
+- polishzlotysign.building.classical.fill (iOS 27.0)
 
 ### polishzlotysign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -13745,6 +14236,10 @@ _____
 
 ### powersleep
  (iOS 14.0)
+
+### pr.button.horizontal
+- pr.button.horizontal (iOS 27.0)
+- pr.button.horizontal.fill (iOS 27.0)
 
 ### printer
 - printer (iOS 13.0)
@@ -14031,6 +14526,9 @@ _____
 - recordingtape.circle (iOS 16.0)
 - recordingtape.circle.fill (iOS 16.0)
 
+### recordingtape.badge
+ (iOS 27.0)
+
 ### rectangle
 - rectangle (iOS 13.0)
 - rectangle.fill (iOS 13.0)
@@ -14237,7 +14735,7 @@ _____
  (iOS, introduced: 17.0, deprecated: 26.0, renamed: [inset.filled.rectangle.and.pointer.arrow](#insetfilledrectangleandpointerarrow))
 
 ### rectangle.inset.filled.and.person.filled
- (iOS, introduced: 15.0, deprecated: 18.0, renamed: [inset.filled.rectangle.and.person.filled](#insetfilledrectangleandpersonfilled))
+ (iOS, introduced: 15.0, deprecated: 27.0, renamed: [inset.filled.rectangle.and.person](#insetfilledrectangleandperson))
 
 ### rectangle.inset.filled.badge.record
  (iOS, introduced: 17.0, deprecated: 18.0, renamed: [inset.filled.rectangle.badge.record](#insetfilledrectanglebadgerecord))
@@ -14666,6 +15164,9 @@ _____
 ### ring.dashed
  (iOS 26.0)
 
+### ring.light
+ (iOS 27.0)
+
 ### rm.button.horizontal
 - rm.button.horizontal (iOS 17.0)
 - rm.button.horizontal.fill (iOS 17.0)
@@ -14756,8 +15257,12 @@ _____
  (iOS 18.0)
 
 ### rublesign.bank.building
-- rublesign.bank.building (iOS 18.0)
-- rublesign.bank.building.fill (iOS 18.0)
+- rublesign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [rublesign.building.classical](#rublesignbuildingclassical))
+- rublesign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [rublesign.building.classical.fill](#rublesignbuildingclassical))
+
+### rublesign.building.classical
+- rublesign.building.classical (iOS 27.0)
+- rublesign.building.classical.fill (iOS 27.0)
 
 ### rublesign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -14795,8 +15300,12 @@ _____
  (iOS 18.0)
 
 ### rupeesign.bank.building
-- rupeesign.bank.building (iOS 18.0)
-- rupeesign.bank.building.fill (iOS 18.0)
+- rupeesign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [rupeesign.building.classical](#rupeesignbuildingclassical))
+- rupeesign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [rupeesign.building.classical.fill](#rupeesignbuildingclassical))
+
+### rupeesign.building.classical
+- rupeesign.building.classical (iOS 27.0)
+- rupeesign.building.classical.fill (iOS 27.0)
 
 ### rupeesign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -14850,6 +15359,9 @@ _____
 
 ### scope
  (iOS 13.0)
+
+### scope.continuous
+ (iOS 27.0)
 
 ### screwdriver
 - screwdriver (iOS 15.0)
@@ -14932,8 +15444,12 @@ _____
  (iOS 18.0)
 
 ### shekelsign.bank.building
-- shekelsign.bank.building (iOS 18.0)
-- shekelsign.bank.building.fill (iOS 18.0)
+- shekelsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [shekelsign.building.classical](#shekelsignbuildingclassical))
+- shekelsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [shekelsign.building.classical.fill](#shekelsignbuildingclassical))
+
+### shekelsign.building.classical
+- shekelsign.building.classical (iOS 27.0)
+- shekelsign.building.classical.fill (iOS 27.0)
 
 ### shekelsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -15116,8 +15632,12 @@ _____
  (iOS 18.0)
 
 ### singaporedollarsign.bank.building
-- singaporedollarsign.bank.building (iOS 18.0)
-- singaporedollarsign.bank.building.fill (iOS 18.0)
+- singaporedollarsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [singaporedollarsign.building.classical](#singaporedollarsignbuildingclassical))
+- singaporedollarsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [singaporedollarsign.building.classical.fill](#singaporedollarsignbuildingclassical))
+
+### singaporedollarsign.building.classical
+- singaporedollarsign.building.classical (iOS 27.0)
+- singaporedollarsign.building.classical.fill (iOS 27.0)
 
 ### singaporedollarsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -15137,6 +15657,12 @@ _____
 
 ### siri
  (iOS 26.0)
+
+### siri.gen1
+ (iOS 27.0)
+
+### siri.gen2
+ (iOS 27.0)
 
 ### skateboard
 - skateboard (iOS 17.0)
@@ -15598,6 +16124,9 @@ _____
 ### square.dashed.inset.filled
  (iOS, introduced: 15.0, deprecated: 18.0, renamed: [inset.filled.square.dashed](#insetfilledsquaredashed))
 
+### square.dashed.micro
+ (iOS 27.0)
+
 ### square.dotted
  (iOS 16.0)
 
@@ -15868,6 +16397,9 @@ _____
 ### squareshape.dotted.squareshape
  (iOS 17.0)
 
+### squareshape.on.pattern.diagonalline
+ (iOS 27.0)
+
 ### squareshape.split.2x2
  (iOS 14.0)
 
@@ -15910,6 +16442,9 @@ _____
 ### star.bubble
 - star.bubble (iOS 15.0)
 - star.bubble.fill (iOS 15.0)
+
+### star.calendar
+ (iOS 27.0)
 
 ### star.hexagon
 - star.hexagon (iOS 18.4)
@@ -15997,8 +16532,12 @@ _____
  (iOS 18.0)
 
 ### sterlingsign.bank.building
-- sterlingsign.bank.building (iOS 18.0)
-- sterlingsign.bank.building.fill (iOS 18.0)
+- sterlingsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [sterlingsign.building.classical](#sterlingsignbuildingclassical))
+- sterlingsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [sterlingsign.building.classical.fill](#sterlingsignbuildingclassical))
+
+### sterlingsign.building.classical
+- sterlingsign.building.classical (iOS 27.0)
+- sterlingsign.building.classical.fill (iOS 27.0)
 
 ### sterlingsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -16277,8 +16816,12 @@ _____
  (iOS 18.0)
 
 ### swedishkronasign.bank.building
-- swedishkronasign.bank.building (iOS 18.0)
-- swedishkronasign.bank.building.fill (iOS 18.0)
+- swedishkronasign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [swedishkronasign.building.classical](#swedishkronasignbuildingclassical))
+- swedishkronasign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [swedishkronasign.building.classical.fill](#swedishkronasignbuildingclassical))
+
+### swedishkronasign.building.classical
+- swedishkronasign.building.classical (iOS 27.0)
+- swedishkronasign.building.classical.fill (iOS 27.0)
 
 ### swedishkronasign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -16406,8 +16949,12 @@ _____
  (iOS 18.0)
 
 ### tengesign.bank.building
-- tengesign.bank.building (iOS 18.0)
-- tengesign.bank.building.fill (iOS 18.0)
+- tengesign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [tengesign.building.classical](#tengesignbuildingclassical))
+- tengesign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [tengesign.building.classical.fill](#tengesignbuildingclassical))
+
+### tengesign.building.classical
+- tengesign.building.classical (iOS 27.0)
+- tengesign.building.classical.fill (iOS 27.0)
 
 ### tengesign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -16460,8 +17007,11 @@ _____
 ### text.alignright
  (iOS 13.0)
 
+### text.and.command.interface.window
+ (iOS 27.0)
+
 ### text.and.command.macwindow
- (iOS 14.0)
+ (iOS, introduced: 14.0, deprecated: 27.0, renamed: [text.and.command.interface.window](#textandcommandinterfacewindow))
 
 ### text.append
  (iOS 13.0)
@@ -16507,6 +17057,12 @@ _____
 - text.bubble.badge.clock.rtl (iOS 18.0)
 - text.bubble.badge.clock.fill (iOS 18.0)
 - text.bubble.badge.clock.fill.rtl (iOS 18.0)
+
+### text.bubble.badge.sparkles
+- text.bubble.badge.sparkles (iOS 27.0)
+- text.bubble.badge.sparkles.rtl (iOS 27.0)
+- text.bubble.badge.sparkles.fill (iOS 27.0)
+- text.bubble.badge.sparkles.fill.rtl (iOS 27.0)
 
 ### text.cursor
 - text.cursor (iOS, introduced: 13.0, deprecated: 14.5, renamed: [character.cursor.ibeam](#charactercursoribeam))
@@ -16568,6 +17124,9 @@ _____
 - text.magnifyingglass (iOS 14.0)
 - text.magnifyingglass.rtl (iOS 14.0)
 
+### text.menu
+ (iOS 27.0)
+
 ### text.pad.header
  (iOS 26.0)
 
@@ -16585,6 +17144,10 @@ _____
 - text.page.slash.rtl (iOS 18.0)
 - text.page.slash.fill (iOS 18.0)
 - text.page.slash.fill.rtl (iOS 18.0)
+
+### text.page.and.line.vertical.and.text.page
+- text.page.and.line.vertical.and.text.page (iOS 27.0)
+- text.page.and.line.vertical.and.text.page.rtl (iOS 27.0)
 
 ### text.page.badge.magnifyingglass
  (iOS 18.0)
@@ -17543,8 +18106,12 @@ _____
  (iOS 18.0)
 
 ### tugriksign.bank.building
-- tugriksign.bank.building (iOS 18.0)
-- tugriksign.bank.building.fill (iOS 18.0)
+- tugriksign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [tugriksign.building.classical](#tugriksignbuildingclassical))
+- tugriksign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [tugriksign.building.classical.fill](#tugriksignbuildingclassical))
+
+### tugriksign.building.classical
+- tugriksign.building.classical (iOS 27.0)
+- tugriksign.building.classical.fill (iOS 27.0)
 
 ### tugriksign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -17575,8 +18142,12 @@ _____
  (iOS 18.0)
 
 ### turkishlirasign.bank.building
-- turkishlirasign.bank.building (iOS 18.0)
-- turkishlirasign.bank.building.fill (iOS 18.0)
+- turkishlirasign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [turkishlirasign.building.classical](#turkishlirasignbuildingclassical))
+- turkishlirasign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [turkishlirasign.building.classical.fill](#turkishlirasignbuildingclassical))
+
+### turkishlirasign.building.classical
+- turkishlirasign.building.classical (iOS 27.0)
+- turkishlirasign.building.classical.fill (iOS 27.0)
 
 ### turkishlirasign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -17656,6 +18227,18 @@ _____
 - v.square (iOS 13.0)
 - v.square.fill (iOS 13.0)
 
+### vent.airflow.diffused
+ (iOS 27.0)
+
+### vent.airflow.focused
+ (iOS 27.0)
+
+### vent.airflow.manual
+ (iOS 27.0)
+
+### vent.airflow.oscillating
+ (iOS 27.0)
+
 ### vent.heat.waves.upward
  (iOS 26.0)
 
@@ -17687,6 +18270,12 @@ _____
 ### video.badge.plus
 - video.badge.plus (iOS 13.0)
 - video.badge.plus.fill (iOS, introduced: 13.0, deprecated: 14.0, renamed: [video.fill.badge.plus](#videofillbadgeplus))
+
+### video.badge.questionmark
+- video.badge.questionmark (iOS 27.0)
+- video.badge.questionmark.ar (iOS 27.0)
+- video.badge.questionmark.fill (iOS 27.0)
+- video.badge.questionmark.fill.ar (iOS 27.0)
 
 ### video.badge.waveform
 - video.badge.waveform (iOS 17.0)
@@ -17944,8 +18533,11 @@ _____
 ### waveform.and.mic
  (iOS, introduced: 15.0, deprecated: 18.0, renamed: [waveform.badge.microphone](#waveformbadgemicrophone))
 
+### waveform.and.person
+ (iOS 27.0)
+
 ### waveform.and.person.filled
- (iOS 17.0)
+ (iOS, introduced: 17.0, deprecated: 27.0, renamed: [waveform.and.person](#waveformandperson))
 
 ### waveform.badge.checkmark
  (iOS 18.1)
@@ -18179,8 +18771,12 @@ _____
  (iOS 18.0)
 
 ### wonsign.bank.building
-- wonsign.bank.building (iOS 18.0)
-- wonsign.bank.building.fill (iOS 18.0)
+- wonsign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [wonsign.building.classical](#wonsignbuildingclassical))
+- wonsign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [wonsign.building.classical.fill](#wonsignbuildingclassical))
+
+### wonsign.building.classical
+- wonsign.building.classical (iOS 27.0)
+- wonsign.building.classical.fill (iOS 27.0)
 
 ### wonsign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
@@ -18253,6 +18849,9 @@ _____
 - xmark.icloud (iOS 13.0)
 - xmark.icloud.fill (iOS 13.0)
 
+### xmark.interface.window
+ (iOS 27.0)
+
 ### xmark.octagon
 - xmark.octagon (iOS 13.0)
 - xmark.octagon.fill (iOS 13.0)
@@ -18272,6 +18871,9 @@ _____
 ### xmark.triangle.circle.square
 - xmark.triangle.circle.square (iOS 18.0)
 - xmark.triangle.circle.square.fill (iOS 18.0)
+
+### xmark.viewfinder
+ (iOS 27.0)
 
 ### xserve
  (iOS 14.0)
@@ -18299,8 +18901,12 @@ _____
  (iOS 18.0)
 
 ### yensign.bank.building
-- yensign.bank.building (iOS 18.0)
-- yensign.bank.building.fill (iOS 18.0)
+- yensign.bank.building (iOS, introduced: 18.0, deprecated: 27.0, renamed: [yensign.building.classical](#yensignbuildingclassical))
+- yensign.bank.building.fill (iOS, introduced: 18.0, deprecated: 27.0, renamed: [yensign.building.classical.fill](#yensignbuildingclassical))
+
+### yensign.building.classical
+- yensign.building.classical (iOS 27.0)
+- yensign.building.classical.fill (iOS 27.0)
 
 ### yensign.gauge.chart.lefthalf.righthalf
  (iOS 18.0)
