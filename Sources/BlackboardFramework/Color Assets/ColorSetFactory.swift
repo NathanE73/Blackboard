@@ -28,7 +28,7 @@ class ColorSetFactory: AssetSetFactory {
     let pathExtension = "colorset"
 
     func asset(namespace: String?, name: String, data: Data) -> ColorSet? {
-        guard let _ = try? JSONDecoder().decode(AssetColorSet.self, from: data) else {
+        guard (try? JSONDecoder().decode(AssetColorSet.self, from: data)) != nil else {
             return nil
         }
 

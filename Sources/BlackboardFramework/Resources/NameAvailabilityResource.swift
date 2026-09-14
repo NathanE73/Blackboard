@@ -2119,6 +2119,34 @@ extension Resource {
 		<string>2024</string>
 		<key>airpods.pro.chargingcase.wireless.radiowaves.left.and.right.fill</key>
 		<string>2024</string>
+		<key>airpods.pro.gen1</key>
+		<string>2026</string>
+		<key>airpods.pro.gen1.chargingcase.wireless</key>
+		<string>2026</string>
+		<key>airpods.pro.gen1.chargingcase.wireless.fill</key>
+		<string>2026</string>
+		<key>airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right</key>
+		<string>2026</string>
+		<key>airpods.pro.gen1.chargingcase.wireless.radiowaves.left.and.right.fill</key>
+		<string>2026</string>
+		<key>airpods.pro.gen1.left</key>
+		<string>2026</string>
+		<key>airpods.pro.gen1.right</key>
+		<string>2026</string>
+		<key>airpods.pro.gen3</key>
+		<string>2026</string>
+		<key>airpods.pro.gen3.chargingcase.wireless</key>
+		<string>2026</string>
+		<key>airpods.pro.gen3.chargingcase.wireless.fill</key>
+		<string>2026</string>
+		<key>airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right</key>
+		<string>2026</string>
+		<key>airpods.pro.gen3.chargingcase.wireless.radiowaves.left.and.right.fill</key>
+		<string>2026</string>
+		<key>airpods.pro.gen3.left</key>
+		<string>2026</string>
+		<key>airpods.pro.gen3.right</key>
+		<string>2026</string>
 		<key>airpods.pro.left</key>
 		<string>2024</string>
 		<key>airpods.pro.right</key>
@@ -2155,8 +2183,24 @@ extension Resource {
 		<string>2021</string>
 		<key>alarm</key>
 		<string>2019</string>
+		<key>alarm.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>alarm.badge.exclamationmark.fill</key>
+		<string>2026</string>
+		<key>alarm.badge.minus</key>
+		<string>2026</string>
+		<key>alarm.badge.minus.fill</key>
+		<string>2026</string>
+		<key>alarm.badge.xmark</key>
+		<string>2026</string>
+		<key>alarm.badge.xmark.fill</key>
+		<string>2026</string>
 		<key>alarm.fill</key>
 		<string>2019</string>
+		<key>alarm.slash</key>
+		<string>2026</string>
+		<key>alarm.slash.fill</key>
+		<string>2026</string>
 		<key>alarm.waves.left.and.right</key>
 		<string>2022</string>
 		<key>alarm.waves.left.and.right.fill</key>
@@ -2263,6 +2307,10 @@ extension Resource {
 		<string>2025</string>
 		<key>app.shadow</key>
 		<string>2025</string>
+		<key>app.slash</key>
+		<string>2026</string>
+		<key>app.slash.fill</key>
+		<string>2026</string>
 		<key>app.specular</key>
 		<string>2025</string>
 		<key>app.translucent</key>
@@ -2413,6 +2461,8 @@ extension Resource {
 		<string>2025</string>
 		<key>apps.ipad.badge.checkmark.rtl</key>
 		<string>2025</string>
+		<key>apps.ipad.badge.exclamationmark</key>
+		<string>2026</string>
 		<key>apps.ipad.badge.plus</key>
 		<string>2025</string>
 		<key>apps.ipad.landscape</key>
@@ -2427,6 +2477,8 @@ extension Resource {
 		<string>2025</string>
 		<key>apps.iphone.badge.checkmark.rtl</key>
 		<string>2025</string>
+		<key>apps.iphone.badge.exclamationmark</key>
+		<string>2026</string>
 		<key>apps.iphone.badge.plus</key>
 		<string>2020</string>
 		<key>apps.iphone.landscape</key>
@@ -3459,8 +3511,12 @@ extension Resource {
 		<string>2020</string>
 		<key>arrowtriangle.backward.fill</key>
 		<string>2020</string>
+		<key>arrowtriangle.backward.inset.filled.leadingthird.rectangle</key>
+		<string>2026</string>
 		<key>arrowtriangle.backward.inset.filled.trailingthird.rectangle</key>
 		<string>2025.1</string>
+		<key>arrowtriangle.backward.leadingside.rectangle</key>
+		<string>2026</string>
 		<key>arrowtriangle.backward.square</key>
 		<string>2020</string>
 		<key>arrowtriangle.backward.square.fill</key>
@@ -3495,6 +3551,8 @@ extension Resource {
 		<string>2020</string>
 		<key>arrowtriangle.forward.square.fill</key>
 		<string>2020</string>
+		<key>arrowtriangle.forward.trailingside.rectangle</key>
+		<string>2026</string>
 		<key>arrowtriangle.left</key>
 		<string>2019</string>
 		<key>arrowtriangle.left.and.line.vertical.and.arrowtriangle.right</key>
@@ -3509,6 +3567,10 @@ extension Resource {
 		<string>2019</string>
 		<key>arrowtriangle.left.fill.and.line.vertical.and.arrowtriangle.right.fill</key>
 		<string>2020</string>
+		<key>arrowtriangle.left.inset.filled.leftthird.rectangle</key>
+		<string>2026</string>
+		<key>arrowtriangle.left.leftside.rectangle</key>
+		<string>2026</string>
 		<key>arrowtriangle.left.square</key>
 		<string>2019</string>
 		<key>arrowtriangle.left.square.fill</key>
@@ -3527,6 +3589,10 @@ extension Resource {
 		<string>2019</string>
 		<key>arrowtriangle.right.fill.and.line.vertical.and.arrowtriangle.left.fill</key>
 		<string>2020</string>
+		<key>arrowtriangle.right.inset.filled.rightthird.rectangle</key>
+		<string>2026</string>
+		<key>arrowtriangle.right.rightside.rectangle</key>
+		<string>2026</string>
 		<key>arrowtriangle.right.square</key>
 		<string>2019</string>
 		<key>arrowtriangle.right.square.fill</key>
@@ -3595,6 +3661,10 @@ extension Resource {
 		<string>2024</string>
 		<key>australiandollarsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>australiandollarsign.building.classical</key>
+		<string>2026</string>
+		<key>australiandollarsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>australiandollarsign.circle</key>
 		<string>2023</string>
 		<key>australiandollarsign.circle.fill</key>
@@ -3621,6 +3691,10 @@ extension Resource {
 		<string>2024</string>
 		<key>australsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>australsign.building.classical</key>
+		<string>2026</string>
+		<key>australsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>australsign.circle</key>
 		<string>2019</string>
 		<key>australsign.circle.fill</key>
@@ -3713,6 +3787,14 @@ extension Resource {
 		<string>2025</string>
 		<key>backward</key>
 		<string>2019</string>
+		<key>backward.bubble</key>
+		<string>2026</string>
+		<key>backward.bubble.fill</key>
+		<string>2026</string>
+		<key>backward.bubble.fill.rtl</key>
+		<string>2026</string>
+		<key>backward.bubble.rtl</key>
+		<string>2026</string>
 		<key>backward.circle</key>
 		<string>2021</string>
 		<key>backward.circle.fill</key>
@@ -3773,6 +3855,10 @@ extension Resource {
 		<string>2024</string>
 		<key>bahtsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>bahtsign.building.classical</key>
+		<string>2026</string>
+		<key>bahtsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>bahtsign.circle</key>
 		<string>2019</string>
 		<key>bahtsign.circle.fill</key>
@@ -4125,6 +4211,10 @@ extension Resource {
 		<string>2024</string>
 		<key>bitcoinsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>bitcoinsign.building.classical</key>
+		<string>2026</string>
+		<key>bitcoinsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>bitcoinsign.circle</key>
 		<string>2019</string>
 		<key>bitcoinsign.circle.fill</key>
@@ -4341,6 +4431,10 @@ extension Resource {
 		<string>2024</string>
 		<key>brazilianrealsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>brazilianrealsign.building.classical</key>
+		<string>2026</string>
+		<key>brazilianrealsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>brazilianrealsign.circle</key>
 		<string>2020.1</string>
 		<key>brazilianrealsign.circle.fill</key>
@@ -4391,6 +4485,10 @@ extension Resource {
 		<string>2021</string>
 		<key>bubble.left.and.exclamationmark.bubble.right.fill</key>
 		<string>2021</string>
+		<key>bubble.left.and.heart.bubble.right</key>
+		<string>2026</string>
+		<key>bubble.left.and.heart.bubble.right.fill</key>
+		<string>2026</string>
 		<key>bubble.left.and.text.bubble.right</key>
 		<string>2023</string>
 		<key>bubble.left.and.text.bubble.right.fill</key>
@@ -4435,6 +4533,12 @@ extension Resource {
 		<string>2020</string>
 		<key>building.2.fill</key>
 		<string>2020</string>
+		<key>building.classical.columns</key>
+		<string>2026</string>
+		<key>building.classical.columns.circle</key>
+		<string>2026</string>
+		<key>building.classical.columns.fill</key>
+		<string>2026</string>
 		<key>building.columns</key>
 		<string>2020</string>
 		<key>building.columns.circle</key>
@@ -4569,6 +4673,8 @@ extension Resource {
 		<string>2019</string>
 		<key>calendar.circle.fill</key>
 		<string>2019</string>
+		<key>calendar.day</key>
+		<string>2026</string>
 		<key>calendar.day.timeline.leading</key>
 		<string>2021</string>
 		<key>calendar.day.timeline.leading.circle</key>
@@ -4721,6 +4827,10 @@ extension Resource {
 		<string>2024</string>
 		<key>car.badge.gearshape.fill</key>
 		<string>2024</string>
+		<key>car.card</key>
+		<string>2026</string>
+		<key>car.card.fill</key>
+		<string>2026</string>
 		<key>car.circle</key>
 		<string>2020</string>
 		<key>car.circle.fill</key>
@@ -5257,6 +5367,10 @@ extension Resource {
 		<string>2024</string>
 		<key>cedisign.bank.building.fill</key>
 		<string>2024</string>
+		<key>cedisign.building.classical</key>
+		<string>2026</string>
+		<key>cedisign.building.classical.fill</key>
+		<string>2026</string>
 		<key>cedisign.circle</key>
 		<string>2019</string>
 		<key>cedisign.circle.fill</key>
@@ -5279,6 +5393,8 @@ extension Resource {
 		<string>2025</string>
 		<key>cellularbars.circle.fill</key>
 		<string>2025</string>
+		<key>cellularbars.short.cellularbars</key>
+		<string>2026</string>
 		<key>centsign</key>
 		<string>2022</string>
 		<key>centsign.arrow.circlepath</key>
@@ -5289,6 +5405,10 @@ extension Resource {
 		<string>2024</string>
 		<key>centsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>centsign.building.classical</key>
+		<string>2026</string>
+		<key>centsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>centsign.circle</key>
 		<string>2019</string>
 		<key>centsign.circle.fill</key>
@@ -6209,6 +6329,10 @@ extension Resource {
 		<string>2024</string>
 		<key>chineseyuanrenminbisign.bank.building.fill</key>
 		<string>2024</string>
+		<key>chineseyuanrenminbisign.building.classical</key>
+		<string>2026</string>
+		<key>chineseyuanrenminbisign.building.classical.fill</key>
+		<string>2026</string>
 		<key>chineseyuanrenminbisign.circle</key>
 		<string>2023</string>
 		<key>chineseyuanrenminbisign.circle.fill</key>
@@ -6637,6 +6761,10 @@ extension Resource {
 		<string>2024</string>
 		<key>coloncurrencysign.bank.building.fill</key>
 		<string>2024</string>
+		<key>coloncurrencysign.building.classical</key>
+		<string>2026</string>
+		<key>coloncurrencysign.building.classical.fill</key>
+		<string>2026</string>
 		<key>coloncurrencysign.circle</key>
 		<string>2019</string>
 		<key>coloncurrencysign.circle.fill</key>
@@ -6841,6 +6969,10 @@ extension Resource {
 		<string>2024</string>
 		<key>cruzeirosign.bank.building.fill</key>
 		<string>2024</string>
+		<key>cruzeirosign.building.classical</key>
+		<string>2026</string>
+		<key>cruzeirosign.building.classical.fill</key>
+		<string>2026</string>
 		<key>cruzeirosign.circle</key>
 		<string>2019</string>
 		<key>cruzeirosign.circle.fill</key>
@@ -6947,6 +7079,10 @@ extension Resource {
 		<string>2024</string>
 		<key>danishkronesign.bank.building.fill</key>
 		<string>2024</string>
+		<key>danishkronesign.building.classical</key>
+		<string>2026</string>
+		<key>danishkronesign.building.classical.fill</key>
+		<string>2026</string>
 		<key>danishkronesign.circle</key>
 		<string>2023</string>
 		<key>danishkronesign.circle.fill</key>
@@ -7363,6 +7499,10 @@ extension Resource {
 		<string>2024</string>
 		<key>dollarsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>dollarsign.building.classical</key>
+		<string>2026</string>
+		<key>dollarsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>dollarsign.circle</key>
 		<string>2019</string>
 		<key>dollarsign.circle.fill</key>
@@ -7389,6 +7529,10 @@ extension Resource {
 		<string>2024</string>
 		<key>dongsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>dongsign.building.classical</key>
+		<string>2026</string>
+		<key>dongsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>dongsign.circle</key>
 		<string>2019</string>
 		<key>dongsign.circle.fill</key>
@@ -7827,6 +7971,10 @@ extension Resource {
 		<string>2024</string>
 		<key>eurosign.bank.building.fill</key>
 		<string>2024</string>
+		<key>eurosign.building.classical</key>
+		<string>2026</string>
+		<key>eurosign.building.classical.fill</key>
+		<string>2026</string>
 		<key>eurosign.circle</key>
 		<string>2019</string>
 		<key>eurosign.circle.fill</key>
@@ -7853,6 +8001,10 @@ extension Resource {
 		<string>2024</string>
 		<key>eurozonesign.bank.building.fill</key>
 		<string>2024</string>
+		<key>eurozonesign.building.classical</key>
+		<string>2026</string>
+		<key>eurozonesign.building.classical.fill</key>
+		<string>2026</string>
 		<key>eurozonesign.circle</key>
 		<string>2023</string>
 		<key>eurozonesign.circle.fill</key>
@@ -7997,6 +8149,8 @@ extension Resource {
 		<string>2024.2</string>
 		<key>exclamationmark.triangle.text.page.rtl</key>
 		<string>2024.2</string>
+		<key>exclamationmark.viewfinder</key>
+		<string>2026</string>
 		<key>exclamationmark.warninglight</key>
 		<string>2023</string>
 		<key>exclamationmark.warninglight.fill</key>
@@ -8211,10 +8365,14 @@ extension Resource {
 		<string>2022</string>
 		<key>figure.2.arms.open</key>
 		<string>2022</string>
+		<key>figure.2.ascending</key>
+		<string>2026</string>
 		<key>figure.2.circle</key>
 		<string>2023</string>
 		<key>figure.2.circle.fill</key>
 		<string>2023</string>
+		<key>figure.2.descending</key>
+		<string>2026</string>
 		<key>figure.2.left.holdinghands</key>
 		<string>2024</string>
 		<key>figure.2.right.holdinghands</key>
@@ -8883,6 +9041,8 @@ extension Resource {
 		<string>2024</string>
 		<key>figure.stand</key>
 		<string>2020</string>
+		<key>figure.stand.and.figure.teen</key>
+		<string>2026</string>
 		<key>figure.stand.dress</key>
 		<string>2024</string>
 		<key>figure.stand.dress.line.vertical.figure</key>
@@ -8925,6 +9085,16 @@ extension Resource {
 		<string>2024</string>
 		<key>figure.taichi.circle.fill</key>
 		<string>2024</string>
+		<key>figure.teen</key>
+		<string>2026</string>
+		<key>figure.teen.and.lock</key>
+		<string>2026</string>
+		<key>figure.teen.and.lock.fill</key>
+		<string>2026</string>
+		<key>figure.teen.and.lock.open</key>
+		<string>2026</string>
+		<key>figure.teen.and.lock.open.fill</key>
+		<string>2026</string>
 		<key>figure.tennis</key>
 		<string>2022</string>
 		<key>figure.tennis.circle</key>
@@ -9159,6 +9329,10 @@ extension Resource {
 		<string>2024</string>
 		<key>florinsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>florinsign.building.classical</key>
+		<string>2026</string>
+		<key>florinsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>florinsign.circle</key>
 		<string>2019</string>
 		<key>florinsign.circle.fill</key>
@@ -9281,6 +9455,10 @@ extension Resource {
 		<string>2024</string>
 		<key>francsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>francsign.building.classical</key>
+		<string>2026</string>
+		<key>francsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>francsign.circle</key>
 		<string>2019</string>
 		<key>francsign.circle.fill</key>
@@ -9469,6 +9647,8 @@ extension Resource {
 		<string>2021</string>
 		<key>globe.americas.fill</key>
 		<string>2021</string>
+		<key>globe.and.person</key>
+		<string>2026</string>
 		<key>globe.asia.australia</key>
 		<string>2021</string>
 		<key>globe.asia.australia.fill</key>
@@ -9651,6 +9831,10 @@ extension Resource {
 		<string>2024</string>
 		<key>guaranisign.bank.building.fill</key>
 		<string>2024</string>
+		<key>guaranisign.building.classical</key>
+		<string>2026</string>
+		<key>guaranisign.building.classical.fill</key>
+		<string>2026</string>
 		<key>guaranisign.circle</key>
 		<string>2019</string>
 		<key>guaranisign.circle.fill</key>
@@ -9707,6 +9891,10 @@ extension Resource {
 		<string>2021</string>
 		<key>hammer.fill</key>
 		<string>2019</string>
+		<key>hammer.slash</key>
+		<string>2026</string>
+		<key>hammer.slash.fill</key>
+		<string>2026</string>
 		<key>hand.app</key>
 		<string>2022</string>
 		<key>hand.app.fill</key>
@@ -10023,6 +10211,18 @@ extension Resource {
 		<string>2019</string>
 		<key>hifispeaker.2</key>
 		<string>2020</string>
+		<key>hifispeaker.2.badge.checkmark</key>
+		<string>2026</string>
+		<key>hifispeaker.2.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>hifispeaker.2.badge.checkmark.fill.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.2.badge.checkmark.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.2.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>hifispeaker.2.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>hifispeaker.2.badge.minus</key>
 		<string>2024</string>
 		<key>hifispeaker.2.badge.minus.fill</key>
@@ -10043,6 +10243,18 @@ extension Resource {
 		<string>2022</string>
 		<key>hifispeaker.and.homepod</key>
 		<string>2020</string>
+		<key>hifispeaker.and.homepod.badge.checkmark</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.badge.checkmark.fill.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.badge.checkmark.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>hifispeaker.and.homepod.badge.minus</key>
 		<string>2024</string>
 		<key>hifispeaker.and.homepod.badge.minus.fill</key>
@@ -10055,6 +10267,18 @@ extension Resource {
 		<string>2020</string>
 		<key>hifispeaker.and.homepod.mini</key>
 		<string>2024</string>
+		<key>hifispeaker.and.homepod.mini.badge.checkmark</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.mini.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.mini.badge.checkmark.fill.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.mini.badge.checkmark.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.mini.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>hifispeaker.and.homepod.mini.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>hifispeaker.and.homepod.mini.badge.minus</key>
 		<string>2024</string>
 		<key>hifispeaker.and.homepod.mini.badge.minus.fill</key>
@@ -10073,6 +10297,18 @@ extension Resource {
 		<string>2024</string>
 		<key>hifispeaker.arrow.forward.fill</key>
 		<string>2024</string>
+		<key>hifispeaker.badge.checkmark</key>
+		<string>2026</string>
+		<key>hifispeaker.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>hifispeaker.badge.checkmark.fill.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.badge.checkmark.rtl</key>
+		<string>2026</string>
+		<key>hifispeaker.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>hifispeaker.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>hifispeaker.badge.minus</key>
 		<string>2024</string>
 		<key>hifispeaker.badge.minus.fill</key>
@@ -10103,6 +10339,18 @@ extension Resource {
 		<string>2020</string>
 		<key>homepod.2</key>
 		<string>2020</string>
+		<key>homepod.2.badge.checkmark</key>
+		<string>2026</string>
+		<key>homepod.2.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>homepod.2.badge.checkmark.fill.rtl</key>
+		<string>2026</string>
+		<key>homepod.2.badge.checkmark.rtl</key>
+		<string>2026</string>
+		<key>homepod.2.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>homepod.2.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>homepod.2.badge.minus</key>
 		<string>2024</string>
 		<key>homepod.2.badge.minus.fill</key>
@@ -10123,6 +10371,18 @@ extension Resource {
 		<string>2022</string>
 		<key>homepod.and.homepod.mini</key>
 		<string>2024</string>
+		<key>homepod.and.homepod.mini.badge.checkmark</key>
+		<string>2026</string>
+		<key>homepod.and.homepod.mini.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>homepod.and.homepod.mini.badge.checkmark.fill.rtl</key>
+		<string>2026</string>
+		<key>homepod.and.homepod.mini.badge.checkmark.rtl</key>
+		<string>2026</string>
+		<key>homepod.and.homepod.mini.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>homepod.and.homepod.mini.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>homepod.and.homepod.mini.badge.minus</key>
 		<string>2024</string>
 		<key>homepod.and.homepod.mini.badge.minus.fill</key>
@@ -10149,6 +10409,10 @@ extension Resource {
 		<string>2025</string>
 		<key>homepod.badge.checkmark.rtl</key>
 		<string>2025</string>
+		<key>homepod.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>homepod.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>homepod.badge.minus</key>
 		<string>2024</string>
 		<key>homepod.badge.minus.fill</key>
@@ -10163,6 +10427,18 @@ extension Resource {
 		<string>2024</string>
 		<key>homepod.mini.2</key>
 		<string>2024</string>
+		<key>homepod.mini.2.badge.checkmark</key>
+		<string>2026</string>
+		<key>homepod.mini.2.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>homepod.mini.2.badge.checkmark.fill.rtl</key>
+		<string>2026</string>
+		<key>homepod.mini.2.badge.checkmark.rtl</key>
+		<string>2026</string>
+		<key>homepod.mini.2.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>homepod.mini.2.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>homepod.mini.2.badge.minus</key>
 		<string>2024</string>
 		<key>homepod.mini.2.badge.minus.fill</key>
@@ -10193,6 +10469,10 @@ extension Resource {
 		<string>2025</string>
 		<key>homepod.mini.badge.checkmark.rtl</key>
 		<string>2025</string>
+		<key>homepod.mini.badge.exclamationmark</key>
+		<string>2026</string>
+		<key>homepod.mini.badge.exclamationmark.fill</key>
+		<string>2026</string>
 		<key>homepod.mini.badge.minus</key>
 		<string>2024</string>
 		<key>homepod.mini.badge.minus.fill</key>
@@ -10295,6 +10575,10 @@ extension Resource {
 		<string>2024</string>
 		<key>hryvniasign.bank.building.fill</key>
 		<string>2024</string>
+		<key>hryvniasign.building.classical</key>
+		<string>2026</string>
+		<key>hryvniasign.building.classical.fill</key>
+		<string>2026</string>
 		<key>hryvniasign.circle</key>
 		<string>2019</string>
 		<key>hryvniasign.circle.fill</key>
@@ -10391,6 +10675,10 @@ extension Resource {
 		<string>2024</string>
 		<key>indianrupeesign.bank.building.fill</key>
 		<string>2024</string>
+		<key>indianrupeesign.building.classical</key>
+		<string>2026</string>
+		<key>indianrupeesign.building.classical.fill</key>
+		<string>2026</string>
 		<key>indianrupeesign.circle</key>
 		<string>2019</string>
 		<key>indianrupeesign.circle.fill</key>
@@ -10415,6 +10703,10 @@ extension Resource {
 		<string>2020.1</string>
 		<key>info</key>
 		<string>2019</string>
+		<key>info.app</key>
+		<string>2026</string>
+		<key>info.app.fill</key>
+		<string>2026</string>
 		<key>info.bubble</key>
 		<string>2022</string>
 		<key>info.bubble.fill</key>
@@ -10483,6 +10775,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.bottomtrailing.rectangle.portrait</key>
 		<string>2024</string>
+		<key>inset.filled.bubble</key>
+		<string>2026</string>
 		<key>inset.filled.capsule</key>
 		<string>2024</string>
 		<key>inset.filled.capsule.portrait</key>
@@ -10503,6 +10797,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.leadinghalf.arrow.leading.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.leadinghalf.arrowtriangle.backward.rectangle</key>
+		<string>2026</string>
 		<key>inset.filled.leadinghalf.rectangle</key>
 		<string>2024</string>
 		<key>inset.filled.leadinghalf.rectangle.portrait</key>
@@ -10513,12 +10809,16 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.leadingthird.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.leadingthird.rectangle.badge.xmark</key>
+		<string>2026</string>
 		<key>inset.filled.leadingthird.rectangle.portrait</key>
 		<string>2024</string>
 		<key>inset.filled.leadingthird.square</key>
 		<string>2024</string>
 		<key>inset.filled.lefthalf.arrow.left.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.lefthalf.arrowtriangle.left.rectangle</key>
+		<string>2026</string>
 		<key>inset.filled.lefthalf.rectangle</key>
 		<string>2024</string>
 		<key>inset.filled.lefthalf.rectangle.portrait</key>
@@ -10531,6 +10831,8 @@ extension Resource {
 		<string>2025</string>
 		<key>inset.filled.leftthird.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.leftthird.rectangle.badge.xmark</key>
+		<string>2026</string>
 		<key>inset.filled.leftthird.rectangle.portrait</key>
 		<string>2024</string>
 		<key>inset.filled.leftthird.square</key>
@@ -10545,6 +10847,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.rectangle.and.cursorarrow</key>
 		<string>2024</string>
+		<key>inset.filled.rectangle.and.person</key>
+		<string>2026</string>
 		<key>inset.filled.rectangle.and.person.filled</key>
 		<string>2024</string>
 		<key>inset.filled.rectangle.and.person.filled.circle</key>
@@ -10555,6 +10859,10 @@ extension Resource {
 		<string>2025.1</string>
 		<key>inset.filled.rectangle.and.person.filled.slash.rtl</key>
 		<string>2025.1</string>
+		<key>inset.filled.rectangle.and.person.slash</key>
+		<string>2026</string>
+		<key>inset.filled.rectangle.and.person.slash.rtl</key>
+		<string>2026</string>
 		<key>inset.filled.rectangle.and.pointer.arrow</key>
 		<string>2025</string>
 		<key>inset.filled.rectangle.badge.record</key>
@@ -10565,6 +10873,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.righthalf.arrow.right.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.righthalf.arrowtriangle.right.rectangle</key>
+		<string>2026</string>
 		<key>inset.filled.righthalf.lefthalf.rectangle</key>
 		<string>2024</string>
 		<key>inset.filled.righthalf.rectangle</key>
@@ -10573,6 +10883,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.rightthird.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.rightthird.rectangle.badge.xmark</key>
+		<string>2026</string>
 		<key>inset.filled.rightthird.rectangle.portrait</key>
 		<string>2024</string>
 		<key>inset.filled.rightthird.square</key>
@@ -10581,6 +10893,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.square.dashed</key>
 		<string>2024</string>
+		<key>inset.filled.square.dashed.micro</key>
+		<string>2026</string>
 		<key>inset.filled.tophalf.bottomhalf.rectangle</key>
 		<string>2024</string>
 		<key>inset.filled.tophalf.bottomleft.bottomright.rectangle</key>
@@ -10623,6 +10937,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.trailinghalf.arrow.trailing.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.trailinghalf.arrowtriangle.forward.rectangle</key>
+		<string>2026</string>
 		<key>inset.filled.trailinghalf.leadinghalf.rectangle</key>
 		<string>2024</string>
 		<key>inset.filled.trailinghalf.rectangle</key>
@@ -10631,6 +10947,8 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.trailingthird.rectangle</key>
 		<string>2024</string>
+		<key>inset.filled.trailingthird.rectangle.badge.xmark</key>
+		<string>2026</string>
 		<key>inset.filled.trailingthird.rectangle.portrait</key>
 		<string>2024</string>
 		<key>inset.filled.trailingthird.square</key>
@@ -10639,6 +10957,32 @@ extension Resource {
 		<string>2024</string>
 		<key>inset.filled.tv</key>
 		<string>2024</string>
+		<key>inset.left.half.filled.square.dashed.micro</key>
+		<string>2026</string>
+		<key>inset.left.half.square.dashed.micro</key>
+		<string>2026</string>
+		<key>inset.square.dashed.micro</key>
+		<string>2026</string>
+		<key>interface.window</key>
+		<string>2026</string>
+		<key>interface.window.and.pointer.arrow</key>
+		<string>2026</string>
+		<key>interface.window.and.pointer.arrow.rtl</key>
+		<string>2026</string>
+		<key>interface.window.badge.plus</key>
+		<string>2026</string>
+		<key>interface.window.dashed</key>
+		<string>2026</string>
+		<key>interface.window.on.rectangle</key>
+		<string>2026</string>
+		<key>interface.window.on.rectangle.dashed</key>
+		<string>2026</string>
+		<key>interface.window.on.rectangle.dashed.rtl</key>
+		<string>2026</string>
+		<key>interface.window.on.rectangle.rtl</key>
+		<string>2026</string>
+		<key>interface.window.stack</key>
+		<string>2026</string>
 		<key>internaldrive</key>
 		<string>2020</string>
 		<key>internaldrive.fill</key>
@@ -11105,6 +11449,8 @@ extension Resource {
 		<string>2022</string>
 		<key>keyboard.fill</key>
 		<string>2021</string>
+		<key>keyboard.interface.window</key>
+		<string>2026</string>
 		<key>keyboard.macwindow</key>
 		<string>2020</string>
 		<key>keyboard.onehanded.left</key>
@@ -11125,6 +11471,10 @@ extension Resource {
 		<string>2024</string>
 		<key>kipsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>kipsign.building.classical</key>
+		<string>2026</string>
+		<key>kipsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>kipsign.circle</key>
 		<string>2019</string>
 		<key>kipsign.circle.fill</key>
@@ -11277,6 +11627,8 @@ extension Resource {
 		<string>2020</string>
 		<key>laptopcomputer.badge.checkmark</key>
 		<string>2025</string>
+		<key>laptopcomputer.display.clean</key>
+		<string>2026</string>
 		<key>laptopcomputer.slash</key>
 		<string>2022.1</string>
 		<key>laptopcomputer.trianglebadge.exclamationmark</key>
@@ -11293,6 +11645,10 @@ extension Resource {
 		<string>2024</string>
 		<key>larisign.bank.building.fill</key>
 		<string>2024</string>
+		<key>larisign.building.classical</key>
+		<string>2026</string>
+		<key>larisign.building.classical.fill</key>
+		<string>2026</string>
 		<key>larisign.circle</key>
 		<string>2019</string>
 		<key>larisign.circle.fill</key>
@@ -11581,6 +11937,10 @@ extension Resource {
 		<string>2024</string>
 		<key>lirasign.bank.building.fill</key>
 		<string>2024</string>
+		<key>lirasign.building.classical</key>
+		<string>2026</string>
+		<key>lirasign.building.classical.fill</key>
+		<string>2026</string>
 		<key>lirasign.circle</key>
 		<string>2019</string>
 		<key>lirasign.circle.fill</key>
@@ -11947,6 +12307,10 @@ extension Resource {
 		<string>2020</string>
 		<key>macpro.gen3</key>
 		<string>2020</string>
+		<key>macpro.gen3.badge.checkmark</key>
+		<string>2026</string>
+		<key>macpro.gen3.badge.checkmark.fill</key>
+		<string>2026</string>
 		<key>macpro.gen3.badge.ckeckmark</key>
 		<string>2025</string>
 		<key>macpro.gen3.badge.ckeckmark.fill</key>
@@ -12019,6 +12383,10 @@ extension Resource {
 		<string>2024</string>
 		<key>malaysianringgitsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>malaysianringgitsign.building.classical</key>
+		<string>2026</string>
+		<key>malaysianringgitsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>malaysianringgitsign.circle</key>
 		<string>2024</string>
 		<key>malaysianringgitsign.circle.fill</key>
@@ -12045,6 +12413,10 @@ extension Resource {
 		<string>2024</string>
 		<key>manatsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>manatsign.building.classical</key>
+		<string>2026</string>
+		<key>manatsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>manatsign.circle</key>
 		<string>2019</string>
 		<key>manatsign.circle.fill</key>
@@ -12245,6 +12617,12 @@ extension Resource {
 		<string>2024</string>
 		<key>microphone.circle.fill</key>
 		<string>2024</string>
+		<key>microphone.dynamic.on.stand</key>
+		<string>2026</string>
+		<key>microphone.dynamic.on.stand.circle</key>
+		<string>2026</string>
+		<key>microphone.dynamic.on.stand.circle.fill</key>
+		<string>2026</string>
 		<key>microphone.fill</key>
 		<string>2024</string>
 		<key>microphone.slash</key>
@@ -12273,6 +12651,10 @@ extension Resource {
 		<string>2024</string>
 		<key>millsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>millsign.building.classical</key>
+		<string>2026</string>
+		<key>millsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>millsign.circle</key>
 		<string>2019</string>
 		<key>millsign.circle.fill</key>
@@ -12573,6 +12955,10 @@ extension Resource {
 		<string>2024</string>
 		<key>nairasign.bank.building.fill</key>
 		<string>2024</string>
+		<key>nairasign.building.classical</key>
+		<string>2026</string>
+		<key>nairasign.building.classical.fill</key>
+		<string>2026</string>
 		<key>nairasign.circle</key>
 		<string>2019</string>
 		<key>nairasign.circle.fill</key>
@@ -12613,6 +12999,10 @@ extension Resource {
 		<string>2024</string>
 		<key>norwegiankronesign.bank.building.fill</key>
 		<string>2024</string>
+		<key>norwegiankronesign.building.classical</key>
+		<string>2026</string>
+		<key>norwegiankronesign.building.classical.fill</key>
+		<string>2026</string>
 		<key>norwegiankronesign.circle</key>
 		<string>2023</string>
 		<key>norwegiankronesign.circle.fill</key>
@@ -12663,6 +13053,16 @@ extension Resource {
 		<string>2019</string>
 		<key>number.circle.fill</key>
 		<string>2019</string>
+		<key>number.sign</key>
+		<string>2026</string>
+		<key>number.sign.circle</key>
+		<string>2026</string>
+		<key>number.sign.circle.fill</key>
+		<string>2026</string>
+		<key>number.sign.square</key>
+		<string>2026</string>
+		<key>number.sign.square.fill</key>
+		<string>2026</string>
 		<key>number.square</key>
 		<string>2019</string>
 		<key>number.square.fill</key>
@@ -12711,6 +13111,8 @@ extension Resource {
 		<string>2025</string>
 		<key>numbersign</key>
 		<string>2022</string>
+		<key>numero.sign</key>
+		<string>2026</string>
 		<key>o.circle</key>
 		<string>2019</string>
 		<key>o.circle.fill</key>
@@ -12835,6 +13237,10 @@ extension Resource {
 		<string>2020</string>
 		<key>paintbrush.pointed.fill</key>
 		<string>2020</string>
+		<key>paintbrush.slash</key>
+		<string>2026</string>
+		<key>paintbrush.slash.fill</key>
+		<string>2026</string>
 		<key>paintpalette</key>
 		<string>2020</string>
 		<key>paintpalette.fill</key>
@@ -13073,14 +13479,34 @@ extension Resource {
 		<string>2022</string>
 		<key>person.and.background.striped.horizontal</key>
 		<string>2023</string>
+		<key>person.badge.checkmark</key>
+		<string>2026</string>
+		<key>person.badge.checkmark.fill</key>
+		<string>2026</string>
+		<key>person.badge.checkmark.seal</key>
+		<string>2026</string>
+		<key>person.badge.checkmark.seal.fill</key>
+		<string>2026</string>
 		<key>person.badge.clock</key>
 		<string>2021</string>
 		<key>person.badge.clock.fill</key>
 		<string>2021</string>
+		<key>person.badge.creditcard</key>
+		<string>2026</string>
+		<key>person.badge.creditcard.fill</key>
+		<string>2026</string>
+		<key>person.badge.gearshape</key>
+		<string>2026</string>
+		<key>person.badge.gearshape.fill</key>
+		<string>2026</string>
 		<key>person.badge.key</key>
 		<string>2021.3</string>
 		<key>person.badge.key.fill</key>
 		<string>2021.3</string>
+		<key>person.badge.location</key>
+		<string>2026</string>
+		<key>person.badge.location.fill</key>
+		<string>2026</string>
 		<key>person.badge.minus</key>
 		<string>2019</string>
 		<key>person.badge.minus.fill</key>
@@ -13101,6 +13527,10 @@ extension Resource {
 		<string>2023</string>
 		<key>person.bubble.fill</key>
 		<string>2023</string>
+		<key>person.building.classical</key>
+		<string>2026</string>
+		<key>person.building.classical.fill</key>
+		<string>2026</string>
 		<key>person.bust</key>
 		<string>2022</string>
 		<key>person.bust.circle</key>
@@ -13145,6 +13575,10 @@ extension Resource {
 		<string>2021</string>
 		<key>person.crop.circle.badge.fill</key>
 		<string>2021</string>
+		<key>person.crop.circle.badge.magnifyingglass</key>
+		<string>2026</string>
+		<key>person.crop.circle.badge.magnifyingglass.fill</key>
+		<string>2026</string>
 		<key>person.crop.circle.badge.minus</key>
 		<string>2019</string>
 		<key>person.crop.circle.badge.moon</key>
@@ -13265,6 +13699,10 @@ extension Resource {
 		<string>2022</string>
 		<key>person.line.dotted.person.fill</key>
 		<string>2022</string>
+		<key>person.number.sign.rectangle</key>
+		<string>2026</string>
+		<key>person.number.sign.rectangle.fill</key>
+		<string>2026</string>
 		<key>person.slash</key>
 		<string>2023</string>
 		<key>person.slash.fill</key>
@@ -13279,6 +13717,10 @@ extension Resource {
 		<string>2025</string>
 		<key>person.text.rectangle</key>
 		<string>2021</string>
+		<key>person.text.rectangle.badge.clock</key>
+		<string>2026</string>
+		<key>person.text.rectangle.badge.clock.fill</key>
+		<string>2026</string>
 		<key>person.text.rectangle.fill</key>
 		<string>2021</string>
 		<key>person.text.rectangle.trianglebadge.exclamationmark</key>
@@ -13307,6 +13749,10 @@ extension Resource {
 		<string>2024</string>
 		<key>peruviansolessign.bank.building.fill</key>
 		<string>2024</string>
+		<key>peruviansolessign.building.classical</key>
+		<string>2026</string>
+		<key>peruviansolessign.building.classical.fill</key>
+		<string>2026</string>
 		<key>peruviansolessign.circle</key>
 		<string>2024</string>
 		<key>peruviansolessign.circle.fill</key>
@@ -13333,6 +13779,10 @@ extension Resource {
 		<string>2024</string>
 		<key>pesetasign.bank.building.fill</key>
 		<string>2024</string>
+		<key>pesetasign.building.classical</key>
+		<string>2026</string>
+		<key>pesetasign.building.classical.fill</key>
+		<string>2026</string>
 		<key>pesetasign.circle</key>
 		<string>2019</string>
 		<key>pesetasign.circle.fill</key>
@@ -13359,6 +13809,10 @@ extension Resource {
 		<string>2024</string>
 		<key>pesosign.bank.building.fill</key>
 		<string>2024</string>
+		<key>pesosign.building.classical</key>
+		<string>2026</string>
+		<key>pesosign.building.classical.fill</key>
+		<string>2026</string>
 		<key>pesosign.circle</key>
 		<string>2019</string>
 		<key>pesosign.circle.fill</key>
@@ -13497,6 +13951,10 @@ extension Resource {
 		<string>2023</string>
 		<key>photo.badge.plus.fill</key>
 		<string>2023</string>
+		<key>photo.badge.questionmark</key>
+		<string>2026</string>
+		<key>photo.badge.questionmark.fill</key>
+		<string>2026</string>
 		<key>photo.badge.shield.exclamationmark</key>
 		<string>2024.3</string>
 		<key>photo.badge.shield.exclamationmark.fill</key>
@@ -13515,6 +13973,10 @@ extension Resource {
 		<string>2020</string>
 		<key>photo.on.rectangle.angled.fill</key>
 		<string>2024</string>
+		<key>photo.slash</key>
+		<string>2026</string>
+		<key>photo.slash.fill</key>
+		<string>2026</string>
 		<key>photo.stack</key>
 		<string>2022</string>
 		<key>photo.stack.fill</key>
@@ -13587,6 +14049,14 @@ extension Resource {
 		<string>2022</string>
 		<key>pipe.and.drop.fill</key>
 		<string>2022</string>
+		<key>pizza.slice</key>
+		<string>2026</string>
+		<key>pizza.slice.fill</key>
+		<string>2026</string>
+		<key>pl.button.horizontal</key>
+		<string>2026</string>
+		<key>pl.button.horizontal.fill</key>
+		<string>2026</string>
 		<key>placeholdertext.fill</key>
 		<string>2020</string>
 		<key>platter.2.filled.ipad</key>
@@ -13615,6 +14085,14 @@ extension Resource {
 		<string>2021</string>
 		<key>play</key>
 		<string>2019</string>
+		<key>play.bubble</key>
+		<string>2026</string>
+		<key>play.bubble.fill</key>
+		<string>2026</string>
+		<key>play.bubble.fill.rtl</key>
+		<string>2026</string>
+		<key>play.bubble.rtl</key>
+		<string>2026</string>
 		<key>play.circle</key>
 		<string>2019</string>
 		<key>play.circle.fill</key>
@@ -13857,6 +14335,10 @@ extension Resource {
 		<string>2024</string>
 		<key>polishzlotysign.bank.building.fill</key>
 		<string>2024</string>
+		<key>polishzlotysign.building.classical</key>
+		<string>2026</string>
+		<key>polishzlotysign.building.classical.fill</key>
+		<string>2026</string>
 		<key>polishzlotysign.circle</key>
 		<string>2023</string>
 		<key>polishzlotysign.circle.fill</key>
@@ -14033,6 +14515,10 @@ extension Resource {
 		<string>2024</string>
 		<key>powersleep</key>
 		<string>2020</string>
+		<key>pr.button.horizontal</key>
+		<string>2026</string>
+		<key>pr.button.horizontal.fill</key>
+		<string>2026</string>
 		<key>printer</key>
 		<string>2019</string>
 		<key>printer.dotmatrix</key>
@@ -14327,6 +14813,8 @@ extension Resource {
 		<string>2020</string>
 		<key>recordingtape</key>
 		<string>2019</string>
+		<key>recordingtape.badge</key>
+		<string>2026</string>
 		<key>recordingtape.circle</key>
 		<string>2022</string>
 		<key>recordingtape.circle.fill</key>
@@ -14889,6 +15377,8 @@ extension Resource {
 		<string>2025</string>
 		<key>ring.dashed</key>
 		<string>2025</string>
+		<key>ring.light</key>
+		<string>2026</string>
 		<key>rm.button.horizontal</key>
 		<string>2023</string>
 		<key>rm.button.horizontal.fill</key>
@@ -14967,6 +15457,10 @@ extension Resource {
 		<string>2024</string>
 		<key>rublesign.bank.building.fill</key>
 		<string>2024</string>
+		<key>rublesign.building.classical</key>
+		<string>2026</string>
+		<key>rublesign.building.classical.fill</key>
+		<string>2026</string>
 		<key>rublesign.circle</key>
 		<string>2019</string>
 		<key>rublesign.circle.fill</key>
@@ -15005,6 +15499,10 @@ extension Resource {
 		<string>2024</string>
 		<key>rupeesign.bank.building.fill</key>
 		<string>2024</string>
+		<key>rupeesign.building.classical</key>
+		<string>2026</string>
+		<key>rupeesign.building.classical.fill</key>
+		<string>2026</string>
 		<key>rupeesign.circle</key>
 		<string>2019</string>
 		<key>rupeesign.circle.fill</key>
@@ -15063,6 +15561,8 @@ extension Resource {
 		<string>2021</string>
 		<key>scope</key>
 		<string>2019</string>
+		<key>scope.continuous</key>
+		<string>2026</string>
 		<key>screwdriver</key>
 		<string>2021</string>
 		<key>screwdriver.fill</key>
@@ -15139,6 +15639,10 @@ extension Resource {
 		<string>2024</string>
 		<key>shekelsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>shekelsign.building.classical</key>
+		<string>2026</string>
+		<key>shekelsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>shekelsign.circle</key>
 		<string>2020</string>
 		<key>shekelsign.circle.fill</key>
@@ -15327,6 +15831,10 @@ extension Resource {
 		<string>2024</string>
 		<key>singaporedollarsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>singaporedollarsign.building.classical</key>
+		<string>2026</string>
+		<key>singaporedollarsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>singaporedollarsign.circle</key>
 		<string>2024</string>
 		<key>singaporedollarsign.circle.fill</key>
@@ -15349,6 +15857,10 @@ extension Resource {
 		<string>2022</string>
 		<key>siri</key>
 		<string>2025</string>
+		<key>siri.gen1</key>
+		<string>2026</string>
+		<key>siri.gen2</key>
+		<string>2026</string>
 		<key>skateboard</key>
 		<string>2023</string>
 		<key>skateboard.fill</key>
@@ -15779,6 +16291,8 @@ extension Resource {
 		<string>2020</string>
 		<key>square.dashed.inset.filled</key>
 		<string>2021</string>
+		<key>square.dashed.micro</key>
+		<string>2026</string>
 		<key>square.dotted</key>
 		<string>2022</string>
 		<key>square.fill</key>
@@ -16001,6 +16515,8 @@ extension Resource {
 		<string>2023</string>
 		<key>squareshape.fill</key>
 		<string>2020</string>
+		<key>squareshape.on.pattern.diagonalline</key>
+		<string>2026</string>
 		<key>squareshape.split.2x2</key>
 		<string>2020</string>
 		<key>squareshape.split.2x2.dotted</key>
@@ -16025,6 +16541,8 @@ extension Resource {
 		<string>2021</string>
 		<key>star.bubble.fill</key>
 		<string>2021</string>
+		<key>star.calendar</key>
+		<string>2026</string>
 		<key>star.circle</key>
 		<string>2019</string>
 		<key>star.circle.fill</key>
@@ -16113,6 +16631,10 @@ extension Resource {
 		<string>2024</string>
 		<key>sterlingsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>sterlingsign.building.classical</key>
+		<string>2026</string>
+		<key>sterlingsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>sterlingsign.circle</key>
 		<string>2019</string>
 		<key>sterlingsign.circle.fill</key>
@@ -16417,6 +16939,10 @@ extension Resource {
 		<string>2024</string>
 		<key>swedishkronasign.bank.building.fill</key>
 		<string>2024</string>
+		<key>swedishkronasign.building.classical</key>
+		<string>2026</string>
+		<key>swedishkronasign.building.classical.fill</key>
+		<string>2026</string>
 		<key>swedishkronasign.circle</key>
 		<string>2023</string>
 		<key>swedishkronasign.circle.fill</key>
@@ -16551,6 +17077,10 @@ extension Resource {
 		<string>2024</string>
 		<key>tengesign.bank.building.fill</key>
 		<string>2024</string>
+		<key>tengesign.building.classical</key>
+		<string>2026</string>
+		<key>tengesign.building.classical.fill</key>
+		<string>2026</string>
 		<key>tengesign.circle</key>
 		<string>2019</string>
 		<key>tengesign.circle.fill</key>
@@ -16609,6 +17139,8 @@ extension Resource {
 		<string>2019</string>
 		<key>text.alignright</key>
 		<string>2019</string>
+		<key>text.and.command.interface.window</key>
+		<string>2026</string>
 		<key>text.and.command.macwindow</key>
 		<string>2020</string>
 		<key>text.append</key>
@@ -16651,6 +17183,14 @@ extension Resource {
 		<string>2024</string>
 		<key>text.bubble.badge.clock.rtl</key>
 		<string>2024</string>
+		<key>text.bubble.badge.sparkles</key>
+		<string>2026</string>
+		<key>text.bubble.badge.sparkles.fill</key>
+		<string>2026</string>
+		<key>text.bubble.badge.sparkles.fill.rtl</key>
+		<string>2026</string>
+		<key>text.bubble.badge.sparkles.rtl</key>
+		<string>2026</string>
 		<key>text.bubble.fill</key>
 		<string>2019</string>
 		<key>text.bubble.fill.rtl</key>
@@ -16709,6 +17249,8 @@ extension Resource {
 		<string>2020</string>
 		<key>text.magnifyingglass.rtl</key>
 		<string>2020</string>
+		<key>text.menu</key>
+		<string>2026</string>
 		<key>text.pad.header</key>
 		<string>2025</string>
 		<key>text.pad.header.badge.clock</key>
@@ -16719,6 +17261,10 @@ extension Resource {
 		<string>2025</string>
 		<key>text.page</key>
 		<string>2024</string>
+		<key>text.page.and.line.vertical.and.text.page</key>
+		<string>2026</string>
+		<key>text.page.and.line.vertical.and.text.page.rtl</key>
+		<string>2026</string>
 		<key>text.page.badge.magnifyingglass</key>
 		<string>2024</string>
 		<key>text.page.fill</key>
@@ -17609,6 +18155,10 @@ extension Resource {
 		<string>2024</string>
 		<key>tugriksign.bank.building.fill</key>
 		<string>2024</string>
+		<key>tugriksign.building.classical</key>
+		<string>2026</string>
+		<key>tugriksign.building.classical.fill</key>
+		<string>2026</string>
 		<key>tugriksign.circle</key>
 		<string>2019</string>
 		<key>tugriksign.circle.fill</key>
@@ -17637,6 +18187,10 @@ extension Resource {
 		<string>2024</string>
 		<key>turkishlirasign.bank.building.fill</key>
 		<string>2024</string>
+		<key>turkishlirasign.building.classical</key>
+		<string>2026</string>
+		<key>turkishlirasign.building.classical.fill</key>
+		<string>2026</string>
 		<key>turkishlirasign.circle</key>
 		<string>2019</string>
 		<key>turkishlirasign.circle.fill</key>
@@ -17725,6 +18279,14 @@ extension Resource {
 		<string>2019</string>
 		<key>v.square.fill</key>
 		<string>2019</string>
+		<key>vent.airflow.diffused</key>
+		<string>2026</string>
+		<key>vent.airflow.focused</key>
+		<string>2026</string>
+		<key>vent.airflow.manual</key>
+		<string>2026</string>
+		<key>vent.airflow.oscillating</key>
+		<string>2026</string>
 		<key>vent.heat.waves.upward</key>
 		<string>2025</string>
 		<key>vial.viewfinder</key>
@@ -17743,6 +18305,14 @@ extension Resource {
 		<string>2019</string>
 		<key>video.badge.plus.fill</key>
 		<string>2019</string>
+		<key>video.badge.questionmark</key>
+		<string>2026</string>
+		<key>video.badge.questionmark.ar</key>
+		<string>2026</string>
+		<key>video.badge.questionmark.fill</key>
+		<string>2026</string>
+		<key>video.badge.questionmark.fill.ar</key>
+		<string>2026</string>
 		<key>video.badge.waveform</key>
 		<string>2023</string>
 		<key>video.badge.waveform.fill</key>
@@ -18015,6 +18585,8 @@ extension Resource {
 		<string>2021</string>
 		<key>waveform.and.mic</key>
 		<string>2021</string>
+		<key>waveform.and.person</key>
+		<string>2026</string>
 		<key>waveform.and.person.filled</key>
 		<string>2023</string>
 		<key>waveform.badge.checkmark</key>
@@ -18209,6 +18781,10 @@ extension Resource {
 		<string>2024</string>
 		<key>wonsign.bank.building.fill</key>
 		<string>2024</string>
+		<key>wonsign.building.classical</key>
+		<string>2026</string>
+		<key>wonsign.building.classical.fill</key>
+		<string>2026</string>
 		<key>wonsign.circle</key>
 		<string>2019</string>
 		<key>wonsign.circle.fill</key>
@@ -18283,6 +18859,8 @@ extension Resource {
 		<string>2019</string>
 		<key>xmark.icloud.fill</key>
 		<string>2019</string>
+		<key>xmark.interface.window</key>
+		<string>2026</string>
 		<key>xmark.octagon</key>
 		<string>2019</string>
 		<key>xmark.octagon.fill</key>
@@ -18311,6 +18889,8 @@ extension Resource {
 		<string>2024</string>
 		<key>xmark.triangle.circle.square.fill</key>
 		<string>2024</string>
+		<key>xmark.viewfinder</key>
+		<string>2026</string>
 		<key>xserve</key>
 		<string>2020</string>
 		<key>xserve.raid</key>
@@ -18333,6 +18913,10 @@ extension Resource {
 		<string>2024</string>
 		<key>yensign.bank.building.fill</key>
 		<string>2024</string>
+		<key>yensign.building.classical</key>
+		<string>2026</string>
+		<key>yensign.building.classical.fill</key>
+		<string>2026</string>
 		<key>yensign.circle</key>
 		<string>2019</string>
 		<key>yensign.circle.fill</key>
@@ -18695,6 +19279,19 @@ extension Resource {
 			<string>26.1</string>
 			<key>watchOS</key>
 			<string>26.1</string>
+		</dict>
+		<key>2026</key>
+		<dict>
+			<key>iOS</key>
+			<string>27.0</string>
+			<key>macOS</key>
+			<string>27.0</string>
+			<key>tvOS</key>
+			<string>27.0</string>
+			<key>visionOS</key>
+			<string>27.0</string>
+			<key>watchOS</key>
+			<string>27.0</string>
 		</dict>
 	</dict>
 </dict>

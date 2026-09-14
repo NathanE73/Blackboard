@@ -28,7 +28,7 @@ class DataSetFactory: AssetSetFactory {
     let pathExtension = "dataset"
 
     func asset(namespace: String?, name: String, data: Data) -> DataSet? {
-        guard let _ = try? JSONDecoder().decode(AssetDataSet.self, from: data) else {
+        guard (try? JSONDecoder().decode(AssetDataSet.self, from: data)) != nil else {
             return nil
         }
 

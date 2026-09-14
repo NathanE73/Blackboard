@@ -56,9 +56,7 @@ extension SymbolKnowledge {
             return nil
         }
 
-        if let aliase = symbolAliases.symbols[symbol],
-           let aliaseReleased = yearToRelease(for: aliase)
-        {
+        if let aliase = symbolAliases.symbols[symbol], let aliaseReleased = yearToRelease(for: aliase) {
             return .renamed(platform: .iOS, introduced: released.iOS, deprecated: aliaseReleased.iOS, renamed: aliase)
         }
 

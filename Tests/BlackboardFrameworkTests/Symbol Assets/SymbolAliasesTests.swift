@@ -29,7 +29,7 @@ class SymbolAliasesTests: XCTestCase {
     func testResource() throws {
         let aliases = try XCTUnwrap(SymbolAliases.resource)
 
-        XCTAssertEqual(aliases.symbols.count, 935)
+        XCTAssertEqual(aliases.symbols.count, 1051)
 
         XCTAssertEqual(aliases.symbols["a.book.closed"], "character.book.closed")
         XCTAssertEqual(aliases.symbols["dial.fill"], "dial.low.fill")
@@ -37,7 +37,7 @@ class SymbolAliasesTests: XCTestCase {
 
     func testModernize() {
         // Given
-        let symbols: Set<String> = [
+        let symbols: Set = [
             "a.book.closed",
             "14.square.fill",
             "character.book.closed",

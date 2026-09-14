@@ -30,9 +30,7 @@ extension [String: String] {
         var results: [String: String] = [:]
 
         for (key, value) in dictionary {
-            if let key = key as? String,
-               let value = value as? String
-            {
+            if let key = key as? String, let value = value as? String {
                 results[key] = value
             }
         }
