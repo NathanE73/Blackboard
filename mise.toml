@@ -1,7 +1,6 @@
 [settings]
 lockfile = true
 lockfile_platforms = ["macos-arm64"]
-experimental = true
 
 [tools."github:nicklockwood/SwiftFormat"]
 version = "latest"
