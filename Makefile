@@ -15,7 +15,7 @@ VERSION_STRING=$(shell cat "$(VERSION_FILE)")
 default:
 
 bootstrap:
-	mint bootstrap
+	mise bootstrap
 
 clean:
 	swift package clean
@@ -50,10 +50,10 @@ git-tag:
 	git push origin "$(VERSION_STRING)"
 
 format:
-	mint run swiftformat .
+	mise exec -- swiftformat .
 
 lint:
-	mint run swiftlint
+	mise exec -- swiftlint
 
 generate:
 	bin/blackboard --input Shared/Resources/ DeclarativeApp/Resources/ --output DeclarativeApp/Source/Generated/
