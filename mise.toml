@@ -1,0 +1,15 @@
+[settings]
+lockfile = true
+lockfile_platforms = ["macos-arm64"]
+experimental = true
+
+[tools."github:nicklockwood/SwiftFormat"]
+version = "latest"
+rename_exe = "swiftformat"
+no_app = true
+
+[tools."github:realm/SwiftLint"]
+version = "latest"
+asset_pattern = "portable_swiftlint.zip"
+rename_exe = "swiftlint"
+no_app = true
